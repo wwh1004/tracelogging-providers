@@ -1,0 +1,208 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "94061ca0-fb42-5b87-f7f1-254b0a86f9fd",
+                             "ProviderName":  "Microsoft.Edge.Crashpad",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  140737488355328,
+                          "KeywordName":  "MS.CRITICALDATA",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CrashEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "app_name",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "app_version",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "module_name",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "module_version",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "module_offset",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "process_type",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "sub_code",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "stack_hash",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "client_id_hash",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "etag",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "app_session_guid",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  140737488355328,
+                          "KeywordName":  "MS.CRITICALDATA",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "HangEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "app_name",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "app_version",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "process_type",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "hang_source",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "stack_hash",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "client_id_hash",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "etag",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "app_session_guid",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.1_none_8fe1c356f34a19ca\\msedgewebview2.exe"
+}

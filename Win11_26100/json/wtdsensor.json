@@ -1,0 +1,402 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "e277416d-b4cb-43e7-a037-54c72ace7812",
+                             "ProviderName":  "Microsoft.OneCore.WebThreatDefense.Client.Sensor",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "SensorRegistered",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "SensorId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "FileHandle",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "SensorUnregistered",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "FreeSensorEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "EventPacket",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AllocateSensorEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "EventId",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "DataSizeInB",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "EventPacket",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "SensorUnregistrationError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "WIN32ERROR",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "SendEventError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "EventPacket",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "WIN32ERROR",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "SensorRegistrationError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "SensorId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "WIN32ERROR",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "SendEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "EventPacket",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "IoRequestsInProgress",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "FreeSensorEventError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "EventPacket",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "WIN32ERROR",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AllocateSensorEventError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Context",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "EventId",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "DataSizeInB",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "WIN32ERROR",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-onecore-w..river-client-sensor_31bf3856ad364e35_10.0.26100.1_none_a7e52bec65d7b122\\wtdsensor.dll"
+}

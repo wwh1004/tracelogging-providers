@@ -1,0 +1,60 @@
+ProviderNames:
+	Microsoft.OneDrive.Sync.Client
+	Microsoft.OneDrive.Sync.Setup
+
+
+
+**** Events *****
+OneDriveSetupTime(
+	ANSISTRING AppVersion,
+	ANSISTRING OSArchitecture,
+	ANSISTRING BuildArchitecture,
+	ANSISTRING IsTestMachine,
+	ANSISTRING UpdateRing,
+	ANSISTRING UpdateGroupId,
+	ANSISTRING OneDriveDeviceId,
+	ANSISTRING APIName,
+	ANSISTRING ScenarioName,
+	BOOL32 isThfirstsetup,
+	BOOL32 isUpdate,
+	BOOL32 isExtractFilesWithLessThreadCountEnabled,
+	ANSISTRING UpdateSource,
+	ANSISTRING OduCheckForUpdateStartTime,
+	ANSISTRING OduCheckForUpdateEndTime,
+	UINT64 OduCheckForUpdateDuration,
+	ANSISTRING OduDownloadOneDriveSetupStartTime,
+	ANSISTRING OduDownloadOneDriveSetupEndime,
+	UINT64 OduDownloadOneDriveDuration,
+	ANSISTRING OdsuCheckForUpdateStartTime,
+	ANSISTRING OdsuCheckForUpdateEndTime,
+	UINT64 OdsuCheckForUpdateDuration,
+	ANSISTRING OdsuDownloadOneDriveSetupStartTime,
+	ANSISTRING OdsuDownloadOneDriveSetupEndime,
+	UINT64 OdsuDownloadOneDriveDuration,
+	ANSISTRING OneDriveSetupStartTime,
+	ANSISTRING OneDriveSetupEndTime,
+	UINT64 OneDriveSetupDuration,
+	HRESULT ResultCode,
+	ANSISTRING ResultType
+	);
+
+SetupCommonDataV2(
+	ANSISTRING AppVersion,
+	ANSISTRING OfficeVersionString,
+	ANSISTRING OSArchitecture,
+	ANSISTRING BuildArchitecture,
+	ANSISTRING Market,
+	ANSISTRING MachineGuid,
+	ANSISTRING UserGuid,
+	ANSISTRING MSFTInternal,
+	ANSISTRING OSDeviceName,
+	ANSISTRING OSUserName,
+	ANSISTRING IsTestMachine,
+	ANSISTRING Environment,
+	ANSISTRING UpdateRing,
+	ANSISTRING AccountType,
+	ANSISTRING UpdateGroupId,
+	ANSISTRING FeatureSet,
+	ANSISTRING OneDriveDeviceId
+	);
+

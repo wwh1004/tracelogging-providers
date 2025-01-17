@@ -1,0 +1,150 @@
+ProviderNames:
+	tssrvlic
+
+
+
+**** Events *****
+Licensing(
+	ANSISTRING msg,
+	HEXINT32 LsStatus
+	);
+
+Licensing(
+	ANSISTRING msg
+	);
+
+Licensing(
+	ANSISTRING msg
+	);
+
+Licensing(
+	ANSISTRING msg
+	);
+
+Licensing(
+	ANSISTRING msg,
+	HEXINT32 Status
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+Logging(
+	ANSISTRING msg,
+	UNICODESTRING LoggerName,
+	HRESULT hr,
+	UNICODESTRING szpLogFilename,
+	UINT64 m_hTrace,
+	UINT64 MaximumFileSize
+	);
+
+Logging(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+Logging(
+	ANSISTRING msg,
+	HRESULT hr,
+	UNICODESTRING szKey
+	);
+
+Logging(
+	ANSISTRING msg,
+	UNICODESTRING m_szLoggerName,
+	UINT64 dwRet
+	);
+
+Logging(
+	ANSISTRING msg,
+	UINT64 this->m_LogFileSize,
+	UNICODESTRING m_szLoggerName
+	);
+
+Logging(
+	ANSISTRING msg
+	);
+
+Logging(
+	ANSISTRING msg,
+	UINT64 this->m_LogFileSize
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	BOOL32 bIsAppServer
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn,
+	BOOL32 bIsAppServer,
+	UNICODESTRING REG_TERMSRV_APPCOMPAT
+	);
+
+SLAPI Checks(
+	ANSISTRING msg
+	);
+
+SLAPI Checks(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+SLAPI Checks(
+	ANSISTRING msg,
+	UINT32 hr
+	);
+
+Licensing_PerUserHelper(
+	ANSISTRING msg,
+	UNICODESTRING pszProperty
+	);
+
+Licensing_PerUserHelper(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+Licensing_PerUserHelper(
+	ANSISTRING msg
+	);
+
+Licensing_PerUserHelper(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UNICODESTRING pszProperty
+	);
+

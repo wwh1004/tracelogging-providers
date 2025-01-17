@@ -1,0 +1,542 @@
+ProviderNames:
+	Microsoft.OneCore.MinInput.Lifted
+	InputCoreLifted
+
+
+
+**** Events *****
+Lifted_ISM/SendMessageToDManip(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount
+	);
+
+Lifted_ISM/SendFrameToGestureTargeting(
+	UINT32 frameId,
+	UINT32 cPointers
+	);
+
+Lifted_ISM/SendFrameToGestureTargeting_Pointer(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	UINT32 hInteraction
+	);
+
+Lifted_ISM/FromDManip_SendMessageCallbackInProc(
+	UINT32 pointerId,
+	HEXINT64 hWnd,
+	HEXINT32 msg,
+	HEXINT64 wParam,
+	HEXINT64 lParam
+	);
+
+Lifted_ISM/FromDManip_DelegateCapturePointersInProc(
+	UINT32 pointerId,
+	UINT32 downFrameId
+	);
+
+Lifted_ISM/FromDManip_HandleDelegatedInputInProc(
+	UINT32 pointerId,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT32 hdiOption
+	);
+
+Lifted_ISM/FromGT_SetManipulationInputTarget(
+	UINT32 pointerId,
+	UINT32 frameId,
+	HEXINT64 inputSink
+	);
+
+Lifted_ISM/InitializeInfrastructure(
+	ANSISTRING Infrastructure
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Lifted_ISM/QueueDManipMsg(
+	HEXINT64 hWnd,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT64 queueLength
+	);
+
+Lifted_ISM/DropTouchpadInput(
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount
+	);
+
+Lifted_ISM/IgnoreWindowMessage(
+	HEXINT64 MessageOnlyHwnd,
+	HEXINT32 Message,
+	HEXINT64 WParam,
+	HEXINT64 LParam
+	);
+
+Lifted_ISM/HandleMouseMoveMessage(
+	HEXINT64 UiThreadHwnd,
+	HEXINT64 MessageOnlyHwnd,
+	HEXINT32 Message,
+	HEXINT64 WParam,
+	HEXINT64 LParam
+	);
+
+Lifted_ISM/HandleWindowMessage(
+	HEXINT64 UiThreadHwnd,
+	HEXINT64 MessageOnlyHwnd,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount
+	);
+
+Lifted_ISM/OnWindowUnregistered(
+	HEXINT64 UiThreadHwnd
+	);
+
+Lifted_ISM/OnWindowRegistered(
+	HEXINT64 UiThreadHwnd,
+	HEXINT64 MessageOnlyHwnd,
+	HEXINT64 InputSink
+	);
+
+Lifted_ISM/DequeueDManipMsg(
+	HEXINT64 hWnd,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT64 queueLength
+	);
+
+Lifted_ISM/ForceReleaseAfterPointerCaptureChange(
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT32 pointerId
+	);
+
+Lifted_ISM/HandleDManipResponse(
+	UINT32 pointerId,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT32 hdiOption
+	);
+
+Lifted_ISM/AttachSystemInputSinkFailed(
+	HEXINT64 UiThreadHwnd,
+	HEXINT64 DCompVisual
+	);
+
+Lifted_ISM/AttachSystemInputSink(
+	HEXINT64 UiThreadHwnd,
+	HEXINT64 InputSink,
+	HEXINT64 DCompVisual
+	);
+
+Lifted_ISM/BeginAttachSystemInputSink(
+	HEXINT64 UiThreadHwnd,
+	HEXINT64 DCompVisual
+	);
+
+Lifted_ISM/EnableInputDropped(
+	HEXINT64 UiThreadHwnd,
+	BOOL32 Enable
+	);
+
+Lifted_ISM/OnWindowRegistered_OnMIT(
+	HEXINT64 UiThreadHwnd
+	);
+
+Lifted_ISM/BeginOnWindowRegistered(
+	HEXINT64 UiThreadHwnd
+	);
+
+Lifted_ISM/OnMITUnregistered(
+	VOID
+	);
+
+Lifted_ISM/OnMITRegistered(
+	VOID
+	);
+
+Lifted_ISM/DequeueFrame(
+	HEXINT64 hWnd,
+	UINT32 frameId,
+	UINT64 queueLength
+	);
+
+Lifted_ISM/RouteFrame_Pointer(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	HEXINT64 InputSinkLuid
+	);
+
+Lifted_ISM/RouteFrame(
+	UINT32 frameId,
+	UINT64 cPointers
+	);
+
+Lifted_ISM/HandleGTResponse(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	HEXINT64 InputSink
+	);
+
+Lifted_ISM/DeliverInputToAllTargets_Pointer(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount
+	);
+
+Lifted_ISM/DeliverInputToAllTargets(
+	UINT32 frameId,
+	UINT32 cPointers
+	);
+
+Lifted_ISM/DeliverInputToTarget(
+	UINT32 frameId,
+	UINT32 cPointers
+	);
+
+Lifted_ISM/DeliverInputToTarget_Pointer(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount
+	);
+
+Lifted_ISM/HitTestContact(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	HEXINT32 HitTestAttributes,
+	UINT32 WorkspaceId,
+	HEXINT64 InputSpaceId,
+	HEXINT64 InputSink,
+	HEXINT64 WindowHandle,
+	UINT32 HitTestedInteraction
+	);
+
+Lifted_ISM/DeliverInputToContextualProcessing_Pointer(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount
+	);
+
+Lifted_ISM/DeliverInputToContextualProcessing(
+	UINT32 frameId,
+	UINT32 cPointers,
+	BOOL32 synthesized
+	);
+
+Lifted_ISM/QueueFrame(
+	HEXINT64 hWnd,
+	UINT32 frameId,
+	UINT64 queueLength
+	);
+
+Lifted_ISM/ProcessPointerInput(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	UINT32 PointerType,
+	HEXINT32 PointerFlags,
+	STRING PixelLocation,
+	INT32 X,
+	INT32 Y,
+	STRING PixelLocationRaw,
+	INT32 X,
+	INT32 Y,
+	STRING HimetricLocation,
+	INT32 X,
+	INT32 Y,
+	STRING HimetricLocationRaw,
+	INT32 X,
+	INT32 Y,
+	INT32 InputData,
+	HEXINT64 SourceDevice,
+	HEXINT64 HwndTarget,
+	UINT32 Time,
+	INT64 PerformanceCount,
+	UINT32 HistoryCount,
+	HEXINT32 KeyStates,
+	UINT32 ButtonChangeType,
+	BOOL32 validContact,
+	UINT32 systemFrameId,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount
+	);
+
+Lifted_ISM/ProcessPointerFrameContact(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	UINT32 systemFrameId
+	);
+
+Lifted_ISM/ProcessPointerFrameInput(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	UINT32 pointerCount,
+	UINT32 historyCount,
+	UINT32 systemFrameId
+	);
+
+Lifted_ISM/DroppedMessageDetected(
+	UINT32 remainingContacts
+	);
+
+Lifted_ISM/HandleDelegatedInput(
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT32 handleOption,
+	UINT64 queueLength,
+	BOOL32 forCallout
+	);
+
+Lifted_ISM/DelegateCallout(
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount,
+	UINT64 queueLength
+	);
+
+Lifted_ISM/SetTouchpadDecision(
+	UINT32 pointerId,
+	HEXINT64 hWnd,
+	UINT32 handleOption
+	);
+
+Lifted_ISM/UndelegateInput(
+	HEXINT64 hWnd
+	);
+
+Lifted_ISM/DelegateInput(
+	HEXINT64 hWnd
+	);
+
+Lifted_ISM/DeliverMessage(
+	HEXINT32 message,
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	FILETIME transform,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+CursorManager/UpdateCursor(
+	HEXINT64 CursorOwner,
+	HEXINT64 Cursor
+	);
+
+CursorManager/RecalculateSystemCursorOwner_OnDMIT(
+	VOID
+	);
+
+CursorManager/RecalculateSystemCursorOwner(
+	VOID
+	);
+
+CursorManager/HitTestResult(
+	STRING Position,
+	INT32 X,
+	INT32 Y,
+	UINT32 WorkspaceID,
+	BOOL32 Successful,
+	UINT64 InputSiteChainSize
+	);
+
+LiftedInputFrameBuilder/ValidationFailed(
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	UNICODESTRING Reason
+	);
+
+LiftedInputFrameBuilder/AbandonInput(
+	UINT32 frameId,
+	UINT64 deviceId,
+	UINT64 contactCount
+	);
+
+LiftedInputFrameBuilder/IncompleteFrameDetected(
+	UINT32 frameId,
+	UINT64 deviceId,
+	UINT32 remainingContacts,
+	UINT32 newFrameId
+	);
+
+Perf::ISM(
+	ANSISTRING Name
+	);
+
+Perf::ISM(
+	ANSISTRING Name
+	);
+
+ContextualProcessing/OnHitTest(
+	UNICODESTRING Processor
+	);
+
+ContextualProcessing::OnHitTest(
+	INT64 InputQPC,
+	UINT32 PointerId,
+	ANSISTRING Type,
+	HEXINT32 DeviceId,
+	UNICODESTRING Processor,
+	ANSISTRING State
+	);
+
+ContextualProcessing::Decision(
+	INT64 InputQPC,
+	ANSISTRING InputType,
+	HEXINT32 DeviceId,
+	UNICODESTRING Processor,
+	UINT32 ContactID,
+	ANSISTRING OldState,
+	ANSISTRING Decision,
+	ANSISTRING NewState,
+	BOOL32 DecisionIsException,
+	HEXINT64 Target,
+	BOOL32 TargetIsException,
+	BOOL32 OutOfFrame,
+	BOOL32 Received,
+	BOOL32 RoutedAway
+	);
+
+ContextualProcessing/OnInput(
+	UNICODESTRING Processor,
+	HEXINT64 Target,
+	INT32 Result
+	);
+
+ContextualProcessing::OnInput(
+	INT64 InputQPC,
+	ANSISTRING InputType,
+	HEXINT32 DeviceId,
+	UNICODESTRING Processor,
+	UINT32 Contacts,
+	INT32 Result
+	);
+

@@ -1,0 +1,1620 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "6ba29edf-a2f4-4212-b06b-6d5712210652",
+                             "ProviderName":  "Microsoft.Windows.Rds.VirtualIP.Service",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerApp_ProcessVirtualizationMode",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "BinaryName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Policy",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerApp_AppFoundRegistry_Virtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "BinaryName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerApp_FullNameDidNotMatch_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "szRegFullAppName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "pszFullPath",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerApp_UnableToOpenRegKey_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "AppRegKey",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerApp_AppNotFoundInGPAppList_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "pszBinaryName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerApp_AppFoundInGPAppList_Virtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "pszBinaryName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerSession_ProcessVirtualizationMode",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "pszBinaryName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "*pPolicy",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerSession_AppFoundInExclusionList_DontVirtualize",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PerSession_FoundAppExclusionRegKey",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "AppRegKey",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StopComponent",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StartComponent",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WilFailure",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "f.hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "function",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "file",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "lineNumber",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "DontVirtualizeProcess",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WarnUserOnIPLeaseFailure_Failed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hrTmp",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GetSessionIP_Failed_NoPrompt",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LoopbockVirtualizationIsNotEnabled",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SessionIsNotVirtualized",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "SessionId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "IsCallerInteractiveUser_Failed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CallerIsNotInteractiveUser_DontVirtualize",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "VirtualIPConfigRefresh",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "AcquireIPAttempts",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "AcquireIPRetriesSleepTime",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "AllowPerSessionInMultNIC",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "EnableVirtualIP",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ForceLogOffOnIPLeaseFail",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "IPPoolUsed",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "MaxCacheIp",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PromptOnIPLeaseFail",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "VirtualMode",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "VirtualizeLoopbackAddressesEnabled",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIP_Virtualize_Loopback",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "VirtualizedLoopbackAddress",
+                                             "InType":  "BINARY",
+                                             "OutType":  "SOCKETADDRESS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PrefixLength",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "NetLuid",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIP_DontVirtualize_Loopback",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIP_Failed_Loopback",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIP_Virtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "VirtualizedAddress",
+                                             "InType":  "BINARY",
+                                             "OutType":  "SOCKETADDRESS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PrefixLength",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "NetLuid",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIP_DontVirtualize",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIP_Failed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "OpenProcess_Failed_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "OpenProcess_AccessDenied_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "isProcessStartedByInteractiveUser_Failed_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "QueryFullProcessImageName_Failed_DontVirtualize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ReplyVirtualIPMessage_Send",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ReplyId",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIPMessage_Send",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIPMessage_Received",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "KernelMessageThreadStop",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RequestVirtualIPMessage_InitialSend",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "DisableLocalAddressRedirect_SUCCESS",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ControlStop_Sent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "CurrentState",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ExitCode",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ControlStop_Sending",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GetDriverSCHandle",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "JoinKernelMessageThread",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CloseDeviceHandle",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StopFilteringMessage_Send",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StopDriver",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StartFilteringMessage_Send",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StartKernelMessageThread",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CreateDeviceHandle",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "EnableLocalAddressRedirect",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StartDriver_KernelThreadAlreadyStarted",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "StartDriver",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GenericTrace",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "szOutput",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GenericTrace",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "szOutput",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GenericTrace",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "szOutput",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  1,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GenericTrace",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "szOutput",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GenericTrace",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "szOutput",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "AppCompat",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "lReturn",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "AppCompat",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "lReturn",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "bIsAppServer",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "REG_TERMSRV_APPCOMPAT",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "AppCompat",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "bIsAppServer",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Failed",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Result",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "function",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "this-\u003em_LogFileSize",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "m_szLoggerName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "m_szLoggerName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "dwRet",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "szKey",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "this-\u003em_LogFileSize",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "Logging",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "msg",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "LoggerName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "hr",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "szpLogFilename",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "m_hTrace",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "MaximumFileSize",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\x86_microsoft-windows-t..-tsappsrv-component_31bf3856ad364e35_10.0.26100.1_none_0fa97d4da2aeaff5\\TSVIPSrv.dll"
+}

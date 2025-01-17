@@ -1,0 +1,1608 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "bcad6aee-c08d-4f66-828c-4c43461a033d",
+                             "ProviderName":  "Microsoft.Windows.AI.MachineLearning",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertCPUTensorToVideoFrameWithSoftwareBitmapStop",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertGPUTensorToSoftwareBitmapStop",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertCPUTensorToVideoFrameWithSoftwareBitmapStart",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Type",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Height",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Width",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GPUTensorToDX12TextureStop",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertGPUTensorToSoftwareBitmapStart",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Type",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Height",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Width",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GPUTensorToDX12TextureStart",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Type",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Height",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Width",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertVideoFrameWithSoftwareBitmapToCPUTensorStart",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Type",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Height",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Width",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertVideoFrameWithSoftwareBitmapToCPUTensorStop",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SoftwareBitmapToGPUTensorStart",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Type",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Height",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Width",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SoftwareBitmapToGPUTensorStop",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "DX12TextureToGPUTensorStart",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Type",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Height",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Width",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "DX12TextureToGPUTensorStop",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InputVideoFrame",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Convert",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "iWidth",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "oWidth",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "iHeight",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "oHeight",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "iLuid",
+                                             "InType":  "HEXINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "oLuid",
+                                             "InType":  "HEXINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "iFormat",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "rX",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "rY",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "rW",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "rH",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  2,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "OnnxRuntimeProfiling",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Duration (us)",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Time Stamp (us)",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Event Name",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Process ID",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Thread ID",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  2,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "OnnxRuntimeProfiling",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Duration (us)",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Time Stamp (us)",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Event Name",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Process ID",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Thread ID",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Operator Name",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Execution Provider",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLLogSink",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "(UINT32)severity",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "code_location",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLLogSink",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "(UINT32)severity",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "code_location",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLLogSink",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "(UINT32)severity",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "code_location",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLLogSink",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "(UINT32)severity",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "code_location",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  1,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLLogSink",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "category",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "(UINT32)severity",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "code_location",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLInputValidation",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "log_stream.str().c_str()",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SetNamedDimensionOverride",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "schemaVersion",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "dimensionName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "overrideValue",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SetLearningModelDevice",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "schemaVersion",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "deviceKind",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SetIntraOpNumThreadsOverride",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "schemaVersion",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "numThreadsOverride",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "maxThreadsOnMachine",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SetIntraOpThreadSpinning",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "schemaVersion",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "threadSpinningAllowed",
+                                             "InType":  "UINT8",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLSuspended",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177665,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RuntimeError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "schemaVersion",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "hResult",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "errormessage",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "file",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "function",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "line",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "runtimeSessionId",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WinMLShutDown",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "message",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  4,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "stopped event",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "event",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "eventId",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  4,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "started event",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "event",
+                                             "InType":  "ANSISTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "eventId",
+                                             "InType":  "INT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-ai-machinelearning_31bf3856ad364e35_10.0.26100.2894_none_aa6047ee3e4b623e\\Windows.AI.MachineLearning.dll"
+}

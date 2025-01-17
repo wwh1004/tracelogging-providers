@@ -1,0 +1,482 @@
+ProviderNames:
+	Microsoft.Windows.Wil.FeatureLogging
+	CbsServicingProvider
+	CbsServicingProvider
+
+
+
+**** Events *****
+FeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT32 addend
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FeatureVariantUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 variantKind,
+	UINT8 variant,
+	UINT32 addend
+	);
+
+FeatureError(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	HRESULT hr,
+	ANSISTRING file,
+	UINT16 lineNumber,
+	ANSISTRING module,
+	ANSISTRING process,
+	ANSISTRING originFile,
+	UINT16 originLineNumber,
+	ANSISTRING originModule,
+	ANSISTRING originName,
+	ANSISTRING message,
+	ANSISTRING callerModule,
+	UINT32 callerReturnAddressOffset,
+	ANSISTRING originCallerModule,
+	UINT32 originCallerReturnAddressOffset
+	);
+
+EnabledFeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT32 addend
+	);
+
+CbsScavengingStarvation(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	UINT32 daysSinceLastScavenge
+	);
+
+CbsPackageRemoval(
+	UINT64 PartA_PrivTags,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT32 buildVersion,
+	UINT32 revisionVersion,
+	INT16 currentStateEnd,
+	INT16 originalState,
+	HEXINT32 hrStatusEnd,
+	INT16 failureSourceEnd,
+	UNICODESTRING failureDetails,
+	UNICODESTRING clientId,
+	INT32 initiatedOffline,
+	UINT32 transactionCanceled,
+	INT16 pendingDecision,
+	UINT32 primitiveExecutionContext,
+	BOOLEAN isHotPatch
+	);
+
+CbsError(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	HEXINT32 cbsErrorCode,
+	UNICODESTRING cbsErrorMessage,
+	ANSISTRING errorCallsite
+	);
+
+CbsRepairScanV2(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	HEXINT32 exitCode,
+	UINT32 elapsedTimeSeconds,
+	UINT32 totalDetected,
+	UINT32 totalFixed,
+	UINT32 manifestsCorrupt,
+	UINT32 manifestsRepaired,
+	UINT32 payloadCorrupt,
+	UINT32 payloadRepaired,
+	UINT32 packagesRemoved,
+	UINT32 timesCorruptionDetected,
+	UINT32 launchType,
+	UINT32 networkCost,
+	UINT32 secondsSinceLastDetected,
+	UINT32 secondsBetweenDetectionAndRepair,
+	UINT32 downloadTimeSeconds,
+	UNICODESTRING DownloadResults,
+	UINT32 repairSource,
+	UNICODESTRING corruptedPackageIdentityList,
+	UINT32 downloadSource
+	);
+
+CbsPackageChangeBeginV3(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	UINT32 identityHash,
+	UNICODESTRING packageName,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT32 buildVersion,
+	UINT32 revisionVersion,
+	UINT32 packageArchitecture,
+	UINT32 packageLanguage,
+	UINT32 srpMaxDiff,
+	INT16 currentStateBegin,
+	INT16 pendingState,
+	INT16 startState,
+	INT16 applicableState,
+	INT16 targetStateBegin,
+	INT16 limitState,
+	HEXINT32 hrStatusBegin,
+	INT16 failureSourceBegin,
+	INT32 rebootRequired,
+	UNICODESTRING clientId,
+	INT32 initiatedOffline,
+	UINT32 executionSequence,
+	UINT32 firstMergedExecutionSequence,
+	UINT32 RMAppSession,
+	UNICODESTRING RMAppName,
+	UNICODESTRING FileInUse,
+	INT16 releaseType,
+	INT16 rebootReason,
+	GUID executionID,
+	GUID firstMergedID,
+	INT32 isOC,
+	UINT32 pkgDownloadSource,
+	UINT32 pkgDownloadTimeInSeconds,
+	HEXINT32 pkgDownloadResult,
+	INT32 expressDownload,
+	UINT64 bytesDownloaded,
+	INT32 usedLowerPriority,
+	INT32 priorityChanges
+	);
+
+CbsCapabilitySessionPended(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UNICODESTRING clientId,
+	UINT32 pendingDecision
+	);
+
+CbsFodInventory(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	INT32 initiatedOffline,
+	UINT64 capabilities
+	);
+
+CbsPostponedReserveInstallDecision(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	BOOLEAN postponed,
+	BOOLEAN usingReserves,
+	UINT64 userFreeSpace,
+	UINT64 hardReserveSize,
+	UINT64 hardReserveUsedSpace
+	);
+
+CbsUpdateDeferred(
+	UINT64 PartA_PrivTags
+	);
+
+CbsScavengeSession(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	UINT32 interruptCount,
+	UINT32 scavengeTimeSeconds,
+	UINT32 scavengeStarted,
+	UINT32 deepcleanTimeSeconds,
+	UINT32 packagesRemoved,
+	UINT32 archiveLogsTimeSeconds,
+	UINT32 catalogDrainTimeSeconds,
+	UINT32 launchType,
+	UINT32 freespaceDecreaseKB,
+	HEXINT32 status,
+	UINT32 statusOrigin
+	);
+
+CbsLateAcquisition(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UNICODESTRING Features,
+	UNICODESTRING RetryID
+	);
+
+CbsQualityUpdateInstall(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT16 stackRevision,
+	UNICODESTRING clientId,
+	HEXINT32 hrStatusEnd,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT32 buildVersion,
+	UINT32 revisionVersion,
+	INT16 currentStateEnd,
+	INT16 originalState,
+	INT32 initiatedOffline,
+	UINT32 primitiveExecutionContext,
+	UINT32 planTimeSeconds,
+	UINT32 resolveTimeSeconds,
+	UINT32 stageTimeSeconds,
+	UINT32 executeTimeSeconds,
+	UINT32 preRebootTimeSeconds,
+	UINT32 shutdownTimeSeconds,
+	UINT32 rebootTimeSeconds,
+	UINT32 postRebootTimeSeconds,
+	UINT32 overallTimeSeconds,
+	UINT32 doqTimeSeconds,
+	UINT32 poqTimeSeconds,
+	UINT32 rptTimeSeconds,
+	UINT32 rebootCount,
+	INT16 failureSourceEnd,
+	UNICODESTRING failureDetails,
+	UINT32 corruptionHistoryFlags,
+	UINT32 corruptionType,
+	BOOLEAN isHotPatch
+	);
+
+CbsCapabilitySessionFinalize(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	HEXINT32 hrStatus,
+	HEXINT32 hrLCUReservicingStatus,
+	UNICODESTRING clientId,
+	UINT32 rebootCount,
+	UNICODESTRING capabilities,
+	INT16 highestState,
+	UNICODESTRING currentID,
+	UNICODESTRING retryID,
+	INT16 retryStatus,
+	UINT32 downloadSource
+	);
+
+CbsOverlayStatus(
+	UINT64 PartA_PrivTags,
+	UINT32 currentStatus,
+	UINT32 configuredStatus
+	);
+
+CbsSelectableUpdateChangeV2(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	HEXINT32 hrStatusUpdate,
+	UINT32 identityHash,
+	UNICODESTRING packageName,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT32 buildVersion,
+	UINT32 revisionVersion,
+	UINT32 packageArchitecture,
+	UINT32 packageLanguage,
+	UNICODESTRING updateName,
+	INT16 updateStartState,
+	INT16 applicableUpdateState,
+	INT16 updateTargetState,
+	UNICODESTRING clientId,
+	INT32 initiatedOffline,
+	UINT32 executionSequence,
+	UINT32 firstMergedExecutionSequence,
+	UINT32 downloadSource,
+	UINT32 downloadtimeInSeconds,
+	HEXINT32 hrDownloadResult,
+	INT32 rebootRequired,
+	GUID executionID,
+	GUID firstMergedID
+	);
+
+CbsPoqexecCompleteV2(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	HEXINT32 status,
+	UNICODESTRING sharingViolationFileName,
+	UNICODESTRING sharingViolationProcessName,
+	UINT32 poqexecContext,
+	UINT32 firstMergedSequence,
+	GUID firstMergedID
+	);
+
+CbsSessionsXMLUsage(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	INT32 sessionsXmlUsageStatus,
+	HEXINT32 cbsError,
+	UNICODESTRING corruptedFileName,
+	HEXINT32 corruptionErrorCode
+	);
+
+CbsPackageChangeEndV2(
+	UINT64 PartA_PrivTags,
+	UINT32 identityHash,
+	UNICODESTRING packageName,
+	INT16 currentStateEnd,
+	INT16 originalState,
+	INT16 targetStateEnd,
+	HEXINT32 hrStatusEnd,
+	INT16 failureSourceEnd,
+	UNICODESTRING failureDetails,
+	UNICODESTRING clientId,
+	INT32 initiatedOffline,
+	UINT32 transactionCanceled,
+	INT16 packageMerged,
+	INT16 pendingDecision,
+	UINT32 primitiveExecutionContext,
+	UINT32 planTimeSeconds,
+	UINT32 resolveTimeSeconds,
+	UINT32 stageTimeSeconds,
+	UINT32 executeTimeSeconds,
+	UINT32 preRebootTimeSeconds,
+	UINT32 shutdownTimeSeconds,
+	UINT32 rebootTimeSeconds,
+	UINT32 postRebootTimeSeconds,
+	UINT32 overallTimeSeconds,
+	UINT32 doqTimeSeconds,
+	UINT32 doqCount,
+	UINT32 poqTimeSeconds,
+	UINT32 poqCount,
+	UINT32 rptTimeSeconds,
+	UINT32 rptCount,
+	UINT32 rebootCount,
+	UINT32 onMobilePc,
+	UINT32 sysvolSizeMB,
+	UINT32 sysvolFreeSpaceMB,
+	UINT32 corruptionHistoryFlags,
+	UINT32 corruptionType,
+	GUID executionID,
+	GUID firstMergedID
+	);
+
+CbsCapabilityEnumeration(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	HEXINT32 hrStatus,
+	UNICODESTRING clientId,
+	UINT32 sourceFilter,
+	UINT32 capabilityCount,
+	UNICODESTRING namespace,
+	UNICODESTRING language,
+	UNICODESTRING architecture,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT32 duration
+	);
+
+CapabilityChange(
+	UINT64 PartA_PrivTags,
+	GUID executionID,
+	UNICODESTRING capabilityIdentity,
+	UNICODESTRING packageIdentity,
+	UINT32 packageIdentityHash,
+	UNICODESTRING clientId,
+	INT16 startState,
+	INT16 targetState
+	);
+
+CbsExecutionInitialized(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING sessionID,
+	GUID executionID
+	);
+
+CbsCapabilityDownloadFailure(
+	UINT64 PartA_PrivTags,
+	UINT16 stackMajorVersion,
+	UINT16 stackMinorVersion,
+	UINT16 stackBuild,
+	UINT16 stackRevision,
+	UNICODESTRING capabilityIdentity,
+	UNICODESTRING packageIdentity,
+	INT16 releaseType,
+	HEXINT32 hrResult,
+	HEXINT32 hrDownloadResult,
+	UNICODESTRING clientId,
+	GUID executionID,
+	UINT32 downloadSource,
+	UINT32 downloadTimeInSeconds
+	);
+

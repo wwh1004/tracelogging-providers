@@ -1,0 +1,932 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "64751f4c-85d0-47d2-82ee-90791c5a54f8",
+                             "ProviderName":  "Microsoft.OneCore.WebThreatDefense.ClipboardMonitor",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         },
+                         {
+                             "ProviderGUID":  "703fcc13-b66f-5868-ddd9-e2db7f381ffb",
+                             "ProviderName":  "Microsoft.Windows.TlgAggregateInternal",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipDeferredInitExit",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Enabled",
+                                             "InType":  "UINT8",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PasteFlowLatency",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Instances",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "MinPasteLatencyInUs",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               114
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "MaxPasteLatencyInUs",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               115
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PasteLatencyAddedInUs",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "NotForegroundWindow",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "CurrentProcess",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ForegroundWindowOwner",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipAsyncRpcSendError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "DataHandleEmpty",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SkippedPasteEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "IsOLE",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "WtdProcessStringExit",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ProcessId",
+                                             "InType":  "UINT32",
+                                             "OutType":  "PID",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "IsOLE",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "HWND",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "BufferSizeInBytes",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "TimeSinceLastPasteInUs",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ThrottlingEvent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "PasteWaitTimeInUs",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "TimeSinceLastPasteInUs",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipCleanupExit",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipDeferredInitWnfQueryError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipRpcSendStringExit",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipDeferredInitRpcCreateError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipDeferredInitRpcBindError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GetForegroundWindowError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipDeferredInitWnfSubscriptionError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipAsyncRpcCompleteError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipMonitorStateChange",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Enabled",
+                                             "InType":  "UINT8",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipRpcCreateEventError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Error",
+                                             "InType":  "UINT32",
+                                             "OutType":  "WIN32ERROR",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ClipRpcAsyncInitError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "NtStatus",
+                                             "InType":  "UINT32",
+                                             "OutType":  "NTSTATUS",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "AnsiStringLengthOutOfRange",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "BufferLength",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "UnicodeStringLengthOutOfRange",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "BufferLength",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "DataHandleInvalidFormat",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  35184372088832,
+                          "KeywordName":  "MS.TELEMETRY",
+                          "Extension":  [
+                                            128,
+                                            4
+                                        ],
+                          "EventName":  "TlgAggregateSummary",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggParams",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Period",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "MaxEvents",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Provider",
+                                             "InType":  "GUID",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-onecore-w..se-clipboardmonitor_31bf3856ad364e35_10.0.26100.1_none_81ce1e57c9df1dfd\\wtdccm.dll"
+}

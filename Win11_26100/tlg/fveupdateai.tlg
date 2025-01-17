@@ -1,0 +1,29 @@
+ProviderNames:
+	Microsoft.Windows.Security.BitLocker.CSP.State.Update
+	Microsoft.Windows.Security.BitLocker.EncryptionDelay
+	Microsoft.Windows.Security.BitLocker.BcdUpdate
+
+
+
+**** Events *****
+BitLocker.OOBE.Complete(
+	BOOLEAN IsEulaManuallyAccepted,
+	BOOLEAN WasEulaDisplayedBySetup,
+	BOOLEAN IsUserLoggedOnPostOobe,
+	BOOLEAN WasEulaDisplayedAndMachineOobeCompleted,
+	BOOLEAN IsAutoPilotScenario,
+	BOOLEAN IsProvisioningComplete,
+	INT32 Status of Autopilot scenario resolution,
+	INT32 Failed to query WNF state data for EULA accepted,
+	INT32 Failed to query WNF state data for user logon completed post oobe,
+	INT32 Failed to query WNF state data for completion of machine oobe,
+	INT32 IsOOBEComplete,
+	INT32 hr_FveIsOOBECompleted
+	);
+
+BitLocker.AutoPilot.Scenario(
+	INT32 trackhr,
+	BOOLEAN IsAutoPilotScenario,
+	INT32 IsAutoPilotLocalProfileAvailable
+	);
+

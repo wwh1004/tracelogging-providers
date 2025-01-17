@@ -1,0 +1,111 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "642df441-8193-4514-869f-7815dca48372",
+                             "ProviderName":  "Microsoft-Windows-DesktopSharing-Viewer",
+                             "ProviderGroupGUID":  ""
+                         },
+                         {
+                             "ProviderGUID":  "20928097-faf7-47fb-9e7c-3a251f0936e8",
+                             "ProviderName":  "RDP",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  35184372088832,
+                          "KeywordName":  "MS.TELEMETRY",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RDPCollabViewer",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "SessionInformation",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "IPV4",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "appName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "axVersion",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "sessionDurationMs",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "universalApp",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "disconnectReason",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "exDisconnectReason",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "connectionResult",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "sessionCorrelationId",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "legacyDllUsed",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-t..ration-viewerax-api_31bf3856ad364e35_10.0.26100.1_none_47fba4b6616c0f5b\\rdpviewerax.dll"
+}

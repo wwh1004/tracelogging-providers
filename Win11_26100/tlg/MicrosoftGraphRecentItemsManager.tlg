@@ -1,0 +1,510 @@
+ProviderNames:
+	Microsoft.Windows.Shell.MicrosoftGraphRecentItemsManager
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveItemMetrics(
+	UINT64 PartA_PrivTags,
+	HRESULT result,
+	HRESULT hideFileAcquireLockResult,
+	UINT64 hideFileAcquireLockDurationMs,
+	HRESULT hideFileLoadDestListToGetItemResult,
+	UINT64 hideFileLoadDestListToGetItemDurationMs,
+	HRESULT hideFileGetItemFromDestListResult,
+	UINT64 hideFileGetItemFromDestListDurationMs,
+	HRESULT hideFileLoadDestListToRemoveItemResult,
+	UINT64 hideFileLoadDestListToRemoveItemDurationMs,
+	HRESULT hideFileRemoveItemFromDestListResult,
+	UINT64 hideFileRemoveItemFromDestListDurationMs,
+	HRESULT hideFileUpdateDestListResult,
+	UINT64 hideFileUpdateDestListDurationMs,
+	HRESULT hideFileAcquireUserTokenResult,
+	UINT64 hideFileAcquireUserTokenDurationMs,
+	HRESULT hideFileRemoveItemFromServiceResult,
+	UINT64 hideFileRemoveItemFromServiceDurationMs,
+	UINT64 hideFileRemoveItemFromServiceTotalWaitIntervalMs,
+	UINT16 hideFileRemoveItemFromServiceRetryCount,
+	HRESULT updateItemsToRemoveResult,
+	HRESULT updateItemsToRemoveGetItemsResult,
+	UINT64 updateItemsToRemoveGetItemsDurationMs,
+	HRESULT updateItemsToRemoveSetItemsResult,
+	UINT64 updateItemsToRemoveSetItemsDurationMs,
+	HRESULT updateItemsToRemoveSaveToDestListResult,
+	UINT64 updateItemsToRemoveSaveToDestListDurationMs
+	);
+
+PinFileUnknownItemMetrics(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING action,
+	HRESULT result,
+	UINT64 acquireLockDurationMs,
+	UINT64 loadDestListDurationMs,
+	UINT64 findItemInDestListDurationMs,
+	HRESULT pinUnknownItemResult,
+	UINT64 pinUnknownItemLoadDestListDurationMs,
+	HRESULT pinUnknownItemAddItemToPersistentCacheResult,
+	UINT64 pinUnknownItemAddItemToPersistentCacheDurationMs,
+	HRESULT writeUnknownItemPinStatusGetUserTokensAADResult,
+	UINT64 writeUnknownItemPinStatusGetUserTokensAADDurationMs,
+	HRESULT writeUnknownItemPinStatusGetUserTokensMSAResult,
+	UINT64 writeUnknownItemPinStatusGetUserTokensMSADurationMs,
+	HRESULT writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenMatchAadUserNameResult,
+	UINT64 writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenMatchAadUserNameDurationMs,
+	UINT64 writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenMatchAadUserNameTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenMatchAadUserNameRetryCount,
+	HRESULT writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenBruteForceResult,
+	UINT64 writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenBruteForceDurationMs,
+	UINT64 writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenBruteForceTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatusAddItemToServiceToAcquireUserTokenBruteForceRetryCount,
+	HRESULT writeUnknownItemPinStatusSyncPinStateResult,
+	UINT64 writeUnknownItemPinStatusSyncPinStateDurationMs
+	);
+
+PinFileKnownItemMetrics(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING action,
+	HRESULT result,
+	UINT64 acquireLockDurationMs,
+	UINT64 loadDestListDurationMs,
+	UINT64 findItemInDestListDurationMs,
+	HRESULT pinKnownItemResult,
+	UINT64 pinKnownItemLoadDestListDurationMs,
+	HRESULT pinKnownItemUpdateItemInPersistentCacheResult,
+	UINT64 pinKnownItemUpdateItemInPersistentCacheDurationMs,
+	HRESULT pinKnownItemAcquireUserTokenResult,
+	UINT64 pinKnownItemAcquireUserTokenDurationMs,
+	HRESULT pinKnownItemUpdatePinStateOnServiceResult,
+	UINT64 pinKnownItemUpdatePinStateOnServiceDurationMs,
+	UINT64 pinKnownItemUpdatePinStateOnServiceTotalWaitIntervalMs,
+	UINT16 pinKnownItemUpdatePinStateOnServiceRetryCount,
+	HRESULT pinKnownItemSyncPinStateResult,
+	UINT64 pinKnownItemSyncPinStateDurationMs
+	);
+
+DismissRecommendationsMetrics(
+	UINT64 PartA_PrivTags,
+	UINT64 snoozeDurationHrs,
+	UINT64 acquireRecommendationsMutexDurationMs,
+	HRESULT acquireRecommendationsMutexResultCode,
+	BOOLEAN areRequiredArgsProvided,
+	UINT64 addToFilterListDurationMs,
+	HRESULT addToFilterListResultCode,
+	UINT64 writeToDestListDurationMs,
+	HRESULT writeToDestListResultCode,
+	UINT64 getAuthTokenDurationMs,
+	HRESULT getAuthTokenResultCode,
+	INT32 getAuthTokenRetryCount,
+	UINT64 getAuthTokenTotalWaitInterval,
+	UINT64 dismissDurationMs,
+	HRESULT dismissResultCode,
+	INT32 dismissRetryCount,
+	UINT64 dismissTotalWaitIntervalMs,
+	UINT64 removeFromFilterListDurationMs,
+	HRESULT removeFromFilterListResultCode,
+	UINT64 totalDurationMs,
+	HRESULT overallResultCode
+	);
+
+RefreshRecommendationsMetrics(
+	UINT64 PartA_PrivTags,
+	UINT64 version,
+	UINT64 totalDurationMs,
+	UINT64 getDefaultWebAccountDurationMs,
+	HRESULT getDefaultWebAccountResultCode,
+	BOOLEAN displayedCachedRecommendations,
+	UINT64 writeRecommendationsToDestListDurationMs,
+	UINT64 crossRankingDurationMs,
+	HRESULT crossRankingResultCode,
+	UINT64 accountsCount,
+	UINT64 account0GetUserTokenDurationMs,
+	HRESULT account0GetUserTokenResultCode,
+	UINT64 account0GetRecommendedFilesDurationMs,
+	HRESULT account0GetRecommendedFilesResultCode,
+	UNICODESTRING account0AccountKind
+	);
+
+RequestRefreshMetrics(
+	UINT64 PartA_PrivTags,
+	UINT64 totalRefreshDurationMs,
+	HRESULT result,
+	UINT64 acquireMaxCacheAgeDurationMs,
+	UINT64 checkForAnyCloudAccountsDurationMs,
+	UINT64 acquireSystemLockDurationMs,
+	UINT64 getDestinationListMetadataDurationMs,
+	UINT64 acquireMaxFullRefreshAgeDurationMs,
+	UINT64 initialRefreshSetupDurationMs,
+	UINT64 acquireAccountsDurationMs,
+	UINT64 refreshFilesForRetrievedAccountsDurationMs,
+	UINT32 destListItemsWriteLimit,
+	UINT64 accountsCount,
+	HRESULT account0Result,
+	UNICODESTRING account0AccountKind,
+	HRESULT account0AuthenticationStageHResult,
+	UNICODESTRING account0AuthenticationStageAuthenticationError,
+	UNICODESTRING account0AuthenticationStageCorrelationId,
+	UNICODESTRING account0AuthenticationStageAADError,
+	UINT64 account0AuthenticationStageTokenRequestDuration,
+	UNICODESTRING account0RefreshType,
+	HRESULT account0RecentServiceCallResult,
+	UINT16 account0RecentServiceCallRetryCount,
+	UINT64 account0RecentServiceCallDurationMs,
+	UINT64 account0RecentServiceCallTotalWaitIntervalMs,
+	HRESULT account0PinnedServiceCallResult,
+	UINT16 account0PinnedServiceCallRetryCount,
+	UINT64 account0PinnedServiceCallDurationMs,
+	UINT64 account0PinnedServiceCallTotalWaitIntervalMs,
+	UINT64 account0LoadDestinationListDurationMs,
+	UINT64 account0UpdatePinSyncStatusesDurationMs,
+	UINT64 account0UpdateDestinationListDurationMs,
+	UINT64 account0WriteDataDurationMs,
+	UINT32 account0NumberOfUpsertItems,
+	UINT32 account0NumberOfDeletedItems,
+	UINT64 account0TotalRefreshDurationMs,
+	HRESULT account1Result,
+	UNICODESTRING account1AccountKind,
+	HRESULT account1AuthenticationStageHResult,
+	UNICODESTRING account1AuthenticationStageAuthenticationError,
+	UNICODESTRING account1AuthenticationStageCorrelationId,
+	UNICODESTRING account1AuthenticationStageAADError,
+	UINT64 account1AuthenticationStageTokenRequestDuration,
+	UNICODESTRING account1RefreshType,
+	HRESULT account1RecentServiceCallResult,
+	UINT16 account1RecentServiceCallRetryCount,
+	UINT64 account1RecentServiceCallDurationMs,
+	UINT64 account1RecentServiceCallTotalWaitIntervalMs,
+	HRESULT account1PinnedServiceCallResult,
+	UINT16 account1PinnedServiceCallRetryCount,
+	UINT64 account1PinnedServiceCallDurationMs,
+	UINT64 account1PinnedServiceCallTotalWaitIntervalMs,
+	UINT64 account1LoadDestinationListDurationMs,
+	UINT64 account1UpdatePinSyncStatusesDurationMs,
+	UINT64 account1UpdateDestinationListDurationMs,
+	UINT64 account1WriteDataDurationMs,
+	UINT32 account1NumberOfUpsertItems,
+	UINT32 account1NumberOfDeletedItems,
+	UINT64 account1TotalRefreshDurationMs,
+	HRESULT account2Result,
+	UNICODESTRING account2AccountKind,
+	HRESULT account2AuthenticationStageHResult,
+	UNICODESTRING account2AuthenticationStageAuthenticationError,
+	UNICODESTRING account2AuthenticationStageCorrelationId,
+	UNICODESTRING account2AuthenticationStageAADError,
+	UINT64 account2AuthenticationStageTokenRequestDuration,
+	UNICODESTRING account2RefreshType,
+	HRESULT account2RecentServiceCallResult,
+	UINT16 account2RecentServiceCallRetryCount,
+	UINT64 account2RecentServiceCallDurationMs,
+	UINT64 account2RecentServiceCallTotalWaitIntervalMs,
+	HRESULT account2PinnedServiceCallResult,
+	UINT16 account2PinnedServiceCallRetryCount,
+	UINT64 account2PinnedServiceCallDurationMs,
+	UINT64 account2PinnedServiceCallTotalWaitIntervalMs,
+	UINT64 account2LoadDestinationListDurationMs,
+	UINT64 account2UpdatePinSyncStatusesDurationMs,
+	UINT64 account2UpdateDestinationListDurationMs,
+	UINT64 account2WriteDataDurationMs,
+	UINT32 account2NumberOfUpsertItems,
+	UINT32 account2NumberOfDeletedItems,
+	UINT64 account2TotalRefreshDurationMs
+	);
+
+RemoveItemEvent(
+	VOID
+	);
+
+UnpinItemEvent(
+	VOID
+	);
+
+PinItemEvent(
+	VOID
+	);
+
+DismissRecommendationEvent(
+	VOID
+	);
+
+RefreshRecommendationsEvent(
+	VOID
+	);
+
+RequestRefreshEvent(
+	VOID
+	);
+
+TraceLogging(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING logMessage,
+	UNICODESTRING context,
+	ANSISTRING fileName,
+	ANSISTRING callerMethodName,
+	UINT32 callerLineNumber
+	);
+
+UnexpectedException(
+	UNICODESTRING methodName,
+	INT32 hresult,
+	UNICODESTRING errorMessage,
+	UINT64 PartA_PrivTags
+	);
+
+TraceLogging(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING logMessage,
+	UNICODESTRING context,
+	ANSISTRING fileName,
+	ANSISTRING callerMethodName,
+	UINT32 callerLineNumber
+	);
+
+TraceLogging(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING logMessage,
+	UNICODESTRING context,
+	ANSISTRING fileName,
+	ANSISTRING callerMethodName,
+	UINT32 callerLineNumber
+	);
+
+SyncAllOutstandingPinStatusMetrics(
+	UINT64 PartA_PrivTags,
+	HRESULT result,
+	UINT64 acquireLockDurationMs,
+	UINT64 loadDestListDurationMs,
+	UINT64 loadItemsInDestListDurationMs,
+	INT32 writeKnownItemPinStatusTelemetryCount,
+	HRESULT writeKnownItemPinStatus0Result,
+	HRESULT writeKnownItemPinStatus0AcquireUserTokenResult,
+	UINT64 writeKnownItemPinStatus0AcquireUserTokenDurationMs,
+	HRESULT writeKnownItemPinStatus0UpdatePinStateOnServiceResult,
+	UINT64 writeKnownItemPinStatus0UpdatePinStateOnServiceDurationMs,
+	UINT64 writeKnownItemPinStatus0UpdatePinStateOnServiceTotalWaitIntervalMs,
+	UINT16 writeKnownItemPinStatus0UpdatePinStateOnServiceRetryCount,
+	HRESULT writeKnownItemPinStatus1Result,
+	HRESULT writeKnownItemPinStatus1AcquireUserTokenResult,
+	UINT64 writeKnownItemPinStatus1AcquireUserTokenDurationMs,
+	HRESULT writeKnownItemPinStatus1UpdatePinStateOnServiceResult,
+	UINT64 writeKnownItemPinStatus1UpdatePinStateOnServiceDurationMs,
+	UINT64 writeKnownItemPinStatus1UpdatePinStateOnServiceTotalWaitIntervalMs,
+	UINT16 writeKnownItemPinStatus1UpdatePinStateOnServiceRetryCount,
+	HRESULT writeKnownItemPinStatus2Result,
+	HRESULT writeKnownItemPinStatus2AcquireUserTokenResult,
+	UINT64 writeKnownItemPinStatus2AcquireUserTokenDurationMs,
+	HRESULT writeKnownItemPinStatus2UpdatePinStateOnServiceResult,
+	UINT64 writeKnownItemPinStatus2UpdatePinStateOnServiceDurationMs,
+	UINT64 writeKnownItemPinStatus2UpdatePinStateOnServiceTotalWaitIntervalMs,
+	UINT16 writeKnownItemPinStatus2UpdatePinStateOnServiceRetryCount,
+	INT32 writeUnknownItemPinStatusTelemetryCount,
+	HRESULT writeUnknownItemPinStatus0Result,
+	HRESULT writeUnknownItemPinStatus0GetUserTokensAADResult,
+	UINT64 writeUnknownItemPinStatus0GetUserTokensAADDurationMs,
+	HRESULT writeUnknownItemPinStatus0GetUserTokensMSAResult,
+	UINT64 writeUnknownItemPinStatus0GetUserTokensMSADurationMs,
+	HRESULT writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenMatchAadUserNameResult,
+	UINT64 writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenMatchAadUserNameDurationMs,
+	UINT64 writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenMatchAadUserNameTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenMatchAadUserNameRetryCount,
+	HRESULT writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenBruteForceResult,
+	UINT64 writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenBruteForceDurationMs,
+	UINT64 writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenBruteForceTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatus0AddItemToServiceToAcquireUserTokenBruteForceRetryCount,
+	HRESULT writeUnknownItemPinStatus0SyncPinStateResult,
+	UINT64 writeUnknownItemPinStatus0SyncPinStateDurationMs,
+	HRESULT writeUnknownItemPinStatus1Result,
+	HRESULT writeUnknownItemPinStatus1GetUserTokensAADResult,
+	UINT64 writeUnknownItemPinStatus1GetUserTokensAADDurationMs,
+	HRESULT writeUnknownItemPinStatus1GetUserTokensMSAResult,
+	UINT64 writeUnknownItemPinStatus1GetUserTokensMSADurationMs,
+	HRESULT writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenMatchAadUserNameResult,
+	UINT64 writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenMatchAadUserNameDurationMs,
+	UINT64 writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenMatchAadUserNameTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenMatchAadUserNameRetryCount,
+	HRESULT writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenBruteForceResult,
+	UINT64 writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenBruteForceDurationMs,
+	UINT64 writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenBruteForceTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatus1AddItemToServiceToAcquireUserTokenBruteForceRetryCount,
+	HRESULT writeUnknownItemPinStatus1SyncPinStateResult,
+	UINT64 writeUnknownItemPinStatus1SyncPinStateDurationMs,
+	HRESULT writeUnknownItemPinStatus2Result,
+	HRESULT writeUnknownItemPinStatus2GetUserTokensAADResult,
+	UINT64 writeUnknownItemPinStatus2GetUserTokensAADDurationMs,
+	HRESULT writeUnknownItemPinStatus2GetUserTokensMSAResult,
+	UINT64 writeUnknownItemPinStatus2GetUserTokensMSADurationMs,
+	HRESULT writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenMatchAadUserNameResult,
+	UINT64 writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenMatchAadUserNameDurationMs,
+	UINT64 writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenMatchAadUserNameTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenMatchAadUserNameRetryCount,
+	HRESULT writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenBruteForceResult,
+	UINT64 writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenBruteForceDurationMs,
+	UINT64 writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenBruteForceTotalWaitIntervalMs,
+	UINT16 writeUnknownItemPinStatus2AddItemToServiceToAcquireUserTokenBruteForceRetryCount,
+	HRESULT writeUnknownItemPinStatus2SyncPinStateResult,
+	UINT64 writeUnknownItemPinStatus2SyncPinStateDurationMs
+	);
+
+SyncOutstandingPinStatusEvent(
+	VOID
+	);
+
+TraceLogging(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING logMessage,
+	UNICODESTRING context,
+	ANSISTRING fileName,
+	ANSISTRING callerMethodName,
+	UINT32 callerLineNumber
+	);
+
+SyncAllOutstandingRecommendationDismissMetrics(
+	UINT64 PartA_PrivTags,
+	UINT64 acquireRecommendationsMutexDurationMs,
+	UINT64 getAllFilterItemsDurationMs,
+	UINT64 getDismissAllFilterItemsDurationMs,
+	UINT64 getOverwriteFilterItemsDurationMs,
+	UINT64 getTotalDurationMs,
+	HRESULT getOverallResultCode,
+	UINT64 recommendedDismissSyncStatusTelemetryCount,
+	DOUBLE avgSuccessFilterItemSyncCount,
+	UINT64 filterItemsOverSyncThresholdCount,
+	HRESULT dismissSyncRecommendationItem0Result,
+	HRESULT dismissSyncRecommendationItem0AuthResult,
+	UINT64 dismissSyncRecommendationItem0AuthDurationMs,
+	HRESULT dismissSyncRecommendationItem0ServiceResult,
+	UINT64 dismissSyncRecommendationItem0ServiceDurationMs,
+	UINT64 dismissSyncRecommendationItem0ServiceTotalWaitIntervalMs,
+	UINT16 dismissSyncRecommendationItem0ServiceRetryCount,
+	HRESULT dismissSyncRecommendationItem1Result,
+	HRESULT dismissSyncRecommendationItem1AuthResult,
+	UINT64 dismissSyncRecommendationItem1AuthDurationMs,
+	HRESULT dismissSyncRecommendationItem1ServiceResult,
+	UINT64 dismissSyncRecommendationItem1ServiceDurationMs,
+	UINT64 dismissSyncRecommendationItem1ServiceTotalWaitIntervalMs,
+	UINT16 dismissSyncRecommendationItem1ServiceRetryCount,
+	HRESULT dismissSyncRecommendationItem2Result,
+	HRESULT dismissSyncRecommendationItem2AuthResult,
+	UINT64 dismissSyncRecommendationItem2AuthDurationMs,
+	HRESULT dismissSyncRecommendationItem2ServiceResult,
+	UINT64 dismissSyncRecommendationItem2ServiceDurationMs,
+	UINT64 dismissSyncRecommendationItem2ServiceTotalWaitIntervalMs,
+	UINT16 dismissSyncRecommendationItem2ServiceRetryCount
+	);
+
+SyncAllOutstandingHideStatusMetrics(
+	UINT64 PartA_PrivTags,
+	HRESULT result,
+	HRESULT syncAllHideStatusAcquireLockResult,
+	UINT64 syncAllHideStatusAcquireLockDurationMs,
+	HRESULT syncAllHideStatusLoadDestListResult,
+	UINT64 syncAllHideStatusLoadDestListDurationMs,
+	HRESULT syncAllHideStatusLoadItemsInDestListResult,
+	UINT64 syncAllHideStatusLoadItemsInDestListDurationMs,
+	INT32 syncItemHideStatusTelemetryCount,
+	HRESULT syncItemHideStatus0Result,
+	HRESULT syncItemHideStatus0AcquireUserTokenResult,
+	UINT64 syncItemHideStatus0AcquireUserTokenDurationMs,
+	HRESULT syncItemHideStatus0RemoveItemFromServiceResult,
+	UINT64 syncItemHideStatus0RemoveItemFromServiceDurationMs,
+	UINT64 syncItemHideStatus0RemoveItemFromServiceTotalWaitIntervalMs,
+	UINT16 syncItemHideStatus0RemoveItemFromServiceRetryCount,
+	HRESULT syncItemHideStatus1Result,
+	HRESULT syncItemHideStatus1AcquireUserTokenResult,
+	UINT64 syncItemHideStatus1AcquireUserTokenDurationMs,
+	HRESULT syncItemHideStatus1RemoveItemFromServiceResult,
+	UINT64 syncItemHideStatus1RemoveItemFromServiceDurationMs,
+	UINT64 syncItemHideStatus1RemoveItemFromServiceTotalWaitIntervalMs,
+	UINT16 syncItemHideStatus1RemoveItemFromServiceRetryCount,
+	HRESULT syncItemHideStatus2Result,
+	HRESULT syncItemHideStatus2AcquireUserTokenResult,
+	UINT64 syncItemHideStatus2AcquireUserTokenDurationMs,
+	HRESULT syncItemHideStatus2RemoveItemFromServiceResult,
+	UINT64 syncItemHideStatus2RemoveItemFromServiceDurationMs,
+	UINT64 syncItemHideStatus2RemoveItemFromServiceTotalWaitIntervalMs,
+	UINT16 syncItemHideStatus2RemoveItemFromServiceRetryCount,
+	HRESULT updateItemsToRemoveResult,
+	HRESULT updateItemsToRemoveGetItemsResult,
+	UINT64 updateItemsToRemoveGetItemsDurationMs,
+	HRESULT updateItemsToRemoveSetItemsResult,
+	UINT64 updateItemsToRemoveSetItemsDurationMs,
+	HRESULT updateItemsToRemoveSaveToDestListResult,
+	UINT64 updateItemsToRemoveSaveToDestListDurationMs
+	);
+
+SyncAllOutstandingDismissRecommendationStatusEvent(
+	VOID
+	);
+
+SyncOutstandingHideStatusEvent(
+	VOID
+	);
+
+UnexpectedActivityException(
+	INT32 hresult,
+	UNICODESTRING errorMessage,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedThumbnailException(
+	INT32 hresult,
+	UNICODESTRING errorMessage,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedRecommendationsException(
+	INT32 hresult,
+	UNICODESTRING errorMessage,
+	UINT64 PartA_PrivTags
+	);
+
+EdgeworthResponseNotCompleteDiagnostics(
+	UINT32 httpStatusCode,
+	UINT32 responseCode,
+	UNICODESTRING serverCorrelationId,
+	UNICODESTRING correlationId,
+	UNICODESTRING extendedInfo,
+	UNICODESTRING buildNumber,
+	UINT64 PartA_PrivTags
+	);
+

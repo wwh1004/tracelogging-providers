@@ -1,0 +1,141 @@
+ProviderNames:
+	Microsoft.Windows.Security.CryptoWinRT
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+NgcSymmetricPopKey.ImportStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcSymmetricPopKey.ImportStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcSymmetricPopKey.VerifyStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal,
+	INT32 retValVerify
+	);
+
+NgcSymmetricPopKey.SignStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcSymmetricPopKey.EncryptStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcSymmetricPopKey.EncryptStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcSymmetricPopKey.VerifyStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcSymmetricPopKey.SignStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcSymmetricPopKey.DecryptStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcSymmetricPopKey.DecryptStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredential.RetrievePublicKeyWithDefaultBlobTypeStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredential.NgcGetAttestationOperationStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal,
+	UINT32 status
+	);
+
+NgcKeyCredential.NgcSignMessageOperationStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal,
+	UINT32 status
+	);
+
+NgcKeyCredential.NgcGetAttestationOperationStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredential.NgcSignMessageOperationStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredential.RetrievePublicKeyWithDefaultBlobTypeStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcKeyCredential.RetrievePublicKeyWithBlobTypeStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcKeyCredential.RetrievePublicKeyWithBlobTypeStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredentialManager.NgcOpenKeyOperationStop(
+	ANSISTRING __TlgCV__,
+	UINT32 status
+	);
+
+NgcKeyCredentialManager.NgcCheckAvailabilityOperationStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal,
+	UINT8 available
+	);
+
+NgcKeyCredentialManager.NgcCheckAvailabilityOperationStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredentialManager.NgcCreateUserIdKeyOperationStop(
+	ANSISTRING __TlgCV__,
+	UINT32 status
+	);
+
+NgcKeyCredentialManager.NgcDeleteKeyOperationStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal
+	);
+
+NgcKeyCredentialManager.NgcCreateUserIdKeyOperationStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredentialManager.RenewAttestationStop(
+	ANSISTRING __TlgCV__,
+	INT32 retVal,
+	INT32 retValRenew
+	);
+
+NgcKeyCredentialManager.RenewAttestationStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredentialManager.NgcDeleteKeyOperationStart(
+	ANSISTRING __TlgCV__
+	);
+
+NgcKeyCredentialManager.NgcOpenKeyOperationStart(
+	ANSISTRING __TlgCV__
+	);
+

@@ -1,0 +1,1240 @@
+ProviderNames:
+	Microsoft.UI.Content
+	Microsoft.UI.Input
+	Microsoft.Windows.Wil.FeatureLogging
+	Microsoft.OneCore.MinInput.Lifted
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Dll_Detach(
+	UNICODESTRING ProductVersionString,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+Dll_StartUp(
+	UNICODESTRING ProductVersionString,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DllLoaded(
+	UNICODESTRING ProductVersionString,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+FeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT64 addend
+	);
+
+FeatureVariantUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 variantKind,
+	UINT8 variant,
+	UINT64 addend
+	);
+
+FeatureError(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	HRESULT hr,
+	ANSISTRING file,
+	UINT16 lineNumber,
+	ANSISTRING module,
+	ANSISTRING process,
+	ANSISTRING originFile,
+	UINT16 originLineNumber,
+	ANSISTRING originModule,
+	ANSISTRING originName,
+	ANSISTRING message,
+	ANSISTRING callerModule,
+	UINT32 callerReturnAddressOffset,
+	ANSISTRING originCallerModule,
+	UINT32 originCallerReturnAddressOffset
+	);
+
+EnabledFeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT64 addend
+	);
+
+InputPointerSource/PointerMessageIsAfterKeyboardMessage(
+	UINT32 pointerMessageTime,
+	UINT32 nextKeyboardMessageTime
+	);
+
+InputPointerSource/ForcedFlushOfCoalescedInputAfterKeyboardMessage(
+	VOID
+	);
+
+InputPointerSource/PointerMessagesDeliveredAfterKeyboardMessage(
+	UINT64 messagesDequeued,
+	UINT64 messagesRemaining
+	);
+
+InputPointerSource/PointerMessageDelayedForKeyboardOrdering(
+	HEXINT32 message,
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount
+	);
+
+InputPointerSource/InvokePointerEvent(
+	HEXINT32 message
+	);
+
+InputPointerSource/CoalescePointerEvents(
+	HEXINT32 message,
+	UINT64 pointerCount,
+	UINT64 historyCount
+	);
+
+InputPointerSource/ReceiveMessage(
+	HEXINT32 message,
+	UINT32 PointerId,
+	UINT32 FrameId,
+	HEXINT32 PointerFlags,
+	INT64 PerformanceCount,
+	FILETIME transform,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+Lifted_ISM/ReceiveKeyboardMessage(
+	HEXINT32 message,
+	HEXINT32 virtualKey,
+	UINT32 messageTime,
+	HEXINT32 Message,
+	PID MessageStruct,
+	HEXINT32 WindowMessage,
+	HEXINT64 WindowHandle,
+	HEXINT64 WParam,
+	HEXINT64 LParam,
+	HEXINT32 TickCount
+	);
+
+PointerPredictionErrors(
+	FLOAT MeanNormalError,
+	FLOAT MeanOvershootError,
+	FLOAT MeanLagError,
+	FLOAT MeanWiggleError,
+	FLOAT MeanStutterError,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_put_Root(
+	UINT64 IslandId,
+	HEXINT64 IVisual,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_put_IsContentVisible(
+	UINT64 PartA_PrivTags,
+	UINT64 IslandId,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentIsland_CreateStateDeferral(
+	UINT64 IslandId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_put_RequestedSize(
+	UINT64 PartA_PrivTags,
+	UINT64 IslandId,
+	FLOAT X,
+	FLOAT Y,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentIsland_put_IsContentEnabled(
+	UINT64 PartA_PrivTags,
+	UINT64 IslandId,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentIsland_put_AppData(
+	UINT64 IslandId,
+	HEXINT64 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_put_IsHitTestAlways(
+	UINT64 PartA_PrivTags,
+	UINT64 IslandId,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentIsland_ChangeCurrentState(
+	UINT64 IslandId,
+	UNICODESTRING newState,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentIsland_DisconnectContent_Callback(
+	UINT64 PartA_PrivTags,
+	UINT64 IslandId,
+	HEXINT64 ContentSite,
+	BOOL32 SiteDestroyed,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentIsland_Initialize(
+	HEXINT64 Session,
+	HEXINT64 RootVisual,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_Initialize_Complete(
+	UINT64 IslandId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_Destroy(
+	UINT64 IslandId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIsland_ConnectContent_Callback(
+	UINT64 IslandId,
+	HEXINT64 ContentSite,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_put_IsScaleAlreadyApplied(
+	UINT64 PartA_PrivTags,
+	HEXINT64 ContentSite,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSite_TryCreateStateDeferral(
+	HEXINT64 ContentSite,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_SetContentNodeParent(
+	HEXINT64 ContentSite,
+	HEXINT64 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_put_SystemBackdrop(
+	HEXINT64 ContentSite,
+	HEXINT64 value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_TEMP_NotifyDisplayChanged(
+	HEXINT64 ContentSite,
+	UINT64 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_put_OverrideScale(
+	HEXINT64 ContentSite,
+	FLOAT Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_put_ParentScale(
+	HEXINT64 ContentSite,
+	FLOAT Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_put_IsSiteEnabled(
+	UINT64 PartA_PrivTags,
+	HEXINT64 ContentSite,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSite_put_IsSiteVisible(
+	UINT64 PartA_PrivTags,
+	HEXINT64 ContentSite,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSite_put_LayoutDirection(
+	UINT64 PartA_PrivTags,
+	HEXINT64 ContentSite,
+	UNICODESTRING layoutDirection,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSite_put_PhysicalSize(
+	HEXINT64 ContentSite,
+	INT32 Width,
+	INT32 Height,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSite_OnConnected_Callback(
+	HEXINT64 ContentSite,
+	UINT64 IslandId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_OnDisconnecting(
+	HEXINT64 ContentSite,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_put_ActualSize(
+	HEXINT64 ContentSite,
+	FLOAT X,
+	FLOAT Y,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_Destroy(
+	HEXINT64 ContentSite,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSite_Initialize(
+	UINT64 PartA_PrivTags,
+	HEXINT64 ContentSite,
+	HEXINT64 Session,
+	HEXINT64 Compositor,
+	HEXINT64 HostHwnd,
+	HEXINT64 HostVisual,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+LocalContentOutput/Connect(
+	HEXINT64 LocalContentOutput,
+	HEXINT64 SharedVisualHandle,
+	HEXINT64 InputHWND,
+	HEXINT64 InputReadyEvent
+	);
+
+LocalContentOutput/Initialize(
+	HEXINT64 LocalContentOutput
+	);
+
+LocalContentOutput/Initialize(
+	HEXINT64 LocalContentOutput,
+	HEXINT64 ContentIsland
+	);
+
+ContentIslandEnvironment_Destroy(
+	UINT64 WindowId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIslandEnvironment_Initialize_Complete(
+	UINT64 WindowId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIslandEnvironment_Initialize(
+	UINT64 OwnerId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentIslandEnvironment_Event_SettingsChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 WindowId,
+	UNICODESTRING Setting,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteWindow_NotifySettingChanged(
+	UINT64 PartA_PrivTags,
+	HEXINT64 Owner,
+	UNICODESTRING Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteWindow_put_DisplayId(
+	HEXINT64 Owner,
+	UINT64 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteWindow_put_WindowId(
+	HEXINT64 Owner,
+	UINT64 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteWindow_OnDisconnecting(
+	HEXINT64 Owner,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteWindow_put_NativeOrientation(
+	UINT64 PartA_PrivTags,
+	HEXINT64 Owner,
+	UNICODESTRING Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteWindow_put_DisplayScale(
+	HEXINT64 Owner,
+	FLOAT Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteWindow_put_CurrentOrientation(
+	UINT64 PartA_PrivTags,
+	HEXINT64 Owner,
+	UNICODESTRING Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteWindow_Initialize(
+	HEXINT64 Owner,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentExternalOutputLink_put_ExternalOutputBorderMode(
+	UINT64 PartA_PrivTags,
+	HEXINT64 Visual,
+	UNICODESTRING BorderMode,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentExternalOutputLink_Initialize(
+	HEXINT64 Compositor,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentExternalOutputLink_put_BackgroundColor(
+	HEXINT64 Visual,
+	UINT8 A,
+	UINT8 R,
+	UINT8 G,
+	UINT8 B,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentExternalOutputLink_Dispose(
+	HEXINT64 Visual,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentExternalOutputLink_Initialize_Complete(
+	HEXINT64 Visual,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+CoreWindowSiteBridge_Initialize(
+	HEXINT64 Compositor,
+	HEXINT64 CoreWindow,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+SystemVisualSiteBridge_Initialize(
+	HEXINT64 LocalCompositor,
+	HEXINT64 HostVisual,
+	HEXINT64 ParentForInputHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopChildSiteBridge_HandleUnexpectedState_ChildError(
+	UINT64 PartA_PrivTags,
+	HEXINT64 bridgeHwnd,
+	HEXINT64 actualHwnd,
+	UNICODESTRING actualTitle,
+	UNICODESTRING actualClassName,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopChildSiteBridge_HandleUnexpectedState_ParentError(
+	UINT64 PartA_PrivTags,
+	HEXINT64 bridgeHwnd,
+	HEXINT64 actualHwnd,
+	UNICODESTRING actualTitle,
+	UNICODESTRING actualClassName,
+	HEXINT64 expectedHwnd,
+	UNICODESTRING expectedTitle,
+	UNICODESTRING expectedcClassName,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopChildSiteBridge_Initialize_Completed(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopChildSiteBridge_Initialize(
+	HEXINT64 Compositor,
+	HEXINT64 ParentHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopChildSiteBridge_WM_DPICHANGED_BEFOREPARENT(
+	HEXINT64 BridgeHwnd,
+	FLOAT WindowScale,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopChildSiteBridge_put_ResizePolicy(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	UNICODESTRING ContentSizePolicy,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_ShouldLightDismissAllPopups(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentAppWindowBridge_WM_WINDOWPOSCHANGED(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_WM_THEMECHANGED(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_WM_ACTIVATE(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_Dispose(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentAppWindowBridge_Initialize(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentAppWindowBridge_WM_SETTINGCHANGE(
+	HEXINT64 HwndTopLevel,
+	UNICODESTRING Setting,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_WM_SETFOCUS(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_WM_DPICHANGED(
+	HEXINT64 HwndTopLevel,
+	UINT32 X,
+	UINT32 Y,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentAppWindowBridge_WM_DISPLAYCHANGE(
+	HEXINT64 HwndTopLevel,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopSiteBridge_MoveAndResize(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	INT32 X,
+	INT32 Y,
+	INT32 Width,
+	INT32 Height,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopSiteBridge_ShowCommand(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	UNICODESTRING ShowCmd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopSiteBridge_WM_POINTERACTIVATE(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopSiteBridge_WM_MOUSEACTIVATE(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DesktopSiteBridge_WM_NCDESTROY(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopSiteBridge_WM_GETOBJECT(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteBridge_TryCreatePopupSiteBridge(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteBridge_Connect(
+	HEXINT64 BridgeHwnd,
+	UINT64 IslandId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopSiteBridge_put_InputEnabled(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteBridge_put_OverrideScale(
+	HEXINT64 BridgeHwnd,
+	FLOAT Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteBridge_put_LayoutDirectionOverride(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	UNICODESTRING layoutDirection,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ContentSiteBridge_Close(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ContentSiteBridge_CreateContentSite(
+	HEXINT64 Compositor,
+	HEXINT64 HostHwnd,
+	HEXINT64 HostVisual,
+	HEXINT64 WindowBridge,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+WindowParentChain_WM_ENTERSIZEMOVE(
+	HEXINT64 Hwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_ProcessEnabledStateChanged(
+	HEXINT64 Hwnd,
+	BOOL32 Enabled,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_WM_EXITSIZEMOVE(
+	HEXINT64 Hwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_ProcessWindowPosChanged_Offset(
+	HEXINT64 Hwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_ProcessWindowPosChanged_Visibility(
+	HEXINT64 Hwnd,
+	BOOL32 Visible,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_ProcessSetRedraw_Visibility(
+	HEXINT64 Hwnd,
+	BOOL32 Visible,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_WindowPosChanged_Visibility(
+	HEXINT64 Hwnd,
+	BOOL32 Visible,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_ProcessWindowPosChanged_BridgeSize(
+	HEXINT64 Hwnd,
+	INT32 X,
+	INT32 Y,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+WindowParentChain_ProcessWindowPosChanged_BridgeParentSize(
+	HEXINT64 Hwnd,
+	INT32 X,
+	INT32 Y,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+PopupWindowSiteBridge_WM_ACTIVATE(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+PopupWindowSiteBridge_WM_WINDOWPOSCHANGED(
+	HEXINT64 BridgeHwnd,
+	UINT32 Flags,
+	INT32 CX,
+	INT32 CY,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+PopupWindowSiteBridge_Initialize_Complete(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+PopupWindowSiteBridge_Initialize(
+	HEXINT64 Compositor,
+	HEXINT64 ParentHwnd,
+	HEXINT64 ContentSiteBridgeOwner,
+	HEXINT64 WindowBridge,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+PopupWindowSiteBridge_put_Anchored(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	BOOL32 Value,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+PopupWindowSiteBridge_Show(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+PopupWindowSiteBridge_MoveAndResize(
+	UINT64 PartA_PrivTags,
+	HEXINT64 BridgeHwnd,
+	INT32 X,
+	INT32 Y,
+	INT32 Width,
+	INT32 Height,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+PopupWindowSiteBridge_Hide(
+	HEXINT64 BridgeHwnd,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+

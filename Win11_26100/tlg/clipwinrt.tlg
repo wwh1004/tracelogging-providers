@@ -1,0 +1,113 @@
+ProviderNames:
+	Microsoft.Windows.Licensing.ClipWinRT
+
+
+
+**** Events *****
+TokenRequestBeforeLM(
+	HRESULT Result,
+	BOOLEAN RequestUserInteraction,
+	UINT64 PartA_PrivTags
+	);
+
+AcquireSubscriptionLicenseFailure(
+	HRESULT LMResult,
+	HRESULT Result
+	);
+
+AcquireSubscriptionLicense(
+	HRESULT Result,
+	UNICODESTRING Pfn
+	);
+
+EditionChangeStatus(
+	BOOL32 EditionChangeSuccessStatus,
+	BOOL32 DeviceProLicensingStatus,
+	UNICODESTRING ProPfnInstalled,
+	HRESULT Result,
+	UINT64 PartA_PrivTags
+	);
+
+RemoveSubscriptionLicense(
+	HRESULT Result,
+	UINT64 PartA_PrivTags
+	);
+
+AcquireAADDeviceToken(
+	UINT16 AADDeviceTokenLength,
+	HRESULT Result,
+	INT16 AADDeviceTokenRetry,
+	UINT64 PartA_PrivTags
+	);
+
+AcquireMSATicket(
+	UINT16 MSATicketLength,
+	HRESULT Result,
+	INT16 MSATicketRetry,
+	UINT64 PartA_PrivTags
+	);
+
+RemoveDeviceLicense(
+	HRESULT Result,
+	UINT64 PartA_PrivTags
+	);
+
+GetDlsServerResponse(
+	UINT16 DlsServerResponseLength,
+	HRESULT Result,
+	INT16 DlsServerRetry,
+	INT16 DlsHttpStatusCode,
+	UNICODESTRING DlsTraceID,
+	UINT64 PartA_PrivTags
+	);
+
+AcquireSubscriptionLicenseStart(
+	UINT64 PartA_PrivTags
+	);
+
+UpdateBaseSku(
+	HRESULT Result,
+	UNICODESTRING PreferredOs,
+	UNICODESTRING OsProductPfn,
+	UINT64 PartA_PrivTags
+	);
+
+AcquireSubscriptionLicenseStop(
+	HRESULT Result,
+	HRESULT ResultLM1,
+	HRESULT ResultLM2,
+	UINT64 PartA_PrivTags
+	);
+
+DlsServerResponseForPaygo(
+	UINT32 DlsServerResponseLength,
+	HRESULT Result,
+	UINT32 DlsHttpStatusCode,
+	UNICODESTRING CorrelationId,
+	UNICODESTRING ProductPfn,
+	UINT16 TokenType,
+	UINT64 PartA_PrivTags
+	);
+
+RemovePGSLicense(
+	HRESULT Result,
+	UINT64 PartA_PrivTags
+	);
+
+AcquireArcIDToken(
+	HRESULT Result,
+	UNICODESTRING Stage,
+	UINT64 PartA_PrivTags
+	);
+
+ActivationManagerInternal.RedeemProductKey(
+	UINT64 PartA_PrivTags,
+	HRESULT Result,
+	UINT64 RedemptionStage,
+	UINT64 GenuineState,
+	BOOL32 IsDefaultKey,
+	GUID SkuId,
+	UNICODESTRING PFN,
+	UNICODESTRING ProductKeyType
+	);
+

@@ -1,0 +1,608 @@
+ProviderNames:
+	Microsoft-Windows-Shell-CortanaTrace
+	Microsoft.Windows.Shell.CortanaSearch
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 lineNumber,
+	ANSISTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+ConfigurationManager_IsDeviceTouch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ConfigurationManager_RefreshNetworkConnectionType(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ConfigurationManager_IsBingEnabled(
+	BOOLEAN isBingEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+ConfigurationManager_MsaAttentionRequiredErrorCode(
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+ConfigurationManager_IsDeviceTouch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ConfigurationManager_IsDeviceTouch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConfigurationManager_RefreshNetworkConnectionType(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ConfigurationManager_RefreshNetworkConnectionType(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetDeviceId(
+	BINARY DeviceId
+	);
+
+GetDeviceId(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+GetDeviceId(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetDeviceId(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_FindConnectedAccount_AccountNotFound(
+	INT32 hr
+	);
+
+UserAuthenticationManager_FindConnectedAccount(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_FindConnectedAccount(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_FindConnectedAccount(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_CreateWebTokenRequest(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_CreateWebTokenRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_CreateWebTokenRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_FindWebAccountProvider(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_FindWebAccountProvider(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_FindWebAccountProvider(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_EnsureDefaultMsaOrDeviceAuthenticated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_EnsureDefaultMsaOrDeviceAuthenticated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_EnsureDefaultMsaOrDeviceAuthenticated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_EnsureDeviceAuthenticated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_EnsureDeviceAuthenticated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_EnsureDeviceAuthenticated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_RefreshConnectedAccountState(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN HasDefaultConnectedAccount,
+	BOOLEAN HasConnectedAccount
+	);
+
+UserAuthenticationManager_RefreshConnectedAccountState(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN HasDefaultConnectedAccount,
+	BOOLEAN HasConnectedAccount
+	);
+
+UserAuthenticationManager_RefreshConnectedAccountState(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_RefreshConnectedAccountState(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_RefreshConnectedAccountState(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UserAuthenticationManager_EnsureUserAuthenticated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 Status,
+	UINT32 ErrorCode
+	);
+
+UserAuthenticationManager_EnsureUserAuthenticated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 Status,
+	UINT32 ErrorCode
+	);
+
+UserAuthenticationManager_EnsureUserAuthenticated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 ServiceTarget,
+	UNICODESTRING Authority
+	);
+
+UserAuthenticationManager_EnsureUserAuthenticated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UserAuthenticationManager_EnsureUserAuthenticated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+

@@ -1,0 +1,37 @@
+ProviderNames:
+	XperfCoreProvider
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+OnDataComplete(
+	INT64 pass,
+	UNICODESTRING InfoSource,
+	UNICODESTRING GUID
+	);
+
+OnDataComplete(
+	INT64 pass,
+	UNICODESTRING InfoSource,
+	UNICODESTRING GUID
+	);
+
+OnEventBatch(
+	INT64 pass
+	);
+
+OnEventDuration(
+	INT64 pass,
+	UNICODESTRING InfoSource,
+	UNICODESTRING GUID,
+	INT64 Duration
+	);
+
+OnEventBatch(
+	INT64 pass
+	);
+

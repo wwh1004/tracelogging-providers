@@ -1,0 +1,1272 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "c12f629d-37d4-58f7-22a8-94ac45ad8648",
+                             "ProviderName":  "Microsoft.Windows.Security.NGC.Utils",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "FailureInfo",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "debugString",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  1,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "memcpy_sFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LoadStringWFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "BuildNgcKeyNameStringInvalidLength",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "BuildNgcKeyNameStringConvertContainerId",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "BuildNgcKeyNameStringConvertSid",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GetUserAccountType",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "ConvertStringSidToSid",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LsaLookupUserAccountType",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LsaLookupAuthenticationPackageError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RtlUnicodeStringToAnsiStringError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LsaConnectUntrustedError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CacheGetUserNameAndDomain",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "userSid",
+                                             "InType":  "SID",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "userName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "domain",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CacheGetUserSid",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "userName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "sid",
+                                             "InType":  "SID",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InvalidSidNameUse",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "sidNameUse",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LsaLookupSids2",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LookupAccountSidLocalW",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "FallBackToLocalSidLookup",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LsaOpenPolicy",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GetTokenInformation",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GetTokenInformation",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LookupAccountNameLocalWFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LookupAccountNameLocalWSizeQuerySucceededUnexpectedly",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "LookupAccountNameLocalWSizeQueryFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InvalidSerializationBufferUserSidTooLarge",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InvalidSerializationBufferTooSmall",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InvalidFlags",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "flags",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InvalidGestures",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "gestures",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "UserSidRequired",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PinCharCountRequired",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "NCryptGetProperty",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "NCryptGetPropertyRequiredByteCount",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "NCryptOpenKey",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "NCryptOpenStorageProvider",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "UnmarshaledCredentialUnsupportedType",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CredUnmarshalCredential",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CredUnPackAuthenticationBufferWFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CredUnPackAuthenticationBufferWSizeQuerySucceededUnexpectedly",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CredUnPackAuthenticationBufferWSizeQueryFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "InvalidSerializationBufferBadSubmitType",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "UnmarshaledSspiCredentialNotV2",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SspiUnmarshalCredUIContext",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CredUnPackAuthenticationBufferWIsNotPresent",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CertGetCertificateContextProperty",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CertGetCertificateContextPropertyRequiredSize",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CertFindCertificateInStore",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CertNotPresentInMyStore",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "CertOpenSystemStore",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RegEnumKeyExFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RegQueryInfoKeyFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RegOpenKeyExFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SetProtectorUpdateNeededRegKey",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "SID",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RegSetValueProtectorUpdateNeededFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "RegOpenKeySensorInfoFailed",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "retVal",
+                                             "InType":  "INT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-security-ngc-utils_31bf3856ad364e35_10.0.26100.1_none_452549fa4dd64fb9\\ngcutils.dll"
+}

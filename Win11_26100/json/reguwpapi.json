@@ -1,0 +1,767 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "3ea8eaef-db33-4f2e-bb7c-ef7ad091a0f2",
+                             "ProviderName":  "Microsoft.Windows.Kernel.Registry.FromApp",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         },
+                         {
+                             "ProviderGUID":  "703fcc13-b66f-5868-ddd9-e2db7f381ffb",
+                             "ProviderName":  "Microsoft.Windows.TlgAggregateInternal",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AttemptDisallowedSubkeyAccess",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AttemptedWowRedirection(Aggregate)",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Count",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Flags",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "FuncId",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "DisallowedOptions(Aggregate)",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Count",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Options",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "FuncId",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AttemptedWowRedirection",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Flags",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "FuncId",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "BadAccessMask(Aggregate)",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Count",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "AllowedAccess",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RequestedAccess",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AllowlistMatch",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "RootKey",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RelativePath",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AllowlistMismatch(Aggregate)",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Count",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RootKey",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "BadAccessMask",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "AllowedAccess",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RequestedAccess",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RootKey",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RelativePath",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AllowlistMismatch",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "RootKey",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RelativePath",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "AllowlistMatch(Aggregate)",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Count",
+                                             "InType":  "INT64",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               128,
+                                                               128,
+                                                               128,
+                                                               113
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RootKey",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "RelativePath",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "DisallowedOptions",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "Options",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "FuncId",
+                                             "InType":  "UINT16",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  35184372088832,
+                          "KeywordName":  "MS.TELEMETRY",
+                          "Extension":  [
+                                            128,
+                                            4
+                                        ],
+                          "EventName":  "TlgAggregateSummary",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggParams",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Period",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "MaxEvents",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Provider",
+                                             "InType":  "GUID",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "UtcAggVal",
+                                             "InType":  "STRUCT",
+                                             "OutType":  "BOOLEAN",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Name",
+                                             "InType":  "COUNTEDSTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Value",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "Mode",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-onecore-registry-fromapp-api_31bf3856ad364e35_10.0.26100.1_none_92f452bd6288e4c8\\reguwpapi.dll"
+}

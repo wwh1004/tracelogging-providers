@@ -1,0 +1,102 @@
+ProviderNames:
+	WheaProvider
+	WheaProvider
+
+
+
+**** Events *****
+WheaDriverErrorInternalNonCritical(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp,
+	UINT64 errorFlags,
+	GUID platformId,
+	GUID partitionId,
+	GUID creatorId,
+	GUID notifyType,
+	UINT64 recordId,
+	GUID sectionTypes,
+	UINT64 sectionFlags,
+	UINT64 severityCount,
+	BINARY record
+	);
+
+WheaErrorRecord(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp,
+	UINT64 errorFlags,
+	GUID platformId,
+	GUID partitionId,
+	GUID creatorId,
+	GUID notifyType,
+	UINT64 recordId,
+	GUID sectionTypes,
+	UINT64 sectionFlags,
+	UINT64 severityCount,
+	BINARY record
+	);
+
+WheaDriverErrorExternalNonCritical(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp,
+	UINT64 errorFlags,
+	GUID platformId,
+	GUID partitionId,
+	GUID creatorId,
+	GUID notifyType,
+	UINT64 recordId,
+	GUID sectionTypes,
+	UINT64 sectionFlags,
+	UINT64 severityCount,
+	BINARY record
+	);
+
+WheaDriverErrorExternal(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp,
+	UINT64 errorFlags,
+	GUID platformId,
+	GUID partitionId,
+	GUID creatorId,
+	GUID notifyType,
+	UINT64 recordId,
+	GUID sectionTypes,
+	UINT64 sectionFlags,
+	UINT64 severityCount,
+	BINARY record
+	);
+
+WheaDriverErrorInternal(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp,
+	UINT64 errorFlags,
+	GUID platformId,
+	GUID partitionId,
+	GUID creatorId,
+	GUID notifyType,
+	UINT64 recordId,
+	GUID sectionTypes,
+	UINT64 sectionFlags,
+	UINT64 severityCount,
+	BINARY record
+	);
+
+WheaErrorRecordNonCritical(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp,
+	UINT64 errorFlags,
+	GUID platformId,
+	GUID partitionId,
+	GUID creatorId,
+	GUID notifyType,
+	UINT64 recordId,
+	GUID sectionTypes,
+	UINT64 sectionFlags,
+	UINT64 severityCount,
+	BINARY record
+	);
+
+WheaDriverExternalLogginLimitReached(
+	UINT64 PartA_PrivTags,
+	ANSISTRING timeStamp
+	);
+

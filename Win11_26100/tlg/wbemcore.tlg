@@ -1,0 +1,143 @@
+ProviderNames:
+	Microsoft.Windows.WMI.Winmgmt
+
+
+
+**** Events *****
+CWmiFinalizer::~CWmiFinalizer(
+	UINT32 Request_Id,
+	INT32 ResultStatus,
+	UNICODESTRING CorrelationId,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_GetObjectAsync(
+	ANSISTRING OperationType,
+	UNICODESTRING ObjectPath,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_PutInstanceAsync(
+	ANSISTRING OperationType,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_PutClassAsync(
+	ANSISTRING OperationType,
+	INT32 lFlags,
+	UNICODESTRING Class,
+	UNICODESTRING RelPath,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_DeleteClassAsync(
+	ANSISTRING OperationType,
+	INT32 lFlags,
+	UNICODESTRING ClassOrg,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::UniversalConnect(
+	UNICODESTRING correlationID,
+	UINT32 operation_Id,
+	UNICODESTRING ClientMachineName,
+	UNICODESTRING ClientMachineNameFQDN,
+	UNICODESTRING UserName,
+	UINT32 ClientProcessID,
+	UINT64 ClientProcIdCreationTime,
+	INT32 bIsLocal,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_ExecNotificationQueryAsync(
+	ANSISTRING OperationType,
+	UNICODESTRING QueryLanguage,
+	UNICODESTRING Query,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_DeleteInstance(
+	ANSISTRING OperationType,
+	UNICODESTRING ObjectPath,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_ExecQueryAsync(
+	ANSISTRING OperationType,
+	UNICODESTRING QueryFormat,
+	UNICODESTRING strQuery,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_CreateInstanceEnumAsync(
+	ANSISTRING OperationType,
+	UNICODESTRING Class,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::~CWbemNamespace(
+	UINT32 Operation_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_ExecMethodAsync(
+	ANSISTRING OperationType,
+	UNICODESTRING ObjectPath,
+	UNICODESTRING MethodName,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	ANSISTRING pInParams,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+
+CWbemNamespace::_CreateClassEnumAsync(
+	ANSISTRING OperationType,
+	UNICODESTRING strParent,
+	INT32 lFlags,
+	UINT32 ClientProcessID,
+	UNICODESTRING Namespace,
+	UINT32 Operation_Id,
+	UINT32 Request_Id,
+	UINT64 PartA_PrivTags
+	);
+

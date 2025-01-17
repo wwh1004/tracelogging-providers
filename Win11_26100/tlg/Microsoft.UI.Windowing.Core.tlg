@@ -1,0 +1,297 @@
+ProviderNames:
+	Microsoft.UI.Windowing.Core
+
+
+
+**** Events *****
+CTitleBar_InputSinkWndProc(
+	HEXINT64 hwnd,
+	UINT32 msg,
+	UINT64 wParam,
+	INT64 lParam
+	);
+
+AppWindowTitleBar_SetDragRectangles(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_PreferredHeightOption(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	INT32 preferredHeightOption
+	);
+
+AppWindowTitleBar_put_InactiveForegroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_InactiveBackgroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ForegroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ExtendsContentIntoTitleBar(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	BOOLEAN extendsContentIntoTitleBar
+	);
+
+AppWindowTitleBar_put_ButtonPressedForegroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonPressedBackgroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonInactiveForegroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonInactiveBackgroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonHoverForegroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonHoverBackgroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonForegroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_ButtonBackgroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowTitleBar_put_BackgroundColor(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+Window_Api_Utils_Destroy(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+Window_GetCombinedWindowStyles(
+	HEXINT64 hwnd
+	);
+
+Window_InitContextStatics(
+	VOID
+	);
+
+Window_DetachFeature(
+	HEXINT64 hwnd,
+	UNICODESTRING featureType
+	);
+
+Window_AttachFeature(
+	HEXINT64 hwnd,
+	UNICODESTRING featureType
+	);
+
+Window_ProcessWindowMessage_NCDestroy(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+Window_DisposeLeave(
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+Window_DisposeEnter(
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+Window(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+YieldAndCall_GetTitleEnd(
+	HEXINT64 hwnd,
+	UNICODESTRING hString
+	);
+
+YieldAndCall_GetTitleStart(
+	HEXINT64 hwnd
+	);
+
+YieldAndCall_SetWindowStyles(
+	HEXINT64 hwnd,
+	UINT64 styles,
+	UINT64 appliedStyles
+	);
+
+YieldAndCall_DestroyWnd(
+	HEXINT64 hwnd
+	);
+
+ReunionModule_DllGetActivationFactory(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING hString
+	);
+
+ReunionModule_StartUp(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ReunionModule_Detach(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+

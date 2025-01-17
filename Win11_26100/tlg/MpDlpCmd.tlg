@@ -1,0 +1,26 @@
+ProviderNames:
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+
+
+
+**** Events *****
+Platform.DLP.DetailsDialog(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+

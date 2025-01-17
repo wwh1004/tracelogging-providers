@@ -1,0 +1,74 @@
+ProviderNames:
+	RDSNetFairshare
+
+
+
+**** Events *****
+UniqueId(
+	ANSISTRING msg,
+	UINT32 Id
+	);
+
+UniqueId(
+	ANSISTRING msg,
+	UINT32 Id
+	);
+
+UniqueId(
+	ANSISTRING msg,
+	UINT32 Id,
+	BOOL32 IsUsed
+	);
+
+UniqueId(
+	ANSISTRING msg,
+	UINT32 Id,
+	UINT32 ulNextAvailableId
+	);
+
+UniqueId(
+	ANSISTRING msg,
+	UINT32 ulNextAvailableId
+	);
+
+UniqueId(
+	ANSISTRING msg
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	BOOL32 bIsAppServer
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn,
+	BOOL32 bIsAppServer,
+	UNICODESTRING REG_TERMSRV_APPCOMPAT
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+

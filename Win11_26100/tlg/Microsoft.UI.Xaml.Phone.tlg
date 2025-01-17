@@ -1,0 +1,24 @@
+ProviderNames:
+	Microsoft.UI.Xaml.Phone
+	Microsoft.UI.Xaml
+
+
+
+**** Events *****
+XamlFailFast(
+	INT32 ErrorCode,
+	UINT64 PartA_PrivTags
+	);
+
+RuntimeProfiler(
+	ANSISTRING BinaryVersion,
+	ANSISTRING ApiCounts,
+	UINT32 ProfileGroupId,
+	UINT32 TotalCount,
+	BOOLEAN OnSuspend,
+	BOOLEAN Overflow,
+	BOOLEAN StringOverflow,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+

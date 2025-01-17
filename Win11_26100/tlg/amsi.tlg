@@ -1,0 +1,43 @@
+ProviderNames:
+	Microsoft.Antimalware.Scan.Interface
+
+
+
+**** Events *****
+AmsiScan(
+	UINT64 PartA_PrivTags,
+	UINT32 ProviderIndex,
+	GUID Guid,
+	UINT64 Duration,
+	UINT32 Hr,
+	UINT32 Result
+	);
+
+AmsiProvider(
+	UINT64 PartA_PrivTags,
+	GUID Guid,
+	UINT64 Duration,
+	UINT32 Context,
+	UINT32 CurrentTotal
+	);
+
+AmsiUacScan(
+	UINT64 PartA_PrivTags,
+	UINT32 ProviderIndex,
+	GUID Guid,
+	UINT64 Duration,
+	UINT32 Hr,
+	UINT32 Result
+	);
+
+AmsiProviderFailTrust(
+	UINT64 PartA_PrivTags,
+	UINT64 Time,
+	GUID Guid,
+	UNICODESTRING FullPath,
+	UINT32 HResult,
+	UINT32 FeatureBits,
+	UINT32 AskedLevel,
+	UINT32 ReturnedLevel
+	);
+

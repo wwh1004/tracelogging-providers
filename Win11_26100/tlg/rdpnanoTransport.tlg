@@ -1,0 +1,3034 @@
+ProviderNames:
+	RDP.Nano
+	RDP.ServerStack.Diagnostics
+	Microsoft.Streaming.Nano.Network
+	Microsoft.Streaming.Nano.Network.ICE
+	Microsoft.Streaming.Nano.Network.urcp
+	Microsoft.Streaming.Basix
+	Microsoft.Streaming.Nano.Network.rdpNano
+
+
+
+**** Events *****
+"URCPDebug"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketOnClose"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketConnect"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketWrite"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+"WebSocketWrite"(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING nano
+	);
+
+ICETurnRefreshResult(
+	ANSISTRING type,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	ANSISTRING correlationId,
+	UTF8 candidate,
+	UINT32 response,
+	UINT32 timeout
+	);
+
+ICETurnActiveCloseResult(
+	ANSISTRING type,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	ANSISTRING correlationId,
+	UTF8 candidate,
+	UINT32 response
+	);
+
+RateControlReport(
+	UINT32 connectionID,
+	DOUBLE localRtt,
+	UINT64 bandwidth
+	);
+
+RateControlReport(
+	UINT32 connectionID,
+	DOUBLE localRtt,
+	UINT64 bandwidth
+	);
+
+RateControlSendEvent(
+	UINT32 connectionID,
+	UINT32 BytesToSend,
+	UINT32 BytesInFlight,
+	UINT32 FlowCtlMaxBytesToSend,
+	UINT32 UrcpBytesToSend
+	);
+
+RateControlSendEvent(
+	UINT32 connectionID,
+	UINT32 BytesToSend,
+	UINT32 BytesInFlight,
+	UINT32 FlowCtlMaxBytesToSend,
+	UINT32 UrcpBytesToSend
+	);
+
+URCPProcessTimeout(
+	UINT32 connectionID,
+	UINT32 totalLostBytes,
+	UINT32 currWindow
+	);
+
+URCPProcessTimeout(
+	UINT32 connectionID,
+	UINT32 totalLostBytes,
+	UINT32 currWindow
+	);
+
+URCPRateProcessTimeout(
+	UINT32 connectionID,
+	UINT32 totalLostBytes,
+	UINT64 currRate
+	);
+
+URCPRateProcessTimeout(
+	UINT32 connectionID,
+	UINT32 totalLostBytes,
+	UINT64 currRate
+	);
+
+URCPOnNACK(
+	UINT32 connectionID,
+	UINT32 cntPacketsLost,
+	DOUBLE dLoss,
+	DOUBLE dLossMin,
+	DOUBLE AveLossWindow,
+	BOOLEAN fSendingWindowFull
+	);
+
+URCPOnNACK(
+	UINT32 connectionID,
+	UINT32 cntPacketsLost,
+	DOUBLE dLoss,
+	DOUBLE dLossMin,
+	DOUBLE AveLossWindow,
+	BOOLEAN fSendingWindowFull
+	);
+
+URCPOnACKStart(
+	UINT32 connectionID,
+	UINT32 NewRTT,
+	UINT32 packetLength,
+	DOUBLE dWindow,
+	UINT32 BytesInFlightRoundTrip,
+	BOOLEAN fIsValidDelay,
+	INT64 oneWayDelay,
+	BOOLEAN isOneWayDelayValid,
+	BOOLEAN fSendingWindowFull
+	);
+
+URCPOnACKStart(
+	UINT32 connectionID,
+	UINT32 NewRTT,
+	UINT32 packetLength,
+	DOUBLE dWindow,
+	UINT32 BytesInFlightRoundTrip,
+	BOOLEAN fIsValidDelay,
+	INT64 oneWayDelay,
+	BOOLEAN isOneWayDelayValid,
+	BOOLEAN fSendingWindowFull
+	);
+
+URCPRateOnACKStart(
+	UINT32 connectionID,
+	DOUBLE NewRTT,
+	UINT32 packetLength,
+	DOUBLE dWindow,
+	UINT32 dataBytesInFlight,
+	BOOLEAN fIsValidDelay,
+	BOOLEAN fSendingWindowFull,
+	UINT32 BytesToSend
+	);
+
+URCPRateOnACKStart(
+	UINT32 connectionID,
+	DOUBLE NewRTT,
+	UINT32 packetLength,
+	DOUBLE dWindow,
+	UINT32 dataBytesInFlight,
+	BOOLEAN fIsValidDelay,
+	BOOLEAN fSendingWindowFull,
+	UINT32 BytesToSend
+	);
+
+URCPOnACKNewBaseRTT(
+	UINT32 connectionID,
+	DOUBLE minRTT,
+	DOUBLE minDelay,
+	DOUBLE CurMinDelay
+	);
+
+URCPOnACKNewBaseRTT(
+	UINT32 connectionID,
+	DOUBLE minRTT,
+	DOUBLE minDelay,
+	DOUBLE CurMinDelay
+	);
+
+SignalSenderCalled(
+	UINT32 connectionID
+	);
+
+SignalSenderCalled(
+	UINT32 connectionID
+	);
+
+ProcessSignalSender(
+	UINT32 connectionID,
+	UINT32 checkSenderQ
+	);
+
+ProcessSignalSender(
+	UINT32 connectionID,
+	UINT32 checkSenderQ
+	);
+
+SignalSenderFromRCCalled(
+	UINT32 connectionID,
+	UINT32 pendingBytes,
+	INT32 force
+	);
+
+SignalSenderFromRCCalled(
+	UINT32 connectionID,
+	UINT32 pendingBytes,
+	INT32 force
+	);
+
+SignalSenderTimeout(
+	UINT32 connectionID
+	);
+
+SignalSenderTimeout(
+	UINT32 connectionID
+	);
+
+SetupSignalSenderTO(
+	UINT32 connectionID,
+	UINT32 BitRate,
+	UINT32 PendingBytes,
+	UINT32 TOinMS
+	);
+
+SetupSignalSenderTO(
+	UINT32 connectionID,
+	UINT32 BitRate,
+	UINT32 PendingBytes,
+	UINT32 TOinMS
+	);
+
+URCPOnACKSlowStartUpdate(
+	UINT32 connectionID,
+	DOUBLE Delay,
+	DOUBLE currWindow,
+	DOUBLE origWindow,
+	DOUBLE DelayWindow,
+	DOUBLE SmallDelayWindow,
+	BOOLEAN fSendingWindowFull
+	);
+
+URCPOnACKSlowStartUpdate(
+	UINT32 connectionID,
+	DOUBLE Delay,
+	DOUBLE currWindow,
+	DOUBLE origWindow,
+	DOUBLE DelayWindow,
+	DOUBLE SmallDelayWindow,
+	BOOLEAN fSendingWindowFull
+	);
+
+URCPRateOnACKSlowStartUpdate(
+	UINT32 connectionID,
+	DOUBLE Delay,
+	DOUBLE currRate,
+	DOUBLE origRate,
+	DOUBLE DelayWindowNum,
+	DOUBLE SmallDelayWindow,
+	BOOLEAN SendingWindowFull,
+	DOUBLE CurMinDelay
+	);
+
+URCPRateOnACKSlowStartUpdate(
+	UINT32 connectionID,
+	DOUBLE Delay,
+	DOUBLE currRate,
+	DOUBLE origRate,
+	DOUBLE DelayWindowNum,
+	DOUBLE SmallDelayWindow,
+	BOOLEAN SendingWindowFull,
+	DOUBLE CurMinDelay
+	);
+
+URCPSetCongestionWindow(
+	UINT32 connectionID,
+	DOUBLE window,
+	DOUBLE RTT,
+	DOUBLE Bandwidth
+	);
+
+URCPSetCongestionWindow(
+	UINT32 connectionID,
+	DOUBLE window,
+	DOUBLE RTT,
+	DOUBLE Bandwidth
+	);
+
+TraceRouteStart(
+	VOID
+	);
+
+TraceRouteStart(
+	VOID
+	);
+
+TraceRouteHopComplete(
+	UINT32 hopNumber,
+	UINT64 routerRtt,
+	COUNTEDANSISTRING routerAddress,
+	BOOLEAN hopTimeout
+	);
+
+TraceRouteHopComplete(
+	UINT32 hopNumber,
+	UINT64 routerRtt,
+	COUNTEDANSISTRING routerAddress,
+	BOOLEAN hopTimeout
+	);
+
+TraceRouteResults(
+	COUNTEDANSISTRING route
+	);
+
+TraceRouteResults(
+	COUNTEDANSISTRING route
+	);
+
+IntialFECConfiguration(
+	UINT32 ChannelId,
+	UINT32 InitialFECBlockSize,
+	UINT32 FECVersion
+	);
+
+IntialFECConfiguration(
+	UINT32 ChannelId,
+	UINT32 InitialFECBlockSize,
+	UINT32 FECVersion
+	);
+
+FECIncomingDataPacket(
+	UINT32 ChannelId,
+	UINT16 PacketSN,
+	UINT8 Flags
+	);
+
+FECIncomingDataPacket(
+	UINT32 ChannelId,
+	UINT16 PacketSN,
+	UINT8 Flags
+	);
+
+FECOutgoingStatistics(
+	UINT32 ChannelId,
+	UINT32 OutgoingDataPacketCount,
+	UINT32 OutgoingFECPacketCount
+	);
+
+FECOutgoingStatistics(
+	UINT32 ChannelId,
+	UINT32 OutgoingDataPacketCount,
+	UINT32 OutgoingFECPacketCount
+	);
+
+FECIncomingStatistics(
+	UINT32 ChannelId,
+	UINT32 IncomingDataPacketCount,
+	UINT32 IncomingFECPacketCount,
+	UINT32 IncomingRecoveredPacketCount,
+	UINT32 IncomingFECNoErrorBlocksCount,
+	UINT32 IncomingFECNonRecoverableBlocksCount,
+	UINT32 IncomingMissingDataPacketCount
+	);
+
+FECIncomingStatistics(
+	UINT32 ChannelId,
+	UINT32 IncomingDataPacketCount,
+	UINT32 IncomingFECPacketCount,
+	UINT32 IncomingRecoveredPacketCount,
+	UINT32 IncomingFECNoErrorBlocksCount,
+	UINT32 IncomingFECNonRecoverableBlocksCount,
+	UINT32 IncomingMissingDataPacketCount
+	);
+
+FECHistogramStatistics(
+	UINT32 ChannelId,
+	UINT32 SequenceId,
+	UINT32 IncomingMissingDataPacketCount,
+	UINT32 IncomingBlockSize
+	);
+
+FECHistogramStatistics(
+	UINT32 ChannelId,
+	UINT32 SequenceId,
+	UINT32 IncomingMissingDataPacketCount,
+	UINT32 IncomingBlockSize
+	);
+
+FECPacketRecovered(
+	UINT32 ChannelId,
+	UINT32 PacketSN
+	);
+
+FECPacketRecovered(
+	UINT32 ChannelId,
+	UINT32 PacketSN
+	);
+
+FECRecoveryPacket(
+	UINT32 ChannelId,
+	UINT32 PacketSN,
+	BOOLEAN AllDataPacketsAlreadyReceived
+	);
+
+FECRecoveryPacket(
+	UINT32 ChannelId,
+	UINT32 PacketSN,
+	BOOLEAN AllDataPacketsAlreadyReceived
+	);
+
+FECPacketAlreadyRecovered(
+	UINT32 ChannelId,
+	UINT32 PacketSN
+	);
+
+FECPacketAlreadyRecovered(
+	UINT32 ChannelId,
+	UINT32 PacketSN
+	);
+
+FECNonRecoverable(
+	UINT32 ChannelId,
+	UINT16 NumOfMissingPackets,
+	UINT16 NumOfFECPackets,
+	UINT16 NumOfDataPacket,
+	UINT16 BaseSn,
+	UINT16 FecIndex,
+	UINT32 Mask
+	);
+
+FECNonRecoverable(
+	UINT32 ChannelId,
+	UINT16 NumOfMissingPackets,
+	UINT16 NumOfFECPackets,
+	UINT16 NumOfDataPacket,
+	UINT16 BaseSn,
+	UINT16 FecIndex,
+	UINT32 Mask
+	);
+
+FECIncomingLossStatistics(
+	UINT32 ChannelId,
+	UINT16 MissingCount,
+	UINT16 DataCount,
+	DOUBLE Count,
+	DOUBLE Mean,
+	DOUBLE Variance
+	);
+
+FECIncomingLossStatistics(
+	UINT32 ChannelId,
+	UINT16 MissingCount,
+	UINT16 DataCount,
+	DOUBLE Count,
+	DOUBLE Mean,
+	DOUBLE Variance
+	);
+
+FECPeerStatistics(
+	UINT32 ChannelId,
+	UINT32 DataPacketCount,
+	UINT16 BlockCount,
+	UINT16 NoErrorBlocksCount,
+	UINT16 NonRecoverableBlocksCount,
+	UINT16 MissingDataPacketCount,
+	UINT16 RecoveredPacketCount,
+	DOUBLE AverageMissingPacketCountPerBlock
+	);
+
+FECPeerStatistics(
+	UINT32 ChannelId,
+	UINT32 DataPacketCount,
+	UINT16 BlockCount,
+	UINT16 NoErrorBlocksCount,
+	UINT16 NonRecoverableBlocksCount,
+	UINT16 MissingDataPacketCount,
+	UINT16 RecoveredPacketCount,
+	DOUBLE AverageMissingPacketCountPerBlock
+	);
+
+UrcpEnterSlowStart(
+	UINT32 connectionID,
+	DOUBLE currWindow,
+	DOUBLE exitWindow
+	);
+
+UrcpEnterSlowStart(
+	UINT32 connectionID,
+	DOUBLE currWindow,
+	DOUBLE exitWindow
+	);
+
+UrcpExitSlowStart(
+	UINT32 connectionID,
+	DOUBLE localRtt,
+	UINT64 bandwidth,
+	BOOLEAN byLoss
+	);
+
+UrcpExitSlowStart(
+	UINT32 connectionID,
+	DOUBLE localRtt,
+	UINT64 bandwidth,
+	BOOLEAN byLoss
+	);
+
+UrcpRateExitSlowStart(
+	UINT32 connectionID,
+	DOUBLE localRtt,
+	UINT32 bandwidth,
+	BOOLEAN byLoss,
+	DOUBLE maxRate,
+	DOUBLE averageRate,
+	DOUBLE delayMinSecs
+	);
+
+UrcpRateExitSlowStart(
+	UINT32 connectionID,
+	DOUBLE localRtt,
+	UINT32 bandwidth,
+	BOOLEAN byLoss,
+	DOUBLE maxRate,
+	DOUBLE averageRate,
+	DOUBLE delayMinSecs
+	);
+
+UrcpReport(
+	UINT32 connectionID,
+	DOUBLE Window,
+	DOUBLE Bandwidth,
+	DOUBLE RTTRaw,
+	DOUBLE RTTSmooth,
+	DOUBLE MaxWindow,
+	DOUBLE DelayWindow,
+	DOUBLE RateWindowAvg,
+	DOUBLE K0,
+	DOUBLE SmallDelayWindowAverage,
+	DOUBLE DelayWindowAverage,
+	DOUBLE DelayMin,
+	DOUBLE targetDelay
+	);
+
+UrcpReport(
+	UINT32 connectionID,
+	DOUBLE Window,
+	DOUBLE Bandwidth,
+	DOUBLE RTTRaw,
+	DOUBLE RTTSmooth,
+	DOUBLE MaxWindow,
+	DOUBLE DelayWindow,
+	DOUBLE RateWindowAvg,
+	DOUBLE K0,
+	DOUBLE SmallDelayWindowAverage,
+	DOUBLE DelayWindowAverage,
+	DOUBLE DelayMin,
+	DOUBLE targetDelay
+	);
+
+UrcpRateStateReport(
+	UINT32 connectionID,
+	DOUBLE DelayMin,
+	DOUBLE RTTMin,
+	DOUBLE MaxRate,
+	UINT32 State
+	);
+
+UrcpRateStateReport(
+	UINT32 connectionID,
+	DOUBLE DelayMin,
+	DOUBLE RTTMin,
+	DOUBLE MaxRate,
+	UINT32 State
+	);
+
+UrcpRateReport(
+	UINT32 connectionID,
+	UINT64 Bandwidth,
+	DOUBLE OneWayDelay,
+	DOUBLE RateAvg,
+	DOUBLE DelayAverage,
+	DOUBLE DelayShortAverage,
+	DOUBLE smallLossWindowAvg,
+	DOUBLE RTT,
+	BOOLEAN IsValidDelay,
+	BOOLEAN SendingWindowFull,
+	UINT64 BytesInFlight,
+	DOUBLE dRateInFligh,
+	DOUBLE dRate,
+	DOUBLE SmoothRTT,
+	INT32 AckDiff,
+	UINT64 PacketSize,
+	BOOLEAN TCPPresent
+	);
+
+UrcpRateReport(
+	UINT32 connectionID,
+	UINT64 Bandwidth,
+	DOUBLE OneWayDelay,
+	DOUBLE RateAvg,
+	DOUBLE DelayAverage,
+	DOUBLE DelayShortAverage,
+	DOUBLE smallLossWindowAvg,
+	DOUBLE RTT,
+	BOOLEAN IsValidDelay,
+	BOOLEAN SendingWindowFull,
+	UINT64 BytesInFlight,
+	DOUBLE dRateInFligh,
+	DOUBLE dRate,
+	DOUBLE SmoothRTT,
+	INT32 AckDiff,
+	UINT64 PacketSize,
+	BOOLEAN TCPPresent
+	);
+
+UrcpRateLossReport(
+	UINT32 connectionID,
+	UINT64 Bandwidth,
+	DOUBLE RateAvg,
+	DOUBLE DelayAverage,
+	DOUBLE DelayShortAverage,
+	DOUBLE SmallLossWindowAvg,
+	DOUBLE LossWindowAvg,
+	DOUBLE EnterSlowStartLossWindowAvg,
+	UINT64 BytesInFlight,
+	DOUBLE SmoothRTT,
+	UINT64 PacketSize
+	);
+
+UrcpRateLossReport(
+	UINT32 connectionID,
+	UINT64 Bandwidth,
+	DOUBLE RateAvg,
+	DOUBLE DelayAverage,
+	DOUBLE DelayShortAverage,
+	DOUBLE SmallLossWindowAvg,
+	DOUBLE LossWindowAvg,
+	DOUBLE EnterSlowStartLossWindowAvg,
+	UINT64 BytesInFlight,
+	DOUBLE SmoothRTT,
+	UINT64 PacketSize
+	);
+
+UrcpRateLimitingAverageDelay(
+	UINT32 connectionID,
+	DOUBLE DelayAverage,
+	DOUBLE Rate,
+	DOUBLE SendingRate
+	);
+
+UrcpRateLimitingAverageDelay(
+	UINT32 connectionID,
+	DOUBLE DelayAverage,
+	DOUBLE Rate,
+	DOUBLE SendingRate
+	);
+
+UrcpRateNewDelayMin(
+	UINT32 connectionID,
+	DOUBLE NewDelay
+	);
+
+UrcpRateNewDelayMin(
+	UINT32 connectionID,
+	DOUBLE NewDelay
+	);
+
+UrcpRateCalcData(
+	UINT32 connectionID,
+	DOUBLE delayAverage,
+	DOUBLE rateAverage,
+	DOUBLE delayMinSecs,
+	DOUBLE targetOperatingDelay,
+	DOUBLE rateMax,
+	DOUBLE minimumRTTInSecs,
+	DOUBLE k0,
+	DOUBLE k2
+	);
+
+UrcpRateCalcData(
+	UINT32 connectionID,
+	DOUBLE delayAverage,
+	DOUBLE rateAverage,
+	DOUBLE delayMinSecs,
+	DOUBLE targetOperatingDelay,
+	DOUBLE rateMax,
+	DOUBLE minimumRTTInSecs,
+	DOUBLE k0,
+	DOUBLE k2
+	);
+
+UrcpReportOnLoss(
+	UINT32 connectionID,
+	DOUBLE Window,
+	DOUBLE Bandwidth,
+	DOUBLE RTTSmooth,
+	DOUBLE LossRate,
+	DOUBLE K0Loss,
+	DOUBLE K2Loss,
+	DOUBLE LossMin,
+	DOUBLE SmallLossWindow,
+	DOUBLE LossWeightedAverage,
+	DOUBLE LossAverage
+	);
+
+UrcpReportOnLoss(
+	UINT32 connectionID,
+	DOUBLE Window,
+	DOUBLE Bandwidth,
+	DOUBLE RTTSmooth,
+	DOUBLE LossRate,
+	DOUBLE K0Loss,
+	DOUBLE K2Loss,
+	DOUBLE LossMin,
+	DOUBLE SmallLossWindow,
+	DOUBLE LossWeightedAverage,
+	DOUBLE LossAverage
+	);
+
+SequencerPacketQueuing(
+	UINT32 ChannelId,
+	BOOLEAN IsLastPacket,
+	UINT32 sequence
+	);
+
+SequencerPacketQueuing(
+	UINT32 ChannelId,
+	BOOLEAN IsLastPacket,
+	UINT32 sequence
+	);
+
+SequencerPacketDequeued(
+	UINT32 ChannelId,
+	UINT32 QueueLength,
+	UINT32 PacketLength,
+	UINT32 MaxLength,
+	UINT16 sequence
+	);
+
+SequencerPacketDequeued(
+	UINT32 ChannelId,
+	UINT32 QueueLength,
+	UINT32 PacketLength,
+	UINT32 MaxLength,
+	UINT16 sequence
+	);
+
+UrcpRateOnLossDuringSlowStart(
+	UINT32 connectionID,
+	DOUBLE MaxAllowedLoss,
+	DOUBLE AvgLossWindow,
+	DOUBLE CntLossWindow
+	);
+
+UrcpRateOnLossDuringSlowStart(
+	UINT32 connectionID,
+	DOUBLE MaxAllowedLoss,
+	DOUBLE AvgLossWindow,
+	DOUBLE CntLossWindow
+	);
+
+UdpQOSCreated(
+	BOOLEAN Status
+	);
+
+UdpQOSCreated(
+	BOOLEAN Status
+	);
+
+UdpQOSAdded(
+	BOOLEAN Status,
+	UINT32 LastError,
+	UINT32 FlowId
+	);
+
+UdpQOSAdded(
+	BOOLEAN Status,
+	UINT32 LastError,
+	UINT32 FlowId
+	);
+
+SocketDataSent(
+	UINT32 Sequence,
+	UINT32 PacketSize,
+	UINT32 channelId
+	);
+
+SocketDataSent(
+	UINT32 Sequence,
+	UINT32 PacketSize,
+	UINT32 channelId
+	);
+
+SocketDataReceived(
+	UINT32 PacketSize
+	);
+
+SocketDataReceived(
+	UINT32 PacketSize
+	);
+
+UDPFeedbackPacketSent(
+	UINT32 ControllerID
+	);
+
+UDPFeedbackPacketSent(
+	UINT32 ControllerID
+	);
+
+UDPPacketAcked(
+	UINT32 ControllerID,
+	UINT64 sn,
+	DOUBLE RTT,
+	DOUBLE NetRTT,
+	DOUBLE OWD,
+	BOOLEAN DelayValid,
+	UINT32 BytesInFlight
+	);
+
+UDPPacketAcked(
+	UINT32 ControllerID,
+	UINT64 sn,
+	DOUBLE RTT,
+	DOUBLE NetRTT,
+	DOUBLE OWD,
+	BOOLEAN DelayValid,
+	UINT32 BytesInFlight
+	);
+
+UDPEstBIFOneWay(
+	UINT32 ControllerID,
+	UINT64 bytesInFlight,
+	UINT32 drainingBytes,
+	DOUBLE gapTs,
+	UINT64 NodeBytesInFlight,
+	UINT64 mBytesInFlight
+	);
+
+UDPEstBIFOneWay(
+	UINT32 ControllerID,
+	UINT64 bytesInFlight,
+	UINT32 drainingBytes,
+	DOUBLE gapTs,
+	UINT64 NodeBytesInFlight,
+	UINT64 mBytesInFlight
+	);
+
+UDPOBOneWayDelayEvent(
+	UINT32 ControllerID,
+	UINT64 sn,
+	UINT32 sendTS,
+	UINT32 receiveTS,
+	UINT32 ackSentTS,
+	UINT32 ackReceivedTS,
+	DOUBLE minDelay,
+	DOUBLE OneWayDelay
+	);
+
+UDPOBOneWayDelayEvent(
+	UINT32 ControllerID,
+	UINT64 sn,
+	UINT32 sendTS,
+	UINT32 receiveTS,
+	UINT32 ackSentTS,
+	UINT32 ackReceivedTS,
+	DOUBLE minDelay,
+	DOUBLE OneWayDelay
+	);
+
+BurstLoss(
+	UINT32 ControllerID,
+	UINT32 NumPacketsLost,
+	UINT32 NumPacketsSinceLastBurst
+	);
+
+BurstLoss(
+	UINT32 ControllerID,
+	UINT32 NumPacketsLost,
+	UINT32 NumPacketsSinceLastBurst
+	);
+
+UDPPacketDroped(
+	UINT32 ControllerID,
+	UINT64 sn,
+	INT32 snGapToTop,
+	UINT32 BytesInFlight,
+	UINT32 PacketSize,
+	BOOLEAN isDropByTimeout
+	);
+
+UDPPacketDroped(
+	UINT32 ControllerID,
+	UINT64 sn,
+	INT32 snGapToTop,
+	UINT32 BytesInFlight,
+	UINT32 PacketSize,
+	BOOLEAN isDropByTimeout
+	);
+
+UDPQueueWrite(
+	UINT32 ControllerID,
+	UINT32 beforeLength,
+	UINT32 afterLength,
+	UINT16 channelId,
+	UINT16 rtpSn,
+	UINT64 rcSn,
+	BOOLEAN reliable,
+	UINT16 flags
+	);
+
+UDPQueueWrite(
+	UINT32 ControllerID,
+	UINT32 beforeLength,
+	UINT32 afterLength,
+	UINT16 channelId,
+	UINT16 rtpSn,
+	UINT64 rcSn,
+	BOOLEAN reliable,
+	UINT16 flags
+	);
+
+UDPOnDataReceived(
+	UINT32 ControllerID,
+	UINT32 length,
+	UINT32 userDatalength,
+	UINT16 channelId,
+	UINT16 rtpSn,
+	UINT64 rcSn,
+	UINT16 flags
+	);
+
+UDPOnDataReceived(
+	UINT32 ControllerID,
+	UINT32 length,
+	UINT32 userDatalength,
+	UINT16 channelId,
+	UINT16 rtpSn,
+	UINT64 rcSn,
+	UINT16 flags
+	);
+
+UDPRefTime(
+	UINT32 ControllerID,
+	DOUBLE receiverTS,
+	DOUBLE senderTS,
+	DOUBLE rtt,
+	DOUBLE minRTTThreshold,
+	UINT32 pktSize,
+	DOUBLE currR2SOffset,
+	DOUBLE currSenderTs,
+	DOUBLE currRtt
+	);
+
+UDPRefTime(
+	UINT32 ControllerID,
+	DOUBLE receiverTS,
+	DOUBLE senderTS,
+	DOUBLE rtt,
+	DOUBLE minRTTThreshold,
+	UINT32 pktSize,
+	DOUBLE currR2SOffset,
+	DOUBLE currSenderTs,
+	DOUBLE currRtt
+	);
+
+LoopbackEndPointInbound(
+	UINT32 ControllerID,
+	UINT32 length
+	);
+
+LoopbackEndPointInbound(
+	UINT32 ControllerID,
+	UINT32 length
+	);
+
+LoopbackEndPointOutbound(
+	UINT32 ControllerID,
+	UINT32 length
+	);
+
+LoopbackEndPointOutbound(
+	UINT32 ControllerID,
+	UINT32 length
+	);
+
+OnWritableCallback2(
+	UINT32 ControllerID,
+	UINT32 AvailableWindowSize,
+	UINT32 forceToFill,
+	UINT32 queueDepth,
+	UINT32 queueSize
+	);
+
+OnWritableCallback2(
+	UINT32 ControllerID,
+	UINT32 AvailableWindowSize,
+	UINT32 forceToFill,
+	UINT32 queueDepth,
+	UINT32 queueSize
+	);
+
+OnWritableCallback(
+	UINT32 ControllerID,
+	UINT32 AvailableWindowSize,
+	UINT32 bandwidth,
+	UINT32 RemainingSendBufferCount
+	);
+
+OnWritableCallback(
+	UINT32 ControllerID,
+	UINT32 AvailableWindowSize,
+	UINT32 bandwidth,
+	UINT32 RemainingSendBufferCount
+	);
+
+OnWritableQueueDepth(
+	UINT32 ControllerID,
+	UINT32 pktSize,
+	UINT32 QueueDepth,
+	UINT32 PendingBytes,
+	UINT32 PendingRemovalQDepth,
+	UINT32 LocationIdx
+	);
+
+OnWritableQueueDepth(
+	UINT32 ControllerID,
+	UINT32 pktSize,
+	UINT32 QueueDepth,
+	UINT32 PendingBytes,
+	UINT32 PendingRemovalQDepth,
+	UINT32 LocationIdx
+	);
+
+DCTMuxOutSendPacketQueued(
+	UINT32 sequence,
+	UINT32 packetSize,
+	UINT32 channelId,
+	UINT32 sendQueueSize
+	);
+
+DCTMuxOutSendPacketQueued(
+	UINT32 sequence,
+	UINT32 packetSize,
+	UINT32 channelId,
+	UINT32 sendQueueSize
+	);
+
+DCTMuxHandleOnDataReceived(
+	UINT16 channelId,
+	BOOLEAN isClientChannel,
+	UINT32 queueLength,
+	UINT64 queueDependentSeq
+	);
+
+DCTMuxHandleOnDataReceived(
+	UINT16 channelId,
+	BOOLEAN isClientChannel,
+	UINT32 queueLength,
+	UINT64 queueDependentSeq
+	);
+
+DCTMuxOnDataReceived(
+	UINT16 channelId,
+	UINT64 length,
+	UINT16 sequence,
+	UINT64 timestamp
+	);
+
+DCTMuxOnDataReceived(
+	UINT16 channelId,
+	UINT64 length,
+	UINT16 sequence,
+	UINT64 timestamp
+	);
+
+UdpSharedPortContextOnDataReceived(
+	UINT64 id,
+	UINT64 length
+	);
+
+UdpSharedPortContextOnDataReceived(
+	UINT64 id,
+	UINT64 length
+	);
+
+UdpSharedPortQueueWrite(
+	UINT64 id,
+	UINT64 length
+	);
+
+UdpSharedPortQueueWrite(
+	UINT64 id,
+	UINT64 length
+	);
+
+CreatingWinsockDCTIORequest(
+	UINT64 id,
+	UINT8 requestType
+	);
+
+CreatingWinsockDCTIORequest(
+	UINT64 id,
+	UINT8 requestType
+	);
+
+DeletingWinsockDCTIORequest(
+	UINT64 id,
+	UINT8 requestType
+	);
+
+DeletingWinsockDCTIORequest(
+	UINT64 id,
+	UINT8 requestType
+	);
+
+PostingSocketRead(
+	UINT64 id,
+	UINT64 length,
+	BOOLEAN tcp
+	);
+
+PostingSocketRead(
+	UINT64 id,
+	UINT64 length,
+	BOOLEAN tcp
+	);
+
+PostSocketRead(
+	UINT64 ioRequest,
+	UINT64 length,
+	BOOLEAN tcp
+	);
+
+PostSocketRead(
+	UINT64 ioRequest,
+	UINT64 length,
+	BOOLEAN tcp
+	);
+
+PostSocketWrite(
+	UINT64 ioRequest,
+	UINT64 length,
+	UINT64 socket,
+	BOOLEAN tcp
+	);
+
+PostSocketWrite(
+	UINT64 ioRequest,
+	UINT64 length,
+	UINT64 socket,
+	BOOLEAN tcp
+	);
+
+SentBufferPayload(
+	UINT64 context,
+	BINARY blob
+	);
+
+SentBufferPayload(
+	UINT64 context,
+	BINARY blob
+	);
+
+ReceivedBufferPayload(
+	UINT64 context,
+	BINARY blob
+	);
+
+ReceivedBufferPayload(
+	UINT64 context,
+	BINARY blob
+	);
+
+ProcessReadCompletion(
+	UINT64 ioRequest,
+	UINT64 length
+	);
+
+ProcessReadCompletion(
+	UINT64 ioRequest,
+	UINT64 length
+	);
+
+DequeueReadRequest(
+	UINT64 id
+	);
+
+DequeueReadRequest(
+	UINT64 id
+	);
+
+ProcessingWriteCompletion(
+	UINT64 id,
+	UINT64 length
+	);
+
+ProcessingWriteCompletion(
+	UINT64 id,
+	UINT64 length
+	);
+
+UDPIBProcessDataImmediateAck(
+	UINT32 ControllerID,
+	UINT64 dataSN,
+	UINT64 minInUse,
+	UINT64 firstInFlight,
+	UINT64 maxInUseBefore,
+	UINT64 maxInUseAfter,
+	UINT32 numInFlight,
+	UINT32 pktSize,
+	UINT32 maxDelayedAcks,
+	UINT32 maxDelayedAckTimeoutInMs
+	);
+
+UDPIBProcessDataImmediateAck(
+	UINT32 ControllerID,
+	UINT64 dataSN,
+	UINT64 minInUse,
+	UINT64 firstInFlight,
+	UINT64 maxInUseBefore,
+	UINT64 maxInUseAfter,
+	UINT32 numInFlight,
+	UINT32 pktSize,
+	UINT32 maxDelayedAcks,
+	UINT32 maxDelayedAckTimeoutInMs
+	);
+
+UDPIBProcessDataObsolete(
+	UINT32 ControllerID,
+	UINT64 dataSN,
+	UINT32 pktSize
+	);
+
+UDPIBProcessDataObsolete(
+	UINT32 ControllerID,
+	UINT64 dataSN,
+	UINT32 pktSize
+	);
+
+UDPIBSendObsoleteAck(
+	UINT32 ControllerID,
+	UINT64 dataSN
+	);
+
+UDPIBSendObsoleteAck(
+	UINT32 ControllerID,
+	UINT64 dataSN
+	);
+
+UDPIBProcessDataDelayAck(
+	UINT32 ControllerID,
+	UINT64 dataSN,
+	INT32 delayInMs,
+	UINT64 minInUse,
+	UINT64 firstInFlight,
+	UINT64 maxInUseBefore,
+	UINT64 maxInUseAfter,
+	UINT32 numInFlight,
+	UINT32 pktSize
+	);
+
+UDPIBProcessDataDelayAck(
+	UINT32 ControllerID,
+	UINT64 dataSN,
+	INT32 delayInMs,
+	UINT64 minInUse,
+	UINT64 firstInFlight,
+	UINT64 maxInUseBefore,
+	UINT64 maxInUseAfter,
+	UINT32 numInFlight,
+	UINT32 pktSize
+	);
+
+UDPIBSendAck(
+	UINT32 ControllerID,
+	UINT64 ackSN,
+	UINT32 numDelayedAcks
+	);
+
+UDPIBSendAck(
+	UINT32 ControllerID,
+	UINT64 ackSN,
+	UINT32 numDelayedAcks
+	);
+
+UDPIBSendAckVec(
+	UINT32 ControllerID,
+	UINT64 baseSNInWaiting,
+	UINT64 topSN,
+	UINT32 NumReceived,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight
+	);
+
+UDPIBSendAckVec(
+	UINT32 ControllerID,
+	UINT64 baseSNInWaiting,
+	UINT64 topSN,
+	UINT32 NumReceived,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight
+	);
+
+UDPDataPktResend(
+	UINT32 ControllerID,
+	UINT64 lastSN,
+	UINT64 currSN,
+	UINT32 numTries
+	);
+
+UDPDataPktResend(
+	UINT32 ControllerID,
+	UINT64 lastSN,
+	UINT64 currSN,
+	UINT32 numTries
+	);
+
+UDPDummyPktReceived(
+	UINT32 ControllerID
+	);
+
+UDPDummyPktReceived(
+	UINT32 ControllerID
+	);
+
+UDPIBProcessAckOfAcks(
+	UINT32 ControllerID,
+	UINT64 aoaSN,
+	UINT64 FirstInFlightBefore,
+	UINT64 minInUseBefore,
+	UINT64 FirstInFlightAfter,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse
+	);
+
+UDPIBProcessAckOfAcks(
+	UINT32 ControllerID,
+	UINT64 aoaSN,
+	UINT64 FirstInFlightBefore,
+	UINT64 minInUseBefore,
+	UINT64 FirstInFlightAfter,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse
+	);
+
+UDPOBSetupRTO(
+	UINT32 ControllerID,
+	UINT64 minInUse,
+	UINT32 originalInterval,
+	UINT32 TOInterval,
+	INT32 longTO,
+	INT32 ShortTO
+	);
+
+UDPOBSetupRTO(
+	UINT32 ControllerID,
+	UINT64 minInUse,
+	UINT32 originalInterval,
+	UINT32 TOInterval,
+	INT32 longTO,
+	INT32 ShortTO
+	);
+
+UDPOBSendData(
+	UINT32 ControllerID,
+	UINT32 userDataSize,
+	UINT32 overheadSize,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight,
+	UINT32 minTimeout,
+	UINT32 timeout,
+	UINT64 sn
+	);
+
+UDPOBSendData(
+	UINT32 ControllerID,
+	UINT32 userDataSize,
+	UINT32 overheadSize,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight,
+	UINT32 minTimeout,
+	UINT32 timeout,
+	UINT64 sn
+	);
+
+UDPOBSendAckOfAcks(
+	UINT32 ControllerID,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight
+	);
+
+UDPOBSendAckOfAcks(
+	UINT32 ControllerID,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight
+	);
+
+UDPOBRetransTO(
+	UINT32 ControllerID,
+	UINT64 TO,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight
+	);
+
+UDPOBRetransTO(
+	UINT32 ControllerID,
+	UINT64 TO,
+	UINT64 minInUse,
+	UINT64 maxInUse,
+	UINT32 numInFlight
+	);
+
+UDPOBNetworkBufferSizeEstimate(
+	UINT32 ControllerID,
+	UINT64 estimate,
+	UINT64 usage
+	);
+
+UDPOBNetworkBufferSizeEstimate(
+	UINT32 ControllerID,
+	UINT64 estimate,
+	UINT64 usage
+	);
+
+UDPOBProcessAck(
+	UINT32 ControllerID,
+	UINT64 ackSN,
+	UINT64 minInUseBefore,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse,
+	UINT64 numInFlight,
+	UINT32 size
+	);
+
+UDPOBProcessAck(
+	UINT32 ControllerID,
+	UINT64 ackSN,
+	UINT64 minInUseBefore,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse,
+	UINT64 numInFlight,
+	UINT32 size
+	);
+
+UDPOBProcessObsoleteAck(
+	UINT32 ControllerID,
+	UINT64 ackSN,
+	UINT64 minInUse,
+	UINT32 size
+	);
+
+UDPOBProcessObsoleteAck(
+	UINT32 ControllerID,
+	UINT64 ackSN,
+	UINT64 minInUse,
+	UINT32 size
+	);
+
+UDPOBProcessAckVec(
+	UINT32 ControllerID,
+	UINT64 baseSNInWaiting,
+	UINT64 topSN,
+	UINT32 NumReceived,
+	UINT64 minInUseBefore,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse,
+	UINT32 numInFlight,
+	UINT32 nackThreshold
+	);
+
+UDPOBProcessAckVec(
+	UINT32 ControllerID,
+	UINT64 baseSNInWaiting,
+	UINT64 topSN,
+	UINT32 NumReceived,
+	UINT64 minInUseBefore,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse,
+	UINT32 numInFlight,
+	UINT32 nackThreshold
+	);
+
+UDPOBProcessRepAckVec(
+	UINT32 ControllerID,
+	UINT64 baseSNInWaiting,
+	UINT64 minInUseBefore,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse
+	);
+
+UDPOBProcessRepAckVec(
+	UINT32 ControllerID,
+	UINT64 baseSNInWaiting,
+	UINT64 minInUseBefore,
+	UINT64 minInUseAfter,
+	UINT64 maxInUse
+	);
+
+PathCapProberAddSample(
+	UINT32 ControllerID,
+	UINT64 sn,
+	DOUBLE sentTS,
+	DOUBLE receivedTS,
+	UINT32 pktsize
+	);
+
+PathCapProberAddSample(
+	UINT32 ControllerID,
+	UINT64 sn,
+	DOUBLE sentTS,
+	DOUBLE receivedTS,
+	UINT32 pktsize
+	);
+
+PathCapProberReset(
+	UINT32 ControllerID,
+	DOUBLE lastReceivedTS,
+	DOUBLE receivedTS
+	);
+
+PathCapProberReset(
+	UINT32 ControllerID,
+	DOUBLE lastReceivedTS,
+	DOUBLE receivedTS
+	);
+
+PathCapProberWeakAddNode(
+	UINT32 ControllerID,
+	UINT64 totalPacketSize,
+	DOUBLE totalSpan,
+	DOUBLE currSpan,
+	DOUBLE currTime,
+	DOUBLE lastTime
+	);
+
+PathCapProberWeakAddNode(
+	UINT32 ControllerID,
+	UINT64 totalPacketSize,
+	DOUBLE totalSpan,
+	DOUBLE currSpan,
+	DOUBLE currTime,
+	DOUBLE lastTime
+	);
+
+PathCapProberStrongAddNode(
+	UINT32 ControllerID,
+	DOUBLE spanPerByte,
+	DOUBLE maxSpanPerByte
+	);
+
+PathCapProberStrongAddNode(
+	UINT32 ControllerID,
+	DOUBLE spanPerByte,
+	DOUBLE maxSpanPerByte
+	);
+
+PathCapProberStrongGetRate(
+	UINT32 ControllerID,
+	DOUBLE minRange,
+	DOUBLE maxRange,
+	DOUBLE step,
+	DOUBLE maxscore,
+	DOUBLE maxscoreAtCM,
+	DOUBLE rate
+	);
+
+PathCapProberStrongGetRate(
+	UINT32 ControllerID,
+	DOUBLE minRange,
+	DOUBLE maxRange,
+	DOUBLE step,
+	DOUBLE maxscore,
+	DOUBLE maxscoreAtCM,
+	DOUBLE rate
+	);
+
+PathCapProberStrongProcessSpan(
+	UINT32 ControllerID,
+	UINT32 burstingLength,
+	DOUBLE spanMean,
+	DOUBLE spanStdDev,
+	DOUBLE rate,
+	DOUBLE score
+	);
+
+PathCapProberStrongProcessSpan(
+	UINT32 ControllerID,
+	UINT32 burstingLength,
+	DOUBLE spanMean,
+	DOUBLE spanStdDev,
+	DOUBLE rate,
+	DOUBLE score
+	);
+
+PathCapProberStrongProcessBurst(
+	UINT32 ControllerID,
+	DOUBLE maxSpan,
+	DOUBLE spanThresholdHigh,
+	DOUBLE spanThresholdLow,
+	UINT32 length
+	);
+
+PathCapProberStrongProcessBurst(
+	UINT32 ControllerID,
+	DOUBLE maxSpan,
+	DOUBLE spanThresholdHigh,
+	DOUBLE spanThresholdLow,
+	UINT32 length
+	);
+
+PathCapProberStrongProcessBurstStart(
+	UINT32 ControllerID,
+	UINT64 sn,
+	DOUBLE span
+	);
+
+PathCapProberStrongProcessBurstStart(
+	UINT32 ControllerID,
+	UINT64 sn,
+	DOUBLE span
+	);
+
+PathCapProberStrongProcessBurstDetails(
+	UINT32 ControllerID,
+	UINT32 stage,
+	DOUBLE span,
+	DOUBLE timeSpan
+	);
+
+PathCapProberStrongProcessBurstDetails(
+	UINT32 ControllerID,
+	UINT32 stage,
+	DOUBLE span,
+	DOUBLE timeSpan
+	);
+
+PathCapProberGetRates(
+	UINT32 ControllerID,
+	DOUBLE aveRate,
+	DOUBLE capRate,
+	DOUBLE burstRate,
+	DOUBLE burstRateDeviation
+	);
+
+PathCapProberGetRates(
+	UINT32 ControllerID,
+	DOUBLE aveRate,
+	DOUBLE capRate,
+	DOUBLE burstRate,
+	DOUBLE burstRateDeviation
+	);
+
+PathCapProberStrongRawRate(
+	UINT32 ControllerID,
+	DOUBLE rawrate
+	);
+
+PathCapProberStrongRawRate(
+	UINT32 ControllerID,
+	DOUBLE rawrate
+	);
+
+PathCapProberStrongSmoothedRate(
+	UINT32 ControllerID,
+	DOUBLE srate,
+	DOUBLE spread
+	);
+
+PathCapProberStrongSmoothedRate(
+	UINT32 ControllerID,
+	DOUBLE srate,
+	DOUBLE spread
+	);
+
+PathCapProberRequestedRate(
+	UINT32 ControllerID,
+	DOUBLE strongAveRate,
+	DOUBLE strongAveConfidence,
+	DOUBLE weakgrate,
+	DOUBLE weakConfidence,
+	DOUBLE aveRate,
+	DOUBLE aveConfidence,
+	DOUBLE rate,
+	INT32 mode
+	);
+
+PathCapProberRequestedRate(
+	UINT32 ControllerID,
+	DOUBLE strongAveRate,
+	DOUBLE strongAveConfidence,
+	DOUBLE weakgrate,
+	DOUBLE weakConfidence,
+	DOUBLE aveRate,
+	DOUBLE aveConfidence,
+	DOUBLE rate,
+	INT32 mode
+	);
+
+PathCapProberSent(
+	UINT64 sn
+	);
+
+PathCapProberSent(
+	UINT64 sn
+	);
+
+PathCapProberReceiveStart(
+	UINT32 index
+	);
+
+PathCapProberReceiveStart(
+	UINT32 index
+	);
+
+PathCapProberReceiveEnd(
+	UINT32 index
+	);
+
+PathCapProberReceiveEnd(
+	UINT32 index
+	);
+
+HistogramAddSample(
+	DOUBLE minRange,
+	DOUBLE maxRange,
+	DOUBLE value,
+	DOUBLE score,
+	DOUBLE anchorlow,
+	DOUBLE anchorhigh
+	);
+
+HistogramAddSample(
+	DOUBLE minRange,
+	DOUBLE maxRange,
+	DOUBLE value,
+	DOUBLE score,
+	DOUBLE anchorlow,
+	DOUBLE anchorhigh
+	);
+
+ChannelThreadQueueEnqueueBuffer(
+	UINT16 connectionId,
+	UINT16 channelId,
+	UINT16 sequenceNo
+	);
+
+ChannelThreadQueueEnqueueBuffer(
+	UINT16 connectionId,
+	UINT16 channelId,
+	UINT16 sequenceNo
+	);
+
+ChannelThreadQueueDequeueBuffer(
+	UINT16 connectionId,
+	UINT16 channelId,
+	UINT16 sequenceNo
+	);
+
+ChannelThreadQueueDequeueBuffer(
+	UINT16 connectionId,
+	UINT16 channelId,
+	UINT16 sequenceNo
+	);
+
+SrtpResequencePacketOutgoing(
+	UINT32 oldSequenceNum,
+	UINT32 newSequenceNum,
+	UINT16 channelId,
+	UINT8 payloadType,
+	UINT64 encryptDurationMicroseconds
+	);
+
+SrtpResequencePacketOutgoing(
+	UINT32 oldSequenceNum,
+	UINT32 newSequenceNum,
+	UINT16 channelId,
+	UINT8 payloadType,
+	UINT64 encryptDurationMicroseconds
+	);
+
+SrtpResequencePacketIncoming(
+	UINT32 modifiedSequenceNum,
+	UINT32 originalSequenceNum,
+	UINT16 channelId,
+	UINT8 payloadType,
+	UINT64 decryptDurationMicroseconds
+	);
+
+SrtpResequencePacketIncoming(
+	UINT32 modifiedSequenceNum,
+	UINT32 originalSequenceNum,
+	UINT16 channelId,
+	UINT8 payloadType,
+	UINT64 decryptDurationMicroseconds
+	);
+
+MuxDctChannelCreated(
+	UINT16 channelId,
+	COUNTEDANSISTRING channelClassName
+	);
+
+MuxDctChannelCreated(
+	UINT16 channelId,
+	COUNTEDANSISTRING channelClassName
+	);
+
+ReliabilityControllerAdd(
+	UINT64 sn,
+	UINT64 previousSn,
+	UINT32 tries,
+	DOUBLE timeout
+	);
+
+ReliabilityControllerAdd(
+	UINT64 sn,
+	UINT64 previousSn,
+	UINT32 tries,
+	DOUBLE timeout
+	);
+
+ReliabilityControllerRelease(
+	UINT64 sn
+	);
+
+ReliabilityControllerRelease(
+	UINT64 sn
+	);
+
+ReliabilityControllerAck(
+	UINT64 sn,
+	BOOLEAN fromEvents
+	);
+
+ReliabilityControllerAck(
+	UINT64 sn,
+	BOOLEAN fromEvents
+	);
+
+ReliabilityControllerLost(
+	UINT64 sn,
+	BOOLEAN fromEvents
+	);
+
+ReliabilityControllerLost(
+	UINT64 sn,
+	BOOLEAN fromEvents
+	);
+
+KeepAlivePacketNotification(
+	UINT32 gap,
+	UINT32 timeout
+	);
+
+KeepAlivePacketNotification(
+	UINT32 gap,
+	UINT32 timeout
+	);
+
+RioBuffersSent(
+	UINT32 startBufferId,
+	UINT32 endBufferId,
+	UINT32 freeBufferCount
+	);
+
+RioBuffersSent(
+	UINT32 startBufferId,
+	UINT32 endBufferId,
+	UINT32 freeBufferCount
+	);
+
+RioBuffersSendOverrun(
+	UINT64 ioRequest,
+	UINT64 length,
+	UINT64 socket,
+	BOOLEAN tcp
+	);
+
+RioBuffersSendOverrun(
+	UINT64 ioRequest,
+	UINT64 length,
+	UINT64 socket,
+	BOOLEAN tcp
+	);
+
+RioBuffersReceive(
+	UINT32 startBufferId,
+	UINT32 endBufferId,
+	UINT32 freeBufferCount
+	);
+
+RioBuffersReceive(
+	UINT32 startBufferId,
+	UINT32 endBufferId,
+	UINT32 freeBufferCount
+	);
+
+UDPRCAddToResendQueue(
+	UINT16 connectionId,
+	UINT64 seqNum,
+	UINT64 packet,
+	UINT64 packetSize,
+	UINT64 queueSize
+	);
+
+UDPRCAddToResendQueue(
+	UINT16 connectionId,
+	UINT64 seqNum,
+	UINT64 packet,
+	UINT64 packetSize,
+	UINT64 queueSize
+	);
+
+UDPRCRemoveHead(
+	UINT16 connectionId,
+	UINT64 packet,
+	UINT64 packetSize,
+	UINT64 queueSize
+	);
+
+UDPRCRemoveHead(
+	UINT16 connectionId,
+	UINT64 packet,
+	UINT64 packetSize,
+	UINT64 queueSize
+	);
+
+UDPRCCheckQueue(
+	UINT16 connectionId,
+	UINT64 packet,
+	UINT64 packetSize,
+	UINT64 queueSize
+	);
+
+UDPRCCheckQueue(
+	UINT16 connectionId,
+	UINT64 packet,
+	UINT64 packetSize,
+	UINT64 queueSize
+	);
+
+UDPRCUpdateMaxWindowEstimate(
+	DOUBLE maxWindow,
+	DOUBLE rtt,
+	DOUBLE rMax,
+	DOUBLE burstBuffer
+	);
+
+UDPRCUpdateMaxWindowEstimate(
+	DOUBLE maxWindow,
+	DOUBLE rtt,
+	DOUBLE rMax,
+	DOUBLE burstBuffer
+	);
+
+SocketDataQueued(
+	UINT32 Sequence,
+	UINT32 PacketSize,
+	UINT32 channelId
+	);
+
+SocketDataQueued(
+	UINT32 Sequence,
+	UINT32 PacketSize,
+	UINT32 channelId
+	);
+
+SmilesSelectSend(
+	UINT32 primaryId,
+	UINT32 secondaryId,
+	DOUBLE maxHealth,
+	DOUBLE SecndMaxHealth
+	);
+
+SmilesSelectSend(
+	UINT32 primaryId,
+	UINT32 secondaryId,
+	DOUBLE maxHealth,
+	DOUBLE SecndMaxHealth
+	);
+
+SmilesMarkReceipt(
+	UINT32 linkId
+	);
+
+SmilesMarkReceipt(
+	UINT32 linkId
+	);
+
+SmilesSetParameters(
+	DOUBLE sigma,
+	DOUBLE lambda,
+	DOUBLE rho
+	);
+
+SmilesSetParameters(
+	DOUBLE sigma,
+	DOUBLE lambda,
+	DOUBLE rho
+	);
+
+NanoNetworkQOE(
+	38 MetricCollectionStartTime,
+	UINT32 MetricsCollectionInterval,
+	UINT32 TotalSocketDataSent,
+	DOUBLE AvgSocketDataSent,
+	UINT32 MinSocketDataSent,
+	UINT32 MaxSocketDataSent,
+	UINT32 TotalSocketDataReceived,
+	DOUBLE AvgSocketDataReceived,
+	UINT32 MinSocketDataReceived,
+	UINT32 MaxSocketDataReceived,
+	DOUBLE AvgRateControlEstimatedBandwidth,
+	UINT64 MinRateControlEstimatedBandwidth,
+	UINT64 MaxRateControlEstimatedBandwidth,
+	DOUBLE AvgRateControlEstimatedRMax,
+	DOUBLE MinRateControlEstimatedRMax,
+	DOUBLE MaxRateControlEstimatedRMax,
+	DOUBLE AvgLocalRTT,
+	DOUBLE MinLocalRTT,
+	DOUBLE MaxLocalRTT,
+	DOUBLE AvgOneWayDelay,
+	DOUBLE MinOneWayDelay,
+	DOUBLE MaxOneWayDelay,
+	DOUBLE AvgBurstLoss,
+	UINT32 MinBurstLoss,
+	UINT32 MaxBurstLoss,
+	UINT32 NumUDPPacketAcked,
+	UINT32 NumUDPPacketDroped,
+	DOUBLE RatioUDPPktDropedToPktAcked,
+	UINT32 NumUDPDataPktResend,
+	UINT32 MaxUDPDataPktResend,
+	UINT32 WebSocketBytesWritten,
+	UINT32 WebSocketBytesRead
+	);
+
+NanoNetworkQOE(
+	38 MetricCollectionStartTime,
+	UINT32 MetricsCollectionInterval,
+	UINT32 TotalSocketDataSent,
+	DOUBLE AvgSocketDataSent,
+	UINT32 MinSocketDataSent,
+	UINT32 MaxSocketDataSent,
+	UINT32 TotalSocketDataReceived,
+	DOUBLE AvgSocketDataReceived,
+	UINT32 MinSocketDataReceived,
+	UINT32 MaxSocketDataReceived,
+	DOUBLE AvgRateControlEstimatedBandwidth,
+	UINT64 MinRateControlEstimatedBandwidth,
+	UINT64 MaxRateControlEstimatedBandwidth,
+	DOUBLE AvgRateControlEstimatedRMax,
+	DOUBLE MinRateControlEstimatedRMax,
+	DOUBLE MaxRateControlEstimatedRMax,
+	DOUBLE AvgLocalRTT,
+	DOUBLE MinLocalRTT,
+	DOUBLE MaxLocalRTT,
+	DOUBLE AvgOneWayDelay,
+	DOUBLE MinOneWayDelay,
+	DOUBLE MaxOneWayDelay,
+	DOUBLE AvgBurstLoss,
+	UINT32 MinBurstLoss,
+	UINT32 MaxBurstLoss,
+	UINT32 NumUDPPacketAcked,
+	UINT32 NumUDPPacketDroped,
+	DOUBLE RatioUDPPktDropedToPktAcked,
+	UINT32 NumUDPDataPktResend,
+	UINT32 MaxUDPDataPktResend,
+	UINT32 WebSocketBytesWritten,
+	UINT32 WebSocketBytesRead
+	);
+
+ICEBeginGatherCandidates(
+	COUNTEDANSISTRING stunServers,
+	COUNTEDANSISTRING turnServers,
+	UINT32 addressFamily
+	);
+
+ICEBeginGatherCandidates(
+	COUNTEDANSISTRING stunServers,
+	COUNTEDANSISTRING turnServers,
+	UINT32 addressFamily
+	);
+
+ICEStunServerResolved(
+	COUNTEDANSISTRING address,
+	COUNTEDANSISTRING fqdn,
+	UINT32 addressFamily
+	);
+
+ICEStunServerResolved(
+	COUNTEDANSISTRING address,
+	COUNTEDANSISTRING fqdn,
+	UINT32 addressFamily
+	);
+
+ICETurnServerResolved(
+	COUNTEDANSISTRING address,
+	COUNTEDANSISTRING fqdn,
+	UINT32 addressFamily
+	);
+
+ICETurnServerResolved(
+	COUNTEDANSISTRING address,
+	COUNTEDANSISTRING fqdn,
+	UINT32 addressFamily
+	);
+
+ICELocalInterfaceAdded(
+	COUNTEDANSISTRING identifier,
+	UINT32 type,
+	UINT32 metric,
+	UINT32 metricCostAdjustment,
+	DOUBLE metricCostScaling
+	);
+
+ICELocalInterfaceAdded(
+	COUNTEDANSISTRING identifier,
+	UINT32 type,
+	UINT32 metric,
+	UINT32 metricCostAdjustment,
+	DOUBLE metricCostScaling
+	);
+
+ICEManualInterfaceAdded(
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING type
+	);
+
+ICEManualInterfaceAdded(
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING type
+	);
+
+ICEBindInterface(
+	COUNTEDANSISTRING identifier
+	);
+
+ICEBindInterface(
+	COUNTEDANSISTRING identifier
+	);
+
+ICEBindInterfaceComplete(
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING address
+	);
+
+ICEBindInterfaceComplete(
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING address
+	);
+
+ICEBindInterfaceFailed(
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING error
+	);
+
+ICEBindInterfaceFailed(
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING error
+	);
+
+ICEPrepareCandidate(
+	UINT32 type,
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING server
+	);
+
+ICEPrepareCandidate(
+	UINT32 type,
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING server
+	);
+
+ICEPrepareCandidateFailed(
+	UINT32 type,
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING server,
+	COUNTEDANSISTRING error
+	);
+
+ICEPrepareCandidateFailed(
+	UINT32 type,
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING server,
+	COUNTEDANSISTRING error
+	);
+
+ICECandidateComplete(
+	UINT32 type,
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING server,
+	COUNTEDANSISTRING address
+	);
+
+ICECandidateComplete(
+	UINT32 type,
+	COUNTEDANSISTRING identifier,
+	COUNTEDANSISTRING server,
+	COUNTEDANSISTRING address
+	);
+
+ICEGatherCandidatesComplete(
+	COUNTEDANSISTRING candidates
+	);
+
+ICEGatherCandidatesComplete(
+	COUNTEDANSISTRING candidates
+	);
+
+ICEPeerCandidatesReceived(
+	COUNTEDANSISTRING candidates
+	);
+
+ICEPeerCandidatesReceived(
+	COUNTEDANSISTRING candidates
+	);
+
+ICECandidatePairAdded(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	UINT64 priority
+	);
+
+ICECandidatePairAdded(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	UINT64 priority
+	);
+
+ICECheckingCandidatePair(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	UINT64 priority
+	);
+
+ICECheckingCandidatePair(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	UINT64 priority
+	);
+
+ICECheckingCandidatePairResult(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	UINT64 priority,
+	BOOLEAN success,
+	COUNTEDANSISTRING reason
+	);
+
+ICECheckingCandidatePairResult(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	UINT64 priority,
+	BOOLEAN success,
+	COUNTEDANSISTRING reason
+	);
+
+ICENominatingCandidatePair(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote
+	);
+
+ICENominatingCandidatePair(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote
+	);
+
+ICENominatingCandidatePairResult(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	BOOLEAN success,
+	COUNTEDANSISTRING reason
+	);
+
+ICENominatingCandidatePairResult(
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote,
+	BOOLEAN success,
+	COUNTEDANSISTRING reason
+	);
+
+ICEProcessingComplete(
+	BOOLEAN success,
+	COUNTEDANSISTRING reason,
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote
+	);
+
+ICEProcessingComplete(
+	BOOLEAN success,
+	COUNTEDANSISTRING reason,
+	COUNTEDANSISTRING local,
+	COUNTEDANSISTRING remote
+	);
+
+ICECandidateIgnored(
+	COUNTEDANSISTRING ignored,
+	COUNTEDANSISTRING used
+	);
+
+ICECandidateIgnored(
+	COUNTEDANSISTRING ignored,
+	COUNTEDANSISTRING used
+	);
+
+ICETurnTelemetryGuid(
+	COUNTEDANSISTRING candidate,
+	GUID guid
+	);
+
+ICETurnTelemetryGuid(
+	COUNTEDANSISTRING candidate,
+	GUID guid
+	);
+
+ICETurnRefreshResult(
+	COUNTEDANSISTRING candidate,
+	UINT32 response,
+	UINT32 timeout
+	);
+
+ICETurnRefreshResult(
+	COUNTEDANSISTRING candidate,
+	UINT32 response,
+	UINT32 timeout
+	);
+
+ICETurnActiveCloseResult(
+	COUNTEDANSISTRING candidate,
+	UINT32 response
+	);
+
+ICETurnActiveCloseResult(
+	COUNTEDANSISTRING candidate,
+	UINT32 response
+	);
+
+NetSimLinkEvent(
+	DOUBLE time,
+	UINT32 eventType,
+	UINT32 packetID,
+	COUNTEDANSISTRING sourceName,
+	UINT32 SourceID,
+	UINT32 LinkDepth,
+	UINT32 pktSize
+	);
+
+NetSimLinkEvent(
+	DOUBLE time,
+	UINT32 eventType,
+	UINT32 packetID,
+	COUNTEDANSISTRING sourceName,
+	UINT32 SourceID,
+	UINT32 LinkDepth,
+	UINT32 pktSize
+	);
+
+NetSimURCPRateEvent(
+	DOUBLE time,
+	UINT32 bitrate,
+	UINT32 channelCap
+	);
+
+NetSimURCPRateEvent(
+	DOUBLE time,
+	UINT32 bitrate,
+	UINT32 channelCap
+	);
+
+NetSimTCPEvent(
+	INT32 sourceId,
+	UINT32 packetId,
+	DOUBLE cwin,
+	DOUBLE bytesInFlight,
+	DOUBLE ssthreshold
+	);
+
+NetSimTCPEvent(
+	INT32 sourceId,
+	UINT32 packetId,
+	DOUBLE cwin,
+	DOUBLE bytesInFlight,
+	DOUBLE ssthreshold
+	);
+
+NetSimBackgroundRateEvent(
+	DOUBLE time,
+	UINT32 bitrate,
+	UINT32 channelCap
+	);
+
+NetSimBackgroundRateEvent(
+	DOUBLE time,
+	UINT32 bitrate,
+	UINT32 channelCap
+	);
+
+OURCPDelayBasedTargetRate(
+	UINT32 ControllerID,
+	DOUBLE maxRate,
+	DOUBLE DelayMin,
+	DOUBLE DelayOperation,
+	DOUBLE delayEstimate,
+	DOUBLE k0,
+	DOUBLE delayBasedTargetRate,
+	DOUBLE smoothedAveDelay,
+	DOUBLE smoothedReceivedRateAve
+	);
+
+OURCPDelayBasedTargetRate(
+	UINT32 ControllerID,
+	DOUBLE maxRate,
+	DOUBLE DelayMin,
+	DOUBLE DelayOperation,
+	DOUBLE delayEstimate,
+	DOUBLE k0,
+	DOUBLE delayBasedTargetRate,
+	DOUBLE smoothedAveDelay,
+	DOUBLE smoothedReceivedRateAve
+	);
+
+OURCPBytesToSend(
+	UINT32 ControllerID,
+	UINT32 bytesToSendWindow,
+	UINT64 bytesToSend,
+	UINT32 bytesToSendAdjust,
+	UINT64 bytesSent,
+	UINT32 maxBurstWindow,
+	UINT64 BIF,
+	DOUBLE currTime,
+	DOUBLE duration,
+	DOUBLE targetRate,
+	DOUBLE obsReceiveRate
+	);
+
+OURCPBytesToSend(
+	UINT32 ControllerID,
+	UINT32 bytesToSendWindow,
+	UINT64 bytesToSend,
+	UINT32 bytesToSendAdjust,
+	UINT64 bytesSent,
+	UINT32 maxBurstWindow,
+	UINT64 BIF,
+	DOUBLE currTime,
+	DOUBLE duration,
+	DOUBLE targetRate,
+	DOUBLE obsReceiveRate
+	);
+
+OURCPBytesSent(
+	UINT32 ControllerID,
+	UINT64 bytesSent,
+	UINT64 bytesToSend
+	);
+
+OURCPBytesSent(
+	UINT32 ControllerID,
+	UINT64 bytesSent,
+	UINT64 bytesToSend
+	);
+
+OURCPBytesInFlight(
+	UINT32 ControllerID,
+	DOUBLE bytesInFlightRoundTrip,
+	DOUBLE bytesInFlightOneWay,
+	DOUBLE aveBytesInFlight
+	);
+
+OURCPBytesInFlight(
+	UINT32 ControllerID,
+	DOUBLE bytesInFlightRoundTrip,
+	DOUBLE bytesInFlightOneWay,
+	DOUBLE aveBytesInFlight
+	);
+
+OURCPLossBasedTargetRate(
+	UINT32 ControllerID,
+	DOUBLE rttAtLastNack,
+	DOUBLE rttRunning,
+	DOUBLE currRTT,
+	DOUBLE lossBasedTargetRateUpperBound,
+	DOUBLE lossBasedTargetRate
+	);
+
+OURCPLossBasedTargetRate(
+	UINT32 ControllerID,
+	DOUBLE rttAtLastNack,
+	DOUBLE rttRunning,
+	DOUBLE currRTT,
+	DOUBLE lossBasedTargetRateUpperBound,
+	DOUBLE lossBasedTargetRate
+	);
+
+OURCPUpdateLoss(
+	UINT32 ControllerID,
+	DOUBLE rttAtLastNack,
+	DOUBLE lossRate,
+	DOUBLE lossInterval,
+	DOUBLE lossBasedTargetRateUpperBound,
+	DOUBLE lossBasedTargetRateUpperBound2
+	);
+
+OURCPUpdateLoss(
+	UINT32 ControllerID,
+	DOUBLE rttAtLastNack,
+	DOUBLE lossRate,
+	DOUBLE lossInterval,
+	DOUBLE lossBasedTargetRateUpperBound,
+	DOUBLE lossBasedTargetRateUpperBound2
+	);
+
+OURCPSmoothRate(
+	UINT32 ControllerID,
+	DOUBLE rawTargetRate,
+	DOUBLE newTargetRate
+	);
+
+OURCPSmoothRate(
+	UINT32 ControllerID,
+	DOUBLE rawTargetRate,
+	DOUBLE newTargetRate
+	);
+
+OURCPAddDelay(
+	UINT32 ControllerID,
+	DOUBLE odservedDelay,
+	DOUBLE finalDelayUsed,
+	DOUBLE tsSent,
+	DOUBLE tsReceive,
+	DOUBLE observedRate,
+	DOUBLE smoothedObservedRate,
+	DOUBLE BytesInFlight
+	);
+
+OURCPAddDelay(
+	UINT32 ControllerID,
+	DOUBLE odservedDelay,
+	DOUBLE finalDelayUsed,
+	DOUBLE tsSent,
+	DOUBLE tsReceive,
+	DOUBLE observedRate,
+	DOUBLE smoothedObservedRate,
+	DOUBLE BytesInFlight
+	);
+
+OURCPLossDelayTransition(
+	UINT32 ControllerID,
+	DOUBLE lossBasedTargetRate,
+	DOUBLE delayBasedTargetRate,
+	DOUBLE smoothedDelayBasedTargetRate,
+	DOUBLE smoothedTargetRate,
+	DOUBLE maxRateBefore,
+	DOUBLE maxRate,
+	DOUBLE receivingRate,
+	DOUBLE sendingRate,
+	DOUBLE aveDropRatio,
+	UINT32 mode
+	);
+
+OURCPLossDelayTransition(
+	UINT32 ControllerID,
+	DOUBLE lossBasedTargetRate,
+	DOUBLE delayBasedTargetRate,
+	DOUBLE smoothedDelayBasedTargetRate,
+	DOUBLE smoothedTargetRate,
+	DOUBLE maxRateBefore,
+	DOUBLE maxRate,
+	DOUBLE receivingRate,
+	DOUBLE sendingRate,
+	DOUBLE aveDropRatio,
+	UINT32 mode
+	);
+
+OURCPInitLossRate(
+	UINT32 ControllerID,
+	DOUBLE ReceivingRate,
+	DOUBLE maxRate,
+	DOUBLE InitLossRate
+	);
+
+OURCPInitLossRate(
+	UINT32 ControllerID,
+	DOUBLE ReceivingRate,
+	DOUBLE maxRate,
+	DOUBLE InitLossRate
+	);
+
+OURCPLossRateLongToShortReset(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateLongToShortReset(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateShortToLongCache(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateShortToLongCache(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateDeployShortToLongCache(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateDeployShortToLongCache(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateCancelShortToLongCache(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateCancelShortToLongCache(
+	UINT32 ControllerID,
+	INT32 lastAckCnt,
+	DOUBLE lastTickCnt,
+	DOUBLE lastBaseTick,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateAddLoss(
+	UINT32 ControllerID,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateAddLoss(
+	UINT32 ControllerID,
+	INT32 numAcks,
+	DOUBLE numTicks,
+	DOUBLE baseTick
+	);
+
+OURCPLossRateResetCurr(
+	UINT32 ControllerID
+	);
+
+OURCPLossRateResetCurr(
+	UINT32 ControllerID
+	);
+
+OURCPLossRateAcks(
+	UINT32 ControllerID,
+	INT32 numAcks
+	);
+
+OURCPLossRateAcks(
+	UINT32 ControllerID,
+	INT32 numAcks
+	);
+
+OURCPOscillator(
+	UINT32 ControllerID,
+	DOUBLE value,
+	DOUBLE time,
+	BOOLEAN isMax,
+	DOUBLE CurrRange,
+	DOUBLE LastRange,
+	DOUBLE slope,
+	DOUBLE mean,
+	DOUBLE scaleFactor,
+	DOUBLE oldDampFact,
+	DOUBLE DampFact
+	);
+
+OURCPOscillator(
+	UINT32 ControllerID,
+	DOUBLE value,
+	DOUBLE time,
+	BOOLEAN isMax,
+	DOUBLE CurrRange,
+	DOUBLE LastRange,
+	DOUBLE slope,
+	DOUBLE mean,
+	DOUBLE scaleFactor,
+	DOUBLE oldDampFact,
+	DOUBLE DampFact
+	);
+
+OURCPDelayShortDelaynmin(
+	UINT32 ControllerID,
+	DOUBLE delayn,
+	DOUBLE delaynmin,
+	DOUBLE smoothedDelaynmin
+	);
+
+OURCPDelayShortDelaynmin(
+	UINT32 ControllerID,
+	DOUBLE delayn,
+	DOUBLE delaynmin,
+	DOUBLE smoothedDelaynmin
+	);
+
+OURCPDelayShortDelaynminDump(
+	UINT32 ControllerID,
+	INT32 iPos,
+	UINT32 i,
+	DOUBLE dumpdata
+	);
+
+OURCPDelayShortDelaynminDump(
+	UINT32 ControllerID,
+	INT32 iPos,
+	UINT32 i,
+	DOUBLE dumpdata
+	);
+
+OURCPSetDelayMin(
+	UINT32 ControllerID,
+	DOUBLE DelayMin
+	);
+
+OURCPSetDelayMin(
+	UINT32 ControllerID,
+	DOUBLE DelayMin
+	);
+
+OURCPSetMaxRate(
+	UINT32 ControllerID,
+	DOUBLE maxRate
+	);
+
+OURCPSetMaxRate(
+	UINT32 ControllerID,
+	DOUBLE maxRate
+	);
+
+OURCPOpReceivingRate(
+	UINT32 ControllerID,
+	DOUBLE receivingRate,
+	BOOLEAN isReceivingRateReliable
+	);
+
+OURCPOpReceivingRate(
+	UINT32 ControllerID,
+	DOUBLE receivingRate,
+	BOOLEAN isReceivingRateReliable
+	);
+
+OURCPSampleOpReceivingRate(
+	UINT32 ControllerID,
+	DOUBLE receivingRate
+	);
+
+OURCPSampleOpReceivingRate(
+	UINT32 ControllerID,
+	DOUBLE receivingRate
+	);
+
+OURCPCellularRateControlTick(
+	DOUBLE delay,
+	DOUBLE lastDelay,
+	UINT32 numDelayIncreases,
+	UINT32 numDelayChecks,
+	DOUBLE switchDelay,
+	UINT32 numDelayDecreases,
+	DOUBLE targetRate
+	);
+
+OURCPCellularRateControlTick(
+	DOUBLE delay,
+	DOUBLE lastDelay,
+	UINT32 numDelayIncreases,
+	UINT32 numDelayChecks,
+	DOUBLE switchDelay,
+	UINT32 numDelayDecreases,
+	DOUBLE targetRate
+	);
+
+BasixActivityTransfer(
+	VOID
+	);
+
+BasixActivityTransfer(
+	VOID
+	);
+
+TraceCritical(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceCritical(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceError(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceError(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceWarning(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceWarning(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceNormal(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceNormal(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceDebug(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+TraceDebug(
+	COUNTEDANSISTRING flag,
+	COUNTEDANSISTRING traceMessage
+	);
+
+RdpNanoNetStats(
+	UINT32 IsClient,
+	UINT32 numBytesToSend,
+	UINT32 pendingBytes,
+	UINT32 reportedBandwidth,
+	UINT32 rateAverage,
+	UINT32 aveOneWayDelay,
+	UINT32 aveOperationDelay,
+	UINT32 aveOperationPoint,
+	UINT32 maxRate,
+	UINT32 delayMin,
+	COUNTEDANSISTRING urcpMode
+	);
+
+RdpNanoNetStats(
+	UINT32 IsClient,
+	UINT32 numBytesToSend,
+	UINT32 pendingBytes,
+	UINT32 reportedBandwidth,
+	UINT32 rateAverage,
+	UINT32 aveOneWayDelay,
+	UINT32 aveOperationDelay,
+	UINT32 aveOperationPoint,
+	UINT32 maxRate,
+	UINT32 delayMin,
+	COUNTEDANSISTRING urcpMode
+	);
+
+RdpNanoInOrderPktReceived(
+	UINT32 IsClient,
+	UINT64 fullSN,
+	UINT16 rawSN,
+	UINT32 waitingQSize
+	);
+
+RdpNanoInOrderPktReceived(
+	UINT32 IsClient,
+	UINT64 fullSN,
+	UINT16 rawSN,
+	UINT32 waitingQSize
+	);
+
+RdpNanoOutOfOrderPktReceived(
+	UINT32 IsClient,
+	UINT64 fullSN,
+	UINT64 expectedSN,
+	UINT16 rawSN,
+	UINT32 waitingQSize
+	);
+
+RdpNanoOutOfOrderPktReceived(
+	UINT32 IsClient,
+	UINT64 fullSN,
+	UINT64 expectedSN,
+	UINT16 rawSN,
+	UINT32 waitingQSize
+	);
+
+RdpNanoObsoletePktReceived(
+	UINT32 IsClient,
+	UINT64 fullSN,
+	UINT64 expectedSN,
+	UINT16 rawSN
+	);
+
+RdpNanoObsoletePktReceived(
+	UINT32 IsClient,
+	UINT64 fullSN,
+	UINT64 expectedSN,
+	UINT16 rawSN
+	);
+
+RdpNanoPktQStats(
+	UINT32 IsClient,
+	UINT16 rawSN,
+	UINT32 waitingQSize,
+	UINT32 LosslessQSize,
+	UINT32 LossyQSize
+	);
+
+RdpNanoPktQStats(
+	UINT32 IsClient,
+	UINT16 rawSN,
+	UINT32 waitingQSize,
+	UINT32 LosslessQSize,
+	UINT32 LossyQSize
+	);
+
+RdpNanoSendKeepalivePacket(
+	UINT32 IsClient
+	);
+
+RdpNanoSendKeepalivePacket(
+	UINT32 IsClient
+	);
+

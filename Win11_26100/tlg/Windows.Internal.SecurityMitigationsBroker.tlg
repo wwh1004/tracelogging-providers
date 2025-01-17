@@ -1,0 +1,21 @@
+ProviderNames:
+	Microsoft.Windows.Licensing.ChangePK
+	Microsoft.Web.Platform
+
+
+
+**** Events *****
+ACGDxDriver(
+	GUID sessionID,
+	GUID userInputID,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	INT32 Reason
+	);
+
+DisableAcgEnforcementDetails(
+	HRESULT Result,
+	UINT32 DCProhibit,
+	UINT32 DCThreadOptOut,
+	UNICODESTRING ModuleName
+	);
+

@@ -1,0 +1,70 @@
+ProviderNames:
+	Microsoft.Windows.Bluetooth
+
+
+
+**** Events *****
+FileTransferEnded(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	BOOLEAN AuthenticationRequired,
+	HEXINT32 HResult,
+	UINT64 BTDeviceAddress
+	);
+
+FileTransferEnded(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	BOOLEAN AuthenticationRequired,
+	UINT32 FileSizeInBytes,
+	UNICODESTRING FileType,
+	UINT64 TransferTimeInMS,
+	HEXINT32 HResult
+	);
+
+TraceLoggingError(
+	UNICODESTRING traceLoggingMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+

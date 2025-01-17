@@ -1,0 +1,169 @@
+ProviderNames:
+	Microsoft.Windows.Shell.ThumbnailCache
+
+
+
+**** Events *****
+InitializeWithItem(
+	HEXINT32 thumbnailProvider,
+	UINT64 PartA_PrivTags
+	);
+
+InitializeWithFile(
+	HEXINT32 thumbnailProvider,
+	NULL fileName,
+	UINT64 PartA_PrivTags
+	);
+
+GetThumbnailWrapper(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetThumbnailWrapper(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	HEXINT32 thumnbailProviderWrapper,
+	GUID clsid,
+	INT32 hr
+	);
+
+GetThumbnailWrapper(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEXINT32 thumnbailProviderWrapper,
+	GUID clsid
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetThumbnailWrapper(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	HEXINT32 thumnbailProviderWrapper,
+	GUID clsid,
+	INT32 hr
+	);
+
+GetThumbnailWrapperTimeout(
+	GUID clsid,
+	UINT64 PartA_PrivTags
+	);
+
+GetThumbnailWrapper(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InitializeWithStream(
+	HEXINT32 thumbnailProvider,
+	UINT64 PartA_PrivTags
+	);
+

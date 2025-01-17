@@ -1,0 +1,64 @@
+ProviderNames:
+	Microsoft.Windows.IIS.WebServer
+
+
+
+**** Events *****
+RunTimeData(
+	UINT32 RateDynamicIdleThresholdTriggered,
+	UINT32 RateWorkersRecycled,
+	UINT32 MaxWorkerLifetime,
+	UINT32 MinWorkerLifetime,
+	UINT32 AvgWorkerLifetime,
+	UINT32 MaxConcurrentWokers,
+	UINT32 MinConcurrentWokers,
+	UINT32 AvgConcurrentWokers,
+	UINT32 RateWASFailedFCNS,
+	UINT32 RateWASFCNS
+	);
+
+GlobalData(
+	UINT32 EnabledRedirectionConfig,
+	UINT32 ServerDomainController,
+	UINT32 ClientCertAuthConfigured,
+	UINT64 SizeAppHostCfg,
+	UINT32 NumNUMANodes,
+	UINT32 SNICertCount
+	);
+
+ApplicationData(
+	UINT32 NumAppsAll,
+	UINT32 NumAppsClassic,
+	UINT32 NumAppsIntegrated,
+	UINT32 NumAppsNET20,
+	UINT32 NumAppsNET40,
+	UINT32 NumApps32BitOn64
+	);
+
+AppPoolData(
+	UINT32 NumAppPools,
+	UINT32 NumAppPoolsClassic,
+	UINT32 NumAppPoolsIntegrated,
+	UINT32 NumAppPools32BitOn64,
+	UINT32 NumAppPoolsDefaultIdentity,
+	UINT32 NumAppPoolsBuiltInIdentity,
+	UINT32 NumAppPoolsUserProfile,
+	UINT32 NumAppPoolsWithMultipleSites
+	);
+
+WebSiteData(
+	UINT32 NumSitesAll,
+	UINT32 NumSitesWithSSLSNI,
+	UINT32 NumSitesWithSSL,
+	UINT32 NumBindings,
+	UINT32 NumBindingsSSL,
+	UINT32 NumBindingsMSMQ,
+	UINT32 NumBindingsNETTCP,
+	UINT32 NumSitesWithUNC,
+	UINT32 NumSitesWithMultipleAppPool,
+	UINT32 MaxAppsPerSite,
+	UINT32 MedianAppsPerSite,
+	UINT32 AvgAppsPerSite,
+	UINT32 NumSitesWithHSTSEnabled
+	);
+

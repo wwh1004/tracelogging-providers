@@ -1,0 +1,262 @@
+ProviderNames:
+	InkAnalysisLoggingProvider
+	TelemetryAssert
+	TelemetryAssertDiagTrack
+
+
+
+**** Events *****
+GestureRecognizePerf(
+	BOOLEAN Is_Success,
+	UINT32 Number_of_Gestures,
+	UINT32 Number_of_Strokes,
+	UINT32 Number_of_Contexts,
+	DOUBLE Duration,
+	UNICODESTRING DllName,
+	UINT64 PartA_PrivTags
+	);
+
+GestureResultChanged(
+	UINT32 ShapeEngine_Result,
+	UINT32 ContextEngine_Result,
+	UINT32 Winning_Kind,
+	BOOLEAN Reconsidered_Overwrite,
+	UNICODESTRING DllName,
+	UINT64 PartA_PrivTags
+	);
+
+AddStrokeStop(
+	INT32 HR,
+	UINT32 PacketCount,
+	UINT32 PropertyCount,
+	UINT32 LanguageId,
+	DOUBLE Duration,
+	UNICODESTRING DllName
+	);
+
+GesturePerf(
+	UINT32 Number_of_Strokes,
+	UINT32 Number_of_NonInkContext,
+	DOUBLE Duration,
+	UNICODESTRING DllName
+	);
+
+ReconcileActivityStop(
+	UNICODESTRING DllName
+	);
+
+GestureDetected(
+	UINT32 Gesture,
+	UINT32 WordsAffected,
+	UINT32 Number_of_Strokes,
+	UNICODESTRING DllName
+	);
+
+PruneAndCloneActivityStop(
+	UNICODESTRING DllName
+	);
+
+ReconcileActivityStart(
+	INT32 ParserIndex,
+	UNICODESTRING DllName
+	);
+
+ParserActivityStop(
+	UNICODESTRING DllName
+	);
+
+PruneAndCloneActivityStart(
+	INT32 ParserIndex,
+	UNICODESTRING DllName
+	);
+
+EngineParseActivityStop(
+	UNICODESTRING DllName
+	);
+
+ParserActivityStart(
+	INT32 ParserIndex,
+	UNICODESTRING DllName
+	);
+
+ParseTreeActivityStop(
+	UNICODESTRING DllName
+	);
+
+EngineParseActivityStart(
+	INT32 EngineId,
+	UNICODESTRING DllName
+	);
+
+IAStageEnd(
+	INT32 Index,
+	INT32 StageEndInfo,
+	UNICODESTRING DllName
+	);
+
+ParseTreeActivityStart(
+	UINT32 InkAnalyzerType,
+	UNICODESTRING DllName
+	);
+
+WritingExpertInterpretation(
+	DOUBLE Confidence,
+	INT32 StrokeId,
+	UINT32 Label,
+	DOUBLE WritingScore,
+	INT32 Count,
+	UNICODESTRING DllName
+	);
+
+ParserStateChanged(
+	INT32 Index,
+	UINT32 InkAnalysisState,
+	INT32 StrokeCount,
+	UNICODESTRING DllName
+	);
+
+ShapeExpertInterpretation(
+	DOUBLE Confidence,
+	UINT32 StrokeId,
+	UINT32 Label,
+	UINT32 ConvexLabel,
+	INT32 Count,
+	UNICODESTRING DllName
+	);
+
+BaseExpertInterpretation(
+	DOUBLE Confidence,
+	INT32 StrokeId,
+	INT32 ExpertId,
+	INT32 Count,
+	UNICODESTRING DllName
+	);
+
+FindShapesStop(
+	INT32 HR,
+	UNICODESTRING Shapes,
+	DOUBLE Duration,
+	UNICODESTRING DllName
+	);
+
+FindNodesStop(
+	INT32 NodeKind,
+	UINT32 NodeCount,
+	UINT32 StrokeCount,
+	DOUBLE Duration,
+	UINT32 LastAddedLanguageId,
+	UNICODESTRING DllName
+	);
+
+FindShapesStart(
+	UNICODESTRING DllName
+	);
+
+BackgroundAnalyzeStop(
+	DOUBLE Duration,
+	UNICODESTRING DllName
+	);
+
+GetRecognizedString(
+	UNICODESTRING DllName
+	);
+
+AnalyzeException(
+	INT64 Stage,
+	ANSISTRING Error,
+	INT64 Ending Time,
+	UNICODESTRING DllName,
+	UINT64 PartA_PrivTags
+	);
+
+BackgroundAnalyzeStart(
+	UNICODESTRING DllName
+	);
+
+AnalyzeAsync(
+	INT32 HR,
+	INT64 Starting Time,
+	UNICODESTRING DllName
+	);
+
+AnalyzeSuccess(
+	INT64 Ending Time,
+	INT64 Frequency,
+	UNICODESTRING DllName,
+	UINT64 PartA_PrivTags
+	);
+
+CreateInkAnalyzer(
+	UNICODESTRING DllName
+	);
+
+OnReconciliationStop(
+	INT64 Ending Time
+	);
+
+OnParserStageStop(
+	UINT32 Stage Index,
+	INT64 Ending Time
+	);
+
+OnReconciliationStart(
+	INT64 Starting Time
+	);
+
+OnEngineStop(
+	UINT32 Engine Index,
+	INT64 Ending Time
+	);
+
+OnParserStageStart(
+	UINT32 Stage Index,
+	INT64 Starting Time
+	);
+
+OnBackgroundAnalyzeStop(
+	INT64 Ending Time
+	);
+
+OnEngineStart(
+	UINT32 Engine Index,
+	INT64 Starting Time
+	);
+
+OnForegroundAnalyzeStop(
+	INT64 Ending Time
+	);
+
+OnBackgroundAnalyzeStart(
+	INT64 Starting Time
+	);
+
+OnForegroundAnalyzeStart(
+	INT64 Starting Time
+	);
+
+OnStrokeAddition(
+	INT32 Stroke Id,
+	INT32 Packet Count,
+	INT32 Property Count
+	);
+
+OnStrokeRemoval(
+	INT32 Stroke Id
+	);
+
+FunctionProfiler(
+	ANSISTRING Module,
+	DOUBLE Duration(ms),
+	UINT64 PartA_PrivTags
+	);
+
+Assert(
+	UINT32 assertVersion,
+	UINT32 rva,
+	UINT32 timestamp,
+	UINT32 imageSize,
+	ANSISTRING imageName,
+	UINT32 count,
+	UINT32 totalHits
+	);
+

@@ -1,0 +1,872 @@
+ProviderNames:
+	Microsoft.Windows.Desktop.Fonts.FontManagementSystem
+
+
+
+**** Events *****
+FmsAddFilter(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+FmsFreeEnumerator(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsResetFontsActivationState(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFontAutoActivationMode(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsSetFontAutoActivationMode(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsMapGdiLogicalFont(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsGetFontProperty(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsSetDefaultFilter(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FmsActivateFonts(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FmsSetDefaultFilter(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsInitializeEnumerator(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetCurrentFilter(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsToggleOnDesignAxis(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsResetFontsActivationState(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsActivateFonts(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsMapGdiLogicalFont(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFontAutoActivationMode(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsResetFontsActivationState(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsMapGdiLogicalFont(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsSetFilter(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsFreeEnumerator(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsGetCurrentFilter(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsInitializeEnumerator(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsGetFontProperty(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsResetEnumerator(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsDeactivateFonts(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsSetTextFilter(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsToggleOnDesignAxis(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FmsDeactivateFonts(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFilteredFontList(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFontProperty(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsFreeEnumerator(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsToggleOnDesignAxis(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+FmsActivateFonts(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetBestMatchInFamily(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsSetTextFilter(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsSetTextFilter(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsSetFilter(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsGetGdiLogicalFont(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsGetGdiLogicalFont(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsDeactivateFonts(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsGetGdiLogicalFont(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsSetFontAutoActivationMode(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsAddFilter(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetBestMatchInFamily(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FmsSetDefaultFilter(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsGetFilteredFontList(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FmsSetFontAutoActivationMode(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFilteredPropertyList(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsResetEnumerator(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsSetFilter(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsGetFilteredFontList(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FmsGetFilteredPropertyList(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFilteredPropertyList(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsGetCurrentFilter(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsResetEnumerator(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsAddFilter(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FmsInitializeEnumerator(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FmsGetBestMatchInFamily(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FmsGetFontAutoActivationMode(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+

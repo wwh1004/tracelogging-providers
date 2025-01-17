@@ -1,0 +1,724 @@
+ProviderNames:
+	Microsoft.Windows.UpdateReserveManager
+	Microsoft.Windows.Storage.StorageReserve
+
+
+
+**** Events *****
+BeginScenario(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	UINT32 ScenarioId,
+	UINT32 OwningScenarioId,
+	UINT64 HardReserveSize,
+	UINT64 HardReserveUsedSpace,
+	UINT64 SoftReserveSize,
+	UINT64 SoftReserveUsedSpace,
+	INT32 ReturnCode
+	);
+
+CommitPendingHardReserveAdjustment(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT64 InitialAdjustment,
+	UINT64 FinalAdjustment
+	);
+
+TurnOffReserves(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	UINT64 HardReserveSize,
+	UINT64 HardReserveUsedSpace,
+	UINT64 SoftReserveSize,
+	UINT64 SoftReserveUsedSpace,
+	UINT64 ScratchReserveSize,
+	UINT64 ScratchReserveUsedSpace
+	);
+
+FunctionReturnedError(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailedFile,
+	INT32 FailedLine,
+	ANSISTRING FailedFunction,
+	ANSISTRING FailedExpression,
+	INT32 ReturnCode
+	);
+
+PrepareTIForReserveInitialization(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	BOOLEAN FallbackLogicUsed,
+	UINT32 Flags
+	);
+
+InitializeReserves(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	BOOLEAN FallbackInitUsed,
+	UINT64 HardReserveTargetSize,
+	UINT64 HardReserveInitialSize,
+	UINT64 HardReserveFinalSize,
+	UINT64 HardReserveInitialUsedSpace,
+	UINT64 HardReserveFinalUsedSpace,
+	UINT64 SoftReserveTargetSize,
+	UINT64 SoftReserveInitialSize,
+	UINT64 SoftReserveFinalSize,
+	UINT64 SoftReserveInitialUsedSpace,
+	UINT64 SoftReserveFinalUsedSpace,
+	UINT64 UpdateScratchReserveInitialSize,
+	UINT64 UpdateScratchReserveFinalSize,
+	UINT64 UpdateScratchInitialUsedSpace,
+	UINT64 UpdateScratchFinalUsedSpace,
+	UINT64 InitialUserFreeSpace,
+	UINT64 FinalUserFreeSpace,
+	UINT64 TargetUserFreeSpace,
+	UINT64 PostUpgradeFreeSpace,
+	UINT64 FreeSpaceToLeaveInUpdateScratch
+	);
+
+RemovePendingHardReserveAdjustment(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__
+	);
+
+UntagFilesInReserveFailure(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 ReserveId,
+	INT32 ReturnCode
+	);
+
+InitializeUpdateReserveManager(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Version,
+	UNICODESTRING ClientId,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	UNICODESTRING FlightId,
+	BOOLEAN PolicyPassed,
+	BOOLEAN Offline,
+	INT32 ReturnCode
+	);
+
+UpdatePendingHardReserveAdjustment(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	UINT32 UpdateType,
+	UINT64 ChangeSize,
+	UINT64 PendingHardReserveAdjustment,
+	UINT32 Disposition
+	);
+
+EndScenario(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	UINT32 ScenarioId,
+	UINT32 ActiveScenario,
+	UINT64 HardReserveSize,
+	UINT64 HardReserveUsedSpace,
+	UINT64 SoftReserveSize,
+	UINT64 SoftReserveUsedSpace,
+	INT32 ReturnCode
+	);
+
+ClearReserve(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	UINT32 Flags,
+	UINT32 ReserveId,
+	UINT64 InitialReserveUsedSpace,
+	UINT64 FinalReserveUsedSpace
+	);
+
+ReevaluatePolicy(
+	UINT64 PartA_PrivTags,
+	ANSISTRING __TlgCV__,
+	BOOLEAN PolicyPassed,
+	BOOLEAN PolicyChanged,
+	UINT32 PolicyFailedEnum
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+MarkSoftReserveLocations(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING PathName,
+	HRESULT HResult
+	);
+
+MarkPredefinedSoftReserveLocations(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING Path,
+	HRESULT HResult
+	);
+
+MarkPredefinedSoftReserveLocations(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING Path,
+	HRESULT HResult
+	);
+
+MarkPredefinedSoftReserveLocations(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+MarkPredefinedSoftReserveLocations(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+MarkPredefinedSoftReserveLocations(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+QueryReserveSpaceAfterDelete(
+	UINT64 PartA_PrivTags,
+	UINT64 AreaID,
+	INT64 SpaceGuarantee,
+	INT64 SpaceUsed
+	);
+
+RemoveDirectorySuccess(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DirName
+	);
+
+RemoveDirectoryFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DirName,
+	UINT64 GetLastError
+	);
+
+QueryFileLayoutFailure(
+	UINT64 PartA_PrivTags,
+	HRESULT QueryHR
+	);
+
+FirstNameOffsetMissing(
+	UINT64 PartA_PrivTags,
+	UINT64 FileEntryFlags,
+	UINT64 FileEntryAttributes
+	);
+
+FailedNameAllocation(
+	UINT64 PartA_PrivTags,
+	UINT64 FileEntryFlags,
+	UINT64 FileEntryAttributes
+	);
+
+PathCombineFailure(
+	UINT64 PartA_PrivTags,
+	HRESULT PathCombineHR
+	);
+
+DeleteFileFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FileName,
+	UINT64 GetLastError
+	);
+
+DeleteFileSuccess(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FileName
+	);
+
+DirectoryFound(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DirName
+	);
+
+QueryFileLayoutSuccess(
+	UINT64 PartA_PrivTags,
+	UINT64 FileEntryCount,
+	UINT64 Flags
+	);
+
+QueryReserveSpaceBeforeDelete(
+	UINT64 PartA_PrivTags,
+	UINT64 AreaID,
+	INT64 SpaceGuarantee,
+	INT64 SpaceUsed
+	);
+
+DeleteReserveAreaContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING Path,
+	UINT16 AreaID,
+	HRESULT HResult
+	);
+
+DeleteReserveAreaContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING Path,
+	UINT16 AreaID,
+	HRESULT HResult
+	);
+
+DeleteReserveAreaContent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+DeleteReserveAreaContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeleteReserveAreaContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SetReserveAreaOnFileTree(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING Path,
+	UINT16 AreaID,
+	HRESULT HResult
+	);
+
+SetReserveAreaOnFileTree(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING Path,
+	UINT16 AreaID,
+	HRESULT HResult
+	);
+
+SetReserveAreaOnFileTree(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SetReserveAreaOnFileTree(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SetReserveAreaOnFileTree(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+QueryStorageReserve(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryStorageReserve(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryStorageReserve(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TopPaths(
+	UNICODESTRING APIPath,
+	UNICODESTRING PathOne,
+	UINT32 FilesOne,
+	UNICODESTRING PathTwo,
+	UINT32 FilesTwo,
+	UNICODESTRING PathThree,
+	UINT32 FilesThree,
+	UNICODESTRING PathFour,
+	UINT32 FilesFour,
+	UNICODESTRING PathFive,
+	UINT32 FilesFive,
+	UNICODESTRING PathSix,
+	UINT32 FilesSix,
+	UNICODESTRING PathSeven,
+	UINT32 FilesSeven,
+	UNICODESTRING PathEight,
+	UINT32 FilesEight,
+	UNICODESTRING PathNine,
+	UINT32 FilesNine,
+	UNICODESTRING PathTen,
+	UINT32 FilesTen,
+	UINT16 AreaID,
+	UINT16 PathCount,
+	UINT64 PartA_PrivTags
+	);
+
+FixReserveAreaUntaggedParent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING Path,
+	UINT16 AreaID,
+	UINT64 FileTaggedCount,
+	UINT64 FileSpaceLimitCount,
+	UINT64 LinkCountTotal,
+	UINT64 UserSpaceSizeTotal,
+	UINT64 AreaReduxSizeTotal,
+	HRESULT HResult
+	);
+
+FixReserveAreaUntaggedParent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING Path,
+	UINT16 AreaID,
+	UINT64 FileTaggedCount,
+	UINT64 FileSpaceLimitCount,
+	UINT64 LinkCountTotal,
+	UINT64 UserSpaceSizeTotal,
+	UINT64 AreaReduxSizeTotal,
+	HRESULT HResult
+	);
+
+FixReserveAreaUntaggedParent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Path,
+	UINT16 AreaID
+	);
+
+FixReserveAreaUntaggedParent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FixReserveAreaUntaggedParent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+

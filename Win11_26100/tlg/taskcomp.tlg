@@ -1,0 +1,48 @@
+ProviderNames:
+	Microsoft.Windows.TaskScheduler
+
+
+
+**** Events *****
+User::UpdateEntry_NullUserDetails(
+	UNICODESTRING m_domain,
+	UNICODESTRING m_account,
+	UNICODESTRING m_userName,
+	UINT32 use
+	);
+
+User::CreateUser_AllocationFailure(
+	SID pSID,
+	UNICODESTRING Domain,
+	UNICODESTRING Account,
+	UNICODESTRING Domain_Account,
+	UINT32 use
+	);
+
+User::CreateUser_AllocationFailure(
+	SID pSID,
+	UNICODESTRING Domain,
+	UNICODESTRING Account,
+	UINT32 use
+	);
+
+User::CreateUser_AllocationFailure(
+	SID pSID,
+	UNICODESTRING _bstr_account,
+	UNICODESTRING _bstr_domain,
+	UNICODESTRING domain_Account,
+	UINT32 use
+	);
+
+User::CreateUser_MalformedAccount(
+	VOID
+	);
+
+User::CreateUser_DomainAccount(
+	SID pSID,
+	UNICODESTRING Domain,
+	UNICODESTRING Account,
+	UNICODESTRING Domain_Account,
+	UINT32 use
+	);
+

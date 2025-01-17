@@ -1,0 +1,116 @@
+ProviderNames:
+	Microsoft.Windows.LiveCaptions
+
+
+
+**** Events *****
+TeachingTipCaptionOnlyShown(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+TeachingTipLatencyShown(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+TeachingTipMicrophoneShown(
+	GUID appSessionId,
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+TeachingTipMicrophoneUriClicked(
+	GUID appSessionId,
+	UNICODESTRING uri,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsChangeLanguage(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsProfanityFilter(
+	GUID appSessionId,
+	BOOLEAN enabled,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsIncludeMicrophoneAudio(
+	GUID appSessionId,
+	BOOLEAN enabled,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsCaptionStyleOpened(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsWindowDock(
+	GUID appSessionId,
+	UNICODESTRING position,
+	UNICODESTRING activeSessionNames,
+	UINT64 PartA_PrivTags
+	);
+
+DownloadNotNow(
+	GUID appSessionId,
+	UNICODESTRING primaryLocale,
+	UINT64 PartA_PrivTags
+	);
+
+ConsentPageLoaded(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UserConsent(
+	GUID appSessionId,
+	BOOLEAN userConsent,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+

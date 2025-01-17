@@ -1,0 +1,27 @@
+ProviderNames:
+	Microsoft.Windows.GameBarPresenceWriter
+
+
+
+**** Events *****
+WebError(
+	UNICODESTRING name,
+	UINT64 statusCode,
+	UNICODESTRING url,
+	UNICODESTRING request,
+	UNICODESTRING response,
+	UNICODESTRING xuid
+	);
+
+Start(
+	UNICODESTRING id,
+	UNICODESTRING xuid
+	);
+
+Error(
+	UNICODESTRING name,
+	UINT32 code,
+	UNICODESTRING id,
+	UNICODESTRING xuid
+	);
+

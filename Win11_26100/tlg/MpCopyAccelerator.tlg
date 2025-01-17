@@ -1,0 +1,66 @@
+ProviderNames:
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+Platform.Rtp.CopyAccelerationInfo(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING API,
+	UNICODESTRING Source,
+	UNICODESTRING Dest,
+	NULL ProcessName,
+	UINT32 CopyFlags,
+	UINT8 Status,
+	UINT32 ErrorCode
+	);
+
+Platform.Rtp.CopyAccelerationStats(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 CopyFileExSuccess,
+	UINT32 CopyFileExFailed,
+	UINT32 CopyFileExCanceled,
+	UINT32 CopyFile2Success,
+	UINT32 CopyFile2Failed,
+	UINT32 CopyFile2Canceled,
+	UINT32 CopyFileExAsyncSuccess,
+	UINT32 CopyFileExAsyncFailed,
+	UINT32 CopyFileExAsyncCanceled,
+	UINT32 CopyFileExAsyncUserCanceled,
+	UINT32 CopyFile2AsyncSuccess,
+	UINT32 CopyFile2AsyncFailed,
+	UINT32 CopyFile2AsyncCanceled,
+	UINT32 CopyFile2AsyncUserCanceled
+	);
+

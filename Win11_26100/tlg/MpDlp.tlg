@@ -1,0 +1,352 @@
+ProviderNames:
+	Microsoft.Windows.TlgAggregateInternal
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+
+
+
+**** Events *****
+Platform.DLP.LLMScan(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ProcessName,
+	UNICODESTRING Url,
+	UINT32 Size
+	);
+
+Platform.DLP.CheckAccessForBuffer(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ProcessName,
+	UINT32 BufferSize,
+	UINT64 PasteBufferFileWriteTime,
+	UINT64 PasteBufferClassificationTime,
+	UINT64 PasteElapsedTimeMs,
+	UNICODESTRING PolicyRuleId,
+	UINT8 EnforcementLevel,
+	BOOL32 fAsync,
+	BOOL32 fCacheHit,
+	BOOL32 fTimeout,
+	UINT32 Retries
+	);
+
+Platform.DLP.PasteToBrowserInvalidBuffer(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ProcessName,
+	UINT64 ClipboardBufferSize
+	);
+
+Platform.DLP.OfficeHintsStats(
+	NULL Count,
+	UNICODESTRING ProcessName,
+	UNICODESTRING ActionType,
+	UNICODESTRING Reason,
+	UINT32 ProcessID,
+	HRESULT hr,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.DLP.PrintFileHeuristic(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	NULL AppName,
+	NULL DocumentName,
+	HRESULT hr,
+	INT32 PrintFileHeuristicPolicy
+	);
+
+Platform.DLP.CodeInjectionService(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT hr,
+	UNICODESTRING ProcessName
+	);
+
+Platform.DLP.PrintFileHeuristic(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	NULL AppBinary,
+	BOOL32 IsPrintFileHeuristicEnforced
+	);
+
+Platform.DLP.AppBlanket(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	NULL AppBinary,
+	BOOL32 IsAppBlanketEnforced
+	);
+
+Platform.DLP.Disabled(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.DLP.Enabled(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.DLP.FileEvidenceInfo(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING SourceFileName,
+	UNICODESTRING FileOnAzureStorage,
+	UINT64 TimeTakenForUpload,
+	UINT64 FileSize
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+
+Platform.ResourceMonitor.RtpThrottleFail(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT ResetThreadCpuSetHr
+	);
+
+Platform.DLP.AadJoinedInfo(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HResult,
+	UINT32 JoinType,
+	BOOLEAN UsingEmailAsUpn,
+	BOOLEAN UpnEqualsEmail,
+	BOOLEAN EmptyUpn
+	);
+
+Platform.DLP.CloudQueryStats(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING QueryPath,
+	HRESULT HResult,
+	UINT32 LatencyInMS,
+	BOOLEAN EmptyResponse
+	);
+

@@ -1,0 +1,258 @@
+ProviderNames:
+	Microsoft.UI.Xaml.Controls.Debug
+	Microsoft.UI.Xaml.Controls.Perf
+	Microsoft.UI.Xaml.Controls
+	Microsoft-Windows-XAML
+
+
+
+**** Events *****
+NavigationViewVerbose(
+	UNICODESTRING Message
+	);
+
+NavigationView_DisableBackUI(
+	VOID
+	);
+
+CommandBarFlyoutVerbose(
+	UNICODESTRING Message
+	);
+
+CommandBarFlyoutInfo(
+	UNICODESTRING Message
+	);
+
+PTRInfo(
+	UNICODESTRING Message
+	);
+
+CreateGuidError(
+	HRESULT hr,
+	UINT64 PartA_PrivTags
+	);
+
+CreateGuidError(
+	HRESULT hr
+	);
+
+RuntimeProfiler(
+	ANSISTRING BinaryVersion,
+	UNICODESTRING ApiCounts,
+	UINT32 ProfileGroupId,
+	UINT32 TotalCount,
+	BOOLEAN OnSuspend,
+	BOOLEAN Overflow,
+	BOOLEAN StringOverflow,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ScrollPresenterVerbose(
+	UNICODESTRING Message
+	);
+
+TryUpdateScaleWithAnimation(
+	FLOAT ZoomFactor,
+	FLOAT Center.X,
+	FLOAT Center.Y
+	);
+
+TryUpdateScale(
+	FLOAT ZoomFactor,
+	FLOAT Center.X,
+	FLOAT Center.Y
+	);
+
+ScrollPresenter_TryUpdatePositionWithAdditionalVelocity(
+	FLOAT Velocity.X,
+	FLOAT Velocity.Y
+	);
+
+ScrollPresenter_TryUpdatePositionWithAnimation(
+	DOUBLE HorizontalOffset,
+	DOUBLE VerticalOffset
+	);
+
+ScrollPresenter_TryUpdatePosition(
+	DOUBLE HorizontalOffset,
+	DOUBLE VerticalOffset
+	);
+
+ScrollPresenter_TryUpdatePositionBy(
+	DOUBLE HorizontalOffset,
+	DOUBLE VerticalOffset
+	);
+
+TryUpdateScaleWithAdditionalVelocity(
+	FLOAT Velocity,
+	FLOAT Center.X,
+	FLOAT Center.Y
+	);
+
+ScrollPresenter_ValuesChanged(
+	DOUBLE HorizontalOffset,
+	DOUBLE VerticalOffset,
+	FLOAT ZoomFactor,
+	DOUBLE OldHorizontalOffset,
+	DOUBLE OldVerticalOffset,
+	FLOAT OldZoomFactor
+	);
+
+ScrollPresenterInfo(
+	UNICODESTRING Message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScrollViewVerbose(
+	UNICODESTRING Message
+	);
+
+ScrollViewInfo(
+	UNICODESTRING Message
+	);
+
+ItemsViewVerbose(
+	UNICODESTRING Message
+	);
+
+ItemsViewInfo(
+	UNICODESTRING Message
+	);
+
+BuildTreeScheduler_OutOfWork(
+	VOID
+	);
+
+LinedFlowLayoutInfo(
+	UNICODESTRING Message
+	);
+
+LinedFlowLayoutVerbose(
+	UNICODESTRING Message
+	);
+
+FlowLayoutAlgorithm_Generate_CurrentBounds(
+	UNICODESTRING LayoutId,
+	INT32 CurrentIndex,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Width,
+	FLOAT Height
+	);
+
+FlowLayoutAlgorithm_Measure(
+	UNICODESTRING LayoutId,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Width,
+	FLOAT Height
+	);
+
+FlowLayoutAlgorithm_Generate(
+	UNICODESTRING LayoutId,
+	UNICODESTRING Direction,
+	INT32 Anchor
+	);
+
+SwipeControlInfo(
+	UNICODESTRING Message
+	);
+
+SwipeControlVerbose(
+	UNICODESTRING Message
+	);
+
+WebView2_CreateCoreObjects(
+	BOOLEAN IsStart,
+	UINT64 ObjectPointer
+	);
+
+WebView2_FireNavigationCompleted(
+	UINT64 ObjectPointer,
+	BOOLEAN hasEventHandlers
+	);
+
+WebView2_TryCompleteInitialization(
+	BOOLEAN IsStart,
+	UINT64 ObjectPointer
+	);
+
+ItemContainerVerbose(
+	UNICODESTRING Message
+	);
+
+ItemContainerInfo(
+	UNICODESTRING Message
+	);
+
+AnnotatedScrollBarInfo(
+	UNICODESTRING Message
+	);
+
+AnnotatedScrollBarVerbose(
+	UNICODESTRING Message
+	);
+
+MapControl_WebViewNavigationCompleted(
+	UINT64 ObjectPointer
+	);
+
+MapControl_InitializeWebMap(
+	BOOLEAN IsStart,
+	UINT64 ObjectPointer
+	);
+
+MapControl_WebMessageReceived_Error(
+	UINT64 ObjectPointer,
+	UNICODESTRING Message
+	);
+
+SelectorBarInfo(
+	UNICODESTRING Message
+	);
+
+SelectorBarVerbose(
+	UNICODESTRING Message
+	);
+

@@ -1,0 +1,216 @@
+ProviderNames:
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Platform.IOAV.ScanFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult,
+	ANSISTRING FailurePoint
+	);
+
+Platform.IOAV.ScanComplete(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult
+	);
+
+Platform.IOAV.ScanStart(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	BOOL32 Is64bit,
+	BOOL32 IsPath,
+	BOOL32 IsReadOnlyRequest,
+	BOOL32 IsInstalled,
+	BOOL32 IsHttpDownload
+	);
+
+Platform.IOAV.StorageInfo(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 IStorageCount,
+	UINT32 IStreamCount,
+	UINT64 TotalBytesScanned,
+	UINT64 TotalLoopCount,
+	BOOL32 IsInfected
+	);
+
+Platform.IOAV.ScanFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult,
+	ANSISTRING FailurePoint,
+	UINT64 StreamSizeKB,
+	UINT32 MaxSizeKB
+	);
+
+Platform.IOAV.FileInfo(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING FileExtension,
+	UINT64 FileSizeKB
+	);
+
+Platform.IOAV.ScanFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult,
+	ANSISTRING FailurePoint,
+	UINT64 FileSizeKB,
+	UINT32 MaxSizeKB,
+	UNICODESTRING FileExtension
+	);
+
+Platform.IoavBlock(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.IoavAudit(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.IoavShadow(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+

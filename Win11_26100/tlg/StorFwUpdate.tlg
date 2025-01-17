@@ -1,0 +1,31 @@
+ProviderNames:
+	Microsoft.StorFwUpdate.Production
+
+
+
+**** Events *****
+StorFwUpdateComponentUpdateStatus(
+	UINT64 PartA_PrivTags,
+	HEXINT32 productId,
+	UNICODESTRING deviceHardwareId,
+	UNICODESTRING instanceId,
+	HEXINT32 storageFirmwareStatusField,
+	HEXINT32 internalErrorCode,
+	HEXINT32 win32ErrorCode,
+	ANSISTRING firmwareVersionOfferedToDevice,
+	ANSISTRING currentFirmwareVersionOnDevice,
+	HEXINT32 firmwareSize
+	);
+
+StorFwUpdateComponentUpdateStatus(
+	UINT64 PartA_PrivTags,
+	HEXINT32 productId,
+	UNICODESTRING deviceHardwareId,
+	UNICODESTRING instanceId,
+	HEXINT32 storageFirmwareStatusField,
+	HEXINT32 internalErrorCode,
+	HEXINT32 win32ErrorCode,
+	ANSISTRING firmwareVersionOfferedToDevice,
+	ANSISTRING currentFirmwareVersionOnDevice
+	);
+

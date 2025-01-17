@@ -1,0 +1,431 @@
+ProviderNames:
+	Microsoft.Windows.Rdp.Graphics.RdpAvenc
+
+
+
+**** Events *****
+Unhandled exception(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureCount,
+	HRESULT hresult,
+	NTSTATUS status,
+	BOOLEAN NTSTATUS as error source,
+	UNICODESTRING msg,
+	GUID correlationId,
+	UINT64 PartA_PrivTags
+	);
+
+RETURN(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureCount,
+	HRESULT hresult,
+	NTSTATUS status,
+	BOOLEAN NTSTATUS as error source,
+	UNICODESTRING msg
+	);
+
+ERROR(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureCount,
+	HRESULT hresult,
+	NTSTATUS status,
+	BOOLEAN NTSTATUS as error source,
+	UNICODESTRING msg
+	);
+
+EXCEPTION(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureCount,
+	HRESULT hresult,
+	NTSTATUS status,
+	BOOLEAN NTSTATUS as error source,
+	UNICODESTRING msg
+	);
+
+UMRDP_PROCESSOR(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId
+	);
+
+ProcessorArgonContainerEnabled(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid,
+	UINT32 SiloId
+	);
+
+("Ioctl", (_tlgLevel, 0x4))(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid,
+	BOOL32 SuspendGraphicsProcessing
+	);
+
+("Ioctl", (_tlgLevel, 0x4))(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid
+	);
+
+Ioctl(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid,
+	UINT32 GpuEncodeMode
+	);
+
+Ioctl(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid
+	);
+
+MonitorContextRemove(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	UINT32 MonitorId
+	);
+
+Avenc(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+MonitorContextCreate(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId
+	);
+
+ProcessorStop(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid
+	);
+
+ProcessorStart(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	HEXINT64 TerminalLuid
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+RINGBUFFER(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	UNICODESTRING CursorBufferName,
+	UNICODESTRING Namespace
+	);
+
+MONITOR(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UNICODESTRING Namespace,
+	UNICODESTRING LockEventName
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UNICODESTRING Namespace,
+	UNICODESTRING AbortEventName
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UNICODESTRING Namespace,
+	UNICODESTRING UpdateBufferEmptyEventName
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UNICODESTRING Namespace,
+	UNICODESTRING SchedulerEventName
+	);
+
+Avenc(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	UINT32 MonitorId
+	);
+
+FrameEncoderStart(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId
+	);
+
+PIPELINE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UNICODESTRING Namespace,
+	UNICODESTRING Name,
+	UINT64 Size
+	);
+
+FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId,
+	UINT32 PresentationFrameNumber,
+	HRESULT hresult
+	);
+
+FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId,
+	UINT32 FrameId
+	);
+
+FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId
+	);
+
+FrameEncoderStop(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	UINT32 MonitorId
+	);
+
+CPU_FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId
+	);
+
+CPU_FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId,
+	UINT32 FrameId
+	);
+
+GPU_FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId
+	);
+
+GPU_FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId,
+	BOOL32 GpuReadbackMode
+	);
+
+GpuReadbackModeChange(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	GUID correlationId,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId,
+	BOOL32 New GPU readback mode
+	);
+
+RDPSURFACE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	UINT32 MonitorIndex,
+	HEXINT64 SurfaceHandle,
+	UINT32 Width,
+	UINT32 Height,
+	UINT32 Stride,
+	HEXINT64 SurfaceSharedHandle
+	);
+
+RDPSURFACE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorIndex,
+	UINT32 Width,
+	UINT32 Height
+	);
+
+RDPSURFACE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 RdpSurfaceStride,
+	UINT64 RdpSurfaceSize,
+	UINT32 RectStride,
+	UINT32 RectHeight,
+	UINT32 Resource.Pitch,
+	UINT64 Resource.Buffer.Size
+	);
+
+RDPSURFACE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 SessionId,
+	UINT32 MonitorIndex,
+	HEXINT64 SurfaceHandle,
+	UINT32 Width,
+	UINT32 Height,
+	UINT32 Stride,
+	UNICODESTRING SurfaceBufferName,
+	UNICODESTRING Namespace
+	);
+
+RDPSURFACE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorIndex,
+	UINT32 SessionId,
+	UINT32 FrameId
+	);
+
+RDPSURFACE(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+DUMP(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+GPU_FRAME_PROC(
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg,
+	UINT32 MonitorId,
+	UINT32 SessionId,
+	UINT32 PresentationFrameNumber,
+	HRESULT hresult
+	);
+

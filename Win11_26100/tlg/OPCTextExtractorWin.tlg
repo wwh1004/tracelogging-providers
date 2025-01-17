@@ -1,0 +1,63 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+
+
+
+**** Events *****
+SenseCE(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UINT64 StringSizeInBytes
+	);
+
+SenseCE(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCE(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING ErrorMsg
+	);
+
+SenseCE(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseDlp(
+	ANSISTRING message
+	);
+
+SenseDlp(
+	ANSISTRING message,
+	UINT64 text size bytes
+	);
+
+SenseDlp(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseDlp(
+	ANSISTRING message
+	);
+
+string utils(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseDlp(
+	ANSISTRING message
+	);
+
+SenseDlp(
+	ANSISTRING message
+	);
+

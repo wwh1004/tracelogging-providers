@@ -1,0 +1,243 @@
+ProviderNames:
+	Microsoft.Windows.AI.MachineLearning
+
+
+
+**** Events *****
+ConvertCPUTensorToVideoFrameWithSoftwareBitmapStop(
+	HEXINT32 HRESULT,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ConvertGPUTensorToSoftwareBitmapStop(
+	HEXINT32 HRESULT,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ConvertCPUTensorToVideoFrameWithSoftwareBitmapStart(
+	HEXINT32 Type,
+	INT64 Height,
+	INT64 Width,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+GPUTensorToDX12TextureStop(
+	HEXINT32 HRESULT,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ConvertGPUTensorToSoftwareBitmapStart(
+	HEXINT32 Type,
+	INT64 Height,
+	INT64 Width,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+GPUTensorToDX12TextureStart(
+	HEXINT32 Type,
+	INT64 Height,
+	INT64 Width,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ConvertVideoFrameWithSoftwareBitmapToCPUTensorStart(
+	HEXINT32 Type,
+	INT64 Height,
+	INT64 Width,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ConvertVideoFrameWithSoftwareBitmapToCPUTensorStop(
+	HEXINT32 HRESULT,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+SoftwareBitmapToGPUTensorStart(
+	HEXINT32 Type,
+	INT64 Height,
+	INT64 Width,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+SoftwareBitmapToGPUTensorStop(
+	HEXINT32 HRESULT,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DX12TextureToGPUTensorStart(
+	HEXINT32 Type,
+	INT64 Height,
+	INT64 Width,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+DX12TextureToGPUTensorStop(
+	HEXINT32 HRESULT,
+	INT32 runtimeSessionId,
+	UINT64 PartA_PrivTags,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+InputVideoFrame(
+	BOOL32 Convert,
+	HEXINT32 HRESULT,
+	INT32 iWidth,
+	INT32 oWidth,
+	INT32 iHeight,
+	INT32 oHeight,
+	HEXINT64 iLuid,
+	HEXINT64 oLuid,
+	HEXINT32 iFormat,
+	INT32 rX,
+	INT32 rY,
+	INT32 rW,
+	INT32 rH
+	);
+
+OnnxRuntimeProfiling(
+	ANSISTRING Category,
+	INT64 Duration (us),
+	INT64 Time Stamp (us),
+	ANSISTRING Event Name,
+	INT32 Process ID,
+	INT32 Thread ID
+	);
+
+OnnxRuntimeProfiling(
+	ANSISTRING Category,
+	INT64 Duration (us),
+	INT64 Time Stamp (us),
+	ANSISTRING Event Name,
+	INT32 Process ID,
+	INT32 Thread ID,
+	ANSISTRING Operator Name,
+	ANSISTRING Execution Provider
+	);
+
+WinMLLogSink(
+	ANSISTRING category,
+	UINT32 (UINT32)severity,
+	ANSISTRING message,
+	ANSISTRING code_location
+	);
+
+WinMLLogSink(
+	UINT64 PartA_PrivTags,
+	ANSISTRING category,
+	UINT32 (UINT32)severity,
+	ANSISTRING message,
+	ANSISTRING code_location
+	);
+
+WinMLLogSink(
+	ANSISTRING category,
+	UINT32 (UINT32)severity,
+	ANSISTRING message,
+	ANSISTRING code_location
+	);
+
+WinMLLogSink(
+	ANSISTRING category,
+	UINT32 (UINT32)severity,
+	ANSISTRING message,
+	ANSISTRING code_location
+	);
+
+WinMLLogSink(
+	UINT64 PartA_PrivTags,
+	ANSISTRING category,
+	UINT32 (UINT32)severity,
+	ANSISTRING message,
+	ANSISTRING code_location
+	);
+
+WinMLInputValidation(
+	ANSISTRING log_stream.str().c_str()
+	);
+
+SetNamedDimensionOverride(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	UNICODESTRING dimensionName,
+	INT32 overrideValue
+	);
+
+SetLearningModelDevice(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	INT32 deviceKind
+	);
+
+SetIntraOpNumThreadsOverride(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	INT32 numThreadsOverride,
+	INT32 maxThreadsOnMachine
+	);
+
+SetIntraOpThreadSpinning(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	BOOLEAN threadSpinningAllowed
+	);
+
+WinMLSuspended(
+	BOOL32 UTCReplace_AppSessionGuid,
+	INT32 runtimeSessionId
+	);
+
+RuntimeError(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	HRESULT hResult,
+	ANSISTRING errormessage,
+	ANSISTRING file,
+	ANSISTRING function,
+	INT32 line,
+	INT32 runtimeSessionId
+	);
+
+WinMLShutDown(
+	BOOL32 UTCReplace_AppSessionGuid,
+	ANSISTRING message
+	);
+
+stopped event(
+	BOOL32 UTCReplace_AppSessionGuid,
+	ANSISTRING event,
+	INT64 eventId
+	);
+
+started event(
+	BOOL32 UTCReplace_AppSessionGuid,
+	ANSISTRING event,
+	INT64 eventId
+	);
+

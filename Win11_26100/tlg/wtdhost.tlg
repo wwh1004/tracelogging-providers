@@ -1,0 +1,71 @@
+ProviderNames:
+	Microsoft.OneCore.WebThreatDefense.Client.Host
+
+
+
+**** Events *****
+EventIoPacketRetry(
+	UINT32 PrevDataSizeInB,
+	UINT32 NewDataSizeInB
+	);
+
+UnregistrationError(
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+RegistrationComplete(
+	VOID
+	);
+
+EventIoCompletionError(
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+CreateFileError(
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+EventIoPacketReceived(
+	PID Pid,
+	UINT64 ProcSeqId,
+	UINT32 SensorId,
+	UINT16 EventId,
+	UINT64 DurationInUs,
+	UINT32 MaxDataSize,
+	HEX Data
+	);
+
+CreateFile(
+	HEXINT64 Handle
+	);
+
+UregistrationComplete(
+	VOID
+	);
+
+RegistrationError(
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+SensorMonitoringStart(
+	VOID
+	);
+
+SensorMonitoringStop(
+	VOID
+	);
+
+SensorMonitoringStartError(
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+SensorMonitoringStopError(
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+

@@ -1,0 +1,74 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "9b698003-2db1-5618-d2e2-a7a137e494be",
+                             "ProviderName":  "Microsoft-Windows-Verifier",
+                             "ProviderGroupGUID":  ""
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "Shutdown",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ProcessName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "VerifierFlags",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "Startup",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ProcessName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "VerifierFlags",
+                                             "InType":  "UINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-verifier_31bf3856ad364e35_10.0.26100.1_none_d14d8815659ac738\\verifier.dll"
+}

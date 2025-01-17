@@ -1,0 +1,892 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+	Microsoft.Windows.Sense.GeneratedETW
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	INT32 hr
+	);
+
+StreamUploader(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+StreamUploader(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING url
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING url,
+	UNICODESTRING trustedCertifictesChain
+	);
+
+StreamUploader(
+	INT32 errorCode,
+	ANSISTRING message,
+	INT32 count
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING operation,
+	UNICODESTRING filePath,
+	UNICODESTRING url,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertifictesChain,
+	UINT32 uploadTimeoutinMs
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING operation,
+	UNICODESTRING pArgs[1],
+	UNICODESTRING pArgs[2]
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+UploaderActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING operation,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath
+	);
+
+UploaderActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UploaderActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseCommon(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 policy
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UNICODESTRING trustedCertificatesChains,
+	INT32 fileSizeLimitKb
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING url
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	INT32 Error code
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 errorCode,
+	UNICODESTRING systemName,
+	UNICODESTRING accountName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING domainNameStr,
+	UNICODESTRING accountName,
+	UNICODESTRING sidAsString
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR Win32Error
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 errorCode
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	INT32 err,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING driveRoot
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT32 defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT32 defaultValue
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 diskExtents
+	);
+
+SenseCommon(
+	UNICODESTRING errorCode,
+	INT32 message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING drivePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 diskNumber
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+StorageVolumeInformation(
+	UINT8 status,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId,
+	UNICODESTRING DeviceID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	STRING drive
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UINT32 deviceDescriptorSize
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING DeviceParentId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UNICODESTRING propName,
+	UINT64 bufferSize,
+	UINT32 offset
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING type,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseService(
+	ANSISTRING message,
+	UNICODESTRING Action,
+	ANSISTRING component
+	);
+
+SenseService(
+	ANSISTRING message
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING jsonException
+	);
+
+UploadFailed(
+	INT32 hr,
+	UNICODESTRING errorMsg
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING argumentException
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertificateChain,
+	UINT32 timeout
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	HRESULT hr
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UINT32 errorCode
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath,
+	BOOLEAN allowRawDriveAccess,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertificateChain,
+	UINT32 timeout,
+	INT32 hresult
+	);
+
+UploadTimedOut(
+	VOID
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING resultException
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	INT32 status,
+	INT32 errorCode
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	DOUBLE Upload time in seconds,
+	DOUBLE Kbps
+	);
+
+FileSize(
+	UINT64 fileSize
+	);
+
+StreamUploader(
+	ANSISTRING errorCode,
+	INT32 message
+	);
+
+UploadCancelled(
+	INT32 hr,
+	UNICODESTRING errorMsg
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UINT16 Response code,
+	UNICODESTRING Message body
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	BOOLEAN useProxy
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	INT32 status,
+	UNICODESTRING statusDescription,
+	UINT16 uploadProgress,
+	INT32 errorCode
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UINT64 remainingBytes,
+	UINT64 goodBlocks.size()
+	);
+
+UploadSucceeded(
+	UINT64 bytesUploaded
+	);
+
+StreamUploader(
+	UNICODESTRING message
+	);
+
+StreamUploader(
+	ANSISTRING errorCode,
+	INT32 message,
+	ANSISTRING exp message
+	);
+
+UploadDiscontinued(
+	INT32 hr,
+	UNICODESTRING errorMsg
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	INT32 exceptionErrorCode,
+	UNICODESTRING exceptionDesc
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UINT64 remainingBytes
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UNICODESTRING blockId,
+	UINT32 bytesSent,
+	UINT64 remainingBytes
+	);
+
+Streamer(
+	ANSISTRING message,
+	UNICODESTRING m_filePath,
+	INT32 errorCode
+	);
+
+Streamer(
+	ANSISTRING message,
+	UNICODESTRING m_filePath,
+	UINT32 errorCode
+	);
+
+Streamer(
+	ANSISTRING message,
+	UNICODESTRING m_filePath
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING inputFileName,
+	UINT32 impersonate.ImpersonationStatus()
+	);
+
+RegistryReadErrorEvent(
+	UNICODESTRING valueName,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	ANSISTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+SenseCyberCommon(
+	UNICODESTRING message,
+	UNICODESTRING proxyServer
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	INT32 errorcode,
+	ANSISTRING http_message,
+	BOOLEAN shouldRetry
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	UINT16 statuscode,
+	UNICODESTRING http_message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	BOOLEAN shouldUseProxy,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	INT32 WebHttpErrorCode,
+	ANSISTRING Exception
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING base_uri,
+	UNICODESTRING request_uri_path,
+	UNICODESTRING request_uri_query
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	BOOLEAN HasProxyConfiguration,
+	UNICODESTRING ProxyURL,
+	BOOLEAN ShouldTryWithStaticProxyFirst
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	UINT16 statusCode,
+	UNICODESTRING header_server
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	INT32 Error code,
+	BOOLEAN shouldUseProxy,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseHttpClient(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING path,
+	INT32 hr
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+SenseCommands(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING serviceBaseUrl,
+	UNICODESTRING requestPath,
+	UNICODESTRING m_proxyUrl,
+	INT64 timeout in seconds
+	);
+
+SenseHttpClient(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 SessionId,
+	WIN32ERROR WinError
+	);
+
+DefenderTrustAnchors(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING partnerGeoID
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING hexThumbprintRootCert,
+	UINT32 dwUsage
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING CurrentTrustAnchorThumbprint,
+	UNICODESTRING hexThumbprintRootCert,
+	UINT32 dwUsage
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UINT32 CurrentTrustAnchorArrayUsage,
+	UNICODESTRING hexThumbprintRootCert,
+	UINT32 dwUsage
+	);
+
+DefenderTrustAnchors(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING partnerGeoID
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UINT32 taSet->NumAnchors
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING partnerGeoID
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING windowsDefenderKeyPath,
+	UNICODESTRING windowsDefenderInstallLocationValueName
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING windowsDefenderEngineInstallLocationKeyPath,
+	UNICODESTRING windowsDefenderEngineInstallLocationValueName
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING modulePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 acceptMSTestRootMode
+	);
+

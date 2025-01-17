@@ -1,0 +1,43 @@
+ProviderNames:
+	Microsoft.Windows.Provisioning.Migration
+
+
+
+**** Events *****
+ProvMigrationStart(
+	VOID
+	);
+
+ProvMigrationFoundMissingPowerSettings(
+	VOID
+	);
+
+PostPowerwashCleanupDuringMigrations(
+	HRESULT HResult
+	);
+
+ArePowerSettingsMissing.GetValueFailed(
+	UINT32 LastError
+	);
+
+RemovePowerCachedCrcs.Exception(
+	HRESULT HResult
+	);
+
+ProvMigrationStop(
+	VOID
+	);
+
+ProvMigrationFail(
+	INT32 HResult
+	);
+
+RemovePowerCachedCrcs.Removed(
+	UNICODESTRING PkgId
+	);
+
+ProvMigrationMissingPowerSettingsFixCheck(
+	BOOLEAN StillMissing,
+	HRESULT HResult
+	);
+

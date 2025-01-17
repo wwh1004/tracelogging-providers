@@ -1,0 +1,83 @@
+ProviderNames:
+	Microsoft.Windows.Security.UserInit
+
+
+
+**** Events *****
+LaunchShellAppRuntime(
+	VOID
+	);
+
+LaunchShellAppRuntime(
+	VOID
+	);
+
+LaunchShellAppRuntime(
+	VOID
+	);
+
+LaunchShellAppRuntime(
+	VOID
+	);
+
+LaunchShellAppRuntime(
+	UINT64 ShellAppRuntimeReadyTime,
+	BOOL32 functionReturnValue
+	);
+
+LaunchShellAppRuntime(
+	ANSISTRING msg,
+	HRESULT lasterror
+	);
+
+LaunchShellAppRuntime(
+	UINT32 GetLastError()
+	);
+
+LaunchShellAppRuntime(
+	UINT32 GetLastError()
+	);
+
+LaunchShellAppRuntime(
+	ANSISTRING msg
+	);
+
+LaunchShellAppRuntime(
+	ANSISTRING msg,
+	HRESULT lasterror
+	);
+
+LaunchShellAppRuntime(
+	VOID
+	);
+
+LaunchShellAppRuntime(
+	INT32 regReturnValue
+	);
+
+LaunchShellAppRuntime(
+	BOOLEAN winStationReturnValue,
+	UINT32 EnableUniversalAppsForCustomShell
+	);
+
+TerminateProcessInCurrentSession(
+	ANSISTRING msg,
+	HEXINT32 lastError
+	);
+
+TerminateProcessInCurrentSession(
+	ANSISTRING msg,
+	UNICODESTRING processName,
+	HEXINT32 status
+	);
+
+LaunchShellAppRuntime(
+	UINT16 propertyValue->Type,
+	UINT32 propertyValue->u.ulVal
+	);
+
+TerminateProcessInCurrentSession(
+	ANSISTRING msg,
+	UNICODESTRING processName
+	);
+

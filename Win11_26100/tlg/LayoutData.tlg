@@ -1,0 +1,19 @@
+ProviderNames:
+	Microsoft.Windows.Shell.TextInput.InputPanel
+
+
+
+**** Events *****
+ResultLoggingCallback(
+	UINT64 PartA_PrivTags,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureType,
+	INT32 failureCount,
+	UINT32 threadId,
+	HEXINT32 hr,
+	UNICODESTRING message,
+	ANSISTRING code,
+	ANSISTRING function
+	);
+

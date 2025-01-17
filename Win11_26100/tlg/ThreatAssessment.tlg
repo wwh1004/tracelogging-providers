@@ -1,0 +1,1267 @@
+ProviderNames:
+	WpTraceLoggingProvider
+	Microsoft.Windows.WebDefense.ThreatAssessment.DebugTracing
+	Microsoft.Windows.WebDefense.ThreatAssessment
+	Microsoft.Windows.WebDefense.SenseLogging
+	Microsoft.Windows.Webdefense.SmartScreen
+	Anaheim-SmartScreen
+
+
+
+**** Events *****
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+Info(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+Info(
+	ANSISTRING Message,
+	GUID activityId,
+	ANSISTRING assessment1,
+	ANSISTRING assessment2
+	);
+
+Info(
+	ANSISTRING Message,
+	GUID activityId,
+	ANSISTRING assessment
+	);
+
+Info(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+TopAppList(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 SensorId,
+	UINT32 Assessment,
+	UNICODESTRING Process
+	);
+
+Info(
+	ANSISTRING Message,
+	UINT64 contextCount,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId,
+	UNICODESTRING TIO,
+	INT32 Sequence
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+Info(
+	ANSISTRING Message,
+	GUID activityId,
+	ANSISTRING assessment,
+	UNICODESTRING networkData,
+	UNICODESTRING processData
+	);
+
+Info(
+	ANSISTRING Message,
+	GUID activityId,
+	ANSISTRING assessment,
+	UNICODESTRING networkData,
+	UNICODESTRING processData
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+WebEvent(
+	ANSISTRING event_type,
+	ANSISTRING uri,
+	ANSISTRING body,
+	ANSISTRING headers,
+	ANSISTRING status
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+maxDomainLengthViolation(
+	UINT64 PartA_PrivTags
+	);
+
+listCapacityThresholdViolation(
+	UINT64 PartA_PrivTags
+	);
+
+EnterpriseListSizeOnUpdate(
+	UINT64 PartA_PrivTags,
+	UINT64 listSize
+	);
+
+ErrorOnRegistryIdpRetrieval(
+	UINT64 PartA_PrivTags,
+	INT64 errorCode,
+	ANSISTRING message
+	);
+
+Error(
+	ANSISTRING Message,
+	ANSISTRING error
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING Uri,
+	ANSISTRING Id,
+	ANSISTRING Verb
+	);
+
+FilterUpdate(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Id
+	);
+
+EmptyNewDataAppListCreate(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+AppListApplyBinaryDeltaFailed(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+AppListPatched(
+	UINT64 PartA_PrivTags
+	);
+
+FailedParseAppList(
+	UINT64 PartA_PrivTags
+	);
+
+AppListPatchFailed::NoOriginalData(
+	UINT64 PartA_PrivTags
+	);
+
+AppListNonPatchUpdate(
+	UINT64 PartA_PrivTags
+	);
+
+Verbose(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING Uri,
+	ANSISTRING Id,
+	ANSISTRING Verb
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+ClientSettingsApplyBinaryDeltaFailed(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+ClientSettingsPatched(
+	UINT64 PartA_PrivTags
+	);
+
+FailedParseClientSettings(
+	UINT64 PartA_PrivTags
+	);
+
+ClientSettingsPatchFailed::NoOriginalData(
+	UINT64 PartA_PrivTags
+	);
+
+ClientSettingsNonPatchUpdate(
+	UINT64 PartA_PrivTags
+	);
+
+Verbose(
+	ANSISTRING Message
+	);
+
+FailedParseNonPatchClientSettings(
+	UINT64 PartA_PrivTags
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING Uri,
+	ANSISTRING Id,
+	ANSISTRING Verb
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+EmptyNewDataIdpListCreate(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+IdpListApplyBinaryDeltaFailed(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+IdpListPatched(
+	UINT64 PartA_PrivTags
+	);
+
+FailedParseIdpList(
+	UINT64 PartA_PrivTags
+	);
+
+IdpListPatchFailed::NoOriginalData(
+	UINT64 PartA_PrivTags
+	);
+
+IdpListNonPatchUpdate(
+	UINT64 PartA_PrivTags
+	);
+
+Verbose(
+	ANSISTRING Message
+	);
+
+FailedParseNonPatchIdpList(
+	UINT64 PartA_PrivTags
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING Uri,
+	ANSISTRING Id,
+	ANSISTRING Verb
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Verbose(
+	ANSISTRING Message,
+	INT64 ping_timeout
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+EmptyNewDataSkipListCreate(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+SkipListApplyBinaryDeltaFailed(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+SkipListPatched(
+	UINT64 PartA_PrivTags
+	);
+
+FailedParseSkipListPatch(
+	UINT64 PartA_PrivTags
+	);
+
+SkipListPatchFailed::NoOriginalData(
+	UINT64 PartA_PrivTags
+	);
+
+SkipListNonPatchUpdate(
+	UINT64 PartA_PrivTags
+	);
+
+Verbose(
+	ANSISTRING Message
+	);
+
+FailedParseNonPatchSkipList(
+	UINT64 PartA_PrivTags
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING uri,
+	ANSISTRING Id,
+	ANSISTRING verb
+	);
+
+UpdateSkipListData(
+	UINT64 PartA_PrivTags
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Info(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message,
+	ANSISTRING HRESULT
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Error(
+	ANSISTRING Message,
+	ANSISTRING ErrorMsg
+	);
+
+Error(
+	ANSISTRING Message
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+ThreatAssessment(
+	ANSISTRING UserName,
+	FILETIME EventTime,
+	GUID ThreatId,
+	ANSISTRING ProcessName,
+	ANSISTRING Url,
+	ANSISTRING Domain,
+	ANSISTRING Verdict
+	);
+
+SingleThreatAssessment(
+	ANSISTRING UserSID,
+	FILETIME EventTime,
+	GUID ThreatId,
+	ANSISTRING ProcessName,
+	ANSISTRING Url,
+	ANSISTRING Domain,
+	ANSISTRING Verdict,
+	UINT32 PID,
+	UINT32 SensorId,
+	ANSISTRING FullVerdict,
+	UINT32 UserAccountType
+	);
+
+FullThreatAssessment(
+	ANSISTRING UserSID,
+	FILETIME EventTime,
+	GUID ThreatId,
+	UINT32 SensorId,
+	ANSISTRING FullVerdict,
+	UINT32 UserAccountType
+	);
+
+SingleAssessment(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 PID,
+	UNICODESTRING ProcessName,
+	UINT32 Verdict,
+	UINT32 SensorId,
+	UNICODESTRING PackageName,
+	UINT32 Flags,
+	UINT32 AssessedUrlCount
+	);
+
+FullAssessment(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Verdict,
+	UINT32 SensorId,
+	UINT32 UserAccountType,
+	UINT32 AssessedUrlCount
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING CaptureStatus,
+	UINT32 properties.failureReason,
+	ANSISTRING ImageResolution,
+	ANSISTRING DesktopResolution,
+	ANSISTRING ColorDepth,
+	ANSISTRING WindowOffset
+	);
+
+Info(
+	ANSISTRING Message,
+	BOOL32 SendSnapshot,
+	ANSISTRING ImageFormat,
+	ANSISTRING ColorDepth,
+	ANSISTRING ImageResolution,
+	UINT32 MaxFileSizeInBytes,
+	UINT8 CompressionLevel,
+	ANSISTRING InterpolationMode
+	);
+
+ThreatReportUploadCompleted(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 HttpStatus,
+	UINT64 UploadDurationInMs
+	);
+
+Info(
+	ANSISTRING Message,
+	INT32 http_status,
+	ANSISTRING message
+	);
+
+ServiceCalls(
+	UINT64 PartA_PrivTags,
+	UINT32 Success,
+	UINT32 Fail,
+	UINT32 Skipped,
+	GUID ThreatId
+	);
+
+LogAssessmentReportToSystemLog(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	ANSISTRING Verdict,
+	BOOLEAN IsLogAllowed
+	);
+
+LogAssessmentReportToSystemLog(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	ANSISTRING Verdict,
+	BOOL32 IsSystemLogEventEnabled
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	ANSISTRING Reason
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID activityId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	ANSISTRING Reason
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING url,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING url,
+	GUID activityId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	ANSISTRING Reason,
+	ANSISTRING CorrelationId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING url,
+	INT32 decision,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	GUID ThreatId,
+	UINT32 Result,
+	UINT32 Decision,
+	ANSISTRING CorrelationId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	UINT32 Decision,
+	ANSISTRING CorrelationId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	UINT32 Decision,
+	ANSISTRING CorrelationId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	ANSISTRING Reason,
+	UINT32 Decision,
+	ANSISTRING CorrelationId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING url,
+	GUID activityId
+	);
+
+UrlRepCheck(
+	UINT64 PartA_PrivTags,
+	GUID ThreatId,
+	UINT32 Result,
+	ANSISTRING Reason,
+	ANSISTRING CorrelationId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING processData,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING processData,
+	GUID activityId
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING domain,
+	UNICODESTRING networkData,
+	GUID activityId
+	);
+
+SkipUrl(
+	UNICODESTRING url,
+	ANSISTRING Message
+	);
+
+Verbose(
+	ANSISTRING Message,
+	UNICODESTRING url
+	);
+
+Info(
+	ANSISTRING Message,
+	BOOL32 SendReport,
+	UINT32 ThrottleIntervalInSeconds
+	);
+
+Info(
+	ANSISTRING Message,
+	ANSISTRING QueryStatus,
+	UINT32 FailureReason,
+	ANSISTRING ThreatId,
+	UINT64 Timestamp,
+	ANSISTRING ImageFormat,
+	ANSISTRING ColorDepth,
+	ANSISTRING ImageResolution,
+	UINT8 CompressionLevel,
+	ANSISTRING InterpolationMode,
+	UINT32 ImageSize
+	);
+
+Info(
+	ANSISTRING Message,
+	INT32 http_status,
+	ANSISTRING message
+	);
+
+SnapshotUploadCompleted(
+	UINT64 PartA_PrivTags,
+	UINT32 http_status,
+	ANSISTRING ThreatId,
+	UINT32 ImageSize,
+	UINT64 UploadDurationInMs
+	);
+
+InvalidCharacterPresentInStringUTF16(
+	UINT64 PartA_PrivTags,
+	UINT32 Error
+	);
+
+Error(
+	ANSISTRING Message,
+	UNICODESTRING StringUTF16
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	UNICODESTRING StringUTF16
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	UNICODESTRING StringUTF16
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	UNICODESTRING StringUTF16
+	);
+
+InvalidCharacterPresentInStringUTF16(
+	UINT64 PartA_PrivTags,
+	UINT32 Error
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	ANSISTRING StringUTF8
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	ANSISTRING StringUTF8
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	ANSISTRING StringUTF8
+	);
+
+Error(
+	ANSISTRING Message,
+	UINT32 error,
+	ANSISTRING StringUTF8
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+WarnEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+UriLookupSmartScreenEvent(
+	UNICODESTRING Uri,
+	UNICODESTRING IP,
+	UNICODESTRING ReferrerUri,
+	UNICODESTRING ReferrerIP,
+	UNICODESTRING Recommendation,
+	UNICODESTRING HitType,
+	UNICODESTRING NavigationType,
+	UNICODESTRING ProductType,
+	UINT32 CallingProcessId,
+	UINT64 CallingProcessCreationTime,
+	ANSISTRING Sid,
+	UNICODESTRING Enforcement,
+	UNICODESTRING Experience,
+	GUID ActivityId,
+	UNICODESTRING IocId
+	);
+
+NetworkFilterBreakTheGlass(
+	BOOL32 Allow,
+	UNICODESTRING UserOverrideKey,
+	UNICODESTRING FriendlyName,
+	UNICODESTRING Uri,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	ANSISTRING UserSid,
+	UNICODESTRING ResponseCategory,
+	UNICODESTRING IocId
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+SmartScreenPingErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING scheduler_id,
+	UINT32 ping_count,
+	UINT64 period_ms
+	);
+
+GeoMapLookup(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 EndpointMatches,
+	UINT32 ConsumerFallbacks,
+	UINT64 PeriodMs
+	);
+
+SmartScreenDurationAggregateEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	UINT32 total_count,
+	UINT64 total_ms,
+	UINT32 request_queued_count,
+	UINT64 request_queued_ms,
+	UINT32 dns_lookup_count,
+	UINT64 dns_lookup_ms,
+	UINT32 handle_actions_count,
+	UINT64 handle_actions_ms,
+	UINT32 top_traffic_count,
+	UINT64 top_traffic_ms,
+	UINT32 uri_cache_count,
+	UINT64 uri_cache_ms,
+	UINT32 warn_cache_count,
+	UINT64 warn_cache_ms,
+	UINT32 bloom_filter_count,
+	UINT64 bloom_filter_ms,
+	UINT32 evaluate_model_count,
+	UINT64 evaluate_model_ms,
+	UINT32 legacy_lookup_count,
+	UINT64 legacy_lookup_ms,
+	UINT32 service_lookup_count,
+	UINT64 service_lookup_ms,
+	UINT64 period_ms
+	);
+
+ApprepDurationAggregateEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 TotalCount,
+	UINT64 TotalMs,
+	UINT32 RequestQueuedCount,
+	UINT64 RequestQueuedMs,
+	UINT32 ServiceLookupCount,
+	UINT64 ServiceLookupMs,
+	UINT32 HashingCount,
+	UINT64 HashingMs,
+	UINT64 PeriodMs
+	);
+
+AsyncDurationAggregateEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 TimeoutCount,
+	UINT64 TimeoutMs,
+	UINT32 SynchronousCount,
+	UINT64 SynchronousMs,
+	UINT32 EvaluateCount,
+	UINT64 EvaluateMs,
+	UINT32 WarnCount,
+	UINT64 WarnMs,
+	UINT64 NumCounts,
+	UINT64 PeriodMs
+	);
+
+SmartScreenErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING category,
+	UINT32 value,
+	ANSISTRING message,
+	ANSISTRING file,
+	UINT32 line,
+	UINT32 context
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+Microsoft_WebBrowser_SmartScreen_Network(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING service_uri,
+	UINT64 request_bytes,
+	UINT64 response_bytes,
+	UINT64 period_ms
+	);
+
+WebClientDurationEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	ANSISTRING ServiceUri,
+	UINT64 Count,
+	UINT64 DurationMs,
+	UINT64 PeriodMs
+	);
+
+WebErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING EndpointUri,
+	UINT32 Verb,
+	UINT32 HttpStatusCode,
+	ANSISTRING CorrelationId,
+	ANSISTRING InternalCorrelationId,
+	ANSISTRING SchedulerId
+	);
+
+Microsoft_WebBrowser_SmartScreen_DiskIIO(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING file_name,
+	UINT64 read_bytes,
+	UINT32 read_count,
+	UINT64 write_bytes,
+	UINT32 write_count,
+	UINT64 period_ms
+	);
+
+SmartScreenDurationErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	UINT64 duration_threshold_ms,
+	UINT64 total_ms,
+	UINT64 request_queued_ms,
+	UINT64 dns_lookup_ms,
+	UINT64 handle_actions_ms,
+	UINT64 top_traffic_ms,
+	UINT64 uri_cache_ms,
+	UINT64 warn_cache_ms,
+	UINT64 bloom_filter_ms,
+	UINT64 evaluate_model_ms,
+	UINT64 legacy_lookup_ms,
+	UINT64 service_lookup_ms,
+	ANSISTRING correlation_id,
+	ANSISTRING internal_correlation_id
+	);
+
+Microsoft_WebBrowser_SmartScreen_UrlRepComplete(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 Count,
+	UINT32 NetworkErrorCount,
+	UINT32 UnsupportedSchemaCount,
+	UINT32 UserBypassCount,
+	UINT32 SmartScreenDisabledCount,
+	UINT32 ClientCriticalErrorCount,
+	UINT32 CriticalErrorSourceCount,
+	UINT32 CriticalErrorSource,
+	UINT32 SourceCount,
+	UINT32 AllowCount,
+	UINT32 AllowSource,
+	UINT32 CustomAllowCount,
+	UINT32 CustomAllowSource,
+	UINT32 CustomBlockCount,
+	UINT32 CustomBlockSource,
+	UINT32 CustomPolicyCount,
+	UINT32 CustomPolicySource,
+	UINT32 CasbPolicyCount,
+	UINT32 CasbPolicySource,
+	UINT32 UntrustedCount,
+	UINT32 UntrustedSource,
+	UINT32 PhishingCount,
+	UINT32 PhishingSource,
+	UINT32 MaliciousCount,
+	UINT32 MaliciousSource,
+	UINT32 PuaCount,
+	UINT32 PuaSource,
+	UINT32 TechScamCount,
+	UINT32 TechScamSource,
+	UINT32 ExploitCount,
+	UINT32 ExploitSource,
+	UINT64 PeriodMs
+	);
+

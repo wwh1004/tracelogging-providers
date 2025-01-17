@@ -1,0 +1,210 @@
+ProviderNames:
+	Microsoft-Windows-Sysmain-Prefetch
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+PfResPriPrefetchDbStats(
+	HEXINT32 ErrorCode,
+	HEXINT32 Flags,
+	UINT32 StaticDbFilePageCount,
+	UINT32 StaticDbMetafilePageCount,
+	UINT32 StaticDbFilePrivatePageCount,
+	UINT32 DynamicDbFilePageCount,
+	UINT32 DynamicDbMetafilePageCount,
+	UINT32 DynamicDbFilePrivatePageCount,
+	UINT32 CriticalAppsDbFilePageCount,
+	UINT32 CriticalAppsDbMetafilePageCount,
+	UINT32 CriticalAppsDbFilePrivatePageCount,
+	UINT32 RemainingBudgetInPages
+	);
+
+PfResPriPrefetchStats(
+	HEXINT32 ErrorCode,
+	UINT64 Pri7PagesBefore,
+	UINT64 Pri7PagesAfter
+	);
+
+Start_ReadLastMeasureTimeFailed(
+	WIN32ERROR ErrorCode
+	);
+
+IntelligentUpkeepDailySummary(
+	SYSTEMTIME Date,
+	BOOL32 PreviousDataMissing,
+	UINT16 SummaryArray,
+	UINT64 PartA_PrivTags
+	);
+
+Start_DeleteLastMeasureTime(
+	WIN32ERROR ErrorCode
+	);
+
+PfIuPredictionStats(
+	UINT32 State,
+	UINT32 HistoryTrueCount,
+	UINT32 MissingDataCount,
+	BOOL32 ActualState
+	);
+
+PfIuPredictionAggregatedStats(
+	UINT32 State,
+	UINT32 HistoryTrueCount,
+	UINT32 ObservedCount,
+	UINT32 ActualTrueCount,
+	UINT32 ActualFalseCount
+	);
+
+PfIu_UpdateLastMeasureTimeFailed(
+	SYSTEMTIME LocalMeasureTime,
+	WIN32ERROR ErrorCode
+	);
+
+ALPFLaunchPatternChange(
+	UNICODESTRING QueryBuffer->ScenarioId.ScenName,
+	UINT32 QueryBuffer->ScenarioId.HashId
+	);
+
+ALPFDecompressScenario(
+	UINT32 CompressedSize,
+	UINT32 DecompressedSize,
+	UINT32 Result
+	);
+
+ALPFDirectoryCleanupInfo(
+	UINT32 FileCount,
+	UINT32 SizeKb,
+	UINT32 MinDeletedScenAge,
+	UINT32 PrefetchFilesReduction,
+	UINT32 Result
+	);
+
+ALPFUpdateOptimalLayout(
+	FILETIME LastLayoutTime,
+	BOOL32 LayoutChanged,
+	UINT32 LayoutFileSize,
+	BOOL32 DefraggerLaunched,
+	UINT32 Result
+	);
+
+ALPFProcessTraceAggregate(
+	NULL EventCount,
+	NULL PrefetchedPagesSum,
+	NULL HitPagesSum,
+	NULL IgnoredPagesSum,
+	NULL MissedPagesSum,
+	NULL NewPagesSum,
+	NULL PrefetchedPagesMax,
+	NULL HitPagesMax,
+	NULL IgnoredPagesMax,
+	NULL MissedPagesMax,
+	NULL NewPagesMax,
+	NULL SensitivityMax,
+	NULL PrefetchedPagesMin,
+	NULL HitPagesMin,
+	NULL IgnoredPagesMin,
+	NULL MissedPagesMin,
+	NULL NewPagesMin,
+	NULL SensitivityMax,
+	NULL SensitivityMin,
+	NULL SensitivitySum,
+	NULL NumLaunchesMax,
+	NULL NumLaunchesMin,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ScenName,
+	UINT32 HashId,
+	UINT32 ErrorCode,
+	UINT32 PrefetchParameter,
+	UINT32 OverridePrefetchParameter,
+	BOOL32 ModernApp,
+	UINT32 AppVersionMajor,
+	UINT32 AppVersionMinor,
+	UINT32 AppVersionRevision,
+	UINT32 AppVersionBuild
+	);
+
+PfSdgProcessGroupAdd(
+	HEXINT64 GroupContext,
+	HEXINT64 ProcessContext,
+	PID Pid,
+	HEXINT32 ErrorCode
+	);
+
+PfApPrelaunchableAppFailLimitHit(
+	UNICODESTRING AUMID,
+	UINT32 SecondsSinceLastSwitch
+	);
+
+PfApPrelaunchableAppStateChange(
+	HEXINT32 AppNameKey,
+	UNICODESTRING AUMID,
+	UINT32 OldState,
+	UINT32 NewState,
+	UINT32 Reason
+	);
+
+PfApPrelaunchableAppStateChange(
+	HEXINT32 AppNameKey,
+	UNICODESTRING AUMID,
+	UINT32 OldState,
+	UINT32 NewState,
+	UINT32 Reason
+	);
+
+PfApAppStart(
+	UNICODESTRING AUMID
+	);
+
+HybridDrive_AttachState(
+	HEXINT32 IsSupported,
+	HEXINT32 AttachState,
+	WIN32ERROR ErrorCode,
+	UINT64 PartA_PrivTags
+	);
+
+PfApLogAppForegroundStateProcessActionItem(
+	INT16 ForegroundAppCount,
+	UINT32 SessionId,
+	UNICODESTRING Moniker,
+	UNICODESTRING AppId,
+	UNICODESTRING PsmKey,
+	BOOL32 ReceivingInput,
+	BOOL32 PreviousReceivingInput,
+	UINT32 SubAppInFocusCount,
+	BOOL32 AppForeground,
+	BOOL32 AppForegroundChanged
+	);
+
+PfRbBootStatistics(
+	UINT64 BytesMissedNotInPlan,
+	UINT64 BytesMissedPartiallyInPlan,
+	UINT64 BytesMissedTooLarge,
+	UINT64 BytesHit,
+	UINT64 BytesPrefetched,
+	UINT32 MissedNotInPlanCount,
+	UINT32 MissedPartiallyInPlanCount,
+	UINT32 MissedTooLargeCount,
+	UINT32 HitCount,
+	UINT32 PrefetchReadCount,
+	UINT32 HistoryCount,
+	UINT32 PlanAge,
+	UINT32 Flags,
+	UINT64 SyncPhaseIoBytes,
+	UINT32 SyncPhaseIoCount,
+	UINT32 SyncPhaseDurationUs,
+	UINT32 PostSyncPhasePendCount,
+	UINT64 PartA_PrivTags
+	);
+
+RdbCacheCreation(
+	UNICODESTRING ProductName,
+	UINT32 DeviceSizeMb,
+	UINT32 CacheSizeMb,
+	UINT32 ReadSpeedKBs,
+	UINT32 WriteSpeedKBs,
+	UINT32 BusType,
+	UINT32 FsType,
+	HEXINT32 Flags
+	);
+

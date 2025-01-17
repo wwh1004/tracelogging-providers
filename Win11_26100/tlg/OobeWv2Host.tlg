@@ -1,0 +1,281 @@
+ProviderNames:
+	Microsoft.Windows.Shell.OobeWv2Host
+	Microsoft.Windows.Wil.FeatureLogging
+
+
+
+**** Events *****
+OobeWv2HostMain_UnexpectedCommandLineArgs(
+	UNICODESTRING commandLineArgs,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostMain_ParsingCommandLineArgs(
+	UNICODESTRING commandLineArgs,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostMain_AddingWinAppSdkToPackageGraph(
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostMain_Starting(
+	UINT64 PartA_PrivTags
+	);
+
+FeatureError(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	HRESULT hr,
+	ANSISTRING file,
+	UINT16 lineNumber,
+	ANSISTRING module,
+	ANSISTRING process,
+	ANSISTRING originFile,
+	UINT16 originLineNumber,
+	ANSISTRING originModule,
+	ANSISTRING originName,
+	ANSISTRING message,
+	ANSISTRING callerModule,
+	UINT32 callerReturnAddressOffset,
+	ANSISTRING originCallerModule,
+	UINT32 originCallerReturnAddressOffset
+	);
+
+FeatureVariantUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 variantKind,
+	UINT8 variant,
+	UINT64 addend
+	);
+
+EnabledFeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT64 addend
+	);
+
+FeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT64 addend
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OobeWv2HostApplication_OnHostMessage(
+	INT32 messageType,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_PostMessageToHost(
+	INT32 messageType,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_LaunchAccessibilityFlyout(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_HostConnectionLost(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_Uninitialize(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_ShutdownApp(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_EnsureXamlInitialized(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_ExpectedPayloadNotPresent(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_ShowAppWindow(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_CreateAppWindow(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_ExitMessageLoop(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_TransferredFocusToXaml(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_HostConnectionStablished(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostApplication_StartMessageLoop(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_NavigationCompletedWithWebError(
+	INT32 httpStatusCode,
+	INT32 webErrorStatus,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_NavigationCompletedWithSuccess(
+	INT32 httpStatusCode,
+	INT32 webErrorStatus,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_NavigationCompletedWithApplicationCancellation(
+	INT32 httpStatusCode,
+	INT32 webErrorStatus,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_NavigationCancelledDueToHostNameMismatch(
+	UNICODESTRING newTargetUrl,
+	UNICODESTRING targetUrl,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_NavigationStarted(
+	UNICODESTRING newTargetUrl,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_CoreWebView2_ProcessFailedRetryAvailable(
+	INT32 failureCode,
+	INT32 failureReason,
+	INT32 retryCount,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_CoreWebView2_ProcessFailedNoRetryAvailable(
+	INT32 failureCode,
+	INT32 failureReason,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_App_ErrorOverlayVisibilityChanged(
+	BOOLEAN isVisible,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_CoreWebView2_ProcessFailedAutoRetryAvailable(
+	INT32 failureCode,
+	INT32 failureReason,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_InitializationFailed(
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_App_SpinnerOverlayVisibilityChanged(
+	BOOLEAN isVisible,
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_App_UnableToSetFavicon(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_CoreWebView2_NewWindowRequestBlocked(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_NavigationCompleted(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_CoreWebView2_ProcessFailed(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_InitializationSucceeded(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_App_LaunchA11yFlyout(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_App_Exit(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_CoreWebView2_DeleteAllCookies(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_WebView2_Initialization(
+	UINT64 PartA_PrivTags
+	);
+
+OobeWv2HostFrame_App_Initialize(
+	UINT64 PartA_PrivTags
+	);
+

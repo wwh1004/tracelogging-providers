@@ -1,0 +1,1955 @@
+ProviderNames:
+	Microsoft.Windows.Wil.FeatureLogging
+	Microsoft.WindowsAppSDK.InteractiveSceneGraph
+	WindowsDwmCoreInstrumentation
+	Microsoft.Windows.Dwm.Interaction
+	Microsoft-DwmCoreI-BackdropBrushInvestigations
+	WindowsDwmCoreTests
+	Microsoft.Windows.Dwm.DwmCore
+	WindowsDwmCore
+	InputCoreLifted
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT64 addend
+	);
+
+FeatureVariantUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 variantKind,
+	UINT8 variant,
+	UINT64 addend
+	);
+
+FeatureError(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	HRESULT hr,
+	ANSISTRING file,
+	UINT16 lineNumber,
+	ANSISTRING module,
+	ANSISTRING process,
+	ANSISTRING originFile,
+	UINT16 originLineNumber,
+	ANSISTRING originModule,
+	ANSISTRING originName,
+	ANSISTRING message,
+	ANSISTRING callerModule,
+	UINT32 callerReturnAddressOffset,
+	ANSISTRING originCallerModule,
+	UINT32 originCallerReturnAddressOffset
+	);
+
+EnabledFeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT64 addend
+	);
+
+DwmCore_ModuleLoad(
+	ANSISTRING Version,
+	UINT64 PartA_PrivTags
+	);
+
+GestureTargeting::UpdateInteraction Config(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	ANSISTRING UpdateType,
+	ANSISTRING InputType,
+	UINT32 ConfigCount
+	);
+
+GestureTargeting::UpdateInteraction Config(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	ANSISTRING UpdateType,
+	ANSISTRING InputType,
+	UINT32 ConfigCount,
+	UINT32 ConfigIndex,
+	NTSTATUS Interactions,
+	ANSISTRING PanXIncreasing,
+	ANSISTRING PanXDecreasing,
+	ANSISTRING PanYIncreasing,
+	ANSISTRING PanYDecreasing,
+	ANSISTRING ZoomIncreasing,
+	ANSISTRING ZoomDecreasing,
+	ANSISTRING Tap,
+	ANSISTRING Hold,
+	ANSISTRING Button,
+	ANSISTRING Eraser,
+	ANSISTRING Hover,
+	ANSISTRING Wheel,
+	ANSISTRING DisableGestures,
+	ANSISTRING StopInertia,
+	HEXINT32 MinContacts,
+	HEXINT32 MaxContacts
+	);
+
+Setting Pointer Target(
+	UINT32 frameId,
+	UINT32 pointerId,
+	HEXINT64 Input Sink
+	);
+
+Gesture Targeting Result(
+	UINT32 pointerId,
+	HEXINT64 InputHandler,
+	UINT32 PointerResult,
+	INT32 x,
+	INT32 y,
+	INT32 HRESULT
+	);
+
+CManipulationManager::ProcessManipulationInfo(
+	UINT32 pFrame->FrameId,
+	UINT32 pFrame->telemetryData.ManipulationFrameId,
+	UINT32 pFrame->cPointers,
+	UINT64 pFrame->PerfCount,
+	IPV4 pFrame->FrameTimes,
+	INT64 qpcRimFrameStart,
+	INT64 qpcRimFrameQueued,
+	INT64 qpcRimSignalReadComplete,
+	INT64 qpcInputProcessorStart,
+	INT64 qpcIsmSend,
+	INT64 qpcGestureTargetingSend,
+	INT64 qpcGenerateMessages,
+	INT64 qpcAppInputRetrieve,
+	UINT32 pFrame->PointerType
+	);
+
+Perf::DWM(
+	ANSISTRING Name
+	);
+
+Perf::DWM(
+	ANSISTRING Name
+	);
+
+TelemetryDebug::Container::GestureTargeting::QueueFrame(
+	IPV4 frameTimes,
+	INT64 qpcRimFrameStart,
+	INT64 qpcRimFrameQueued,
+	INT64 qpcRimSignalReadComplete,
+	INT64 qpcInputProcessorStart,
+	INT64 qpcIsmSend,
+	INT64 qpcGestureTargetingSend,
+	INT64 qpcGenerateMessages,
+	INT64 qpcAppInputRetrieve,
+	IPV6 vailFrameTimes,
+	INT64 qpcHostInputSend,
+	INT64 qpcContainerInputReceive,
+	INT64 qpcRimFrameQueued,
+	INT64 qpcRimSignalReadComplete,
+	INT64 qpcInputProcessorStart,
+	INT64 qpcIsmSend,
+	INT64 qpcGestureTargetingSend,
+	INT64 qpcGenerateMessages,
+	INT64 hostPerformanceFrequency
+	);
+
+TelemetryDebug::GestureTargeting::QueueFrame(
+	IPV4 frameTimes,
+	INT64 qpcRimFrameStart,
+	INT64 qpcRimFrameQueued,
+	INT64 qpcRimSignalReadComplete,
+	INT64 qpcInputProcessorStart,
+	INT64 qpcIsmSend,
+	INT64 qpcGestureTargetingSend,
+	INT64 qpcGenerateMessages,
+	INT64 qpcAppInputRetrieve
+	);
+
+GestureTargeting::UpdateInteraction Rails(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	BOOLEAN Enabled,
+	ANSISTRING Axis
+	);
+
+GestureTargeting::UpdateInteraction Capture(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	UINT32 PointerId,
+	UINT32 FrameId,
+	UINT64 PointerTimestamp,
+	BOOLEAN HasBufferedOutput
+	);
+
+GestureTargeting::UpdateInteraction Config (UNKNOWN INPUT TYPE)(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	ANSISTRING UpdateType,
+	UINT32 InputType,
+	UINT32 ConfigCount
+	);
+
+GestureTargeting::UpdateInteraction TempConfig(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	ANSISTRING UpdateType,
+	BOOLEAN Enabled,
+	ANSISTRING Axis,
+	TID Flags,
+	ANSISTRING PanXIncreasing,
+	ANSISTRING PanXDecreasing,
+	ANSISTRING PanYIncreasing,
+	ANSISTRING PanYDecreasing,
+	ANSISTRING ZoomIncreasing,
+	ANSISTRING ZoomDecreasing
+	);
+
+GestureTargeting::UpdateInteraction Config(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	ANSISTRING UpdateType,
+	ANSISTRING InputType,
+	UINT32 ConfigCount,
+	UINT32 ConfigIndex,
+	NTSTATUS Interactions,
+	ANSISTRING PanXIncreasing,
+	ANSISTRING PanXDecreasing,
+	ANSISTRING PanYIncreasing,
+	ANSISTRING PanYDecreasing,
+	ANSISTRING ZoomIncreasing,
+	ANSISTRING ZoomDecreasing,
+	ANSISTRING Tap,
+	ANSISTRING Hold,
+	ANSISTRING Button,
+	ANSISTRING Eraser,
+	ANSISTRING Hover,
+	ANSISTRING Wheel,
+	ANSISTRING DisableGestures,
+	ANSISTRING StopInertia
+	);
+
+GestureTargeting::UpdateInteraction(
+	ANSISTRING Type,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime,
+	HEXINT64 Visual
+	);
+
+GestureTargeting::RoutePointer(
+	INT64 InputQPC,
+	INT64 RimFrameStartQPC,
+	UINT32 FrameId,
+	UINT32 PointerId,
+	HEXINT64 InputSink
+	);
+
+GestureTargeting::SetPointerResult(
+	INT64 InputQPC,
+	INT64 RimFrameStartQPC,
+	UINT32 FrameId,
+	UINT32 PointerId,
+	ANSISTRING Result,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime
+	);
+
+GestureTargeting::DequeueFrame Pointer(
+	INT64 InputQPC,
+	UINT32 PointerId,
+	HEXINT32 PointerFlags,
+	STRING PixelLocation,
+	INT32 X,
+	INT32 Y,
+	UINT32 InteractionHandle,
+	BOOL32 GTSuppressed
+	);
+
+GestureTargeting::QueueFrame(
+	INT64 InputQPC,
+	INT64 RimFrameStartQPC,
+	UINT32 FrameId,
+	UINT32 PointerCount
+	);
+
+GestureTargeting::DequeueFrame(
+	INT64 InputQPC,
+	INT64 RimFrameStartQPC,
+	UINT32 FrameId,
+	UINT32 PointerCount
+	);
+
+CManipulationContext::CleanStaleFork(
+	HEXINT64 pMC,
+	HEXINT64 pIter,
+	HEXINT64 pIterParent,
+	UINT32 pIter->numContacts
+	);
+
+CManipulationContext::RevalidateMCTree MCTreeAncestor(
+	HEXINT64 pMC,
+	HEXINT64 pIter
+	);
+
+CManipulationContext::RevalidateMCTree VisTreeAncestor(
+	HEXINT64 pMC,
+	HEXINT64 pIter
+	);
+
+CManipulationContext::RevalidateMCTree MCWalk(
+	HEXINT64 pMC,
+	HEXINT64 pVisTreeNextParent,
+	HEXINT64 pMCTreeNextParent,
+	HEXINT64 pChild,
+	BOOL32 fIgnoreDefault
+	);
+
+CManipulationContext::RevalidateMCTree(
+	HEXINT64 pMC,
+	HEXINT64 pVisTreeNextParent,
+	HEXINT64 pMCTreeNextParent
+	);
+
+CManipulationContext::RevalidateMC(
+	HEXINT64 this,
+	HEXINT64 spMCMatch,
+	INT32 iContact,
+	INT32 m_contactInteractionMap.GetSize(),
+	HEXINT64 pRoot
+	);
+
+CManipulationContext::RemoveInteractionLeafFromTree(
+	HEXINT64 pInteraction
+	);
+
+GestureTargeting::InteractionConfig(
+	HEXINT64 InteractionObject,
+	HEX Touch,
+	UINT32 Count,
+	HEXINT32 Interactions,
+	HEXINT32 MinContacts,
+	HEXINT32 MaxContacts,
+	HEX Touchpad,
+	UINT32 Count,
+	HEXINT32 Interactions,
+	HEXINT32 MinContacts,
+	HEXINT32 MaxContacts,
+	HEX Pen,
+	UINT32 Count,
+	HEXINT32 Interactions,
+	HEXINT32 MinContacts,
+	HEXINT32 MaxContacts,
+	HEX Mousewheel,
+	UINT32 Count,
+	HEXINT32 Interactions,
+	HEXINT32 MinContacts,
+	HEXINT32 MaxContacts,
+	NOPRINT Mouse,
+	HEXINT32 Interactions,
+	HEXINT32 TempConfig,
+	HEXINT32 TempConfigMask
+	);
+
+GestureTargeting::SetInteractionChain(
+	UINT32 PointerId,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime
+	);
+
+GestureTargeting::SetInteractionChain NONE(
+	UINT32 PointerId
+	);
+
+GestureTargeting::UpdateActiveConfig(
+	NTSTATUS Interactions,
+	ANSISTRING PanXIncreasing,
+	ANSISTRING PanXDecreasing,
+	ANSISTRING PanYIncreasing,
+	ANSISTRING PanYDecreasing,
+	ANSISTRING ZoomIncreasing,
+	ANSISTRING ZoomDecreasing,
+	ANSISTRING Tap,
+	ANSISTRING Hold,
+	ANSISTRING Button,
+	ANSISTRING Eraser,
+	ANSISTRING Hover,
+	ANSISTRING Wheel,
+	ANSISTRING DisableGestures,
+	ANSISTRING StopInertia,
+	HEXINT32 MinContacts,
+	HEXINT32 MaxContacts
+	);
+
+Palm Rejection Enabled(
+	HEXINT64 object
+	);
+
+CInteractionProcessor::ResolveProhibitedMotion(
+	HEXINT64 object,
+	STRING InteractionContextWrapper,
+	HEXINT64 touch,
+	HEXINT64 touchpad,
+	HEXINT64 pen,
+	HEXINT64 mousewheel,
+	UINT32 currentInputType,
+	UINT32 currentContactCount,
+	BOOL32 handlesMotion,
+	HEX prohibitedConfigurations[i],
+	UINT32 i,
+	UINT32 minContactCount,
+	UINT32 maxContactCount,
+	HEXINT32 interactions,
+	PID pHandledInteractions,
+	BOOL32 tap,
+	BOOL32 hold,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z,
+	IPV6 supportedMotions,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33
+	);
+
+CInteractionProcesor::ComputeHandledInteractionsFromLocal(
+	HEXINT64 object,
+	HEXINT64 InteractionContextWrapper,
+	UINT32 currentInputType,
+	BOOLEAN handledMotion,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z,
+	IPV6 S_n_transpose,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	IPV6 supported,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33
+	);
+
+CInteractionProcessor::CalculateDetectedInteractions(
+	HEXINT64 object,
+	HEXINT64 InteractionContextWrapper,
+	HEXINT64 pTapHoldContext,
+	UINT32 currentInputType,
+	UINT32 new state,
+	INT32 supportedInteractionsAdded,
+	INT32 mustHandleInteractionsAdded
+	);
+
+CInteractionProcessor::SetTemporaryConfiguration(
+	HEXINT64 object,
+	UINT32 axis,
+	UINT32 type,
+	INT32 index,
+	BOOL32 fTempConfigEnabled,
+	BOOL32 rgTempConfig[index].fEnabled,
+	HEXINT32 config,
+	HEXINT32 mask,
+	HEXINT32 newConfig,
+	HEXINT32 rgTempConfig[index].config,
+	BOOL32 m_fTemporaryProhibitedDescendantConfigSet
+	);
+
+CInteractionProcessor::CaptureCurrentManipulation(
+	HEXINT64 object,
+	UINT32 pointerId,
+	UINT64 pointerTimeStamp
+	);
+
+CInteractionProcessor::ProcessOutput(
+	HEXINT64 object,
+	HEXINT64 pManipulation,
+	BOOL32 fHandling,
+	BOOL32 fCaptured,
+	UINT32 currentContactCount,
+	HEXINT32 output.interactionFlags,
+	HRESULT hr
+	);
+
+CInteractionProcessor::CalculateHandledInteractions(
+	HEXINT64 object,
+	UINT32 currentInputType,
+	UINT32 previous state,
+	UINT32 new state,
+	BOOL32 fHandledX,
+	BOOL32 fHandledY,
+	BOOL32 fHandledScale,
+	BOOL32 fHandledStaticGesture,
+	BOOL32 handlesRequired,
+	PID handledInteractions,
+	BOOL32 tap,
+	BOOL32 hold,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z,
+	PID m_parentProhibited,
+	BOOL32 tap,
+	BOOL32 hold,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z
+	);
+
+CInteractionProcessor::ConvertGlobalMotionToLocalMotion(
+	HEXINT64 object,
+	HEX InteractionContextWrapper,
+	HEXINT64 touch,
+	HEXINT64 touchpad,
+	HEXINT64 pen,
+	HEXINT64 mousewheel,
+	UINT32 currentInputType,
+	BOOLEAN localVector,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z,
+	BOOLEAN globalMotion,
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale,
+	IPV6 T_GlobalToLocal,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	IPV6 T_ScaleOnlyInverse,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33
+	);
+
+CInteractionProcessor::ResolveMustHandleMotion(
+	HEXINT64 object,
+	STRING InteractionContextWrapper,
+	HEXINT64 touch,
+	HEXINT64 touchpad,
+	HEXINT64 pen,
+	HEXINT64 mousewheel,
+	UINT32 currentInputType,
+	BOOL32 handlesRequiredMotions,
+	BOOL32 xRailsEnabled,
+	BOOL32 yRailsEnabled,
+	HEX pMustHandleInteractionGroup,
+	BOOL32 tap,
+	BOOL32 hold,
+	BOOL32 scale,
+	UINT32 axisCount,
+	PID pHandledInteractions,
+	BOOL32 tap,
+	BOOL32 hold,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z,
+	BOOLEAN detectionLocalHandledVector,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z
+	);
+
+CInteractionProcessor::ConstructLocalToGlobalTransform(
+	HEXINT64 object,
+	HEX InteractionContextWrapper,
+	HEXINT64 touch,
+	HEXINT64 touchpad,
+	HEXINT64 pen,
+	HEXINT64 mousewheel,
+	UINT32 currentInputType,
+	IPV6 T_localToGlobal,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33
+	);
+
+CInteractionProcessor::ProcessInput(
+	HEXINT64 CInteraction,
+	HEXINT64 InteractionProcessor,
+	HEX InteractionContextWrapper,
+	HEXINT64 touch,
+	HEXINT64 touchpad,
+	HEXINT64 pen,
+	HEXINT64 mousewheel
+	);
+
+CInteractionProcessor DecomposeMatrix(
+	BOOL32 fCanDecompose,
+	FILETIME matrix,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44,
+	STRING translationData,
+	FLOAT x,
+	FLOAT y,
+	STRING scaleData,
+	FLOAT x,
+	FLOAT y,
+	HEX rotationData,
+	FLOAT x,
+	FLOAT y,
+	FLOAT z,
+	FLOAT w,
+	FLOAT theta,
+	UINT32 hDevice,
+	HEX rcPhysicalSize,
+	INT32 left,
+	INT32 top,
+	INT32 right,
+	INT32 bottom,
+	HEX rcPixelSize,
+	INT32 left,
+	INT32 top,
+	INT32 right,
+	INT32 bottom
+	);
+
+GestureTargeting::ForcePalmRejection(
+	VOID
+	);
+
+DWM::MarkForFurtherEvaluation(
+	BOOL32 Selected,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime
+	);
+
+DWM::InputTransparencyEvaluation(
+	BOOL32 Selected,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime
+	);
+
+DWM::HitTestTreeWalkResult(
+	ANSISTRING PointerType,
+	SOCKETADDRESS HitTestAttributes,
+	UNICODESTRING MouseWheel,
+	UNICODESTRING WheelIncreasing,
+	UNICODESTRING WheelHorizontal,
+	UNICODESTRING ButtonDown,
+	UNICODESTRING TouchTargeting,
+	UNICODESTRING NoHoverPointer,
+	UNICODESTRING BarrelButtonDown,
+	UNICODESTRING EraserDown,
+	UNICODESTRING ControlDown,
+	UNICODESTRING HasCapture,
+	HEXINT32 HitTestAttributesValue,
+	HEXINT64 DuplicatedInputSink,
+	HEXINT64 WindowHandle,
+	HEXINT64 InputSink,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime
+	);
+
+DwmInitSessionActivityId(
+	GUID activityId,
+	UNICODESTRING dwmInitSessionActivityId
+	);
+
+RenderThreadWatchdogCheckpoint(
+	UINT64 PartA_PrivTags,
+	INT32 ElapsedMillisecondsSinceWatchdogTimerStarted
+	);
+
+CChannelContext::OnSuspendAnimationsChanged(
+	HEXINT64 CChannelContext,
+	UINT32 m_hChannel,
+	BOOL32 SuspendAnimations
+	);
+
+HighResourceUsageAlarm(
+	UINT64 PartA_PrivTags,
+	UINT32 UTCReplace_AppId,
+	UINT32 UTCReplace_AppVersion,
+	UINT32 ProcessId,
+	UINT64 ProcessSequenceNumber,
+	UINT32 VisualsCount,
+	UINT32 SurfacesCount,
+	UINT32 OtherCount,
+	UINT32 LightsCount,
+	UINT32 ShapesCount,
+	UINT32 KeyframeAnimationsCount
+	);
+
+DataSourceProxy::SetBooleanValue(
+	HEXINT64 DataSourceProxy,
+	BOOL32 value,
+	UINT32 m_readers.size(),
+	UINT64 currentFrameId
+	);
+
+CInteraction::ResetDefaultInteractionForCurrentMC(
+	HEXINT64 pInteraction,
+	BOOL32 DefaultInteraction
+	);
+
+CInteraction::UpdateDefaultInteractionForCurrentMC(
+	HEXINT64 pInteraction,
+	BOOL32 DefaultForCurrentMC,
+	BOOL32 DefaultInteraction
+	);
+
+CInteraction::SetTemporaryConfiguration(
+	HEXINT64 object,
+	UINT32 axis,
+	UINT32 type,
+	BOOL32 fTempConfigEnabled,
+	HEXINT32 config
+	);
+
+GestureTargeting::BlockInteractionResolution(
+	INT64 ComparisonQPC,
+	JSON Interaction,
+	HEXINT64 InteractionObject,
+	HEXINT64 ResourceObject,
+	ANSISTRING Type,
+	ANSISTRING Default,
+	UINT32 HitTestHandle,
+	HEXINT64 InputSink,
+	UINT32 ProcessId,
+	BOOL32 PalmRejection,
+	BOOL32 FurtherProcessingForInput,
+	BOOL32 InputTransparency,
+	BOOL32 HoverSource,
+	INT64 CreationTime
+	);
+
+CManipulation::Update(
+	HEXINT64 object,
+	BOOLEAN pan,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN deltaPan,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN scale,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN deltaScale,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN centerPoint,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FLOAT cumulativeExpansion,
+	FLOAT expansionVelocity,
+	BOOLEAN panVelocity,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN scaleVelocity,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	INT32 interactionState,
+	INT32 parentX,
+	INT32 parentY,
+	INT32 parentZ,
+	BOOL32 fXRailsEnabled,
+	BOOL32 fYRailsEnabled
+	);
+
+CManipulation::_SendUpdateToRenderThread(
+	HEXINT64 object,
+	BOOLEAN pan,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN scale,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FLOAT cumulativeExpansion,
+	BOOLEAN panVelocity,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN scaleVelocity,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FLOAT expansionVelocity,
+	FILETIME matrix,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44,
+	INT32 interactionState,
+	INT32 parentX,
+	INT32 parentY,
+	INT32 parentZ,
+	INT32 railsState,
+	BOOL32 fXRailsEnabled,
+	BOOL32 fYRailsEnabled,
+	INT32 m_captureState
+	);
+
+CVisual::CalcEffectiveTransform ParentTransform(
+	HEXINT64 this,
+	HEXINT64 Interaction,
+	FILETIME pParentTransform,
+	FLOAT pParentTransform->M11(),
+	FLOAT pParentTransform->M12(),
+	FLOAT pParentTransform->M13(),
+	FLOAT pParentTransform->M14(),
+	FLOAT pParentTransform->M21(),
+	FLOAT pParentTransform->M22(),
+	FLOAT pParentTransform->M23(),
+	FLOAT pParentTransform->M24(),
+	FLOAT pParentTransform->M31(),
+	FLOAT pParentTransform->M32(),
+	FLOAT pParentTransform->M33(),
+	FLOAT pParentTransform->M34(),
+	FLOAT pParentTransform->M41(),
+	FLOAT pParentTransform->M42(),
+	FLOAT pParentTransform->M43(),
+	FLOAT pParentTransform->M44()
+	);
+
+CVisual::CalcEffectiveTransform(
+	HEXINT64 this,
+	HEXINT64 Interaction,
+	FILETIME pTransform,
+	FLOAT pTransform->M11(),
+	FLOAT pTransform->M12(),
+	FLOAT pTransform->M13(),
+	FLOAT pTransform->M14(),
+	FLOAT pTransform->M21(),
+	FLOAT pTransform->M22(),
+	FLOAT pTransform->M23(),
+	FLOAT pTransform->M24(),
+	FLOAT pTransform->M31(),
+	FLOAT pTransform->M32(),
+	FLOAT pTransform->M33(),
+	FLOAT pTransform->M34(),
+	FLOAT pTransform->M41(),
+	FLOAT pTransform->M42(),
+	FLOAT pTransform->M43(),
+	FLOAT pTransform->M44()
+	);
+
+CExpressionManager::ShrinkQueuedStateChanges(
+	UINT32 owningPid,
+	UINT32 channelCallbackId,
+	UINT32 callbackId
+	);
+
+Reevaluate expressions due to trigger of expression(
+	VOID
+	);
+
+Expression_ProcessExpressions(
+	DOUBLE TotalDuration,
+	UINT32 NumExpressionsCalculated,
+	UINT32 NumTracedExpressionsCalculated,
+	UINT32 NumActiveExpressions,
+	UINT32 NumSuspendedAnimations,
+	BOOLEAN IsGraphDirty,
+	DOUBLE AverageCalculateValueDuration,
+	DOUBLE AverageCalculateValueWorkerDuration,
+	DOUBLE AverageProcessDependenciesDuration,
+	DOUBLE AverageResolveReferenceDuration,
+	DOUBLE AverageWriteToCacheDuration,
+	DOUBLE AverageSetOutputValueDuration,
+	UINT64 FrameId
+	);
+
+BACKDROPEFFECT_BVI_EVENT(
+	ANSISTRING SubEvent,
+	HEXINT64 FrameId,
+	ANSISTRING BVI,
+	ANSISTRING WorldBounds,
+	ANSISTRING SamplingBounds,
+	ANSISTRING RealizationSize,
+	ANSISTRING ScaleFactors,
+	ANSISTRING RootVisual,
+	ANSISTRING VisualTreePath,
+	ANSISTRING EffectInputUVRect,
+	ANSISTRING Flags,
+	HEXINT64 LastRetrievedFrameId,
+	ANSISTRING CustomString
+	);
+
+CDataSourceReader::InvalidateAnimationSources(
+	HEXINT64 CDataSourceReader,
+	UINT32 propertyId,
+	UINT64 currentFrameId,
+	UINT64 effectiveFrameId
+	);
+
+Manipulation Transform Components(
+	BOOLEAN Translation,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN Pan,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN Scale,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN CenterPoint,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z
+	);
+
+Manipulation Transform Matrix(
+	FILETIME Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+Expression_DelayTimeValue(
+	UINT32 Cookie,
+	FLOAT ResolvedDelayMs
+	);
+
+GetProperty: Unexpected null m_cpSequence(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId
+	);
+
+Expression_DurationValue(
+	UINT32 Cookie,
+	FLOAT ResolvedDurationMs
+	);
+
+AddKeyframeData(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId,
+	UINT32 Invalid KeyframeValueType,
+	HRESULT ((HRESULT)0x80070057L)
+	);
+
+AddKeyframeData(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId,
+	UINT32 Invalid data type for keyframe animations,
+	HRESULT ((HRESULT)0x80070057L)
+	);
+
+AddKeyframeData(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId,
+	UINT32 Invalid value.idxPathInstance,
+	HRESULT ((HRESULT)0x80070057L)
+	);
+
+AddKeyframeData(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId,
+	INT32 Invalid easingType,
+	HRESULT ((HRESULT)0x80070057L)
+	);
+
+CKeyframeAnimation::ProcessSetBindingBroken(
+	UINT32 owningPid,
+	UINT32 callbackId
+	);
+
+ProcessSetSeekState: Unexpected null m_cpSequence(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId
+	);
+
+ProcessUpdatePlaybackState: Unexpected null m_cpSequence(
+	HEXINT64 CKeyframeAnimation,
+	UINT32 ProcessId,
+	UNICODESTRING AppId
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	FILETIME Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	TID Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _31,
+	FLOAT _32
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	HEX Value,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FLOAT W
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	HEX Value,
+	FLOAT R,
+	FLOAT G,
+	FLOAT B,
+	FLOAT A
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	ANSISTRING Value
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	FLOAT Value
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	BOOL32 Value
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	BOOLEAN Value,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z
+	);
+
+Expression_SetOutputValue(
+	UINT32 Cookie,
+	UINT32 DataType,
+	UINT64 Mask,
+	UINT64 FrameId,
+	STRING Value,
+	FLOAT X,
+	FLOAT Y
+	);
+
+CBaseExpression::NotifyAnimationDisconnected(
+	UINT32 owningPid,
+	UINT32 callbackId
+	);
+
+CBaseExpression::ProcessSetBindingBroken(
+	UINT32 owningPid,
+	UINT32 callbackId
+	);
+
+Disconnected animation will not trigger.(
+	UINT32 Cookie,
+	HEXINT64 expression
+	);
+
+Animation Triggered(
+	UINT32 Cookie,
+	HEXINT64 expression
+	);
+
+CInteractionTracker::BoostCompositorClock(
+	BOOL32 Boost Enabled
+	);
+
+VisualInteractionSource animated by InteractionTracker(
+	UINT32 PropertyHandle,
+	HEXINT64 Visual,
+	HEXINT64 InteractionTracker,
+	HEXINT64 Interaction
+	);
+
+CInteractionTracker::SetState(
+	HEXINT64 CInteractionTracker,
+	INT32 m_state,
+	INT32 newState
+	);
+
+CInteractionTracker::SetMaxScale(
+	HEXINT64 CInteractionTracker,
+	FLOAT m_maxScale
+	);
+
+CInteractionTracker::SetMinScale(
+	HEXINT64 CInteractionTracker,
+	FLOAT m_minScale
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	HEX Value,
+	FLOAT R,
+	FLOAT G,
+	FLOAT B,
+	FLOAT A
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	HEX Value,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FLOAT W
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	BOOLEAN Value,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	STRING Value,
+	FLOAT X,
+	FLOAT Y
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	FILETIME Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	TID Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _31,
+	FLOAT _32
+	);
+
+PropertySetDestroyed(
+	INT32 Cookie
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	FLOAT Value
+	);
+
+Property Bag Base Value Updated(
+	INT32 Cookie,
+	INT32 Update Type,
+	INT32 Property Type,
+	INT32 Property Id,
+	BOOL32 Value
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	UNICODESTRING Value
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	FLOAT Value
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	FILETIME Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	BOOLEAN Value,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	STRING Value,
+	FLOAT X,
+	FLOAT Y
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	BOOL32 Value
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	TID Value,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _31,
+	FLOAT _32
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	HEX Value,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FLOAT W
+	);
+
+Expression_CacheAccess(
+	UINT32 Cookie,
+	UINT32 CacheOffset,
+	ANSISTRING AccessType,
+	UINT32 DataType,
+	UINT64 FrameId,
+	HEX Value,
+	FLOAT R,
+	FLOAT G,
+	FLOAT B,
+	FLOAT A
+	);
+
+Expression_Initialization(
+	UINT32 Cookie,
+	INT32 Result
+	);
+
+Expression_CalculateValueWorker_Failure(
+	UINT32 Cookie,
+	UINT32 LastProcessedNodeType,
+	HRESULT hr
+	);
+
+CMotion::UpdateValueWithChaining(
+	HEXINT64 CScrollAnimation,
+	UNICODESTRING axis,
+	UINT32 interactionState,
+	UINT32 newInteractionState,
+	UINT32 boundaryState,
+	UINT32 newBoundaryState,
+	FLOAT currentManipulationValue,
+	FLOAT m_chainingData.lastValue,
+	FLOAT m_chainingData.startingValue,
+	FLOAT m_chainingData.chainingDirection,
+	FLOAT value,
+	BOOL32 fChainingAllowed,
+	BOOL32 m_chainingData.handled,
+	BOOL32 m_chainingData.chainingDirectionDirty
+	);
+
+CScrollAnimation::StartInContact(
+	HEXINT64 CScrollAnimation
+	);
+
+CInteractionTrackerPositionAnimation::CalculateInertiaValueWorker(
+	HEXINT64 CInteractionTrackerPositionAnimation,
+	UNICODESTRING axis,
+	FLOAT currentPosition,
+	FLOAT centerPoint,
+	FLOAT elapsedTime
+	);
+
+CNaturalAnimation::CalculateValueWorker(
+	UINT32 Cookie,
+	FLOAT elapsedTime,
+	BOOLEAN currentPotionInForceBasis,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN result,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN *pNeedsUpdateForNextFrame
+	);
+
+CNaturalAnimation::InitializeForces(
+	UINT32 Cookie,
+	BOOLEAN InitialVelocity_StandardBasis,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN InitialValue_StandardBasis,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN FinalValue_StandardBasis,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN InitialVelocity_ForceBasis,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	BOOLEAN DistanceToTravel_ForceBasis,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Z,
+	FILETIME m_TStandardToForceBasis,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44
+	);
+
+CPrimitiveGroup::TraceInvalidBatches(
+	UINT32 layerCount,
+	UINT64 layers arraysize,
+	UINT32 numPrimitiveProperties,
+	UINT32 options
+	);
+
+CMotion::AdvanceInertiaToTimeInertiaModifier(
+	HEXINT64 CMotion,
+	UNICODESTRING axis,
+	FLOAT value,
+	FLOAT m_currentTime,
+	FLOAT velocity,
+	FLOAT acceleration
+	);
+
+CMotion::StartInertia(
+	HEXINT64 CMotion,
+	UNICODESTRING axis,
+	FLOAT m_initialValue,
+	FLOAT m_initialVelocity,
+	FLOAT m_timeToMinimumVelocity,
+	FLOAT m_naturalEndpoint,
+	BOOL32 restart
+	);
+
+CMotion::StartInContact(
+	HEXINT64 CMotion,
+	UNICODESTRING m_axis
+	);
+
+CMotion::AdvanceInertiaToTime(
+	HEXINT64 CMotion,
+	UNICODESTRING axis,
+	FLOAT value,
+	FLOAT currentVelocity,
+	FLOAT elapsedTime
+	);
+
+CInteractionContextWrapper::InteractionContextCallback(
+	HEXINT64 object,
+	HEXINT32 interactionId,
+	HEXINT32 interactionFlags,
+	BOOL32 fCallbackCurrentFrame
+	);
+
+CInteractionContextWrapper::_UpdateInteractionOutput(
+	HEXINT64 object,
+	BOOLEAN delta (no prediction),
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale,
+	STRING IC's cumulative translation,
+	FLOAT x,
+	FLOAT y,
+	STRING IC's cumulative prediction,
+	FLOAT x,
+	FLOAT y,
+	BOOLEAN delta (predicted),
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale,
+	FLOAT velocityX,
+	FLOAT velocityY,
+	FLOAT velocityExpansion,
+	FLOAT velocityScale,
+	STRING center,
+	FLOAT x,
+	FLOAT y
+	);
+
+CInteractionContextWrapper::InteractionContextCallback MANIPULATION(
+	HEXINT64 object,
+	BOOLEAN raw IC deltas,
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale,
+	STRING raw IC velocity,
+	FLOAT velocityX,
+	FLOAT velocityY,
+	BOOLEAN cumulative,
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale,
+	HEXINT32 railsState,
+	INT32 m_output.railsState
+	);
+
+CInteractionContextWrapper::ConfigureInteractionContext(
+	HEXINT64 object,
+	HEXINT32 manipulationConfig,
+	HEXINT32 tapConfig,
+	HEXINT32 holdConfig,
+	HRESULT hr
+	);
+
+CInteractionContextWrapper::ResetOutput(
+	HEXINT64 object
+	);
+
+CInteractionContextWrapper::GetTransformedOutput recalculated(
+	HEXINT64 object,
+	BOOLEAN delta,
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale,
+	FLOAT velocityX,
+	FLOAT velocityY,
+	FLOAT velocityExpansion,
+	FLOAT velocityScale,
+	STRING center,
+	FLOAT x,
+	FLOAT y,
+	HRESULT hr
+	);
+
+CInteractionContextWrapper::StopInteraction(
+	HEXINT64 object,
+	HRESULT hr
+	);
+
+CInteractionContextWrapper::ProcessInput(
+	HEXINT64 object,
+	UINT32 PointerId,
+	UINT32 PointerType,
+	UINT32 FrameId,
+	INT32 InputData,
+	UINT32 dwTime,
+	STRING ptHimetricLocationRaw UnTransformed,
+	UINT32 x,
+	UINT32 y,
+	STRING ptHimetricLocationRaw Transformed,
+	UINT32 x,
+	UINT32 y,
+	FILETIME transform,
+	FLOAT _11,
+	FLOAT _12,
+	FLOAT _13,
+	FLOAT _14,
+	FLOAT _21,
+	FLOAT _22,
+	FLOAT _23,
+	FLOAT _24,
+	FLOAT _31,
+	FLOAT _32,
+	FLOAT _33,
+	FLOAT _34,
+	FLOAT _41,
+	FLOAT _42,
+	FLOAT _43,
+	FLOAT _44,
+	HRESULT hr
+	);
+
+CInteractionContextWrapper::GetGlobalMotion recalculated(
+	HEXINT64 object,
+	BOOLEAN m_globalOutput.delta,
+	FLOAT x,
+	FLOAT y,
+	FLOAT scale
+	);
+
+CScalarForceEvaluator::AdvanceToTime(
+	HEXINT64 CScalarForceEvaluator,
+	FLOAT m_remainingTime
+	);
+
+CGravityBounceAccelerator::Accelerate(
+	UINT32 Cookie,
+	FLOAT result,
+	FLOAT state->Position,
+	FLOAT state->Velocity,
+	FLOAT state->Acceleration,
+	FLOAT time,
+	FLOAT m_acceleration,
+	FLOAT m_restitution
+	);
+
+BACKDROPEFFECT_TREEWALK_EVENT(
+	ANSISTRING SubEvent,
+	HEXINT64 FrameId,
+	ANSISTRING Visual,
+	ANSISTRING VisualTree,
+	ANSISTRING BackdropCounts,
+	ANSISTRING VisualTreePath,
+	ANSISTRING CustomString
+	);
+
+BACKDROPEFFECT_BRUSH_EVENT(
+	ANSISTRING SubEvent,
+	HEXINT64 FrameId,
+	ANSISTRING Visual,
+	ANSISTRING CustomString
+	);
+
+CSuperWetInkScribbleBase_Scribble(
+	UINT64 telemetryUniqueId,
+	BOOLEAN isDelegatedInkTrail,
+	INT32 telemetryInfoType,
+	UNICODESTRING appId,
+	UINT32 numberOfPointsDrawn,
+	UINT64 qpcBegin,
+	UINT64 qpcEnd,
+	UINT32 firstFrameId,
+	UINT32 lastFrameId
+	);
+
+CSuperWetInkScribble::ConsumeTipPoints(
+	UINT64 sharedMemoryReadQpc,
+	UINT64 telemetryCorrelationQpc
+	);
+
+CCommandBuffer::Initialize(
+	UINT32 layerCount,
+	UINT32 drawingStateCount,
+	UINT32 numPrimitiveProperties
+	);
+
+CAnimationTrigger::OnChanged() bail early.(
+	HEXINT64 CAnimationTrigger
+	);
+
+CAnimationTrigger::TransitionTrue() Send animation started callback(
+	HEXINT64 CAnimationTrigger
+	);
+
+CAnimationTrigger::OnChanged() send anim completed callback.(
+	HEXINT64 CAnimationTrigger
+	);
+
+CAnimationTrigger::TransitionTrue() Send TriggerFired callback(
+	HEXINT64 CAnimationTrigger,
+	UINT64 currentFrameId,
+	UINT64 DataProviderId,
+	UINT64 DataSourceId
+	);
+

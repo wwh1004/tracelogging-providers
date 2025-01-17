@@ -1,0 +1,322 @@
+ProviderNames:
+	Microsoft.Windows.MSIXDeployment.DEH
+
+
+
+**** Events *****
+EvaluateRequest(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING DEHName
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AccessControl.EvaluateRequest.AccessCheck(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING SDDL,
+	SID TargetUserSid,
+	UINT64 PartA_PrivTags
+	);
+
+AccessControl.EvaluateRequest.SddlToSecurityDescriptor(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING SDDL,
+	UINT32 Line,
+	UINT32 Column,
+	UINT64 PartA_PrivTags
+	);
+
+AccessControl.EvaluateRequest(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING SDDL,
+	UINT32 Line,
+	UINT32 Column,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+EvaluateRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+EvaluateRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+RemoveRequest(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING DEHName
+	);
+
+RevertRequest(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING DEHName
+	);
+
+CommitRequest(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING DEHName
+	);
+
+ApplicationData.DeleteMachineFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.DeleteMachineFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.CreateMachineFolder.PackageFamilyFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.CreateMachineFolder.PackageFamilyFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.CreateMachineFolder.ApplicationDataFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.CreateMachineFolder.ApplicationDataFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.CreateMachineFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UNICODESTRING SDDL,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.CreateMachineFolder(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING Path,
+	UNICODESTRING SDDL,
+	UINT64 PartA_PrivTags
+	);
+
+ApplicationData.EvaluateRequest.SddlToSecurityDescriptor(
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	UNICODESTRING SDDL,
+	UINT32 Line,
+	UINT32 Column,
+	UINT64 PartA_PrivTags
+	);
+
+RemoveRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+RemoveRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RevertRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+RevertRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CommitRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CommitRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+

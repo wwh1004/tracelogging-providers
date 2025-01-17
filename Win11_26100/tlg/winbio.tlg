@@ -1,0 +1,499 @@
+ProviderNames:
+	Microsoft.Windows.Security.Biometrics.Client
+
+
+
+**** Events *****
+OnServerBindingFailure(
+	VOID
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+WinBioReleaseFocus(
+	INT32 retVal
+	);
+
+WinBioReleaseFocus(
+	INT32 retVal
+	);
+
+WinBioAcquireFocus(
+	INT32 retVal
+	);
+
+WinBioAcquireFocus(
+	INT32 retVal
+	);
+
+WinBioIsESSCapable(
+	INT32 retVal
+	);
+
+WinBioIsESSCapable(
+	INT32 retVal
+	);
+
+SetSetting(
+	INT32 hr,
+	UINT64 bioPolicyType,
+	UINT32 newValue,
+	UINT64 PartA_PrivTags
+	);
+
+WinBioSetSetting(
+	INT32 retVal
+	);
+
+WinBioSetSetting(
+	INT32 retVal
+	);
+
+WinBioGetSetting(
+	INT32 retVal
+	);
+
+WinBioGetSetting(
+	INT32 retVal
+	);
+
+BioEnabledSetting(
+	BOOLEAN Enabled,
+	UINT32 Source
+	);
+
+BioLogonSetting(
+	BOOLEAN Enabled,
+	UINT32 Source
+	);
+
+_BioLogonIdentifiedUser(
+	INT32 retVal
+	);
+
+_BioLogonIdentifiedUser(
+	INT32 retVal
+	);
+
+WinBioLogonIdentifiedUser(
+	INT32 retVal
+	);
+
+WinBioLogonIdentifiedUser(
+	INT32 retVal
+	);
+
+WinBioConsumeFactorsDeletedByService(
+	INT32 retVal
+	);
+
+WinBioConsumeFactorsDeletedByService(
+	INT32 retVal
+	);
+
+WinBioGetFactorsDeletedByService(
+	INT32 retVal
+	);
+
+WinBioGetFactorsDeletedByService(
+	INT32 retVal
+	);
+
+WinBioGetEnrolledFactors(
+	INT32 retVal
+	);
+
+WinBioGetEnrolledFactors(
+	INT32 retVal
+	);
+
+WinBioUnprotectData(
+	INT32 retVal
+	);
+
+WinBioUnprotectData(
+	INT32 retVal
+	);
+
+WinBioProtectData(
+	INT32 retVal
+	);
+
+WinBioProtectData(
+	INT32 retVal
+	);
+
+WinBioSetProperty(
+	INT32 retVal
+	);
+
+WinBioSetProperty(
+	INT32 retVal
+	);
+
+WinBioGetProperty(
+	INT32 retVal
+	);
+
+WinBioGetProperty(
+	INT32 retVal
+	);
+
+WinBioControlUnitPrivileged(
+	INT32 retVal
+	);
+
+WinBioControlUnitPrivileged(
+	INT32 retVal
+	);
+
+WinBioControlUnit(
+	INT32 retVal
+	);
+
+WinBioControlUnit(
+	INT32 retVal
+	);
+
+WinBioUnlockUnit(
+	INT32 retVal
+	);
+
+WinBioUnlockUnit(
+	INT32 retVal
+	);
+
+WinBioLockUnit(
+	INT32 retVal
+	);
+
+WinBioLockUnit(
+	INT32 retVal
+	);
+
+WinBioDeleteTemplate(
+	INT32 retVal
+	);
+
+WinBioDeleteTemplate(
+	INT32 retVal
+	);
+
+WinBioGetBiometricDataStorgeConsentInfo(
+	INT32 retVal
+	);
+
+WinBioGetBiometricDataStorgeConsentInfo(
+	INT32 retVal
+	);
+
+WinBioCaptureSampleWithCallback(
+	INT32 retVal
+	);
+
+WinBioCaptureSampleWithCallback(
+	INT32 retVal
+	);
+
+WinBioCaptureSample(
+	INT32 retVal
+	);
+
+WinBioCaptureSample(
+	INT32 retVal
+	);
+
+WinBioEnrollDiscard(
+	INT32 retVal
+	);
+
+WinBioEnrollDiscard(
+	INT32 retVal
+	);
+
+WinBioMonitorPresence(
+	INT32 retVal
+	);
+
+WinBioMonitorPresence(
+	INT32 retVal
+	);
+
+WinBioUnregisterEventMonitor(
+	INT32 retVal
+	);
+
+WinBioUnregisterEventMonitor(
+	INT32 retVal
+	);
+
+WinBioRegisterEventMonitor(
+	INT32 retVal
+	);
+
+WinBioRegisterEventMonitor(
+	INT32 retVal
+	);
+
+WinBioImproveBegin(
+	INT32 retVal
+	);
+
+WinBioImproveBegin(
+	INT32 retVal
+	);
+
+WinBioEnumEnrollments(
+	INT32 retVal
+	);
+
+WinBioEnumEnrollments(
+	INT32 retVal
+	);
+
+WinBioEnrollCommit(
+	INT32 retVal
+	);
+
+WinBioEnrollCommit(
+	INT32 retVal
+	);
+
+WinBioEnrollCaptureWithCallback(
+	INT32 retVal
+	);
+
+WinBioEnrollCaptureWithCallback(
+	INT32 retVal
+	);
+
+WinBioEnrollCapture(
+	INT32 retVal
+	);
+
+WinBioEnrollCapture(
+	INT32 retVal
+	);
+
+WinBioEnrollSelect(
+	INT32 retVal
+	);
+
+WinBioEnrollSelect(
+	INT32 retVal
+	);
+
+WinBioEnrollRevoke(
+	INT32 retVal
+	);
+
+WinBioEnrollRevoke(
+	INT32 retVal
+	);
+
+WinBioEnrollAuthorize(
+	INT32 retVal
+	);
+
+WinBioEnrollAuthorize(
+	INT32 retVal
+	);
+
+WinBioEnrollBegin(
+	INT32 retVal
+	);
+
+WinBioEnrollBegin(
+	INT32 retVal
+	);
+
+WinBioLocateSensorWithCallback(
+	INT32 retVal
+	);
+
+WinBioLocateSensorWithCallback(
+	INT32 retVal
+	);
+
+WinBioLocateSensor(
+	INT32 retVal
+	);
+
+WinBioLocateSensor(
+	INT32 retVal
+	);
+
+WinBioCancel(
+	INT32 retVal
+	);
+
+WinBioCancel(
+	INT32 retVal
+	);
+
+WinBioWait(
+	INT32 retVal
+	);
+
+WinBioWait(
+	INT32 retVal
+	);
+
+WinBioIdentifyAndReleaseTicket(
+	INT32 retVal
+	);
+
+WinBioIdentifyAndReleaseTicket(
+	INT32 retVal
+	);
+
+WinBioIdentifyWithCallback(
+	INT32 retVal
+	);
+
+WinBioIdentifyWithCallback(
+	INT32 retVal
+	);
+
+WinBioIdentify(
+	INT32 retVal
+	);
+
+WinBioIdentify(
+	INT32 retVal
+	);
+
+WinBioVerifyAndReleaseTicket(
+	INT32 retVal
+	);
+
+WinBioVerifyAndReleaseTicket(
+	INT32 retVal
+	);
+
+WinBioVerifyWithCallback(
+	INT32 retVal
+	);
+
+WinBioVerifyWithCallback(
+	INT32 retVal
+	);
+
+WinBioVerify(
+	INT32 retVal
+	);
+
+WinBioVerify(
+	INT32 retVal
+	);
+
+WinBioCloseSession(
+	INT32 retVal
+	);
+
+WinBioCloseSession(
+	INT32 retVal
+	);
+
+WinBioAsyncOpenSession(
+	INT32 retVal
+	);
+
+WinBioAsyncOpenSession(
+	INT32 retVal
+	);
+
+Error:LegacyApiCall(
+	INT32 ResultCode
+	);
+
+WinBioOpenSession(
+	INT32 retVal
+	);
+
+WinBioOpenSession(
+	INT32 retVal
+	);
+
+_frameworkChangeCallback(
+	INT32 retVal
+	);
+
+_frameworkChangeCallback(
+	INT32 retVal
+	);
+
+WinBioAsyncMonitorFrameworkChanges(
+	INT32 retVal
+	);
+
+WinBioAsyncMonitorFrameworkChanges(
+	INT32 retVal
+	);
+
+WinBioAsyncEnumDatabases(
+	INT32 retVal
+	);
+
+WinBioAsyncEnumDatabases(
+	INT32 retVal
+	);
+
+WinBioAsyncEnumBiometricUnits(
+	INT32 retVal
+	);
+
+WinBioAsyncEnumBiometricUnits(
+	INT32 retVal
+	);
+
+WinBioAsyncEnumServiceProviders(
+	INT32 retVal
+	);
+
+WinBioAsyncEnumServiceProviders(
+	INT32 retVal
+	);
+
+WinBioCloseFramework(
+	INT32 retVal
+	);
+
+WinBioCloseFramework(
+	INT32 retVal
+	);
+
+WinBioAsyncOpenFramework(
+	INT32 retVal
+	);
+
+WinBioAsyncOpenFramework(
+	INT32 retVal
+	);
+
+WinBioEnumDatabases(
+	INT32 retVal
+	);
+
+WinBioEnumDatabases(
+	INT32 retVal
+	);
+
+WinBioEnumBiometricUnits(
+	INT32 retVal
+	);
+
+WinBioEnumBiometricUnits(
+	INT32 retVal
+	);
+
+WinBioEnumServiceProviders(
+	INT32 retVal
+	);
+
+WinBioEnumServiceProviders(
+	INT32 retVal
+	);
+

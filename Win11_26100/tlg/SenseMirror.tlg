@@ -1,0 +1,389 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+	Microsoft.Windows.Sense.GeneratedETW
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT32 defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT32 defaultValue
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseCyberContainer(
+	UNICODESTRING message
+	);
+
+SenseCyberContainer(
+	INT32 errorCode,
+	UNICODESTRING message,
+	INT32 hr
+	);
+
+SenseCyberContainer(
+	UNICODESTRING message,
+	UINT32 SettingsDataLength,
+	UINT32 SettingsFlag
+	);
+
+SenseCyberContainer(
+	UNICODESTRING message,
+	UINT32 m_referenceCount
+	);
+
+SenseCyberContainer(
+	UNICODESTRING message,
+	UINT32 m_referenceCount
+	);
+
+ContainerMirrorActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ContainerMirrorActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ContainerMirrorActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 startType,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 desiredAccess
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING serviceName,
+	UINT32 desiredAccess
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING driveRoot
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 diskExtents
+	);
+
+SenseCommon(
+	UNICODESTRING errorCode,
+	INT32 message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING drivePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 diskNumber
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+StorageVolumeInformation(
+	UINT8 status,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId,
+	UNICODESTRING DeviceID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	STRING drive
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UINT32 deviceDescriptorSize
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING DeviceParentId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UNICODESTRING propName,
+	UINT64 bufferSize,
+	UINT32 offset
+	);
+
+RegistryReadErrorEvent(
+	UNICODESTRING valueName,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING regPath,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 error,
+	UNICODESTRING defaultValue
+	);
+

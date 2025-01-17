@@ -1,0 +1,40 @@
+ProviderNames:
+	Microsoft-Windows-Diagnostics-Performance
+
+
+
+**** Events *****
+BootTroubleShooter(
+	UINT64 PartA_PrivTags,
+	INT32 Hr,
+	UINT32 FileSize,
+	UINT32 LostEvents,
+	UINT32 LostBuffers,
+	UINT64 PartA_PrivTags
+	);
+
+BootTroubleShooter(
+	INT32 Hr,
+	UINT32 LastError,
+	UINT32 LostEvents,
+	UINT32 LostBuffers,
+	UINT64 PartA_PrivTags
+	);
+
+PostLogonStartupProcesses(
+	PORT PostLogonStartupProcesses,
+	UNICODESTRING ProcessName,
+	UINT32 CpuUsageLowPriMs,
+	UINT32 CpuUsageNormalPriMs,
+	UINT32 CpuUsageFGBoostedPriMs,
+	UINT32 CpuUsageHighPriMs,
+	UINT32 CpuUsageMs,
+	UINT64 DiskReadBytes,
+	UINT32 TotalCpuUsageMs,
+	UINT64 TotalDiskReadBytes,
+	UINT32 PostLogonAnalysisTimeMs,
+	UINT16 TraceSizeMB,
+	BOOLEAN IsProfileBased,
+	UINT64 PartA_PrivTags
+	);
+

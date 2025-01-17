@@ -1,0 +1,19 @@
+ProviderNames:
+	Microsoft.Windows.WindowsErrorReporting
+
+
+
+**** Events *****
+UtilEnsureDirectoryWorker_RecursionLimit(
+	UNICODESTRING pwszDirPath
+	);
+
+UtilEnsureDirectory_Null(
+	VOID
+	);
+
+UtilEnsureDirectory_Copy(
+	UNICODESTRING pwszDirPath,
+	HRESULT hr
+	);
+

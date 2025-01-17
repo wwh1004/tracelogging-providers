@@ -1,0 +1,335 @@
+ProviderNames:
+	Microsoft.Windows.Shell.MiniSearch
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+CacheFailed(
+	UNICODESTRING source,
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+MiniSearchAcceleratorCacheRetreival(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 IsAppCacheInitialized,
+	BOOL32 IsSettingsCacheInitialized
+	);
+
+MiniSearchAcceleratorCacheRetreival(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOL32 IsAppCacheInitialized,
+	BOOL32 IsSettingsCacheInitialized
+	);
+
+MiniSearchAcceleratorCacheRetreival(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 IsAppCacheInitialized,
+	BOOL32 IsSettingsCacheInitialized
+	);
+
+MiniSearchAcceleratorCacheRetreival(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+MiniSearchAcceleratorCacheRetreival(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+MiniSearchVisibility(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 Visible
+	);
+
+MiniSearchVisibility(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+MiniSearchVisibility(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+MiniSearchLaunched(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchDismissAnimationStarted(
+	BOOLEAN animationEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchEntranceAnimationStarted(
+	BOOLEAN animationEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchAcceleratorsUpdated(
+	UNICODESTRING SessionId,
+	UINT32 DefaultAcceleratorsCount,
+	UINT32 RecentAcceleratorsCount,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchAcceleratorClicked(
+	UNICODESTRING SessionId,
+	UNICODESTRING Source,
+	UNICODESTRING Type,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchDismissAnimationRequestSent(
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchEntranceAnimationCompleted(
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchDismissAnimationCompleted(
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchAcceleratorRender(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 DefaultAcceleratorsCount,
+	UINT32 RecentAcceleratorsCount
+	);
+
+MiniSearchAcceleratorRender(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 DefaultAcceleratorsCount,
+	UINT32 RecentAcceleratorsCount
+	);
+
+MiniSearchAcceleratorRender(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UINT32 TotalAccelerators
+	);
+
+MiniSearchAcceleratorRender(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NoAcceleratorsRetreived(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchAcceleratorRender(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+MiniSearchVisible(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MiniSearchHidden(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchLaunchedViaMiniSearch(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+

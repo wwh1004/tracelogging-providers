@@ -1,0 +1,171 @@
+ProviderNames:
+	Microsoft.Windows.ConnectionManager
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+
+WlanAcmDisconnectedNotificationReceived(
+	GUID interfaceGuid,
+	UNICODESTRING profileName,
+	UINT32 reasonCode
+	);
+
+WlanAcmConnectionCompleteNotificationReceived(
+	GUID interfaceGuid,
+	UNICODESTRING profileName,
+	UINT32 reasonCode
+	);
+
+GetWlanSecondaryInterface(
+	GUID interfaceGuid,
+	INT32 isSecondary,
+	BOOL32 testMode
+	);
+
+GetWlanSecondaryInterface - WcmAlloc(
+	UINT32 error
+	);
+
+GetWlanSecondaryInterface - WlanEnumAllInterfaces(
+	UINT32 error
+	);
+
+GetSecondaryInterface - GetIfEntry2(
+	UINT32 error
+	);
+
+GetSecondaryInterface - ConvertInterfaceGuidToLuid(
+	UINT32 error
+	);
+
+EthernetCsp::EthernetpCspInit(
+	VOID
+	);
+
+EthernetCsp::EthernetCspStart::NsiStartNotificationsFailed(
+	ANSISTRING description,
+	UINT32 result
+	);
+
+EthernetCsp::EthernetCspStart(
+	VOID
+	);
+
+EthernetCsp::NsiAdapterEnumCallback::NullDataAdapterRemovalNotification(
+	ANSISTRING description,
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	UINT64 NetLuidIndex,
+	UINT64 IfType
+	);
+
+EthernetCsp::ProcessNsiParameterNotification(
+	ANSISTRING description,
+	HEXINT64 interfaceLuid,
+	GUID interfaceGuid
+	);
+
+EthernetCsp::ProcessNsiDeleteNotification::RemovedAdapterWasNotTracked(
+	ANSISTRING description,
+	GUID interfaceGuid
+	);
+
+EthernetCsp::ProcessNsiDeleteNotification(
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	UINT64 NetLuidIndex,
+	UINT64 IfType
+	);
+
+EthernetCsp::ProcessNsiAddNotification(
+	ANSISTRING description,
+	HEXINT64 interfaceLuid,
+	GUID interfaceGuid
+	);
+
+EthernetCsp::ProcessNsiAddNotification(
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	UINT64 NetLuidIndex,
+	UINT64 IfType
+	);
+
+EthernetCsp::ProcessNsiInitialNotification(
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	UINT64 NetLuidIndex,
+	UINT64 IfType
+	);
+
+EthernetCsp::ReportDisconnectToWCM::InterfaceDisconnected(
+	ANSISTRING description,
+	GUID interfaceGuid
+	);
+
+EthernetCsp::ReportConnectionToWCM::InterfaceConnected(
+	ANSISTRING description,
+	GUID interfaceGuid
+	);
+
+EthernetCsp::SetWcmConnectivity::InterfaceNotTracked(
+	HEXINT64 interfaceLuid
+	);
+
+CspAvailableConnectionRemoved(
+	GUID interfaceGuid,
+	UINT32 mediaType,
+	UNICODESTRING availableConnectionId
+	);
+
+CspAvailableConnectionAdded(
+	GUID interfaceGuid,
+	UINT32 mediaType,
+	UNICODESTRING availableConnectionId
+	);
+

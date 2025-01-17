@@ -1,0 +1,16 @@
+ProviderNames:
+	Microsoft-Windows-Verifier
+
+
+
+**** Events *****
+Shutdown(
+	UNICODESTRING ProcessName,
+	UINT32 VerifierFlags
+	);
+
+Startup(
+	UNICODESTRING ProcessName,
+	UINT32 VerifierFlags
+	);
+

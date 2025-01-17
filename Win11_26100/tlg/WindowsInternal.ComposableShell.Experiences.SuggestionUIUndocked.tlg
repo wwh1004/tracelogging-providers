@@ -1,0 +1,3582 @@
+ProviderNames:
+	Microsoft.WindowsInternal.ComposableShell.Experiences.SuggestionUI
+	Microsoft.WindowsInternal.ComposableShell.Experiences.SuggestionUI.Web
+	Microsoft.WindowsInternal.ComposableShell.Experiences.SuggestionUI
+	Microsoft.WindowsInternal.Client.Components.PackageFeed
+
+
+
+**** Events *****
+GetAuthenticationAccounts(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow
+	);
+
+Authenticate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow
+	);
+
+GetAuthenticationAccounts(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetAuthenticationAccounts(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Authenticate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Authenticate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ClipboardUpdateDetected(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow
+	);
+
+ClipboardHistoryChangeDetected(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow
+	);
+
+GetClipboardPreviewDataAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING clipboardItemId,
+	UNICODESTRING dataType
+	);
+
+NonUserClipboardHistoryApiFallback(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING ApiType
+	);
+
+GetClipboardItems(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CheckClipboardSetting(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING settingName
+	);
+
+GetClipboardPreviewDataAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetClipboardPreviewDataAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebViewMeasureWarning(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+GetClipboardItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetClipboardItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CheckClipboardSetting(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CheckClipboardSetting(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+DataPackageInjectionDoDropAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	INT32 DropPoint,
+	INT32 dataFormat
+	);
+
+DataPackageInjectionDoDropAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN succeeded
+	);
+
+DataPackageInjectionDoDropAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN succeeded
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DataPackageInjectionDoDropAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DataPackageInjectionDoDropAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+DownloadedFileDeleterDeleteAll(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+DataPackageProxySetBinaryToDataPackageAsStorageItemAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+DownloadedFileDeleterDeleteAll(
+	UINT64 PartA_PrivTags,
+	INT32 hr
+	);
+
+DownloadedFileDeleterDeleteAll(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DownloadedFileDeleterDeleteAll(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DataPackageProxySetBinaryToDataPackageAsStorageItemAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DataPackageProxySetBinaryToDataPackageAsStorageItemAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ResultLoggingCallback(
+	UINT64 PartA_PrivTags,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureType,
+	INT32 failureCount,
+	UINT32 threadId,
+	HEXINT32 hr,
+	UNICODESTRING message,
+	ANSISTRING code,
+	ANSISTRING function
+	);
+
+GetExpressiveTextByQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ItemType,
+	UINT32 QueryCount
+	);
+
+ExpressiveTextSearchDataSourceNotInitialized(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow
+	);
+
+GetExpressiveTextByQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetExpressiveTextByQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING TextBoxVisibility
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE Opacity
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Reason
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+SetCategorySet(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SetCategorySet(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SetCategorySet(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InsertTextToEditBuffer(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputProfileActivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ClearClipboardAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN includePinned,
+	UINT32 origin
+	);
+
+GetClipboardItemsCount(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN includePinned
+	);
+
+UploadClipboardItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING id
+	);
+
+UnpinClipboardItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING id
+	);
+
+PinClipboardItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING id
+	);
+
+DeleteClipboardItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING id,
+	BOOLEAN clearClipboardIfNeeded,
+	BOOLEAN clearCloudIfNeeded
+	);
+
+SelectClipboardHistoryItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING id,
+	UINT32 pasteFormat
+	);
+
+HandleExpressiveTextSelection(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ItemType
+	);
+
+GetEmoji(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ItemType,
+	UNICODESTRING GroupName
+	);
+
+TargetAppInfoChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+TextFrameworkFocusChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+TextFrameworkCandidatesUpdated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+TextSuggestionSelection(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Index
+	);
+
+UpdateDockedViewState(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING newState,
+	BOOLEAN withAnimation,
+	UNICODESTRING RequestedWebUIView,
+	INT32 InputScope
+	);
+
+TryHide(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+TryShow(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING RequestedWebUIView
+	);
+
+NativeBridgeInitializeAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+NativeBridgeInitialize(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN IsInputDelegationAutoStartEnabled,
+	UNICODESTRING RequestedWebUIView
+	);
+
+SuggestionsProviderSet(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING SuggestionsProviderName
+	);
+
+TextReverseConversionGeneratorNotCreated(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedLanguageTag,
+	UNICODESTRING Reason
+	);
+
+TextConversionGeneratorNotCreated(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedLanguageTag,
+	UNICODESTRING Reason
+	);
+
+LongWebViewNavigationDetected(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING requestedUri,
+	UNICODESTRING activeWebPackageVersionString,
+	UNICODESTRING correlationId
+	);
+
+WebViewTraceLoggingVerbose(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewTraceLoggingInfo(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewTraceLoggingLogAlways(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewTelemetry(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewTelemetryWarning(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewMeasureMarkingPII(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewMeasureHashingPII(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewMeasureDroppingPIIExceptIP(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewMeasureDroppingPII(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewMeasure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewCriticalData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING eventId,
+	UNICODESTRING payloadDataString,
+	DOUBLE payloadDataDouble,
+	JSON payloadDataJson
+	);
+
+WebViewWarningTracelogging(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING errorClassName,
+	UNICODESTRING filename,
+	UINT32 line,
+	UINT32 column,
+	UNICODESTRING errorStack
+	);
+
+WebViewWarning(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING errorClassName,
+	UNICODESTRING filename,
+	UINT32 line,
+	UINT32 column,
+	UNICODESTRING errorStack
+	);
+
+WebViewErrorTracelogging(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING errorClassName,
+	UNICODESTRING filename,
+	UINT32 line,
+	UINT32 column,
+	UNICODESTRING errorStack
+	);
+
+WebViewError(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING errorClassName,
+	UNICODESTRING filename,
+	UINT32 line,
+	UINT32 column,
+	UNICODESTRING errorStack
+	);
+
+WebViewCriticalError(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING correlationId,
+	UNICODESTRING errorClassName,
+	UNICODESTRING filename,
+	UINT32 line,
+	UINT32 column,
+	UNICODESTRING errorStack
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN ListenersExistForTextFrameworkSuggestionsUpdates,
+	BOOLEAN ListenersExistForFocusChangeUpdates
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING NewState
+	);
+
+InsertTextToEditBuffer(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InsertTextToEditBuffer(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputProfileActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputProfileActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING Name
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Name,
+	INT32 Number
+	);
+
+ClearClipboardAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ClearClipboardAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetClipboardItemsCount(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetClipboardItemsCount(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UploadClipboardItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UploadClipboardItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UnpinClipboardItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UnpinClipboardItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+PinClipboardItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+PinClipboardItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeleteClipboardItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeleteClipboardItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SelectClipboardHistoryItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SelectClipboardHistoryItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HandleExpressiveTextSelection(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HandleExpressiveTextSelection(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetExpressiveTextItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GetExpressiveTextItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TargetAppInfoChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TargetAppInfoChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TextFrameworkFocusChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TextFrameworkFocusChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TextFrameworkCandidatesUpdated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TextFrameworkCandidatesUpdated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TextSuggestionSelection(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TextSuggestionSelection(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DockedViewStateChangeEvent(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING EventType,
+	UNICODESTRING EventStatus,
+	UNICODESTRING FailureReason,
+	DOUBLE TimestampInMs
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE totalViewHeight,
+	DOUBLE collapsedViewBarHeight,
+	DOUBLE collapsedViewTableHeight,
+	DOUBLE collapsedViewLeftColumnWidth,
+	DOUBLE collapsedViewRightColumnWidth
+	);
+
+UpdateDockedViewState(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UpdateDockedViewState(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TryHide(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TryHide(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TryShow(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TryShow(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CreateFlightingInfoAsyncResult(
+	UINT64 PartA_PrivTags,
+	INT32 hr,
+	UINT64 durationInMs
+	);
+
+NativeBridgeInitializeAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+NativeBridgeInitializeAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NativeBridgeInitialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+NativeBridgeInitialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SuggestionsProviderSet(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SuggestionsProviderSet(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NavigationStarting(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedUri
+	);
+
+OnLoaded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SuggestionUIContainerConstructor(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+DOMContentLoaded(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedUri
+	);
+
+LongRunningScriptDetected(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	INT64 ExecutionTimeMs
+	);
+
+NavigationCompleted(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedUri,
+	BOOLEAN IsSuccess,
+	UINT32 ErrorStatus
+	);
+
+WebUIContentLoading(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedUri
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING control
+	);
+
+NavigationStarting(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+NavigationStarting(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING webUI,
+	UNICODESTRING isActualControlSizePendingWebUI
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT PreviousSize.Width,
+	FLOAT PreviousSize.Height,
+	FLOAT NewSize.Width,
+	FLOAT NewSize.Height
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING action
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN isDOMContentLoaded,
+	BOOLEAN isAppLikelySuspending,
+	UNICODESTRING visibility
+	);
+
+OnLoaded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OnLoaded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SuggestionUIContainerConstructor(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SuggestionUIContainerConstructor(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TelemetryCommonArgsUpdateInstanceRetry(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	INT32 retryCount
+	);
+
+TextFrameworkCandidateAction(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING Action,
+	UINT32 Index
+	);
+
+InjectCtrlVKeyAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+TextFrameworkCandidateAction(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TextFrameworkCandidateAction(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN Value
+	);
+
+InjectCtrlVKeyAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InjectCtrlVKeyAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ThumbnailGenerator(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ThumbnailGenerator(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT64 SourceSize,
+	UINT64 ResizedSize,
+	FLOAT Compression
+	);
+
+ThumbnailGenerator(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 SourceSize,
+	UINT64 ResizedSize,
+	FLOAT Compression
+	);
+
+ThumbnailGenerator(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ThumbnailGenerator(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+WebPackageLoading(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebPackageLoading(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING FeedId,
+	UNICODESTRING FeedUrl,
+	UNICODESTRING VersionUrl,
+	UINT32 HostVersion
+	);
+
+TakedownPackagesDownloading(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING PackageFeedCluster
+	);
+
+LatestPackageDownload(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+WebResourceRequested(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING RequestedUri
+	);
+
+NavigationTriggering(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING PackageFeedCluster
+	);
+
+PackageTakenDown(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING PackageSource,
+	BOOLEAN IsPackageAvailable,
+	BOOLEAN IsInbox,
+	UNICODESTRING healthKind,
+	UNICODESTRING PackageVersionString
+	);
+
+TakendownPackageVersionsDownloadFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING reason
+	);
+
+WebPackageHealthStatusTrackingEvent(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING packageHealthKind,
+	UNICODESTRING packageHealthTrackingStatus
+	);
+
+TakendownPackageVersionsDownloadNetworkFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	INT32 connectivityLevel,
+	UINT32 extendedError,
+	INT32 statusCode
+	);
+
+DownloadPackageFailed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	INT32 downloadStatus,
+	INT32 failedCluster,
+	INT32 fallbackCluster
+	);
+
+PackageFeedClusterSet(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING PackageFeedCluster
+	);
+
+PackageFeedClusterSetIgnored(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ViewVariant,
+	UNICODESTRING DockedViewState,
+	UNICODESTRING ViewHostType,
+	UNICODESTRING DevicePosture,
+	UNICODESTRING PositionType,
+	UNICODESTRING KeyboardLayout,
+	UNICODESTRING LanguageTag,
+	UNICODESTRING ViewId,
+	UNICODESTRING WebPackageVersion,
+	UNICODESTRING AppId,
+	UNICODESTRING AppExecutableName,
+	UNICODESTRING AppPackageFullName,
+	UINT32 TargetProcessId,
+	UINT32 TargetWindowId,
+	BOOLEAN IsTargetInVirtualizationContainer,
+	INT32 InputScope,
+	UNICODESTRING InputPanelSuggestionUIViewState,
+	BOOLEAN IsLastShowHideEventShow,
+	UNICODESTRING ignoredCluster,
+	UNICODESTRING activePackageSource,
+	UNICODESTRING webContentPackageFeedCluster,
+	UNICODESTRING reason
+	);
+
+TakedownPackagesDownloading(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TakedownPackagesDownloading(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+LatestPackageDownload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+LatestPackageDownload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebResourceRequested(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebResourceRequested(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+NavigationTriggering(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NavigationTriggering(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Source,
+	BOOLEAN Inbox,
+	UNICODESTRING Version,
+	UNICODESTRING Uri
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Source
+	);
+
+WebStart_PackageMetadataCommit(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+WebStart_PackageMetadataLoad(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING feedId
+	);
+
+WebStart_PackageDownload(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING feedId
+	);
+
+WebStart_NotModifiedResponseForETag(
+	UNICODESTRING Payload,
+	UNICODESTRING ETag,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageInvalidFileName(
+	UNICODESTRING FileName,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_InvalidVersionJson(
+	UNICODESTRING FileContents,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_DownloadRequestFailed(
+	UNICODESTRING Payload,
+	INT32 ExtendedError,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_ContinueWithoutVersionJson(
+	INT32 StatusCode,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_DownloadResponseFailed(
+	UNICODESTRING Payload,
+	INT32 StatusCode,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_DeletePackageMarkedBad(
+	UNICODESTRING FeedId,
+	UNICODESTRING VersionString,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageFileEnumerated(
+	UNICODESTRING FileName,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageMetadataGenericParseError(
+	UNICODESTRING PersistedMetadata,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageMetadataParseError(
+	UNICODESTRING Message,
+	UNICODESTRING PersistedMetadata,
+	UNICODESTRING VersionString,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageDownloadedAndOpened(
+	UNICODESTRING VersionString,
+	UNICODESTRING PackageETag,
+	UNICODESTRING VersionETag,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_VersionMismatch(
+	UNICODESTRING Json,
+	UNICODESTRING Package,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_VersionCheck(
+	UNICODESTRING Json,
+	UNICODESTRING Local,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_MetadataNotFoundForPackage(
+	UNICODESTRING FeedId,
+	UNICODESTRING VersionString,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageFallbackRequestedFromInBoxContent(
+	UNICODESTRING FeedId,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_DeleteBadSignaturePackage(
+	UNICODESTRING FeedId,
+	UNICODESTRING VersionString,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageDownloadedPreviously(
+	UNICODESTRING VersionString,
+	UNICODESTRING ETag,
+	UNICODESTRING RequestETag,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageMetadataCommit(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+WebStart_PackageMetadataCommit(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebStart_PackageMetadataNoFileFound(
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageMetadataLoad(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+WebStart_PackageMetadataLoad(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebStart_PackageDownload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 packageDownloadStatus,
+	BOOLEAN afterVersionJsonDownload
+	);
+
+WebStart_PackageDownload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 packageDownloadStatus,
+	BOOLEAN afterVersionJsonDownload
+	);
+
+WebStart_PackageDownload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebStart_PackageDownload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+WebStart_CreateAppxReader(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+WebStart_NonfatalHandleRequestFailure(
+	UNICODESTRING packageVersion,
+	UNICODESTRING packageRelativeUri,
+	UNICODESTRING requestMethod,
+	INT32 httpStatusCode,
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_PackageOpen(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING packageBaseName,
+	BOOLEAN inboxPackage
+	);
+
+PackageFeedVerbose(
+	ANSISTRING message,
+	UNICODESTRING uri
+	);
+
+WebStart_ReleaseAppxReader(
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_RestartAppxReaderReleaseTimer(
+	UINT64 PartA_PrivTags
+	);
+
+WebStart_CreateAppxReader(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+WebStart_CreateAppxReader(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebStart_PackageOpen(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING packageVersion
+	);
+
+WebStart_PackageOpen(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING packageVersion
+	);
+
+WebStart_PackageOpen(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebStart_PackageOpen(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SignatureValidation_IsFileMicrosoftSigned(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+WinVerifyTrustResult(
+	UINT64 PartA_PrivTags,
+	GUID verifyActionId,
+	BOOLEAN pPolicyCallbackDataIsNull,
+	BOOLEAN pSIPClientDataIsNull,
+	UINT32 dwUIChoice,
+	UINT32 fdwRevocationChecks,
+	UINT32 dwUnionChoice,
+	UINT32 dwStateAction,
+	UINT32 dwProvFlags,
+	UINT32 dwUIContext,
+	BOOLEAN hWVTStateDataIsNull,
+	INT32 result,
+	UINT32 lastError
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FailureLog(
+	UINT64 PartA_PrivTags,
+	ANSISTRING failurePlace,
+	INT32 trustStatus,
+	UINT32 dwError,
+	UNICODESTRING version,
+	BOOLEAN isInbox
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SignatureValidation_IsFileMicrosoftSigned(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SignatureValidation_IsFileMicrosoftSigned(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+

@@ -1,0 +1,45 @@
+ProviderNames:
+	ManageBDETraceLoggingProvider
+
+
+
+**** Events *****
+Bitlocker.ManageBDE.WMainComplete(
+	VOID
+	);
+
+Bitlocker.ManageBDE.WMainStart(
+	VOID
+	);
+
+Bitlocker.ManageBDE.PerformActionComplete(
+	ANSISTRING ActionName,
+	INT32 HResult,
+	INT32 LegacyMode
+	);
+
+Bitlocker.ManageBDE.PerformActionStart(
+	ANSISTRING ActionName
+	);
+
+Bitlocker.ManageBDE.PerformActionComplete(
+	ANSISTRING ActionName,
+	INT32 HResult,
+	INT32 EncMethod,
+	INT32 LegacyMode
+	);
+
+Bitlocker.ManageBDE.ValidateUsableTPMPresence(
+	INT32 IsUsableTPMPresent
+	);
+
+Bitlocker.ManageBDE.PerformActionComplete(
+	ANSISTRING ActionName,
+	INT32 HResult,
+	INT32 LegacyMode
+	);
+
+Bitlocker.ManageBDE.PerformActionStart(
+	ANSISTRING ActionName
+	);
+

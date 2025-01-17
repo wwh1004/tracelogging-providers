@@ -1,0 +1,19 @@
+ProviderNames:
+	Microsoft.Windows.Diagnostics.OfflineMemDiagPost
+
+
+
+**** Events *****
+OfflineTestScheduleFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING LaunchType,
+	UNICODESTRING ScheduleType,
+	UINT32 ErrorCode
+	);
+
+OfflineTestScheduled(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING LaunchType,
+	UNICODESTRING ScheduleType
+	);
+

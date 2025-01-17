@@ -1,0 +1,75 @@
+ProviderNames:
+	Microsoft.ML.ONNXRuntime
+
+
+
+**** Events *****
+ProcessInfo(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	ANSISTRING runtimeVersion,
+	BOOL32 isRedist
+	);
+
+SessionCreationStart(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+EvaluationStop(
+	VOID
+	);
+
+EvaluationStart(
+	VOID
+	);
+
+SessionCreation(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	UINT32 sessionId,
+	INT64 irVersion,
+	UINT32 OrtProgrammingProjection,
+	ANSISTRING modelProducerName,
+	ANSISTRING modelProducerVersion,
+	ANSISTRING modelDomain,
+	BOOL32 usefp16,
+	ANSISTRING domainToVersionMap,
+	ANSISTRING modelGraphName,
+	ANSISTRING modelMetaData,
+	ANSISTRING loadedFrom,
+	ANSISTRING executionProviderIds
+	);
+
+RuntimeError(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	HRESULT hResult,
+	UINT32 sessionId,
+	UINT32 errorCode,
+	UINT32 errorCategory,
+	ANSISTRING errorMessage,
+	ANSISTRING file,
+	ANSISTRING function,
+	INT32 line
+	);
+
+RuntimePerf(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	UINT32 sessionId,
+	UINT32 totalRuns,
+	INT64 totalRunDuration
+	);
+
+ExecutionProviderEvent(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT32 adapterLuidLowPart,
+	UINT32 adapterLuidHighPart
+	);
+

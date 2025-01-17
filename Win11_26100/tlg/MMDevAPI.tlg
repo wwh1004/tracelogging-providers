@@ -1,0 +1,164 @@
+ProviderNames:
+	Microsoft.Windows.Audio.MultimediaDevice
+	Microsoft.Windows.Audio.CrossVmApi
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+NotifyPropertyValueChanged(
+	UNICODESTRING EndpointId,
+	STRING PKEY,
+	GUID FMTID,
+	UINT32 PID
+	);
+
+UnregisterEndpointNotificationCallback(
+	VOID
+	);
+
+RegisterEndpointNotificationCallback(
+	VOID
+	);
+
+XvmApiCall(
+	UINT32 xvmId,
+	INT32 messageId,
+	HEXINT32 guestObject,
+	FLOAT duration,
+	HRESULT HResult
+	);
+
+XvmActivateCall(
+	INT32 ObjectType,
+	INT32 ParentXvmId,
+	INT32 CreateOptions,
+	INT32 ParentObjectId,
+	HEXINT32 parentObject,
+	FLOAT duration,
+	HRESULT HResult
+	);
+
+XvmRelease(
+	UINT32 xvmId,
+	INT32 messageId,
+	INT32 disconnectError,
+	HEXINT32 guestObject
+	);
+
+XvmPreDisconnectNotification(
+	INT32 xvmId,
+	HEXINT32 guestObject
+	);
+
+XvmDisconnectNotification(
+	INT32 xvmId,
+	HEXINT32 guestObject
+	);
+
+XvmMediaNotification(
+	INT32 xvmId,
+	UINT32 NotificationType,
+	HEXINT32 guestObject
+	);
+
+GuestXvmObjectInitialize(
+	UINT32 xvmId,
+	HEXINT32 guestObject
+	);
+
+UnblockingEnumeratorCallsAfterPostRestore(
+	VOID
+	);
+
+UnregisterEndpointNotificationCallbackWithVirtualEnumerator(
+	VOID
+	);
+
+RegisterEndpointNotificationCallbackWithVirtualEnumerator(
+	VOID
+	);
+
+UnblockingEnumeratorCallsOnAppResume(
+	VOID
+	);
+
+BlockingEnumeratorCallsOnSuspend(
+	VOID
+	);
+
+UnregisterFxPropertyChangeNotification(
+	UNICODESTRING deviceId,
+	GUID context
+	);
+
+RegisterFxPropertyChangeNotification(
+	UNICODESTRING deviceId,
+	GUID context
+	);
+
+GeneratedMediaEvent(
+	UINT32 notificationType,
+	UINT32 targetPID
+	);
+
+HandlingMediaEvent(
+	UINT32 notificationType
+	);
+
+SetValue_Error(
+	GUID fmtid,
+	UINT32 pid
+	);
+
+GetValue_Error(
+	GUID fmtid,
+	UINT32 pid
+	);
+
+CRegistryPropertyStore_OpenPropertyStoreRegKey(
+	UNICODESTRING Path,
+	UINT32 Access
+	);
+

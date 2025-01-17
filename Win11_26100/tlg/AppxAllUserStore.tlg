@@ -1,0 +1,396 @@
+ProviderNames:
+	Microsoft.Windows.AppXAllUserStore
+
+
+
+**** Events *****
+Failure(
+	HRESULT HResult,
+	ANSISTRING File,
+	UINT32 LineNumber,
+	UNICODESTRING Message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Applications key on preinstalled volume does not exist - skipping(
+	VOID
+	);
+
+Staged key on preinstalled volume does not exist - skipping(
+	VOID
+	);
+
+PreinstalledAppsVolumeHive does not exist - skipping(
+	VOID
+	);
+
+RemoveSharedPackageContainerFromRegistryStore(
+	UNICODESTRING container
+	);
+
+Calling DeleteAllContainersFromContainerArray(
+	VOID
+	);
+
+Calling GetProvisionedSharedPackageContainersFromRegistryStore(
+	VOID
+	);
+
+AddSharedPackageContainerToRegistryStore(
+	UNICODESTRING container
+	);
+
+AddUpgradePackageAndStubPreferenceToPreinstalledVolume(
+	UNICODESTRING package,
+	BOOL32 isFramework,
+	BOOL32 preferStub
+	);
+
+AddUpgradePackageToPreinstalledVolume(
+	UNICODESTRING package,
+	BOOL32 isFramework
+	);
+
+AppxAllUserStore::AddDeprovisionedPackageMarking(
+	UNICODESTRING packageFullName,
+	UINT64 timeAtOperation,
+	UINT64 PartA_PrivTags
+	);
+
+RemovePackageFromRegistryStoreConfigIfExists(
+	UNICODESTRING package
+	);
+
+UpdatePackageSetupPhase(
+	UNICODESTRING package,
+	UINT32 setupPhase
+	);
+
+RemoveInboxInstalledStatusOfPackageForUser(
+	UNICODESTRING package,
+	UNICODESTRING userSid
+	);
+
+UpdateUpgradePackageInRegistryStore(
+	UNICODESTRING package
+	);
+
+Calling DeletePackageInfo(
+	VOID
+	);
+
+CheckPackagePreinstallPolicy(
+	UNICODESTRING package
+	);
+
+DeleteUserRegistryKeyFromAllUserStore(
+	UNICODESTRING userSid
+	);
+
+Calling DeleteAllPackagesFromPackageArray(
+	VOID
+	);
+
+RemoveDownlevelInstalledPackagesFromRegistryStore(
+	UNICODESTRING package,
+	UNICODESTRING userSid
+	);
+
+RemoveUpgradePackagesFromRegistryStore(
+	UNICODESTRING package,
+	UNICODESTRING userSid
+	);
+
+RemoveStagedPackageFromRegistryStore(
+	UNICODESTRING package
+	);
+
+RemovePackageFromRegistryStore(
+	UNICODESTRING package
+	);
+
+DoesPerUserStoreExist(
+	VOID
+	);
+
+IsNonInboxAllUserPackageSpecificPackage(
+	UNICODESTRING package
+	);
+
+IsNonInboxAllUserPackage(
+	UNICODESTRING package
+	);
+
+Calling GetAllStagedPackagesForMainPackageFromRegistryStore(
+	VOID
+	);
+
+Calling GetAllNonInboxPackagesFromRegistryStore(
+	VOID
+	);
+
+AddUpgradePackageToRegistryStore(
+	UNICODESTRING package,
+	UNICODESTRING userSid
+	);
+
+AddDownlevelInstalledPackageToRegistryStore(
+	UNICODESTRING package,
+	UNICODESTRING userSid
+	);
+
+AddStagedPackageToPreinstalledAppsVolume(
+	UNICODESTRING package
+	);
+
+AddStagedPackageToRegistryStore(
+	UNICODESTRING package
+	);
+
+AddPackageToPreinstalledAppsVolume(
+	UNICODESTRING package
+	);
+
+AddPackageToRegistryStore(
+	UNICODESTRING package
+	);
+
+GetStatusOfPackageFamilyForUser(
+	UNICODESTRING package,
+	UNICODESTRING userSid
+	);
+
+MarkStatusOfMainPackageForUser(
+	UNICODESTRING package,
+	UNICODESTRING userSid,
+	HEXINT32 errorCode
+	);
+
+Calling DeleteAllPackagesFromMainPackageArray(
+	VOID
+	);
+
+AppxGetAllPackagesFailed(
+	HRESULT ErrorCode,
+	UNICODESTRING UserSid
+	);
+
+Retrieving all-user packages to install(
+	UNICODESTRING UserSid
+	);
+
+RestoreRegistryDataFailed(
+	HRESULT ErrorCode,
+	HEXINT64 TotalCount,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	BOOL32 foundDeletedAllUserPackagesFolder
+	);
+
+RestoreAllFolderPathsFailed(
+	HEXINT64 SuccessCount,
+	HEXINT64 TotalCount,
+	UNICODESTRING Source,
+	UNICODESTRING Target
+	);
+
+RestorePackageFolderPathFailed(
+	HRESULT ErrorCode,
+	UNICODESTRING Path,
+	HEXINT64 Index,
+	HEXINT64 TotalCount,
+	UNICODESTRING Source,
+	UNICODESTRING Target
+	);
+
+FoundNoPackageFoldersToRestore(
+	HEXINT64 FounderCount,
+	UNICODESTRING Source,
+	UNICODESTRING Target
+	);
+
+HardlinkDirectoryTree(
+	HRESULT ErrorCode,
+	UNICODESTRING Source,
+	UNICODESTRING Target
+	);
+
+ProcessDeletedKeySubtreeFailed(
+	HRESULT ErrorCode,
+	UNICODESTRING Source,
+	UNICODESTRING Target
+	);
+
+AdjustRestoredDeletedPackagePathFailed(
+	HRESULT ErrorCode,
+	BOOL32 FileExists,
+	UNICODESTRING AdjustedPath
+	);
+
+Removing package due to enablement state(
+	UNICODESTRING packageFullName
+	);
+
+Feature enablement state(
+	UINT32 FeatureID,
+	UNICODESTRING packageFullName,
+	BOOL32 IsEnabled
+	);
+
+NoUpgradePackagesForUser(
+	UNICODESTRING Message
+	);
+
+AppsDeletedByRegion(
+	UNICODESTRING PackageFullName
+	);
+
+EndOfLifePackageInAllUserStore(
+	UNICODESTRING PackageFullname,
+	UINT64 PartA_PrivTags
+	);
+
+GetFoldersToKeepForPBRDone(
+	HEXINT64 FolderCount,
+	UNICODESTRING SystemRoot
+	);
+
+FoundNoFolderToKeepForPBR(
+	HEXINT64 FolderCount,
+	UNICODESTRING Source
+	);
+
+RetrievingFoldersToKeepForPBR(
+	UNICODESTRING SystemRoot
+	);
+
+ProcessStagedPackages(
+	UNICODESTRING SystemRoot
+	);
+
+ProcessStagedPackageFamily(
+	UNICODESTRING FamilyName,
+	UNICODESTRING SystemRoot
+	);
+
+ProcessStagedPackageFamily(
+	UNICODESTRING FullName,
+	UNICODESTRING SystemRoot
+	);
+
+AddDeletedAllUserPackagesIfNeeded(
+	UNICODESTRING SystemRoot,
+	UNICODESTRING DeletedAppsKeyPath,
+	HEXINT64 DeletedPackagesCount
+	);
+
+FoundPackagesFromApplicationsKey(
+	HEXINT64 MainPackages,
+	HEXINT64 MainArraySize,
+	UNICODESTRING SystemRoot
+	);
+
+FoundNothingInDeleteAllUserPackagesFolder(
+	HEXINT64 MainArraySize
+	);
+
+FoundFolderUnderDeletedFolder(
+	UNICODESTRING Name
+	);
+
+DeletedAllUserPackageFolderNotFound(
+	UNICODESTRING systemRoot,
+	HEXINT64 MainArraySize
+	);
+
+ProcessedMainPackage(
+	UNICODESTRING Path,
+	UNICODESTRING systemRoot,
+	HEXINT64 MainArraySize
+	);
+
+FoundNonBundleMainPackage(
+	UNICODESTRING Package
+	);
+
+FoundPackagesInBundle(
+	HEXINT64 PackagesCount
+	);
+
+MainPackageManifestFileNotFound(
+	UNICODESTRING Path,
+	UNICODESTRING Source
+	);
+
+ProcessedDependencies(
+	HEXINT64 Dependencies,
+	UNICODESTRING MainPackage,
+	UNICODESTRING SystemRoot,
+	HEXINT64 MainArraySize
+	);
+
+AddingFrameworkPackage(
+	UNICODESTRING DependencyPackage
+	);
+
+AddedPackageFullNamesToMainArray(
+	HEXINT64 Added,
+	HEXINT64 Dropped,
+	HEXINT64 Total,
+	HEXINT64 MainArraySize
+	);
+
+DroppingNonExistentPackagePath(
+	UNICODESTRING Path
+	);
+
+DroppingDuplicatedPackagePath(
+	UNICODESTRING Path
+	);
+
+AddPackageFullNameToMainArrayIfNeeded(
+	UNICODESTRING SystemRoot,
+	UNICODESTRING FullName
+	);
+

@@ -1,0 +1,53 @@
+ProviderNames:
+	Microsoft.Windows.Power.Notifications
+	Microsoft.Windows.LimitsManagement.Telemetry
+
+
+
+**** Events *****
+RegisterSettingService(
+	HEXINT32 registrationHandle,
+	GUID settingGuid,
+	UINT32 sessionId,
+	HEXINT32 serviceHandle
+	);
+
+UnregisterSetting(
+	HEXINT32 registrationHandle
+	);
+
+SettingNotificationStop(
+	HEXINT32 registrationHandle,
+	UINT32 result
+	);
+
+SettingNotificationStart(
+	HEXINT32 registrationHandle,
+	GUID settingGuid,
+	BINARY settingValue
+	);
+
+RegisterSettingCallback(
+	HEXINT32 registrationHandle,
+	GUID settingGuid,
+	UINT32 sessionId,
+	CODE_POINTER callback,
+	HEXINT32 callbackContext
+	);
+
+LimitsManagementPassiveValueChange(
+	UNICODESTRING policyName,
+	UINT8 throttlePercent
+	);
+
+LimitsManagementPassiveComplete(
+	UNICODESTRING policyName,
+	UINT32 durationInMs
+	);
+
+LimitsManagementPassiveHistogram(
+	UNICODESTRING policyName,
+	UINT32 throttleHistogram,
+	UINT8 bucketThresholds
+	);
+

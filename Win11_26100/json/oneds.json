@@ -1,0 +1,34 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "880e5d98-55d3-50c7-f8b7-b1feafdb7fd2",
+                             "ProviderName":  "Microsoft.Windows.AppTelemetryMetadata",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  1,
+                          "Opcode":  0,
+                          "Keyword":  16,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "UserAccountIdMetadata",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "AccountId",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.1_none_8fe1c356f34a19ca\\oneds.dll"
+}

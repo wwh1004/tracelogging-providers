@@ -1,0 +1,214 @@
+ProviderNames:
+	Microsoft.Windows.Shell.CortanaSearch
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SearchUxAppearanceManager_CurrentKeyUpdated(
+	UINT64 PartA_PrivTags
+	);
+
+SearchUxAppearanceManager_CurrentKeyDeleted(
+	UINT64 PartA_PrivTags
+	);
+
+SearchUxAppearanceManager_EnsureRegistryWatcher_SetCurrentKeyToEmptyGuid(
+	UINT64 PartA_PrivTags
+	);
+
+SearchUxAppearanceManager_EnsureRegistryWatcher_SetRegWatcher(
+	UINT64 PartA_PrivTags
+	);
+
+SearchUxAppearanceManager_EnsureRegistryWatcher_StartExpiryTimer(
+	UINT64 PartA_PrivTags
+	);
+
+SearchUxAppearanceManager_EnsureRegistryWatcher(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchUxAppearanceManager_EnsureRegistryWatcher(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchUxAppearanceManager_EnsureRegistryWatcher(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SystemSettingEntryPointIndex_CheckIfDbCorrupt(
+	BOOLEAN isDbCorrupt,
+	INT32 resultCode,
+	INT32 settingsCount,
+	INT32 derivedSynonymsCount,
+	UINT64 PartA_PrivTags
+	);
+
+SystemSettingEntryPointIndex_CheckIfTablesExist(
+	BOOLEAN tablesExist,
+	INT32 tablesCount,
+	INT32 resultCode,
+	UINT64 PartA_PrivTags
+	);
+
+TileCollectionIndex_CheckIfDbCorrupt(
+	BOOLEAN isDbCorrupt,
+	INT32 resultCode,
+	INT32 appsCount,
+	INT32 synonymsCount,
+	UINT64 PartA_PrivTags
+	);
+
+TileCollectionIndex_CheckIfTablesExist(
+	BOOLEAN tablesExist,
+	INT32 tablesCount,
+	INT32 resultCode,
+	UINT64 PartA_PrivTags
+	);
+

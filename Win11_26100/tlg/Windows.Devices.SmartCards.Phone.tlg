@@ -1,0 +1,202 @@
+ProviderNames:
+	Microsoft.Windows.Nfc.SmartCard
+
+
+
+**** Events *****
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::GetAllCryptogramMaterialCharacteristicsAsync(
+	INT32 hResult
+	);
+
+StartRequestGetAllCryptogramMaterialCharacteristicsAsync(
+	UINT32 promptingBehavior
+	);
+
+EndRequestGetAllCryptogramMaterialCharacteristicsAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::GetAllCryptogramMaterialPackageCharacteristicsAsync(
+	INT32 hResult
+	);
+
+StartRequestGetAllCryptogramMaterialPackageCharacteristicsAsync(
+	VOID
+	);
+
+EndRequestGetAllCryptogramMaterialPackageCharacteristicsAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::GetAllCryptogramMaterialPackageCharacteristicsWithStorageKeyAsync(
+	INT32 hResult
+	);
+
+EndRequestGetAllCryptogramMaterialPackageCharacteristicsWithStorageKeyAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::GetAllCryptogramStorageKeyCharacteristicsAsync(
+	INT32 hResult
+	);
+
+StartRequestGetAllCryptogramStorageKeyCharacteristicsAsync(
+	VOID
+	);
+
+EndRequestGetAllCryptogramStorageKeyCharacteristicsAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::RequestUnlockCryptogramMaterialForUseAsync(
+	INT32 hResult
+	);
+
+StartRequestUnlockCryptogramMaterialPackageForUseAsync(
+	UINT32 promptingBehavior
+	);
+
+EndRequestUnlockCryptogramMaterialPackagesForUseAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::DeleteCryptogramMaterialPackageAsync(
+	INT32 hResult
+	);
+
+StartRequestDeleteCryptogramMaterialPackageAsync(
+	VOID
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::DeleteCryptogramMaterialPackageAsync::<lambda_239e511fe70fa463ab4c9a281b0298c9>::operator ()(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::ValidateRequestApduAsync(
+	INT32 hResult
+	);
+
+StartRequestValidateRequestApduAsync(
+	VOID
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::ValidateRequestApduAsync::<lambda_d713ac17cef95c08bdc80c484ac9fcdd>::operator ()(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::TryProvePossessionOfCryptogramMaterialPackageAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::TryProvePossessionOfCryptogramMaterialPackageAsync::<lambda_e625e1eeea083479572f26cf8910b8e1>::operator ()(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::ImportCryptogramMaterialPackageAsync(
+	INT32 hResult
+	);
+
+StartImportCryptogramMaterialPackageAsync(
+	UINT32 format
+	);
+
+EndImportCryptogramMaterialPackageAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::RequestCryptogramMaterialStorageKeyInfoAsync(
+	INT32 hResult
+	);
+
+StartRequestCryptogramMaterialStorageKeyInfoAsync(
+	UINT32 promptingBehavior,
+	UINT32 format
+	);
+
+EndRequestCryptogramMaterialStorageKeyInfoAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::RequestCryptogramMaterialStorageKeyInfoAsync::<lambda_ac763cf59621b719f8db15cd31f938c5>::operator ()(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::CreateCryptogramMaterialStorageKeyAsync(
+	INT32 hResult
+	);
+
+StartCreateCryptogramMaterialStorageKeyAsync(
+	UINT32 promptingBehavior,
+	UINT32 algorithm,
+	UINT32 capabilities
+	);
+
+EndCreateCryptogramMaterialStorageKeyAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::DeleteCryptogramMaterialStorageKeyAsync(
+	INT32 hResult
+	);
+
+DeleteCryptogramMaterialStorageKeyAsync(
+	VOID
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::DeleteCryptogramMaterialStorageKeyAsync::<lambda_defb1a65ef57e81b536bad2ef949ba36>::operator ()(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::get_SupportedSmartCardCryptogramStorageKeyCapabilities(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::get_SupportedCryptogramMaterialPackageConfirmationResponseFormats(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::get_SupportedCryptogramMaterialPackageFormats(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::get_SupportedCryptogramAlgorithms(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorImpl::get_SupportedCryptogramMaterialTypes(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorStaticsImpl::GetSmartCardCryptogramGeneratorAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::CryptogramGeneratorStaticsImpl::GetSmartCardCryptogramGeneratorAsync::<lambda_be34c86cb65315b8ad62d81e396c5caf>::operator ()(
+	INT32 hResult
+	);
+
+ReaderCardAdded(
+	INT32 hResult,
+	UNICODESTRING Name
+	);
+
+Windows::Devices::SmartCards::SmartCardEmulatorApduReceivedEventArgsImpl::TryRespondWithCryptogramsAndStateAsync(
+	INT32 hResult
+	);
+
+StartTryRespondWithCryptogramsAsync(
+	VOID
+	);
+
+Windows::Devices::SmartCards::SmartCardEmulatorApduReceivedEventArgsImpl::TryRespondWithCryptogramsAndStateAsync::<lambda_cbc81e1319ea6697d33892dfb29725b7>::operator ()(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::SmartCardEmulatorApduReceivedEventArgsImpl::TryRespondWithStateAsync(
+	INT32 hResult
+	);
+
+Windows::Devices::SmartCards::SmartCardEmulatorApduReceivedEventArgsImpl::TryRespondWithStateAsync::<lambda_d7ad5177e3477b3c594b418a86b7d20d>::operator ()(
+	INT32 hResult
+	);
+

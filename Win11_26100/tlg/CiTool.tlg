@@ -1,0 +1,13 @@
+ProviderNames:
+	Microsoft.Windows.Security.CodeIntegrity.Management
+
+
+
+**** Events *****
+CiToolUpdatePolicySucceeded(
+	UINT64 PartA_PrivTags,
+	GUID *view->policy_id(),
+	UNICODESTRING view->friendly_name().c_str(),
+	UINT64 view->policy_version()
+	);
+

@@ -1,0 +1,308 @@
+ProviderNames:
+	Microsoft.Windows.Rds.VirtualIP.Service
+
+
+
+**** Events *****
+PerApp_ProcessVirtualizationMode(
+	UNICODESTRING BinaryName,
+	UINT32 Policy
+	);
+
+PerApp_AppFoundRegistry_Virtualize(
+	UNICODESTRING BinaryName
+	);
+
+PerApp_FullNameDidNotMatch_DontVirtualize(
+	UNICODESTRING szRegFullAppName,
+	UNICODESTRING pszFullPath
+	);
+
+PerApp_UnableToOpenRegKey_DontVirtualize(
+	UNICODESTRING AppRegKey,
+	HRESULT hr
+	);
+
+PerApp_AppNotFoundInGPAppList_DontVirtualize(
+	UNICODESTRING pszBinaryName
+	);
+
+PerApp_AppFoundInGPAppList_Virtualize(
+	UNICODESTRING pszBinaryName
+	);
+
+PerSession_ProcessVirtualizationMode(
+	UNICODESTRING pszBinaryName,
+	UINT32 *pPolicy
+	);
+
+PerSession_AppFoundInExclusionList_DontVirtualize(
+	VOID
+	);
+
+PerSession_FoundAppExclusionRegKey(
+	UNICODESTRING AppRegKey
+	);
+
+StopComponent(
+	VOID
+	);
+
+StartComponent(
+	VOID
+	);
+
+WilFailure(
+	HRESULT f.hr,
+	ANSISTRING function,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UNICODESTRING message
+	);
+
+DontVirtualizeProcess(
+	PID ProcessId
+	);
+
+WarnUserOnIPLeaseFailure_Failed(
+	HRESULT hrTmp
+	);
+
+GetSessionIP_Failed_NoPrompt(
+	HRESULT hr
+	);
+
+LoopbockVirtualizationIsNotEnabled(
+	VOID
+	);
+
+SessionIsNotVirtualized(
+	UINT32 SessionId
+	);
+
+IsCallerInteractiveUser_Failed(
+	HRESULT hr
+	);
+
+CallerIsNotInteractiveUser_DontVirtualize(
+	VOID
+	);
+
+VirtualIPConfigRefresh(
+	UINT64 PartA_PrivTags,
+	UINT32 AcquireIPAttempts,
+	UINT32 AcquireIPRetriesSleepTime,
+	BOOL32 AllowPerSessionInMultNIC,
+	BOOL32 EnableVirtualIP,
+	BOOL32 ForceLogOffOnIPLeaseFail,
+	BOOL32 IPPoolUsed,
+	UINT32 MaxCacheIp,
+	BOOL32 PromptOnIPLeaseFail,
+	UINT32 VirtualMode,
+	BOOL32 VirtualizeLoopbackAddressesEnabled
+	);
+
+RequestVirtualIP_Virtualize_Loopback(
+	SOCKETADDRESS VirtualizedLoopbackAddress,
+	UINT32 PrefixLength,
+	UINT64 NetLuid
+	);
+
+RequestVirtualIP_DontVirtualize_Loopback(
+	VOID
+	);
+
+RequestVirtualIP_Failed_Loopback(
+	HRESULT hr
+	);
+
+RequestVirtualIP_Virtualize(
+	SOCKETADDRESS VirtualizedAddress,
+	UINT32 PrefixLength,
+	UINT64 NetLuid
+	);
+
+RequestVirtualIP_DontVirtualize(
+	VOID
+	);
+
+RequestVirtualIP_Failed(
+	HRESULT hr
+	);
+
+OpenProcess_Failed_DontVirtualize(
+	HRESULT hr,
+	PID ProcessId
+	);
+
+OpenProcess_AccessDenied_DontVirtualize(
+	PID ProcessId
+	);
+
+isProcessStartedByInteractiveUser_Failed_DontVirtualize(
+	HRESULT hr,
+	PID ProcessId
+	);
+
+QueryFullProcessImageName_Failed_DontVirtualize(
+	HRESULT hr,
+	PID ProcessId
+	);
+
+ReplyVirtualIPMessage_Send(
+	HEXINT32 ReplyId
+	);
+
+RequestVirtualIPMessage_Send(
+	VOID
+	);
+
+RequestVirtualIPMessage_Received(
+	VOID
+	);
+
+KernelMessageThreadStop(
+	VOID
+	);
+
+RequestVirtualIPMessage_InitialSend(
+	VOID
+	);
+
+DisableLocalAddressRedirect_SUCCESS(
+	VOID
+	);
+
+ControlStop_Sent(
+	HEXINT32 CurrentState,
+	HEXINT32 ExitCode
+	);
+
+ControlStop_Sending(
+	VOID
+	);
+
+GetDriverSCHandle(
+	VOID
+	);
+
+JoinKernelMessageThread(
+	VOID
+	);
+
+CloseDeviceHandle(
+	VOID
+	);
+
+StopFilteringMessage_Send(
+	VOID
+	);
+
+StopDriver(
+	VOID
+	);
+
+StartFilteringMessage_Send(
+	VOID
+	);
+
+StartKernelMessageThread(
+	VOID
+	);
+
+CreateDeviceHandle(
+	VOID
+	);
+
+EnableLocalAddressRedirect(
+	VOID
+	);
+
+StartDriver_KernelThreadAlreadyStarted(
+	VOID
+	);
+
+StartDriver(
+	VOID
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn,
+	BOOL32 bIsAppServer,
+	UNICODESTRING REG_TERMSRV_APPCOMPAT
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	BOOL32 bIsAppServer
+	);
+
+Logging(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+Logging(
+	ANSISTRING msg
+	);
+
+Logging(
+	ANSISTRING msg,
+	UINT64 this->m_LogFileSize,
+	UNICODESTRING m_szLoggerName
+	);
+
+Logging(
+	ANSISTRING msg,
+	UNICODESTRING m_szLoggerName,
+	UINT64 dwRet
+	);
+
+Logging(
+	ANSISTRING msg,
+	HRESULT hr,
+	UNICODESTRING szKey
+	);
+
+Logging(
+	ANSISTRING msg,
+	UINT64 this->m_LogFileSize
+	);
+
+Logging(
+	ANSISTRING msg,
+	UNICODESTRING LoggerName,
+	HRESULT hr,
+	UNICODESTRING szpLogFilename,
+	UINT64 m_hTrace,
+	UINT64 MaximumFileSize
+	);
+

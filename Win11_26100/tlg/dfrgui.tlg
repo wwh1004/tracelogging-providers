@@ -1,0 +1,75 @@
+ProviderNames:
+	Microsoft.Windows.Storage.Defrag
+
+
+
+**** Events *****
+DefragUIEnd(
+	UINT64 PartA_PrivTags,
+	INT32 Version,
+	ANSISTRING __TlgCV__,
+	BOOL32 IsElevated,
+	HRESULT hResult
+	);
+
+DefragUIStart(
+	UINT64 PartA_PrivTags,
+	INT32 Version,
+	ANSISTRING __TlgCV__,
+	BOOL32 IsElevated,
+	UNICODESTRING commandArgs
+	);
+
+UIRestoreTaskSettings(
+	UINT64 PartA_PrivTags,
+	BOOL32 isDontMigrateTask,
+	BOOL32 isRestored,
+	BOOL32 isTaskEnabled,
+	BOOL32 isAllVolumesEnabled,
+	BOOL32 isExcludeEnabled,
+	BOOL32 isDeadlineEnabled,
+	UINT32 frequency,
+	UNICODESTRING scheduledVolumes,
+	UINT16 resultCodeLine,
+	HRESULT hResult
+	);
+
+UIBackupTaskSettings(
+	UINT64 PartA_PrivTags,
+	BOOL32 isDontMigrateTask,
+	BOOL32 isTaskEnabled,
+	BOOL32 isAllVolumesEnabled,
+	BOOL32 isExcludeEnabled,
+	BOOL32 isDeadlineEnabled,
+	UINT32 frequency,
+	UNICODESTRING scheduledVolumes,
+	UINT16 resultCodeLine,
+	HRESULT hResult
+	);
+
+UIOperationExit(
+	UINT64 PartA_PrivTags,
+	INT32 Version,
+	ANSISTRING __TlgCV__,
+	GUID operationId,
+	UINT32 operationMask,
+	UINT32 currentOp,
+	UINT16 resultCodeLine,
+	HRESULT hResult
+	);
+
+UIOperationStart(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING volumePath,
+	INT32 Version,
+	ANSISTRING __TlgCV__,
+	GUID operationId,
+	UINT32 DeviceType,
+	UINT32 hardwareIssue,
+	UINT32 optimizationPercent,
+	SYSTEMTIME lastRunTime,
+	UINT32 operationMask,
+	UINT32 currentOp,
+	HRESULT hResult
+	);
+

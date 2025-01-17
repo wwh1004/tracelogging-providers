@@ -1,0 +1,71 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "83afaf72-df00-4584-8f4c-aded166f72b1",
+                             "ProviderName":  "Microsoft.Windows.DeviceManagement.PushRouterProxy",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PushRouter_SubmitPush",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "HRESULT",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  2,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "MDM PushRouter: Pushrouter failed to start because the dmwappushservice service is disabled.",
+                          "Fields":  [
+
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  4,
+                          "Opcode":  0,
+                          "Keyword":  0,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "PushRouter_GetPushMessageDone",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "GetPushMessageDoneHresult",
+                                             "InType":  "HEXINT32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-d..agement-dmpushproxy_31bf3856ad364e35_10.0.26100.1_none_4be21f596996e7cb\\dmpushproxy.dll"
+}

@@ -1,0 +1,209 @@
+ProviderNames:
+	Microsoft.Windows.MediaFoundation.OpusDecoder
+
+
+
+**** Events *****
+OnOutputTypeChanged(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnCheckInputType(
+	HEXINT32 This,
+	HRESULT HResult,
+	INT64 uChannelMask
+	);
+
+FinalConstruct(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+Configuration(
+	UINT8 Version,
+	UINT16 Preskip,
+	INT16 Gain,
+	UINT32 SampleRate,
+	UINT32 NoOfChannels,
+	UINT32 BitsPerSample,
+	UINT32 AvgBytesPerSec,
+	GUID MFMediaTelemetrySessionID,
+	UINT32 MFMediaTelemetrySessionInstance,
+	GUID OpusMFTInstanceId
+	);
+
+OnFlush(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnCheckInputType(
+	HEXINT32 This,
+	HRESULT HResult,
+	INT64 uSamplesPerSec
+	);
+
+OutputState(
+	UINT32 SampleRate,
+	UINT32 NoOfChannels,
+	GUID OutputSubType,
+	GUID MFMediaTelemetrySessionID,
+	UINT32 MFMediaTelemetrySessionInstance,
+	GUID OpusMFTInstanceId
+	);
+
+OnDrain(
+	HEXINT32 This
+	);
+
+OnCheckInputType(
+	HEXINT32 This,
+	HRESULT HResult,
+	INT64 uNoOfChannels
+	);
+
+OnCheckInputType(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+ParseHeader(
+	HEXINT32 This,
+	UINT8 m_version,
+	UINT64 m_preskip,
+	UINT64 m_gain
+	);
+
+ConfigInputTypes(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnCheckOutputType(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnInputTypeChanged(
+	HEXINT32 This,
+	HRESULT HResult,
+	UINT32 m_dwInSampleRate,
+	UINT32 m_dwInNoOfChannels,
+	UINT32 m_dwInBitsPerSample,
+	UINT32 m_dwInAvgBytesPerSec
+	);
+
+ConfigOutputTypes(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+InternalFlush(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnBeginStreaming(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnCheckOutputType(
+	HEXINT32 This,
+	ANSISTRING Error,
+	UINT64 uInternal,
+	HRESULT HResult
+	);
+
+InternalProcessOutput(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+Statistics(
+	UINT32 TotalSampleCount,
+	UINT64 TotalDuration,
+	UINT16 OutputTypeChangedCount,
+	GUID MFMediaTelemetrySessionID,
+	UINT32 MFMediaTelemetrySessionInstance,
+	GUID OpusMFTInstanceId
+	);
+
+OnBeginStreaming(
+	HEXINT32 This,
+	INT64 gainSetStatus,
+	HRESULT HResult
+	);
+
+OnCheckInputType(
+	HEXINT32 This,
+	HRESULT HResult,
+	INT64 uBitsPerSample
+	);
+
+OnInputTypeChanged(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+InternalProcessInput(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+~COpusDecMFT(
+	HEXINT32 This
+	);
+
+MapOpusErrToMFErr(
+	HEXINT32 This
+	);
+
+COpusDecMFT(
+	HEXINT32 This
+	);
+
+InternalProcessInput(
+	HEXINT32 This,
+	UINT64 m_hnsFrameTime,
+	BOOL32 m_fInputDiscontinuity,
+	HRESULT HResult
+	);
+
+ParseHeader(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnCheckOutputType(
+	HEXINT32 This,
+	ANSISTRING Error,
+	UINT64 uiInternal,
+	HRESULT HResult
+	);
+
+InternalProcessOutput(
+	HEXINT32 This,
+	UINT64 Output buffer length,
+	UINT64 m_hnsFrameDuration
+	);
+
+OnEndStreaming(
+	HEXINT32 This
+	);
+
+MapOpusErrToMFErr(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+
+OnEndOfStream(
+	HEXINT32 This
+	);
+
+Reset(
+	HEXINT32 This,
+	HRESULT HResult
+	);
+

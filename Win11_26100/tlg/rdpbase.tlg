@@ -1,0 +1,2406 @@
+ProviderNames:
+	Microsoft.Windows.RemoteDesktop.Base
+	RDP.ServerStack.Diagnostics
+	RDP.Transport
+
+
+
+**** Events *****
+HttpConnect(
+	ANSISTRING msg
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 Flags
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	ANSISTRING function
+	);
+
+HttpConnect(
+	ANSISTRING msg
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 AuthScheme
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UINT32 StreamType
+	);
+
+HttpConnect(
+	ANSISTRING msg
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 SslErrorFlags
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UNICODESTRING Callback
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UNICODESTRING Name
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Status
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UNICODESTRING IP
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Handle
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UNICODESTRING Url
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 StreamType
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UNICODESTRING API
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UNICODESTRING OperationName
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 Callback
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UINT32 CloseStatus
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	ANSISTRING Reason
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UINT32 Current,
+	UINT32 WrittenSoFar,
+	UINT32 Total
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 Requested,
+	UINT32 Min,
+	UINT32 Max
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 Modifier
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UNICODESTRING Proxy,
+	UNICODESTRING Bypass
+	);
+
+HttpConnect(
+	ANSISTRING msg,
+	UINT32 AccessType
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	UINT32 Size
+	);
+
+NamedPipeConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ServerScheduler(
+	ANSISTRING msg
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	UINT32 IsUnregistered,
+	HEXINT32 WorkerSignal
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	HEXINT32 WorkerSignal
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ThreadIndex,
+	HEXINT32 ThreadHandle
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	UINT32 Awarness,
+	UINT32 Previous
+	);
+
+ServerScheduler(
+	ANSISTRING msg,
+	UINT32 Mode
+	);
+
+ServerPlatform(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ServerPlatform(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+ServerPlatform(
+	ANSISTRING msg,
+	UINT32 ThreadId,
+	ANSISTRING Name
+	);
+
+ServerPlatform(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ThreadId,
+	ANSISTRING Name
+	);
+
+ServerPlatform(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+ServerPlatform(
+	ANSISTRING msg
+	);
+
+ServerAvcScheduler(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ServerAvcScheduler(
+	ANSISTRING msg,
+	UINT32 SchedulerThreads
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	UINT32 fUseAadP2PCertificate
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	UINT32 ConnectionStage,
+	ANSISTRING ConnectionStageSymbolicName
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 Reason,
+	BOOL32 AutoReconnectCookieUsed,
+	UINT32 SecFilterEvent
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HRESULT hr,
+	NTSTATUS ntStatus
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	HRESULT hr,
+	NTSTATUS ntStatus
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed,
+	NTSTATUS ntStatus
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	UINT32 ProcessedDataPresent
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	UINT32 Posted,
+	UINT32 Unread
+	);
+
+ServerSecurityFilter(
+	ANSISTRING msg,
+	UINT32 fGraceful
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	UINT32 *pcbPackedCredentials
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	UINT32 *pcbPackedCredentials
+	);
+
+ValidateLogonCert(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+
+NamedPipeListener(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+NamedPipeListener(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+NamedPipeListener(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+NamedPipeEstablished(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UNICODESTRING Name
+	);
+
+NamedPipeListener(
+	ANSISTRING msg
+	);
+
+NamedPipeListener(
+	ANSISTRING msg,
+	UNICODESTRING PipeName
+	);
+
+NamedPipeListenerStopped(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UNICODESTRING Name
+	);
+
+NamedPipeBrokenDuringAccept(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UNICODESTRING Name
+	);
+
+NamedPipeListener(
+	ANSISTRING msg,
+	HEXINT32 Result
+	);
+
+NamedPipeListenerAborted(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UNICODESTRING Name
+	);
+
+NamedPipeListenerInitialized(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UNICODESTRING Name
+	);
+
+NamedPipeListener(
+	ANSISTRING msg,
+	UNICODESTRING PipeName
+	);
+
+NamedPipeData(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+NamedPipeData(
+	ANSISTRING msg
+	);
+
+NamedPipeData(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+NamedPipeData(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+NamedPipeConnect(
+	ANSISTRING msg,
+	HEXINT32 Result
+	);
+
+NamedPipeConnect(
+	ANSISTRING msg,
+	UINT32 Graceful
+	);
+
+NamedPipeConnect(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+NamedPipeData(
+	ANSISTRING msg
+	);
+
+NamedPipeConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+WebsocketConnect(
+	ANSISTRING msg
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+WebsocketConnect(
+	ANSISTRING msg
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT32 Written
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT64 Read
+	);
+
+WebSocketClosed(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UINT64 StreamBytesSent
+	);
+
+WebSocketEstablished(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UNICODESTRING Name,
+	UNICODESTRING Value
+	);
+
+WebsocketConnect(
+	ANSISTRING msg
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	HEXINT32 pThis
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed,
+	UNICODESTRING Name
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UNICODESTRING Value
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 pThis
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT32 Read
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT32 CurrentWrite,
+	UINT32 WrittenSoFar,
+	UINT32 TotalToWrite
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 HttpStatus
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT32 Result,
+	UINT32 HttpStatus
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionID,
+	HEXINT32 pPerfMonTransportSession
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UNICODESTRING FullUri,
+	UNICODESTRING connectionID,
+	UNICODESTRING CorrelationID
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UNICODESTRING Name,
+	UNICODESTRING Value
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UINT32 InterfaceVersion,
+	UNICODESTRING connectionID
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	UNICODESTRING connectionID
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	UNICODESTRING DllPath
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function,
+	HEXINT32 Result
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed,
+	UNICODESTRING Uri
+	);
+
+WebsocketConnect(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function,
+	HEXINT32 pThis
+	);
+
+WebSocketInitiated(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	ANSISTRING StackType
+	);
+
+MetricsBridge(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+MetricsBridge(
+	ANSISTRING msg,
+	HEXINT32 Result
+	);
+
+MetricsBridge(
+	ANSISTRING msg,
+	UNICODESTRING DllPath
+	);
+
+MetricsBridge(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	ANSISTRING udpType
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	UTF8 json
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	UINT32 disconnectSource,
+	UINT32 code,
+	ANSISTRING codeSymbolic
+	);
+
+ConnectionContext(
+	UINT32 sessionId
+	);
+
+ConnectionFailure(
+	UINT32 source,
+	UINT32 operation,
+	UINT32 code,
+	ANSISTRING codeSymbolic,
+	ANSISTRING message,
+	BOOL32 internal,
+	ANSISTRING disconnectTimeToDetectNominal,
+	ANSISTRING disconnectTimeToDetectActual
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	UINT32 connectionQOEScore
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	ANSISTRING FallbackReason
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	UTF8 json
+	);
+
+ConnectionEnd(
+	VOID
+	);
+
+ConnectionContext(
+	ANSISTRING resolution
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation,
+	BOOL32 ShortpathPublicEnabled,
+	BOOL32 ShortpathPrivateEnabled,
+	UINT32 udpPort
+	);
+
+ConnectionContext(
+	ANSISTRING udpType
+	);
+
+ConnectionCheckpoint(
+	UINT32 operation
+	);
+
+ConnectionContext(
+	UINT32 connectionQOEScore
+	);
+
+ConnectionContext(
+	UINT32 udpUse
+	);
+
+ConnectionContext(
+	ANSISTRING displayCount
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	INT32 m_nanoInitParameters.stunServerCount
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+UdpIce(
+	ANSISTRING msg
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed,
+	HEXINT32 hr
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	ANSISTRING function,
+	HEXINT32 hr
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING StunServer
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	ANSISTRING function,
+	INT32 GetLastError()
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed,
+	UNICODESTRING Dll path
+	);
+
+UdpIce(
+	ANSISTRING msg
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING TurnServer
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	UINT32 TurnEnabled
+	);
+
+UdpConnect(
+	ANSISTRING msg
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	UINT32 key,
+	UINT16 port,
+	UINT32 count
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	UINT32 nodeType,
+	UNICODESTRING element
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	ANSISTRING function
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT32 m_pIce,
+	HEXINT32 Result
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT32 data,
+	UINT32 length
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT64 m_hICEIntializationComplete,
+	HEXINT64 this
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	UNICODESTRING DllPath
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HRESULT closeReason,
+	UINT32 countSmilesSwitch
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING LocalDescriptor,
+	HRESULT asyncInitializationResult
+	);
+
+UdpSTUNCompleted(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	BOOL32 Valid,
+	BOOL32 STUN,
+	BOOL32 TURN,
+	BOOL32 Manual
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT64 data,
+	UINT32 length,
+	HEXINT64 this
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	BOOL32 m_nanoInitParameters.controlling,
+	UINT32 fUseUPnP,
+	UINT32 fIsClient
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING parsedStunServer
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	INT32 m_nanoInitParameters.turnServerCount
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	UINT32 StunEnabled
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING turnHost,
+	ANSISTRING turnUsername,
+	ANSISTRING turnRealm
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	UINT32 key,
+	UINT32 size
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING msg
+	);
+
+UdpConnect(
+	ANSISTRING msg
+	);
+
+UdpClosedFromTop(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	INT64 StreamBytesSent
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 XResult
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId,
+	UINT32 XResult
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING msg
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 BytesInFlight,
+	UINT32 SendQueue
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING msg
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING msg
+	);
+
+UdpFinSendAck(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpClosedGracefullyByPeer(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	INT64 StreamBytesSent
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 SourceAck,
+	UINT32 Wnd
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId,
+	UINT32 Size,
+	UINT32 MTU
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 cbPacketSize,
+	BOOL32 fDataAvailable
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	HEXINT32 Result,
+	ANSISTRING Reason
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	HEXINT32 Result
+	);
+
+UdpFinSend(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING msg
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Size
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	HEXINT32 NewCode
+	);
+
+UdpFinReceive(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Coded,
+	UINT32 SourceStart,
+	UINT32 SourceEnd,
+	UINT32 SourceACK,
+	UINT32 Wnd,
+	UINT32 Size,
+	UINT32 Header,
+	UINT32 Data
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Graceful
+	);
+
+UdpConnect(
+	ANSISTRING msg
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 InterfaceVersion
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	HEXINT32 Result
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 old ErrorCode,
+	HEXINT32 new ErrorCode
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Version,
+	UINT32 Lossy
+	);
+
+UdpFinReceiveAckAck(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 new ErrorCode
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Size
+	);
+
+UdpFingSendAckAck(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 BytesWritten
+	);
+
+UdpClosedWithError(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	INT64 StreamBytesSent,
+	ANSISTRING reason
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UNICODESTRING DllPath
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Coded,
+	UINT32 SourceStart,
+	UINT32 SourceEnd,
+	UINT32 SourceACK,
+	UINT32 Wnd,
+	UINT32 Size,
+	UINT32 Data,
+	UINT32 DATO
+	);
+
+UdpFinReceiveAck(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 RegValue,
+	UINT32 DefaultValue
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 SourceACK,
+	UINT32 Wnd
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 BytesRead
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 udpUse
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	UINT32 Enabled
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Success
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	UINT32 Index
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 side,
+	UINT32 timeoutMs,
+	HEXINT64 this
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+UdpClosedWithError(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	INT64 StreamBytesSent,
+	ANSISTRING "Connection terminated before UDP established"
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	UINT32 AddressFamily
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Enabled
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 pRdpNanoPortAllocator
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	INT32 Length
+	);
+
+UdpListener(
+	ANSISTRING msg
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 requestId
+	);
+
+UdpEstablished(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	UINT32 UdpUse
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ArraySize
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Length
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 type
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 RequestId,
+	UINT32 ArraySize
+	);
+
+UdpListener(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 Protocol
+	);
+
+UdpICEInitialized(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	BOOL32 Enabled,
+	BOOL32 Initialized
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT64 RDPUdpTransport Handle
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Hash0,
+	UINT32 m_SessionCtlBlkManager.GetSize
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING localType,
+	ANSISTRING remoteType,
+	ANSISTRING LocalBaseAddress,
+	ANSISTRING LocalTransportAddress,
+	ANSISTRING LocalServerAddress,
+	ANSISTRING RemoteBaseAddress,
+	ANSISTRING RemoteTransportAddress,
+	ANSISTRING RemoteServerAddress
+	);
+
+UdpICEReceivedCandidates(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 requestId,
+	UINT32 ArraySize
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	GUID CorrelationId,
+	GUID OldActivityId
+	);
+
+UdpICEUpdateAddLink(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	ANSISTRING localType,
+	ANSISTRING remoteType,
+	ANSISTRING LocalBaseAddress,
+	ANSISTRING LocalTransportAddress,
+	ANSISTRING LocalServerAddress,
+	ANSISTRING RemoteBaseAddress,
+	ANSISTRING RemoteTransportAddress,
+	ANSISTRING RemoteServerAddress
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	BINARY Hash
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Endpoint,
+	UINT32 ArraySize
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	ANSISTRING old local type,
+	ANSISTRING old remote type,
+	ANSISTRING oldLocalBaseAddress,
+	ANSISTRING oldLocalTransportAddress,
+	ANSISTRING oldRemoteBaseAddress,
+	ANSISTRING oldRemoteTransportAddress,
+	ANSISTRING new local type,
+	ANSISTRING new remote type,
+	ANSISTRING newLocalBaseAddress,
+	ANSISTRING newLocalTransportAddress,
+	ANSISTRING newRemoteBaseAddress,
+	ANSISTRING newRemoteTransportAddress
+	);
+
+UdpIce(
+	ANSISTRING msg,
+	HEXINT64 socketHandle,
+	HEXINT64 m_WaitHandles.size
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 old activeLinkIndex,
+	UINT32 old number of links,
+	UINT32 new activeLinkIndex,
+	UINT32 new number of links
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	BINARY Hash,
+	UINT32 ArraySize
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UNICODESTRING Address,
+	UINT32 Port
+	);
+
+UdpICECompleted(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 side,
+	UINT32 timeoutMs,
+	HRESULT hr,
+	HEXINT64 this
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT64 data,
+	UINT32 length,
+	UINT32 side,
+	HEXINT64 this
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 allowDisconnect,
+	UINT32 allowNormalConDisconnect,
+	UINT32 allowICEConDisconnect,
+	HEXINT32 hConnection,
+	HEXINT32 m_pClientICEConnection,
+	HEXINT32 m_pClientNormalConnection
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UNICODESTRING Address,
+	UINT32 Port,
+	HRESULT hr
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 requestId,
+	UINT32 m_sessionCtlBlockPtrArraySize
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT64 data,
+	UINT32 length,
+	UINT32 side,
+	HEXINT64 this
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 AddressFamily
+	);
+
+UdpICEUpdateLink(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	ANSISTRING old local type,
+	ANSISTRING old remote type,
+	ANSISTRING oldLocalBaseAddress,
+	ANSISTRING oldLocalTransportAddress,
+	ANSISTRING oldRemoteBaseAddress,
+	ANSISTRING oldRemoteTransportAddress,
+	ANSISTRING new local type,
+	ANSISTRING new remote type,
+	ANSISTRING newLocalBaseAddress,
+	ANSISTRING newLocalTransportAddress,
+	ANSISTRING newRemoteBaseAddress,
+	ANSISTRING newRemoteTransportAddress
+	);
+
+UdpICEUpdateRemoveLink(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId,
+	ANSISTRING localType,
+	ANSISTRING remoteType,
+	ANSISTRING LocalBaseAddress,
+	ANSISTRING LocalTransportAddress,
+	ANSISTRING LocalServerAddress,
+	ANSISTRING RemoteBaseAddress,
+	ANSISTRING RemoteTransportAddress,
+	ANSISTRING RemoteServerAddress
+	);
+
+UdpEstablishTimeout(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpEstablishAborted(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 RequestId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 udpType
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 UdpUse
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 RequestId,
+	UINT32 Timeout
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	BINARY 
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Enabled,
+	UINT32 ReverseConnectMode
+	);
+
+UdpNotEnabled(
+	ANSISTRING type,
+	UINT64 PartA_PrivTags,
+	ANSISTRING Component,
+	ANSISTRING Subcomponent,
+	GUID correlationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 RequestId,
+	UINT32 iceConnectionType,
+	UINT32 ReverseConnectMode
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UNICODESTRING LocalEndpointAddress,
+	HEXINT32 Result
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 PreferredProtocolVersion
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 ConnectionPtr
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 m_spIRdpUdpLocalEndpointCallback
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 HashSize
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UNICODESTRING LocalEndpointAddress
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	HEXINT32 EndpointPtr
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	HEXINT32 Hash4Bytes
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 ConnectionPtr,
+	UINT32 BytesToSend
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 AdapterIndex
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Total,
+	UINT32 Allowed
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	GUID CorrelationId,
+	HEXINT32 DiagnosticsInfo0,
+	HEXINT32 DiagnosticsInfo1,
+	HEXINT32 DiagnosticsInfo2,
+	HEXINT32 DiagnosticsInfo3
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Size
+	);
+
+UdpUrcp(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	DOUBLE Ratebps,
+	DOUBLE SlowStartRate
+	);
+
+UdpUrcp(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	DOUBLE dLoss,
+	DOUBLE LossMin,
+	DOUBLE LossWindowAvg
+	);
+
+UdpUrcp(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	DOUBLE dDelay,
+	DOUBLE DelayMin,
+	DOUBLE RTT,
+	DOUBLE MinRTT,
+	DOUBLE DelayWinAvg,
+	DOUBLE Window
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 Size
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Reason
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 m_state
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	BINARY Hash
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId,
+	UINT32 Flags
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 ISN,
+	UINT32 UpStreamMTU,
+	UINT32 DownStreamMTU,
+	UINT32 SynEx,
+	UINT32 Version,
+	UINT32 UsingMTU
+	);
+
+UdpData(
+	ANSISTRING msg,
+	UINT32 PacketSize,
+	UINT32 State
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 pCookieHash->hash[0],
+	HEXINT32 pHash[0]
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 SendIsn,
+	UINT32 RecvIsn
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Flags,
+	UINT32 Ack,
+	UINT32 ISN
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId,
+	UINT32 Version,
+	UINT32 Max
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId,
+	UNICODESTRING RemoteAddress,
+	UINT32 RemotePort,
+	UNICODESTRING LocalAddress,
+	UINT32 LocalPort
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Flags,
+	UINT32 Version
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 ISN,
+	UINT32 UpStreamMTU,
+	UINT32 DownStreamMTU,
+	UINT32 SynEX,
+	UINT32 Version,
+	UINT32 Preferred
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 Reason,
+	HEXINT32 Result
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	GUID ConnectionUUID
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	BINARY Hash
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 ConnectionId,
+	UINT32 Version
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	GUID CorrelationId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	GUID ConnectionUUID,
+	GUID OldConnectionUUID
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 SYNACK,
+	UINT32 ISN,
+	UINT32 UpStreamMTU,
+	UINT32 DownStreamMTU,
+	UINT32 MaxMTU,
+	UINT32 Version
+	);
+
+UdpData(
+	ANSISTRING msg,
+	UINT32 ConnectionId
+	);
+
+UdpData(
+	ANSISTRING msg,
+	UINT32 Size
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	GUID ConnectionUUID,
+	GUID OldActivityId
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	UINT32 ConnectionId,
+	UINT32 ISN,
+	UINT32 UpStreamMTU,
+	UINT32 DownStreamMTU,
+	UINT32 Lossy
+	);
+
+UdpConnect(
+	ANSISTRING msg,
+	HEXINT64 RdpUdpConnection ptr,
+	UINT32 ConnectionId,
+	UNICODESTRING RemoteAddress,
+	UINT32 RemotePort,
+	UNICODESTRING LocalAddress,
+	UINT32 LocalPort
+	);
+
+RDPTransportURCPLossSegmentStats(
+	GUID correlationId,
+	DOUBLE durationInSeconds,
+	BOOL32 isFalseLossTransition,
+	UINT32 averageLossIntervalInMs,
+	DOUBLE averageLossRate,
+	DOUBLE averageLossRateDueToTimeout,
+	DOUBLE averageTrueLossRateDueToTimeout,
+	UINT32 averageTimeoutInMsInLossDueToTimeOut,
+	UINT32 averageDelayInMsAroundLoss,
+	UINT32 maxTimeoutInMsInLossDueToTimeOut,
+	UINT32 maxDelayInMsAroundLoss,
+	UINT32 averageRateAdvertizedInKbps,
+	UINT32 averageRateSentInKbps,
+	UINT32 averageRoundTripTimeInMs,
+	UINT32 maxRateAdvertizedInKbps,
+	UINT32 maxRateSentInKbps,
+	UINT32 averageMaxRoundTripTimeInMs,
+	UINT32 minRateAdvertizedInKbps,
+	UINT32 averageMinRoundTripTimeInMs
+	);
+
+RDPTransportUDPProfile(
+	GUID correlationId,
+	UINT32 udpVersion
+	);
+
+RDPTransportURCPSessionStats(
+	GUID correlationId,
+	UINT32 maxRateInKbps,
+	UINT32 averageRateAdvertizedInKbps,
+	UINT32 maxRateAdvertizedInKbps,
+	UINT32 maxRateSentInKbps,
+	UINT32 maxRoundTripTimeInMs,
+	UINT32 minRateAdvertizedInKbps,
+	DOUBLE averageLossRate,
+	DOUBLE averageLossRateDueToTimeout,
+	UINT32 numLossDelayTransitions,
+	UINT32 numFalseLossTransitions,
+	UINT32 totalNumTimesBandwidthTooLow,
+	DOUBLE ratioOfBurstLossvsSingleLoss,
+	DOUBLE averageBurstLossLength,
+	DOUBLE reorderedBytesTop1tenthPercent0.1,
+	DOUBLE reorderedBytesTop1tenthPercent0.2,
+	DOUBLE reorderedBytesTop1tenthPercent0.3,
+	DOUBLE reorderedBytesTop1tenthPercent0.4,
+	DOUBLE reorderedBytesTop1tenthPercent0.5,
+	DOUBLE reorderedBytesTop1tenthPercent0.6,
+	DOUBLE reorderedBytesTop1tenthPercent0.7,
+	DOUBLE reorderedBytesTop1tenthPercent0.8,
+	DOUBLE reorderedBytesTop1tenthPercent0.9,
+	DOUBLE reorderedBytesTop1tenthPercent1
+	);
+
+RDPTransportURCPDelaySegmentStats(
+	GUID correlationId,
+	DOUBLE durationInSeconds,
+	UINT32 maxRateInKbps,
+	UINT32 averageRateAdvertizedInKbps,
+	UINT32 averageRateSentInKbps,
+	UINT32 averageRawDelayInMs,
+	UINT32 averageDelayInMs,
+	UINT32 averageBytesInFlight,
+	DOUBLE averageDelayInMsPerBytesInFlight,
+	UINT32 averageRoundTripTimeInMs,
+	UINT32 averageURCPOperationPointInMs,
+	UINT32 delaySmoothPeriodInMs,
+	UINT32 maxRateAdvertizedInKbps,
+	UINT32 maxRateSentInKbps,
+	UINT32 maxRawDelayInMs,
+	UINT32 maxDelayInMs,
+	UINT32 maxBytesInFlight,
+	DOUBLE maxDelayInMsPerBytesInFlight,
+	UINT32 maxRoundTripTimeInMs,
+	UINT32 minRateAdvertizedInKbps,
+	UINT32 minRoundTripTimeInMs
+	);
+
+RDPTransportStats(
+	GUID correlationId,
+	BOOL32 isUDP,
+	UINT32 averageRateAdvertizedInKbps,
+	UINT32 averageBytesInFlight,
+	UINT32 averageRoundTripTimeInMs,
+	UINT32 maxRateAdvertizedInKbps,
+	UINT32 maxBytesInFlight,
+	UINT32 maxRoundTripTimeInMs,
+	UINT32 minRateAdvertizedInKbps,
+	UINT32 minRoundTripTimeInMs
+	);
+
+RDPTransportURCPLossSegmentAggregatedStats(
+	GUID correlationId,
+	DOUBLE durationInSeconds,
+	BOOL32 isFalseLossTransition,
+	UINT32 averageLossIntervalInMs,
+	DOUBLE averageLossRate,
+	DOUBLE averageLossRateDueToTimeout,
+	DOUBLE averageTrueLossRateDueToTimeout,
+	UINT32 averageTimeoutInMsInLossDueToTimeOut,
+	UINT32 averageDelayInMsAroundLoss,
+	UINT32 maxTimeoutInMsInLossDueToTimeOut,
+	UINT32 maxDelayInMsAroundLoss,
+	UINT32 averageRateAdvertizedInKbps,
+	UINT32 averageRateSentInKbps,
+	UINT32 averageRoundTripTimeInMs,
+	UINT32 maxRateAdvertizedInKbps,
+	UINT32 maxRateSentInKbps,
+	UINT32 averageMaxRoundTripTimeInMs,
+	UINT32 minRateAdvertizedInKbps,
+	UINT32 averageMinRoundTripTimeInMs
+	);
+
+RDPTransportError(
+	GUID correlationId,
+	UNICODESTRING Error String
+	);
+
+RDPTransportURCPDelaySegmentAggregatedStats(
+	GUID correlationId,
+	DOUBLE durationInSeconds,
+	UINT32 maxRateInKbps,
+	UINT32 averageRateAdvertizedInKbps,
+	UINT32 averageRateSentInKbps,
+	UINT32 averageRawDelayInMs,
+	UINT32 averageDelayInMs,
+	UINT32 averageBytesInFlight,
+	DOUBLE averageDelayInMsPerBytesInFlight,
+	UINT32 averageRoundTripTimeInMs,
+	UINT32 averageURCPOperationPointInMs,
+	UINT32 delaySmoothPeriodInMs,
+	UINT32 maxRateAdvertizedInKbps,
+	UINT32 maxRateSentInKbps,
+	UINT32 maxRawDelayInMs,
+	UINT32 maxDelayInMs,
+	UINT32 maxBytesInFlight,
+	DOUBLE maxDelayInMsPerBytesInFlight,
+	UINT32 maxRoundTripTimeInMs,
+	UINT32 minRateAdvertizedInKbps,
+	UINT32 minRoundTripTimeInMs
+	);
+
+CloudAPHelper(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+CloudAPHelper(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+CloudAPHelper(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	UINT32 cbRdpAssertion
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg,
+	UINT32 ChunkSize
+	);
+
+RdsAadAuthServer(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed,
+	UINT32 RdsAadAuthServerState
+	);
+
+CertHelper(
+	ANSISTRING msg,
+	HEXINT32 Result,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	ANSISTRING function,
+	ANSISTRING Failed
+	);
+

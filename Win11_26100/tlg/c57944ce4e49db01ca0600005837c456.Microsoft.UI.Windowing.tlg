@@ -1,0 +1,221 @@
+ProviderNames:
+	Microsoft.UI.Windowing
+
+
+
+**** Events *****
+OverlappedPresenter_DetachWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+OverlappedPresenter_AttachWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+FullScreenPresenter_DetachWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+FullScreenPresenter_AttachWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+CompactOverlayPresenter_DetachWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+CompactOverlayPresenter_AttachWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	INT64 width,
+	INT64 height,
+	DOUBLE defaultsize,
+	INT64 screenwidth,
+	INT64 screenheight,
+	INT64 dpi
+	);
+
+AppWindowConfiguration_DisableShownInSwitchers(
+	HEXINT64 hwnd
+	);
+
+AppWindowConfiguration_EnableShownInSwitchers(
+	HEXINT64 hwnd
+	);
+
+AppWindow_DisposeLeave(
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+AppWindow_DisposeEnter(
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+AppWindow_ShowCompleted(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindow_ShowCommon(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	INT32 nShowCmd
+	);
+
+AppWindow_SetPosition(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	HEXINT64 insertAfter,
+	INT32 X,
+	INT32 Y,
+	INT32 Width,
+	INT32 Height,
+	UINT32 flags
+	);
+
+AppWindow_GetCombinedWindowStyles(
+	HEXINT64 hwnd
+	);
+
+AppWindow(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd,
+	UINT32 threadId,
+	UINT32 processId
+	);
+
+Window_Api_Utils_Destroy(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+AppWindowFactory_Created(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	HEXINT64 hwnd
+	);
+
+YieldAndCall_GetTitleEnd(
+	HEXINT64 hwnd,
+	UNICODESTRING hString
+	);
+
+YieldAndCall_GetTitleStart(
+	HEXINT64 hwnd
+	);
+
+YieldAndCall_DestroyWnd(
+	HEXINT64 hwnd
+	);
+
+ReunionModule_DllGetActivationFactory(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING hString
+	);
+
+ReunionModule_StartUp(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+ReunionModule_Detach(
+	UINT64 PartA_PrivTags,
+	ANSISTRING Version,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+

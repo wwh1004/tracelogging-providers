@@ -1,0 +1,3345 @@
+ProviderNames:
+	Microsoft-Windows-Shell-CortanaTrace
+	Microsoft.Windows.AppLifeCycle
+	Microsoft-Windows-Shell-CortanaProactive
+	Microsoft.Windows.Shell.CortanaSearch
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+LaunchArgs(
+	UNICODESTRING Args
+	);
+
+CortanaApp_SearchSettings(
+	UNICODESTRING SessionId,
+	BOOLEAN IsMiniSearchEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_EntryPoint(
+	UNICODESTRING SessionId,
+	UNICODESTRING entryPoint,
+	BOOLEAN newProcess,
+	GUID parentSessionID,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnUnhandledException(
+	UNICODESTRING SessionId,
+	UINT32 Exception,
+	UNICODESTRING Message,
+	UINT64 PartA_PrivTags
+	);
+
+SetSearchBoxInTaskbarStateWithMarginInFloat(
+	BOOLEAN isSearchBoxInTaskbar,
+	UINT32 traySearchBoxWidth,
+	UINT32 traySearchBoxHeight,
+	FLOAT traySearchBoxLeftMarginInFloat,
+	UINT64 PartA_PrivTags
+	);
+
+SetSearchBoxInTaskbarState(
+	BOOLEAN isSearchBoxInTaskbar,
+	UINT32 traySearchBoxWidth,
+	UINT32 traySearchBoxHeight,
+	UINT32 traySearchBoxLeftMargin,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnActivated_ProtocolLaunchSwallowed(
+	UNICODESTRING swallowedURI,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_PhysicalSizeChanged(
+	UINT32 Width,
+	UINT32 Height,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_GetSearchPolicyException(
+	UNICODESTRING SessionId,
+	INT32 exceptionId,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_IsRunningFullTrustApp(
+	UNICODESTRING SessionId,
+	BOOLEAN isRunningFullTrustApp,
+	UINT64 PartA_PrivTags
+	);
+
+UndockedSearchExperienceManager_ShowResult(
+	BOOLEAN success,
+	UNICODESTRING sessionId,
+	UINT32 activationSource,
+	UINT32 durationMs,
+	UINT32 reason,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ModernAppResume_UIResponsive(
+	UNICODESTRING AumId,
+	UNICODESTRING PackageFullName,
+	UNICODESTRING PsmKey,
+	UNICODESTRING wstrMetadata1,
+	UNICODESTRING wstrMetadata2,
+	UINT32 dwordMetadata3,
+	UINT32 dwordMetadata4
+	);
+
+ModernAppLaunch_UIResponsive(
+	UNICODESTRING AumId,
+	UNICODESTRING PackageFullName,
+	UNICODESTRING PsmKey,
+	UNICODESTRING wstrMetadata1,
+	UNICODESTRING wstrMetadata2,
+	UINT32 dwordMetadata3,
+	UINT32 dwordMetadata4
+	);
+
+Info(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 lineNumber,
+	ANSISTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 PartA_PrivTags
+	);
+
+SetSearchBoxInTaskbarFromSearchBoxPlacement(
+	UINT64 PartA_PrivTags
+	);
+
+App_InitializeTelemetry(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+App_InitializeTelemetry(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+App_InitializeTelemetry(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+App_OnVisibilityChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOL32 Visible
+	);
+
+App_OnVisibilityChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+App_OnVisibilityChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+App_InitializeApp(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOL32 IsMain
+	);
+
+App_InitializeApp(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+App_InitializeApp(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+App_App(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+App_App(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+App_App(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DelayedStateWeekly(
+	UNICODESTRING Payload,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnExiting_SleepStarted(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnExiting_SleepFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnExiting_SendCortanaDownstreamMessageFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnExiting(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CortanaApp_OnExiting(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnExiting(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_OnWindowActivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CortanaApp_OnWindowActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnSearchActivated_CancelActivationBasedOnPolicy(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnWindowActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_OnSearchActivated_InitializeTelemetryFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSearchActivated_HandleActivationFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSearchActivated_WaitForOrchestratorInitializationFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSearchActivated_EnsureSuspensionManagerAndPreventSuspensionFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSearchActivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CortanaApp_OnSearchActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnActivated_CancelActivationBasedOnPolicy(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSearchActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_OnActivated_InitializeTelemetryFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnActivated_HandleActivationFromLaunchFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnActivated_WaitForOrchestratorInitializationFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnActivated_EnsureSuspensionManagerAndPreventSuspensionFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnActivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CortanaApp_OnActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnLaunched_CancelLaunchBasedOnPolicy(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_OnLaunched_InitializeTelemetryFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnLaunched_HandleActivationFromLaunchFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnLaunched_WaitForOrchestratorInitializationFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnLaunched_EnsureSuspensionManagerAndPreventSuspensionFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnLaunched(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CortanaApp_OnLaunched(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnBackgroundActivated_CancelActivationBasedOnPolicy(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnLaunched(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_ResumeActivation(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_CloseAppOnDisableSearchPolicyEnabled(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_ActivateWhileSuspending_Measured(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_ProtocolLaunch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+CortanaApp_ProtocolLaunch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_ProtocolLaunch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CortanaApp_HandleActivationFromLaunch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+CortanaApp_HandleActivationFromLaunch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_HandleActivationFromLaunch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CortanaApp_OnClosed(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_OnClosed(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_OnClosed_SleepStarted(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnClosed_SleepFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnClosed_SendCortanaDownstreamMessageFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnClosed(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+CortanaApp_OnClosed(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnClosed(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_OnResuming(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_OnResuming(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_OnResuming_HandleActivationFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnResuming(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+CortanaApp_OnResuming(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnResuming(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_OnSuspending(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_OnSuspending(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_OnSuspending_SendCortanaDownstreamMessageFinished(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSuspending_ResetSuspendInProgressState(
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_OnSuspending(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CortanaApp_OnSuspending(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_OnSuspending(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_BingLifetime_Stop(
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_BingLifetime_Start(
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	UNICODESTRING state
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	BOOLEAN ColdStart
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	BOOLEAN ColdStart
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	BOOLEAN ColdStart,
+	BOOLEAN IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	TID PartB_Asg.Content.AsgCortanaEvent,
+	UNICODESTRING clientId,
+	UNICODESTRING impressionGuid,
+	UNICODESTRING cortanaAppLifetimeGuid,
+	INT32 capabilities,
+	UNICODESTRING appName,
+	UNICODESTRING eventType,
+	BOOLEAN ColdStart,
+	BOOLEAN IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_Initialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 lineNumber,
+	ANSISTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+Orchestrator_HeadersInitialization(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Orchestrator_HeadersInitialization(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Orchestrator_HeadersInitialization(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Orchestrator_ProjectedAPIInitialization(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Orchestrator_ProjectedAPIInitialization(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Orchestrator_ProjectedAPIInitialization(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Orchestrator_UserAuthenticationManagerInitialization(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Orchestrator_UserAuthenticationManagerInitialization(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Orchestrator_UserAuthenticationManagerInitialization(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Orchestrator_CortanaSettingsAndConfigurationManagerInitialization(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Orchestrator_CortanaSettingsAndConfigurationManagerInitialization(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Orchestrator_CortanaSettingsAndConfigurationManagerInitialization(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Orchestrator_LaunchCortanWorkItems(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Orchestrator_LaunchCortanWorkItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Orchestrator_LaunchCortanWorkItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Orchestrator_Orchestrator(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Orchestrator_Orchestrator(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Orchestrator_Orchestrator(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SuspensionManager_PreventSuspension(
+	UNICODESTRING Context,
+	UINT64 PartA_PrivTags
+	);
+
+SuspensionManager_SuspensionEnabled(
+	UINT64 PartA_PrivTags
+	);
+
+SuspensionManager_SuspensionDisabled(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_SuspensionEnabled(
+	BOOLEAN Visible,
+	BOOLEAN BingBundleUpdateTimerRunning,
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_BundleUpdateTimerExpired(
+	BOOLEAN Visible,
+	BOOLEAN SuspensionEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_EnableSearchSuspension(
+	UINT32 state,
+	UINT64 duration,
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_SuspensionDisabled(
+	BOOLEAN Visible,
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_NotifyBundleBootstrapCompleted(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_NotifyReactivationCompleted(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_ResetBundleUpdateTimer(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_PrelaunchSuspensionDisabled(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_PrelaunchSuspensionEnabled(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_CancelBundleUpdateTimer(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_StartBundleUpdateTimer(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_CloakViewWithoutSuspension(
+	UINT64 PartA_PrivTags
+	);
+
+UndockedShellExperienceProxy_OnHideViewRequested(
+	UINT64 PartA_PrivTags
+	);
+
+App_RegisterAllDependencyProperties(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+App_RegisterAllDependencyProperties(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+App_RegisterAllDependencyProperties(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TerminateSelfBecauseExplorerExited(
+	VOID
+	);
+
+ComponentFileExplorerSuggestions_StartUpInfo(
+	UNICODESTRING SessionId,
+	UNICODESTRING ClientId,
+	UNICODESTRING additionalData,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_SessionComplete(
+	UNICODESTRING SessionId,
+	UNICODESTRING ClientId,
+	UNICODESTRING additionalData,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_Loaded(
+	UNICODESTRING ClientId,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_CloseButtonState(
+	UNICODESTRING SessionId,
+	BOOLEAN isVisible,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_SubmitButtonState(
+	UNICODESTRING SessionId,
+	BOOLEAN isVisible,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ComponentFileExplorerSuggestions_HideQFRequested(
+	UNICODESTRING SessionId,
+	BOOLEAN qfVisible,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_TextUpdate(
+	UNICODESTRING SessionId,
+	UNICODESTRING queryString,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_ShowQFRequested(
+	UNICODESTRING SessionId,
+	BOOLEAN qfVisible,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_RemoveFromMRU(
+	UNICODESTRING SessionId,
+	UNICODESTRING searchHistory,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_LostFocus(
+	UNICODESTRING SessionId,
+	UINT32 source,
+	UINT32 direction,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_ResetSearchText(
+	UNICODESTRING SessionId,
+	UNICODESTRING newText,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_ResetLocation(
+	UNICODESTRING SessionId,
+	UNICODESTRING newLocation,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_ResetMRU(
+	UNICODESTRING SessionId,
+	UINT32 mruCount,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_FocusChanged(
+	UNICODESTRING SessionId,
+	BOOLEAN focused,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_SearchBoxHeightUpdate(
+	UNICODESTRING SessionId,
+	INT32 newHeight,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_ThemeChanged(
+	UNICODESTRING SessionId,
+	UINT32 theme,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_OnShowHideFileExts(
+	UNICODESTRING SessionId,
+	BOOLEAN hideFileExts,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_HeightUpdate(
+	UNICODESTRING SessionId,
+	DOUBLE webViewHeight,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ComponentFileExplorerSuggestions_WebViewFocused(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_FocusChangeIgnored(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_SubmitTapped(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentFileExplorerSuggestions_RequestSearch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_RequestSearch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_RequestSearch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ComponentFileExplorerSuggestions_ClearSuggestions(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_ClearSuggestions(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ComponentFileExplorerSuggestions_ClearSuggestions(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_SuggestionLaunched(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_SuggestionLaunched(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ComponentFileExplorerSuggestions_SuggestionLaunched(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_FileLaunched(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_FileLaunched(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_FileLaunched(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ComponentFileExplorerSuggestions_FolderLaunched(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_FolderLaunched(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ComponentFileExplorerSuggestions_FolderLaunched(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+PrefetchOperationRecorder_Start(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING SessionId,
+	UINT32 OperationId
+	);
+
+PrefetchOperationRecorder_Start(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING SessionId,
+	UINT32 OperationId,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+PrefetchOperationRecorder_Start(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+PrefetchOperationRecorder_Start(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TaskbarSearchAppStateManager_UserPressedEsc(
+	UINT64 PartA_PrivTags
+	);
+
+AppStateManager_LaunchExperienceById(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AppStateManager_PerformInitialIndexing(
+	UINT64 PartA_PrivTags
+	);
+
+AppStateManager_LaunchExperienceById(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AppStateManager_LaunchExperienceById(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AppStateManager_PerformFinalActivationActivities(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AppStateManager_PerformFinalActivationActivities(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AppStateManager_PerformFinalActivationActivities(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SetInputPaneState(
+	BOOLEAN isInputPaneShowing,
+	BOOLEAN isUpdatedVisualState,
+	UINT64 PartA_PrivTags
+	);
+
+SearchDismissAnimationStarted(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchDismissAnimationCompleted(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchEntranceAnimationCompleted(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+AppShownWithoutAnimation(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+AppDismissedWithoutAnimation(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentTaskbarSearch_StartUpInfo(
+	UNICODESTRING SessionId,
+	UNICODESTRING ClientId,
+	UNICODESTRING edgeExperiments,
+	UNICODESTRING additionalData,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version,
+	UNICODESTRING EntryPoint,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentTaskbarSearch_SessionComplete(
+	UNICODESTRING SessionId,
+	UNICODESTRING ClientId,
+	UNICODESTRING edgeExperiments,
+	UNICODESTRING additionalData,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentTaskbarSearch_FailedToEnableRichEditFocusOptimization(
+	UNICODESTRING ClientId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchEntranceAnimationStarted(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentTaskbarSearch_SessionComplete(
+	UNICODESTRING SessionId,
+	UNICODESTRING ClientId,
+	UNICODESTRING edgeExperiments,
+	UNICODESTRING additionalData,
+	UINT64 PartA_PrivTags
+	);
+
+TaskbarSearchPageViewModel_LaunchExperience(
+	UNICODESTRING SessionId,
+	UNICODESTRING currentExperienceId,
+	UNICODESTRING newExperienceId,
+	UNICODESTRING transitionType,
+	BOOLEAN appTransitionRequestPending,
+	UINT64 PartA_PrivTags
+	);
+
+TaskbarSearchPageViewModel_LaunchToSearch(
+	UNICODESTRING SessionId,
+	UNICODESTRING currentExperienceId,
+	UNICODESTRING newExperienceId,
+	UNICODESTRING transitionType,
+	UINT64 PartA_PrivTags
+	);
+
+ComponentTaskbarSearch_PageVisible(
+	UNICODESTRING SessionId,
+	BOOLEAN bingChatVisible,
+	UINT64 PartA_PrivTags
+	);
+
+WebViewNavigationHelper_ShowTimer(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ExperienceName,
+	UINT32 Timeout,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+WebViewNavigationHelper_ShowTimer(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ExperienceName,
+	UINT32 Timeout
+	);
+
+WebViewNavigationHelper_NavigationFailed(
+	UNICODESTRING SessionId,
+	UNICODESTRING experience,
+	UINT32 status,
+	UINT32 connectivityLevel,
+	UINT32 networkStatus,
+	UINT64 PartA_PrivTags
+	);
+
+WebViewNavigationHelper_TimerExpired(
+	UNICODESTRING SessionId,
+	UNICODESTRING experience,
+	UINT64 PartA_PrivTags
+	);
+
+WebViewNavigationHelper_AppendHeadersFailed(
+	UNICODESTRING SessionId,
+	UNICODESTRING experience,
+	INT32 hr,
+	UNICODESTRING message,
+	UINT32 connectivityLevel,
+	UINT32 networkStatus,
+	UINT64 PartA_PrivTags
+	);
+
+WebViewNavigationHelper_ShowTimer(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+WebViewNavigationHelper_ShowTimer(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationViewModel_ShowQF(
+	UNICODESTRING SessionId,
+	UNICODESTRING WebViewState,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_NavigateWebView(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulationViewModel_FallbackInUse(
+	UNICODESTRING SessionId,
+	UINT32 retryCount,
+	FLOAT remainingTimeout,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_FallbackNavigationDiagnostic(
+	UNICODESTRING selectedEndpoint,
+	UINT32 numFails,
+	UNICODESTRING requestUri,
+	UINT64 previousBundleType
+	);
+
+QueryFormulationViewModel_RetryOnlineNavigate(
+	UNICODESTRING SessionId,
+	UINT32 retryCount,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_DetectNetworkConnectivity(
+	UNICODESTRING SessionId,
+	UINT32 connectivityLevel,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_EnsureLoaded(
+	UNICODESTRING SessionId,
+	BOOLEAN NeedToLoad,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_NavigationEvent(
+	UNICODESTRING eventType,
+	UNICODESTRING uri,
+	UNICODESTRING endpoint
+	);
+
+QueryFormulationViewModel_NavigationBundle(
+	UNICODESTRING SessionId,
+	UINT32 bundleType,
+	UINT32 endpoint,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_NavigateWebView(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationViewModel_NavigateWebView(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationViewModel_TotalLoadFailure(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_HandshakeSucceeded(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_LoadFailed(
+	UNICODESTRING SessionId,
+	UINT32 NumberOfFailedAttemptsSinceLastSuccessfulLoad,
+	BOOL32 Cortana::Internal::Search::TelemetryUtils::Instance->GetIsWebView2(),
+	UNICODESTRING Cortana::Internal::Search::TelemetryUtils::Instance->GetWebView2Version()->Data(),
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationViewModel_LoadFailed(
+	UNICODESTRING SessionId,
+	UINT32 NumberOfFailedAttemptsSinceLastSuccessfulLoad,
+	UINT64 PartA_PrivTags
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING Endpoint,
+	UNICODESTRING WebviewTitle
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING Endpoint,
+	UNICODESTRING WebviewTitle,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING Endpoint,
+	UNICODESTRING WebviewTitle,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING Endpoint,
+	UNICODESTRING WebviewTitle
+	);
+
+QueryFormulationViewModel_OfflineNavigationCancelled(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchViewModel_LoadQueryFormulation(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 DsbEnabled,
+	BOOL32 WebSearchEnabled,
+	UNICODESTRING ImpressionId,
+	BOOL32 QueryFormulationVisible,
+	UINT32 VisualTheme
+	);
+
+SearchBoxViewModel_TextCompositionStarted(
+	INT32 StartIndex,
+	INT32 Length,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_NotifyAPIQueryTextChanged(
+	UINT32 QueryTextLength,
+	UINT32 SelectionStart,
+	UINT32 SelectionLength,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_TextCompositionEnded(
+	INT32 StartIndex,
+	INT32 Length,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_AutoCompleteRequested(
+	UNICODESTRING QueryText,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_QueryTextSetViaAPI(
+	UNICODESTRING QueryText,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_AutoCompleteApplied(
+	UNICODESTRING QueryText,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_HandleSelectionChanged(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 QueryTextLength,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_QueryTextOrSelectionUpdated(
+	UNICODESTRING QueryText,
+	UINT32 SelectionStart,
+	UINT32 SelectionLength,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_DynamicSearchBoxContentUpdateResult(
+	UINT32 UpdateResult,
+	UINT32 completionKind,
+	UINT32 durationMs,
+	BOOLEAN isWebView2,
+	UINT32 dsbSetResult,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_StateCleared(
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_EnsureQFShown(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 HasEffectiveSearchAppearance,
+	UINT32 TextLength,
+	UINT32 IconAltTextLength,
+	UNICODESTRING IconContentType,
+	UNICODESTRING TelemetryId,
+	UINT32 IconSize
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 HasEffectiveSearchAppearance,
+	UINT32 TextLength,
+	UINT32 IconAltTextLength,
+	UNICODESTRING IconContentType,
+	UNICODESTRING TelemetryId,
+	UINT32 IconSize
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 HasEffectiveSearchAppearance
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 HasEffectiveSearchAppearance
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 HasPlaceholder
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 HasPlaceholder,
+	UINT32 TextLength,
+	UINT32 IconAltTextLength,
+	UNICODESTRING IconContentType,
+	UNICODESTRING TelemetryId,
+	UINT32 IconSize,
+	INT64 ShowDuration
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 HasPlaceholder,
+	UINT32 TextLength,
+	UINT32 IconAltTextLength,
+	UNICODESTRING IconContentType,
+	UNICODESTRING TelemetryId,
+	UINT32 IconSize,
+	INT64 ShowDuration
+	);
+
+SearchBoxViewModel_UpdateGleam(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 HasPlaceholder
+	);
+
+SearchBoxViewModel_EnterKeyDown(
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxViewModel_EnterKeyUp(
+	UINT64 PartA_PrivTags
+	);
+
+WebView2NavigationCompletedTimeoutTriggered(
+	UNICODESTRING SessionId,
+	UINT32 browserProcessId,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2_UnexpectedNewWindowRequested(
+	UNICODESTRING SessionId,
+	UNICODESTRING Uri,
+	UINT64 PartA_PrivTags
+	);
+
+SearchMemory_Summary(
+	UNICODESTRING SessionId,
+	UNICODESTRING Scenario,
+	BOOLEAN IsWebView2,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING Payload,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2BrowserProcessExitedReceived(
+	UNICODESTRING SessionId,
+	UINT32 browserProcessExitKind,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2BrowserProcessExitedDuetoFailure(
+	UNICODESTRING SessionId,
+	BOOLEAN BothEventsReceived,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2ProcessInitFailed(
+	UNICODESTRING SessionId,
+	UINT32 ExceptionHResult,
+	BOOLEAN HasRetriedOnce,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2ProcessFailedShuttingDown(
+	UNICODESTRING SessionId,
+	UINT32 browserProcessId,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2ProcessFailed(
+	UNICODESTRING SessionId,
+	UINT32 ProcessFailedKind,
+	UINT32 ExitCode,
+	UINT32 Reason,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2ProcessFailedProcessExited(
+	UNICODESTRING SessionId,
+	UINT32 ProcessFailedKind,
+	UINT32 ExitCode,
+	UINT32 Reason,
+	UINT64 PartA_PrivTags
+	);
+
+SearchWebView2CurrentVersionBeforeNewBrowserVersionUpdate(
+	UNICODESTRING webView2Version,
+	UINT64 PartA_PrivTags
+	);
+
+WebView2ProcessHanged(
+	UNICODESTRING SessionId,
+	UINT32 HangCount,
+	UINT64 TimeHanged,
+	UINT64 PartA_PrivTags
+	);
+
+WebViewReload_Result(
+	BOOLEAN success,
+	BOOLEAN usingFallback,
+	UINT32 durationMs,
+	BOOLEAN isWebView2,
+	UNICODESTRING webView2Version,
+	BOOLEAN webSearchDisabledByPolicy,
+	UINT32 bundleType,
+	UINT64 PartA_PrivTags
+	);
+
+SearchWebView2Creation_Result(
+	BOOLEAN success,
+	UNICODESTRING webView2Version,
+	UINT32 durationMs,
+	UINT64 PartA_PrivTags
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING WebviewTitle
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING WebviewTitle,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING WebviewTitle
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING SessionId,
+	BOOL32 IsSuccess,
+	INT32 WebErrorStatus,
+	UNICODESTRING WebviewTitle,
+	BOOL32 IsWebView2,
+	UNICODESTRING WebView2Version
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING scheme,
+	UNICODESTRING host,
+	UNICODESTRING path
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_Navigate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SearchControl_WebView_Initialized(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebView_Initialized(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_WebView_Initialized(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchControl_WebView_Creation(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewWebViewNavigationRequested(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SearchControl_WebView_Creation(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebView_Creation(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewWebViewNavigationRequested(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewWebViewNavigationRequested(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebViewFinishNavigationRequested(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebViewFinishNavigationRequested(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewFinishNavigationRequested(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewNavigationCompleted(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewNavigationCompleted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebViewNavigationCompleted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewNavigationStarting(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebViewNavigationStarting(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewNavigationStarting(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchControl_WebViewNavigate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SearchControl_WebViewNavigate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchControl_WebViewNavigate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HostedWebView2Control_HostedWebView2Control(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HostedWebView2Control_HostedWebView2Control(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HostedWebView2Control_HostedWebView2Control(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+WebView1_UnexpectedNewWindowRequested(
+	UNICODESTRING SessionId,
+	UNICODESTRING Referrer,
+	UNICODESTRING Uri,
+	UINT64 PartA_PrivTags
+	);
+
+HostedWebViewControl_HostedWebViewControl(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HostedWebViewControl_HostedWebViewControl(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HostedWebViewControl_HostedWebViewControl(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UpdateWebView2BrowserVersionIfApplicable(
+	UNICODESTRING SessionId,
+	BOOLEAN shouldReloadQF,
+	UINT64 PartA_PrivTags
+	);
+
+ReloadQFDuringSystemShutdown(
+	UNICODESTRING SessionId,
+	BOOLEAN useWebView2,
+	UINT64 PartA_PrivTags
+	);
+
+TerminateCurrentProcessAndFallback2lowIL(
+	UNICODESTRING SessionId,
+	BOOLEAN needUseWV2InMediumIL,
+	UINT64 PartA_PrivTags
+	);
+
+RichSearchBoxControl_UriInvoked(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+RichSearchBoxControl_UriInvoked(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RichSearchBoxControl_UriInvoked(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBoxControl_ClearText(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBoxControl_ClearText(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBoxControl_GotFocus(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxControl_ClearText(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+

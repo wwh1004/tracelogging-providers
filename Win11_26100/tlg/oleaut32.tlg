@@ -1,0 +1,46 @@
+ProviderNames:
+	Microsoft.Windows.ComOleAut32
+
+
+
+**** Events *****
+GetDocumentationDllLoad(
+	ANSISTRING DllPath,
+	UINT64 PartA_PrivTags
+	);
+
+TypeLibVerifyTrust(
+	NTSTATUS Status,
+	UNICODESTRING TypeLibPath,
+	UINT8 ProcessProtection,
+	UINT32 ValidatedSigningLevel,
+	UINT32 ValidationFlags,
+	BOOL32 Revalidated,
+	UINT64 PartA_PrivTags
+	);
+
+TypeLibMonikerLoad(
+	UNICODESTRING Moniker,
+	UINT64 PartA_PrivTags
+	);
+
+TypeLibRegister(
+	UNICODESTRING TypeLibPath,
+	UNICODESTRING HelpFileDirectory,
+	UNICODESTRING HelpFile,
+	UNICODESTRING DocString,
+	UINT64 PartA_PrivTags
+	);
+
+TypeLibLoad(
+	UNICODESTRING TypeLibPath,
+	BOOL32 IsVersion2,
+	UINT64 PartA_PrivTags
+	);
+
+TypeLibMonikerFallback(
+	UNICODESTRING TypeLibPath,
+	UINT8 ProcessProtection,
+	UINT64 PartA_PrivTags
+	);
+

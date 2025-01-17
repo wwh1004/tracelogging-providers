@@ -1,0 +1,23 @@
+ProviderNames:
+	Microsoft.Windows.Kernel.Smss.Telemetry
+	Microsoft.Windows.Kernel.Base
+
+
+
+**** Events *****
+SmpCopyFileFailure(
+	INT32 Status,
+	INT64 FileSize
+	);
+
+PlatformBinary(
+	INT32 Status,
+	INT64 Duration
+	);
+
+PlatformBinary(
+	INT32 Status,
+	INT64 Duration,
+	COUNTEDSTRING Command
+	);
+

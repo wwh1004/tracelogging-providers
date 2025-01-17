@@ -1,0 +1,96 @@
+ProviderNames:
+	Microsoft.Windows.VoiceAccess.SpeechRecognizer
+	Microsoft.Windows.Accessibility.VoiceAccess
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+UsingLicenseBasedSDK(
+	UINT64 PartA_PrivTags
+	);
+
+ModelFullName(
+	UNICODESTRING PackageFullName,
+	UINT64 PartA_PrivTags
+	);
+
+StoreAppsBlocked(
+	UINT64 PartA_PrivTags
+	);
+
+LicenseUsedInLoadingSpeechModel(
+	BOOLEAN licenseTextUsed,
+	UINT64 PartA_PrivTags
+	);
+
+InitialSpeechRecognizedLatency(
+	UINT64 latencyInMs,
+	UINT64 PartA_PrivTags
+	);
+
+MeanSpeechRecognizedLatency(
+	UINT32 avgLatencyInMs,
+	UINT32 numDataPoints,
+	UINT32 numNoticeableDelay,
+	UNICODESTRING speechModelPackageFullName,
+	UINT64 PartA_PrivTags
+	);
+

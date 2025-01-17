@@ -1,0 +1,156 @@
+ProviderNames:
+	Microsoft.Windows.Shell.LogonWebHost
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FooterButtonError(
+	INT32 buttonType,
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedAppEvent(
+	INT32 unexpectedAppEventType,
+	UNICODESTRING description,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedAppEventWithData(
+	INT32 unexpectedAppEventType,
+	UNICODESTRING description,
+	UNICODESTRING data,
+	UINT64 PartA_PrivTags
+	);
+
+FirstWebAppVisible(
+	UNICODESTRING scenario,
+	UINT64 PartA_PrivTags
+	);
+
+NewWindowRequested(
+	UNICODESTRING uri,
+	UINT64 PartA_PrivTags
+	);
+
+NavigationRequested(
+	UNICODESTRING uri,
+	UINT64 PartA_PrivTags
+	);
+
+WebCamPermissionRequested(
+	UNICODESTRING requestedUriHost,
+	UINT64 PartA_PrivTags
+	);
+
+CloseAppSuccess(
+	UINT64 PartA_PrivTags
+	);
+
+WebAppDoneFail(
+	UINT64 PartA_PrivTags
+	);
+
+NoInternetDuringNavigation(
+	UINT64 PartA_PrivTags
+	);
+
+WebHostControlOnLoaded(
+	UINT64 PartA_PrivTags
+	);
+
+UnhandledBridgeFunctionCalled(
+	UNICODESTRING functionName,
+	UINT64 PartA_PrivTags
+	);
+
+BridgeEventCalled(
+	UNICODESTRING name,
+	UNICODESTRING data,
+	UINT64 PartA_PrivTags
+	);
+
+ScriptNotifyCalled(
+	UNICODESTRING eventType,
+	UNICODESTRING data,
+	UINT64 PartA_PrivTags
+	);
+
+SendCallBackMessage(
+	UNICODESTRING data,
+	UINT64 PartA_PrivTags
+	);
+
+WebAppEvent(
+	UNICODESTRING eventName,
+	UNICODESTRING eventValue,
+	UINT64 PartA_PrivTags
+	);
+
+SetScenarioData(
+	UNICODESTRING data,
+	UINT64 PartA_PrivTags
+	);
+
+PrivateData_GetItem_DNE(
+	UNICODESTRING requestedData,
+	UINT64 PartA_PrivTags
+	);
+
+AppActivated(
+	INT32 kind,
+	INT32 previousExecutionState,
+	UNICODESTRING uri,
+	UINT64 PartA_PrivTags
+	);
+
+WindowClosed(
+	UINT64 PartA_PrivTags
+	);
+
+AppSuspending(
+	UINT64 PartA_PrivTags
+	);
+

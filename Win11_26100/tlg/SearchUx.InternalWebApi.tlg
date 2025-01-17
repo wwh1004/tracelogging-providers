@@ -1,0 +1,5984 @@
+ProviderNames:
+	Microsoft.Windows.Shell.CortanaSearch
+	Microsoft-Windows-Shell-CortanaTrace
+	Microsoft-Windows-Shell-CortanaValidation
+	Microsoft.Windows.SearchBox
+	Microsoft.Windows.AppLifeCycle.UI
+
+
+
+**** Events *****
+ProviderError(
+	UINT32 errorCode,
+	UNICODESTRING errorMsg
+	);
+
+ProviderAccountsCount(
+	UINT32 providerAccountsCount
+	);
+
+FindProviderAccountsStatus(
+	UINT32 findAllWebAccountsStatus
+	);
+
+AccountRetrieved(
+	UNICODESTRING accountId,
+	UINT32 accountState
+	);
+
+AccountProviderRetrieved(
+	UNICODESTRING providerId,
+	UNICODESTRING providerAuthority
+	);
+
+SearchWebAccountConsentState_UnexpectedNull(
+	UNICODESTRING SessionId,
+	UNICODESTRING accountId,
+	BOOLEAN isMSA,
+	BOOLEAN isDefaultAccount,
+	UINT64 PartA_PrivTags
+	);
+
+SearchWebAccountConsentState_Summary(
+	UNICODESTRING SessionId,
+	UNICODESTRING accountId,
+	BOOLEAN isMSA,
+	BOOLEAN isDefaultAccount,
+	BOOLEAN isConsentRequired,
+	BOOLEAN hasUserConsented,
+	BOOLEAN canPromptForConsent,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+AuthenticationManager_AddSearchAccountsForProvider(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ProviderId,
+	UNICODESTRING ProviderAuthority
+	);
+
+AuthenticationManager_AddSearchAccountsForProvider(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AuthenticationManager_AddSearchAccountsForProvider(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AuthenticationManager_GetAllSearchWebAccountsAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 AccountCount
+	);
+
+AuthenticationManager_GetAllSearchWebAccountsAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 AccountCount
+	);
+
+AuthenticationManager_GetAllSearchWebAccountsAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AuthenticationManager_GetAllSearchWebAccountsAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AuthenticationManager_GetAllSearchWebAccountsAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AuthenticationManager_AuthenticateSearchWebAccountAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 Status,
+	UINT32 ErrorCode
+	);
+
+AuthenticationManager_AuthenticateSearchWebAccountAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 Status,
+	UINT32 ErrorCode
+	);
+
+AuthenticationManager_AuthenticateSearchWebAccountAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Resource,
+	UNICODESTRING Scope,
+	UNICODESTRING AccountId,
+	UINT32 AccountState
+	);
+
+AuthenticationManager_AuthenticateSearchWebAccountAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AuthenticationManager_AuthenticateSearchWebAccountAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ConstraintIndexDownloader_DeleteStaleConstraintIndexInputFolders(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+ConstraintIndexDownloader_DeleteStaleConstraintIndexInputFolders(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConstraintIndexDownloader_DeleteStaleConstraintIndexInputFolders(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ConstraintIndexDownloader_PerformDownload(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING Url
+	);
+
+ConstraintIndexDownloader_PerformDownload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConstraintIndexDownloader_PerformDownload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ConstraintIndexDownloader_TryDownloadFromUrlAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 AlreadyDownloaded
+	);
+
+ConstraintIndexDownloader_TryDownloadFromUrlAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 AlreadyDownloaded
+	);
+
+ConstraintIndexDownloader_TryDownloadFromUrlAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING Url
+	);
+
+ConstraintIndexDownloader_TryDownloadFromUrlAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConstraintIndexDownloader_TryDownloadFromUrlAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppUninstall(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING censoredAppId,
+	BOOL32 isCacheEmpty
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppUninstall(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppUninstall(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppInstall(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING censoredAppId,
+	UNICODESTRING appName,
+	BOOL32 isCacheEmpty
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppInstall(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING censoredAppId,
+	BOOL32 isCacheEmpty
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppInstall(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearchCacheManager_UpdateAppCacheOnAppInstall(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearchCacheManager_RefreshIndexIfNecessaryAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 IndexRebuildAttempted,
+	HRESULT hr
+	);
+
+DeviceSearchCacheManager_RefreshIndexIfNecessaryAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 IndexRebuildAttempted,
+	HRESULT hr
+	);
+
+DeviceSearchCacheManager_RefreshIndexIfNecessaryAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOL32 IsDownloadingCab
+	);
+
+DeviceSearchCacheManager_RefreshIndexIfNecessaryAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearchCacheManager_RefreshIndexIfNecessaryAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DEAppQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 IsCacheReady,
+	INT32 NumItemsInCache
+	);
+
+DEAppQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 IsCacheReady,
+	INT32 NumItemsInCache
+	);
+
+DEAppQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+DEAppQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DEAppQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FileSearchCompletion_Result(
+	UNICODESTRING impressionId,
+	UINT32 completionKind,
+	UINT32 reason,
+	UINT32 durationMs,
+	INT32 numberOfIndexedItems,
+	INT32 catalogStatus,
+	INT32 pausedReason,
+	UINT64 PartA_PrivTags
+	);
+
+DEItemQueryResults_GetItems_SearchType(
+	UNICODESTRING searchType
+	);
+
+DEItemQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 NumItemsRetrieved
+	);
+
+DEItemQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 NumItemsRetrieved
+	);
+
+DEItemQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING FolderName,
+	UINT32 StartIndex,
+	UINT32 MaxNumberOfItems
+	);
+
+DEItemQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DEItemQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceOleDbQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 NumItemsRetrieved
+	);
+
+DeviceOleDbQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 NumItemsRetrieved
+	);
+
+DeviceOleDbQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING FolderName,
+	UINT32 StartIndex,
+	UINT32 MaxNumberOfItems
+	);
+
+DeviceOleDbQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceOleDbQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DESettingsQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 IsCacheReady,
+	INT32 NumItemsInCache
+	);
+
+DESettingsQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 IsCacheReady,
+	INT32 NumItemsInCache
+	);
+
+DESettingsQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+DESettingsQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DESettingsQueryStrategy_GetItemCache(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DEUtilities_QueryConstraintIndex(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 NumItemsBeforeFiltering,
+	UINT32 NumItemsAfterFiltering
+	);
+
+DEUtilities_QueryConstraintIndex(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 NumItemsBeforeFiltering,
+	UINT32 NumItemsAfterFiltering
+	);
+
+DEUtilities_QueryConstraintIndex(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING FolderName
+	);
+
+DEUtilities_QueryConstraintIndex(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DEUtilities_QueryConstraintIndex(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 lineNumber,
+	ANSISTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 PartA_PrivTags
+	);
+
+FeedbackFile_DebugTrace_GetBase64ContentAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING FileName
+	);
+
+FeedbackFile_DebugTrace_GetBase64ContentAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FeedbackFile_DebugTrace_GetBase64ContentAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FeedbackFile_Storage_GetBase64ContentAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING FileName
+	);
+
+FeedbackFile_Storage_GetBase64ContentAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FeedbackFile_Storage_GetBase64ContentAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FeedbackManager_EtwTracesFileTaskError(
+	UNICODESTRING HResult
+	);
+
+FeedbackManager_ScreenshotFileTaskError(
+	UNICODESTRING HResult
+	);
+
+FeedbackManager_GetFeedbackFilesAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+FeedbackManager_GetFeedbackFilesAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FeedbackManager_GetFeedbackFilesAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddDateFormat(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddDateFormat(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddDateFormat(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddTimeZone(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddTimeZone(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddTimeZone(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddMuid(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddMuid(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddMuid(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddLanguageList(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddLanguageList(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddLanguageList(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddTheme(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddTheme(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddTheme(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AppendLiveTokenHeaderAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AppendLiveTokenHeaderAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AppendLiveTokenHeaderAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_CreateWindowsAccountAuthTokenTask(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_CreateWindowsAccountAuthTokenTask(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_CreateWindowsAccountAuthTokenTask(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_CreateCortanaAccountAuthTokenTask(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HeaderHelpers_CreateCortanaAccountAuthTokenTask(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_CreateCortanaAccountAuthTokenTask(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddSearchFeatures(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING SearchFeatureHeader
+	);
+
+HeaderHelpers_AddSearchFeatures(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UNICODESTRING SearchFeatureHeader
+	);
+
+HeaderHelpers_AddSearchFeatures(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+HeaderHelpers_AddSearchFeatures(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddSearchFeatures(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddFlightedFeatures(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UNICODESTRING featureHeader
+	);
+
+HeaderHelpers_AddFlightedFeatures(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING featureHeader
+	);
+
+HeaderHelpers_AddFlightedFeatures(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+HeaderHelpers_AddFlightedFeatures(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AddHeadersAsync_Scenario(
+	UNICODESTRING ScenarioName,
+	UNICODESTRING SessionId
+	);
+
+HeaderHelpers_AddFlightedFeatures(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddAuthenticationAndLocation(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+HeaderHelpers_AddAuthenticationAndLocation(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_AddAuthenticationAndLocation(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_DeviceDimensionInfo(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+HeaderHelpers_DeviceDimensionInfo(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HeaderHelpers_DeviceDimensionInfo(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AppendHeaders(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+HeaderHelpers_AppendHeaders(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HeaderHelpers_AppendHeaders(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CortanaApp_GetQueryHeaders(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+CortanaApp_GetQueryHeaders(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_GetQueryHeaders(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+LocalProviderIndexingComponent_RegisterDeleteStaleFilesBackgroundTaskIfNeeded(
+	BOOLEAN bgTaskAlreadyRegistered,
+	BOOLEAN bgTaskShouldBeRegistered,
+	BOOLEAN bgTaskRegisteredSuccessfully,
+	UINT64 PartA_PrivTags
+	);
+
+LocalProviderIndexingComponent_RunDeleteStaleFilesBackgroundTask(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+LocalProviderIndexingComponent_RunDeleteStaleFilesBackgroundTask(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+LocalProviderIndexingComponent_RunDeleteStaleFilesBackgroundTask(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+LocalProviderIndexingComponent_RefreshAppsIndexIfNeeded(
+	UINT64 PartA_PrivTags
+	);
+
+LocalProviderIndexingComponent_RefreshSettingsIndexIfNeeded(
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+LaunchItemTest_Result(
+	UINT32 completionKind,
+	UINT32 reason,
+	UINT32 durationMs,
+	UINT32 scenario,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Search_ItemLaunch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING launchType,
+	UNICODESTRING itemId,
+	UNICODESTRING fileExtension,
+	UNICODESTRING kind,
+	UNICODESTRING verb,
+	UINT64 PartA_PrivTags
+	);
+
+Search_ItemLaunch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Search_ItemLaunch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Info(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 lineNumber,
+	ANSISTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulation_LaunchUri(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchUri(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulation_LaunchUri(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchApplication(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchApplication(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchApplication(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulation_LaunchFile(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchFile(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchFile(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulation_LaunchSetting(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulation_LaunchSetting(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulation_LaunchSetting(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Launcher_LaunchUri_Uri(
+	UNICODESTRING SessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING URI,
+	UINT64 PartA_PrivTags
+	);
+
+Launcher_StartLaunchFolder(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+Launcher_StartLaunchFolder(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Launcher_StartLaunchFolder(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+LinguisticTaskWrapper_GetAlternatives_Failure(
+	UNICODESTRING SessionId,
+	UNICODESTRING VisibleUx,
+	HRESULT hResult,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+LocalIndexUtilities_DeleteStaleDeviceSearchCacheFolderAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+LocalIndexUtilities_DeleteStaleDeviceSearchCacheFolderAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+LocalIndexUtilities_DeleteStaleDeviceSearchCacheFolderAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ConstraintIndexManager_DeleteStaleConstraintIndexFoldersAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ConstraintIndexManager_DeleteStaleConstraintIndexFoldersAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConstraintIndexManager_DeleteStaleConstraintIndexFoldersAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ConstraintIndexManager_ReadSynonyms(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING FolderName,
+	UINT32 SynonymsSize
+	);
+
+ConstraintIndexManager_ReadSynonyms(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING FolderName
+	);
+
+ConstraintIndexManager_ReadSynonyms(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING FolderName,
+	UINT32 SynonymsSize
+	);
+
+ConstraintIndexManager_ReadSynonyms(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConstraintIndexManager_ReadGlobalWeights(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING FolderName,
+	UINT32 GlobalWeightsSize
+	);
+
+ConstraintIndexManager_ReadSynonyms(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ConstraintIndexManager_ReadGlobalWeights(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING FolderName,
+	UINT32 GlobalWeightsSize
+	);
+
+ConstraintIndexManager_ReadGlobalWeights(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING FolderName
+	);
+
+ConstraintIndexManager_ReadGlobalWeights(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConstraintIndexManager_ReadGlobalWeights(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Warning(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 lineNumber,
+	ANSISTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+PerWebViewProjectedCortanaAPI_StateChanged(
+	UNICODESTRING SessionId,
+	UINT32 oldState,
+	UINT32 newState,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_Region_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_Region_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_UILanguage_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_SystemLanguage_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_SystemLanguage_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_UILanguage_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_HomeGeographicRegion_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_HomeGeographicRegion_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+PerWebViewProjectedCortanaAPI_FeedbackFormRequested(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+PerWebViewProjectedCortanaAPI_ResettingToDefaultSize(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+PerWebViewProjectedCortanaAPI_OpenAnimationCompleted(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+PerWebViewProjectedCortanaAPI_EnableSearchSuspension(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedCortanaApi_SetShowSearchOnHover(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOLEAN Value
+	);
+
+ProjectedCortanaApi_SetShowSearchOnHover(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProjectedCortanaApi_SetShowSearchOnHover(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProjectedCortanaApi_RepopulateAppCacheAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ProjectedCortanaApi_RepopulateAppCacheAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProjectedCortanaApi_RepopulateAppCacheAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CortanaApp_LogCriticalUserEngagementTelemetry(
+	UNICODESTRING SessionId,
+	UNICODESTRING EngagementDataJson,
+	UNICODESTRING ImpressionId,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_LogCriticalFlightsTelemetry(
+	UNICODESTRING SessionId,
+	UNICODESTRING flightsData,
+	UNICODESTRING impressionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_DynamicSearchBoxContentUpdateResult(
+	UINT32 UpdateResult,
+	UINT32 completionKind,
+	UINT32 durationMs,
+	BOOLEAN isWebView2,
+	UINT32 dsbSetResult,
+	UINT64 PartA_PrivTags
+	);
+
+LinguisticTaskWrapper_GetAlternatives(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING CurrentVisibleUx,
+	INT32 numTimesLinguisticsGenerated,
+	DOUBLE averageNumAlternatives,
+	UINT64 averagePerformance,
+	UINT64 PartA_PrivTags
+	);
+
+DEItemQueryResults_GetItemsAggregate(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING CurrentVisibleUx,
+	INT32 numTimesResultsQueried,
+	DOUBLE averageNumResults,
+	UINT64 averagePerformance,
+	INT32 numNonzeroQueries,
+	DOUBLE averageNumNonzeroResults,
+	UINT64 averageNonzeroPerformance,
+	UNICODESTRING settingsCIVersion,
+	UINT64 PartA_PrivTags
+	);
+
+Sqlite3Index_GetEntitiesAggregate(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING CurrentVisibleUx,
+	INT32 numTimesSettingsQueried,
+	INT32 numTimesAppsQueried,
+	UINT64 averageAppPerf,
+	UINT64 averageSettingsPerf,
+	UINT64 PartA_PrivTags
+	);
+
+FileProviderQueryHelper_GetLinguisticData(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	INT32 numTimesLinguisticsGenerated,
+	UINT64 averageNumAlternatives,
+	UINT64 averagePerformance,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_QueryWindowsSearchIndexer(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING CurrentVisibleUx,
+	INT32 numTimesResultsQueried,
+	DOUBLE averageNumResults,
+	UINT64 averagePerformance,
+	INT32 numNonzeroQueries,
+	DOUBLE averageNumNonzeroResults,
+	UINT64 averageNonzeroPerformance,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_LogVerboseTrace(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING PayloadName,
+	UNICODESTRING PayloadData,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_LogMeasure(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING PayloadName,
+	UNICODESTRING PayloadData,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CortanaApp_LogTelemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING PayloadName,
+	UNICODESTRING PayloadData,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedCortanaApi_GetClipboardAvailableFormats(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+ProjectedCortanaApi_GetClipboardAvailableFormats(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProjectedCortanaApi_GetClipboardData(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING FormatId
+	);
+
+ProjectedCortanaApi_GetClipboardAvailableFormats(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProjectedCortanaApi_GetClipboardData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProjectedCortanaApi_GetClipboardBitmap(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+ProjectedCortanaApi_GetClipboardData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProjectedCortanaApi_GetClipboardBitmap(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProjectedCortanaApi_GetClipboardBitmap(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_MakeHttpRequest(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+CortanaApp_MakeHttpRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING URI,
+	UINT32 HttpStatusCode
+	);
+
+CortanaApp_MakeHttpRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UNICODESTRING URI,
+	UINT32 HttpStatusCode
+	);
+
+CortanaApp_MakeHttpRequest(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CortanaApp_MakeHttpRequest(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Search_QueryFormulation(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING CurrentVisibleUx,
+	INT32 NumQueries,
+	INT32 QueryLength,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceQueryResults_GetItemsAggregate(
+	UNICODESTRING SessionId,
+	UNICODESTRING CurrentSessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING CurrentVisibleUx,
+	INT32 numTimesResultsQueried,
+	DOUBLE averageNumResults,
+	UINT64 averagePerformance,
+	INT32 numNonzeroQueries,
+	DOUBLE averageNumNonzeroResults,
+	UINT64 averageNonzeroPerformance,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Verbose_None(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Info_Reserved44(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Info_Telemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Info_Measures(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Verbose_Reserved44(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Verbose_Telemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Verbose_Measures(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Verbose_CriticalData(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Error_Measures(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Error_CriticalData(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Error_None(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Critical_Reserved44(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Info_CriticalData(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Info_None(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Error_Reserved44(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Error_Telemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Warning_Reserved44(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Warning_Telemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Warning_Measures(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Warning_CriticalData(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Critical_Telemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Critical_Measures(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Critical_CriticalData(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Critical_None(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_LogAlways_Measures(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_LogAlways_CriticalData(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_LogAlways_None(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_Warning_None(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_LogAlways_Reserved44(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WSB_LogAlways_Telemetry(
+	UNICODESTRING EventName,
+	INT32 OpCode,
+	UNICODESTRING Data,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ScopeResolver_InitializeScopes(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ScopeResolver_InitializeScopes(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ScopeResolver_InitializeScopes(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BrowsingHistoryItem_BrowsingHistoryItem(
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceQueryResults_GetItemsAggregate_Failure(
+	UNICODESTRING SessionId,
+	UNICODESTRING VisibleUx,
+	HRESULT hResult,
+	UINT64 PartA_PrivTags
+	);
+
+CommandLineQuery_TryGetResultAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN ItemFound
+	);
+
+CommandLineQuery_TryGetResultAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId
+	);
+
+CommandLineQuery_TryGetResultAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN ItemFound
+	);
+
+CommandLineQuery_TryGetResultAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CommandLineQuery_TryGetResultAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_CancelPendingQuery(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_InitEarlySearch(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 QueryTextLength,
+	UINT32 WhereId,
+	BOOLEAN UsingPrimerWhereId,
+	UINT32 Scope,
+	BOOLEAN ValidInput,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_FileQueryResponseDetails(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 ResponseCode,
+	UNICODESTRING Description,
+	INT32 hResult,
+	UINT32 NumResults,
+	UINT32 NumDocuments,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_NoEarlyOperation(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 QueryTextLength,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_GotEarlyOperation(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 QueryTextLength,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_Initialize(
+	BOOLEAN PrepopulateCache,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationSystemStateOnFailure(
+	UNICODESTRING SessionId,
+	UNICODESTRING IndexerState,
+	UNICODESTRING BootMode,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_FetchForTopLocalAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_FetchForTopLocalAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetSqlFromNQSInput(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_FetchForTopLocalAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_ReturnEmptyResultAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_ReturnEmptyResultAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetAllAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetUnfilteredSettingsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetAllAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetAllAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetSqlFromNQSInput(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetSqlFromNQSInput(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetUnfilteredSettingsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetUnfilteredSettingsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_UserName_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_UserName_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetUserSID(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_Tokenize(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_Tokenize(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetFolderPathFromKnownFolderIdGuid(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_QuerySearchIndexerResultsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetFolderPathFromKnownFolderIdGuid(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetUserSID(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetLCIDStringForText(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetLCIDStringForText(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetSearchServiceStatusAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_QueryWindowsSearchIndexerAsyncInternalWithPrimer(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetSearchServiceStatusAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetSearchServiceStatusAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_QuerySearchIndexerResultsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_QuerySearchIndexerResultsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_QueryWindowsSearchIndexerAsyncInternalWithPrimer(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_QueryWindowsSearchIndexerAsyncInternalWithPrimer(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetIconForTypeAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetIconForTypeAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetIconForDefaultBrowserAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_GetIconForDefaultBrowserAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetIconForTypeAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetIconForDefaultBrowserAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_FindItemsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_FindItemsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_FindSettingsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_FindItemsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetRecentAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_DeviceSearch_GetRecentAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_GetRecentAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_FindAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_FindSettingsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_DeviceSearch_FindSettingsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_FindAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_DeviceSearch_FindAppsAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+DeviceSearch_GetSearchServiceStatus(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UINT32 Status
+	);
+
+DeviceSearch_GetSearchServiceStatus(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UNICODESTRING SessionId,
+	UINT32 Status
+	);
+
+DeviceSearch_GetSearchServiceStatus(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+DeviceSearch_GetIconForDefaultBrowser(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 GotDefaultBrowser,
+	UINT64 StreamLength
+	);
+
+DeviceSearch_GetSearchServiceStatus(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_GetSearchServiceStatus(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_GetIconForDefaultBrowser(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UINT32 RequestedSize
+	);
+
+DeviceSearch_GetIconForDefaultBrowser(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 GotDefaultBrowser,
+	UINT64 StreamLength
+	);
+
+DeviceSearch_GetIconForDefaultBrowser(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_GetIconForDefaultBrowser(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_GetIconForTypeAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UNICODESTRING FileExtension,
+	UINT32 RequestedSize
+	);
+
+DeviceSearch_GetIconForTypeAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_GetIconForTypeAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_GetRecentApps(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_GetRecentApps(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+DeviceSearch_FindFiles(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId
+	);
+
+DeviceSearch_GetRecentApps(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_FindFiles(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_FindFiles(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_FindSettings_ItemFound(
+	UNICODESTRING ID,
+	UNICODESTRING DisplayName
+	);
+
+DeviceSearch_FindSettings(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId
+	);
+
+DeviceSearch_FindApps_ItemFound(
+	UNICODESTRING ID
+	);
+
+DeviceSearch_FindApps_ItemFound(
+	UNICODESTRING ID,
+	UNICODESTRING DisplayName
+	);
+
+DeviceSearch_FindSettings(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_FindSettings(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_FindApps(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	INT32 NumIds
+	);
+
+DeviceSearch_QueryWindowsSearchIndexer_Failure(
+	UNICODESTRING SessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING indexerState,
+	UNICODESTRING bootMode,
+	HRESULT hResult,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceSearch_FindApps(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_FindApps(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_GetWhereId(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING ImpressionId,
+	UINT32 WhereId
+	);
+
+DeviceSearch_GetWhereId(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId
+	);
+
+DeviceSearch_GetWhereId(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UNICODESTRING ImpressionId,
+	UINT32 WhereId
+	);
+
+DeviceSearch_GetWhereId(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_GetWhereId(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceSearch_QueryWindowsSearchIndexerAsyncInternal(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 QueryTextLength,
+	UINT32 WhereId,
+	BOOL32 UsingPrimerWhereId,
+	BOOL32 IsPolarisQuery
+	);
+
+DeviceSearch_QueryWindowsSearchIndexerAsyncInternal(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceSearch_QueryWindowsSearchIndexerAsyncInternal(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_UnregisterNamedBackgroundTaskIfNeeded(
+	UNICODESTRING name,
+	BOOLEAN isUnregistered,
+	UINT64 PartA_PrivTags
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_ExecuteBackgroundTask(
+	UNICODESTRING SessionId,
+	UNICODESTRING taskName,
+	BOOLEAN dsbAllowedByRegionalPolicy,
+	BOOLEAN dsbEnabled,
+	BOOLEAN webSearchEnabled,
+	BOOLEAN ignoredByGuardrail,
+	UINT64 PartA_PrivTags
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_ExecuteBackgroundTask_Obsolete(
+	BOOLEAN dsbEnabled,
+	UNICODESTRING taskName,
+	BOOLEAN ignoredByGuardrail,
+	UINT64 PartA_PrivTags
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_RegisterBackgroundTaskForDeviceUnlock(
+	BOOLEAN isRegistered,
+	UINT64 PartA_PrivTags
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_UnregisterBackgroundTaskIfNeeded(
+	BOOLEAN isUnregistered,
+	UINT64 PartA_PrivTags
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_RegisterBackgroundTaskInternal(
+	BOOLEAN isRegistered,
+	UINT64 PartA_PrivTags
+	);
+
+DynamicSearchBoxRefresherBackgroundTask_RegisterBackgroundTaskForStaleWebProvidersCleanup(
+	BOOLEAN isRegistered,
+	UINT64 PartA_PrivTags
+	);
+
+GetImageCompletion_Result(
+	UINT32 reason,
+	UINT32 durationMs,
+	UINT32 requestedSize,
+	INT32 thumbnailType,
+	INT32 storageType,
+	UNICODESTRING fileExtension,
+	UINT64 PartA_PrivTags
+	);
+
+OleDbFileItem_GetVerbs(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING DeviceItemStrategy,
+	UNICODESTRING ItemExtension
+	);
+
+OleDbFileItem_GetVerbs(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OleDbFileItem_GetImage(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING DeviceItemStrategy,
+	UNICODESTRING ItemExtension,
+	UINT32 RequestedSize
+	);
+
+OleDbFileItem_GetVerbs(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OleDbFileItem_GetImage(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OleDbFileItem_GetImage(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OleDbHelpers_ExecuteQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING FolderName
+	);
+
+OleDbHelpers_ExecuteQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 Canceled
+	);
+
+OleDbHelpers_ExecuteQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 Canceled
+	);
+
+OleDbHelpers_ExecuteQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OleDbHelpers_ExecuteQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceOleDbQueryResults_GetIndexerStatus(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 IndexerState
+	);
+
+DeviceOleDbQueryResults_GetIndexerStatus(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 IndexerState
+	);
+
+DeviceOleDbQueryResults_GetIndexerStatus(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 IndexerState
+	);
+
+DeviceOleDbQueryResults_GetIndexerStatus(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DeviceOleDbQueryResults_GetIndexerStatus(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+PathCompletionQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 StartIndex,
+	UINT32 MaxNumberOfItems
+	);
+
+PathCompletionQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 NumItemsRetrieved
+	);
+
+PathCompletionQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 NumItemsRetrieved
+	);
+
+PathCompletionQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+PathCompletionQueryResults_GetItems(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationView_LogProviderFailure(
+	UNICODESTRING SessionId,
+	UNICODESTRING ProviderName,
+	UNICODESTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationView_StartDeviceQuery(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CachePrepopulationDisabled_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_GetLinguisticDataAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_QueryFormulationView_CachePrepopulationDisabled_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_ResetConversationIdNextTimeQFIsShown(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_ResetConversationIdNextTimeQFIsShown(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_LogProviderFailure(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_LogProviderFailure(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_GetLinguisticDataAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_GetLinguisticDataAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_StartPathCompletionQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastPathCompletionQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastPathCompletionQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_GetSearchServiceStatusAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastPathCompletionQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_QueryFormulationView_GetSearchServiceStatusAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_QueryFormulationView_GetSearchServiceStatusAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_StartCommandLineQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastDeviceQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_QueryFormulationView_StartCommandLineQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastCommandLineQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastCommandLineQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_StartPathCompletionQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastCommandLineQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_QueryFormulationView_GetIconForDefaultBrowserAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_GetIconForDefaultBrowserAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_StartDeviceQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_GetIconForDefaultBrowserAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_QueryFormulationView_StartDeviceQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastDeviceQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_QueryFormulationView_CancelLastDeviceQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_PreviousExperience_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_QueryFormulationView_PreviousExperience_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+QueryFormulationView_GetLinguisticDataAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationView_GetLinguisticDataAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+QueryFormulationView_GetLinguisticDataAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationView_CancelLastPathCompletionLineQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulationView_CancelLastPathCompletionLineQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationView_CancelLastPathCompletionLineQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationView_StartPathCompletionQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulationView_StartPathCompletionQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationView_StartPathCompletionQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationView_CancelLastCommandLineQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulationView_CancelLastCommandLineQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationView_CancelLastCommandLineQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationView_StartCommandLineQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+QueryFormulationView_StartCommandLineQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+QueryFormulationView_StartCommandLineQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+QueryFormulationView_CancelLastDeviceQuery(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+RowsetEventListener_RowsetEvent(
+	UNICODESTRING EventType,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_DynamicSearchBoxContentUpdatedWithDeferral(
+	UNICODESTRING SessionId,
+	BOOLEAN ExistingTask,
+	BOOLEAN IsBackgroundTaskActivated,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_KeyUp(
+	UNICODESTRING SessionId,
+	UINT32 keyCode,
+	BOOLEAN handled,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_QueryTextChanged(
+	UNICODESTRING SessionId,
+	UNICODESTRING impressionId,
+	UINT32 queryTextLength,
+	UINT32 cursorPosition,
+	UINT32 selectionLength,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync_DeleteRegistry(
+	UNICODESTRING appId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetDynamicContent_SetAsync(
+	UNICODESTRING iconContentType,
+	UINT32 iconCount,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_ClearDynamicContent(
+	UNICODESTRING SessionId,
+	BOOLEAN dsbEnabled,
+	BOOLEAN inBackgroundTask,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetDynamicContent_SetFallbackAsync(
+	UNICODESTRING iconContentType,
+	UINT32 iconCount,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_ClearBaselineContent(
+	UNICODESTRING SessionId,
+	BOOLEAN dsbEnabled,
+	BOOLEAN inBackgroundTask,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_UpdateDynamicSearchBoxUpdateInterval(
+	UNICODESTRING SessionId,
+	BOOLEAN dsbEnabled,
+	BOOLEAN inBackgroundTask,
+	INT32 intervalInMinutes,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_NotifyDynamicSearchBoxUpdateCompleted(
+	UNICODESTRING SessionId,
+	BOOLEAN dsbEnabled,
+	BOOLEAN inBackgroundTask,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_KeyDown(
+	UNICODESTRING SessionId,
+	UINT32 keyCode,
+	BOOLEAN handled,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_ParseDynamicJSONContentError(
+	UNICODESTRING parseResult,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetDynamicContent_InvalidGleamUrls(
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_GetIconsForUrls(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBox_GetIconsForUrls(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBox_GetIconsForUrls(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchBox_ParseDynamicJSONContent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchBox_SetBaselineContent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 RawData,
+	BOOL32 DsbEnabled,
+	BOOL32 InBackgroundTask,
+	UINT32 TextLength,
+	UINT32 GleamSize,
+	UNICODESTRING TelemetryId
+	);
+
+SearchBox_ParseDynamicJSONContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBox_ParseDynamicJSONContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBox_SetBaselineContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBox_SetBaselineContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 State
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 State
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 InBackgroundTask
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync_ClearCurrentGleam(
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync_SkipDueToSettingsDisabled(
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBox_SetSearchAppearanceForWebProviderAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBox_SetSearchAppearanceAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 DsbEnabled,
+	BOOL32 InBackgroundTask
+	);
+
+SearchBox_SetSearchAppearanceAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 State
+	);
+
+SearchBox_SetSearchAppearanceAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 State
+	);
+
+SearchBox_SetSearchAppearanceAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBox_SetSearchAppearanceAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBox_SetDynamicContent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	BOOL32 RawData,
+	BOOL32 DsbEnabled,
+	BOOL32 InBackgroundTask,
+	UINT32 TextLength,
+	UINT64 ExpirationTime,
+	UINT32 GleamSize,
+	UNICODESTRING TelemetryId,
+	UINT32 ShowTimeout
+	);
+
+SearchBox_SearchBoxTapped(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SetDynamicContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchBox_SetDynamicContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchBox_GotFocus(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_LostFocus(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_InputPaneShown(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_InputPaneHidden(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SubmitButtonClick(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBox_SearchBoxGlyphClick(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_SearchResultsView_GetTaskFrame(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_SearchResultsView_SetTaskFrame(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_SearchResultsView_SetTaskFrame(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_SearchResultsView_ImpressionGuid_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_SearchResultsView_ImpressionGuid_get(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_SearchResultsView_GetTaskFrame(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+SearchResultsView_ExecuteSearch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SearchResultsView_CancelPreviousQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SearchResultsView_CancelPreviousQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchResultsView_ExecuteSearch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	INT32 SearchType
+	);
+
+SearchResultsView_ExecuteSearch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOL32 FromCache
+	);
+
+SearchResultsView_ExecuteSearch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 FromCache
+	);
+
+SearchResultsView_ExecuteSearch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchResultsView_ExecuteSearch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SharedFileSearchProvider_SharedFileQueryResponseDetails(
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 ResponseCode,
+	UNICODESTRING Description,
+	INT32 hResult,
+	UINT32 NumResults,
+	UINT64 PartA_PrivTags
+	);
+
+SharedFileSearchProvider_SharedFileCacheRefreshDetails(
+	UNICODESTRING SessionId,
+	INT32 RefreshSuccessfully,
+	UINT32 NumResults,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_SharedFileSearchProvider_QueryAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_SharedFileSearchProvider_QueryAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_SharedFileSearchProvider_QueryAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedCortanaApi_ResetCacheAndRequestRefreshSharedFilesInBackground(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ProjectedCortanaApi_ResetCacheAndRequestRefreshSharedFilesInBackground(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProjectedCortanaApi_ResetCacheAndRequestRefreshSharedFilesInBackground(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SharedFileSearchProvider_QueryAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SharedFileSearchProvider_QueryAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId,
+	UINT32 QueryTextLength
+	);
+
+SharedFileSearchProvider_QueryAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SystemIndexPrimerQueryCompletion_Result(
+	UINT32 completionKind,
+	UINT32 reason,
+	UINT32 durationMs,
+	UINT32 scenario,
+	UINT64 PartA_PrivTags
+	);
+
+SystemIndexPrimer_RunSystemIndexPrimerQueryAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOL32 Success,
+	UINT32 WhereId
+	);
+
+SystemIndexPrimer_RunSystemIndexPrimerQueryAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOL32 Success,
+	UINT32 WhereId
+	);
+
+SystemIndexPrimer_RunSystemIndexPrimerQueryAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UINT32 Scope,
+	BOOL32 RefreshRunningCurrently,
+	UINT32 Scenario
+	);
+
+SystemIndexPrimer_RunSystemIndexPrimerQueryAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SystemIndexPrimer_RunSystemIndexPrimerQueryAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TileAppItem_UpdateJumpListAfterFiletimeChange(
+	UNICODESTRING SessionId,
+	UNICODESTRING AppId,
+	UINT64 PartA_PrivTags
+	);
+
+TileAppItem_FailedToGetJumpListLastChangedTime(
+	UNICODESTRING SessionId,
+	UNICODESTRING AppId,
+	INT32 ErrorCode,
+	UINT64 PartA_PrivTags
+	);
+
+AppLaunch_UserClick(
+	UINT32 entryPoint,
+	UNICODESTRING appId
+	);
+
+UdkAppItem_GetImage(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING AppItemId,
+	UINT32 RequestedSize
+	);
+
+UdkAppItem_GetImage(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UdkAppItem_GetImage(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UnresolvedCommandLineItem_TryResolvePathAndArgsAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN PathResolved
+	);
+
+UnresolvedCommandLineItem_TryResolvePathAndArgsAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN PathResolved
+	);
+
+UnresolvedCommandLineItem_TryResolvePathAndArgsAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UnresolvedCommandLineItem_TryResolvePathAndArgsAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UnresolvedCommandLineItem_TryResolvePathAndArgsAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING ImpressionId
+	);
+
+SerializedBackgroundWorkQueue_WaitingForWork(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SerializedBackgroundWorkQueue_WaitingForWork(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SerializedBackgroundWorkQueue_ProcessWorkItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SerializedBackgroundWorkQueue_WaitingForWork(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SerializedBackgroundWorkQueue_ProcessBackgroundWork(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SerializedBackgroundWorkQueue_ProcessWorkItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SerializedBackgroundWorkQueue_ProcessWorkItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SerializedBackgroundWorkQueue_Enqueue(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+SerializedBackgroundWorkQueue_Enqueue(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SerializedBackgroundWorkQueue_ProcessBackgroundWork(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SerializedBackgroundWorkQueue_ProcessBackgroundWork(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SerializedBackgroundWorkQueue_Enqueue(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+StorageItemUtils_GetVerbs(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StorageItemUtils_GetVerbs(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+StorageItemUtils_GetVerbs(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+StorageItemUtils_Launch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StorageItemUtils_Launch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+StorageItemUtils_Launch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId,
+	UNICODESTRING VisibleUx,
+	UNICODESTRING FolderName,
+	UINT64 PartA_PrivTags
+	);
+
+StorageItemUtils_GetStorageItem(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SessionId
+	);
+
+StorageItemUtils_GetStorageItem(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StorageItemUtils_GetStorageItem(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+WebSearch_ProviderDetails(
+	UNICODESTRING SessionId,
+	BOOLEAN isFirstPartyAppInstalled,
+	BOOLEAN isFirstPartyAppEnabled,
+	UINT32 thirdPartyAppInstallCount,
+	UINT32 ThirdPartyAppEnableCount,
+	UNICODESTRING thirdPartyAppMRUAppId,
+	UINT32 notificationBehavior,
+	UINT64 PartA_PrivTags
+	);
+
+WebSearch_CurrentScopeChanged(
+	UNICODESTRING SessionId,
+	BOOLEAN isThirdPartyScope,
+	UNICODESTRING thirdPartyAppMRUAppId,
+	UINT64 PartA_PrivTags
+	);
+
+WebSearch_FindAllAsync_UnexpectedError(
+	UNICODESTRING SessionId,
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+WebSearch_GlobalToggleDisabled(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchWindowsGenuine_IsGenuineLocalFailed(
+	UNICODESTRING SessionId,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+SearchWindowsGenuine_IsWindowsOffline(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SearchWindowsGenuine_IsWindowsNonGenuine(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ProjectedAPI_WindowsStoreResult_AutoInstallAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Info
+	);
+
+ProjectedAPI_WindowsStoreResult_AutoInstallAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Id
+	);
+
+ProjectedAPI_WindowsStoreResult_AutoInstallAsync(
+	UNICODESTRING SessionId,
+	UINT64 PartA_PrivTags
+	);
+

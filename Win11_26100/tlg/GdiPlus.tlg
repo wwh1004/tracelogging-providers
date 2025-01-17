@@ -1,0 +1,24 @@
+ProviderNames:
+	Microsoft.Windows.Graphics.GdiPlus
+
+
+
+**** Events *****
+GdiPlusUnsupportedUsage(
+	UINT32 Reason,
+	UINT64 PartA_PrivTags,
+	UINT64 Parameter1,
+	UINT64 Parameter2,
+	UINT64 Parameter3,
+	UINT64 Parameter4
+	);
+
+GdiPlusUnsupportedUsage(
+	UINT32 Reason,
+	UINT64 PartA_PrivTags,
+	UINT64 Parameter1,
+	UINT64 Parameter2,
+	UINT64 Parameter3,
+	UINT64 Parameter4
+	);
+

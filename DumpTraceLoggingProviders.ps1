@@ -892,7 +892,7 @@ If a file contains trace logging metadata, an object will be output consisting o
 }
 
 
-foreach ($fileName in [IO.Directory]::EnumerateFiles("c:\windows\system32")) 
+foreach ($fileName in [IO.Directory]::EnumerateFiles("C:\Windows\WinSxS", "*", [IO.SearchOption]::AllDirectories)) 
 {
 
     if (-not ($fileName.EndsWith(".exe") -or $fileName.EndsWith(".dll"))) {

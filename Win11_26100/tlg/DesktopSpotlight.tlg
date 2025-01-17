@@ -1,0 +1,348 @@
+ProviderNames:
+	Microsoft.Windows.DesktopSpotlight
+
+
+
+**** Events *****
+CheckIfCreativesExistActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ReportAction(
+	UINT32 index,
+	UNICODESTRING action,
+	UNICODESTRING creativeId,
+	BOOLEAN oemSpotlightThemeActive,
+	UNICODESTRING oemThemeName,
+	UNICODESTRING currentTheme,
+	UINT64 PartA_PrivTags
+	);
+
+SetActiveWallpaperIndexFailed(
+	INT32 code,
+	UINT64 PartA_PrivTags
+	);
+
+UserPreference(
+	UINT32 index,
+	UINT32 preference,
+	UINT64 PartA_PrivTags
+	);
+
+ReportImpression(
+	UINT32 index,
+	UNICODESTRING creativeId,
+	BOOLEAN oemSpotlightThemeActive,
+	UNICODESTRING oemThemeName,
+	UNICODESTRING currentTheme,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CheckIfCreativesExistActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CheckIfCreativesExistActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BloomCreativesLoaded(
+	UINT64 PartA_PrivTags
+	);
+
+TraceLoggingInfo(
+	UNICODESTRING traceLoggingMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+BackgroundTaskCanceled(
+	UNICODESTRING taskName,
+	UINT32 reason,
+	UINT64 PartA_PrivTags
+	);
+
+RetrieveIrisContent(
+	UINT32 success,
+	UNICODESTRING lastAttempt,
+	UNICODESTRING lastSuccess,
+	UNICODESTRING current,
+	UINT64 PartA_PrivTags
+	);
+
+BackgroundTaskNotRegistered(
+	UINT8 isUpdateTimerTaskRegistered,
+	UINT8 isMaintenanceTaskRegistered,
+	UINT8 isOnlineIdChangeTaskRegistered,
+	UINT64 PartA_PrivTags
+	);
+
+TaskRunning(
+	UINT32 trigger,
+	UINT32 state,
+	UINT64 PartA_PrivTags
+	);
+
+BackgroundTaskException(
+	UINT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+BackgroundTaskTriggered(
+	UINT32 trigger,
+	UINT64 PartA_PrivTags
+	);
+
+ConcurrentBackgroundTasksRunning(
+	INT32 runningTask,
+	UINT32 newTask,
+	UINT64 PartA_PrivTags
+	);
+
+TaskRetried(
+	UINT32 retryCount,
+	UINT64 PartA_PrivTags
+	);
+
+ImageSwitchedFromImagesGrid(
+	UINT32 newImageIndex,
+	UINT64 PartA_PrivTags
+	);
+
+FlyoutCloseControl(
+	UINT64 PartA_PrivTags
+	);
+
+FlyoutShow(
+	UINT64 PartA_PrivTags
+	);
+
+BottomBarClosed(
+	UINT64 PartA_PrivTags
+	);
+
+BottomBarShow(
+	UINT64 PartA_PrivTags
+	);
+
+FlyoutHostHide(
+	UINT64 PartA_PrivTags
+	);
+
+FlyoutHostShow(
+	UINT64 PartA_PrivTags
+	);
+
+BottomBarHostClosed(
+	UINT64 PartA_PrivTags
+	);
+
+BottomBarHostShow(
+	UINT64 PartA_PrivTags
+	);
+
+FlyoutFullScreenClosed(
+	UINT64 PartA_PrivTags
+	);
+
+FlyoutFullScreenShow(
+	UINT64 PartA_PrivTags
+	);
+
+ReportException(
+	UNICODESTRING Action,
+	UINT32 index,
+	INT32 exceptionCode,
+	UINT64 PartA_PrivTags
+	);
+
+SetDesktopWallpaperFailed(
+	INT32 code,
+	UINT64 PartA_PrivTags
+	);
+
+SetDesktopWallpaper(
+	UINT32 index,
+	UNICODESTRING lastUpdate,
+	UNICODESTRING current,
+	UINT64 PartA_PrivTags
+	);
+
+DefaultCreativesLoaded(
+	UINT32 imageIndex,
+	UINT32 randomIndex,
+	UINT64 PartA_PrivTags
+	);
+
+ReportImpressionFailure(
+	UINT32 hr,
+	UNICODESTRING creative,
+	UINT64 PartA_PrivTags
+	);
+
+FilePathDoesNotExist(
+	UNICODESTRING path,
+	UINT64 PartA_PrivTags
+	);
+
+InvalidFilePath(
+	INT32 code,
+	UNICODESTRING path,
+	UINT64 PartA_PrivTags
+	);
+
+DefaultScaledCreativeFolder(
+	UNICODESTRING folderPath,
+	UINT64 PartA_PrivTags
+	);
+
+FeatureToggled(
+	UINT32 minimized,
+	UINT64 PartA_PrivTags
+	);
+
+ShowNextImage(
+	UINT32 nextImageIndex,
+	UINT64 PartA_PrivTags
+	);
+
+ShowPreviousImage(
+	UINT32 previousImageIndex,
+	UINT64 PartA_PrivTags
+	);
+
+LearnMoreClicked(
+	UINT32 index,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopSpotlightControlView(
+	UNICODESTRING controlName,
+	UINT64 PartA_PrivTags
+	);
+
+ControlFlyoutFullScreenClosed(
+	UINT64 PartA_PrivTags
+	);
+
+ControlBottomBarClosed(
+	UINT64 PartA_PrivTags
+	);
+
+ControlClosed(
+	UINT64 PartA_PrivTags
+	);
+

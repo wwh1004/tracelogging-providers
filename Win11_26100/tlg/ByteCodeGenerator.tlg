@@ -1,0 +1,70 @@
+ProviderNames:
+	Microsoft.Windows.AppxDeploymentFallback
+	Microsoft.Windows.AppXDeploymentServer
+
+
+
+**** Events *****
+New deployment request for other packages, ignore it(
+	VOID
+	);
+
+cancelling all package reg value set, stop byte code generation(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+new deployment request for current package, stop byte code generation(
+	VOID
+	);
+
+PreCompilationScriptError(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING File,
+	UNICODESTRING ErrorText,
+	UNICODESTRING ErrorDescription,
+	INT32 Line,
+	INT32 Column
+	);
+

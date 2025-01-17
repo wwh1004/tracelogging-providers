@@ -1,0 +1,13 @@
+ProviderNames:
+	Microsoft.Edge.WebApp
+
+
+
+**** Events *****
+WinrtError(
+	INT32 error_code,
+	ANSISTRING winrt_api,
+	ANSISTRING description,
+	UINT64 PartA_PrivTags
+	);
+

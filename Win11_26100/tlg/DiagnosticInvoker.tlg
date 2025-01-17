@@ -1,0 +1,79 @@
+ProviderNames:
+	Microsoft.System.Diagnostics.DiagnosticInvoker
+
+
+
+**** Events *****
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	ANSISTRING FunctionName,
+	ANSISTRING FileName,
+	INT32 LineNumber,
+	INT32 HResult,
+	ANSISTRING TraceMsg
+	);
+
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	GUID SessionId,
+	GUID AutohealId,
+	GUID ActionId,
+	GUID MitigationId,
+	INT64 TotalLatencyInMs,
+	INT32 Result_ExtendedError,
+	UNICODESTRING Result_Results,
+	INT32 ActualHresult
+	);
+
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	ANSISTRING FunctionName,
+	ANSISTRING FileName,
+	INT32 LineNumber,
+	INT32 HResult,
+	ANSISTRING TraceMsg,
+	GUID SessionId,
+	GUID AutohealId
+	);
+
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	ANSISTRING FunctionName,
+	ANSISTRING FileName,
+	INT32 LineNumber,
+	INT32 HResult,
+	ANSISTRING TraceMsg,
+	GUID ActionId,
+	GUID MitigationId
+	);
+
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	ANSISTRING FunctionName,
+	ANSISTRING FileName,
+	INT32 LineNumber,
+	INT32 HResult,
+	ANSISTRING TraceMsg,
+	UNICODESTRING returnPairs[i].value
+	);
+
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	ANSISTRING FunctionName,
+	ANSISTRING FileName,
+	INT32 LineNumber,
+	INT32 HResult,
+	ANSISTRING TraceMsg,
+	UNICODESTRING returnPairs[i].key
+	);
+
+DiagInvokerTelemetry(
+	ANSISTRING __TlgCV__,
+	ANSISTRING FunctionName,
+	ANSISTRING FileName,
+	INT32 LineNumber,
+	INT32 HResult,
+	ANSISTRING TraceMsg,
+	INT32 *parameterCount
+	);
+

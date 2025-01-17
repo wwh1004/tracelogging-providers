@@ -1,0 +1,40 @@
+ProviderNames:
+	Microsoft.Windows.Security.DevCredWinRt
+
+
+
+**** Events *****
+FailureInfo(
+	HRESULT HResult,
+	ANSISTRING File,
+	UINT32 LineNumber,
+	UNICODESTRING Message
+	);
+
+Info(
+	HRESULT HResult,
+	ANSISTRING File,
+	UINT32 LineNumber,
+	UNICODESTRING Message
+	);
+
+RemoveStageChangedEventHandler(
+	INT64 Token
+	);
+
+AddStageChangedEventHandler(
+	INT64 Token,
+	HEXINT32 Handler
+	);
+
+FireStageChangedEvent(
+	UINT32 CurrentStage,
+	UINT32 NewStage,
+	UNICODESTRING DeviceId
+	);
+
+FireMissingStageChangedEvent(
+	UINT32 Stage,
+	UNICODESTRING DeviceId
+	);
+

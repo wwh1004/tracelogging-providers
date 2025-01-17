@@ -1,0 +1,2392 @@
+ProviderNames:
+	Microsoft.Windows.AppLifecycle
+	Microsoft.WindowsAppSDK.Notifications.ApplicationDataTelemetry
+	Microsoft.WindowsAppSDK.Notifications.PushNotificationTelemetry
+	Microsoft.WindowsAppSDK.Notifications.AppNotificationTelemetry
+	Microsoft.WindowsAppSDK.Notifications.AppNotificationBuilderTelemetry
+	Microsoft.WindowsAppSDK.System.PowerNotifications
+	Microsoft.WindowsAppRuntime.Deployment
+	Microsoft.Windows.System.EnvironmentManager.Insights
+	Microsoft.WindowsAppSDK.Deployment.PackageManagementTelemetry
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Restart(
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+RedirectActivationToAsync(
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+GetActivatedEventArgs(
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ClearMachineFolderAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Path
+	);
+
+ClearMachineFolderAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ClearMachineFolderAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CloseChannel(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+CloseChannel(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CloseChannel(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InvokeAll(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING CorrelationVector,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+InvokeAll(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InvokeAll(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+OnRawNotificationReceived(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING CorrelationVector,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+OnRawNotificationReceived(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnRawNotificationReceived(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UnregisterAll(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+UnregisterAll(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UnregisterAll(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Unregister(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Unregister(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Unregister(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Register(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Register(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Register(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CreateChannelAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	GUID RemoteId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+CreateChannelAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CreateChannelAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Activated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	UINT32 ArgumentsSize,
+	BOOL32 FirstNotificationReceived,
+	BOOL32 HasNotificationHandlers,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Activated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Activated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+GetAllAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+GetAllAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetAllAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveAllAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+RemoveAllAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemoveAllAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveByGroupAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	UINT32 GroupSize,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+RemoveByGroupAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemoveByGroupAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveByTagAndGroupAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	UINT32 TagSize,
+	UINT32 GroupSize,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+RemoveByTagAndGroupAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemoveByTagAndGroupAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveByTagAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	UINT32 TagSize,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+RemoveByTagAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemoveByTagAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveByIdAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	HEXINT32 NotificationId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+RemoveByIdAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemoveByIdAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Setting(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Setting(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Setting(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UpdateAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	UINT32 TagSize,
+	UINT32 GroupSize,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+UpdateAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UpdateAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Show(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	UINT32 PayloadSize,
+	UINT32 TagSize,
+	UINT32 GroupSize,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Show(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Show(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UnregisterAll(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Unregister(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+Register(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING AppId,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+BuildNotification(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+BuildNotification(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BuildNotification(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ButtonToString(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+ButtonToString(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ButtonToString(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProgressBarToString(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+ProgressBarToString(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProgressBarToString(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ComboBoxToString(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+ComboBoxToString(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ComboBoxToString(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TextPropertiesToString(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOL32 IsAppPackaged,
+	UNICODESTRING AppName
+	);
+
+TextPropertiesToString(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TextPropertiesToString(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AddCallbackTrace(
+	UNICODESTRING eventName,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+FailureTrace(
+	UNICODESTRING eventName,
+	UNICODESTRING APIName,
+	ANSISTRING exceptionString,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FailFast(
+	UINT32 Type,
+	INT32 HResult,
+	ANSISTRING File,
+	UINT32 Line,
+	UNICODESTRING Message,
+	ANSISTRING Module,
+	COUNTEDSTRING currentResource
+	);
+
+FailureReturn(
+	UINT32 Type,
+	INT32 HResult,
+	ANSISTRING File,
+	UINT32 Line,
+	UNICODESTRING Message,
+	ANSISTRING Module,
+	COUNTEDSTRING currentResource
+	);
+
+RestartPushNotificationsLRPFailed(
+	UINT32 Type,
+	INT32 HResult,
+	ANSISTRING File,
+	UINT32 Line,
+	UNICODESTRING Message,
+	ANSISTRING Module,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+Exception(
+	UINT32 Type,
+	INT32 HResult,
+	ANSISTRING File,
+	UINT32 Line,
+	UNICODESTRING Message,
+	ANSISTRING Module,
+	COUNTEDSTRING currentResource
+	);
+
+FailureLog(
+	UINT32 Type,
+	INT32 HResult,
+	ANSISTRING File,
+	UINT32 Line,
+	UNICODESTRING Message,
+	ANSISTRING Module,
+	COUNTEDSTRING currentResource
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT32 preInitializeStatus
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT32 WilFailureType,
+	ANSISTRING FailureFile,
+	UINT32 FailureLineNumber,
+	UNICODESTRING FailureMessage,
+	ANSISTRING FailureModule,
+	UINT32 FailedInstallStage,
+	UNICODESTRING CurrentResourceId,
+	INT32 DeploymentErrorExtendedHResult,
+	UNICODESTRING DeploymentErrorText,
+	GUID DeploymentErrorActivityId,
+	BOOLEAN useExistingPackageIfHigherVersion
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT32 preInitializeStatus
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT32 WilFailureType,
+	ANSISTRING FailureFile,
+	UINT32 FailureLineNumber,
+	UNICODESTRING FailureMessage,
+	ANSISTRING FailureModule,
+	UINT32 FailedInstallStage,
+	UNICODESTRING CurrentResourceId,
+	INT32 DeploymentErrorExtendedHResult,
+	UNICODESTRING DeploymentErrorText,
+	GUID DeploymentErrorActivityId,
+	BOOLEAN useExistingPackageIfHigherVersion
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Initialize(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	BOOLEAN forceDeployment,
+	BOOLEAN isElevated,
+	BOOLEAN isPackagedProcess,
+	BOOLEAN isFullTrustPackage,
+	UINT32 integrityLevel,
+	BOOLEAN isRepairAPI
+	);
+
+LogAddExecutableFileExtension(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogRemoveFromPath(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogRemoveExecutableFileExtension(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogGetEnvironmentVariable(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogGetEnvironmentVariables(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogAppendToPath(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogSetEnvironmentVariables(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Scope
+	);
+
+LogCreateForProcess(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+LogCreateForMachine(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+LogCreateForUser(
+	UINT64 PartA_PrivTags,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid
+	);
+
+PackageDeployment.Resolver.NotFound(
+	UNICODESTRING Criteria.Id,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.NewerAvailable(
+	UNICODESTRING Criteria.Id,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Scan.NoMatch.Version(
+	UNICODESTRING Criteria.Id,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+StagePackageSetAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+StagePackageSetAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StagePackageSetAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+StagePackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+StagePackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StagePackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RepairPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+RepairPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RepairPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RepairPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+RepairPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RepairPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RepairPackageAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Package
+	);
+
+RepairPackageAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RepairPackageAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ResetPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+ResetPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ResetPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ResetPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+ResetPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ResetPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ResetPackageAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Package
+	);
+
+ResetPackageAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ResetPackageAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemovePackageSetAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+RemovePackageSetAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemovePackageSetAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemovePackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+RemovePackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemovePackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemovePackageAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Package
+	);
+
+RemovePackageAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RemovePackageAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RegisterPackageByPackageFullNameAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageFullName
+	);
+
+RegisterPackageByPackageFullNameAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RegisterPackageByPackageFullNameAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RegisterPackageByPackageFamilyNameAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageFamilyName
+	);
+
+RegisterPackageByPackageFamilyNameAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RegisterPackageByPackageFamilyNameAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RegisterPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+RegisterPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RegisterPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RegisterPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+RegisterPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RegisterPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ProvisionPackageAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Package
+	);
+
+ProvisionPackageAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProvisionPackageAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+EnsurePackageSetReadyAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+EnsurePackageSetReadyAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+EnsurePackageSetReadyAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+EnsurePackageReadyByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+EnsurePackageReadyByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+EnsurePackageReadyByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DeprovisionPackageAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING Package
+	);
+
+DeprovisionPackageAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeprovisionPackageAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AddPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageSetId
+	);
+
+AddPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AddPackageSetAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AddPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UNICODESTRING PackageUri
+	);
+
+AddPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AddPackageByUriAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+PackageDeployment.Resolver.Found.StopOnFirst(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.NotFound(
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Found(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Scan.NoMatch.Version(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Scan.NoMatch.Architecture(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	INT32 Architecture,
+	HEXINT32 SupportedArchitectures,
+	UINT16 NativeMachineArchitecture,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Scan.NoMatch.Architecture(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	INT32 Architecture,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Scan.NoMatch.Status(
+	UNICODESTRING PackageFullName,
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+
+PackageDeployment.Resolver.Scan(
+	UNICODESTRING Criteria.PackageFamilyName,
+	HEXINT64 Criteria.MinVersion,
+	HEXINT32 Criteria.ArchitectureFilter,
+	UINT64 PartA_PrivTags
+	);
+

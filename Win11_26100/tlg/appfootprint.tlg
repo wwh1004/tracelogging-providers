@@ -1,0 +1,77 @@
+ProviderNames:
+	Microsoft.Windows.Compatibility.Encapsulation
+	Microsoft.Windows.Compatibility.Asl
+
+
+
+**** Events *****
+LoggerSummaryEvent(
+	UINT64 PartA_PrivTags,
+	UINT32 AppExesTraced,
+	UINT32 InstallerExesTraced,
+	UINT64 TotalTicks,
+	WIN32ERROR ErrorCode
+	);
+
+LoggerBaseSettingsChange(
+	UINT64 PartA_PrivTags,
+	BOOL32 IsTraceLoggingEnabled,
+	BOOL32 UseOneSettings
+	);
+
+LoggerBaseSystemRequirementsFailed(
+	UINT64 PartA_PrivTags,
+	UINT32 NumProcessors,
+	UINT32 RamGB,
+	BOOLEAN MinDiskRequirementMet
+	);
+
+ProcessLoggedEvents(
+	UINT64 PartA_PrivTags,
+	PID ProcessId,
+	BOOLEAN IsInstaller,
+	UINT32 RegEventsCount,
+	UINT32 RegEventsWritten,
+	UINT32 RegWriteErrorsOccurred,
+	UINT32 FileEventsCount,
+	UINT32 FileEventsWritten,
+	UINT32 FileWriteErrorsOccurred,
+	UNICODESTRING FileId,
+	UNICODESTRING ProgramId
+	);
+
+ProcessLoggingRegistry(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FileId,
+	UNICODESTRING ProgramId,
+	UNICODESTRING ExeName,
+	BOOL32 IsInstaller,
+	STRING pathOps,
+	UNICODESTRING path,
+	UINT32 operations
+	);
+
+ProcessLoggingFile(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FileId,
+	UNICODESTRING ProgramId,
+	UNICODESTRING ExeName,
+	BOOL32 IsInstaller,
+	STRING pathOps,
+	UNICODESTRING path,
+	UINT32 operations
+	);
+
+TelemetryClient(
+	UINT64 PartA_PrivTags,
+	UINT64 BinFileVersion,
+	ANSISTRING ChannelName,
+	ANSISTRING CorrelationVectors,
+	ANSISTRING Types,
+	ANSISTRING Names,
+	ANSISTRING Counts,
+	ANSISTRING Metrics,
+	UNICODESTRING Messages,
+	ANSISTRING ActivityResults
+	);
+

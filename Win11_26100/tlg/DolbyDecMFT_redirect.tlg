@@ -1,0 +1,12 @@
+ProviderNames:
+	Microsoft.Windows.MediaFoundation.DDPlusDecRedirect
+	Microsoft.Windows.MediaFoundation.CallStack
+
+
+
+**** Events *****
+OnGetDDPlusDecoderActivate(
+	HRESULT ErrorCode,
+	GUID InstanceId
+	);
+

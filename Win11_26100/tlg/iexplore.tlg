@@ -1,0 +1,34 @@
+ProviderNames:
+	Microsoft.Windows.App.Browser
+
+
+
+**** Events *****
+IESessionIDInvalidated(
+	GUID sessionID,
+	GUID userInputID,
+	BOOLEAN UTCReplace_AppSessionGuid
+	);
+
+IEShortLivedProcess(
+	GUID sessionID,
+	GUID userInputID,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UNICODESTRING reason
+	);
+
+IEApplicationStart(
+	GUID sessionID,
+	GUID userInputID,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	INT32 isDebuggerPresent
+	);
+
+IEApplicationExit(
+	GUID sessionID,
+	GUID userInputID,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT32 exitCode,
+	INT64 cvListVersion
+	);
+

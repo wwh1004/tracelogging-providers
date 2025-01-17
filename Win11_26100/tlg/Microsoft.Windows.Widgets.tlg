@@ -1,0 +1,403 @@
+ProviderNames:
+	Microsoft.Windows.Widgets
+
+
+
+**** Events *****
+WidgetServiceCatalogInitializationDuration(
+	UNICODESTRING rootExtensionName,
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderDefinitionMapNotFound(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+WidgetDefinitionMapNotFound(
+	VOID
+	);
+
+WidgetHostSet(
+	UNICODESTRING widgetHostId
+	);
+
+FeedHostManagerRecoverExistingFeedCoordinatorsDuration(
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+StorageHelperFilenameIsValidCheckFailed(
+	INT32 hr,
+	UNICODESTRING path
+	);
+
+StorageHelperDeleteSessionAsyncResult(
+	BOOLEAN ifDeleted,
+	UNICODESTRING path
+	);
+
+WidgetHostManagerRecoverExistingWidgetsDuration(
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetDefinitionIdNotFound(
+	UNICODESTRING widgetDefinitionId
+	);
+
+GetWidgetInfoEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetSetCustomStateEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING hostState
+	);
+
+WidgetRemoveAnnouncementEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING announcementId
+	);
+
+WidgetShowAnnouncementEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING announcementId
+	);
+
+WidgetSendMessageToContentEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING message
+	);
+
+WidgetUpdateEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING templateJson,
+	UNICODESTRING data,
+	UNICODESTRING customState,
+	INT64 updateTime
+	);
+
+InvalidErrorInfoJson(
+	UNICODESTRING widgetId,
+	UNICODESTRING errorJson
+	);
+
+InvalidAnalyticsInfoJson(
+	UNICODESTRING widgetId,
+	UNICODESTRING analyticsJson
+	);
+
+WidgetDeactivationEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetActivationEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetNotifySizeChangedEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetNotifyCustomizationRequestedEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetNotifyActionInvokedEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING actionVerb
+	);
+
+WidgetIdNotFound(
+	UNICODESTRING widgetDefinitionId
+	);
+
+WidgetDeletionEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetDefinitionNotFoundForWidgetCreation(
+	UNICODESTRING widgetDefinitionId
+	);
+
+WidgetCreationEntryPoint(
+	UNICODESTRING widgetDefinitionId
+	);
+
+WidgetNotifyAnnouncementInvokedResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderNotifyAnnouncementInvoked(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING announcementId
+	);
+
+WidgetNotifyMessageReceivedResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderNotifyMessageReceivedEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING message
+	);
+
+WidgetNotifyResourceRequestedResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderNotifyResourceRequestedEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING uri
+	);
+
+WidgetNotifyWidgetCustomizationRequestedResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderNotifyWidgetCustomizationRequested(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId
+	);
+
+WidgetErrorInfoReportedResult(
+	INT32 hr,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderErrorInfoReportedEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING errorJson
+	);
+
+WidgetAnalyticsInfoReportedResult(
+	INT32 hr,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderAnalyticsInfoReportedEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING analyticsJson
+	);
+
+WidgetDeactivationResult(
+	INT32 hr,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderDeactivateEntryPoint(
+	UNICODESTRING widgetId
+	);
+
+WidgetActivationResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderActivateEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	BOOLEAN isActive
+	);
+
+WidgetNotifyWidgetContextChangeResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	INT64 widgetSize,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderNotifyWidgetContextChangeEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	INT64 widgetSize
+	);
+
+WidgetNotifyActionInvokedResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderNotifyActionEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING actionVerb
+	);
+
+WidgetDeletionResult(
+	INT32 hr,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderDeleteEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING customState
+	);
+
+WidgetCreationResult(
+	INT32 hr,
+	UNICODESTRING widgetDefinitionId,
+	UNICODESTRING widgetId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetProviderCreateEntryPoint(
+	UNICODESTRING widgetId,
+	UNICODESTRING widgetDefinitionId
+	);
+
+WidgetProviderChannelOpeningFailure(
+	UNICODESTRING clsid,
+	BOOLEAN reconnecting
+	);
+
+ActivateApplicationWidgetProvider(
+	UNICODESTRING clsid,
+	BOOLEAN reconnecting
+	);
+
+WidgetProviderCoCreationDuration(
+	UNICODESTRING widgetProviderGuid,
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+CreateCOMInstanceWidgetProvider(
+	UNICODESTRING clsid,
+	BOOLEAN reconnecting
+	);
+
+TryOpeningWidgetProviderChannelEntryPoint(
+	VOID
+	);
+
+WidgetChannelCreationEntryPoint(
+	UNICODESTRING providerId,
+	UNICODESTRING channelType
+	);
+
+FeedCatalogInitializeOOPInstanceDuration(
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+FeedCatalogInitializeOOPResult(
+	INT32 hr,
+	UNICODESTRING oop_clsid,
+	UINT64 PartA_PrivTags
+	);
+
+FeedHostInitializeOOPResult(
+	INT32 hr,
+	UNICODESTRING oop_clsid,
+	UINT64 PartA_PrivTags
+	);
+
+FeedHostInitializeOOPInstanceDuration(
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+FeedManagerInitializeOOPResult(
+	INT32 hr,
+	UNICODESTRING oop_clsid,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetManagerInitializeOOPResult(
+	INT32 hr,
+	UNICODESTRING oop_clsid,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetHostInitializeOOPInstanceDuration(
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetHostInitializeOOPResult(
+	INT32 hr,
+	UNICODESTRING oop_clsid,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetCatalogInitializeOOPResult(
+	INT32 hr,
+	UNICODESTRING oop_clsid,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetCatalogInitializeOOPInstanceDuration(
+	INT64 durationInMs,
+	UINT64 PartA_PrivTags
+	);
+

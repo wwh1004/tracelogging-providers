@@ -1,0 +1,73 @@
+ProviderNames:
+	F12ToolsProvider
+
+
+
+**** Events *****
+PluginDispatchFireJsonMessage(
+	INT32 PluginId,
+	UNICODESTRING Message,
+	BOOL32 IsSkipped
+	);
+
+F12PackageVersion(
+	UNICODESTRING sessionId,
+	UNICODESTRING version
+	);
+
+F12Error(
+	UNICODESTRING sessionId,
+	UNICODESTRING component,
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UNICODESTRING line,
+	UNICODESTRING column,
+	UNICODESTRING additionalInfo
+	);
+
+F12UsesByteCodeCache(
+	UNICODESTRING sessionId,
+	UNICODESTRING packageFullName
+	);
+
+F12ByteCodeGeneration(
+	UNICODESTRING sessionId,
+	UNICODESTRING packageFullName,
+	UNICODESTRING reason
+	);
+
+F12LoadStart(
+	UNICODESTRING sessionId,
+	UNICODESTRING hostType,
+	UNICODESTRING launchType,
+	UNICODESTRING launchedPlugin,
+	UNICODESTRING __TlgCV__
+	);
+
+UserSessionEnd(
+	UINT64 userSessionIndex,
+	UNICODESTRING sessionId,
+	UINT64 durationSeconds
+	);
+
+UserSessionStart(
+	UINT64 userSessionIndex,
+	UNICODESTRING sessionId
+	);
+
+ToolSession(
+	UNICODESTRING sessionId,
+	UNICODESTRING toolName,
+	UINT64 durationSeconds,
+	BOOLEAN isConsoleShown
+	);
+
+FrameSession(
+	UNICODESTRING sessionId,
+	UINT64 durationSeconds,
+	INT32 frameWidth,
+	INT32 frameHeight,
+	UNICODESTRING dockState,
+	BOOLEAN hasDockStateChanged
+	);
+

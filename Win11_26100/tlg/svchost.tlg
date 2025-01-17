@@ -1,0 +1,94 @@
+ProviderNames:
+	Microsoft.Windows.SvchostTelemetryProvider
+
+
+
+**** Events *****
+Calling_ExitProcess(
+	UNICODESTRING CommandLine
+	);
+
+SleepConditionVariableSRW_Failed(
+	UNICODESTRING ServiceName,
+	UINT32 ErrorCode
+	);
+
+UnloadingServiceDll(
+	UNICODESTRING DllName
+	);
+
+ActivateActCtxFailedInUnloadPath(
+	UNICODESTRING ServiceName,
+	UINT32 ErrorCode
+	);
+
+PushingGlobals(
+	UNICODESTRING ServiceName
+	);
+
+SvcLimitsEnable(
+	UNICODESTRING PolicyName,
+	NTSTATUS Status
+	);
+
+GetServiceMainFunctions_Failed(
+	UNICODESTRING ServiceName,
+	UINT64 FailCode,
+	UINT64 ErrorCode
+	);
+
+GetServiceDllFunction_Failed(
+	UNICODESTRING DllName,
+	ANSISTRING FunctionName,
+	UINT64 FailCode,
+	UINT64 ErrorCode
+	);
+
+LoadingServiceDll(
+	UNICODESTRING DllName
+	);
+
+ConfigCiSecurityPolicyCheck_Failed(
+	UNICODESTRING DllName,
+	UNICODESTRING FunctionName,
+	UINT64 FailCode,
+	UINT64 ErrorCode
+	);
+
+AbortHostedService_Failed(
+	UNICODESTRING ServiceName,
+	UINT64 FailCode,
+	UINT64 Error
+	);
+
+AbortHostedService(
+	UNICODESTRING ServiceName,
+	UINT64 Error
+	);
+
+LowResourceCallback(
+	UNICODESTRING serviceName,
+	UINT64 heapLimit,
+	BOOL32 notifyService
+	);
+
+ServiceHeapUsage(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING serviceName,
+	UINT64 aveHeapAlloc,
+	UINT64 maxHeapAlloc,
+	UINT64 currentHeapAlloc,
+	BOOLEAN singleServiceHost,
+	UINT32 state
+	);
+
+ServiceHeapUsage(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING serviceName,
+	UINT64 aveHeapAlloc,
+	UINT64 maxHeapAlloc,
+	UINT64 currentHeapAlloc,
+	BOOLEAN singleServiceHost,
+	UINT32 state
+	);
+

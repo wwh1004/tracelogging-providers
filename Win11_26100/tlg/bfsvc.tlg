@@ -1,0 +1,66 @@
+ProviderNames:
+	Microsoft.Windows.BootFileServicingAI
+	Microsoft.Windows.BootFileServicing
+	Microsoft.Windows.BootFileServicing
+
+
+
+**** Events *****
+BfsvcChkDsk(
+	BOOL32 BootFilesServiced,
+	BOOL32 ChkDskSuccesfull,
+	BOOL32 ChkDskHelped,
+	WIN32ERROR OriginalError,
+	WIN32ERROR FinalError,
+	WIN32ERROR InitializeBcdStoreStatus
+	);
+
+BfsResealBitLockerWithRetrySucceeded(
+	UINT64 PartA_PrivTags,
+	UINT32 FlagOut,
+	UINT32 RetryCount,
+	BOOL32 FveApiFound
+	);
+
+BfsIsBitLockerResealNeededForBootmgrServicingFailed(
+	UINT64 PartA_PrivTags,
+	HRESULT Hr,
+	UNICODESTRING Action,
+	BOOL32 IsBitlockerResealNeededPcr4,
+	BOOL32 IsBitlockerResealNeededPcr7
+	);
+
+BfsResealBitLockerWithRetryFailed(
+	UINT64 PartA_PrivTags,
+	HRESULT Hr,
+	UNICODESTRING Action,
+	UINT32 FlagOut,
+	UINT32 RetryCount,
+	BOOL32 FveApiFound
+	);
+
+BfsIsBitLockerResealNeededForBootmgrServicingSucceeded(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Action,
+	BOOL32 IsBitlockerResealNeededPcr4,
+	BOOL32 IsBitlockerResealNeededPcr7
+	);
+
+BfsvcFilesServicingResult(
+	UINT64 PartA_PrivTags,
+	WIN32ERROR ErrorCode,
+	BOOL32 BootExFiles,
+	BOOL32 HasBootmgfwCertAuthChanged
+	);
+
+BfsvcSyspartRepair(
+	UINT32 Caller,
+	BOOL32 ChkDskRun,
+	WIN32ERROR ChkDskErrorCode,
+	BOOL32 BcdInitialized,
+	WIN32ERROR BcdErrorCode,
+	BOOL32 BootFilesServiced,
+	WIN32ERROR ServicingErrorCode,
+	WIN32ERROR ErrorCode
+	);
+

@@ -1,0 +1,101 @@
+ProviderNames:
+	Microsoft.Windows.Provisioning.CommandCsp
+
+
+
+**** Events *****
+CProvisioningCommandsNode::CreateNodeInstance(
+	UNICODESTRING URI,
+	UINT32 nodeId,
+	UINT32 fPermanent,
+	UINT32 fCreate
+	);
+
+CProvisioningCommandsNode::SetValue(
+	UINT32 nodeId
+	);
+
+RegistryResults::Add(
+	UNICODESTRING Phase,
+	UNICODESTRING PackageId,
+	UNICODESTRING CmdLineName
+	);
+
+CProvisioningCommandsNode::GetValue(
+	UINT32 nodeId
+	);
+
+CProvisioningCommandsNode::Clear(
+	UINT32 nodeId
+	);
+
+CProvisioningCommandsNode::DeleteChild(
+	UINT32 nodeId
+	);
+
+CProvisioningCommandsNode::Add(
+	UNICODESTRING URI,
+	UNICODESTRING Full URI,
+	UINT32 nodeId
+	);
+
+CProvisioningCommandsNode::GetChildNodeName.PrimaryContext(
+	UINT32 nodeId
+	);
+
+CProvisioningCommandsNode::GetChildNodeName.DeviceContext(
+	UINT32 nodeId
+	);
+
+RegistryConfig::AddCommand(
+	UNICODESTRING Phase,
+	UNICODESTRING Name,
+	UNICODESTRING CmdName,
+	UNICODESTRING WorkingDir
+	);
+
+RegistryConfig::ParseCommandSet.Altitude(
+	UNICODESTRING name,
+	UINT32 altitude
+	);
+
+RegistryConfig::ParsePhase.AddingCommandSet(
+	UNICODESTRING name
+	);
+
+RegistryConfig::ParsePhase.FailedRegOpen(
+	UNICODESTRING keyName
+	);
+
+RegistryConfig::Delete(
+	UNICODESTRING Phase,
+	UNICODESTRING CommandSetName,
+	UNICODESTRING CommandName,
+	UNICODESTRING RegPath
+	);
+
+RegistryConfig::ParseCommand(
+	UNICODESTRING name,
+	UNICODESTRING commandLine,
+	UNICODESTRING workingDirectory
+	);
+
+RegistryConfig::Parse.FailedPhaseRegOpen(
+	UNICODESTRING subKey,
+	UNICODESTRING phase
+	);
+
+RegistryConfig::DeleteCommandSet(
+	UNICODESTRING Phase,
+	UNICODESTRING CommandSetName,
+	UNICODESTRING RegPath
+	);
+
+RegistryConfig::ParseCommandSet.FailedGetAltitude(
+	UNICODESTRING name
+	);
+
+RegistryConfig::Parse.FailedRegOpen(
+	UNICODESTRING subKey
+	);
+

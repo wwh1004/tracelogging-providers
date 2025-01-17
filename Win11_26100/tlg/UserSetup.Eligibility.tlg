@@ -1,0 +1,102 @@
+ProviderNames:
+	Microsoft.Windows.Shell.ScoobeEligibility
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TailoredScoobeEligibilitySummary(
+	BOOLEAN isEligible,
+	UNICODESTRING uri,
+	UNICODESTRING summary,
+	UINT64 PartA_PrivTags
+	);
+
+RelaunchPostponedScoobeSessionFrequencyEligibility(
+	BOOLEAN isEligible,
+	UINT64 PartA_PrivTags
+	);
+
+ScoobeDeviceOrUserStateEligibility(
+	BOOLEAN isEligible,
+	BOOLEAN onlyCachedValueChecked,
+	BOOLEAN isPermanentlyIneligible,
+	UINT32 temporarilyBlockingStateFlags,
+	UINT64 PartA_PrivTags
+	);
+
+ScoobeUserProfileEngagementStateEligibility(
+	BOOLEAN isEligible,
+	INT32 msaPrimaryAccountStatus,
+	INT32 activitiesHistorySharingStatus,
+	INT32 mobileExperienceDeviceStatus,
+	INT32 oneDriveKnownFolderMoveStatus,
+	BOOLEAN scoobeBrowserEligible,
+	UINT64 PartA_PrivTags
+	);
+
+ScoobeOnLogonFrequencyEligibility(
+	UINT64 PartA_PrivTags,
+	BOOLEAN isEligible,
+	BOOLEAN isUpgradedInstallation,
+	BOOLEAN wasNetworkEstablishedDuringOobe,
+	UINT32 daysSinceFirstLogonOnCurrentInstallation,
+	UINT32 minDaysSinceFirstLogonOnCurrentInstallation,
+	UINT32 daysSinceScoobeLastShown,
+	UINT32 minDaysSinceScoobeLastShown,
+	UINT32 daysSinceScoobeLastCompleted,
+	UINT32 minDaysSinceScoobeLastCompleted
+	);
+
+GetTriggeredExperienceException(
+	ANSISTRING errorMessage,
+	UINT64 PartA_PrivTags
+	);
+
+TriggeredExperience(
+	UNICODESTRING experienceVariant,
+	UNICODESTRING uri,
+	UINT64 PartA_PrivTags
+	);
+

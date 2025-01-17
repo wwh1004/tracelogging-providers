@@ -1,0 +1,13 @@
+ProviderNames:
+	Microsoft.Windows.SxS
+
+
+
+**** Events *****
+SxSManifestError(
+	UNICODESTRING ManifestFileName,
+	HRESULT LastError,
+	NULL ManifestPath,
+	UINT64 PartA_PrivTags
+	);
+

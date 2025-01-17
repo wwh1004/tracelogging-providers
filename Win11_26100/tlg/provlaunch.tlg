@@ -1,0 +1,125 @@
+ProviderNames:
+	Microsoft.Windows.Provisioning.ProvLaunch
+
+
+
+**** Events *****
+RegistryResults::Add(
+	UNICODESTRING Phase,
+	UNICODESTRING PackageId,
+	UNICODESTRING CmdLineName
+	);
+
+Execute.CreateProcessGetExitCodeFailed(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 LastError
+	);
+
+Execute.Start(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName
+	);
+
+Execute.ContinueInstallFailure(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 ExitCode
+	);
+
+Execute.ImmediateReboot(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 RestartRequired,
+	UINT32 ExitCode
+	);
+
+Execute.Stop(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 ExitCode
+	);
+
+Execute.CommandInstallationFailed(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 ExitCode
+	);
+
+Execute.CreateProcessFailed(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 LastError
+	);
+
+Execute.ProvisioningCommandSucceeded(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 RestartRequired,
+	UINT32 ExitCode
+	);
+
+Execute.CreateProcessMissingHandle(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 LastError
+	);
+
+Execute.CreateWorkingDirectoryFailed(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 LastError
+	);
+
+Execute.CreateProcessWaitFailed(
+	UNICODESTRING commandSetName,
+	UNICODESTRING commandName,
+	UINT32 waitResult,
+	UINT32 LastError
+	);
+
+RegistryConfig::ParseCommandSet.Altitude(
+	UNICODESTRING name,
+	UINT32 altitude
+	);
+
+RegistryConfig::ParsePhase.AddingCommandSet(
+	UNICODESTRING name
+	);
+
+RegistryConfig::ParsePhase.FailedRegOpen(
+	UNICODESTRING keyName
+	);
+
+RegistryConfig::Delete(
+	UNICODESTRING Phase,
+	UNICODESTRING CommandSetName,
+	UNICODESTRING CommandName,
+	UNICODESTRING RegPath
+	);
+
+RegistryConfig::ParseCommand(
+	UNICODESTRING name,
+	UNICODESTRING commandLine,
+	UNICODESTRING workingDirectory
+	);
+
+RegistryConfig::Parse.FailedPhaseRegOpen(
+	UNICODESTRING subKey,
+	UNICODESTRING phase
+	);
+
+RegistryConfig::DeleteCommandSet(
+	UNICODESTRING Phase,
+	UNICODESTRING CommandSetName,
+	UNICODESTRING RegPath
+	);
+
+RegistryConfig::ParseCommandSet.FailedGetAltitude(
+	UNICODESTRING name
+	);
+
+RegistryConfig::Parse.FailedRegOpen(
+	UNICODESTRING subKey
+	);
+

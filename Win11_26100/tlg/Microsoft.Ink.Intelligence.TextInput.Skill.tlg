@@ -1,0 +1,88 @@
+ProviderNames:
+	Microsoft.Windows.Ink.Intelligence.TextPen.Obfuscated
+	Microsoft.Windows.Ink.Intelligence.TextPen
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+LogInternalDiagnostic(
+	UNICODESTRING data
+	);
+
+LogInternalDiagnosticObfuscated(
+	UNICODESTRING data
+	);
+
+LogWordRecognition(
+	UINT32 numStrokes,
+	UINT32 charactersConverted,
+	UINT32 wordsConverted,
+	UINT32 durationMicroseconds,
+	UNICODESTRING language,
+	UINT32 eventsIncluded,
+	UINT64 PartA_PrivTags
+	);
+
+LogGesture(
+	UNICODESTRING gestureType,
+	UINT32 charactersAffected,
+	UINT32 wordsAffected,
+	UINT32 linesAffected,
+	UINT32 durationMicroseconds,
+	UINT32 eventsIncluded,
+	UINT64 PartA_PrivTags
+	);
+
+LogRecognizerAvailability(
+	UNICODESTRING language,
+	UNICODESTRING availability,
+	UINT64 PartA_PrivTags
+	);
+
+LogHandwritingManager(
+	UNICODESTRING message,
+	UNICODESTRING language,
+	UINT64 PartA_PrivTags
+	);
+

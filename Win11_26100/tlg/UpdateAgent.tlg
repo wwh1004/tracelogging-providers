@@ -1,0 +1,456 @@
+ProviderNames:
+	Microsoft.Windows.Wil.FeatureLogging
+	Update360Telemetry
+	Update360Telemetry
+
+
+
+**** Events *****
+UpdateAgentDownloadRequest(
+	UNICODESTRING ExtensionName,
+	INT32 Result,
+	HRESULT ErrorCode,
+	HRESULT InternalFailureResult,
+	INT32 RangeRequestState,
+	INT32 DeletedCorruptFiles,
+	INT32 DownloadRequests,
+	INT32 PackageCountTotal,
+	INT32 PackageCountRequired,
+	INT32 PackageCountOptional,
+	INT64 DownloadedSizeCanonical,
+	INT64 DownloadedSizePSFX,
+	INT64 DownloadedSizeDiff,
+	INT64 DownloadedSizeExpress,
+	INT32 PackageCountTotalCanonical,
+	INT32 PackageCountTotalPSFX,
+	INT32 PackageCountTotalDiff,
+	INT32 PackageCountTotalExpress,
+	INT32 PackageExpressType,
+	BOOL32 ContainsSafeOSDUPackage,
+	BOOL32 ContainsReinstallCurrentLCU,
+	INT32 PackageCategoriesSkipped,
+	BOOL32 IsOnPremScenario,
+	INT32 SandboxTaggedForReserves,
+	INT32 DownloadComplete,
+	BOOL32 CancelRequested,
+	INT32 NumberOfHops,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+FeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT32 addend
+	);
+
+UpdateAgentInstall(
+	UNICODESTRING ExtensionName,
+	INT32 Result,
+	HRESULT ErrorCode,
+	HRESULT InternalFailureResult,
+	BOOL32 CancelRequested,
+	INT32 UpdatePriority,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentMitigationSummary(
+	HRESULT Result,
+	INT32 MitigationScenario,
+	INT32 Total,
+	INT32 Applicable,
+	INT32 Failed,
+	INT64 TimeDiff,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentOneSettings(
+	HRESULT Result,
+	INT32 Count,
+	UNICODESTRING Parameters,
+	UNICODESTRING Values,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentPostRebootResult(
+	HRESULT ErrorCode,
+	HRESULT PostRebootResult,
+	INT32 UpdateOutputState,
+	INT32 RollbackFailureReason,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+Revert(
+	HRESULT ErrorCode,
+	HRESULT RevertResult,
+	BOOL32 RebootRequired,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UpdateAgentReboot(
+	HRESULT ErrorCode,
+	INT32 UpdateState,
+	HRESULT Reason,
+	BOOL32 IsSuspendable,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentMitigationResult(
+	HRESULT Result,
+	INT32 MitigationScenario,
+	UNICODESTRING Name,
+	INT32 Index,
+	BOOL32 Applicable,
+	INT32 FileCount,
+	INT32 RegistryCount,
+	INT32 CommandCount,
+	INT32 CustomCount,
+	UNICODESTRING OperationName,
+	INT32 OperationIndex,
+	INT64 TimeDiff,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UpdateAgentDownloadRequest(
+	UNICODESTRING ExtensionName,
+	INT32 Result,
+	HRESULT ErrorCode,
+	HRESULT InternalFailureResult,
+	INT32 RangeRequestState,
+	INT32 DeletedCorruptFiles,
+	INT32 DownloadRequests,
+	INT32 PackageCountTotal,
+	INT32 PackageCountRequired,
+	INT32 PackageCountOptional,
+	INT64 DownloadedSizeCanonical,
+	INT64 DownloadedSizePSFX,
+	INT64 DownloadedSizeDiff,
+	INT64 DownloadedSizeExpress,
+	INT32 PackageCountTotalCanonical,
+	INT32 PackageCountTotalPSFX,
+	INT32 PackageCountTotalDiff,
+	INT32 PackageCountTotalExpress,
+	INT32 PackageExpressType,
+	BOOL32 ContainsSafeOSDUPackage,
+	INT32 PackageCategoriesSkipped,
+	BOOL32 IsOnPremScenario,
+	INT32 SandboxTaggedForReserves,
+	INT32 DownloadComplete,
+	BOOL32 CancelRequested,
+	INT32 NumberOfHops,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+FeatureVariantUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 variantKind,
+	UINT8 variant,
+	UINT32 addend
+	);
+
+PauseResume(
+	HRESULT ErrorCode,
+	INT32 Result,
+	UNICODESTRING Operation,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+DriverUpdateSummaryReport(
+	INT32 Result,
+	HRESULT ErrorCode,
+	COUNTEDSTRING Summary,
+	BOOL32 AppendError,
+	INT16 AnalysisErrorCount,
+	INT16 DevicePopulateErrorCount,
+	INT16 TruncatedDriverCount,
+	INT16 TruncatedDeviceCount,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentSetupBoxLaunch(
+	INT32 SetupMode,
+	INT32 Quiet,
+	INT32 UserSession,
+	INT64 SandboxSize,
+	INT64 FreeSpace,
+	INT32 InstallCount,
+	BOOL32 ContainsExpressPackage,
+	INT32 SetupLaunchAttemptCount,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentExpand(
+	HRESULT ErrorCode,
+	INT64 ElapsedTickCount,
+	INT64 StartSandboxSize,
+	INT64 EndSandboxSize,
+	INT64 StartFreeSpace,
+	INT64 EndFreeSpace,
+	BOOL32 CanonicalRequestedOnError,
+	BOOL32 CancelRequested,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+FeatureError(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	HRESULT hr,
+	ANSISTRING file,
+	UINT16 lineNumber,
+	ANSISTRING module,
+	ANSISTRING process,
+	ANSISTRING originFile,
+	UINT16 originLineNumber,
+	ANSISTRING originModule,
+	ANSISTRING originName,
+	ANSISTRING message,
+	ANSISTRING callerModule,
+	UINT32 callerReturnAddressOffset,
+	ANSISTRING originCallerModule,
+	UINT32 originCallerReturnAddressOffset
+	);
+
+UpdateAgentCommit(
+	INT32 Result,
+	HRESULT ErrorCode,
+	BOOL32 CancelRequested,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentFellBackToCanonical(
+	INT32 PackageCount,
+	UNICODESTRING PackageList,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+EnabledFeatureUsage(
+	UINT32 featureId,
+	INT32 featureVersion,
+	INT32 featureBaseVersion,
+	INT16 featureStage,
+	BOOLEAN enabled,
+	UINT32 kind,
+	UINT32 addend
+	);
+
+UpdateAgentInitialize(
+	INT32 Result,
+	HRESULT ErrorCode,
+	UNICODESTRING SessionData,
+	UNICODESTRING FlightMetadata,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+PreInstalledAppsProvisioningFailed(
+	HRESULT ErrorCode,
+	UNICODESTRING FeatureId,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+NormalAttributesOperation(
+	HRESULT ErrorCode,
+	UINT64 ElapsedTickCount,
+	COUNTEDSTRING AttributeName,
+	INT32 OperationType,
+	COUNTEDSTRING ParameterOrResult,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentModeStart(
+	INT32 Mode,
+	UNICODESTRING Version,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+UpdateAgentMerge(
+	INT32 Result,
+	HRESULT ErrorCode,
+	UNICODESTRING MergeId,
+	BOOL32 CancelRequested,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+
+FellBackToDownloadingAllPackageFiles(
+	UINT64 PartA_PrivTags,
+	HRESULT ErrorCode,
+	UNICODESTRING Package,
+	GUID ObjectId,
+	UNICODESTRING SessionId,
+	INT32 ScenarioId,
+	UNICODESTRING FlightId,
+	UNICODESTRING UpdateId,
+	ANSISTRING RelatedCV,
+	ANSISTRING __TlgCV__
+	);
+

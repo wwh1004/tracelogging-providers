@@ -1,0 +1,185 @@
+ProviderNames:
+	Microsoft.Windows.Sense.SubAuth
+	Microsoft.Windows.Sense.Client
+
+
+
+**** Events *****
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 LogonLevel
+	);
+
+SenseSubAuth(
+	UNICODESTRING message
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	INT32 State
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 LogonLevel
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 PolicyTag,
+	UINT32 AuthProtocol,
+	UINT32 LogonLevel,
+	UNICODESTRING LogonDomainName,
+	UNICODESTRING UserName,
+	UNICODESTRING Workstation,
+	INT64 LogonId,
+	UNICODESTRING AccountSid,
+	UNICODESTRING TargetHost,
+	UNICODESTRING TargetService,
+	UINT32 Action
+	);
+
+UserLogonRequestBlocked(
+	UINT32 PolicyTag,
+	UINT32 AuthProtocol,
+	UINT32 LogonLevel,
+	UNICODESTRING LogonDomainName,
+	UNICODESTRING UserName,
+	UNICODESTRING Workstation,
+	INT64 LogonId,
+	UNICODESTRING AccountSid,
+	UNICODESTRING TargetHost,
+	UNICODESTRING TargetService
+	);
+
+UserLogonRequestAudited(
+	UINT32 PolicyTag,
+	UINT32 AuthProtocol,
+	UINT32 LogonLevel,
+	UNICODESTRING LogonDomainName,
+	UNICODESTRING UserName,
+	UNICODESTRING Workstation,
+	INT64 LogonId,
+	UNICODESTRING AccountSid,
+	UNICODESTRING TargetHost,
+	UNICODESTRING TargetService
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 PolicyTag,
+	UINT32 AuthProtocol,
+	UINT32 LogonLevel,
+	UNICODESTRING LogonDomainName,
+	UNICODESTRING UserName,
+	UNICODESTRING Workstation,
+	INT64 LogonId,
+	UNICODESTRING AccountSid,
+	UNICODESTRING TargetHost,
+	UNICODESTRING TargetService,
+	UINT32 Action
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 PolicyTag,
+	UINT32 AuthProtocol,
+	UINT32 LogonLevel,
+	UNICODESTRING LogonDomainName,
+	UNICODESTRING UserName,
+	UNICODESTRING Workstation,
+	INT64 LogonId,
+	UNICODESTRING AccountSid,
+	UNICODESTRING TargetHost,
+	UNICODESTRING TargetService
+	);
+
+SenseSubAuth(
+	UINT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseSubAuth(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+PolicyRemoved(
+	UINT32 PolicyTag
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 PolicyTag
+	);
+
+PolicyUpdated(
+	UINT32 PolicyTag,
+	UNICODESTRING Version,
+	UNICODESTRING Hash,
+	UINT64 NumOfAccounts
+	);
+
+SenseSubAuth(
+	UNICODESTRING message,
+	UINT32 PolicyTag,
+	UNICODESTRING Version,
+	UNICODESTRING Hash,
+	UINT64 NumOfAccounts
+	);
+
+SenseSubAuth(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseSubAuth(
+	UNICODESTRING message
+	);
+
+SubauthInitFailure(
+	UINT32 State
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+

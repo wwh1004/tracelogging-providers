@@ -1,0 +1,96 @@
+ProviderNames:
+	Microsoft.Windows.Wcp
+	AdvancedInstallerPlatform
+	Microsoft.Windows.BootFileServicing
+	Microsoft.Windows.BootFileServicing
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+AIFinalStats(
+	GUID InstallerId,
+	ANSISTRING InstallerName,
+	UINT64 CountOfTotalInvocations,
+	UINT64 CountOfInstallInvocations,
+	UINT64 CountOfUninstallInvocations,
+	UINT64 CountOfDeltaInvocations,
+	UINT64 CountOfRebootsRequested,
+	UINT64 ExecutionTimeAverageUs
+	);
+
+AIExecutionFailed(
+	GUID InstallerId,
+	ANSISTRING InstallerName,
+	UNICODESTRING Phase,
+	UNICODESTRING Mode,
+	UNICODESTRING Status,
+	UNICODESTRING Component,
+	UNICODESTRING QueueType,
+	UNICODESTRING BootState,
+	BOOL32 RebootRequested
+	);
+
+AIQueueExecution(
+	VOID
+	);
+
+AIQueueExecution(
+	UINT64 DeviceSKUType,
+	UINT16 DeviceArchitecture
+	);
+
+OffendingProcess(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING clientTransactionId,
+	UNICODESTRING rmSessionId,
+	UNICODESTRING inUseFileName,
+	UINT32 processSessionId,
+	FILETIME processStartTime,
+	UINT32 processAppType,
+	UNICODESTRING processAppName,
+	BOOL32 processIsRestartable,
+	GUID UTCReplace_AppId
+	);
+
+BfsvcFilesServicingResult(
+	UINT64 PartA_PrivTags,
+	WIN32ERROR ErrorCode,
+	BOOL32 BootExFiles,
+	BOOL32 HasBootmgfwCertAuthChanged
+	);
+
+BfsResealBitLockerWithRetrySucceeded(
+	UINT64 PartA_PrivTags,
+	UINT32 FlagOut,
+	UINT32 RetryCount,
+	BOOL32 FveApiFound
+	);
+
+BfsIsBitLockerResealNeededForBootmgrServicingFailed(
+	UINT64 PartA_PrivTags,
+	HRESULT Hr,
+	UNICODESTRING Action,
+	BOOL32 IsBitlockerResealNeededPcr4,
+	BOOL32 IsBitlockerResealNeededPcr7
+	);
+
+BfsResealBitLockerWithRetryFailed(
+	UINT64 PartA_PrivTags,
+	HRESULT Hr,
+	UNICODESTRING Action,
+	UINT32 FlagOut,
+	UINT32 RetryCount,
+	BOOL32 FveApiFound
+	);
+
+BfsIsBitLockerResealNeededForBootmgrServicingSucceeded(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Action,
+	BOOL32 IsBitlockerResealNeededPcr4,
+	BOOL32 IsBitlockerResealNeededPcr7
+	);
+

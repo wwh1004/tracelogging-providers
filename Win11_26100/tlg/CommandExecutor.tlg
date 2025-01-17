@@ -1,0 +1,189 @@
+ProviderNames:
+	Microsoft.Windows.Accessibility.VoiceAccess.CommandInvoked
+	Microsoft.Windows.Accessibility.VoiceAccess
+
+
+
+**** Events *****
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+LoginAttempted(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UNICODESTRING ModeOfPasswordEntry,
+	UINT64 PartA_PrivTags
+	);
+
+SpellingSessionEnd(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	UINT64 StartTime,
+	UNICODESTRING TargetAppID,
+	UNICODESTRING EndingEvent,
+	INT32 SpellSuggestionsCount,
+	INT32 PositionOfSuggestionPicked,
+	UINT64 PartA_PrivTags
+	);
+
+CorrectionSessionStart(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UNICODESTRING Entity,
+	ANSISTRING EntityType,
+	UINT64 StartTime,
+	UNICODESTRING TargetAppID,
+	UINT64 PartA_PrivTags
+	);
+
+CandidateSuggestionIgnored(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UNICODESTRING TargetAppID,
+	INT32 NumCorrectionSuggestions,
+	ANSISTRING CorrectionStatus,
+	UNICODESTRING TypeOfCancellation,
+	UINT64 PartA_PrivTags
+	);
+
+CandidateSuggestionSelected(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UINT64 StartTime,
+	UNICODESTRING TargetAppID,
+	INT32 OriginalStringLength,
+	INT32 OriginalStringNumWords,
+	INT32 SelectedCandidateLength,
+	INT32 SelectedCandidateNumWords,
+	UINT64 PartA_PrivTags
+	);
+
+CorrectionSuggestionsProvided(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UINT64 StartTime,
+	UNICODESTRING TargetAppID,
+	INT32 NumCorrectionSuggestions,
+	UINT64 PartA_PrivTags
+	);
+
+CommandInvoked(
+	GUID AppSessionID,
+	GUID MicSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UNICODESTRING Entity,
+	ANSISTRING EntityType,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UNICODESTRING TargetAppID,
+	UINT64 PartA_PrivTags
+	);
+
+DictationSessionEnd(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UNICODESTRING Entity,
+	ANSISTRING EntityType,
+	UINT64 EndTime,
+	UNICODESTRING TargetAppID,
+	UINT64 PartA_PrivTags
+	);
+
+DictationSessionStart(
+	GUID AppSessionID,
+	ANSISTRING ResultCodes,
+	ANSISTRING ResultCodeType,
+	ANSISTRING Intent,
+	UNICODESTRING Entity,
+	ANSISTRING EntityType,
+	UINT64 StartTime,
+	UNICODESTRING TargetAppID,
+	UINT64 PartA_PrivTags
+	);
+
+EndOfCommandExecution(
+	ANSISTRING IntentName,
+	UINT64 TimeElapsed,
+	INT32 Status,
+	UINT64 PartA_PrivTags
+	);
+
+TrackNumberOfDisplays(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT32 NumDisplays,
+	UNICODESTRING Intent,
+	UNICODESTRING Entity,
+	UINT64 PartA_PrivTags
+	);
+

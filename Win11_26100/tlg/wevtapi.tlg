@@ -1,0 +1,29 @@
+ProviderNames:
+	EventLogClientActivityTracing
+	EventLogEvents
+
+
+
+**** Events *****
+Pull notification set consumer event(
+	VOID
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Pull Subscription(
+	PID Client PID,
+	GUID Subscription ID,
+	UNICODESTRING Channel,
+	ANSISTRING Query Hash
+	);
+
+Push Subscription(
+	PID Client PID,
+	GUID Subscription ID,
+	UNICODESTRING Channel,
+	ANSISTRING Query Hash
+	);
+

@@ -1,0 +1,158 @@
+ProviderNames:
+	Microsoft.Windows.TenantRestrictions.Plugin
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+PluginInit(
+	ANSISTRING NetworkStackName,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginShutdown(
+	ANSISTRING NetworkStackName,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginShutdown(
+	UINT64 PartA_PrivTags,
+	ANSISTRING NetworkStackName,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginInit(
+	UINT64 PartA_PrivTags,
+	ANSISTRING NetworkStackName,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginPolicyChanged(
+	UINT64 PartA_PrivTags,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginPolicyChanged(
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginAutoLogger(
+	ANSISTRING EventName,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+PluginAutoLogger(
+	UINT64 PartA_PrivTags,
+	ANSISTRING EventName,
+	HEXINT32 hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+ExpectedInvalidHandle(
+	ANSISTRING CallbackType,
+	ANSISTRING Operation,
+	UINT64 PartA_PrivTags
+	);
+
+TRRequestLogger(
+	NULL CallbackRequestCount,
+	NULL CallbackDurationTotal_us,
+	NULL CallbackDurationMin_us,
+	NULL CallbackDurationMax_us,
+	ANSISTRING EventName,
+	HRESULT hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber,
+	UINT64 PartA_PrivTags
+	);
+
+TRRequestLogger(
+	NULL CallbackRequestCount,
+	NULL CallbackDurationTotal_us,
+	NULL CallbackDurationMin_us,
+	NULL CallbackDurationMax_us,
+	ANSISTRING EventName,
+	HRESULT hr,
+	WIN32ERROR externalWin32Err,
+	ANSISTRING File,
+	UINT32 LineNumber
+	);
+
+HeaderOverwrite(
+	NULL InstanceCount,
+	UINT64 PartA_PrivTags
+	);
+
+HeaderOverwrite(
+	NULL InstanceCount
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

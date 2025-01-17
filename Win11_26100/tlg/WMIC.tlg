@@ -1,0 +1,15 @@
+ProviderNames:
+	Microsoft.Windows.WMIC.UsageStats
+
+
+
+**** Events *****
+WmicUsage(
+	UINT64 PartA_PrivTags,
+	UINT32 ParentProcID,
+	UNICODESTRING ParentProcName,
+	UINT32 ParentsParentProcID,
+	UNICODESTRING ParentsParentProcName,
+	UINT32 WmicUsageCount
+	);
+

@@ -1,0 +1,148 @@
+ProviderNames:
+	Microsoft.Windows.Shell.TextInput.InputPanel
+	Microsoft.Windows.Shell.TextInput.InputPanel
+
+
+
+**** Events *****
+ResultLoggingCallback(
+	UINT64 PartA_PrivTags,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureType,
+	INT32 failureCount,
+	UINT32 threadId,
+	HEXINT32 hr,
+	UNICODESTRING message,
+	ANSISTRING code,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType,
+	BOOLEAN InfoChanged,
+	DOUBLE RawDPI,
+	DOUBLE RawEffectiveDPI,
+	DOUBLE PhysicalMMPerViewPixel,
+	DOUBLE MonitorWidthRawPixels,
+	DOUBLE MonitorHeightRawPixels,
+	DOUBLE MonitorWidthMM,
+	DOUBLE MonitorHeightMM,
+	DOUBLE MonitorDiagonalInches
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE EffectiveMonitorDiagonalInches,
+	DOUBLE ScaleFactor
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE OverrideMonitorDiagonalInches,
+	DOUBLE ScaleFactor
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE RawEffectiveDpi
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE RawMonitorWidthInches,
+	DOUBLE RawMonitorHeightInches,
+	DOUBLE RawDpiX,
+	DOUBLE RawDpiY,
+	DOUBLE RawEffectiveDpi
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UINT32 ViewType
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType,
+	DOUBLE RawDPI
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING JapaneseKeyboardLayout
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN UseWinUI,
+	UNICODESTRING InputViewUri
+	);
+

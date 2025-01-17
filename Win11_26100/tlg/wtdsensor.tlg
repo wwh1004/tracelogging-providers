@@ -1,0 +1,66 @@
+ProviderNames:
+	Microsoft.OneCore.WebThreatDefense.Client.Sensor
+
+
+
+**** Events *****
+SensorRegistered(
+	UINT32 SensorId,
+	UINT32 FileHandle,
+	HEXINT32 Context
+	);
+
+SensorUnregistered(
+	HEXINT32 Context
+	);
+
+FreeSensorEvent(
+	HEXINT32 EventPacket
+	);
+
+AllocateSensorEvent(
+	HEXINT32 Context,
+	UINT16 EventId,
+	UINT32 DataSizeInB,
+	HEXINT32 EventPacket
+	);
+
+SensorUnregistrationError(
+	HEXINT32 Context,
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+SendEventError(
+	HEXINT32 Context,
+	HEXINT32 EventPacket,
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+SensorRegistrationError(
+	UINT32 SensorId,
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+SendEvent(
+	HEXINT32 Context,
+	HEXINT32 EventPacket,
+	UINT32 IoRequestsInProgress
+	);
+
+FreeSensorEventError(
+	HEXINT32 EventPacket,
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+
+AllocateSensorEventError(
+	HEXINT32 Context,
+	UINT16 EventId,
+	UINT32 DataSizeInB,
+	WIN32ERROR Error,
+	UINT64 PartA_PrivTags
+	);
+

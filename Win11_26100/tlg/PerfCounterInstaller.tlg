@@ -1,0 +1,107 @@
+ProviderNames:
+	Microsoft-Windows-Perflib
+
+
+
+**** Events *****
+CntrtextUnloadV2Provider(
+	UNICODESTRING Perflib,
+	UINT32 Status
+	);
+
+CntrtextUnInstallPerfDll-SetLastCounter(
+	UNICODESTRING Software,
+	UINT32 LastCounter,
+	UINT32 Status,
+	BOOLEAN Transacted
+	);
+
+CntrtextLoadV2Provider-End(
+	UINT32 Status
+	);
+
+CntrtextLoadV2Provider-SetLastCounter(
+	UNICODESTRING Perflib,
+	UINT32 LastCounter,
+	UINT32 Status,
+	BOOLEAN Transacted
+	);
+
+CntrtextLoadV2Provider-Begin(
+	UNICODESTRING RegKey
+	);
+
+CntrtextInstallPerfDll-SetLastCounter(
+	UNICODESTRING Software,
+	UINT32 LastCounter,
+	UINT32 Status,
+	BOOLEAN Transacted
+	);
+
+CntrtextQueryPerflibValue-Create-009(
+	UNICODESTRING Software,
+	UINT32 Status
+	);
+
+CntrtextQueryPerflibValue-Create-Perflib(
+	UNICODESTRING Software,
+	UINT32 Status
+	);
+
+CntrtextSavePerfDatRegistry-End(
+	ANSISTRING Reason,
+	UNICODESTRING Command,
+	UINT32 Status
+	);
+
+CntrtextSavePerfDatRegistry-Begin(
+	ANSISTRING Reason,
+	UNICODESTRING Command,
+	UINT32 Size
+	);
+
+CntrtextSavePerfDatFile-End(
+	ANSISTRING Reason,
+	HEX Type,
+	UINT32 Status
+	);
+
+CntrtextSavePerfDatFile-Begin(
+	ANSISTRING Reason,
+	HEX Type,
+	UINT32 Size
+	);
+
+CntrtextGetNames-Update-End-FailCreate(
+	UINT32 Status
+	);
+
+CntrtextGetNames-Update-End(
+	UINT32 Status
+	);
+
+CntrtextGetNames-Update-Rename(
+	UINT32 Status
+	);
+
+CntrtextGetNames-Update-RenameEx(
+	UINT32 Status
+	);
+
+CntrtextGetNames-Update-Flush(
+	UINT32 Status
+	);
+
+CntrtextGetNames-Update-WriteFile(
+	UINT32 Status
+	);
+
+CntrtextGetNames-Update-Begin(
+	UNICODESTRING Name,
+	UINT32 Size
+	);
+
+CntrtextGetNames-AddEmpty(
+	UNICODESTRING Name
+	);
+

@@ -1,0 +1,133 @@
+ProviderNames:
+	Microsoft.Windows.Shell.TextInput.InputPanel
+
+
+
+**** Events *****
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN deferring,
+	BOOLEAN IsRequestingModifierChangeDeferral
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState,
+	UNICODESTRING RequestedState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING NewState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState,
+	UNICODESTRING NewState,
+	BOOLEAN isUpdatingPointerHandlerRequired
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING type,
+	UNICODESTRING personality,
+	UINT32 modeStateCount
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING type,
+	UNICODESTRING personality,
+	INT32 modeStateCount
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState,
+	UNICODESTRING NewState,
+	UNICODESTRING TextInputKind,
+	UNICODESTRING ViewShowRequestInfoExperience,
+	BOOLEAN withXamlAnimation,
+	BOOLEAN animationsEnabled
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT totalViewHeight,
+	FLOAT paddingRowHeight,
+	FLOAT collapsedViewTableHeightBarHeight,
+	FLOAT collapsedViewBarHeight
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+

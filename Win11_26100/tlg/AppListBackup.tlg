@@ -1,0 +1,892 @@
+ProviderNames:
+	Microsoft.Windows.AppListBackup.AppListBackupImpl
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+BackupCompatJson_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING compatFilePath,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+BackupToggleOff(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 isEventDrivenBackup,
+	UINT64 PartA_PrivTags
+	);
+
+ParseCompatJson_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING compatFilePath,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+UnmappedAppsStats(
+	UNICODESTRING unmappedAppsInvalidRegKeyPathStr,
+	UNICODESTRING unmappedAppsNoAumidsStr,
+	UINT32 countMappedInstalledApps,
+	UINT32 countTotalInstalledApps,
+	FLOAT mappedPercentage,
+	UINT64 PartA_PrivTags
+	);
+
+ParseCompatJson_RetryError(
+	UNICODESTRING errorMessage,
+	UNICODESTRING compatFilePath,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+WriteLastCompatInfoBackupTime_Error(
+	UNICODESTRING errorMessage,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+BackupTileForAumid_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING aumid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+TileNotFoundForAumid_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING compatFilePath,
+	UNICODESTRING aumid,
+	UINT64 PartA_PrivTags
+	);
+
+TileBackupForInboxSkipped(
+	UNICODESTRING tileId,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceMetaData_ToggleOff(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 isEventDrivenBackup,
+	UINT64 PartA_PrivTags
+	);
+
+IncorrectAppType_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appType,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+BackupToggleOff(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+IsBackupEnabledCheck_Error(
+	UNICODESTRING errorMessage,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+BackupAllTiles_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING tileId,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+TileBackupSkippedNullPackageFamilyName(
+	UNICODESTRING tileId,
+	UINT64 PartA_PrivTags
+	);
+
+BackupAllTilesSkipped(
+	UNICODESTRING errorMessage,
+	UINT64 PartA_PrivTags
+	);
+
+DummyAppLevelIcon_Error(
+	UNICODESTRING tileId,
+	UNICODESTRING tileOperation,
+	UINT64 PartA_PrivTags
+	);
+
+NullPackageFullNameForTileInIsInboxTile(
+	UNICODESTRING tileId,
+	UINT64 PartA_PrivTags
+	);
+
+TileNotFound_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING tileId,
+	UNICODESTRING tileOperation,
+	UINT64 PartA_PrivTags
+	);
+
+GetWin32TilesAndTargetDirsAndExes(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+PopulateAppIconsAndLLT(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+AppIconTooLarge_Error(
+	UNICODESTRING errorMessage,
+	UINT64 size,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UNICODESTRING installSource,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+TileNotFoundForWin32List_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING detailedList,
+	UINT64 PartA_PrivTags
+	);
+
+PopulateAppIconsAndLLT_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+PopulateRemainingMetadataForDeltaApps(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+PopulateRemainingMetadataForDeltaApps_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+ComputeDeltas(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+NullAlloc_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING packageName,
+	UINT64 PartA_PrivTags
+	);
+
+PopulatePrelimWin32Metadata(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+Win32RegKey_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appName,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+GetWin32AppMetaData_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appName,
+	UINT32 error,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+PopulatePrelimMSIXMetedata(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+IncorrectDeploymentOperation_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING depolymentOperation,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+GetMSIXAppMetaData_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING packageName,
+	UINT32 error,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+MSIXPackageTypeCheck_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING packageName,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+MSIXInboxAppCheck_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING packageName,
+	UINT32 error,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerGetInstalledCatalog_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING packageFullName,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerCreateInstance_Error(
+	UNICODESTRING packageFullName,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerRegister_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerFind_Error(
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerCreationSkipped(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DeviceMetaData(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+DeviceMetaData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeviceMetaData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+BackupAppCompatInfo(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING CompatFilePath,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAppCompatInfo(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING CompatFilePath,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAppCompatInfo(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING CompatFilePath,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAppCompatInfo(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BackupAppCompatInfo(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+BackupAllTiles(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING List of Tiles backed up,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAllTiles(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING List of Tiles backed up,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAllTiles(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAllTiles(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BackupAllTiles(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+BackupTile(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Caller,
+	UNICODESTRING TileId,
+	UNICODESTRING TileOperation,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupTile(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BackupTile(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+BackupAppList(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN isFirstBackup,
+	UINT64 TotalBackedUpApps,
+	UNICODESTRING ListOfBackedUpApps,
+	UNICODESTRING ListOfFailedApps,
+	UINT64 TotalFailedApps,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAppList(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN isFirstBackup,
+	UINT64 TotalBackedUpApps,
+	UNICODESTRING ListOfBackedUpApps,
+	UNICODESTRING ListOfFailedApps,
+	UINT64 TotalFailedApps,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAppList(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING UserSid,
+	UNICODESTRING CorrelationVector,
+	BOOLEAN IsEventDrivenBackup
+	);
+
+BackupAppList(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BackupAppList(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+GetListOfInboxStoreApps_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING regKey,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+UnableToCreateManifestReader_Error(
+	INT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+UnableToOpenManifestFile_Error(
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+Win32IconRetrievalEarly_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+Win32IconRetrieval_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+TileNotFoundForMSIX_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UNICODESTRING aumid,
+	UINT64 PartA_PrivTags
+	);
+
+PopulateIsPinned_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appName,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+CorrelationVector_Error(
+	UNICODESTRING errorMessage,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+GetProfileIdsFromCDS_Error(
+	UNICODESTRING errorMessage,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+UploadAssetsForAppLevelTileToCheckIconChangeCompleted(
+	UNICODESTRING tileId,
+	UINT64 PartA_PrivTags
+	);
+
+RetrieveAppLevelIconAssetId_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING tileId,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+UploadAppLevelIconToCDS_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING tileId,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+GetLastBackupCompatInfos_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appName,
+	UNICODESTRING metaData,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceMetaData_CDSError(
+	UNICODESTRING errorMessage,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+GetLastBackupTiles(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+GetLastBackupTiles_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appName,
+	UNICODESTRING metaData,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+GetLastBackup(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+GetLastBackup_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appName,
+	UNICODESTRING metaData,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+UploadAppCompatInfoToCDS_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING programId,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+UploadIconToCDS_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+UploadMetadataToCDS_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	ANSISTRING __TlgCV__,
+	UINT64 PartA_PrivTags
+	);
+
+UploadMetadataToCDS(
+	UNICODESTRING message,
+	UINT64 PartA_PrivTags
+	);
+
+RetrieveIconAssetId_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING appId,
+	UNICODESTRING appName,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PopulateFromTile_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING tileId,
+	UNICODESTRING tileOperation,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceMetaData_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerGetWingetID_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerGetSparkID_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerUpdate_Error(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT32 error,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerUpdateCompleted(
+	UNICODESTRING message,
+	UINT32 majorVersion,
+	UINT32 minorVersion,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerCreateCompositePackageCatalogConnect_Error(
+	UNICODESTRING packageFullName,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+
+PackageManagerDeploymentInProgress(
+	UNICODESTRING errorMessage,
+	UNICODESTRING userSid,
+	UINT64 PartA_PrivTags
+	);
+

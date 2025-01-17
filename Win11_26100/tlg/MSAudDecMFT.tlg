@@ -1,0 +1,72 @@
+ProviderNames:
+	Microsoft.Windows.MediaFoundation.AACDec
+	Microsoft.Windows.MediaFoundation.AACDecoder
+
+
+
+**** Events *****
+Verbose(
+	GUID ContextId,
+	ANSISTRING Func,
+	UINT32 LineNum,
+	ANSISTRING Msg
+	);
+
+Info(
+	GUID ContextId,
+	ANSISTRING Func,
+	UINT32 LineNum,
+	ANSISTRING Msg
+	);
+
+Warning(
+	GUID ContextId,
+	ANSISTRING Func,
+	UINT32 LineNum,
+	ANSISTRING Msg
+	);
+
+Error(
+	GUID ContextId,
+	ANSISTRING Func,
+	UINT32 LineNum,
+	ANSISTRING Msg
+	);
+
+SampleRatesMismatch(
+	GUID MFMediaTelemetrySessionID,
+	UINT32 MFMediaTelemetrySessionInstance,
+	UINT32 WaveFormatSamplingRate,
+	UINT32 ASCSamplingRate,
+	UINT16 WaveFormatNumberChannels,
+	INT32 ASCChannelConfig,
+	UINT16 WaveFormatBitsPerSample,
+	UINT32 ASCAudioObjectType,
+	UINT32 ASCExtensionSamplingRate,
+	INT32 ASCSbr,
+	INT32 ASCPs,
+	UINT16 PayloadType,
+	UINT64 PartA_PrivTags
+	);
+
+Error(
+	GUID ContextId,
+	ANSISTRING Func,
+	UINT32 LineNum,
+	ANSISTRING Msg
+	);
+
+InvalidDecodedOutput(
+	GUID MFMediaTelemetrySessionID,
+	UINT32 MFMediaTelemetrySessionInstance,
+	UINT32 ErrorStatus,
+	UINT32 InputFrameCount,
+	UINT32 OutputFrameCount,
+	UINT32 InSamplesPerSec,
+	UINT32 OutSamplesPerSec,
+	UINT16 InNumChannels,
+	UINT16 OutNumChannels,
+	BINARY ASC,
+	UINT64 PartA_PrivTags
+	);
+

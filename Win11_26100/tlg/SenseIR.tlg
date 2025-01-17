@@ -1,0 +1,4425 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+	Microsoft.Windows.Sense.GeneratedETW
+	Microsoft.Windows.Sense.CollectionEtw
+	Microsoft.Windows.SenseComponent.GeneratedETW
+
+
+
+**** Events *****
+SenseIR(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseIRMainActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING modeIdentifier
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	HRESULT hr
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING key
+	);
+
+SenseIR(
+	ANSISTRING message
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 result
+	);
+
+CommandId(
+	UNICODESTRING commandID
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 maxCommandExecutionInMilliseconds
+	);
+
+SenseIRMainActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIRMainActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseIR(
+	ANSISTRING message
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 VerifyParentProcess,
+	BOOLEAN IsCurrentProcessProtected
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message,
+	INT32 argc
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 GetLastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING imageFileName
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING RealExePath,
+	UNICODESTRING ExpectedOriginalFilename
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING ExePath,
+	UNICODESTRING CommandLine,
+	BOOL32 Restricted,
+	BOOLEAN disableSenseSid,
+	BOOLEAN disablePrivileges,
+	BOOL32 CheckCertificates,
+	BOOLEAN RunAsPPL,
+	UNICODESTRING CustomOriginalFilename,
+	BOOLEAN disableDynamicCode,
+	UNICODESTRING effectiveCurrentDirectory,
+	BOOLEAN allowOnlyMSSignedBinaries,
+	BOOLEAN restrictChildProcessesCreation,
+	BOOLEAN restrictWin32Calls,
+	BOOLEAN breakawayFromJob,
+	BOOLEAN trustMicrosoftTestRoot
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING realExePath.c_str()
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING OriginalFilename,
+	UNICODESTRING expected
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 policy
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 Size,
+	ANSISTRING Data
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 samplingRate,
+	BOOLEAN ReportOptics,
+	UINT32 statisticPeriod
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+InternalOpticsCompressedEvent(
+	ANSISTRING Data
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING input,
+	UINT32 HResult
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING windowsDefenderKeyPath,
+	UNICODESTRING windowsDefenderInstallLocationValueName
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING windowsDefenderEngineInstallLocationKeyPath,
+	UNICODESTRING windowsDefenderEngineInstallLocationValueName
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING modulePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING commandLine,
+	WIN32ERROR WinErr
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	INT32 err,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING driveRoot
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 errorCode,
+	UNICODESTRING systemName,
+	UNICODESTRING accountName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR err
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sidStr,
+	BOOL32 storeAccountWithoutToken
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 ProcessId,
+	WIN32ERROR Win32Error
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING domainNameStr,
+	UNICODESTRING accountName,
+	UNICODESTRING sidAsString
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 errorCode
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR Win32Error
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sidStr,
+	UNICODESTRING processSidStr,
+	BOOL32 storeAccountWithoutToken
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 processId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId,
+	UINT32 Win32Err
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING parameterName
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 processId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId,
+	BOOLEAN isProcessQueriedWithLimitiedInformation
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId,
+	UNICODESTRING parameterName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId,
+	UINT32 errorCode
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 processId,
+	UINT32 errorCode
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	INT32 status
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 lastWin32Error
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING nativePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HEXINT64 File handle,
+	UINT32 Win32Error
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING FilePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sourceFilePath,
+	UNICODESTRING targetFilePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sourceFolder,
+	UNICODESTRING pattern,
+	UNICODESTRING targetFolder
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR err
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	NTSTATUS ntStatus
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sourceFilePath,
+	UNICODESTRING targetFilePath,
+	WIN32ERROR WinError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	UINT32 Access rights,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HEXINT64 Original File handle,
+	INT32 hresult,
+	INT32 ioStatusBlockStatus,
+	INT32 status
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileNativePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING SID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sourceFolder,
+	UNICODESTRING pattern,
+	WIN32ERROR WinError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING sourceFolder,
+	UNICODESTRING fileName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HEXINT64 Original File handle
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HEXINT64 Original File handle,
+	INT32 ioStatusBlock,
+	INT32 ntStatus
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileNativePath,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FixedNativePath,
+	UNICODESTRING NnativePath,
+	HRESULT HResult
+	);
+
+SenseCyberCommon(
+	UNICODESTRING message,
+	UNICODESTRING shellLinkFilepath,
+	UNICODESTRING fullPath,
+	UNICODESTRING commandLine,
+	UNICODESTRING description,
+	UNICODESTRING iconPath,
+	UNICODESTRING workingDirectory,
+	INT32 showCommand,
+	BOOLEAN runAsAdmin,
+	UINT64 creationTimeUTC,
+	UINT64 accessTimeUTC,
+	UINT64 writeTimeUTC
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 impersonate.ImpersonationStatus(),
+	UNICODESTRING nativePath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT32 defaultValue
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 Revision
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING Property,
+	WIN32ERROR WinError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT8 s_utcType
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT32 defaultValue
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING Path,
+	UNICODESTRING ValueName
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 diskExtents
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING errorCode,
+	INT32 message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING drivePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 diskNumber
+	);
+
+StorageVolumeInformation(
+	UINT8 status,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId,
+	UNICODESTRING DeviceID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	STRING drive
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UINT32 deviceDescriptorSize
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING DeviceParentId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UNICODESTRING propName,
+	UINT64 bufferSize,
+	UINT32 offset
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING regexString.c_str(),
+	BOOLEAN caseSensitive
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 Bytes to read,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	INT32 hr
+	);
+
+RequestCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 totalRequests,
+	UINT64 successfulRequests
+	);
+
+OplockCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 totalOplockBreaks,
+	UINT64 totalFailuresDueToOplockBreaks
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	INT32 hr
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	ANSISTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING type,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	ANSISTRING message,
+	UNICODESTRING Action,
+	ANSISTRING component
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING value
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING valueName,
+	UINT32 value
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 hr
+	);
+
+ResumeAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING commandId,
+	BOOLEAN powerRequestReturnValue,
+	INT32 hr
+	);
+
+ResumeAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING commandId
+	);
+
+ResumeAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING commandId,
+	BOOLEAN powerRequestReturnValue,
+	INT32 hr
+	);
+
+ResumeAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SuspendAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING commandId,
+	BOOLEAN powerRequestReturnValue,
+	INT32 hr
+	);
+
+ResumeAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SuspendAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING commandId,
+	BOOLEAN powerRequestReturnValue,
+	INT32 hr
+	);
+
+SuspendAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING commandId
+	);
+
+SuspendAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SuspendAutomaticSleepActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIR(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+SenseIR(
+	ANSISTRING message
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 status
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT64 NumOfActions
+	);
+
+SenseIR(
+	ANSISTRING message,
+	WIN32ERROR GetLastError()
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT64 pipeHandleAddress,
+	UNICODESTRING commandId,
+	UNICODESTRING orgId,
+	UINT32 enableSleepSuspension,
+	UNICODESTRING runPsScriptActionConfig,
+	UNICODESTRING downloadFileActionConfig,
+	UNICODESTRING downloadTrustedCertificatesChainsConfig,
+	UINT32 m_maxWaitForNewActionsInMs,
+	UINT32 m_pollingIntervalInMs,
+	UINT32 m_waitStopProcessThreadInMs,
+	UINT32 c_maxWaitWithoutConnectionInMs
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING commandId,
+	UNICODESTRING airsUrl,
+	UNICODESTRING azureTrustedCertificatesChainsEncodedStr,
+	UNICODESTRING orgId,
+	UINT32 enableSleepSuspension,
+	UNICODESTRING runPsScriptActionConfig,
+	UNICODESTRING downloadFileActionConfig,
+	UNICODESTRING downloadTrustedCertificatesChainsConfig,
+	BOOLEAN trustMicrosoftTestRoot
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	HRESULT result
+	);
+
+ProgressUpdate(
+	INT32 progress
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	ANSISTRING actionType,
+	UINT64 durationInMs
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	ANSISTRING actionType,
+	UINT64 durationInMs,
+	HRESULT hr
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING actionId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	ANSISTRING actionType,
+	INT32 ActionProviderPriority
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	ANSISTRING actionType
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	UINT32 timeout
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	UINT32 progress
+	);
+
+ExecuteActionActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING modeIdentifier,
+	ANSISTRING actionId,
+	ANSISTRING actionType
+	);
+
+ExecuteActionActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ExecuteActionActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UnexpectedConfiguration(
+	UNICODESTRING fieldName,
+	UNICODESTRING responseBody
+	);
+
+GetProcessTimesFailed(
+	UINT32 lastError
+	);
+
+AirsHttpClient(
+	ANSISTRING message,
+	UNICODESTRING headerName,
+	UNICODESTRING value
+	);
+
+AirsHttpClient(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING valueName
+	);
+
+AirsHttpClient(
+	ANSISTRING message,
+	UNICODESTRING sasUrl
+	);
+
+AirsHttpClient(
+	ANSISTRING message,
+	UNICODESTRING body
+	);
+
+AirsHttpClient(
+	ANSISTRING message,
+	UNICODESTRING value
+	);
+
+AirsHttpClient(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING value,
+	INT32 type
+	);
+
+AirsHttpClient(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING requestDescription
+	);
+
+AirsHttpClient(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING requestDescription,
+	ANSISTRING message
+	);
+
+AirsHttpClient(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING requestDescription,
+	UINT32 Error code
+	);
+
+AirsHttpClient(
+	ANSISTRING message
+	);
+
+AirsHttpClient(
+	UINT32 errorCode,
+	ANSISTRING message
+	);
+
+AirsHttpClient(
+	ANSISTRING message,
+	UNICODESTRING m_orgId,
+	UNICODESTRING m_machineId,
+	UNICODESTRING m_senseIrVersion,
+	UNICODESTRING m_wdEngineVersion
+	);
+
+RegistrationActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+RegistrationActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RegistrationActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING commandID
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 m_maxNewActiosWaitTimeInMs
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING message
+	);
+
+SenseIR(
+	ANSISTRING message,
+	HRESULT hr
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 m_maxNoConnectionWaitTimeInMs,
+	INT64 noConnectionTimeInMs
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING type
+	);
+
+SenseIR(
+	UNICODESTRING errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 bytesRead
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR GetLastError
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 m_maxNewActiosWaitTimeInMs,
+	INT64 noNewActionsTimeInMs
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT64 m_requestsPipe,
+	UINT32 bytesRead
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 error,
+	HEXINT64 handle
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING completeMessage
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message,
+	ANSISTRING exception,
+	UNICODESTRING completeMessage
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING message
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING partialRequest
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING truncatedRequest
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING type
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	UNICODESTRING responseType,
+	UINT64 origLength
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING actionId,
+	UNICODESTRING responseType,
+	UNICODESTRING responseJson
+	);
+
+ResponseReceived(
+	UNICODESTRING actionId,
+	UNICODESTRING responseType,
+	UNICODESTRING responseJson
+	);
+
+ActionFailed(
+	UNICODESTRING actionId,
+	INT32 actionHr
+	);
+
+TruncatedResponse(
+	UINT64 origLength
+	);
+
+WriteResponseETWActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	ANSISTRING actionId,
+	ANSISTRING responseType
+	);
+
+WriteResponseETWActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+WriteResponseETWActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	INT32 maxThreads
+	);
+
+SenseIR(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	ANSISTRING type
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message,
+	ANSISTRING message
+	);
+
+ActionAdapterExecuteSafeActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING actionId
+	);
+
+ActionAdapterExecuteSafeActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActionAdapterExecuteSafeActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING account.first->userName,
+	UNICODESTRING account.first->domainName,
+	UINT32 impersonate.ImpersonationStatus()
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING account->first.userName,
+	UNICODESTRING account->first.domainName,
+	INT32 hr
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING drive,
+	BOOLEAN isNtfs
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UINT64 size,
+	UINT64 maxFileSizeInBytes
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	INT32 hr
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseIR(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING proxyUrl,
+	UNICODESTRING azureTrustedCertificatesChainsStr,
+	UINT32 timeout
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING proxyUrl,
+	UNICODESTRING azureTrustedCertificatesChainsStr,
+	BOOLEAN allowRawDriveAccess,
+	UINT64 maxFileSizeBytes,
+	UINT32 timeout
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING link,
+	WIN32ERROR Win32Error
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT16 CompressionLevel,
+	UNICODESTRING filePath,
+	UNICODESTRING sasUrl,
+	UNICODESTRING temporaryFileName,
+	BOOLEAN allowRawDriveAccess,
+	UINT64 maxFileSize
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	WIN32ERROR WinError
+	);
+
+DriveAccessActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DriveAccessActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING path,
+	BOOLEAN rawDriveAccess
+	);
+
+DriveAccessActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING scheme,
+	UNICODESTRING key,
+	UNICODESTRING sha1,
+	UINT32 scanOptionsFlagsForWD,
+	UINT32 signatureOptionsFlagsForWD,
+	UINT32 scanTimeoutInMilliseconds,
+	UINT32 cleanTimeoutInMilliseconds,
+	BOOLEAN disableFpChecks,
+	BOOLEAN scanContentHash,
+	INT32 threatAction
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 Hresult,
+	UNICODESTRING scheme,
+	UNICODESTRING key,
+	UNICODESTRING sha1,
+	UINT32 scanOptionsFlagsForWD,
+	UINT32 scanTimeoutInMilliseconds,
+	UINT32 cleanTimeoutInMilliseconds,
+	BOOLEAN disableFpChecks,
+	BOOLEAN scanContentHash
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 scanOptionsFlagsForWD,
+	UINT32 scanTimeoutInMilliseconds,
+	UINT32 cleanTimeoutInMilliseconds,
+	BOOLEAN disableFpChecks
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 Hresult,
+	UINT32 scanOptionsFlagsForWD,
+	UINT32 scanTimeoutInMilliseconds,
+	UINT32 cleanTimeoutInMilliseconds,
+	BOOLEAN disableFpChecks
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	INT32 lastError
+	);
+
+SenseIR(
+	UNICODESTRING message
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING sasUrl,
+	UNICODESTRING fileName,
+	BOOLEAN overrideIfExists,
+	BOOLEAN clearFileAfterReboot
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	INT32 c_fileSizeLimitDefaultValue
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING sasUrl,
+	UNICODESTRING fileName
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING sasUrl,
+	UNICODESTRING fileName,
+	BOOLEAN overrideIfExists,
+	BOOLEAN clearFileAfterReboot,
+	INT32 hresult
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	BOOLEAN c_actionEnabledDefaultValue
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING sasUrl,
+	UINT64 maxFileSize,
+	BOOLEAN shouldCompress,
+	INT16 CompressionLevel,
+	BOOLEAN allowRawDriveAccess
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT32 ProcessId,
+	UINT64 ProcessStartTime,
+	BOOLEAN FillZeroesInaccessibleMemory,
+	BOOLEAN collectModuleMemoryInfos,
+	UINT64 minimalRegionSizeInBytes,
+	UINT64 numberOfBlocks,
+	INT32 hashAlgorithm,
+	BOOLEAN zeroedRelocationData,
+	UINT64 numberOfCharactersToTakeFromHash
+	);
+
+ReadProcessMemoryContentHashesActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ReadProcessMemoryContentHashesActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ReadProcessMemoryContentHashesActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING actionId,
+	UINT32 processId,
+	UINT64 processStartTime
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING relativeMpCmdRunFilePath,
+	UNICODESTRING mpCmdRunCommandParameters,
+	UINT32 timeoutInSeconds,
+	UNICODESTRING sasUrl,
+	BOOLEAN shouldUploadSupportLogs,
+	UNICODESTRING relativeSupportLogsFilePath,
+	UINT64 supportLogsMaxSize
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING cmd,
+	UNICODESTRING outputFile,
+	UINT32 exceptionCode,
+	INT32 hresult,
+	UNICODESTRING errorMessage
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING cmd,
+	UNICODESTRING outputFile,
+	INT32 errorCode,
+	UNICODESTRING errorMessage
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 pid,
+	UNICODESTRING szExeFile
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 pid
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING relativeMpCmdRunFilePath,
+	UNICODESTRING mpCmdRunCommandParameters,
+	UINT32 timeoutInSeconds,
+	UNICODESTRING sasUrl,
+	BOOLEAN shouldUploadSupportLogs,
+	UNICODESTRING relativeSupportLogsFilePath,
+	UINT64 supportLogsMaxSize,
+	UNICODESTRING outputFile,
+	UNICODESTRING cmd
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	INT32 hresult
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	BOOLEAN isDirectory
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	BOOLEAN isDirectory,
+	BOOLEAN exists
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UINT64 Paths found count
+	);
+
+SenseIR(
+	ANSISTRING message,
+	BOOLEAN AllowRawDriveAccess,
+	UINT32 MaxPathDepth
+	);
+
+DriveAccessEnumerationActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN allowRawDriveAccess
+	);
+
+DriveAccessEnumerationActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DriveAccessEnumerationActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	BOOLEAN PeOnly,
+	BOOLEAN IsMicrosoftInternal,
+	UINT64 MaxFileSizeInMb,
+	BOOLEAN RetryIfHashMissing,
+	BOOLEAN AllowRawDriveAccess
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 Hresult
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 identifierType,
+	UINT32 processId,
+	UINT64 processStartTime,
+	UNICODESTRING processName
+	);
+
+SenseIR(
+	ANSISTRING message,
+	BOOLEAN collectSuspiciousModules,
+	UINT64 minimalRegionSizeInBytes,
+	UINT64 numberOfBlocks,
+	INT32 hashAlgorithm,
+	BOOLEAN zeroedRelocationData,
+	UINT64 numberOfCharactersToTakeFromHash,
+	UINT64 minimumScoreDifference,
+	BOOLEAN collectSuspiciousModuleMemoryInfos,
+	BOOLEAN collectSuspectedMemoryRegions,
+	BOOLEAN collectHashesForSuspiciousModules,
+	BOOLEAN collectHashesForSuspectedMemoryRegions,
+	UINT64 relocationAdditionForSuspectedMemoryRegionsInBytes,
+	INT32 processFilterType,
+	BOOLEAN isEmptyDamPEConfigurationItems,
+	BOOLEAN isEmptyProcessFilters
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING remoteAddress,
+	INT64 timeoutInSeconds,
+	BOOLEAN ignorePseudoProcess
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 Hresult,
+	UNICODESTRING remoteAddress,
+	INT64 timeoutInSeconds
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING fileSha1,
+	UINT32 scanOptionsFlagsForWD,
+	UINT32 signatureOptionsFlagsForWD,
+	UINT32 scanTimeoutInMilliseconds,
+	BOOLEAN disableFpChecks,
+	BOOLEAN scanContentHash,
+	INT32 threatAction
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 Hresult,
+	UNICODESTRING filePath,
+	UNICODESTRING fileSha1,
+	UINT32 scanOptionsFlagsForWD,
+	UINT32 scanTimeoutInMilliseconds,
+	BOOLEAN disableFpChecks,
+	BOOLEAN scanContentHash
+	);
+
+SenseIR(
+	ANSISTRING message,
+	BOOLEAN ignorePseudoProcess,
+	BOOLEAN fetchIPV6Connections
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING EngineVersion
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 Hresult,
+	FILETIME startTimeAsFileTime,
+	FILETIME endTimeAsFileTime
+	);
+
+SenseIR(
+	ANSISTRING message,
+	FILETIME startTimeAsFileTime,
+	FILETIME endTimeAsFileTime
+	);
+
+SenseIR(
+	ANSISTRING message,
+	FILETIME startTimeAsFileTime
+	);
+
+SenseIR(
+	ANSISTRING message,
+	WIN32ERROR InType
+	);
+
+SenseIR(
+	ANSISTRING message,
+	WIN32ERROR error
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING outputFilePath
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING logFileName,
+	WIN32ERROR error
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING targetFolderName,
+	WIN32ERROR WinError
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING sourceFolderName,
+	UNICODESTRING targetFolderName
+	);
+
+ActionExecutionActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 hr,
+	UINT64 executionTimeInSeconds
+	);
+
+ActionExecutionActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 hr,
+	UINT64 executionTimeInSeconds
+	);
+
+ActionExecutionActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING actionName,
+	UNICODESTRING actionId
+	);
+
+ActionExecutionActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActionExecutionActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING scheme,
+	UNICODESTRING key,
+	UNICODESTRING quarantineGuid
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING scheme,
+	UNICODESTRING key,
+	UNICODESTRING quarantineGuid
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING configName,
+	BOOLEAN defaultValue
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	BOOLEAN defaultValue
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	ANSISTRING actionId,
+	BOOLEAN shouldVerifyTrustedPublisher,
+	BOOLEAN verifyFileMicrosoftRooted
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message,
+	ANSISTRING actionId,
+	BOOLEAN shouldVerifyTrustedPublisher,
+	BOOLEAN verifyFileMicrosoftRooted
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	HRESULT hr
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING stderrFile
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING outputFile
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UINT64 maxSizeInBytes,
+	UINT64 fileSize,
+	UINT64 bytesToRead,
+	UINT64 fileContent.size()
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING c.what(),
+	UNICODESTRING filePath
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	UINT32 exitCode
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	INT32 errorCode,
+	UNICODESTRING errorMessage
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	UINT32 exceptionCode,
+	INT32 hresult,
+	UNICODESTRING errorMessage
+	);
+
+SenseIR(
+	ANSISTRING message,
+	HRESULT hr,
+	INT64 RunAsService
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING Id
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	HRESULT downloadHr
+	);
+
+SenseIR(
+	ANSISTRING message,
+	INT32 actionPhase,
+	UNICODESTRING actionPhaseStr,
+	INT32 HResult
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId
+	);
+
+SenseIR(
+	ANSISTRING message,
+	ANSISTRING actionId,
+	INT32 scriptSource,
+	UNICODESTRING scriptId,
+	UINT64 scriptContent.size(),
+	UNICODESTRING scriptFilePath,
+	UNICODESTRING scriptSasUrl,
+	UNICODESTRING transcriptSasUrl,
+	UNICODESTRING scriptParameters,
+	UNICODESTRING scriptSha256,
+	BOOLEAN shouldValidatePSScriptSignature,
+	BOOLEAN ShouldValidateMSSigned,
+	INT32 outputEncoding,
+	UNICODESTRING workingDir
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Path
+	);
+
+SenseIR(
+	ANSISTRING errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Path
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	ANSISTRING Path
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 GetLastError
+	);
+
+SenseIR(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UINT64 startAddress
+	);
+
+SenseIR(
+	UINT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING moduleInfo.path,
+	UNICODESTRING account->first.userName,
+	UNICODESTRING account->first.domainName,
+	INT32 hr
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING moduleInfo.path,
+	UNICODESTRING account.first->userName,
+	UNICODESTRING account.first->domainName,
+	UINT32 impersonate.ImpersonationStatus()
+	);
+
+SenseIR(
+	UNICODESTRING message
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING remoteAddress
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 pid
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING processName
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 pid
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 pid,
+	INT32 errorCode
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 pid,
+	UINT64 actualProcessCreationTime,
+	UINT64 processFilter.processStartTime
+	);
+
+SenseIR(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 pid
+	);
+
+GetModuleMemoryInfoActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING actionId
+	);
+
+GetModuleMemoryInfoActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetModuleMemoryInfoActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 dwNumEntries
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 Address,
+	INT32 Status
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT8 Address,
+	INT32 Status
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 serviceNameType
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 systemTimeType
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	ANSISTRING exception
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 imagePathType
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 userIDType
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 numberOfEvents
+	);
+
+FailedProcessingFile(
+	INT32 hr
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING dropDirectory
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING dropDirectory,
+	HRESULT hr
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING usersFolder
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING startupFolder
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING startupFolder,
+	HRESULT hr
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING keyName,
+	UNICODESTRING valueName
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	HRESULT hr
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING fullPath
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING fullPath,
+	UNICODESTRING valueName,
+	INT32 hresult
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING commandLine,
+	UNICODESTRING registryPersistenceMetadata.regPath,
+	UNICODESTRING registryPersistenceMetadata.displayName,
+	UNICODESTRING registryPersistenceMetadata.category,
+	UNICODESTRING registryPersistenceMetadata.valueName,
+	UNICODESTRING registryPersistenceMetadata.clsIdPath,
+	UINT32 registryPersistenceMetadata.valueType,
+	INT32 registryPersistenceMetadata.hr,
+	UINT32 registryPersistenceMetadata.accessMask
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UINT8 pattern.Formatter
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UINT8 pattern.Filter
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UINT8 pattern.Iterator
+	);
+
+SenseIR(
+	ANSISTRING message,
+	UNICODESTRING path
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING path
+	);
+
+SenseIR(
+	INT32 errorCode,
+	ANSISTRING message,
+	UINT8 root
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING input preScriptCommand,
+	UNICODESTRING preScriptCommands
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING preScriptCommands
+	);
+
+RunPowerShell(
+	ANSISTRING message
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING transcriptFilePath
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING cmd,
+	UNICODESTRING outputFile,
+	UNICODESTRING stderrFile,
+	UNICODESTRING workingDir,
+	UINT32 timeoutInSeconds,
+	BOOLEAN shouldValidatePSScriptSignature,
+	BOOLEAN shouldDisablePrivilages,
+	BOOLEAN shouldRunInAJob,
+	UINT32 cpuLimitRate,
+	UINT32 memoryLimitInMB
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	HRESULT HResult,
+	UINT32 pid
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UINT32 pid,
+	UINT64 numberOfHandles
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	BOOLEAN allowRawDriveAccess,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertificateChain,
+	UINT32 timeout
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING jsonException
+	);
+
+UploadFailed(
+	INT32 hr,
+	UNICODESTRING errorMsg
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING argumentException
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertificateChain,
+	UINT32 timeout,
+	INT32 hresult
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertificateChain,
+	UINT32 timeout
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	HRESULT hr
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UINT32 errorCode
+	);
+
+UploaderActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath,
+	BOOLEAN allowRawDriveAccess,
+	UNICODESTRING proxyServer,
+	UNICODESTRING trustedCertificateChain,
+	UINT32 timeout,
+	INT32 hresult
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UploadTimedOut(
+	VOID
+	);
+
+UploaderActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UploaderActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING operation,
+	UNICODESTRING urlHost,
+	UNICODESTRING urlPath
+	);
+
+StreamUploader(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING resultException
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+StreamUploader(
+	ANSISTRING message,
+	INT32 status,
+	INT32 errorCode
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	DOUBLE Upload time in seconds,
+	DOUBLE Kbps
+	);
+
+FileSize(
+	UINT64 fileSize
+	);
+
+StreamUploader(
+	ANSISTRING errorCode,
+	INT32 message
+	);
+
+UploadCancelled(
+	INT32 hr,
+	UNICODESTRING errorMsg
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UINT16 Response code,
+	UNICODESTRING Message body
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	BOOLEAN useProxy
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	INT32 status,
+	UNICODESTRING statusDescription,
+	UINT16 uploadProgress,
+	INT32 errorCode
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UINT64 remainingBytes,
+	UINT64 goodBlocks.size()
+	);
+
+UploadSucceeded(
+	UINT64 bytesUploaded
+	);
+
+StreamUploader(
+	UNICODESTRING message
+	);
+
+StreamUploader(
+	ANSISTRING errorCode,
+	INT32 message,
+	ANSISTRING exp message
+	);
+
+UploadDiscontinued(
+	INT32 hr,
+	UNICODESTRING errorMsg
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	INT32 exceptionErrorCode,
+	UNICODESTRING exceptionDesc
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UINT64 remainingBytes
+	);
+
+StreamUploader(
+	UNICODESTRING message,
+	UNICODESTRING blockId,
+	UINT32 bytesSent,
+	UINT64 remainingBytes
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	UINT32 lastError
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	UINT32 compressedHeaderSize,
+	UINT32 byteWritten,
+	UINT32 lastError
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	UINT32 compressedHeaderSize,
+	UINT32 lastError
+	);
+
+SampleCacheAgent(
+	INT32 errorCode,
+	UNICODESTRING message,
+	INT16 sampleCompressionType
+	);
+
+SampleCacheAgent(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	UNICODESTRING compressedFileName,
+	INT32 errno,
+	ANSISTRING strerror
+	);
+
+SampleCacheAgent(
+	ANSISTRING message,
+	UNICODESTRING compressedFileName,
+	UINT64 compressedFileSize
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	INT32 lastError
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	UNICODESTRING inputFileName,
+	UINT64 inputFileSize,
+	UINT64 maxAllowedFileSize
+	);
+
+SampleCacheAgent(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING inputFileName
+	);
+
+SampleCacheAgent(
+	ANSISTRING message,
+	UNICODESTRING inputFileName,
+	UNICODESTRING compressedFileName,
+	INT16 sampleCompressionType,
+	BOOLEAN allowRawDriveAccess,
+	UINT64 maxAllowedFileSize
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	UNICODESTRING compressedFileName,
+	UINT32 lastError
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	INT32 gzErrnum,
+	ANSISTRING gzError,
+	INT32 gzErrnum,
+	INT32 errno,
+	UNICODESTRING compressedFileName,
+	UINT64 compressedFileSize,
+	UNICODESTRING inputFileName,
+	UINT64 inputFileSize
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	ANSISTRING gzerror,
+	INT32 gzErrnum,
+	INT32 errno,
+	UNICODESTRING compressedFileName
+	);
+
+SampleCacheAgent(
+	UNICODESTRING message,
+	ANSISTRING gzerror,
+	INT32 gzErrnum,
+	INT32 errno,
+	UINT32 bytesRead,
+	INT32 bytesWritten,
+	UINT64 uncompressedOffset,
+	UNICODESTRING compressedFileName,
+	UNICODESTRING inputFileName
+	);
+
+SampleCacheAgent(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT64 uncompressedOffset,
+	UNICODESTRING inputFileName
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	INT8 JoinType
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UNICODESTRING AadUserUpn,
+	UNICODESTRING AadUserId,
+	UNICODESTRING edlpAadUserUpn,
+	UNICODESTRING edlpAadUserId,
+	INT8 UpnSource
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	ANSISTRING Error
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UNICODESTRING edlpAadUserUpn,
+	UNICODESTRING edlpAadUserId,
+	INT8 UpnSource
+	);
+
+CyberData(
+	UNICODESTRING message,
+	INT32 HRESULT
+	);
+
+CyberData(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+CyberData(
+	UNICODESTRING message
+	);
+
+CyberData(
+	UNICODESTRING message
+	);
+
+CyberData(
+	UNICODESTRING message,
+	ANSISTRING Error,
+	INT32 HRESULT,
+	UNICODESTRING UserSid
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UPN
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UINT32 ImpersonationStatus
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING accountSid
+	);
+
+CyberData(
+	UNICODESTRING message,
+	INT8 JoinType
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UNICODESTRING AadUserUpn,
+	UNICODESTRING AadUserTenant,
+	UNICODESTRING AadUserId,
+	INT8 JoinType,
+	UNICODESTRING edlpAadUserUpn,
+	UNICODESTRING edlpAadUserId,
+	INT8 UpnSource
+	);
+
+DLP(
+	UNICODESTRING message,
+	UINT32 CurrentUpnStatus,
+	INT32 UpnStatusToCheck,
+	BOOL32 IsBadUpnStatusFoundInCache
+	);
+
+RegistryReadErrorEvent(
+	UNICODESTRING valueName,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName
+	);
+
+Configuration(
+	ANSISTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UNICODESTRING value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UNICODESTRING value
+	);
+
+SenseCyberCommon(
+	UNICODESTRING message,
+	UNICODESTRING proxyServer
+	);
+
+Streamer(
+	ANSISTRING message,
+	UNICODESTRING m_filePath,
+	INT32 errorCode
+	);
+
+Streamer(
+	ANSISTRING message,
+	UNICODESTRING m_filePath,
+	UINT32 errorCode
+	);
+
+Streamer(
+	ANSISTRING message,
+	UNICODESTRING m_filePath
+	);
+
+SenseIR(
+	UNICODESTRING message,
+	UNICODESTRING inputFileName,
+	UINT32 impersonate.ImpersonationStatus()
+	);
+
+SenseHttpClient(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UINT64 fileSizeBytes,
+	INT32 fileSizeLimitBytes
+	);
+
+SenseCommands(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	BOOLEAN HasProxyConfiguration,
+	UNICODESTRING ProxyURL,
+	BOOLEAN ShouldTryWithStaticProxyFirst
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	UINT16 statusCode,
+	UNICODESTRING header_server
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	INT32 WebHttpErrorCode,
+	ANSISTRING Exception
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING base_uri,
+	UNICODESTRING request_uri_path,
+	UNICODESTRING request_uri_query
+	);
+
+SenseHttpClient(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING path,
+	INT32 hr
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	INT32 errorcode,
+	ANSISTRING http_message,
+	BOOLEAN shouldRetry
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	UINT16 statuscode,
+	UNICODESTRING http_message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	BOOLEAN shouldUseProxy,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	INT32 Error code,
+	BOOLEAN shouldUseProxy,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING serviceBaseUrl,
+	UNICODESTRING requestPath,
+	UNICODESTRING m_proxyUrl,
+	INT64 timeout in seconds
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	BOOLEAN params.checkApplicationRoot,
+	BOOLEAN params.trustMicrosoftTestRoot,
+	BOOLEAN isOfficialBuild,
+	BOOLEAN trustMicrosoftTestRootOverrideByConfig
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING full file name,
+	HEXINT32 hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	BOOLEAN trustMicrosoftTestRootOverrideByConfig
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING full file name,
+	BOOLEAN trust only Microsoft Rooted,
+	BOOLEAN trust only cert from trusted publisher store,
+	INT32 result
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 crtIndex
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UINT32 crtIndex
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	BOOLEAN s_trustMicrosoftTestRootConfig
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING File,
+	WIN32ERROR ::GetLastError()
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	HEXINT32 hr,
+	UNICODESTRING win32Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING File,
+	UINT64 decodedDistPointsSize,
+	WIN32ERROR ::GetLastError()
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT hrEnumerateCatalogs
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING originalSha1,
+	UNICODESTRING currentSha1,
+	UNICODESTRING win32Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING File,
+	UINT32 decodedDistPointsSize,
+	WIN32ERROR ::GetLastError()
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 acceptMSTestRootMode
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING storeName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING storeName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING storeName
+	);
+
+Exclusion(
+	ANSISTRING message,
+	UNICODESTRING paths
+	);
+
+Exclusion(
+	ANSISTRING message,
+	UNICODESTRING extensions
+	);
+
+Exclusion(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING processName,
+	UNICODESTRING processImagePath
+	);
+
+Exclusion(
+	UNICODESTRING message,
+	UNICODESTRING InitiatingProcessName,
+	UNICODESTRING InitiatingProcessPath,
+	UNICODESTRING PredecessorPocessName,
+	UNICODESTRING PredecessorProcessImagePath
+	);
+
+Exclusion(
+	UNICODESTRING message,
+	BOOLEAN enableExclusions
+	);
+
+Exclusion(
+	ANSISTRING message,
+	UNICODESTRING PredecessorProcess
+	);
+
+Exclusion(
+	ANSISTRING message,
+	UNICODESTRING processes
+	);
+
+SensePerformance(
+	ANSISTRING message,
+	UINT32 samplingIntervalInSeconds,
+	UNICODESTRING monitorName
+	);
+
+SensePerformance(
+	ANSISTRING message
+	);
+
+SensePerformance(
+	ANSISTRING message,
+	UINT32 samplingIntervalInSeconds
+	);
+
+SensePerformance(
+	ANSISTRING message,
+	UNICODESTRING counterName
+	);
+
+SensePerformance(
+	ANSISTRING message
+	);
+
+PerformanceCounter(
+	UNICODESTRING CounterName,
+	UNICODESTRING ConfigurationVersion,
+	UINT64 GlobalProbingCount,
+	UINT64 ProbingCount,
+	DOUBLE MinimumValue,
+	DOUBLE MaximumValue,
+	DOUBLE AverageValue,
+	UNICODESTRING Probes,
+	UINT64 ProbingCountSystem,
+	DOUBLE MinimumValueSystem,
+	DOUBLE MaximumValueSystem,
+	DOUBLE AverageValueSystem,
+	UNICODESTRING ProbesSystem
+	);
+
+PerformanceCounter(
+	UNICODESTRING CounterName,
+	UNICODESTRING ConfigurationVersion,
+	UINT64 GlobalProbingCount,
+	UINT64 ProbingCountSystem,
+	DOUBLE MinimumValueSystem,
+	DOUBLE MaximumValueSystem,
+	DOUBLE AverageValueSystem,
+	UNICODESTRING ProbesSystem
+	);
+
+PerformanceCounter(
+	UNICODESTRING CounterName,
+	UNICODESTRING ConfigurationVersion,
+	UINT64 GlobalProbingCount,
+	UINT64 ProbingCount,
+	DOUBLE MinimumValue,
+	DOUBLE MaximumValue,
+	DOUBLE AverageValue,
+	UNICODESTRING Probes
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	ANSISTRING error message,
+	BOOLEAN enable breakaway
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	ANSISTRING error message,
+	UINT32 limitInPercent
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	UINT32 limitInPercent
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	BOOL32 result,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	BOOL32 m_keepGoing,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UINT64 LimitFlags,
+	UINT64 ViolationLimitFlags,
+	UINT64 CpuRateControlTolerance,
+	UINT64 CpuRateControlToleranceLimit,
+	UINT64 JobMemory,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	ANSISTRING error message,
+	UINT32 limitInMb
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	UINT32 limitInMb
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 desiredAccess
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING serviceName,
+	UINT32 desiredAccess
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 LastError,
+	SYSTEMTIME st
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 currentTickCount,
+	UINT64 nextThresholdExpiration.AbsoluteTickCount,
+	UNICODESTRING timeToSet
+	);
+
+ScanUtils(
+	ANSISTRING message,
+	UINT32 ProcessId,
+	UINT64 actualProcessCreationTime,
+	UINT64 processCreationTime
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CleanScanResultsActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING resource,
+	UNICODESTRING sha1
+	);
+
+PrepareAndScanActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+ScanUtils(
+	ANSISTRING message
+	);
+
+ProcessResultsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScanUtils(
+	UNICODESTRING message,
+	UINT64 threatID
+	);
+
+ScanUtils(
+	UNICODESTRING message
+	);
+
+ScanMpManagerOpenActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ScanUtils(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING errorMessage
+	);
+
+FindQuarantineGuidActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+PrepareAndScanActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING resource,
+	UNICODESTRING sha1
+	);
+
+ScanUtils(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING path,
+	BOOLEAN isFileEncrypted
+	);
+
+ScanUtils(
+	UNICODESTRING message,
+	UNICODESTRING scheme,
+	UNICODESTRING path
+	);
+
+CleanScanResultsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScanUtils(
+	ANSISTRING message,
+	UINT32 ProcessId,
+	WIN32ERROR Win32Error
+	);
+
+FindQuarantineGuidActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING resource
+	);
+
+FindQuarantineGuidActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UndoQuarantineActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING quarantineGuid
+	);
+
+ScanUtils(
+	ANSISTRING message,
+	UNICODESTRING path
+	);
+
+PrepareAndScanActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+GenerateSignatureActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+UndoQuarantineActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScanUtils(
+	ANSISTRING message,
+	UINT32 ProcessId,
+	HRESULT hr
+	);
+
+CleanScanResultsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ProcessResultsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScanUtils(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING userName,
+	UNICODESTRING domainName,
+	INT32 hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING userName,
+	UNICODESTRING domainName,
+	INT32 ImpersonationStatus
+	);
+
+ProcessResultsActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING resource,
+	UNICODESTRING sha1
+	);
+
+ScanUtils(
+	UNICODESTRING message
+	);
+
+UndoQuarantineActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScanMpManagerOpenActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ScanUtils(
+	UNICODESTRING message,
+	UNICODESTRING actualSha1,
+	UNICODESTRING expectedSha1
+	);
+
+ScanMpManagerOpenActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+GenerateSignatureActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScanUtils(
+	ANSISTRING message,
+	ANSISTRING resourcesPath,
+	ANSISTRING resourcesFailedRemediationPath,
+	UINT64 lastChangedTime,
+	UINT64 remediationTime,
+	UINT8 remediationState,
+	GUID detectionID,
+	GUID quarantineGuid
+	);
+
+GenerateSignatureActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING resource,
+	UNICODESTRING sha1
+	);
+
+ScanUtils(
+	UNICODESTRING message,
+	HRESULT HRESULT,
+	UNICODESTRING errorMessage
+	);
+
+ScanUtils(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UNICODESTRING trustedCertificatesChains,
+	INT32 fileSizeLimitKb
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING url
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	INT32 Error code
+	);
+
+SenseCommon(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING m_outputChannel,
+	UNICODESTRING m_stderrChannel,
+	UINT32 exitCode
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 status,
+	UINT32 totalCount,
+	BOOLEAN retrieveOnlyNonExpiredUsers
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UINT32 GetLastError,
+	BOOLEAN retrieveOnlyNonExpiredUsers
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 servicesReturned
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING query
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 record_count
+	);
+
+SenseCommon(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING requestedProperty,
+	ANSISTRING e.what()
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING queryParams.wmiNamespace,
+	UNICODESTRING queryParams.query,
+	UNICODESTRING requestedProperty
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 SessionId,
+	WIN32ERROR WinError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	INT8 AadStatus,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UINT32 UpnSource,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING GetUserNameExUpn
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING GetUserNameExUpn,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserUpn
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	INT8 AadStatus
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	INT8 UpnSource
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UINT32 UpnSource
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserUpn,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING NetGetAadJoinInformationUpn
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING NetGetAadJoinInformationUpn,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserId,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR errorCode,
+	UNICODESTRING ErrorMessage
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING hexThumbprintRootCert,
+	UINT32 dwUsage
+	);
+
+DefenderTrustAnchors(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING CurrentTrustAnchorThumbprint,
+	UNICODESTRING hexThumbprintRootCert,
+	UINT32 dwUsage
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UINT32 CurrentTrustAnchorArrayUsage,
+	UNICODESTRING hexThumbprintRootCert,
+	UINT32 dwUsage
+	);
+
+DefenderTrustAnchors(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING partnerGeoID
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UINT32 taSet->NumAnchors
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING partnerGeoID
+	);
+
+DefenderTrustAnchors(
+	UNICODESTRING message,
+	UNICODESTRING partnerGeoID
+	);
+
+SensePerformance(
+	UNICODESTRING message,
+	UINT16 Number of cores
+	);
+
+SensePerformance(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SensePerformance(
+	UNICODESTRING message,
+	UINT16 Default number of cores
+	);
+
+ResourceCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 jobCreated,
+	UINT64 failedCreatingJob,
+	UINT64 failedSettingLimit,
+	UINT64 failedSettingNotifications,
+	UINT64 notificationsOnOverflow,
+	UINT64 lastViolationLimitFlags
+	);
+
+ScanCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 scanTotal,
+	UINT64 scanError,
+	UINT64 scanTimeout,
+	UNICODESTRING PartA_iKey
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING m_cmd,
+	UINT32 exitCode
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 cpuLimitRate,
+	UINT32 memoryLimitInMB,
+	UINT8 RunType
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 ProcessId
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT64 Available_memory_in_MB,
+	DOUBLE Relative_limit_in_percentage,
+	DOUBLE Absolute_memory_limit_in_MB
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	UNICODESTRING Updated_limits
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	DOUBLE Payload_resourceLimit,
+	DOUBLE Sense_resourceLimit,
+	UNICODESTRING resource_type,
+	UNICODESTRING payloadName
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	BOOLEAN EnforceLimits
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	BOOLEAN EnforceLimits
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	UNICODESTRING Updated_limits
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	UINT32 pid
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 pid,
+	UNICODESTRING limits
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 pid,
+	UINT32 Required_CPU_limit
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 pid
+	);
+
+ResourceManager(
+	ANSISTRING message
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING PayloadName,
+	UNICODESTRING ResourceType,
+	DOUBLE ResourceLimit
+	);
+

@@ -1,0 +1,33 @@
+ProviderNames:
+	tstheme
+
+
+
+**** Events *****
+RD Filter(
+	ANSISTRING msg
+	);
+
+RD Filter(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+RD Filter(
+	ANSISTRING msg,
+	HRESULT userFlags,
+	HRESULT hr
+	);
+
+RD Filter(
+	ANSISTRING msg,
+	HRESULT GetLastError()
+	);
+
+RD Filter(
+	ANSISTRING msg,
+	HRESULT hr
+	);
+

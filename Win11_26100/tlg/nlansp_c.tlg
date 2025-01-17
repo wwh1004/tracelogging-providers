@@ -1,0 +1,176 @@
+ProviderNames:
+	Microsoft.Windows.NetworkProfileService
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+Failure(
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+NspApiCalled(
+	ANSISTRING ApiName,
+	NULL Count,
+	UINT64 PartA_PrivTags
+	);
+
+NspNotifyRequested(
+	NULL Count,
+	UINT32 Type,
+	UINT64 PartA_PrivTags
+	);
+
+NSPLookupServiceNext - found interface in network(
+	ANSISTRING adapterName
+	);
+
+NSPLookupServiceNext - alignedCommentSize >0(
+	UNICODESTRING networkComment
+	);
+
+NSPLookupServiceNext - alignedNameSize >0(
+	UNICODESTRING networkName
+	);
+
+NSPLookupServiceNext - exausted all items, setting enumerated to end(
+	VOID
+	);
+
+NSPLookupServiceNext - at least one field present(
+	VOID
+	);
+
+NSPLookupServiceNext - network name does not match filter(
+	UNICODESTRING filter,
+	UNICODESTRING networkName
+	);
+
+NSPLookupServiceNext(
+	UNICODESTRING networkName
+	);
+
+NSPLookupServiceNext - flush previous(
+	VOID
+	);
+
+NSPLookupServiceNext - setting enumerated to end(
+	VOID
+	);
+
+NSPLookupServiceNext - enumerated to end && change pending(
+	VOID
+	);
+
+NSPLookupServiceNext - end query position(
+	VOID
+	);
+
+NspProtocolSpecified(
+	NULL Count,
+	INT32 AddressFamily,
+	INT32 Protocol,
+	UINT64 PartA_PrivTags
+	);
+
+NSP-WNF fired(
+	VOID
+	);
+
+NSP::UpdateUserNamesAsync(
+	VOID
+	);
+
+NSP::UpdateUserNamesForQuery(
+	VOID
+	);
+
+NSP::GetLatestNetworks(
+	UINT32 interfaceData.interfaceType
+	);
+
+NSP::GetLatestNetworks(
+	ANSISTRING interfaceData.adapterName.c_str()
+	);
+
+NSP::GetLatestNetworks(
+	UNICODESTRING newData.name.value().c_str()
+	);
+
+NSP::GetLatestNetworks - new network(
+	VOID
+	);
+
+NSP::GetLatestNetworks(
+	VOID
+	);
+
+NSP::NotifyClient(
+	UINT32 notificationType
+	);
+
+NSP::NotifyClient(
+	BOOLEAN query.clientAlreadyNotified
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

@@ -1,0 +1,119 @@
+ProviderNames:
+	Microsoft.Windows.Setup.SetupCleanupTask
+	Microsoft.Windows.Setup.FastCleanUp
+
+
+
+**** Events *****
+SetupCleanupTaskResult(
+	UINT64 FreeSpaceBeforeCleanup,
+	UINT64 FreeSpaceAfterCleanup,
+	UINT64 UsedSpaceBeforeCleanupWindowsOld,
+	UINT64 UsedSpaceAfterCleanupWindowsOld,
+	UINT64 UsedSpaceBeforeCleanupWindowsBt,
+	UINT64 UsedSpaceAfterCleanupWindowsBt,
+	UINT32 CleanupDuration,
+	BOOL32 IsCleanUpTaskAllowedToRun,
+	UINT32 CleanupHResult,
+	BOOL32 CleanupJobsErrorEncountered,
+	UNICODESTRING UpgradeCorrelationVector
+	);
+
+SetupCleanupTaskResult(
+	UINT64 FreeSpaceBeforeCleanup,
+	UINT64 FreeSpaceAfterCleanup,
+	UINT64 UsedSpaceBeforeCleanupWindowsOld,
+	UINT64 UsedSpaceAfterCleanupWindowsOld,
+	UINT64 UsedSpaceBeforeCleanupWindowsBt,
+	UINT64 UsedSpaceAfterCleanupWindowsBt,
+	UINT32 CleanupDuration,
+	BOOL32 IsCleanUpTaskAllowedToRun,
+	UINT32 CleanupHResult,
+	BOOL32 CleanupJobsErrorEncountered,
+	UNICODESTRING UpgradeCorrelationVector,
+	ANSISTRING __TlgCV__
+	);
+
+SetupCleanupTaskPolicyCheck(
+	UINT32 UninstallWindow,
+	UINT32 UninstallWindowSource,
+	UINT32 UninstallActive,
+	BOOL32 UninstallValid,
+	BOOL32 IsCleanUpTaskAllowedToRun,
+	UINT32 CleanUpBlockCondition
+	);
+
+SetupCleanupTaskPolicyCheck(
+	UINT32 UninstallWindow,
+	UINT32 UninstallWindowSource,
+	UINT32 UninstallActive,
+	BOOL32 UninstallValid,
+	BOOL32 IsCleanUpTaskAllowedToRun,
+	UINT32 CleanUpBlockCondition,
+	ANSISTRING __TlgCV__
+	);
+
+CleanupPluginRemediationResult(
+	BOOL32 RemediationExists,
+	UINT32 HResult,
+	UNICODESTRING State
+	);
+
+CleanupPluginRemediationResult(
+	BOOL32 RemediationExists,
+	UINT32 HResult,
+	UNICODESTRING State,
+	ANSISTRING __TlgCV__
+	);
+
+CleanupPluginRemediationFileDeletionFailed(
+	UNICODESTRING File,
+	UINT32 HResult
+	);
+
+CleanupPluginRemediationFileDeletionFailed(
+	UNICODESTRING File,
+	UINT32 HResult,
+	ANSISTRING __TlgCV__
+	);
+
+FastCleanupTelemetryResult(
+	UINT64 PartA_PrivTags,
+	UINT32 CleanupHResult,
+	UINT32 CleanupPhase,
+	UINT32 CleanupWindowsOldRegistryValue,
+	UINT32 FreeSpaceReportHr,
+	UINT32 FreeSpaceReportPhase
+	);
+
+FastCleanupTelemetryResult(
+	UINT64 PartA_PrivTags,
+	UINT32 CleanupHResult,
+	UINT32 CleanupPhase,
+	UINT32 CleanupWindowsOldRegistryValue,
+	UINT32 FreeSpaceReportHr,
+	UINT32 FreeSpaceReportPhase,
+	ANSISTRING __TlgCV__
+	);
+
+FastCleanupCompleteState(
+	UINT64 PartA_PrivTags,
+	UINT64 FreeSpaceBeforeCleanup,
+	UINT64 FreeSpaceAfterCleanup,
+	UINT64 SQMAvailableFreeSpace,
+	UINT32 EstimatedCleanupSize,
+	UINT32 CleanupDuration,
+	UINT32 IsCleanUpTerminated
+	);
+
+FastCleanupCompleteState(
+	UINT64 PartA_PrivTags,
+	UINT64 FreeSpaceBeforeCleanup,
+	UINT64 FreeSpaceAfterCleanup,
+	UINT64 SQMAvailableFreeSpace,
+	UINT32 EstimatedCleanupSize,
+	UINT32 CleanupDuration,
+	UINT32 IsCleanUpTerminated,
+	ANSISTRING __TlgCV__
+	);
+

@@ -1,0 +1,536 @@
+ProviderNames:
+	Microsoft.Windows.CleanupMgr
+
+
+
+**** Events *****
+IsUserAdmin(
+	BOOLEAN isAdmin
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+PluginsCleanupStopData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 flags,
+	INT32 isUserAnAdmin,
+	UINT32 diskPriority,
+	UINT32 deleteBytes,
+	UINT64 ActualDeletedBytes,
+	UINT64 totalBytes,
+	UINT64 freeBytesBefore,
+	UINT64 freeBytesAfter,
+	INT32 IsPurgeAborted,
+	INT32 PluginCount,
+	UINT32 TotalPurgedPlugins,
+	UINT32 TotalQualifiedPluginsToPurge,
+	UINT32 TotalPluginsPurgeSucceed,
+	UINT32 TotalPluginsPurgeFailed,
+	UINT32 TotalPluginsGetSpaceFailed,
+	UINT32 TotalZeroSizesPlugins,
+	UINT32 TotalSelectedPlugins,
+	UINT32 TotalSkippedPlugins,
+	DOUBLE TotalPurgeTime,
+	DOUBLE ActualTotalPurgeTime,
+	INT64 storageReserveBefore,
+	INT64 storageReserveAfter,
+	UNSIGNED PluginCleanupStopDataList,
+	UNICODESTRING Name,
+	GUID CLSID,
+	INT64 HardReserveSizeDelta,
+	INT64 SoftReserveSizeDelta,
+	INT64 UpdateScratchReserveSizeDelta,
+	UINT64 ActualPurgeTime,
+	UINT64 AfterUsedSpace,
+	UINT64 BeforeUsedSpace,
+	UINT64 VolumeFreeBytesBefore,
+	UINT64 VolumeFreeBytesAfter,
+	INT32 Priority,
+	INT32 IsPurgeAborted,
+	INT32 AutoRun,
+	INT32 IsSelected,
+	INT32 IsVisible,
+	INT32 HRPurge,
+	INT32 HRSpaceUsed,
+	UINT32 PluginIndex
+	);
+
+PluginsCleanupStartData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 flags,
+	INT32 isUserAnAdmin,
+	UINT32 diskPriority,
+	UINT32 deleteBytes,
+	UINT64 ActualDeletedBytes,
+	UINT64 totalBytes,
+	UINT64 freeBytesBefore,
+	UINT64 freeBytesAfter,
+	INT32 IsPurgeAborted,
+	INT32 PluginCount,
+	UINT32 TotalPurgedPlugins,
+	UINT32 TotalQualifiedPluginsToPurge,
+	UINT32 TotalPluginsPurgeSucceed,
+	UINT32 TotalPluginsPurgeFailed,
+	UINT32 TotalPluginsGetSpaceFailed,
+	UINT32 TotalZeroSizesPlugins,
+	UINT32 TotalSelectedPlugins,
+	UINT32 TotalSkippedPlugins,
+	DOUBLE TotalPurgeTime,
+	DOUBLE ActualTotalPurgeTime,
+	INT64 storageReserveBefore,
+	INT64 storageReserveAfter,
+	PID PluginCleanupStartDataList,
+	UNICODESTRING Name,
+	INT32 AutoRun,
+	INT32 IsSelected,
+	INT32 IsVisible,
+	UINT32 PluginIndex
+	);
+
+PluginsScanStopData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 flags,
+	INT32 PluginCount,
+	UINT32 TotalPluginScanned,
+	UINT32 TotalScanSucceeded,
+	UINT32 TotalScanFailed,
+	UINT32 TotalScanZeroSizePlugin,
+	INT32 isUserAnAdmin,
+	UINT64 TotalScanSize,
+	UINT64 TotalScanTime,
+	UINT64 TotalActualScanTime,
+	INT32 IsScanAbort,
+	SOCKETADDRESS PluginScanStopDataList,
+	UNICODESTRING Name,
+	GUID CLSID,
+	UINT64 ActualScanTime,
+	UINT64 PluginUsedSpace,
+	FLOAT IsSelected,
+	FLOAT IsVisible,
+	INT32 IsScanAborted,
+	INT32 AutoRun,
+	INT32 HR,
+	UINT32 PluginIndex
+	);
+
+PluginsScanStartData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 flags,
+	INT32 PluginCount,
+	UINT32 TotalPluginScanned,
+	UINT32 TotalScanSucceeded,
+	UINT32 TotalScanFailed,
+	UINT32 TotalScanZeroSizePlugin,
+	INT32 isUserAnAdmin,
+	UINT64 TotalScanSize,
+	UINT64 TotalScanTime,
+	UINT64 TotalActualScanTime,
+	INT32 IsScanAbort,
+	TID PluginScanStartDataList,
+	UNICODESTRING Name,
+	GUID CLSID,
+	INT32 AutoRun,
+	INT32 IsSelected,
+	INT32 IsVisible,
+	UINT32 PluginIndex
+	);
+
+ScanAborted(
+	VOID
+	);
+
+PluginsInitializeStopData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 TotalPlugInCount,
+	UINT32 TotalInitializedPluginCount,
+	UINT32 TotalSuccessfullyInitializedPlugin,
+	INT32 isUserAnAdmin,
+	DOUBLE TotalActualInitializeTime,
+	DOUBLE TotalActualInitTime,
+	SOCKETADDRESS PluginInitializeStopDataList,
+	UNICODESTRING Name,
+	GUID CLSID,
+	UINT64 ActualInitializationTime,
+	UINT64 ActualInitTime,
+	FLOAT IsSelected,
+	FLOAT IsVisible,
+	INT32 IsInitializationSucceed,
+	INT32 AutoRun,
+	INT32 HR,
+	UINT32 PluginIndex
+	);
+
+PluginsInitializeStartData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 TotalPlugInCount,
+	UINT32 TotalInitializedPluginCount,
+	UINT32 TotalSuccessfullyInitializedPlugin,
+	INT32 isUserAnAdmin,
+	DOUBLE TotalActualInitializeTime,
+	DOUBLE TotalActualInitTime,
+	BOOLEAN PluginInitializeStartDataList,
+	UNICODESTRING Name,
+	GUID CLSID,
+	UINT64 PluginIndex
+	);
+
+PluginsInstantiateStoptData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 TotalPlugInCount,
+	UINT32 TotalInstantiatedPluginCount,
+	INT32 isUserAnAdmin,
+	DOUBLE TotalActualInstantiateTime,
+	DOUBLE TotalActualInitTime,
+	PID PluginInstantiateStopDataList,
+	UNICODESTRING Name,
+	GUID CLSID,
+	UINT64 ActualInstantiationTime,
+	FLOAT HR,
+	FLOAT PluginIndex
+	);
+
+PluginsInstantiateStartData(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DrivePath,
+	UINT32 TotalPlugInCount,
+	UINT32 TotalInstantiatedPluginCount,
+	INT32 isUserAnAdmin,
+	DOUBLE TotalActualInstantiateTime,
+	DOUBLE TotalActualInitTime,
+	STRING PluginInstantiateStartDataList,
+	UNICODESTRING Name,
+	UINT64 PluginIndex
+	);
+
+DiscCleanupActivity(
+	VOID
+	);
+
+DiscCleanupActivity(
+	UNICODESTRING DrivePath,
+	BOOL32 isUserAnAdmin,
+	HRESULT Result
+	);
+
+pluginsDeactivatationStop(
+	UINT64 PartA_PrivTags,
+	UINT32 DeactivationType,
+	UNICODESTRING DrivePath,
+	UINT32 flags,
+	UINT16 PluginCount,
+	INT32 TotalDeactivationPluginsSucceeded,
+	INT32 totalPluginsDeactivationCompleted,
+	BOOLEAN isUserAnAdmin,
+	UINT64 TotalDeactivatationTime,
+	IPV4 pluginsDeactivatationStop,
+	UNICODESTRING Name,
+	GUID clsid,
+	UINT64 DeactivationTime,
+	INT64 hresult,
+	INT32 AutoRun,
+	INT32 IsSelected,
+	INT32 IsVisible,
+	UINT32 PluginIndex
+	);
+
+pluginsDeactivatationStart(
+	UINT64 PartA_PrivTags,
+	UINT32 DeactivationType,
+	UNICODESTRING DrivePath,
+	UINT32 flags,
+	UINT16 PluginCount,
+	INT32 TotalDeactivationPluginsSucceeded,
+	INT32 totalPluginsDeactivationCompleted,
+	BOOLEAN isUserAnAdmin,
+	UINT64 TotalDeactivatationTime,
+	PORT pluginsDeactivatationStart,
+	UNICODESTRING Name,
+	GUID clsid,
+	UINT64 EmptyVolumeCache,
+	INT32 AutoRun,
+	INT32 IsSelected,
+	INT32 IsVisible,
+	UINT32 PluginIndex
+	);
+
+ClientPurge(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ClientPurge(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+PurgeClients(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+PurgeClients(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CleanMgrPluginScan(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CleanMgrPluginScan(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CleanMgrScan(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CleanMgrScan(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CleanmgrPluginInitialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CleanmgrPluginInitialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CleanmgrPluginInstantiate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CleanmgrPluginInstantiate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CleanmgrInitialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CleanmgrInitialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+

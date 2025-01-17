@@ -1,0 +1,13 @@
+ProviderNames:
+	Microsoft.MSEdgeWebView.Loader
+
+
+
+**** Events *****
+CreateWebViewEnvironmentError(
+	HRESULT HRESULT,
+	BOOLEAN ClientDllFound,
+	BOOLEAN InstalledRuntime,
+	UINT64 PartA_PrivTags
+	);
+

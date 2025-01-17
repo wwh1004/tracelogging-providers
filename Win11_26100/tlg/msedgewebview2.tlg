@@ -1,0 +1,33 @@
+ProviderNames:
+	Microsoft.Edge.Crashpad
+
+
+
+**** Events *****
+CrashEvent(
+	ANSISTRING app_name,
+	ANSISTRING app_version,
+	ANSISTRING module_name,
+	ANSISTRING module_version,
+	ANSISTRING module_offset,
+	ANSISTRING process_type,
+	ANSISTRING sub_code,
+	ANSISTRING stack_hash,
+	ANSISTRING client_id_hash,
+	ANSISTRING etag,
+	ANSISTRING app_session_guid,
+	UINT64 PartA_PrivTags
+	);
+
+HangEvent(
+	ANSISTRING app_name,
+	ANSISTRING app_version,
+	ANSISTRING process_type,
+	ANSISTRING hang_source,
+	ANSISTRING stack_hash,
+	ANSISTRING client_id_hash,
+	ANSISTRING etag,
+	ANSISTRING app_session_guid,
+	UINT64 PartA_PrivTags
+	);
+

@@ -1,0 +1,37 @@
+ProviderNames:
+	Microsoft.Windows.Sysprep
+
+
+
+**** Events *****
+SysprepFunctionStart(
+	UNICODESTRING lpszCopy,
+	ANSISTRING szEntryPointA
+	);
+
+SysprepFunctionStop(
+	UNICODESTRING lpszCopy,
+	ANSISTRING szEntryPointA,
+	UINT32 dwRet
+	);
+
+SysprepFunctionStop(
+	UNICODESTRING pstrModulePath->CString,
+	ANSISTRING szEntryPointA,
+	UINT32 dwRet,
+	BOOL32 bOfflineRan
+	);
+
+SysprepFunctionStart(
+	UNICODESTRING pstrModulePath->CString,
+	ANSISTRING szEntryPointA
+	);
+
+SysprepRebootPendingPlugins(
+	UNICODESTRING pComponent->Name->CString
+	);
+
+SysprepOnlinePlugins(
+	UNICODESTRING pComponent->Name->CString
+	);
+

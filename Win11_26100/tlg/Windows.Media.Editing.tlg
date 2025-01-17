@@ -1,0 +1,1401 @@
+ProviderNames:
+	Microsoft.Windows.Media.Editing
+	Microsoft.Windows.MediaFoundation.CallStack
+
+
+
+**** Events *****
+CreateClip(
+	GUID ClipIdentifier
+	);
+
+ThumbnailAction(
+	GUID CompositionIdentifier,
+	UINT64 CompositionVersion
+	);
+
+CreateComposition(
+	GUID CompositionIdentifier
+	);
+
+ReuseLastThumbnailBecauseWeReachedEOS(
+	ANSISTRING ReuseLastThumbnailBecauseWeReachedEOS
+	);
+
+DiffLastThumbnailAndCurrent(
+	ANSISTRING  ,
+	BOOL32 Decision to seek=
+	);
+
+ReuseLastThumbnail(
+	ANSISTRING Reuse Last thumbnail since desired time < last thumbnail timestamp,
+	BOOL32 Seek
+	);
+
+GetThumbnails(
+	ANSISTRING GetThumbnails
+	);
+
+GetThumbnails(
+	ANSISTRING GetThumbnails
+	);
+
+thresholdForSeekFromReg(
+	ANSISTRING thresholdForSeekFromReg,
+	UINT64 thresholdForSeekFromReg
+	);
+
+ThumbnailFoundSample(
+	ANSISTRING ,
+	UINT64 Actual time,
+	UINT64 Desired time
+	);
+
+ThumbnailFoundSample(
+	ANSISTRING ,
+	ANSISTRING  Nearest Key Frame
+	);
+
+ThumbnailFoundSample(
+	ANSISTRING Reached EOS in no seek case, will reuse last thumbnail,
+	UINT64 Desired time
+	);
+
+ThumbnailFoundSample(
+	ANSISTRING ,
+	ANSISTRING  Nearest Frame Last Sample
+	);
+
+ThumbnailFoundSample(
+	ANSISTRING ,
+	ANSISTRING  Nearest Frame
+	);
+
+ThumbnailReadSample(
+	ANSISTRING ReadSample
+	);
+
+ThumbnailSeek(
+	ANSISTRING Seek Frameserver
+	);
+
+ThumbnailEncoderCommit(
+	ANSISTRING Commit
+	);
+
+ThumbnailEncoderCommit(
+	ANSISTRING Commit
+	);
+
+ThumbnailEncoderWritePixels(
+	ANSISTRING EncoderWritePixels
+	);
+
+ThumbnailEncoderWritePixels(
+	ANSISTRING EncoderWritePixels
+	);
+
+ThumbnailEncoderInitialize(
+	ANSISTRING EncoderInitialize
+	);
+
+ThumbnailEncoderInitialize(
+	ANSISTRING EncoderInitialize
+	);
+
+ThumbnailMemoryToStream(
+	ANSISTRING MemoryToStream
+	);
+
+ThumbnailMemoryToStream(
+	ANSISTRING MemoryToStream
+	);
+
+ThumbnailCreateJPEGEncoder(
+	ANSISTRING CreateJPEGEncoder
+	);
+
+ThumbnailCreateJPEGEncoder(
+	ANSISTRING CreateJPEGEncoder
+	);
+
+ThumbnailLock(
+	ANSISTRING Lock
+	);
+
+ThumbnailLock(
+	ANSISTRING Lock
+	);
+
+ThumbnailConvertToContiguousBuffer(
+	ANSISTRING ConvertToContiguousBuffer
+	);
+
+ThumbnailConvertToContiguousBuffer(
+	ANSISTRING ConvertToContiguousBuffer
+	);
+
+ThumbnailCreateImageStream(
+	ANSISTRING CreameImageStream
+	);
+
+ThumbnailCreateImageStream(
+	ANSISTRING CreameImageStream
+	);
+
+ThumbnailReadSample(
+	ANSISTRING ReadSample
+	);
+
+GetThumbnail(
+	ANSISTRING GetThumbnail
+	);
+
+ThumbnailSeek(
+	ANSISTRING Seek Frameserver
+	);
+
+GetThumbnail(
+	ANSISTRING GetThumbnail
+	);
+
+RevokeExtendedExecution(
+	HEXINT32 this,
+	HRESULT HResult
+	);
+
+OnRevoked(
+	ANSISTRING OnRevoked,
+	INT32 ExtendedExecutionRevokedReason,
+	HRESULT HResult
+	);
+
+ExtendedExecutionOnRevoked(
+	VOID
+	);
+
+CleanupExtendedExecutionSession(
+	HRESULT HResult
+	);
+
+RequestExtendedExecution_error(
+	ANSISTRING RequestExtendedExecution,
+	HRESULT HResult
+	);
+
+ExtendedExecutionSession_RequestExtensionAsync_result(
+	ANSISTRING RequestExtendedExecution,
+	UINT32 result,
+	HEXINT32 this
+	);
+
+RequestExtendedExecution(
+	ANSISTRING RequestExtendedExecution,
+	HEXINT32 this,
+	HRESULT HResult
+	);
+
+BeginRequestSampleInternal(
+	ANSISTRING BeginRequestSampleInternal,
+	HEXINT32 this,
+	HEXINT32 spPipeline,
+	BOOL32 isAudio
+	);
+
+StartPipelineThenReissueRequest(
+	ANSISTRING StartPipelineThenReissueRequest,
+	HEXINT32 this,
+	HEXINT32 spPipeline,
+	BOOL32 isAudio
+	);
+
+OnPipelineStartedForReissueReceived(
+	ANSISTRING OnPipelineStartedForReissue,
+	HEXINT32 this,
+	HEXINT32 spPipeline
+	);
+
+RegKeyDisableQM(
+	ANSISTRING RegKeyDisableQM,
+	HEXINT32 this
+	);
+
+BeginRequestSampleInternalCalled(
+	ANSISTRING BeginRequestSampleInternalCalled,
+	HEXINT32 this,
+	BOOL32 isAudio
+	);
+
+StartPipelineThenReissueRequest(
+	ANSISTRING StartPipelineThenReissueRequest,
+	HEXINT32 this,
+	BOOL32 isAudio
+	);
+
+TryReissueSampleRequestToCurrentSegment(
+	ANSISTRING TryReissueSampleRequestToCurrentSegment,
+	HEXINT32 this
+	);
+
+TryReissueSampleRequestCompositionEOS(
+	ANSISTRING TryReissueSampleRequestCompositionEOS,
+	HEXINT32 this
+	);
+
+TryReissueSampleRequestLastSegmentEOSStartNextSegment(
+	ANSISTRING TryReissueSampleRequestLastSegmentEOSStartNextSegment,
+	HEXINT32 this
+	);
+
+BeginStart(
+	ANSISTRING ,
+	HEXINT32 ,
+	HEXINT32 spPipeline,
+	BOOL32 isAudio
+	);
+
+ReceivedOnPipelineStarted(
+	ANSISTRING ReceivedOnPiplelineStarted,
+	HEXINT32 spPipeline
+	);
+
+SampleRequested(
+	ANSISTRING fn,
+	HEXINT32 this
+	);
+
+BeginSeekCallingBeginStartPipeline(
+	ANSISTRING ,
+	HEXINT32 spVideoSegment->GetPipeline()
+	);
+
+BeginSeekCallingBeginStartPipeline(
+	ANSISTRING ,
+	HEXINT32 spAudioSegment->GetPipeline()
+	);
+
+ResetEffectsCalled(
+	ANSISTRING ResetEffectsCalled,
+	UINT32 m_videoCurrentSegmentIndex
+	);
+
+PipelineShutdownCalled(
+	ANSISTRING PipelineShutdownCalled,
+	UINT32 m_videoCurrentSegmentIndex
+	);
+
+BeginSeek(
+	ANSISTRING ,
+	UINT64 duration
+	);
+
+MediaStreamSourceErrorRaised(
+	UINT32 ErrorCode,
+	HEXINT32 ErrorCode
+	);
+
+MediaStreamSourceErrorRaised(
+	UINT32 ErrorCode,
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	HEXINT32 ErrorCode
+	);
+
+MSSPreviewCompleted(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID
+	);
+
+MediaStreamSourceErrorReceived(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	UINT32 ErrorCode
+	);
+
+MultiSourceNodeCase(
+	ANSISTRING ,
+	HEXINT32 Start dropping in decoder,
+	UINT32 sourceNodeIndex,
+	UINT32 Total decoded samples dropped,
+	HEXINT32 QualityAdvise
+	);
+
+SetNextSyncBaseTimeStamp(
+	HEXINT32 this,
+	ANSISTRING fn,
+	UINT32 index,
+	UINT64 timeStamp
+	);
+
+IsSomeoneDroppingSamplesOutsideOfDecoder(
+	ANSISTRING ,
+	HEXINT32 IsSomeoneDroppingOutsideOfDecoder,
+	UINT32 droppingOutsideOfDecoder
+	);
+
+IsSomeoneDroppingSampleInDecoder(
+	ANSISTRING ,
+	HEXINT32 IsSomeoneDroppingSampleInDecoder,
+	UINT32 droppingInDecoder
+	);
+
+AVOutOfSync(
+	ANSISTRING ,
+	HEXINT32 Received quality message,
+	INT64 latency
+	);
+
+AVOutOfSync(
+	ANSISTRING ,
+	HEXINT32 AVOutOfSync
+	);
+
+NotifyQualityEventSamplesToBeDroppedChanged(
+	ANSISTRING ,
+	HEXINT32 this,
+	UINT64 m_numberOfSamplesToDrop
+	);
+
+IsSomeoneDroppingSamplesOutsideOfDecoder(
+	ANSISTRING ,
+	HEXINT32 ,
+	UINT32 GetTotalDecodedSamplesDropped,
+	UINT32 m_numberofSamplesToDrop
+	);
+
+MultiSourceNodeCase(
+	ANSISTRING ,
+	HEXINT32 MultiSourceNodeCase
+	);
+
+ReportedStatistics(
+	ANSISTRING ,
+	HEXINT32 ,
+	HEXINT32 sourceNode,
+	UINT32 percentageOfBFrames,
+	UINT32 qualityLevel,
+	UINT32 dropMode,
+	UINT64 ts,
+	UINT64 currentSyncBaseTimestamp
+	);
+
+Reset(
+	ANSISTRING ,
+	HEXINT32 
+	);
+
+RegisterSourceNode(
+	ANSISTRING ,
+	HEXINT32 ,
+	HEXINT32 sourceNode,
+	UINT32 hasDecoder
+	);
+
+ShutdownPipeline(
+	ANSISTRING ShutdownPipeline,
+	HEXINT32 m_pipeline
+	);
+
+BeginRequestSampleOutputNodeDoesNotExist(
+	ANSISTRING Outputnode does not exist, pushing back request,
+	HEXINT32 this
+	);
+
+BeginRequestSampleOutputNodeExists(
+	ANSISTRING Outputnode exists Requesting sample OUTPUTNODE,
+	HEXINT32 this
+	);
+
+IssueEarlySampleRequests(
+	ANSISTRING Requesting sample OUTPUTNODE,
+	HEXINT32 outputNode
+	);
+
+OnPipelineCreated(
+	ANSISTRING Requesting START OUTPUTNODE with updated start position,
+	BOOL32 isAudio,
+	HEXINT32 this,
+	UINT64 using updated: m_updatedExternalASyncStart->StartPosition,
+	UINT64 not using original: ctx->StartPosition
+	);
+
+OnPipelineCreated(
+	ANSISTRING Requesting START OUTPUTNODE with original start position,
+	BOOL32 isAudio,
+	HEXINT32 this,
+	UINT64 using original: ctx->StartPosition
+	);
+
+OnPipelineCreated(
+	ANSISTRING ,
+	BOOL32 isAudio,
+	HEXINT32 this
+	);
+
+BeginBuildPipelineOutputNodeDoesnotExist(
+	ANSISTRING BeginBuildPipeline,
+	BOOL32 isAudio,
+	HEXINT32 this,
+	HEXINT32 PipelineBuiltCallback
+	);
+
+ObtainedStartRequestWhileCreationWasInProgress(
+	ANSISTRING ObtainedStartRequestWhileCreationWasInProgress, will store as updated start position,
+	BOOL32 isAudio,
+	HEXINT32 this,
+	INT64 spCtx->StartPosition
+	);
+
+RequestStartOutputNodeExists(
+	ANSISTRING Requesting START OUTPUTNODE,
+	BOOL32 isAudio,
+	HEXINT32 this
+	);
+
+ReportLatestSampleBeforeSendingThroughEffects(
+	ANSISTRING ,
+	HEXINT32 ,
+	INT64 ts,
+	INT64 duration
+	);
+
+RequestingOutputWorker(
+	HEXINT32 this,
+	ANSISTRING ,
+	HRESULT dump data failed
+	);
+
+QueuePushReadyForDownstream_AnyThreadGotSample_ReceivedCallback(
+	HEXINT32 this,
+	ANSISTRING QueuePushReadyForDownstream_AnyThread_ReceivedLambdaCallback,
+	HEXINT32 inputCopy.Sample
+	);
+
+QueuePushInput_AnyThreadCalledWithSample(
+	HEXINT32 this,
+	ANSISTRING QueuePushInput_AnyThread,
+	HEXINT32 input.Sample,
+	HEXINT32 spSource,
+	HEXINT32 spTarget
+	);
+
+QueuePushInput_AnyThreadCalledWithSample_ReceivedCallback(
+	HEXINT32 this,
+	ANSISTRING ReceivedLamdaCallback_QueuePushInput_AnyThread,
+	HEXINT32 inputCopy.Sample,
+	HEXINT32 spSource,
+	HEXINT32 spTarget
+	);
+
+QueueRequestOutput_AnyThreadCalled(
+	HEXINT32 this,
+	ANSISTRING QueueRequestOutput_AnyThread completed,
+	HEXINT32 &request,
+	HEXINT32 &requestCopy,
+	UINT32 request.type,
+	HEXINT32 spTarget
+	);
+
+QueueRequestOutput_AnyThreadCalled(
+	HEXINT32 this,
+	ANSISTRING QueueRequestOutput_AnyThread called,
+	HEXINT32 &request,
+	HEXINT32 &requestCopy,
+	UINT32 request.type,
+	HEXINT32 spTarget
+	);
+
+QueueRequestOutput_AnyThread_Callback(
+	HEXINT32 this,
+	ANSISTRING QueueRequestOutput_AnyThread ReceivedLambdaCallback,
+	HEXINT32 &requestCopy,
+	UINT32 requestCopy.type,
+	HEXINT32 spTarget
+	);
+
+QueueRequestOutputOnSelf_AnyThread(
+	HEXINT32 this,
+	ANSISTRING fn,
+	HEXINT32 request,
+	UINT32 request.type,
+	HEXINT32 spTarget
+	);
+
+HandleInputAvailableGotShutdown(
+	HEXINT32 this,
+	ANSISTRING HandleInputAvailableGotShutdown
+	);
+
+HandleInputAvailableGotSample(
+	HEXINT32 this,
+	ANSISTRING HandleInputAvailableGotSample,
+	HEXINT32 sample
+	);
+
+HandleInputAvailableGotStart(
+	HEXINT32 this,
+	ANSISTRING HandleInputAvailableGotStart
+	);
+
+PropagateAvailableOutputHasSample(
+	HEXINT32 this,
+	ANSISTRING Propagating sample,
+	HEXINT32 nextInput.Sample
+	);
+
+PropagateAvailableOutputCalled(
+	HEXINT32 this,
+	ANSISTRING PropagateAvailableOutput Popped Request,
+	UINT32 m_lstRequests.size()
+	);
+
+DispatchAvailableInputHasSample(
+	HEXINT32 this,
+	ANSISTRING DispatchAvailableInputHasSample,
+	HEXINT32 nextInput.Sample
+	);
+
+DispatchAvailableInputDispatchPopRequest(
+	HEXINT32 this,
+	ANSISTRING DispatchAvailableInputDispatchPopRequest,
+	UINT32 m_lstRequests.size()
+	);
+
+DispatchAvailableInputDispatchOnUpstream(
+	HEXINT32 this,
+	ANSISTRING DispatchAvailableInputDispatchOnUpstream,
+	UINT32 upstreamIndex,
+	UINT32 upstream.inputItems.empty(),
+	UINT32 m_lstRequests.size()
+	);
+
+DispatchAvailableInputForSelf(
+	HEXINT32 this,
+	ANSISTRING DispatchAvailableInputForSelf,
+	HEXINT32 nextInput.Sample
+	);
+
+DispatchAvailableInputCalled(
+	HEXINT32 DispatchAvailableInput,
+	ANSISTRING ,
+	UINT32 m_lstInputOnSelf.size()
+	);
+
+Requesting from upstream(
+	HEXINT32 this,
+	ANSISTRING PushDownstreamWorkerGotSample,
+	HEXINT32 input.Sample
+	);
+
+PushInputWorkerDidNotFindUpstreamNode(
+	HEXINT32 this,
+	ANSISTRING PushInputWorkerDidNotFindUpstreamNode,
+	UINT32 UpstreamIndex,
+	UINT32 FoundUpStream
+	);
+
+PushInputWorkerPushOntoSelf(
+	HEXINT32 this,
+	ANSISTRING PushONSelf
+	);
+
+PushInputWorkerCalled(
+	HEXINT32 this,
+	ANSISTRING PushInputWorker
+	);
+
+ExecuteRequest(
+	HEXINT32 this,
+	ANSISTRING execute request,
+	HEXINT32 &request,
+	UINT32 request.type
+	);
+
+RequestingOutputWorker(
+	HEXINT32 this,
+	ANSISTRING Pushed back request,
+	HEXINT32 &request,
+	UINT32 request.type,
+	UINT32 m_lstRequests.size()
+	);
+
+CreateColorSourceNode(
+	ANSISTRING ,
+	HEXINT32 spColorSourceNode
+	);
+
+CreateSurfaceSourceNode(
+	ANSISTRING ,
+	HEXINT32 spSurfaceSourceNode
+	);
+
+CreateSilenceSourceNode(
+	ANSISTRING ,
+	HEXINT32 spSilenceSourceNode
+	);
+
+CreateImageSourceNode(
+	ANSISTRING ,
+	HEXINT32 spImageSourceNode
+	);
+
+CreateMediaSourceNode(
+	ANSISTRING ,
+	HEXINT32 spSourceNode
+	);
+
+CreateEffectNode(
+	ANSISTRING ,
+	HEXINT32 spMFTNode
+	);
+
+CreateTrimNode(
+	ANSISTRING ,
+	HEXINT32 spTrimNode
+	);
+
+CreateD3dNode(
+	ANSISTRING ,
+	HEXINT32 d3dConverterNode
+	);
+
+CreateXVPNode(
+	ANSISTRING ,
+	HEXINT32 xvpTransform,
+	HEXINT32 xvpNode
+	);
+
+CreateD3DNode(
+	ANSISTRING ,
+	HEXINT32 d3dConverterNode
+	);
+
+OnSourcesLoaded(
+	ANSISTRING ,
+	HEXINT32 StreamSegmentPipeline,
+	BOOL32 isAudio,
+	HEXINT32 SourceLoadCollection,
+	HEXINT32 PipelineBuiltCallbackWrapped
+	);
+
+CreateAudioOutputNode(
+	ANSISTRING ,
+	HEXINT32 audioOutputNode
+	);
+
+CreateAudioMixerNode(
+	ANSISTRING ,
+	HEXINT32 audioMixer
+	);
+
+BeginBuildPipeline(
+	ANSISTRING ,
+	HEXINT32 StreamSegmentPipeline,
+	BOOL32 isAudio,
+	HEXINT32 SourceLoadCollection,
+	HEXINT32 SourcesLoadedCallback,
+	HEXINT32 PipelineBuiltCallback,
+	HEXINT32 PipelineBuiltCallbackWraped
+	);
+
+SourceTimeToSegmentTime(
+	ANSISTRING ,
+	HEXINT32 Change sample time from source time to segment time,
+	INT64 SoureTime,
+	INT64 SegmentTime,
+	INT64 SoureTime DTS,
+	INT64 SegmentTime DTS
+	);
+
+AdjustedSourceSeekTime(
+	ANSISTRING ,
+	HEXINT32 ,
+	INT64 m_trackDelayTime,
+	INT64 (varStart.hVal.QuadPart),
+	BOOL32 m_isMp3Source
+	);
+
+PushingSampleDownStream(
+	ANSISTRING ,
+	HEXINT32 Pushing Sample DownStream,
+	UINT32 streamIndex,
+	UINT32 streamFlags,
+	INT64 timestamp,
+	HEXINT32 sample,
+	UINT32 numberOfSamplesToDrop,
+	UINT32 droppedSamples
+	);
+
+DroppingSample(
+	ANSISTRING ,
+	HEXINT32 Dropping sample,
+	UINT32 streamIndex,
+	UINT32 streamFlags,
+	INT64 timestamp,
+	HEXINT32 sample,
+	UINT32 numberOfSamplesToDrop,
+	INT64 baseTimestampToSyncWith
+	);
+
+CompareWithBaseTime(
+	ANSISTRING ,
+	HEXINT32 ,
+	INT64 sampleTime,
+	INT64 baseTimestampToSyncWith
+	);
+
+EndOfStream(
+	ANSISTRING ,
+	HEXINT32 End of Stream
+	);
+
+OnReadSample(
+	ANSISTRING ,
+	HEXINT32 Received sample from sourcereader,
+	HRESULT status,
+	UINT32 streamIndex,
+	UINT32 streamFlags,
+	INT64 timestamp,
+	HEXINT32 sample
+	);
+
+SourceProcessingNode_NodeRequestStart(
+	ANSISTRING ,
+	HEXINT32 this: received request sample,
+	BOOL32 isVideo
+	);
+
+SourceProcessingNode_NodeRequestStart(
+	ANSISTRING ,
+	HEXINT32 this,
+	BOOL32 isVideo,
+	UINT64 received node request start with pos=
+	);
+
+NotifyDecoderQualityEvent(
+	ANSISTRING ,
+	HEXINT32 DecoderQualityEvent,
+	HEXINT32 pEvent,
+	HEXINT32 pdwFlags
+	);
+
+NotifyDropQualityEvent(
+	ANSISTRING ,
+	HEXINT32 DropQualityEvent,
+	UINT32 dwNumberOfSamplesToDrop
+	);
+
+RegisterSourceNode(
+	ANSISTRING ,
+	HEXINT32 Received quality event
+	);
+
+RunTimeClassInitialize(
+	ANSISTRING ,
+	HEXINT32 Preview sourcereader o/p = decoder o/p
+	);
+
+SourceReaderCreated(
+	ANSISTRING ,
+	HEXINT32 this,
+	HEXINT32 sourcereaderCreated,
+	UINT32 m_isVideo
+	);
+
+SourceProcessingNodeRunTimeClassInitialize(
+	ANSISTRING ,
+	HEXINT32 Initialize,
+	UINT32 indexOfSourceStream,
+	INT64 sourceStartTime,
+	INT64 sourceEndTime,
+	INT64 trackDelayTime
+	);
+
+EOS reached, try produce silent audio sample(
+	ANSISTRING ,
+	HEXINT32 this,
+	HRESULT hr,
+	HEXINT32 *ppSample,
+	INT64 timestamp,
+	INT64 duration,
+	UINT32 sample bytes,
+	INT64 sourceEndTime
+	);
+
+AdjustSample(
+	ANSISTRING ,
+	HEXINT32 Normalizing audio sample,
+	UINT64 originalSampleTime,
+	UINT64 originalSampleTime,
+	UINT64 adjusted Sample time,
+	UINT64 adjusted duration
+	);
+
+Disconnecting Overlay Node(
+	ANSISTRING Disconnecting Overlay Node,
+	HEXINT32 Disconnecting Overlay Node,
+	UINT32 streamIndex,
+	UINT32 overlayIndex
+	);
+
+Requesting from upstream(
+	ANSISTRING ,
+	HEXINT32 Requesting from upstream,
+	UINT32 streamIndex
+	);
+
+EOS(
+	ANSISTRING ,
+	HEXINT32 OverlayNodeEOS
+	);
+
+SendDownStream(
+	ANSISTRING SendDownStream,
+	HEXINT32 SendDownStream,
+	HEXINT32 Sample Sent Down Stream
+	);
+
+Found Deferred Request from overlay(
+	ANSISTRING ,
+	HEXINT32 Found deferred Request from overlay,
+	UINT32 overlayIndex
+	);
+
+OverlaySamples(
+	ANSISTRING ,
+	HEXINT32  ,
+	UINT32 i,
+	UINT64 baseTS,
+	HEXINT32 Sample1,
+	UINT64 overlayTS,
+	HEXINT32 Sample2,
+	UINT32 zOrder
+	);
+
+OverlaySamples(
+	ANSISTRING ,
+	HEXINT32  ,
+	UINT32 i,
+	UINT32 overlayIndex,
+	UINT32 SamplesCount
+	);
+
+OverlaySamples(
+	ANSISTRING ,
+	HEXINT32  ,
+	UINT32 BaseLayerCount
+	);
+
+Trying to request from upstream(
+	ANSISTRING ,
+	HEXINT32 Requesting from upstream,
+	UINT32 overlayIndex,
+	HEXINT32 m_track->at(overlayIndex).source.Get()
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  OverlayConnected,
+	UINT64 overlayIndex,
+	UINT64 overlayZOrder
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  ImageSourceResolved,
+	UINT64 overlayIndex
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  MediaSourceResolved,
+	UINT64 overlayIndex
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  BeginCreateSurfaceSource,
+	UINT64 overlayIndex
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  BeginCreateImageSource,
+	UINT64 overlayIndex
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  BeginCreateMFMediaSource,
+	UINT64 overlayIndex
+	);
+
+TryingToLoadSource(
+	ANSISTRING ,
+	HEXINT32  Tryinging To Load source,
+	UINT64 overlayIndex
+	);
+
+ChooseRightSample(
+	ANSISTRING ChooseRightSample,
+	HEXINT32  ,
+	UINT64 sampleTime1,
+	UINT64 sampleTime2
+	);
+
+Sample Cleared(
+	ANSISTRING Sample Cleared,
+	HEXINT32  ,
+	UINT64 BaseTime,
+	UINT64 OverlayTime
+	);
+
+Request New Sample(
+	ANSISTRING Request New Sample,
+	HEXINT32  ,
+	UINT64 BaseTime,
+	UINT64 OverlayTime
+	);
+
+SampleAvailable(
+	ANSISTRING SampleAvailable,
+	HEXINT32  ,
+	UINT32 SampleSizes,
+	UINT32 upstreamIndex,
+	UINT64 sampleTime,
+	UINT64 m_videoStreams[upstreamIndex].currentTime
+	);
+
+SampleEOS(
+	ANSISTRING SampleEOS,
+	HEXINT32  ,
+	UINT32 upstreamIndex
+	);
+
+SampleError(
+	ANSISTRING SampleError,
+	HEXINT32  ,
+	UINT32 upstreamIndex
+	);
+
+NodeHandleSampleAvailable(
+	ANSISTRING NodeHandleSampleAvailable,
+	HEXINT32  ,
+	UINT32 SampleSizes,
+	UINT32 upstreamIndex
+	);
+
+Deferring Requesting from upstream(
+	ANSISTRING fn,
+	HEXINT32 Deferring Requesting from overay,
+	UINT32 overlayIndex
+	);
+
+Updating zOrder(
+	ANSISTRING Updating zOrder,
+	HEXINT32 Updating zOrder,
+	UINT32 overlayIndex,
+	UINT32 OriginalZOrder,
+	UINT32 AlteredZOrder
+	);
+
+SendingSampleDownStream(
+	ANSISTRING ,
+	HEXINT32 Sending sample downstream,
+	HEXINT32 sample,
+	UINT64 startTime,
+	UINT64 duration,
+	UINT32 length,
+	UINT32 flags
+	);
+
+NeedMoreInput(
+	ANSISTRING ,
+	HEXINT32 MFT returned failed
+	);
+
+NeedMoreInput(
+	ANSISTRING ,
+	HEXINT32 MFT returned NeedMoreInput
+	);
+
+CreatedLocalSampleFromCompositionSample(
+	ANSISTRING ,
+	HEXINT32 Creating local sample from composition sample,
+	HEXINT32 compositionSample,
+	UINT64 compositionStartTime,
+	HEXINT32 localSample,
+	UINT64 localStartTime,
+	UINT64 duration
+	);
+
+ProcessOutput(
+	ANSISTRING ,
+	HEXINT32 ProcessOutput called,
+	HEXINT32 compositionSample,
+	UINT64 compositionStartTime,
+	UINT64 duration,
+	HRESULT ProcessOutput Returned hr
+	);
+
+CreatedCompositionTimeSampleFromLocalTimeSample(
+	ANSISTRING ,
+	HEXINT32 Creating composition sample from local sample,
+	HEXINT32 localSample,
+	UINT64 localStartTime,
+	HEXINT32 compositionSample,
+	UINT64 compositionStartTime,
+	UINT64 duration
+	);
+
+Process Input Called With Composition Time Sample(
+	ANSISTRING ,
+	HEXINT32 ProcesInput called,
+	HEXINT32 compositionSample,
+	UINT64 compositionStartTime,
+	UINT64 duration,
+	HRESULT ProcessInput Returned hr
+	);
+
+CreatedCompositionTimeSampleFromLocalTimeSample(
+	ANSISTRING Fn,
+	HEXINT32 Creating composition sample from local sample,
+	HEXINT32 localSample,
+	UINT64 localStartTime,
+	HEXINT32 compositionSample,
+	UINT64 compositionStartTime,
+	UINT64 duration,
+	UINT32 length,
+	UINT32 flags
+	);
+
+DecrementingSamplesRequestedForAsync(
+	ANSISTRING Fn,
+	HEXINT32 Async mode,
+	UINT64 Decrementing m_samplesRequested
+	);
+
+DecrementingSamplesRequestedForSync(
+	ANSISTRING Fn,
+	HEXINT32 Sync mode,
+	UINT64 Decrementing m_samplesRequested
+	);
+
+SingStreamMFTProcessingNodeHandleSampleAvailableFailed(
+	ANSISTRING ,
+	HEXINT32 ,
+	HRESULT failed:
+	);
+
+IncrementingSamplesRequestedForSync(
+	ANSISTRING Fn,
+	HEXINT32 Sync mode,
+	UINT64 Incrementing m_samplesRequested
+	);
+
+IncrementingSamplesRequestedForAsync(
+	ANSISTRING Fn,
+	HEXINT32 Async mode,
+	UINT64 Incrementing m_samplesRequested
+	);
+
+PushingSampleDownStream(
+	HEXINT32 this,
+	ANSISTRING Rerequesting samples since D3D Device has changed
+	);
+
+D3DConverterPushingSampleDownStream(
+	HEXINT32 rhis,
+	ANSISTRING Pushing Sample DownStream,
+	HEXINT32 pushing outputSample downstream
+	);
+
+D3DConverterObtainedOutput(
+	HEXINT32 this,
+	ANSISTRING Produced sample for downstream,
+	HEXINT32 outputSample
+	);
+
+D3DConverterObtainedInput(
+	HEXINT32 this,
+	ANSISTRING Obtained input,
+	HEXINT32 inputSample
+	);
+
+RerequestingSample(
+	HEXINT32 ,
+	ANSISTRING RerequestingSample
+	);
+
+PushingSampleDownStream(
+	HEXINT32 this,
+	ANSISTRING PushingDownStream,
+	HEXINT32 sampleForDownstream
+	);
+
+TrimGotSampleFromSource(
+	HEXINT32 this,
+	ANSISTRING Sample
+	);
+
+TrimGotEOSFromSource(
+	HEXINT32 this,
+	ANSISTRING EOS
+	);
+
+TrimSample(
+	HEXINT32 this,
+	ANSISTRING Partial
+	);
+
+TrimSample(
+	HEXINT32 this,
+	ANSISTRING After
+	);
+
+TrimSample(
+	HEXINT32 this,
+	ANSISTRING Before
+	);
+
+TrimSample(
+	HEXINT32 this,
+	ANSISTRING FULL
+	);
+
+TrimSample(
+	HEXINT32 this,
+	ANSISTRING TrimSampleCalled,
+	UINT64 sampleInStart,
+	UINT64 sampleInEnd,
+	UINT64 m_trimTimeFromStart,
+	UINT64 m_endTimeOfClip
+	);
+
+VideoStillSourceProcessingNodeShutdown(
+	HEXINT32 this,
+	ANSISTRING Shutdown
+	);
+
+BaseSampleFromVideoStillSourceProcessingNode(
+	HEXINT32 this,
+	ANSISTRING BaseSample,
+	UINT64 m_currentTime
+	);
+
+OverlaySampleFromVideoStillSourceProcessingNode(
+	HEXINT32 this,
+	ANSISTRING Overlay Sample,
+	UINT64 baseTimestampToSyncWith
+	);
+
+RequestStart(
+	ANSISTRING RequestStart,
+	HEXINT32 VideoStillSourceProcessingNode:,
+	UINT64 m_currentTime
+	);
+
+BasicVideoEffectProcessFrameStart(
+	UINT32 MemorySupportedType,
+	BOOL32 IsD3D11Mode,
+	UINT32 Width,
+	UINT32 Height,
+	GUID Subtype
+	);
+
+PreviewComposition(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID
+	);
+
+EditingCompositionInfo(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	SIGNED CompositionData,
+	UINT32 NumberOfClips,
+	UINT32 NumberOfBackgroundTracks,
+	UINT32 NumberOfOverlays,
+	UINT32 NumberOfOverlayLayers,
+	UINT64 CompositionDuration,
+	UINT64 ClipDurations,
+	GUID ClipIdentifiers,
+	GUID AudioTrackIdentifiers,
+	UINT64 OverlayDurations,
+	UINT32 ClipVideoEffectCounts,
+	UINT32 ClipAudioEffectCounts,
+	UINT32 ClipTypes,
+	UINT32 OverlayTypes,
+	UINT32 OverlayCompositionTypes,
+	UINT32 BackgroundTrackEffectCounts,
+	UNICODESTRING VideoEffectACIDs,
+	UNICODESTRING AudioEffectACIDs
+	);
+
+PreviewAction(
+	GUID CompositionIdentifier,
+	UINT64 CompositionVersion
+	);
+
+MediaClipInfo(
+	GUID mediaClipIdentifier,
+	GUID codecIdentifier,
+	UNICODESTRING format,
+	UINT32 ClipAudioStreamFormats
+	);
+
+BackgroundAudioTrackInfo(
+	GUID AudioTrackIdentifier,
+	UNICODESTRING format
+	);
+
+DeserializeCompleted(
+	GUID CompositionIdentifier,
+	HEXINT32 ErrorCode
+	);
+
+SmartRemuxOperation(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	HEXINT32 ErrorCode,
+	INT64 PeakPagefileUsage,
+	INT64 PagefileUsage,
+	INT64 MaxSampledPagefileDuringTranscode,
+	INT64 TranscodingMaxMemoryConsumption
+	);
+
+SerializeCompleted(
+	GUID CompositionIdentifier,
+	HEXINT32 ErrorCode
+	);
+
+TranscodeOperation(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	INT16 FailureReason,
+	HEXINT32 ErrorCode,
+	INT64 PeakPagefileUsage,
+	INT64 PagefileUsage,
+	INT64 MaxSampledPagefileDuringTranscode,
+	INT64 TranscodingMaxMemoryConsumption
+	);
+
+SmartRemuxOperation(
+	GUID CompositionIdentifier,
+	GUID SmartRemuxIdentifier
+	);
+
+TranscodeOperation(
+	GUID CompositionIdentifier,
+	GUID TranscodeIdentifier
+	);
+
+SmartRemuxOperation(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	INT64 PeakPagefileUsage,
+	INT64 PagefileUsage,
+	BOOLEAN HasVideo,
+	BOOLEAN HasAudio,
+	HEX VideoProfile,
+	UINT32 Bitrate,
+	UINT32 Height,
+	UINT32 Width,
+	UNICODESTRING Codec,
+	PID AudioProfile,
+	UINT32 Bitrate,
+	UINT32 BitsPerSample,
+	UINT32 ChannelCount,
+	UINT32 SampleRate,
+	UNICODESTRING Codec,
+	HEX ClipSummary,
+	UINT64 ClipSourceDuration,
+	UINT64 ClipTrimmedDuration,
+	UINT32 ClipAudioEffectsCount,
+	UINT32 ClipVideoEffectsCount
+	);
+
+TranscodeOperation(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	INT64 PeakPagefileUsage,
+	INT64 PagefileUsage,
+	BOOLEAN HasVideo,
+	BOOLEAN HasAudio,
+	HEX VideoProfile,
+	UINT32 Bitrate,
+	UINT32 Height,
+	UINT32 Width,
+	UNICODESTRING Codec,
+	PID AudioProfile,
+	UINT32 Bitrate,
+	UINT32 BitsPerSample,
+	UINT32 ChannelCount,
+	UINT32 SampleRate,
+	UNICODESTRING Codec,
+	SIGNED CompositionData,
+	UINT32 NumberOfClips,
+	UINT32 NumberOfBackgroundTracks,
+	UINT32 NumberOfOverlays,
+	UINT32 NumberOfOverlayLayers,
+	UINT64 CompositionDuration,
+	UINT64 ClipDurations,
+	UINT64 OverlayDurations,
+	UINT32 ClipVideoEffectCounts,
+	GUID ClipIdentifiers,
+	UINT32 ClipAudioEffectCounts,
+	UINT32 ClipTypes,
+	UINT32 OverlayTypes,
+	UINT32 OverlayCompositionTypes,
+	UINT32 BackgroundTrackEffectCounts,
+	UNICODESTRING VideoEffectACIDs,
+	UNICODESTRING AudioEffectACIDs
+	);
+
+TranscodeOperationClip(
+	GUID ClipIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	UINT64 ClipDuration,
+	UINT32 VideoEffects,
+	UINT32 AudioEffects,
+	UINT32 ClipTypes
+	);
+
+TranscodeOperation(
+	GUID CompositionIdentifier,
+	GUID MFMediaTelemetrySessionID,
+	INT64 PeakPagefileUsage,
+	INT64 PagefileUsage,
+	BOOLEAN HasVideo,
+	BOOLEAN HasAudio,
+	HEX VideoProfile,
+	UINT32 Bitrate,
+	UINT32 Height,
+	UINT32 Width,
+	UNICODESTRING Codec,
+	PID AudioProfile,
+	UINT32 Bitrate,
+	UINT32 BitsPerSample,
+	UINT32 ChannelCount,
+	UINT32 SampleRate,
+	UNICODESTRING Codec,
+	SIGNED CompositionData,
+	UINT32 NumberOfClips,
+	UINT32 NumberOfBackgroundTracks,
+	UINT32 NumberOfOverlays,
+	UINT32 NumberOfOverlayLayers,
+	UINT64 CompositionDuration,
+	UINT64 ClipDurations,
+	UINT64 OverlayDurations,
+	UINT32 ClipVideoEffectCounts,
+	GUID ClipIdentifiers,
+	UINT32 ClipAudioEffectCounts,
+	UINT32 OverlayVideoEffectCounts,
+	UINT32 OverlayAudioEffectCounts,
+	UINT32 ClipTypes,
+	UINT32 OverlayTypes,
+	UINT32 OverlayCompositionTypes,
+	UINT32 BackgroundTrackEffectCounts,
+	UNICODESTRING VideoEffectACIDs,
+	UNICODESTRING AudioEffectACIDs
+	);
+

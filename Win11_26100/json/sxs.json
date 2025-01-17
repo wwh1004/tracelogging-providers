@@ -1,0 +1,63 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "6ca52a90-42a0-5808-ebbf-a179c2a38f33",
+                             "ProviderName":  "Microsoft.Windows.SxS",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  70368744177664,
+                          "KeywordName":  "MS.MEASURES",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "SxSManifestError",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "ManifestFileName",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "LastError",
+                                             "InType":  "INT32",
+                                             "OutType":  "HRESULT",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "ManifestPath",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "NULL",
+                                             "Extension":  [
+                                                               192,
+                                                               128,
+                                                               128,
+                                                               0
+                                                           ],
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "PartA_PrivTags",
+                                             "InType":  "UINT64",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\x86_microsoft-windows-sxs_31bf3856ad364e35_10.0.26100.1_none_4f21a8f907d2e489\\sxs.dll"
+}

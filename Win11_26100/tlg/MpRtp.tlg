@@ -1,0 +1,862 @@
+ProviderNames:
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+	Microsoft.Windows.Defender
+
+
+
+**** Events *****
+Platform.RTP.SyncMonitorStats(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 SyncMonitoringType,
+	UINT64 DurationMsSum,
+	UINT32 DurationMsCount,
+	UINT32 SuccessCount,
+	UINT32 FailureCount,
+	UINT32 LastFailureCode,
+	UINT32 TimeoutCount,
+	UINT32 BadDataCount
+	);
+
+Platform.RTP.SyncMonitorStats(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 SyncMonitoringType,
+	UINT32 SyncMonitorState,
+	UINT64 SyncMonitorRequestDuration
+	);
+
+Platform.RTP.SyncProcessCreateStats(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT64 DurationMsSum,
+	UINT32 DurationMsCount,
+	UINT32 SuccessCount,
+	UINT32 FailureCount,
+	UINT32 LastFailureCode,
+	UINT32 TimeoutCount,
+	UINT32 BadDataCount
+	);
+
+Platform.MODMON.UpdateStatus(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult
+	);
+
+Platform.CFA.UpdateStatus(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult
+	);
+
+Platform.RTP.DisabledBM(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT hr,
+	ANSISTRING FailedFunction
+	);
+
+Platform.HealthMonitor.FilterTimeout(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING Source,
+	BOOLEAN IsPanic,
+	BOOLEAN IsTimeout,
+	UINT32 ServiceTimeoutCount,
+	UINT32 CreateProcessTimeoutCount,
+	UINT32 SyncMonitorNotificationTimeoutCount,
+	UINT32 LoadImageNotifyTimeoutCount,
+	UINT32 TotalPendingScans,
+	UINT32 TotalScans,
+	UNICODESTRING FileDevice,
+	UNICODESTRING CPUMemSizeBucket,
+	UINT32 UpTime
+	);
+
+Platform.Rtp.OSCopyHint(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING Type,
+	NULL ProcessImageName
+	);
+
+Platform.Rtp.TaintExclusion(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 Pid,
+	UNICODESTRING ProcessImageName
+	);
+
+Platform.CFA.PathResolution(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HEXINT32 HResult
+	);
+
+Platform.RTP.ModuleMonitorNotification(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 PolicyVersion,
+	UINT32 Mode,
+	UINT32 Action,
+	UINT32 ProcessID,
+	UINT32 SessionID,
+	NULL ProcessName,
+	NULL ModuleName
+	);
+
+Platform.Rtp.CopyHint(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	NULL ProcessImageName
+	);
+
+Platform.RTP.OpenWithoutRead(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 TotalOnOpenScansWithoutRead,
+	UINT32 TotalOnOpenScans,
+	NULL ProcessImageName
+	);
+
+Platform.Rtp.OSCopyStateChange(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	BOOLEAN Enabled
+	);
+
+Platform.Rtp.CopyAccelerationInjection(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	NULL ProcessName,
+	BOOL32 StaticInjection,
+	HRESULT InjectionResult,
+	UINT32 InjectionCount,
+	UINT32 SessionId
+	);
+
+Platform.Rtp.CopyAccelerationEnabled(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+DC.OnPlatformUpdate(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	UINT32 PlatformUpdateType,
+	BOOL32 WddServiceExists,
+	BOOL32 WddActive,
+	UINT32 DeviceControlState
+	);
+
+DC.OnPlatformUpdate(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	UINT32 PlatformUpdateType,
+	BOOL32 WddServiceExists,
+	BOOL32 WddActive,
+	UINT32 DeviceControlState
+	);
+
+DC.AzureAdQueryFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT
+	);
+
+DC.AzureAdQueryFailure(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT
+	);
+
+DC.PrematureThreadExit(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ThreadName,
+	HRESULT HRESULT
+	);
+
+DC.PrematureThreadExit(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ThreadName,
+	HRESULT HRESULT
+	);
+
+DC.ComponentInitFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ComponentName,
+	HRESULT HRESULT
+	);
+
+DC.ComponentInitFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ComponentName,
+	HRESULT HRESULT
+	);
+
+DC.ClassRegistrationFailure(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	ANSISTRING Operation,
+	UNICODESTRING DeviceClass,
+	UINT32 DeviceControlState,
+	UNICODESTRING SecuredDevicesMap
+	);
+
+DC.ClassRegistrationFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	ANSISTRING Operation,
+	UNICODESTRING DeviceClass,
+	UINT32 DeviceControlState,
+	UNICODESTRING SecuredDevicesMap
+	);
+
+DC.GetConfigPoliciesFailure(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	UINT32 RulesConfigOrigin,
+	UINT32 GroupsConfigOrigin,
+	UINT32 DeviceControlState
+	);
+
+DC.GetConfigPoliciesFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	UINT32 RulesConfigOrigin,
+	UINT32 GroupsConfigOrigin,
+	UINT32 DeviceControlState
+	);
+
+DC.DisableDeviceControl(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	UINT32 DeviceControlState
+	);
+
+DC.DisableDeviceControl(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	UINT32 DeviceControlState
+	);
+
+DC.EnableDeviceControl(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	UINT32 DeviceControlState
+	);
+
+DC.EnableDeviceControl(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	UINT32 DeviceControlState
+	);
+
+Platform.Rtp.LegacyProcessBlockNotifySense(
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	UNICODESTRING ProcessName,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	UINT32 ParentProcessId,
+	UINT64 ParentProcessCreationTime,
+	UINT32 Reason
+	);
+
+Platform.Rtp.LegacyProcessBlock(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ProcessName,
+	UINT32 ProcessId,
+	UINT32 Reason
+	);
+
+Platform.RtpBlock(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.RtpShadow(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.RtpAudit(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing
+	);
+
+Platform.Rtp.LegacyProcessNotifySense(
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	UNICODESTRING ProcessName,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	UINT32 ParentProcessId,
+	UINT64 ParentProcessCreationTime
+	);
+
+Platform.Rtp.LegacyProcessCreate(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UNICODESTRING ProcessName,
+	UINT32 ProcessId
+	);
+
+Platform.CFA.EventsStats(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	UINT32 Blocked Events,
+	UINT32 Audit Events,
+	UINT32 Failed Events
+	);
+
+Platform.ResourceMonitor.RtpThrottleFail(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT ResetThreadCpuSetHr
+	);
+
+DC.FilterIOFailure(
+	UINT64 PartA_PrivTags,
+	WIN32ERROR HRESULT
+	);
+
+DC.FilterIOFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	WIN32ERROR HRESULT
+	);
+
+DC.FilterConnectFailure(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT
+	);
+
+DC.FilterConnectFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT
+	);
+
+DC.DataDuplicationDispatchEvent(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	UNICODESTRING DuplicatedOperation,
+	UNICODESTRING DevicePrimaryId,
+	UINT32 RemoteLocationType,
+	UINT64 DispatchTimeElapsedMs,
+	UINT64 DataSize,
+	UNICODESTRING RemoteLocationPath,
+	UNICODESTRING DeviceFilePath
+	);
+
+DC.DataDuplicationDispatchEvent(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	UNICODESTRING DuplicatedOperation,
+	UNICODESTRING DevicePrimaryId,
+	UINT32 RemoteLocationType,
+	UINT64 DispatchTimeElapsedMs,
+	UINT64 DataSize,
+	UNICODESTRING RemoteLocationPath,
+	UNICODESTRING DeviceFilePath
+	);
+
+DC.DataDuplicationDispatchEvent(
+	UINT64 PartA_PrivTags,
+	HRESULT HRESULT,
+	UNICODESTRING DuplicatedOperation,
+	UNICODESTRING DevicePrimaryId,
+	UINT32 RemoteLocationType,
+	UINT32 DispatchTimeElapsedMs,
+	UINT64 DataSize,
+	UNICODESTRING RemoteLocationPath,
+	UNICODESTRING DeviceFilePath
+	);
+
+DC.DataDuplicationDispatchEvent(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ProductGuid,
+	UNICODESTRING EngineVersion,
+	UNICODESTRING SigVersion,
+	UNICODESTRING AppVersion,
+	UNICODESTRING PartnerGuid,
+	UNICODESTRING OrgId,
+	BOOL32 IsBeta,
+	BOOL32 IsManaged,
+	BOOL32 IsPassiveMode,
+	BOOL32 IsSxsPassiveMode,
+	BOOL32 ShouldHashIds,
+	UINT32 EngineRing,
+	UINT32 CampRing,
+	UINT32 SignatureRing,
+	HRESULT HRESULT,
+	UNICODESTRING DuplicatedOperation,
+	UNICODESTRING DevicePrimaryId,
+	UINT32 RemoteLocationType,
+	UINT32 DispatchTimeElapsedMs,
+	UINT64 DataSize,
+	UNICODESTRING RemoteLocationPath,
+	UNICODESTRING DeviceFilePath
+	);
+

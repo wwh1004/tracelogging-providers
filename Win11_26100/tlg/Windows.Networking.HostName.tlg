@@ -1,0 +1,58 @@
+ProviderNames:
+	Microsoft.Windows.HostName
+
+
+
+**** Events *****
+NetworkAdapterImpl::CreateNetworkAdapter(
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	INT32 hresult
+	);
+
+NetworkAdapterImpl::CreateNetworkAdapter(
+	ANSISTRING failedFunction,
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	INT32 hresult
+	);
+
+NetworkAdapterImpl::CreateNetworkAdapter(
+	ANSISTRING failedFunction,
+	GUID interfaceGuid,
+	HEXINT64 interfaceLuid,
+	UINT32 error
+	);
+
+NetworkAdapterImpl::CreateNetworkAdapter(
+	ANSISTRING failedFunction,
+	GUID interfaceGuid,
+	UINT32 error
+	);
+
+NetworkAdapterImpl::CreateNetworkAdapter(
+	UINT32 ifType,
+	UINT32 interfaceIndex,
+	HEXINT64 interfaceLuid,
+	INT32 hresult
+	);
+
+NetworkAdapterImpl::CreateNetworkAdapter(
+	ANSISTRING failedFunction,
+	UINT32 interfaceIndex,
+	UINT32 error
+	);
+
+NetworkAdapterImpl::RuntimeClassInitialize(
+	UINT32 interfaceIndex,
+	HEXINT64 interfaceLuid,
+	INT32 hresult
+	);
+
+NetworkAdapterImpl::RuntimeClassInitialize(
+	ANSISTRING failedFunction,
+	UINT32 interfaceIndex,
+	HEXINT64 interfaceLuid,
+	INT32 hresult
+	);
+

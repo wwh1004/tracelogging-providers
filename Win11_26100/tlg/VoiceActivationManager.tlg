@@ -1,0 +1,404 @@
+ProviderNames:
+	Microsoft.Windows.Audio.VoiceActivationManager
+	Microsoft.Windows.Audio.VoiceActivationManager2
+
+
+
+**** Events *****
+Arm-Stop3(
+	HRESULT hr
+	);
+
+Initialize-Start(
+	UNICODESTRING szDeviceId
+	);
+
+SetWakePattern-Start(
+	UINT32 Size,
+	GUID PatternType
+	);
+
+GetKeywordDetectorDeviceInterfaceId-Start(
+	VOID
+	);
+
+Arm-Stop2(
+	HRESULT hr
+	);
+
+Arm-Start(
+	BOOL32 fArm
+	);
+
+GetKeywordDetectorDeviceInterfaceId-Stop(
+	HRESULT hr
+	);
+
+Arm-Stop1(
+	HRESULT hr
+	);
+
+WakePatternMatched(
+	VOID
+	);
+
+Initialize-Stop(
+	HRESULT hr
+	);
+
+GetSupportedWakePatternTypes-Start(
+	VOID
+	);
+
+SetWakePattern-Stop(
+	HRESULT hr
+	);
+
+GetSupportedWakePatternTypes-Stop(
+	HRESULT hr
+	);
+
+Arm-Resources acquired(
+	HEXINT32 this
+	);
+
+Arm-No change necessary(
+	HEXINT32 this
+	);
+
+IsPropertySupported-Returned support(
+	HEXINT32 this,
+	HEXINT32 ExpectedPropertySupportFlags,
+	HEXINT32 propertySupportFlags
+	);
+
+AsyncHandler-shutdown(
+	HEXINT32 this
+	);
+
+Cleanup-Stop(
+	HEXINT32 this
+	);
+
+IsPropertySupported-Start(
+	HEXINT32 this
+	);
+
+AsyncHandler-Start(
+	HEXINT32 this
+	);
+
+Initialize-Retrieve device(
+	HEXINT32 this,
+	UNICODESTRING InterfaceId
+	);
+
+CreateWorkItemThread-Stop(
+	HEXINT32 this
+	);
+
+Arm-Stop(
+	HEXINT32 this
+	);
+
+InternalAcquireResources-Start(
+	HEXINT32 this
+	);
+
+RegisterEventHandler-Stop(
+	HEXINT32 this
+	);
+
+CMNotificationCallback-Start(
+	HEXINT32 this
+	);
+
+IsVoiceActivationSupported-Start(
+	HEXINT32 this
+	);
+
+InternalAcquireResources-resource acquire returned(
+	HEXINT32 this
+	);
+
+UnregisterEventHandler-Start(
+	HEXINT32 this,
+	HEXINT32 callback
+	);
+
+InternalArm-Start(
+	HEXINT32 this,
+	GUID eventId,
+	BOOL32 fArm
+	);
+
+ResourceNotificationCallback-notification that resource lost while processing acquire(
+	HEXINT32 this
+	);
+
+Initialize-Stop(
+	HEXINT32 this
+	);
+
+GetSupportedFeature-Stop(
+	HEXINT32 this,
+	BOOL32 supported
+	);
+
+ResourceNotificationCallback-Start(
+	HEXINT32 this
+	);
+
+CMNotificationCallback - Performing callback start(
+	HEXINT32 this
+	);
+
+PublishArmState-Start(
+	HEXINT32 this,
+	BOOL32 armed
+	);
+
+Arm-Start(
+	HEXINT32 this,
+	GUID eventId,
+	BOOL32 fArm
+	);
+
+CreateWorkItemThread-Start(
+	HEXINT32 this
+	);
+
+GetKeywordDetectorDeviceInterfaceId-Stop(
+	HEXINT32 this,
+	UNICODESTRING DetectorDevInterfaceId
+	);
+
+GetSupportedFeature-Start(
+	HEXINT32 this,
+	HEXINT32 Id,
+	GUID eventId
+	);
+
+VoiceActivationManagerImpl2(
+	HEXINT32 this
+	);
+
+SetWakePattern-Stop(
+	HEXINT32 this
+	);
+
+GetSupportedWakePatternTypes - Pattern returned(
+	HEXINT32 this,
+	GUID PatternId
+	);
+
+RegisterEventHandler-Start(
+	HEXINT32 this,
+	HEXINT32 callback
+	);
+
+GetSupportedWakePatternTypes-Stop(
+	HEXINT32 this,
+	UINT16 count
+	);
+
+IsArmed-Start(
+	HEXINT32 this,
+	GUID eventId
+	);
+
+Cleanup-Start(
+	HEXINT32 this
+	);
+
+s_AsyncHandler-Stop(
+	HEXINT32 this
+	);
+
+Initialize-FilterId(
+	HEXINT32 this,
+	UNICODESTRING filterId
+	);
+
+ResourceNotificationCallback-resource lost, disarming(
+	HEXINT32 this
+	);
+
+Initialize-Voice activation supported(
+	HEXINT32 this
+	);
+
+InternalAcquireResources-Stop(
+	HEXINT32 this,
+	BOOL32 pending,
+	HEXINT32 handle
+	);
+
+ResourceNotificationCallback-resource acquired(
+	HEXINT32 this
+	);
+
+CMNotificationCallback - Performing callback stop(
+	HEXINT32 this
+	);
+
+SetWakePattern-Event was armed, updating state to disarmed(
+	HEXINT32 this,
+	GUID eventId
+	);
+
+GetSupportedFeatures-Start(
+	HEXINT32 this
+	);
+
+IsArmed-Stop(
+	HEXINT32 this,
+	BOOL32 armed
+	);
+
+UnregisterEventHandler-Stop(
+	HEXINT32 this
+	);
+
+IsPropertySupported-Checking property(
+	HEXINT32 this,
+	GUID set,
+	UINT32 id
+	);
+
+GetSupportedWakePatternTypes-Start(
+	HEXINT32 this
+	);
+
+IsVoiceActivationSupported-Stop(
+	HEXINT32 this
+	);
+
+GetSupportedFeatures-Stop(
+	HEXINT32 this,
+	HEXINT32 features
+	);
+
+ResourceNotificationCallback-Policy manager holding resource, not acquired(
+	HEXINT32 this
+	);
+
+CMNotificationCallback - Custom event(
+	HEXINT32 this,
+	UINT32 EventDataSize,
+	HEXINT32 FilterType,
+	UINT32 Pattern size,
+	GUID EventGuid
+	);
+
+~VoiceActivationManagerImpl2-Start(
+	HEXINT32 this
+	);
+
+Cleanup-Work queue shutdown(
+	HEXINT32 this
+	);
+
+SetWakePattern-KsProperty Start(
+	HEXINT32 this
+	);
+
+IsPatternRequired-Stop(
+	HEXINT32 this
+	);
+
+CMNotificationCallback - Device removal(
+	HEXINT32 this
+	);
+
+Cleanup-Waiting for work queue shutdown(
+	HEXINT32 this
+	);
+
+Arm-Disarming(
+	HEXINT32 this
+	);
+
+ResetSoundDetector-Start(
+	HEXINT32 this,
+	GUID eventId,
+	BOOL32 reset
+	);
+
+InternalAcquireResources-acquiring resource(
+	HEXINT32 this
+	);
+
+s_AsyncHandler-Start(
+	HEXINT32 this
+	);
+
+~VoiceActivationManagerImpl2-Stop(
+	HEXINT32 this
+	);
+
+SetWakePattern-KsProperty Stop(
+	HEXINT32 this
+	);
+
+IsPropertySupported-Stop(
+	HEXINT32 this,
+	HRESULT HResult
+	);
+
+AsyncHandler-Stop(
+	HEXINT32 this
+	);
+
+ResourceNotificationCallback-reacquired resource, rearming(
+	HEXINT32 this
+	);
+
+CMNotificationCallback-Stop(
+	HEXINT32 this
+	);
+
+PublishArmState-Stop(
+	HEXINT32 this
+	);
+
+Initialize-Start(
+	HEXINT32 this,
+	UNICODESTRING szDeviceId
+	);
+
+ResetSoundDetector-Stop(
+	HEXINT32 this
+	);
+
+ResourceNotificationCallback-Stop(
+	HEXINT32 this
+	);
+
+InternalArm-Stop(
+	HEXINT32 this
+	);
+
+AsyncHandler-Unregister_CM_Notifications(
+	HEXINT32 this
+	);
+
+Arm-Arming(
+	HEXINT32 this
+	);
+
+GetKeywordDetectorDeviceInterfaceId-Start(
+	HEXINT32 this
+	);
+
+IsPatternRequired-Start(
+	HEXINT32 this
+	);
+
+SetWakePattern-Start(
+	HEXINT32 this,
+	GUID eventId,
+	UINT32 Size,
+	GUID PatternType
+	);
+

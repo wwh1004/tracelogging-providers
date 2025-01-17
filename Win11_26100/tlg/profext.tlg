@@ -1,0 +1,159 @@
+ProviderNames:
+	Microsoft-Windows-AppModel-Runtime
+	Microsoft.Windows.ProfExt
+
+
+
+**** Events *****
+DeleteACProfile_stop(
+	UINT32 hr
+	);
+
+AppModelAppContainerRegisterSidFailure(
+	UINT32 hr
+	);
+
+AppModelCreateAppContainerFailure(
+	UNICODESTRING Context,
+	UINT32 hr
+	);
+
+AppModelAppContainerCreateFolderFailure(
+	UNICODESTRING Context,
+	UINT32 hr
+	);
+
+CreateACProfile_stop(
+	UINT32 hr
+	);
+
+AppModelDeleteAppContainerFailure(
+	UNICODESTRING Context,
+	UINT32 hr
+	);
+
+UpdateACProfile_start(
+	UNICODESTRING Name,
+	UNICODESTRING OldDisplay,
+	UNICODESTRING Display,
+	UNICODESTRING Description,
+	UINT32 Type,
+	UINT32 CapabilityCount
+	);
+
+IsAppContainerProfilePresent_stop(
+	UINT32 hr
+	);
+
+CreateACProfile_start(
+	UNICODESTRING Name,
+	UNICODESTRING Display,
+	UNICODESTRING Description,
+	UINT32 Type,
+	UINT32 CapabilityCount
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+UpdateAppContainerProfileFirewallFailed(
+	UNICODESTRING Name,
+	HRESULT ErrorCode
+	);
+
+UpdateAppContainerProfileWorker_Failed(
+	UINT32 hr
+	);
+
+DeleteACProfile_start(
+	UNICODESTRING Name,
+	UINT32 Type
+	);
+
+ParentFolderInfoOfAccessDeniedFolderCreate(
+	HRESULT HrCreate,
+	UNICODESTRING FolderToCreate,
+	UNICODESTRING ParentPath,
+	HRESULT HrGetDACL,
+	UNICODESTRING ParentDACL
+	);
+
+IsAppContainerProfilePresent_start(
+	UNICODESTRING Name,
+	UINT32 Type
+	);
+
+DeleteAppContainerProfileWorker_Failed(
+	UINT32 hr
+	);
+
+CreateAppContainerProfileFirewallFailed(
+	UNICODESTRING Name,
+	HRESULT ErrorCode
+	);
+
+FailureNoContext(
+	UINT32 hr
+	);
+
+SuccessContext(
+	UNICODESTRING Context
+	);
+
+AppModelUpdateAppContainerFailure(
+	UNICODESTRING Context,
+	UINT32 hr
+	);
+
+FailureContext(
+	UNICODESTRING Context,
+	UINT32 hr
+	);
+
+UpdateACProfile_stop(
+	UINT32 hr
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+

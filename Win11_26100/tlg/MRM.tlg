@@ -1,0 +1,81 @@
+ProviderNames:
+	Microsoft.WindowsAppSdk.MrtCore.Runtime
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+MrmCreateResourceManager(
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+TelemetryGenericEvent(
+	UNICODESTRING functionName,
+	UNICODESTRING message,
+	INT32 hresult,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+MeasureGenericEvent(
+	UNICODESTRING functionName,
+	UNICODESTRING message,
+	INT32 hresult,
+	HEX COMMON_WINDOWSAPPSDK_PARAMS,
+	ANSISTRING Version,
+	ANSISTRING WindowsAppSDKChannel,
+	BOOL32 IsDebugging,
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+

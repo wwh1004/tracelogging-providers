@@ -1,0 +1,175 @@
+ProviderNames:
+	Microsoft.Windows.VoiceAccess.VoiceAccessUserInterface
+	Microsoft.Windows.Accessibility.VoiceAccess
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+HelpAction(
+	GUID AppSessionID,
+	UNICODESTRING ButtonID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+HelpClose(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UINT64 PartA_PrivTags
+	);
+
+HelpOpen(
+	GUID AppSessionID,
+	UNICODESTRING InvocationSource,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsNonTerminal(
+	GUID AppSessionID,
+	UNICODESTRING CategoryName,
+	UNICODESTRING PreviousSelection,
+	UNICODESTRING CurrentSelection,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsTerminal(
+	GUID AppSessionID,
+	UNICODESTRING CategoryName,
+	UNICODESTRING FeatureName,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsClose(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsOpen(
+	GUID AppSessionID,
+	UNICODESTRING InvocationSource,
+	UINT64 PartA_PrivTags
+	);
+
+FREDownloadStart(
+	GUID AppSessionID,
+	UINT16 IsSpeechModelAvailable,
+	UINT16 DownloadTryCount,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREDownloadInterrupt(
+	GUID AppSessionID,
+	UINT16 PercentageCompleted,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREDownloadError(
+	GUID AppSessionID,
+	UINT16 PercentageCompleted,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREDownloadNotNow(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREDownloadCancel(
+	GUID AppSessionID,
+	UINT16 PercentageCompleted,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREStart(
+	GUID AppSessionID,
+	UNICODESTRING LaunchSource,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+AllModelsUpdatedToLicenseBased(
+	UINT64 PartA_PrivTags
+	);
+
+MicStateChanged(
+	UINT64 PartA_PrivTags,
+	GUID AppSessionID,
+	GUID MicSessionID,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UNICODESTRING SessionType,
+	UNICODESTRING SessionChangeMode,
+	UNICODESTRING MicSessionErrorID,
+	UINT64 HearingDuration,
+	UINT64 LoadingDuration
+	);
+

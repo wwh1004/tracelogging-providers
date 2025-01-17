@@ -1,0 +1,179 @@
+ProviderNames:
+	Microsoft.Windows.Sense.SenseGroupPolicyParser
+	Microsoft.Windows.Sense.Client
+
+
+
+**** Events *****
+GroupPolicyParser(
+	UNICODESTRING message,
+	ANSISTRING error
+	);
+
+GPOMetadata(
+	UNICODESTRING path,
+	UNICODESTRING name,
+	UNICODESTRING displayName,
+	UINT32 version
+	);
+
+GroupPolicyParser(
+	UNICODESTRING message,
+	UNICODESTRING gpoDN
+	);
+
+GroupPolicyParser(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+GroupPolicyParser(
+	UNICODESTRING message,
+	UINT16 VarType
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING key
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT64 defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT64 defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT32 defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT32 defaultValue
+	);
+
+RegistryPolicyPacked(
+	UNICODESTRING GpoName,
+	UINT32 GpoVersion,
+	UNICODESTRING KeyPath,
+	UNICODESTRING Values,
+	UINT32 PolicyType
+	);
+
+GroupPolicyParser(
+	UNICODESTRING message,
+	INT32 hr
+	);
+
+GroupPolicyParser(
+	UNICODESTRING message
+	);
+
+GroupPolicyParser(
+	UNICODESTRING message,
+	UNICODESTRING GpoName,
+	UINT32 GpoVersion,
+	UNICODESTRING KeyPath,
+	UNICODESTRING Value,
+	UINT32 ValueType
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+

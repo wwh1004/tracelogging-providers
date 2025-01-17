@@ -1,0 +1,226 @@
+ProviderNames:
+	CombaseTraceLoggingProvider
+	Microsoft.Windows.WinRTClassActivation
+	CombaseTraceLoggingProvider
+
+
+
+**** Events *****
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Mandatory Policy
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	INT64 Security Attribute Value
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	COUNTEDSTRING Attribute Name
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Capability Count
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Elevation type
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UNICODESTRING Sid,
+	UINT32 Attributes
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Privilege low part,
+	UINT32 Privilege high part,
+	UINT32 Attributes
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	ANSISTRING Value Type
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Group Count
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	ANSISTRING Value Type,
+	UINT16 Value
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	COUNTEDSTRING Security Attribute Value,
+	UINT64 Version
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UNICODESTRING Primary Group Sid
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 sandboxInert
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Session Id
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UNICODESTRING Capability
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT64 Security Attribute Value
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Restricted Group Count
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 isLowBox
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT16 Default Dacl Ace Count
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 lowBoxNumber
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UNICODESTRING Package SID
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UNICODESTRING Integrity Level
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Ace#,
+	UNICODESTRING Sid,
+	UINT32 Access Mask,
+	UINT8 Ace type,
+	UINT8 Ace Flags
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	COUNTEDSTRING Security Attribute Value
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 Authentication Id low part,
+	UINT32 Authentication Id high part
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 isTokenVirtualizationEnabled
+	);
+
+LogTokenInfo(
+	HEXINT32 Token,
+	UINT32 uiAccess
+	);
+
+ComError(
+	HRESULT hresult,
+	ANSISTRING code,
+	UNICODESTRING message,
+	ANSISTRING function,
+	ANSISTRING fileName,
+	UINT16 lineNumber
+	);
+
+ComError(
+	HRESULT hresult,
+	ANSISTRING code,
+	UNICODESTRING message,
+	ANSISTRING function,
+	ANSISTRING fileName,
+	UINT16 lineNumber
+	);
+
+TracesRateLimited(
+	VOID
+	);
+
+ComError(
+	HRESULT hresult,
+	ANSISTRING code,
+	UNICODESTRING message,
+	ANSISTRING function,
+	ANSISTRING fileName,
+	UINT16 lineNumber
+	);
+

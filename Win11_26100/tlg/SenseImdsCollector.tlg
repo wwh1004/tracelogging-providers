@@ -1,0 +1,197 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+
+
+
+**** Events *****
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	ANSISTRING exception
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	INT32 ArgumentAmount
+	);
+
+SenseMachineInfoCollector(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT32 ServerRolesCollectionReturnValue
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT32 ImdsCollectionReturnValue
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT64 SizeOfReportedInfo,
+	UNICODESTRING cloudPlatform,
+	ANSISTRING vmId,
+	ANSISTRING resourceId,
+	ANSISTRING subscriptionId,
+	ANSISTRING cloudNativeId
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT32 totalBytesWritten
+	);
+
+SenseMachineInfoCollector(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT64 resourceIdSizeInBytes,
+	UINT64 maxPropertySizeInBytes
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UNICODESTRING subscriptionId
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UNICODESTRING vmId
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	ANSISTRING exceptionMessage
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT64 gcpIdentifierStrSizeInBytes,
+	UINT64 maxPropertySizeInBytes
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UNICODESTRING response
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT64 arnStrSizeInBytes,
+	UINT64 maxPropertySizeInBytes
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	ANSISTRING exception,
+	UNICODESTRING URI
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	INT32 error code,
+	ANSISTRING error,
+	UNICODESTRING URI
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UNICODESTRING response,
+	UNICODESTRING URI
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT16 status code,
+	UNICODESTRING URI
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UNICODESTRING URI
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT64 OriginalServerRoleAmount,
+	UINT16 GeneratedServerRolesAmount,
+	UNICODESTRING ServerRolesOnMachine
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING dismFunctionName
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING role
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseMachineInfoCollector(
+	UNICODESTRING message,
+	UINT16 length
+	);
+

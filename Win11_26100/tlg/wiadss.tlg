@@ -1,0 +1,79 @@
+ProviderNames:
+	Microsoft.Windows.Scan.WindowsImageAcquisition
+	Microsoft.Windows.Scan.WiaTwainCompat
+
+
+
+**** Events *****
+TraceInfo(
+	ANSISTRING Function,
+	ANSISTRING Message
+	);
+
+TraceError(
+	ANSISTRING Function,
+	ANSISTRING Message
+	);
+
+TraceWarning(
+	ANSISTRING Function,
+	ANSISTRING Message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SourceSessionEnded(
+	UINT32 EndState,
+	UINT16 TWRC
+	);
+
+SourceSessionStarted(
+	UNICODESTRING DeviceId,
+	ANSISTRING DeviceName,
+	ANSISTRING DeviceVendor,
+	ANSISTRING DeviceFamily,
+	INT32 IsLegacyDevice,
+	UINT32 StartState,
+	UINT16 TWRC
+	);
+

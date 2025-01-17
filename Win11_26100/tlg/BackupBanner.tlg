@@ -1,0 +1,89 @@
+ProviderNames:
+	Microsoft-Windows-Shell-BackupBanner
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+BackupBannerState(
+	UNICODESTRING text,
+	UINT64 type,
+	UINT64 uiControlCategory,
+	UINT64 PartA_PrivTags
+	);
+
+BackupBannerTIPInfoMessage(
+	UNICODESTRING msg,
+	INT32 uiControlCategory,
+	UINT64 PartA_PrivTags
+	);
+
+BackupBannerError(
+	UNICODESTRING err,
+	UINT64 PartA_PrivTags
+	);
+
+BackupBannerException(
+	UNICODESTRING description,
+	INT32 hr,
+	UINT64 PartA_PrivTags
+	);
+
+BackupBannerErrorWithData(
+	UNICODESTRING description,
+	UNICODESTRING err,
+	UINT64 PartA_PrivTags
+	);
+
+BackupBannerInfoMessage(
+	UNICODESTRING msg,
+	UINT64 PartA_PrivTags
+	);
+
+BackupBannerStateInfo(
+	UNICODESTRING msg,
+	INT32 state,
+	UINT64 PartA_PrivTags
+	);
+

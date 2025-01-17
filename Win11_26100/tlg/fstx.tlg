@@ -1,0 +1,4399 @@
+ProviderNames:
+	FsTxTraceLoggingProvider
+	Microsoft.Windows.Kernel.Base
+
+
+
+**** Events *****
+RollbackHandler(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateGuid(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandleNT2(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+PrePrepareHandler(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetNormalizedNameByHandleNT(
+	UNICODESTRING Message
+	);
+
+CleanupFsTxTransaction(
+	UNICODESTRING Message
+	);
+
+TraverseLog(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+CreateGuid(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FinalizeWorkers(
+	UNICODESTRING Message
+	);
+
+FsTxEnumTransactions(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink2(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionFromCheckpoint(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+RollbackHandler(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributes(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectoryNT(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandle2(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+WriteSetFileAttributesOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionFromCheckpoint(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+GetContextsByFilePathNT(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLink2(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+ReadDataLogRecord(
+	UNICODESTRING Message
+	);
+
+GetContextsByFilePath(
+	UNICODESTRING Message
+	);
+
+FsTxInitGuidGenerator(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FinalizeWorkers(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+WriteOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+InitializeTempDirPath(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+PrepareCommitHandler(
+	UNICODESTRING Message
+	);
+
+AddLsnListEntry(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+FsTxFindClose(
+	UNICODESTRING Message
+	);
+
+FsTxGetTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectory(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectory(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+InitializeIOPort(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLink(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PrepareCommitHandler(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+CreateGuid(
+	UNICODESTRING Message
+	);
+
+AppendLsn(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+WriteSetFileAttributesOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectoryNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+WriteOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink2(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxInitGuidGenerator(
+	UNICODESTRING Message
+	);
+
+InitializeIOPort(
+	UNICODESTRING Message
+	);
+
+AppendLsn(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionFromCheckpoint(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLinkNT(
+	UNICODESTRING Message
+	);
+
+WriteSetFileAttributesOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PrepareCommitHandler(
+	UNICODESTRING Message
+	);
+
+FsTxFindHardLinkCloseNT(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+GetContextsByFilePathNT(
+	UNICODESTRING Message
+	);
+
+TraverseLog(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkNT(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+InitializeIOPort(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfo(
+	UNICODESTRING Message
+	);
+
+TraverseLog(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+ReadDataLogRecord(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxFindCloseNT(
+	UNICODESTRING Message
+	);
+
+WriteOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxDeInitGuidGenerator(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperation(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+ReadDataLogRecord(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributes(
+	UNICODESTRING Message
+	);
+
+TraverseLog(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFile(
+	UNICODESTRING Message
+	);
+
+GetContextsByFilePath(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink2(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxFindCloseNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FinalizeWorkers(
+	UNICODESTRING Message
+	);
+
+AppendLsn(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+GetContextsByFilePath(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+WriteOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+SearchTransactionEntryForFileHandle(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandle(
+	UNICODESTRING Message
+	);
+
+GetContextsByFilePathNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandle(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxGetTransactionEntry(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+AddLsnListEntry(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+WriteDataLogRecord(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxDeInitGuidGenerator(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+AppendLsn(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+WriteSetFileBasicInfoOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FsTxCreateTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFile(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+AddEntryToTransactionList(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryNT(
+	UNICODESTRING Message
+	);
+
+WriteCheckpoint(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionFromCheckpoint(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLink2(
+	UNICODESTRING Message
+	);
+
+RollbackHandler(
+	UNICODESTRING Message
+	);
+
+InitializeTempDirPath(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+CreateMetadataSubDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandleNT2(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandleNT2(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+WriteSetFileAttributesOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxFindHardLinkCloseNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindHardLinkCloseNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandleNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeInitGuidGenerator(
+	UNICODESTRING Message
+	);
+
+FinalizeWorkers(
+	UNICODESTRING Message
+	);
+
+WriteSetFileAttributesOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperation(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink2(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxFindClose(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxFindHardLinkClose(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+WriteDataLogRecord(
+	UNICODESTRING Message
+	);
+
+CreateMetadataSubDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+CreateGuid(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+RollbackHandler(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindHardLinkClose(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+CleanupFsTxTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFile(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandleNT(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+PrepareCommitHandler(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+CreateGuid(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+AddEntryToTransactionList(
+	UNICODESTRING Message
+	);
+
+GenerateLsnListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxCreateTransactionEntry(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+PrePrepareHandler(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+WriteSetFileBasicInfoOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionFromCheckpoint(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkNT(
+	UNICODESTRING Message
+	);
+
+WriteCheckpoint(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfo(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileNT(
+	UNICODESTRING Message
+	);
+
+InitializeTempDirPath(
+	UNICODESTRING Message
+	);
+
+FsTxEnumTransactions(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+MapCreateParams(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+WriteDataLogRecord(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+CreateMetadataSubDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCreateGuid(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLink2(
+	UNICODESTRING Message
+	);
+
+CreateMetadataSubDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+PrePrepareHandler(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxCopyFile(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLink(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+FsTxFindClose(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+IsDirectoryEmpty(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoNT(
+	UNICODESTRING Message
+	);
+
+WriteDataLogRecord(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLink(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+FsTxFindHardLinkClose(
+	UNICODESTRING Message
+	);
+
+GenerateLsnListFromLog(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FinalizeWorkers(
+	UNICODESTRING Message
+	);
+
+CleanupFsTxTransaction(
+	UNICODESTRING Message
+	);
+
+InitializeIOPort(
+	UNICODESTRING Message
+	);
+
+CleanupFsTxTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+GenerateLsnListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandle(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteTransactionEntry(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandle(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxEnlistTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+TraverseLog(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandleNT(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+GenerateLsnListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+ReadDataLogRecord(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandle2(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+WriteSetFileBasicInfoOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+PrepareCommitHandler(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectory(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandle(
+	UNICODESTRING Message
+	);
+
+ReadDataLogRecord(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFile(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+WriteDataLogRecord(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectory(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+CreateGuid(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandle(
+	UNICODESTRING Message
+	);
+
+WriteSetFileBasicInfoOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFile(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+WriteOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+FsTxFindCloseNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+WriteCheckpoint(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+BuildDirTree(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+AddLsnListEntry(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkNT(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteTransactionEntry(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkByHandleNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandleNT2(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfo(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFile(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperation(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink2(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+CreateMetadataSubDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCreateFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteTransactionEntry(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfo(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+DoCreateFile(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectory(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxGetNormalizedNameByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLink(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfo(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectoryNT(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileNT(
+	UNICODESTRING Message
+	);
+
+PrepareCommitHandler(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+AppendLsn(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+GenerateLsnListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxMoveFileByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxCreateDirectory(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxRollbackTransaction(
+	UNICODESTRING Message
+	);
+
+MapCreateParams(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandle(
+	UNICODESTRING Message
+	);
+
+IsDirectoryEmpty(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileNT(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteTransactionEntry(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributes(
+	UNICODESTRING Message
+	);
+
+GetLogPaths(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FillGuidCache(
+	UNICODESTRING Message
+	);
+
+InitKTM(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesByHandleNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollback(
+	UNICODESTRING Message
+	);
+
+InitializeWorkers(
+	UNICODESTRING Message
+	);
+
+CleanDirectory(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributesNT(
+	UNICODESTRING Message
+	);
+
+AddEntryToTransactionList(
+	UNICODESTRING Message
+	);
+
+RollbackHandler(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkByHandle(
+	UNICODESTRING Message
+	);
+
+GetLastLsn(
+	UNICODESTRING Message
+	);
+
+FsTxCreateHardLinkNT(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindNextHardLinkNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteFileByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxCreateGuid(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryNT(
+	UNICODESTRING Message
+	);
+
+RebuildTransactionListFromLog(
+	UNICODESTRING Message
+	);
+
+FsTxCommitTransaction(
+	UNICODESTRING Message
+	);
+
+FsTxDeleteDirectoryByHandle(
+	UNICODESTRING Message
+	);
+
+PerformOperationPrepare(
+	UNICODESTRING Message
+	);
+
+WriteSetFileBasicInfoOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FsTxGetNormalizedNameByHandleNT(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FsTxMoveDirectoryNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationRollbackRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileBasicInfoNT(
+	UNICODESTRING Message
+	);
+
+InitLogFiles(
+	UNICODESTRING Message
+	);
+
+NotificationWorker(
+	UNICODESTRING Message
+	);
+
+FlushLog(
+	UNICODESTRING Message
+	);
+
+InitializeIOPort(
+	UNICODESTRING Message
+	);
+
+FsTxInitGuidGenerator(
+	UNICODESTRING Message
+	);
+
+GetContextsByFileHandle2(
+	UNICODESTRING Message
+	);
+
+FsTxSetFileAttributes(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstHardLinkNT(
+	UNICODESTRING Message
+	);
+
+PerformOperationCommit(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+AddPendingRenameToRegistry(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+DoCreateFileNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+QueueTxFileOrDirOperationNT(
+	UNICODESTRING Message
+	);
+
+FreeHandleContext(
+	UNICODESTRING Message
+	);
+
+CloseSessionHandleContexts(
+	UNICODESTRING Message
+	);
+
+SetHandleContextSourceFileHandle(
+	UNICODESTRING Message
+	);
+
+CloseSessionHandleContexts(
+	UNICODESTRING Message
+	);
+
+FsTxDuplicateHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxDuplicateHandleNT(
+	UNICODESTRING Message
+	);
+
+FreeHandleContext(
+	UNICODESTRING Message
+	);
+
+FreeHandleContext(
+	UNICODESTRING Message
+	);
+
+FreeHandleContext(
+	UNICODESTRING Message
+	);
+
+AllocHandleContext(
+	UNICODESTRING Message
+	);
+
+FsTxDuplicateHandleNT(
+	UNICODESTRING Message
+	);
+
+AllocHandleContext(
+	UNICODESTRING Message
+	);
+
+SetHandleContextTempFileHandle(
+	UNICODESTRING Message
+	);
+
+ReleaseHandleContext(
+	UNICODESTRING Message
+	);
+
+FsTxDuplicateHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxDuplicateHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxPutDupHandleContextIndex(
+	UNICODESTRING Message
+	);
+
+ReleaseHandleContext(
+	UNICODESTRING Message
+	);
+
+AllocHandleContext(
+	UNICODESTRING Message
+	);
+
+ExpandShortNamesNT(
+	UNICODESTRING Message
+	);
+
+ExpandShortNamesNT(
+	UNICODESTRING Message
+	);
+
+FsTxMapWin32PathToNtPath(
+	UNICODESTRING Message
+	);
+
+FsTxMapWin32PathToNtPath(
+	UNICODESTRING Message
+	);
+
+ExpandShortNamesNT(
+	UNICODESTRING Message
+	);
+
+FsTxMapNtPathToWin32Path(
+	UNICODESTRING Message
+	);
+
+FsTxMapNtPathToWin32Path(
+	UNICODESTRING Message
+	);
+
+FsTxMapNtPathToWin32Path(
+	UNICODESTRING Message
+	);
+
+FsTxMapWin32PathToNtPath(
+	UNICODESTRING Message
+	);
+
+FsTxMapWin32PathToNtPath(
+	UNICODESTRING Message
+	);
+
+FsTxFindFileCloseNT(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFile(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetNodeByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileBasicInfoByPath(
+	UNICODESTRING Message
+	);
+
+FsTxGetNodeByName2(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxGetNodeByName2(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFile(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxGetNodeByName2(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxGetNodeByHandle(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxFindFileCloseNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileBasicInfoByPath(
+	UNICODESTRING Message
+	);
+
+FsTxReleaseNodeByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFile(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileBasicInfoByPath(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileBasicInfoByPath(
+	UNICODESTRING Message
+	);
+
+FsTxPutNode(
+	UNICODESTRING Message
+	);
+
+FsTxFindFileCloseNT(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxGetNodeByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxPutNode(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFile(
+	UNICODESTRING Message
+	);
+
+FsTxGetFileBasicInfoByPath(
+	UNICODESTRING Message
+	);
+
+FsTxUpdateNodeByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFile(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+TranslateInitialPathObSymlink(
+	UNICODESTRING Message
+	);
+
+FsTxFindFirstFileNT(
+	UNICODESTRING Message
+	);
+
+FsTxRemoveNode(
+	UNICODESTRING Message
+	);
+
+FsTxRemoveNode(
+	UNICODESTRING Message
+	);
+
+CopySdNT(
+	UNICODESTRING Message
+	);
+
+ConvertSdToAbsoluteForm(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+SetSd(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+GetSdNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandle(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+SetSd(
+	UNICODESTRING Message
+	);
+
+GetCurrentProcessSid(
+	UNICODESTRING Message
+	);
+
+SetSdNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandle(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+GetCurrentProcessSid(
+	UNICODESTRING Message
+	);
+
+ConvertSdToAbsoluteForm(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoNT(
+	UNICODESTRING Message
+	);
+
+FsTxGetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+GetSdNT(
+	UNICODESTRING Message
+	);
+
+GetSd(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandle(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+ConvertSdToAbsoluteForm(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandle(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfo(
+	UNICODESTRING Message
+	);
+
+GetSd(
+	UNICODESTRING Message
+	);
+
+SetSd(
+	UNICODESTRING Message
+	);
+
+CopySdNT(
+	UNICODESTRING Message
+	);
+
+GetSd(
+	UNICODESTRING Message
+	);
+
+SetSdNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfo(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+GetSdNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBuffer(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+CopySdNT(
+	UNICODESTRING Message
+	);
+
+WriteSecurityOperationToBufferNT(
+	UNICODESTRING Message
+	);
+
+GetSd(
+	UNICODESTRING Message
+	);
+
+GetCurrentProcessSid(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+SetSdNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+CreateSelfRelativeSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+ConvertSdToSelfRelativeForm(
+	UNICODESTRING Message
+	);
+
+SetSd(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfo(
+	UNICODESTRING Message
+	);
+
+FsTxGetSecurityInfoByHandleNT(
+	UNICODESTRING Message
+	);
+
+FsTxSetSecurityInfo(
+	UNICODESTRING Message
+	);
+
+ConvertSdToSelfRelativeForm(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+FsTxFindSessions(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxGetSessionInfo(
+	UNICODESTRING Message
+	);
+
+PerformRecovery(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FreeSessionContext(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxFreeSessionInfo(
+	UNICODESTRING Message
+	);
+
+FsTxFindSessions(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+FsTxFreeSessionInfo(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+PerformRecovery(
+	UNICODESTRING Message
+	);
+
+PerformRecovery(
+	UNICODESTRING Message
+	);
+
+PerformRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxGetSessionInfo(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxFreeSessionList(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+FreeSessionContext(
+	UNICODESTRING Message
+	);
+
+FreeSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxGetSessionInfo(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxFreeSessionList(
+	UNICODESTRING Message
+	);
+
+FsTxFindSessions(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+GetTempDirPath(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+FreeSessionContext(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+PerformRecovery(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+FsTxCloseSession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+ReleaseSessionContextSync(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+CreateSessionContext(
+	UNICODESTRING Message
+	);
+
+FsTxCreateRecoverySession(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+DeleteOldSessionLogs(
+	UNICODESTRING Message
+	);
+
+PerformRecovery(
+	UNICODESTRING Message
+	);
+
+FsTxCreateSession2(
+	UNICODESTRING Message
+	);
+
+CreateTempDirectory(
+	UNICODESTRING Message
+	);
+
+FreeSessionContext(
+	UNICODESTRING Message
+	);
+
+GetTempRootPath(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateFileNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateFileNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempFileForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForNonIoOpsNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateFileNT(
+	UNICODESTRING Message
+	);
+
+ComputeInitialSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+EscalateAccessIfNeeded(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateFileNT(
+	UNICODESTRING Message
+	);
+
+EscalateAccessIfNeeded(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateFileNT(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+EscalateAccessIfNeeded(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+CreateTempFileForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempFileForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempFileForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempFileForCreateOp(
+	UNICODESTRING Message
+	);
+
+CleanupBackupDirectories(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForNonIoOpsNT(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+CleanupBackupDirectories(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+ComputeInitialSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateFileNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForNonIoOpsNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+PopulateHardLinks(
+	UNICODESTRING Message
+	);
+
+ComputeInitialSecurityDescriptor(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForNonIoOpsNT(
+	UNICODESTRING Message
+	);
+
+CreateTempDirForCreateOp(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+CreateTempFileForCreateOp(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCreateDirNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionNT(
+	UNICODESTRING Message
+	);
+
+CleanupBackupDirectories(
+	UNICODESTRING Message
+	);
+
+GetFileFromTransactionForCopyFileNT(
+	UNICODESTRING Message
+	);
+

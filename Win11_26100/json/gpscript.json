@@ -1,0 +1,83 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "4fd752b5-957c-57c4-ea6e-19cb7e2c8c04",
+                             "ProviderName":  "Microsoft.Windows.GroupPolicy.GPSVC",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         },
+                         {
+                             "ProviderGUID":  "80d25b7f-facc-5141-9929-c0e6eb5e96c5",
+                             "ProviderName":  "Microsoft.Windows.GPTraceProvider",
+                             "ProviderGroupGUID":  ""
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  1,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GPSVC",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "logMsg",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  3,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GPSVC",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "logMsg",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  1,
+                          "KeywordName":  "",
+                          "Extension":  [
+                                            0
+                                        ],
+                          "EventName":  "GPSVC",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "logMsg",
+                                             "InType":  "UNICODESTRING",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-grouppolicy-script_31bf3856ad364e35_10.0.26100.1_none_6c5f8b350c999f6d\\gpscript.exe"
+}

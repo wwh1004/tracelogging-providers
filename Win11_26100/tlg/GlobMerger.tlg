@@ -1,0 +1,175 @@
+ProviderNames:
+	Microsoft.Windows.FileSystem.CimFS
+
+
+
+**** Events *****
+CimfsApi.Error(
+	ANSISTRING Function,
+	ANSISTRING File,
+	INT32 line,
+	NTSTATUS Status,
+	ANSISTRING Message,
+	UINT16 RegionCount,
+	UINT16 RequestedRegionIndex,
+	UINT64 RequestedRegionSize,
+	UINT64 RequestedByteOffset,
+	UINT64 RequestedExtraOffset,
+	INT32 RequestedLength,
+	INT32 ElementSize,
+	UINT64 PartA_PrivTags
+	);
+
+CimfsApi.Error(
+	ANSISTRING Function,
+	ANSISTRING File,
+	INT32 line,
+	NTSTATUS Status,
+	ANSISTRING Message,
+	UINT32 TableCount,
+	INT32 FilesPerTable,
+	UINT32 FileCountInCurrentTable,
+	UINT32 FileId,
+	UINT64 PartA_PrivTags
+	);
+
+CimfsApi.Error(
+	ANSISTRING Function,
+	ANSISTRING File,
+	INT32 line,
+	NTSTATUS Status,
+	ANSISTRING Message,
+	UINT32 FileId,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CimfsApi.Error(
+	ANSISTRING Function,
+	ANSISTRING File,
+	INT32 line,
+	NTSTATUS Status,
+	ANSISTRING Message,
+	UINT32 FileID,
+	UINT16 EntrySize,
+	UINT16 ExpectedEntrySize,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CimfsApi.Error(
+	ANSISTRING Function,
+	ANSISTRING File,
+	INT32 line,
+	NTSTATUS Status,
+	ANSISTRING Message,
+	UINT64 ActualBufferSize,
+	UINT64 NameBufferOffset,
+	UINT64 PartA_PrivTags
+	);
+
+CimfsApi.Error(
+	ANSISTRING Function,
+	ANSISTRING File,
+	INT32 line,
+	NTSTATUS Status,
+	ANSISTRING Message,
+	UINT32 ActualNameLength,
+	UINT32 ExpectedNameLength,
+	UINT64 PartA_PrivTags
+	);
+
+CimfsApi.Verbose(
+	ANSISTRING Message,
+	BOOLEAN Location,
+	ANSISTRING Function,
+	UINT32 Tag,
+	UINT16 Line,
+	NTSTATUS Status
+	);
+
+CimfsApi.Verbose(
+	ANSISTRING Message,
+	BOOLEAN Location,
+	ANSISTRING Function,
+	UINT32 Tag,
+	UINT16 Line,
+	NTSTATUS Status
+	);
+
+CimfsApi.Error(
+	ANSISTRING Message,
+	BOOLEAN Location,
+	ANSISTRING Function,
+	UINT32 Tag,
+	UINT16 Line,
+	NTSTATUS Status
+	);
+
+CimfsApi.Error(
+	ANSISTRING Message,
+	BOOLEAN Location,
+	ANSISTRING Function,
+	UINT32 Tag,
+	UINT16 Line,
+	NTSTATUS Status
+	);
+
+CimfsApi.Info(
+	ANSISTRING Message,
+	BOOLEAN Location,
+	ANSISTRING Function,
+	UINT32 Tag,
+	UINT16 Line,
+	NTSTATUS Status
+	);
+
+CimfsApi.Verbose(
+	ANSISTRING Message,
+	BOOLEAN Location,
+	ANSISTRING Function,
+	UINT32 Tag,
+	UINT16 Line,
+	NTSTATUS Status
+	);
+

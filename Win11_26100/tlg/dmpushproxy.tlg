@@ -1,0 +1,18 @@
+ProviderNames:
+	Microsoft.Windows.DeviceManagement.PushRouterProxy
+
+
+
+**** Events *****
+PushRouter_SubmitPush(
+	HEXINT32 HRESULT
+	);
+
+MDM PushRouter: Pushrouter failed to start because the dmwappushservice service is disabled.(
+	VOID
+	);
+
+PushRouter_GetPushMessageDone(
+	HEXINT32 GetPushMessageDoneHresult
+	);
+

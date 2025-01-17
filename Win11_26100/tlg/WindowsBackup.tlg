@@ -1,0 +1,1220 @@
+ProviderNames:
+	Microsoft.Windows.Shell.WindowsBackupApp
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DimeDialogLaunch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+WindowsBackupSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId,
+	UNICODESTRING launchSurface,
+	UNICODESTRING referralId,
+	UNICODESTRING campaignType,
+	UINT32 launchActionState
+	);
+
+StrongAuthenticationRequiredAtAppLaunch(
+	BOOLEAN state,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedAppEvent(
+	INT32 unexpectedAppEventType,
+	UNICODESTRING description,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+OneDriveDimeLaunch(
+	BOOLEAN isTrial,
+	UNICODESTRING experienceId,
+	UNICODESTRING campaignId,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+BackupWizardPageLoaded(
+	UINT32 page,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CanLaunchDimeDialogForUserAccount(
+	BOOLEAN canLaunchDimeDialogForUserAccount,
+	UINT64 PartA_PrivTags
+	);
+
+IsDimeDialogAvailable(
+	BOOLEAN isDimeDialogAvailable,
+	UINT64 PartA_PrivTags
+	);
+
+UserConsentProvidedState(
+	INT32 state,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WASCApplicable(
+	BOOLEAN isWASCApplicable,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+KFMFolderStatus(
+	UNICODESTRING folderStatusList,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+OEMButtonClicked(
+	UNICODESTRING irisCampaignId,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+InitialMSAStatus(
+	UINT32 initialMsaStatus,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MSASignInPageResult(
+	BOOLEAN success,
+	UINT32 error,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FinalMSAStatus(
+	UINT32 finalMsaStatus,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+BackupStarted(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+BackupCompleted(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MSAPageShown(
+	UNICODESTRING appSessionId,
+	BOOLEAN isInline,
+	UINT64 PartA_PrivTags
+	);
+
+NetworkStatus(
+	UINT32 page,
+	BOOLEAN networkStatus,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+BackupWizardClick(
+	UNICODESTRING name,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+StrongAuthenticationRequiredAtAppClose(
+	BOOLEAN state,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+DimeDialogLaunch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING appSessionId,
+	UNICODESTRING experienceId,
+	UNICODESTRING campaignId,
+	UINT32 taskExecutionState
+	);
+
+DimeDialogLaunch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING appSessionId,
+	UNICODESTRING experienceId,
+	UNICODESTRING campaignId,
+	UINT32 taskExecutionState
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DimeDialogLaunch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DimeDialogLaunch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+LaunchUserConsentFlow(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WASCNoAction(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WindowsBackupSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING appSessionId,
+	UNICODESTRING launchSurface,
+	UNICODESTRING referralId,
+	UINT32 startMsaState,
+	UINT32 endMsaState,
+	UINT32 start_backupFlags,
+	UINT32 end_backupFlags,
+	UINT32 start_oneDriveSignedInStatus,
+	UINT32 end_oneDriveSignedInStatus,
+	UINT32 start_filesEnrollmentStatus,
+	BOOLEAN start_isAppsEnrolled,
+	BOOLEAN start_isSettingsEnrolled,
+	BOOLEAN start_isPasswordsEnrolled,
+	UINT32 end_filesEnrollmentStatus,
+	BOOLEAN end_isAppsEnrolled,
+	BOOLEAN end_isSettingsEnrolled,
+	BOOLEAN end_isPasswordsEnrolled,
+	BOOLEAN offerClicked,
+	UNICODESTRING irisCampaignId,
+	UNICODESTRING ODAccountData,
+	UNICODESTRING backupStatus,
+	UINT32 launchActionState,
+	UINT32 elapsedMilliSecondsInBackup,
+	UNICODESTRING togglesEnrollmentStatusonBackupClick,
+	UNICODESTRING folderBackupStatusAtAppLaunch
+	);
+
+WindowsBackupSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING appSessionId,
+	UNICODESTRING launchSurface,
+	UNICODESTRING referralId,
+	UINT32 startMsaState,
+	UINT32 endMsaState,
+	UINT32 start_backupFlags,
+	UINT32 end_backupFlags,
+	UINT32 start_oneDriveSignedInStatus,
+	UINT32 end_oneDriveSignedInStatus,
+	UINT32 start_filesEnrollmentStatus,
+	BOOLEAN start_isAppsEnrolled,
+	BOOLEAN start_isSettingsEnrolled,
+	BOOLEAN start_isPasswordsEnrolled,
+	UINT32 end_filesEnrollmentStatus,
+	BOOLEAN end_isAppsEnrolled,
+	BOOLEAN end_isSettingsEnrolled,
+	BOOLEAN end_isPasswordsEnrolled,
+	BOOLEAN offerClicked,
+	UNICODESTRING irisCampaignId,
+	UNICODESTRING ODAccountData,
+	UNICODESTRING backupStatus,
+	UINT32 launchActionState,
+	UINT32 elapsedMilliSecondsInBackup,
+	UNICODESTRING togglesEnrollmentStatusonBackupClick,
+	UNICODESTRING folderBackupStatusAtAppLaunch
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+WindowsBackupApp(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+WindowsBackupApp(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+BackupCategoryTaskFailed(
+	UNICODESTRING description,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+TriggerAppCompatBackup(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TriggerAppCompatBackup(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TriggerAllTilesBackup(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TriggerAllTilesBackup(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TriggerAppsBackupTask(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TriggerAppsBackupTask(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TriggerAppsBackup(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TriggerAppsBackup(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TriggerAppCompatBackup(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+TriggerAllTilesBackup(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+TriggerAppsBackupTask(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+TriggerAppsBackup(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+NotificationDismissed(
+	UNICODESTRING notificationType,
+	UINT64 PartA_PrivTags
+	);
+
+NotificationClicked(
+	UNICODESTRING notificationType,
+	UINT64 PartA_PrivTags
+	);
+
+FollowUpNotificationActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 ErrorCode,
+	UNICODESTRING ErrorDetails
+	);
+
+FollowUpNotificationActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 ErrorCode,
+	UNICODESTRING ErrorDetails
+	);
+
+FollowUpNotificationActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FollowUpNotificationActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FollowUpNotificationActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NotificationTaskRegistrationActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING ConfigParameters,
+	INT32 ErrorCode,
+	UNICODESTRING ErrorDetails
+	);
+
+NotificationTaskRegistrationActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING ConfigParameters,
+	INT32 ErrorCode,
+	UNICODESTRING ErrorDetails
+	);
+
+NotificationTaskRegistrationActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+NotificationTaskRegistrationActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+NotificationTaskRegistrationActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NotificationEligibilityActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING ConfigParams,
+	UNICODESTRING LastRunState,
+	UNICODESTRING CurrentContext,
+	UNICODESTRING ErrorDetails,
+	UNICODESTRING CurrentRunState
+	);
+
+NotificationEligibilityActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING ConfigParams,
+	UNICODESTRING LastRunState,
+	UNICODESTRING CurrentContext,
+	UNICODESTRING ErrorDetails,
+	UNICODESTRING CurrentRunState
+	);
+
+NotificationEligibilityActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING TaskName
+	);
+
+NotificationEligibilityActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+NotificationEligibilityActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+IrisContentClicked(
+	UNICODESTRING creativeID,
+	INT32 contentIndex,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WindowsBackupODPurchaseUserPreviousState(
+	INT32 stat,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+OneDriveSignedIn(
+	BOOLEAN isOneDriveSignedIn,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ODAccountMismatch(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+TriggerBRCBackup(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+TriggerBRCBackup(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+TriggerBRCBackup(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GetMoreStorageButtonEvent(
+	INT32 state,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UserBestEffortEligibleAtBackupClick(
+	BOOLEAN isUserBestEffortEligibleAtBackupClick,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ButtonClicked(
+	UINT32 page,
+	UINT32 buttonType,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+StrongAuthenticationRequiredAtBackupClick(
+	BOOLEAN state,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+PurchaseToProgressPageTransition(
+	UINT32 page,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ODPurchaseRetried(
+	UINT32 page,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+M365ODUpsellLaunched(
+	UNICODESTRING experienceId,
+	UNICODESTRING campaignID,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SettingsBackupActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+CredentialsBackupActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+AppsBackupActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+FilesBackupActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING appSessionId
+	);
+
+DropdownClicked(
+	UINT32 page,
+	UINT32 expanderCategory,
+	UINT32 expanderState,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+StatusAPIResponse(
+	INT32 state,
+	UNICODESTRING correlationId,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+StatusAPIPostPollingResponseState(
+	INT32 state,
+	UNICODESTRING correlationId,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+InvokeStatusAPI(
+	UNICODESTRING correlationId,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+IrisContentLoaded(
+	UNICODESTRING creativeID,
+	INT32 contentIndex,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CategoryBackupStatus(
+	UINT32 category,
+	UINT32 status,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WindowsBackupExtendedExecutionRevoked(
+	INT32 reason,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WindowsBackupExtendedExecutionResult(
+	INT32 result,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CategoryBackupStatusPostPolling(
+	UINT32 category,
+	UINT32 status,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+GetMoreStorageButtonEventStatusPage(
+	INT32 state,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CredentialsBackupActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CredentialsBackupActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SettingsBackupActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SettingsBackupActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AppsBackupActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AppsBackupActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FilesBackupActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FilesBackupActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UserPurchasedMoreStorageBestEffortFilesBackup(
+	BOOLEAN didUserPurchaseMoreStorageFromBestEffortFilesBackup,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedAppEventWithData(
+	INT32 unexpectedAppEventType,
+	UNICODESTRING description,
+	UNICODESTRING data,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+NewWindowRequested(
+	UNICODESTRING uri,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+NavigationRequested(
+	UNICODESTRING uri,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WebAppDoneFail(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+NoInternetDuringNavigation(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ScriptNotifyCalled(
+	UNICODESTRING eventType,
+	UNICODESTRING data,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UnhandledBridgeFunctionCalled(
+	UNICODESTRING functionName,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SendCallBackMessage(
+	UNICODESTRING data,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+BridgeEventCalled(
+	UNICODESTRING name,
+	UNICODESTRING data,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WebAppEvent(
+	UNICODESTRING eventName,
+	UNICODESTRING eventValue,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+UnexpectedAPIResponse(
+	UNICODESTRING apiName,
+	UNICODESTRING responseCode,
+	UINT64 PartA_PrivTags
+	);
+
+NotificationShown(
+	UNICODESTRING notificationName,
+	UNICODESTRING triggerName,
+	UINT64 PartA_PrivTags
+	);
+
+UserBestEffortBackedupAtEnd(
+	BOOLEAN isUserBestEffortBackedupAtEnd,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+HVATaskReported(
+	UNICODESTRING sessionId,
+	UINT64 PartA_PrivTags
+	);
+
+CloseAppClicked(
+	UINT32 page,
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WindowsBackupResuming(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+WindowsBackupSuspending(
+	UNICODESTRING appSessionId,
+	UINT64 PartA_PrivTags
+	);
+

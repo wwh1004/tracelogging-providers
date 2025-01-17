@@ -1,0 +1,33 @@
+ProviderNames:
+	Microsoft.Windows.App.Browser
+
+
+
+**** Events *****
+ExtExportFailed(
+	GUID userInputID,
+	UNICODESTRING reason,
+	UNICODESTRING browserType,
+	HRESULT hrValue,
+	INT32 param
+	);
+
+ExtExportFailedPII(
+	GUID userInputID,
+	UNICODESTRING reason,
+	UNICODESTRING browserType,
+	HRESULT hrValue,
+	UNICODESTRING databaseLocation,
+	UNICODESTRING dllLocation,
+	UNICODESTRING tempBookmarkLocation
+	);
+
+ExtExportBegin(
+	GUID userInputID
+	);
+
+ExtExportEnd(
+	GUID userInputID,
+	HRESULT hrValue
+	);
+

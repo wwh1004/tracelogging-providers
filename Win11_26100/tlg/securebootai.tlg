@@ -1,0 +1,183 @@
+ProviderNames:
+	Microsoft.Windows.Security.SBServicingCore
+	Microsoft.Windows.BootFileServicingAI
+	Microsoft.Windows.BootFileServicing
+	Microsoft.Windows.BootFileServicing
+
+
+
+**** Events *****
+SBServicingCoreFunctionFailed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Function,
+	HRESULT hr,
+	UNICODESTRING Action
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SBServicingBFSVCAIInvoked(
+	UINT64 PartA_PrivTags,
+	UINT32 BFSVCUpdateType
+	);
+
+SBServicingBFSVCAICompleted(
+	UINT64 PartA_PrivTags,
+	UINT32 BFSVCUpdateType,
+	HRESULT hr,
+	BOOL32 BootmgfwCertAuthChanged
+	);
+
+ApplySecureBootUpdateCompleted(
+	UINT64 PartA_PrivTags,
+	HRESULT hr,
+	UINT32 UpdateType,
+	UINT32 SecureBootUpdateCaller,
+	BOOL32 IsResealNeeded,
+	BOOL32 WillResealSucceed,
+	UNICODESTRING Action,
+	UINT32 sbServicingFailureReason,
+	UINT32 InUpdateType,
+	BOOL32 SBATOptOut,
+	BOOL32 SBATFoundLinuxSHIM,
+	BOOL32 SBATOptIn,
+	UINT32 SBATUpdateStatus,
+	ANSISTRING SBATLevel,
+	UNICODESTRING FailedFunction,
+	UNICODESTRING FailedAction,
+	UINT32 EventVersion
+	);
+
+ApplySecureBootUpdateCompleted(
+	UINT64 PartA_PrivTags,
+	HRESULT hr,
+	UINT32 UpdateType,
+	UINT32 SecureBootUpdateCaller,
+	BOOL32 IsResealNeeded,
+	BOOL32 WillResealSucceed,
+	UNICODESTRING Action,
+	UINT32 sbServicingFailureReason,
+	UINT32 InUpdateType,
+	BOOL32 SBATOptOut,
+	BOOL32 SBATFoundLinuxSHIM,
+	BOOL32 SBATOptIn,
+	UINT32 SBATUpdateStatus,
+	ANSISTRING SBATLevel
+	);
+
+ApplySecureBootUpdateStarted(
+	UINT64 PartA_PrivTags,
+	UINT32 UpdateType,
+	UINT32 SecureBootUpdateCaller
+	);
+
+ApplySecureBootUpdateCompleted(
+	UINT64 PartA_PrivTags,
+	HRESULT hr,
+	UINT32 UpdateType,
+	UINT32 SecureBootUpdateCaller,
+	BOOL32 IsResealNeeded,
+	BOOL32 WillResealSucceed,
+	UNICODESTRING Action,
+	UINT32 sbServicingFailureReason,
+	UINT32 InUpdateType
+	);
+
+BfsvcChkDsk(
+	BOOL32 BootFilesServiced,
+	BOOL32 ChkDskSuccesfull,
+	BOOL32 ChkDskHelped,
+	WIN32ERROR OriginalError,
+	WIN32ERROR FinalError,
+	WIN32ERROR InitializeBcdStoreStatus
+	);
+
+BfsResealBitLockerWithRetrySucceeded(
+	UINT64 PartA_PrivTags,
+	UINT32 FlagOut,
+	UINT32 RetryCount,
+	BOOL32 FveApiFound
+	);
+
+BfsIsBitLockerResealNeededForBootmgrServicingFailed(
+	UINT64 PartA_PrivTags,
+	HRESULT Hr,
+	UNICODESTRING Action,
+	BOOL32 IsBitlockerResealNeededPcr4,
+	BOOL32 IsBitlockerResealNeededPcr7
+	);
+
+BfsIsBitLockerResealNeededForBootmgrServicingSucceeded(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Action,
+	BOOL32 IsBitlockerResealNeededPcr4,
+	BOOL32 IsBitlockerResealNeededPcr7
+	);
+
+BfsResealBitLockerWithRetryFailed(
+	UINT64 PartA_PrivTags,
+	HRESULT Hr,
+	UNICODESTRING Action,
+	UINT32 FlagOut,
+	UINT32 RetryCount,
+	BOOL32 FveApiFound
+	);
+
+BfsvcSyspartRepair(
+	UINT32 Caller,
+	BOOL32 ChkDskRun,
+	WIN32ERROR ChkDskErrorCode,
+	BOOL32 BcdInitialized,
+	WIN32ERROR BcdErrorCode,
+	BOOL32 BootFilesServiced,
+	WIN32ERROR ServicingErrorCode,
+	WIN32ERROR ErrorCode
+	);
+
+BfsvcFilesServicingResult(
+	UINT64 PartA_PrivTags,
+	WIN32ERROR ErrorCode,
+	BOOL32 BootExFiles,
+	BOOL32 HasBootmgfwCertAuthChanged
+	);
+

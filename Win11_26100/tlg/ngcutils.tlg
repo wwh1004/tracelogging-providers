@@ -1,0 +1,231 @@
+ProviderNames:
+	Microsoft.Windows.Security.NGC.Utils
+
+
+
+**** Events *****
+FailureInfo(
+	INT32 retVal,
+	UNICODESTRING debugString
+	);
+
+memcpy_sFailed(
+	INT32 retVal
+	);
+
+LoadStringWFailed(
+	UINT32 retVal
+	);
+
+BuildNgcKeyNameStringInvalidLength(
+	INT32 retVal
+	);
+
+BuildNgcKeyNameStringConvertContainerId(
+	INT32 retVal
+	);
+
+BuildNgcKeyNameStringConvertSid(
+	INT32 retVal
+	);
+
+GetUserAccountType(
+	INT32 retVal
+	);
+
+ConvertStringSidToSid(
+	UINT32 retVal
+	);
+
+LsaLookupUserAccountType(
+	INT32 retVal
+	);
+
+LsaLookupAuthenticationPackageError(
+	INT32 retVal
+	);
+
+RtlUnicodeStringToAnsiStringError(
+	INT32 retVal
+	);
+
+LsaConnectUntrustedError(
+	INT32 retVal
+	);
+
+CacheGetUserNameAndDomain(
+	SID userSid,
+	UNICODESTRING userName,
+	UNICODESTRING domain
+	);
+
+CacheGetUserSid(
+	UNICODESTRING userName,
+	SID sid
+	);
+
+InvalidSidNameUse(
+	INT32 retVal,
+	UINT32 sidNameUse
+	);
+
+LsaLookupSids2(
+	INT32 retVal
+	);
+
+LookupAccountSidLocalW(
+	UINT32 retVal
+	);
+
+FallBackToLocalSidLookup(
+	INT32 retVal
+	);
+
+LsaOpenPolicy(
+	INT32 retVal
+	);
+
+GetTokenInformation(
+	UINT32 retVal
+	);
+
+GetTokenInformation(
+	INT32 retVal
+	);
+
+LookupAccountNameLocalWFailed(
+	UINT32 retVal
+	);
+
+LookupAccountNameLocalWSizeQuerySucceededUnexpectedly(
+	INT32 retVal
+	);
+
+LookupAccountNameLocalWSizeQueryFailed(
+	UINT32 retVal
+	);
+
+InvalidSerializationBufferUserSidTooLarge(
+	INT32 retVal
+	);
+
+InvalidSerializationBufferTooSmall(
+	INT32 retVal
+	);
+
+InvalidFlags(
+	INT32 retVal,
+	UINT32 flags
+	);
+
+InvalidGestures(
+	INT32 retVal,
+	UINT32 gestures
+	);
+
+UserSidRequired(
+	INT32 retVal
+	);
+
+PinCharCountRequired(
+	INT32 retVal
+	);
+
+NCryptGetProperty(
+	INT32 retVal
+	);
+
+NCryptGetPropertyRequiredByteCount(
+	INT32 retVal
+	);
+
+NCryptOpenKey(
+	INT32 retVal
+	);
+
+NCryptOpenStorageProvider(
+	INT32 retVal
+	);
+
+UnmarshaledCredentialUnsupportedType(
+	INT32 retVal
+	);
+
+CredUnmarshalCredential(
+	UINT32 retVal
+	);
+
+CredUnPackAuthenticationBufferWFailed(
+	UINT32 retVal
+	);
+
+CredUnPackAuthenticationBufferWSizeQuerySucceededUnexpectedly(
+	INT32 retVal
+	);
+
+CredUnPackAuthenticationBufferWSizeQueryFailed(
+	UINT32 retVal
+	);
+
+InvalidSerializationBufferBadSubmitType(
+	INT32 retVal
+	);
+
+UnmarshaledSspiCredentialNotV2(
+	INT32 retVal
+	);
+
+SspiUnmarshalCredUIContext(
+	INT32 retVal
+	);
+
+CredUnPackAuthenticationBufferWIsNotPresent(
+	INT32 retVal
+	);
+
+CertGetCertificateContextProperty(
+	UINT32 retVal
+	);
+
+CertGetCertificateContextPropertyRequiredSize(
+	UINT32 retVal
+	);
+
+CertFindCertificateInStore(
+	UINT32 retVal
+	);
+
+CertNotPresentInMyStore(
+	UINT32 retVal
+	);
+
+CertOpenSystemStore(
+	UINT32 retVal
+	);
+
+RegEnumKeyExFailed(
+	INT32 retVal
+	);
+
+RegQueryInfoKeyFailed(
+	INT32 retVal
+	);
+
+RegOpenKeyExFailed(
+	INT32 retVal
+	);
+
+SetProtectorUpdateNeededRegKey(
+	INT32 retVal,
+	UNICODESTRING SID,
+	UINT32 Value
+	);
+
+RegSetValueProtectorUpdateNeededFailed(
+	INT32 retVal
+	);
+
+RegOpenKeySensorInfoFailed(
+	INT32 retVal
+	);
+

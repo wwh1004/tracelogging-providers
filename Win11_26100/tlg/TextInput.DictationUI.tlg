@@ -1,0 +1,1155 @@
+ProviderNames:
+	Microsoft.Windows.TextInput.VoiceTyping
+
+
+
+**** Events *****
+UpdateMicrophoneItemsActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UpdateMicrophoneItemsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 MicrophoneCount,
+	BOOLEAN IsMicrophoneItemFocused
+	);
+
+UpdateMicrophoneItemsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 MicrophoneCount,
+	BOOLEAN IsMicrophoneItemFocused
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UpdateMicrophoneItemsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UpdateMicrophoneItemsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UpdateMicrophoneProfilesActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING UpdateSource
+	);
+
+FindAllMicrophoneRequested(
+	UNICODESTRING Source,
+	UINT64 PartA_PrivTags
+	);
+
+FindAllMicrophoneCanceled(
+	UNICODESTRING Source,
+	UINT64 PartA_PrivTags
+	);
+
+UpdateMicrophoneProfilesActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 MicrophoneCount
+	);
+
+UpdateMicrophoneProfilesActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 MicrophoneCount
+	);
+
+UpdateMicrophoneProfilesActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UpdateMicrophoneProfilesActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+NetworkConnectivityCostHint(
+	INT32 Result,
+	UINT32 NetworkCostType,
+	BOOLEAN OverDataLimit,
+	BOOLEAN Roaming,
+	UINT32 PreferredNetworkResourceUsage,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID AuthenticationId
+	);
+
+InteractiveAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID AuthenticationId,
+	BOOLEAN DoesWebAccountExist
+	);
+
+SilentAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID AuthenticationId,
+	BOOLEAN DoesWebAccountExist
+	);
+
+InteractiveAuthenticationSkipped(
+	GUID AuthenticationId,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 RequestStatus,
+	UINT32 ErrorCode
+	);
+
+DeviceAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 RequestStatus,
+	UINT32 ErrorCode
+	);
+
+DeviceAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DeviceAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InteractiveAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 RequestStatus,
+	UINT32 ErrorCode,
+	UNICODESTRING ErrorMessage
+	);
+
+InteractiveAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 RequestStatus,
+	UINT32 ErrorCode,
+	UNICODESTRING ErrorMessage
+	);
+
+InteractiveAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InteractiveAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SilentAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 RequestStatus,
+	UINT32 ErrorCode,
+	UNICODESTRING ErrorMessage
+	);
+
+SilentAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 RequestStatus,
+	UINT32 ErrorCode,
+	UNICODESTRING ErrorMessage
+	);
+
+SilentAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SilentAuthenticationRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DictationControlKindSelected(
+	GUID uxSessionId,
+	UNICODESTRING selectedControl,
+	UNICODESTRING reason,
+	UINT64 PartA_PrivTags
+	);
+
+DictationViewCoordinatorTryDismissFailed(
+	UINT32 Code,
+	UNICODESTRING Message,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID UXSessionID,
+	BOOLEAN ShowAccelerator,
+	BOOLEAN AutoPunctuation,
+	BOOLEAN IsFloatyFlyuout,
+	BOOLEAN IsVoiceLoggingAvailabilityInitialized
+	);
+
+FloatySettingsOnlineSpeechLinkClicked(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsVoiceLoggingConsentLinkClicked(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsMicrophoneSelected(
+	GUID UxSessionId,
+	BOOLEAN WasSelected,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsManageMicrophoneSettingsItemClicked(
+	GUID UxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsFeedbackMenuItemClicked(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsHelpMenuItemClicked(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsAddMicrophoneItemClicked(
+	GUID UxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatySettingsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN ShowAccelerator,
+	BOOLEAN AutoPunctuation,
+	UNICODESTRING ClosedReason
+	);
+
+FloatySettingsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN ShowAccelerator,
+	BOOLEAN AutoPunctuation,
+	UNICODESTRING ClosedReason
+	);
+
+FloatySettingsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FloatySettingsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+FloatyOnDictationStateUpdated(
+	GUID UxSessionId,
+	BOOLEAN IsDictationModelAvailable,
+	UINT32 State
+	);
+
+FloatyOnVoiceLoggingConsentShowRequested(
+	GUID UxSessionId,
+	UNICODESTRING Reason
+	);
+
+FloatyOnShellPixelsChanged(
+	GUID UxSessionId
+	);
+
+FloatyOnDesiredSizeChanged(
+	GUID UxSessionId
+	);
+
+FloatyShowVoiceLoggingConsent(
+	GUID UxSessionId
+	);
+
+FloatySyncPositionAndSize(
+	GUID UxSessionId,
+	BOOLEAN IsShown
+	);
+
+FloatyOnShellSizeUpdated(
+	GUID UxSessionId,
+	BOOLEAN IsShown
+	);
+
+FloatyOnShellAvailableSizeChanged(
+	GUID UxSessionId
+	);
+
+FloatyOnIsShownChanged(
+	GUID UxSessionId,
+	BOOLEAN IsShown,
+	UINT64 PartA_PrivTags
+	);
+
+FloatyOnViewVisibilityOnShellSideChanged(
+	GUID UxSessionId,
+	BOOLEAN IsShown,
+	BOOLEAN IsVisible
+	);
+
+FloatyTryChangeMicrophoneState(
+	GUID UxSessionId,
+	UNICODESTRING Reason,
+	UINT32 State,
+	BOOLEAN EnsureListeningStarted
+	);
+
+FloatyOnMicrophoneStateChanged(
+	GUID UxSessionId,
+	UINT32 OldState,
+	UINT32 NewState
+	);
+
+FloatyShownOnShellSide(
+	GUID UxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatyOnKeyReceived(
+	GUID UxSessionId,
+	UINT32 Key,
+	UINT32 Modifiers,
+	UINT32 Qualifiers,
+	BOOLEAN IsShown,
+	BOOLEAN IsKeyboardFocused
+	);
+
+FloatyOnProcessKeyboardAccelerators(
+	GUID UxSessionId,
+	UINT32 Key,
+	UINT32 Modifiers,
+	BOOLEAN IsShown,
+	BOOLEAN IsKeyboardFocused
+	);
+
+FloatyRequestPauseMicrophone(
+	GUID UxSessionId,
+	UNICODESTRING Reason,
+	UINT32 State
+	);
+
+FloatyOnClosing(
+	GUID UxSessionId,
+	UNICODESTRING Reason
+	);
+
+FloatyOnDeactivate(
+	GUID UxSessionId,
+	UNICODESTRING Reason,
+	BOOLEAN IsShown,
+	UINT64 PartA_PrivTags
+	);
+
+FloatyMicrophoneButtonClicked(
+	GUID UxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatyHelpButtonClicked(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatyOnActivate(
+	GUID UxSessionId,
+	UNICODESTRING Reason,
+	BOOLEAN IsShown,
+	BOOLEAN IsDictationModelActivated,
+	UINT64 PartA_PrivTags
+	);
+
+AcceleratorSettingsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AcceleratorSettingsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AcceleratorActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AcceleratorActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AcceleratorShowPolicyStatusChanged(
+	UNICODESTRING PolicyName,
+	UINT32 ChangeFlags,
+	BOOLEAN CanShow,
+	UNICODESTRING Reason,
+	UNICODESTRING size,
+	UINT64 PartA_PrivTags
+	);
+
+AcceleratorSettingsActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID acceleratorSessionId
+	);
+
+AcceleratorActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID acceleratorSessionId,
+	UNICODESTRING appName,
+	UINT32 inputScope,
+	UINT32 editControlSettings
+	);
+
+FloatyInvokedByAccelerator(
+	GUID acceleratorSessionId,
+	BOOLEAN isDictationViewCreated,
+	UINT64 PartA_PrivTags
+	);
+
+EntryPointShownOnShellSide(
+	GUID acceleratorSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+AcceleratorSettingsActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN isAcceleratorEnabled,
+	UNICODESTRING reason
+	);
+
+AcceleratorSettingsActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN isAcceleratorEnabled,
+	UNICODESTRING reason
+	);
+
+EntryPointShownOnShellSideTraceLogging(
+	UINT64 PartA_PrivTags
+	);
+
+AcceleratorActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING reason
+	);
+
+AcceleratorActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING reason
+	);
+
+ToolTipShowCanceled(
+	GUID UxSessionId,
+	UNICODESTRING MessageResourceId,
+	UNICODESTRING Reason,
+	UNICODESTRING ExtraInformation,
+	UINT64 PartA_PrivTags
+	);
+
+InitialUserConsentShown(
+	GUID UxSessionId,
+	UNICODESTRING MessageResourceId,
+	UINT64 PartA_PrivTags
+	);
+
+ToolTipMessageUpdated(
+	GUID UxSessionId,
+	UNICODESTRING MessageResourceId,
+	UNICODESTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+ToolTipShown(
+	GUID UxSessionId,
+	UNICODESTRING MessageResourceId,
+	UNICODESTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+ToolTipHidden(
+	GUID UxSessionId,
+	UNICODESTRING MessageResourceId,
+	UNICODESTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+ShowLanguageSwitchList(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+FloatyBackspaceButtonUsed(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SwitchSIPPage(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+VoiceLoggingConsentClosed(
+	GUID consentSessionId,
+	BOOLEAN allowed,
+	UNICODESTRING result,
+	UINT64 PartA_PrivTags
+	);
+
+VoiceLoggingConsentOpened(
+	GUID consentSessionId,
+	GUID uxSessionId,
+	BOOLEAN allowed,
+	UNICODESTRING activationSource,
+	UINT64 PartA_PrivTags
+	);
+
+SpeechModelInstallActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID UxSessionId,
+	UNICODESTRING Language,
+	BOOLEAN Update
+	);
+
+MicActiveSessionHearingStart(
+	GUID hearingStateId,
+	GUID listeningStateId,
+	UINT32 listeningStateIndex,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionListeningEnd(
+	GUID listeningStateId,
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionHearingEnd(
+	GUID hearingStateId,
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionInitializingStart(
+	GUID initializingStateId,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionListeningStart(
+	GUID listeningStateId,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionInitializingEnd(
+	GUID initializingStateId,
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionEnd(
+	UINT64 PartA_PrivTags,
+	GUID micActiveSessionId,
+	UNICODESTRING reason,
+	UINT32 errorCode,
+	BOOL32 listeningSucceeded,
+	UINT32 hearingCount,
+	UINT64 totalDuration,
+	UINT64 listeningDuration,
+	UINT64 hearingDuration,
+	UINT32 wordCount,
+	UINT32 characterCount
+	);
+
+DictationModelRequestPause(
+	GUID UxSessionId,
+	GUID MicActiveSessionId,
+	UNICODESTRING Reason,
+	UINT32 State,
+	UINT64 PartA_PrivTags
+	);
+
+DictationModelRequestStop(
+	GUID UxSessionId,
+	GUID MicActiveSessionId,
+	UNICODESTRING Reason,
+	UINT32 State,
+	UINT64 PartA_PrivTags
+	);
+
+DictationModelRequestResume(
+	GUID UxSessionId,
+	GUID MicActiveSessionId,
+	UNICODESTRING Reason,
+	UINT32 State,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionStart(
+	UINT64 PartA_PrivTags,
+	GUID micActiveSessionId,
+	GUID uxSessionId,
+	UINT32 micActiveSessionIndex,
+	UNICODESTRING language,
+	UNICODESTRING appName,
+	UNICODESTRING reason,
+	BOOL32 autoPunctuationEnabled,
+	UNICODESTRING voiceLoggingStatus,
+	BOOL32 speechModelAvailable,
+	BOOL32 inRemoteApp,
+	UINT32 microphoneCount
+	);
+
+AuthenticationStart(
+	GUID authenticationId,
+	GUID uxSessionId,
+	BOOLEAN appPackageSupported,
+	UINT64 PartA_PrivTags
+	);
+
+SpeechModelAvailability(
+	GUID UxSessionId,
+	UNICODESTRING Locale,
+	BOOLEAN Available,
+	UNICODESTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+DictationModelRequestStart(
+	GUID UxSessionId,
+	GUID MicActiveSessionId,
+	UNICODESTRING Reason,
+	UINT32 State,
+	UINT64 PartA_PrivTags
+	);
+
+UXSessionEnd(
+	UINT64 PartA_PrivTags,
+	GUID uxSessionId,
+	UNICODESTRING reason,
+	BOOL32 listeningSucceeded,
+	UINT32 subSessionCount,
+	UINT64 totalDuration,
+	UINT64 subSessionDuration,
+	UINT32 wordCount,
+	UINT32 characterCount,
+	UINT32 totalSucceededSessionCount,
+	UINT32 totalFailedSessionCount,
+	BOOL32 initialUserConsentAccepted,
+	UNICODESTRING voiceLoggingStatus
+	);
+
+UXSessionStart(
+	GUID uxSessionId,
+	UNICODESTRING entryPoint,
+	UNICODESTRING language,
+	UNICODESTRING appName,
+	UINT32 inputScope,
+	UINT32 editControlSettings,
+	BOOLEAN initialUserConsentAccepted,
+	BOOLEAN isAcceleratorEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+AuthenticationEnd(
+	GUID authenticationId,
+	UINT32 authenticationType,
+	BOOLEAN isTokenValid,
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+InternetNotConnected(
+	GUID uxSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+InvokedInNonInputField(
+	GUID uxSessionId,
+	UNICODESTRING ApplicationName,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionNotReadyToStart(
+	GUID uxSessionId,
+	UNICODESTRING reason,
+	UINT64 PartA_PrivTags
+	);
+
+DictationModelStateChanged(
+	UINT32 oldModernModelState,
+	UINT32 newModernModelState,
+	UINT32 baseModelState,
+	BOOLEAN isAuthenticating
+	);
+
+SpeechModelInstallActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 ErrorCode,
+	BOOLEAN DoesPackageExist,
+	UNICODESTRING PackageFamilyName,
+	UINT32 InstallType,
+	UINT32 InstallState
+	);
+
+SpeechModelInstallActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 ErrorCode,
+	BOOLEAN DoesPackageExist,
+	UNICODESTRING PackageFamilyName,
+	UINT32 InstallType,
+	UINT32 InstallState
+	);
+
+SpeechModelInstallActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SpeechModelInstallActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StoreAppsBlocked(
+	UINT64 PartA_PrivTags
+	);
+

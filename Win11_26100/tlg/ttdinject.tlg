@@ -1,0 +1,32 @@
+ProviderNames:
+	Microsoft.Windows.DebuggingTools.DebuggerEngine
+
+
+
+**** Events *****
+SessionContext(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Name,
+	UNICODESTRING Value,
+	GUID FeatureSessionId
+	);
+
+FeatureUsed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Product,
+	UNICODESTRING Feature,
+	UNICODESTRING Action,
+	GUID FeatureSessionId
+	);
+
+FeatureUsed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Product,
+	UNICODESTRING Feature,
+	UNICODESTRING Action,
+	GUID FeatureSessionId,
+	INT32 ErrorType,
+	UINT64 ErrorValue,
+	UNICODESTRING ErrorMsg
+	);
+

@@ -1,0 +1,16 @@
+ProviderNames:
+	MswsockTraceLogProvider
+
+
+
+**** Events *****
+SanProviderReference(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ProviderName
+	);
+
+SanProviderLoad(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ProviderName
+	);
+

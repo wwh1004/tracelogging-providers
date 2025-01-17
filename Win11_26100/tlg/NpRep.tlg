@@ -1,0 +1,175 @@
+ProviderNames:
+	Microsoft.Windows.WebDefense.ThreatAssessment.DebugTracing
+	Microsoft.Windows.WebDefense.WpTraceLogging
+	Microsoft.Windows.WebDefense.NetworkProtectionLogging
+	Microsoft.Windows.WebDefense.SmartScreenTraceLogging
+	Microsoft.Windows.Webdefense.SmartScreen
+
+
+
+**** Events *****
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+InfoEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+VerboseEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+GeoMapLookup(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 EndpointMatches,
+	UINT32 ConsumerFallbacks,
+	UINT64 PeriodMs
+	);
+
+SmartScreenPingErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING scheduler_id,
+	UINT32 ping_count,
+	UINT64 period_ms
+	);
+
+SmartScreenErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING category,
+	UINT32 value,
+	ANSISTRING message,
+	ANSISTRING file,
+	UINT32 line,
+	UINT32 context
+	);
+
+ErrorEvent(
+	ANSISTRING EventID,
+	ANSISTRING msg,
+	ANSISTRING File,
+	ANSISTRING Line
+	);
+
+Microsoft_WebBrowser_SmartScreen_Network(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING service_uri,
+	UINT64 request_bytes,
+	UINT64 response_bytes,
+	UINT64 period_ms
+	);
+
+WebClientDurationEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	ANSISTRING ServiceUri,
+	UINT64 Count,
+	UINT64 DurationMs,
+	UINT64 PeriodMs
+	);
+
+WebErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING EndpointUri,
+	UINT32 Verb,
+	UINT32 HttpStatusCode,
+	ANSISTRING CorrelationId,
+	ANSISTRING InternalCorrelationId,
+	ANSISTRING SchedulerId
+	);
+
+Microsoft_WebBrowser_SmartScreen_DiskIIO(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING file_name,
+	UINT64 read_bytes,
+	UINT32 read_count,
+	UINT64 write_bytes,
+	UINT32 write_count,
+	UINT64 period_ms
+	);
+

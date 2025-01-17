@@ -1,0 +1,70 @@
+ProviderNames:
+	Microsoft.Windows.DebuggingTools.MiniDump
+	Microsoft.Windows.DebuggingTools.DebuggerEngine
+
+
+
+**** Events *****
+CabSessionStarted(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING CabGuid,
+	INT32 CabType,
+	GUID FeatureSessionId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+DataModelEnumDebugSymbolError(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FunctionName,
+	UNICODESTRING ModuleName,
+	UNICODESTRING SymbolName,
+	UNICODESTRING SymbolType
+	);
+
+FeatureUsed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Product,
+	UNICODESTRING Feature,
+	UNICODESTRING Action,
+	GUID FeatureSessionId
+	);
+
+LogUnexpectedGuestStepBreak(
+	UINT64 PartA_PrivTags,
+	UINT32 ExceptionCode,
+	UINT64 BreakpointAddress,
+	UNICODESTRING BreakpointMachineName,
+	UNICODESTRING TargetMachineName,
+	UNICODESTRING EffectiveMachineName
+	);
+
+SessionContext(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Name,
+	UNICODESTRING Value,
+	GUID FeatureSessionId
+	);
+
+TtdReplayStatisticsExpected(
+	UINT64 PartA_PrivTags
+	);
+
+TtdReplayStatistic(
+	UINT64 PartA_PrivTags,
+	ANSISTRING StatisticName,
+	INT64 Count,
+	DOUBLE Sum,
+	DOUBLE StandardDeviation,
+	DOUBLE Maximum,
+	DOUBLE Minimum
+	);
+
+TtdReplayStatistic(
+	UINT64 PartA_PrivTags,
+	ANSISTRING StatisticName,
+	INT64 Count
+	);
+

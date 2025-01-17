@@ -1,0 +1,76 @@
+ProviderNames:
+	Microsoft.Windows.Input.HidServ
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+UsagePageMismatched(
+	NULL Count,
+	UNICODESTRING Device,
+	HEX UsagePageInProperty,
+	HEX UsagePageInHidCaps,
+	UINT64 PartA_PrivTags
+	);
+
+GetDeviceInterfacePropertyFailed(
+	NULL Count,
+	UNICODESTRING Device,
+	HEXINT32 GetLastError,
+	HEXINT32 DevPropType,
+	UINT64 PartA_PrivTags
+	);
+
+FailedOnConsumerControl(
+	NULL Count,
+	UNICODESTRING Device,
+	ANSISTRING FailedApi,
+	HEXINT32 Data,
+	UINT64 PartA_PrivTags
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

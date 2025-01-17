@@ -1,0 +1,534 @@
+ProviderNames:
+	Microsoft.Windows.TextInput.VoiceTyping
+
+
+
+**** Events *****
+Trace(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	UNICODESTRING message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ListeningStateUpdate(
+	UNICODESTRING carbonSessionId,
+	GUID listeningStateId,
+	UINT32 recognizerMode,
+	BOOLEAN sessionAlive,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT32 carbonErrorCode,
+	UINT64 PartA_PrivTags
+	);
+
+RefreshConnectionEnd(
+	GUID micActiveSessionId,
+	UNICODESTRING reason,
+	UNICODESTRING resultType,
+	UINT64 PartA_PrivTags
+	);
+
+ConnectionStateUpdate(
+	GUID micActiveSessionId,
+	BOOLEAN connected,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT32 carbonErrorCode,
+	UINT64 PartA_PrivTags
+	);
+
+RefreshConnectionStart(
+	GUID micActiveSessionId,
+	UINT32 recognizerMode,
+	BOOLEAN voiceLoggingEnabled,
+	UNICODESTRING punctuationMode,
+	UNICODESTRING language,
+	UINT64 PartA_PrivTags
+	);
+
+CommandHandled(
+	GUID hearingStateId,
+	GUID listeningStateId,
+	UINT32 commandId,
+	UINT64 PartA_PrivTags
+	);
+
+HandledCommandDetails(
+	GUID HearingStateId,
+	GUID ListeningStateId,
+	UINT32 CommandId,
+	UNICODESTRING CommandText
+	);
+
+InputSessionStateUpdate(
+	GUID listeningStateId,
+	INT32 status
+	);
+
+VoiceLoggingSessionDisconnected(
+	UNICODESTRING CarbonSessionId,
+	UNICODESTRING MicActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+VoiceLoggingSessionStarted(
+	UNICODESTRING CarbonSessionId,
+	UNICODESTRING MicActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+VoiceLoggingSessionStopped(
+	UNICODESTRING CarbonSessionId,
+	UNICODESTRING MicActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+VoiceLoggingSessionCancelled(
+	UNICODESTRING CarbonSessionId,
+	UNICODESTRING MicActiveSessionId,
+	UINT32 Reason,
+	UINT32 ErrorCode,
+	UNICODESTRING ErrorDetails,
+	UINT64 PartA_PrivTags
+	);
+
+CarbonSessionStarted(
+	UNICODESTRING carbonSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+StopListeningEnd(
+	GUID listeningStateId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+RecognitionPlaceholderTextReceived(
+	UNICODESTRING CarbonSessionId,
+	GUID HearingStateId,
+	UINT32 RecognizerMode,
+	UINT32 TextLength
+	);
+
+RecognitionFinalTextReceived(
+	UNICODESTRING CarbonSessionId,
+	GUID HearingStateId,
+	UINT32 RecognizerMode,
+	UINT32 TextLength,
+	UINT32 RecognitionLatencyMs,
+	UINT64 PartA_PrivTags
+	);
+
+StopListeningStart(
+	GUID listeningStateId,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ResumeListeningEnd(
+	GUID listeningStateId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+PauseListeningEnd(
+	GUID listeningStateId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+ResumeListeningStart(
+	GUID listeningStateId,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+TryListeningEnd(
+	GUID listeningStateId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+PauseListeningStart(
+	GUID listeningStateId,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+TryListeningStart(
+	GUID listeningStateId,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+DisconnectStart(
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+DisconnectEnd(
+	GUID micActiveSessionId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+LoadEnd(
+	GUID micActiveSessionId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+ConnectEnd(
+	GUID micActiveSessionId,
+	UNICODESTRING reason,
+	UNICODESTRING errorType,
+	UINT64 PartA_PrivTags
+	);
+
+LoadStart(
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ConnectStart(
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	UNICODESTRING message
+	);
+
+SpeechModelPackageFound(
+	UNICODESTRING PackageFullName,
+	UINT64 PartA_PrivTags
+	);
+
+ModelFullName(
+	UNICODESTRING PackageFullName,
+	UINT64 PartA_PrivTags
+	);
+
+UsingLicenseBasedSDK(
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionHearingFinalText(
+	GUID hearingStateId,
+	GUID listeningStateId,
+	UNICODESTRING textDetails
+	);
+
+InputSessionInitializeEnd(
+	GUID listeningStateId,
+	INT32 status,
+	UINT64 PartA_PrivTags
+	);
+
+InputSessionInitializeStart(
+	GUID listeningStateId,
+	BOOLEAN sessionInitialized,
+	UINT64 PartA_PrivTags
+	);
+
+MicActiveSessionHearingHypothesis(
+	GUID hearingStateId,
+	GUID listeningStateId,
+	UNICODESTRING textDetails
+	);
+
+MicActiveSessionHearingFinalTextSize(
+	GUID hearingStateId,
+	GUID listeningStateId,
+	INT32 textLength,
+	INT32 wordCount,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+LicenseUsedInLoadingSpeechModel(
+	BOOLEAN licenseTextUsed,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CarbonRecognitionStop(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING micActiveSessionId,
+	UINT32 recognizerMode,
+	UNICODESTRING speechModelName,
+	UNICODESTRING speechModelPackageName
+	);
+
+CarbonRecognitionStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CarbonRecognitionStop(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CarbonRecognitionStart(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING micActiveSessionId,
+	UINT32 recognizerMode,
+	UNICODESTRING speechModelName,
+	UNICODESTRING speechModelPackageName
+	);
+
+CarbonRecognitionStart(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CarbonSessionClose(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING micActiveSessionId
+	);
+
+CarbonRecognitionStart(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CarbonSessionClose(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CarbonRecognizerInitialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING speechModelName,
+	UNICODESTRING speechModelPackageName
+	);
+
+CarbonSessionClose(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CarbonRecognizerInitialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING speechModelName,
+	UNICODESTRING speechModelPackageName
+	);
+
+CarbonRecognizerInitialize(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING micActiveSessionId,
+	UINT32 recognizerMode
+	);
+
+CarbonRecognizerInitialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AllModelsUpdatedToLicenseBased(
+	UINT64 PartA_PrivTags
+	);
+
+CarbonRecognizerInitialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+

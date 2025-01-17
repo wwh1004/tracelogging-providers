@@ -1,0 +1,42 @@
+ProviderNames:
+	Microsoft.OSG.OSS.CredProvFramework
+
+
+
+**** Events *****
+LsaOpenLocalSystemPolicy(
+	ANSISTRING EventLevel,
+	ANSISTRING Invoke,
+	NTSTATUS ResultCode
+	);
+
+ReplaceDotWithMachineName(
+	ANSISTRING EventLevel,
+	ANSISTRING Invoke,
+	HRESULT ResultCode
+	);
+
+GetMachineDomainName(
+	ANSISTRING EventLevel,
+	ANSISTRING Invoke,
+	HRESULT ResultCode
+	);
+
+GetMachineDomainName(
+	ANSISTRING EventLevel,
+	ANSISTRING Invoke,
+	UNICODESTRING DomainName
+	);
+
+GetMachineName(
+	ANSISTRING EventLevel,
+	ANSISTRING Invoke,
+	HRESULT ResultCode
+	);
+
+GetMachineName(
+	ANSISTRING EventLevel,
+	ANSISTRING Invoke,
+	UNICODESTRING MachineName
+	);
+

@@ -1,0 +1,1858 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+	Microsoft.Windows.Sense.Ndr
+
+
+
+**** Events *****
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT16 TypeTag
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT16 TypeTag
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	INT32 message,
+	UINT16 componentId
+	);
+
+Ndr(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	UNICODESTRING TelemetryName,
+	ANSISTRING TelemetriesInfoAsJson
+	);
+
+NdrTelemetriesEvent(
+	UNICODESTRING TelemetryName,
+	UINT64 TelemetryTimestamp,
+	ANSISTRING TelemetriesInfoAsJson
+	);
+
+NdrTelemetries(
+	HEX PartB_Ms.Windows.SenseNdr.Machine,
+	ANSISTRING machineId,
+	ANSISTRING orgId,
+	ANSISTRING clientVersion,
+	ANSISTRING configurationVersion,
+	UNICODESTRING TelemetryName,
+	UINT64 TelemetryTimestamp,
+	ANSISTRING TelemetriesInfoAsJson
+	);
+
+Ndr(
+	ANSISTRING message,
+	UNICODESTRING TelemetryName,
+	ANSISTRING TelemetriesInfoAsJson
+	);
+
+NdrTelemetriesEvent(
+	UNICODESTRING TelemetryName,
+	UINT64 TelemetryTimestamp,
+	ANSISTRING TelemetriesInfoAsJson
+	);
+
+Ndr(
+	ANSISTRING message,
+	UNICODESTRING TelemetryName,
+	ANSISTRING TelemetriesInfoAsString
+	);
+
+NdrTelemetriesEvent(
+	UNICODESTRING TelemetryName,
+	UINT64 TelemetryTimestamp,
+	ANSISTRING TelemetriesInfoAsString
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage,
+	ANSISTRING AdditionalInfo
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT32 Address,
+	INT32 Status
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT8 Address,
+	INT32 Status
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT8 Address,
+	INT32 Status
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	INT16 offsetInPacket,
+	INT16 StringLength,
+	INT16 InterceptedPktSize
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	HRESULT errorCode,
+	ANSISTRING message,
+	GUID SessionGuid,
+	ANSISTRING SessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING EtwSessionName,
+	GUID EtwSessionGuid
+	);
+
+Ndr(
+	UINT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING EtwSessionName,
+	GUID EtwSessionGuid
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	HRESULT errorCode,
+	ANSISTRING message,
+	ANSISTRING Error
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName,
+	GUID ProviderId
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName,
+	GUID ProviderId
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING EtwSessionName,
+	UINT32 ErrorCode
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT64 ConfigSize,
+	UINT64 ZeekScriptsCount
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT64 ConfigSize
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT64 ZeekScriptsCount
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT64 ZeekScriptsCount
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING ErrorMessage
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT64 ruleCappingSize
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING cappingName,
+	BOOL32 Enabled
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING cappingName,
+	ANSISTRING cappingRuleId
+	);
+
+Ndr(
+	UNICODESTRING errorCode,
+	INT32 message,
+	ANSISTRING cappingName,
+	ANSISTRING cappingRuleId,
+	ANSISTRING what
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING cappingName,
+	UINT64 addedEntriesCount
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING taskName,
+	ANSISTRING ruleId,
+	ANSISTRING what
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING PropertyName,
+	ANSISTRING RuleId
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING filterFunction,
+	ANSISTRING type
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING sourcePropertyName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING filterFunction,
+	ANSISTRING type
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING filterValue,
+	ANSISTRING type
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING sourcePropertyName,
+	ANSISTRING sourcePropertyType
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING what
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING what
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING what
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	BOOL32 m_keepGoing
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	BOOL32 m_keepGoing
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	ANSISTRING Function,
+	UINT32 LineNumber
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING ReceivedEventName
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	INT32 message,
+	UINT16 componentId
+	);
+
+SenseNdrArpEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMAC,
+	UNICODESTRING DestMAC,
+	UINT16 OpCode,
+	UNICODESTRING SenderIp,
+	UNICODESTRING TargetIp,
+	UNICODESTRING TargetMac,
+	UNICODESTRING SenderMac
+	);
+
+SenseNdrCdpEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SourceIp,
+	UNICODESTRING SourceMac,
+	UNICODESTRING DstMac,
+	UINT8 CdpVersion,
+	ANSISTRING DeviceId,
+	ANSISTRING SoftwareVersion,
+	ANSISTRING Platform,
+	ANSISTRING SystemName,
+	UNICODESTRING MgmtAddress,
+	ANSISTRING PortId,
+	ANSISTRING VtpMgmtDomain,
+	UINT16 NativeVlan,
+	UINT32 Capabilities
+	);
+
+SenseNdrDhcpEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DstIp,
+	UINT8 MessageType,
+	UINT32 TransactionId,
+	UNICODESTRING ClientAddress,
+	UNICODESTRING YourAddress,
+	UNICODESTRING NextServerAddress,
+	UNICODESTRING RelayAgentAddress,
+	UNICODESTRING ClientMac,
+	ANSISTRING ServerHostName,
+	ANSISTRING BootFileName,
+	UINT32 MagicCookie,
+	ANSISTRING Hostname,
+	ANSISTRING ClientFqdn,
+	ANSISTRING Domain,
+	UNICODESTRING RequestedAddr,
+	UNICODESTRING ClientIdentifier,
+	UNICODESTRING DhcpOptionsJson,
+	UINT8 HardwareType
+	);
+
+SenseNdrDhcpV6Event(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DestIp,
+	UINT8 MessageType,
+	UINT32 TransactionId,
+	UNICODESTRING ClientIdentifierLinkLayerAddress,
+	UNICODESTRING ServerIdentifierLinkLayerAddress,
+	UNICODESTRING IaAddress,
+	UNICODESTRING DnsRecursiveNameServerList,
+	ANSISTRING DomainSearchList,
+	UNICODESTRING SntpServerList,
+	UNICODESTRING BcmcsServerList,
+	ANSISTRING ClientFqdn,
+	ANSISTRING BootFileUrl,
+	UNICODESTRING GeolocationBytes,
+	UNICODESTRING OptionRequestBytes,
+	UNICODESTRING VendorClassBytes,
+	UNICODESTRING VendorOptsBytes,
+	ANSISTRING OrderedOptions,
+	ANSISTRING ClientDUID,
+	ANSISTRING ServerDUID,
+	UINT8 Ttl
+	);
+
+SenseNdrIPHeaderEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DestIp,
+	UINT8 Ttl,
+	UINT8 Protocol
+	);
+
+SenseNdrLldpEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING ChassisIdMacAddress,
+	UNICODESTRING ChassisIdNetworkAddress,
+	ANSISTRING SystemName,
+	ANSISTRING SystemDescription,
+	UNICODESTRING ManagementAddress,
+	UNICODESTRING KeyValuesJson
+	);
+
+SenseNdrLlmnrEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DstIp,
+	UINT16 TransactionId,
+	UINT16 Flags,
+	ANSISTRING QueryName,
+	UINT16 QueryType,
+	UINT16 QueryClass,
+	UINT16 ResponseIndex,
+	UINT8 ResponseCategory,
+	ANSISTRING ResponseName,
+	UINT16 ResponseType,
+	UINT16 ResponseClass,
+	UINT32 ResponseTtl,
+	UNICODESTRING ResponseAddress,
+	UINT16 SrcPort,
+	UINT16 DestPort,
+	UINT8 Ttl,
+	UINT16 PayloadLength
+	);
+
+SenseNdrMdnsEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SourceMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SourceIp,
+	UNICODESTRING DstIp,
+	UNICODESTRING ResourceName,
+	UNICODESTRING ResourceData,
+	UNICODESTRING RRSection,
+	UNICODESTRING PacketID,
+	UINT16 RRIndex,
+	UINT16 RRType,
+	UINT16 TransactionID,
+	BOOL32 CacheFlush,
+	UINT32 ttl
+	);
+
+SenseNdrMndpEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DstIp,
+	UNICODESTRING MacAddress,
+	ANSISTRING Identity,
+	ANSISTRING Ipv6address,
+	ANSISTRING Version,
+	ANSISTRING Platform,
+	ANSISTRING Interfacename,
+	ANSISTRING Board,
+	ANSISTRING Softwareid,
+	UINT32 Uptime
+	);
+
+SenseNdrNbnsEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMAC,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DestIp,
+	UINT16 TransactionId,
+	UINT16 Flags,
+	ANSISTRING QueryName,
+	UINT16 QueryType,
+	ANSISTRING RRName,
+	UINT16 RRType,
+	UNICODESTRING RRNodeNames,
+	UINT32 RRTtl,
+	UNICODESTRING RRUnitID,
+	UNICODESTRING RRAddr,
+	UINT16 NbFlags
+	);
+
+SenseNdrSignatureEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DstIp,
+	UNICODESTRING SignatureName,
+	UNICODESTRING SignatureBytes,
+	UNICODESTRING PayloadBytes,
+	UINT16 PayloadSize,
+	UNICODESTRING FirstSeenBytes,
+	UINT16 SrcPort,
+	UINT16 DstPort,
+	UINT8 IpTTL
+	);
+
+SenseNdrSsdpEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DstIp,
+	ANSISTRING Header,
+	ANSISTRING Host,
+	ANSISTRING Location,
+	UNICODESTRING KeyValuesJson,
+	UINT16 SrcPort,
+	UINT16 DestPort,
+	UINT8 Ttl,
+	UINT16 PayloadLength
+	);
+
+SenseNdrTcpHeaderEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DestIp,
+	UINT8 Tos,
+	UINT16 IpId,
+	UINT16 DFdata,
+	UINT8 Ttl,
+	UINT16 SrcPort,
+	UINT16 DestPort,
+	UINT32 SeqNum,
+	UINT32 AckNum,
+	UINT16 TcpFlags,
+	UINT16 TcpWindowSize,
+	UINT16 UrgentPointer,
+	UNICODESTRING TcpOptions,
+	UINT16 PacketSize,
+	UINT16 IpHeaderSize,
+	UINT16 TcpHeaderSize
+	);
+
+SenseNdrUdpHeaderEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMac,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DestIp,
+	UINT8 Ttl,
+	UINT16 SrcPort,
+	UINT16 DestPort,
+	UINT16 PayloadLength
+	);
+
+SenseNdrWsdEvent(
+	UINT64 PacketTimestamp,
+	UNICODESTRING NetworkName,
+	UNICODESTRING NetworkNamesFromRegistry,
+	UINT8 NetworkCategory,
+	UINT8 NetworkDomainType,
+	UNICODESTRING NetworkAdapterId,
+	UNICODESTRING AdapterIpAddresses,
+	UNICODESTRING AdapterDefaultGateways,
+	UNICODESTRING AdapterDefaultGatewaysMac,
+	UNICODESTRING AdapterMac,
+	UINT32 ProcessId,
+	UINT64 ProcessStartKey,
+	BOOL32 IsOutgoingPacket,
+	ANSISTRING NdrVersion,
+	ANSISTRING NdrProcess,
+	UNICODESTRING SrcMAC,
+	UNICODESTRING DstMac,
+	UNICODESTRING SrcIp,
+	UNICODESTRING DestIp,
+	UINT16 XmlLength,
+	ANSISTRING XmlAction,
+	ANSISTRING XmlTypes,
+	ANSISTRING XmlXaddrs,
+	ANSISTRING XmlDeviceId,
+	ANSISTRING XmlEndpointReferenceAddress,
+	UINT16 SrcPort,
+	UINT16 DestPort,
+	UINT8 Ttl,
+	UINT16 PayloadLength
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	BOOL32 m_keepGoing
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	BOOL32 m_keepGoing
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	ANSISTRING Function,
+	UINT32 LineNumber
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING DissectorCreatedEventName,
+	UINT32 DissectorsEnablingBitmap,
+	UINT32 DissectorsEnablingValue
+	);
+
+Ndr(
+	UNICODESTRING message,
+	INT32 PacketType
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING DissectorCreatedEventName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING DissectorCreatedEventName,
+	INT32 HResult
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING DissectorCreatedEventName,
+	ANSISTRING ErrorMessage
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	ANSISTRING Function,
+	UINT32 LineNumber
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	ANSISTRING Function,
+	UINT32 LineNumber
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	ANSISTRING Function,
+	UINT32 LineNumber
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	ANSISTRING Function,
+	UINT32 LineNumber
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	INT16 maxNameSize
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 valueSize
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	UINT16 size
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage,
+	UINT32 tlvType,
+	UINT32 valueSize
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING ErrorMsg,
+	HRESULT Error
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT32 ThrottledEvents
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT32 RejectedEvents
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING ErrorMsg,
+	HRESULT Error
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	GUID providerId,
+	UNICODESTRING propertyName,
+	UINT16 index
+	);
+
+Ndr(
+	UNICODESTRING message,
+	GUID providerId,
+	UNICODESTRING propertyName,
+	UINT16 index
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT32 samplingIntervalInSeconds
+	);
+
+Ndr(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT32 samplingIntervalInSeconds
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING counterName,
+	UINT64 probingCounter,
+	DOUBLE minimumSample,
+	DOUBLE maximumSample,
+	DOUBLE avgSample
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	ANSISTRING message,
+	UINT32 checkIntervalInSeconds,
+	ANSISTRING PerformanceCounterName
+	);
+
+Ndr(
+	UNICODESTRING message,
+	ANSISTRING configJson.c_str()
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING Exception message
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message,
+	ANSISTRING Exception message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message,
+	ANSISTRING ZeekArguments
+	);
+
+Ndr(
+	ANSISTRING message,
+	INT32 Setup Result
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING message
+	);
+
+Ndr(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	ANSISTRING errorCode,
+	ANSISTRING message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+
+Ndr(
+	UNICODESTRING message
+	);
+
+TelemetryAssertEvent(
+	ANSISTRING Message
+	);
+

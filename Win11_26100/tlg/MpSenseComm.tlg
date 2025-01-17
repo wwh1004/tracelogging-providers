@@ -1,0 +1,174 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+
+
+
+**** Events *****
+SenseCnCProxy(
+	UNICODESTRING message,
+	HEXINT32 hr
+	);
+
+SenseCnCProxy(
+	UNICODESTRING message,
+	INT32 Error code
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT32 defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT32 defaultValue
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	UINT16 statuscode,
+	UNICODESTRING http_message
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	INT32 errorcode,
+	ANSISTRING http_message,
+	BOOLEAN consistentFailureDontRetry
+	);
+
+SenseHttpClient(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	BOOLEAN shouldUseProxy,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	INT32 Error code,
+	BOOLEAN shouldUseProxy,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	BOOLEAN HasProxyConfiguration,
+	UNICODESTRING ProxyURL,
+	BOOLEAN ShouldTryWithStaticProxyFirst
+	);
+
+SenseHttpClient(
+	ANSISTRING message,
+	UINT16 statusCode,
+	UNICODESTRING header_server
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING base_uri,
+	UNICODESTRING request_uri_path,
+	UNICODESTRING request_uri_query
+	);
+
+SenseHttpClient(
+	UNICODESTRING message
+	);
+
+SenseHttpClient(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseHttpClient(
+	UNICODESTRING message,
+	UNICODESTRING serviceBaseUrl,
+	UNICODESTRING requestPath,
+	UNICODESTRING m_proxyUrl
+	);
+
+SenseCyberCommon(
+	UNICODESTRING message,
+	UNICODESTRING proxyServer
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 error,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING regPath,
+	UINT32 error
+	);
+

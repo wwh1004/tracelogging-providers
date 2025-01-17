@@ -1,0 +1,452 @@
+ProviderNames:
+	Microsoft.Windows.TextInput.Common
+
+
+
+**** Events *****
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+IMECandidateWindowThemeUpdated(
+	UNICODESTRING SelectedThemeName,
+	BOOLEAN IsCHSIME,
+	BOOLEAN AppThemeIsLight,
+	BOOLEAN IsUsingCustomImageBackground,
+	UNICODESTRING BackgroundImageOpacity,
+	UNICODESTRING CHSHeightType,
+	BOOLEAN IsUsingCHSBackgroundImage,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ChineseSimplifiedImeHeightType,
+	UNICODESTRING ChineseSimplifiedImeBackgroundImageOpacity,
+	UNICODESTRING ChineseSimplifiedImeBackgroundImageStretchType,
+	UNICODESTRING ChineseSimplifiedImeBackgroundImagePath,
+	UNICODESTRING ChineseSimplifiedImeBackgroundColor,
+	UNICODESTRING SelectedThemeName,
+	UNICODESTRING KeyboardBackgroundType,
+	UNICODESTRING KeyboardBackgroundSolidColor,
+	UNICODESTRING KeyboardBackgroundGradientColorTop,
+	UNICODESTRING KeyboardBackgroundGradientColorBottom,
+	UNICODESTRING AccentColor,
+	UNICODESTRING KeyboardBackgroundImageOpacity,
+	UNICODESTRING KeyboardBackgroundImageStretchType,
+	BOOLEAN HasKeyboardBackgroundImagePath,
+	UNICODESTRING ThemeOverride,
+	BOOLEAN AppThemeIsLight,
+	BOOLEAN IsLightTheme,
+	BOOLEAN IsCustomTheme,
+	BOOLEAN IsUsingCustomImageBackground,
+	BOOLEAN IsHighContrast,
+	BOOLEAN Changed
+	);
+
+ConfiguringImageBackground(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN IsImageLoaded
+	);
+
+ConfiguringImageBackground(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN IsImageLoaded
+	);
+
+ConfiguringImageBackground(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING ViewName,
+	UNICODESTRING ImageOpacity,
+	BOOLEAN IsCHSIME
+	);
+
+ConfiguringImageBackground(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ConfiguringImageBackground(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CloudSettingsOnCloudStoreDataChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING DataType,
+	BOOLEAN IsEmptyData
+	);
+
+CloudSettingsOnCloudStoreDataChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CloudSettingsOnCloudStoreDataChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UnexpectedKeyboardThemeShellPrefDetected(
+	UNICODESTRING ShellPrefName,
+	UNICODESTRING ShellPrefValue
+	);
+
+InputFeatureButtonInInputHubSelected(
+	UNICODESTRING ShellViewId,
+	UNICODESTRING TelemetryId,
+	UNICODESTRING Context,
+	UINT64 PartA_PrivTags
+	);
+
+InputHubInvoked(
+	UNICODESTRING TelemetryId,
+	UINT64 PartA_PrivTags
+	);
+
+ResourceStringFailedToLoad(
+	UNICODESTRING ModuleName,
+	UNICODESTRING ResourceId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN IsKeyBackgroundEnabled,
+	UNICODESTRING KeyLabelSize,
+	UNICODESTRING KeyTransparency,
+	UNICODESTRING KeyLabelColor,
+	UNICODESTRING KeyColor,
+	UNICODESTRING BorderColor
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING contextJson
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	HRESULT ErrorCode
+	);
+
+FirstObjectPreloaded(
+	UNICODESTRING name,
+	UNICODESTRING error
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UINT32 Id,
+	BOOL32 IsAudioEnabled
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	INT32 loadCount,
+	INT32 errorCount
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 loadCount,
+	INT32 errorCount
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewName
+	);
+
+ApplyThemeIfChanged(
+	UNICODESTRING ViewName,
+	BOOLEAN IsRefreshed,
+	UNICODESTRING SelectedThemeName,
+	BOOLEAN AppThemeIsLight,
+	BOOLEAN IsUsingCustomImageBackground,
+	UNICODESTRING BackgroundImageOpacity,
+	UINT64 PartA_PrivTags
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING SelectedThemeName,
+	UNICODESTRING SuggestionTextColor,
+	UNICODESTRING KeyboardBackgroundType,
+	UNICODESTRING KeyboardBackgroundSolidColor,
+	UNICODESTRING KeyboardBackgroundGradientColorTop,
+	UNICODESTRING KeyboardBackgroundGradientColorBottom,
+	UNICODESTRING AccentColor,
+	UNICODESTRING KeyboardBackgroundImageOpacity,
+	UNICODESTRING KeyboardBackgroundImageStretchType,
+	BOOLEAN HasKeyboardBackgroundImagePath,
+	UNICODESTRING ThemeOverride,
+	BOOLEAN AppThemeIsLight,
+	BOOLEAN IsLightTheme,
+	BOOLEAN IsCustomTheme,
+	BOOLEAN IsUsingCustomImageBackground,
+	BOOLEAN IsHighContrast,
+	BOOLEAN Changed
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN Changed,
+	BOOLEAN SystemAccentColor,
+	UINT8 R,
+	UINT8 G,
+	UINT8 B,
+	BOOLEAN IsUsingSystemAccentColor,
+	BOOLEAN IsSystemAccentColorChanged,
+	BOOLEAN IsPrefAccentColorEmpty
+	);
+

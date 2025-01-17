@@ -1,0 +1,268 @@
+ProviderNames:
+	Windows.Media.FaceAnalysis.Api
+	Windows.Media.FaceAnalysis.PerformanceProvider
+	Windows.Media.FaceAnalysis.ApiDiagnostics
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+CreateFaceDetectorRTAsync(
+	NULL Count,
+	UINT64 PartA_PrivTags
+	);
+
+FaceDetectorRT_Initialize(
+	VOID
+	);
+
+FaceDetectorRTDetectFaces(
+	NULL Count,
+	UINT64 PartA_PrivTags
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode
+	);
+
+Windows::Media::FaceAnalysis::FaceDetectorRT::DetectFaces::<lambda_ae1999d65fb1b3c6108e25aadeec4cdc>::operator ().OriginalPixelFormat(
+	INT32 PixelFormat
+	);
+
+FaceDetectorRT_Initialize(
+	VOID
+	);
+
+FaceDetectorRT_DetectFacesAsync(
+	VOID
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Windows::Media::FaceAnalysis::FaceDetectorRT::Initialize.Failed(
+	HRESULT ResultCode
+	);
+
+Windows::Media::FaceAnalysis::FaceDetectorRTFactory::IsBitmapPixelFormatSupported.IsBitmapFormatSupportedCalled(
+	UINT32 BitmapPixelFormat enum
+	);
+
+FaceDetectorRT_DetectFacesAsync(
+	VOID
+	);
+
+Windows::Media::FaceAnalysis::FaceDetectorRT::Initialize.Succeeded(
+	VOID
+	);
+
+CreateFaceTrackerRTAsync(
+	NULL Count,
+	UINT64 PartA_PrivTags
+	);
+
+FaceTrackerRT_Initialize(
+	VOID
+	);
+
+FaceTrackerRT_ProcessNextFrameAsync(
+	VOID
+	);
+
+FaceTrackerRTProcessNextFrameAsync(
+	NULL Count,
+	UINT64 PartA_PrivTags
+	);
+
+Windows::Media::FaceAnalysis::FaceTrackerRT::ProcessNextFrameAsync::<lambda_ed7ec2bda30574aa74df029725717921>::operator ().OriginalPixelFormat(
+	INT32 PixelFormat
+	);
+
+Windows::Media::FaceAnalysis::FaceTrackerRTFactory::IsBitmapPixelFormatSupported.IsBitmapFormatSupportedCalled(
+	UINT32 BitmapPixelFormat enum
+	);
+
+FaceTrackerRT_Initialize(
+	VOID
+	);
+
+FaceTrackerRT_ProcessNextFrameAsync(
+	VOID
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	INT64 numPriorBoxes,
+	INT64 numOutputTensors
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngine::~RetinaEngine(
+	VOID
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngine::Initialize(
+	VOID
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngine::ProcessNextFrame(
+	VOID
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	ANSISTRING OutputName
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	UINT32 Size,
+	UINT32 Index,
+	ANSISTRING OutputName
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngine::ProcessNextFrame.RetinaFaceDetectedFaces(
+	UINT32 ImageWidth,
+	UINT32 ImageHeight,
+	UINT64 Timestamp,
+	UINT32 ImageStride,
+	BOOLEAN IsDiscontinuous,
+	INT32 SearchAreaInternal.left,
+	INT32 SearchAreaInternal.top,
+	INT32 SearchAreaInternal.right,
+	INT32 SearchAreaInternal.bottom,
+	FLOAT ResizeScale,
+	UINT32 MinDetectableFaceSize,
+	UINT32 MaxDetectableFaceSize,
+	UINT32 Size
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	UINT32 Index
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngineTracker::ProcessNextFrame.SkipDetectionDueToSameFrame(
+	VOID
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngineTracker::ResetTrackingStatus(
+	VOID
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngineTracker::TryUpdateRoiForNextFrame.RoiForNextFrame(
+	INT32 _roi.value().left,
+	INT32 _roi.value().top,
+	INT32 _roi.value().right,
+	INT32 _roi.value().bottom
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	INT32 Code,
+	ANSISTRING CodeMsg,
+	ANSISTRING Message
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	ANSISTRING message,
+	INT32 code
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	UNICODESTRING ModulePath,
+	ANSISTRING ResourceType,
+	UINT16 ResourceID
+	);
+
+Windows::Analog::Face::FaceDetector::OnnxTester::LoadAndInitialize.ONNXSessionOption(
+	INT32 intraThreadCount
+	);
+
+Windows::Analog::Face::FaceDetector::OnnxTester::~OnnxTester(
+	VOID
+	);
+
+Windows::Analog::Face::FaceDetector::OnnxTester::Reset(
+	VOID
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING FailureInfo,
+	HRESULT ResultCode,
+	UNICODESTRING ModulePath
+	);
+
+Windows::Analog::Face::FaceDetector::RetinaEngineModelFactory::InitORT.OrtApiInit(
+	INT32 HResult
+	);
+
+RetinaEngineModelFactoryInitORT(
+	NULL Count,
+	UINT64 PartA_PrivTags
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

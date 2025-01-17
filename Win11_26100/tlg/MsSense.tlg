@@ -1,0 +1,698 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+	Microsoft.Windows.Sense.GeneratedETW
+
+
+
+**** Events *****
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 status
+	);
+
+SenseService(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+Configuration(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	UNICODESTRING message
+	);
+
+ServiceStartAfterCrashEvent(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING path,
+	UNICODESTRING exePath
+	);
+
+SenseService(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING lpProcName
+	);
+
+SenseService(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	INT32 err,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING driveRoot
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	INT32 err,
+	UNICODESTRING drive,
+	UNICODESTRING dir,
+	UNICODESTRING fileName,
+	UNICODESTRING ext
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	ANSISTRING message,
+	UINT32 error
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UINT32 deleteResult
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING folderPath,
+	WIN32ERROR WinError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING folerPath,
+	UINT32 deleteResult
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	FILETIME lastWriteTime,
+	FILETIME deleteIfOlderThan
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING path,
+	UNICODESTRING acl,
+	BOOLEAN inheritAce
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING path,
+	UNICODESTRING sddl,
+	BOOLEAN inheritAce
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 diskExtents
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING errorCode,
+	INT32 message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING drivePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 diskNumber
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+StorageVolumeInformation(
+	UINT8 status,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId,
+	UNICODESTRING DeviceID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	STRING drive
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UINT32 deviceDescriptorSize
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING DeviceParentId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UNICODESTRING propName,
+	UINT64 bufferSize,
+	UINT32 offset
+	);
+
+EventDispatcher(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING eventName
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING type,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	ANSISTRING message,
+	UNICODESTRING Action,
+	ANSISTRING component
+	);
+
+SenseService(
+	ANSISTRING message
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+RegistryReadErrorEvent(
+	UNICODESTRING valueName,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	ANSISTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UNICODESTRING value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UNICODESTRING value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+SenseUpdate(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING hardLink,
+	UNICODESTRING backup
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING hardLink,
+	UNICODESTRING backup
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING driverName
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING driverName
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING driverName,
+	UNICODESTRING hardLinkDriverPath
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING driverName,
+	UNICODESTRING hardLinkDriverPath
+	);
+
+PlatformUpdateStatus(
+	UNICODESTRING InfoMessage
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Log value1,
+	UNICODESTRING Log value2
+	);
+
+PlatformUpdateStatus(
+	UINT32 Phase,
+	UNICODESTRING NewVersion,
+	UNICODESTRING WarningMessage,
+	HRESULT Error
+	);
+
+SenseUpdate(
+	UNICODESTRING message
+	);
+
+PlatformUpdateStatus(
+	UNICODESTRING Log value1,
+	UNICODESTRING Log value2,
+	UNICODESTRING ErrorMessage,
+	HRESULT Error
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	ANSISTRING Phase,
+	UNICODESTRING NewVersion
+	);
+
+PlatformUpdateStatus(
+	UINT32 Phase,
+	UNICODESTRING NewVersion,
+	UNICODESTRING Message
+	);
+
+PlatformUpdateStatus(
+	UINT32 Phase,
+	UNICODESTRING NewVersion,
+	UNICODESTRING Message,
+	HRESULT Error
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	ANSISTRING Phase,
+	UNICODESTRING NewVersion,
+	HRESULT Error
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING Phase,
+	UNICODESTRING NewVersion
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING DriverName,
+	UNICODESTRING Action
+	);
+
+SenseService(
+	UINT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING folder name
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING version
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UINT32 status
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 status
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING version
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING invalidversions,
+	UNICODESTRING version,
+	BOOLEAN version status
+	);
+
+SenseUpdate(
+	UNICODESTRING message,
+	UNICODESTRING version
+	);
+
+SenseUpdate(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING sddl,
+	UNICODESTRING path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 desiredAccess
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING serviceName,
+	UINT32 desiredAccess
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 startType,
+	UNICODESTRING serviceName
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING ServiceName,
+	UNICODESTRING executionPath
+	);
+
+SenseService(
+	ANSISTRING message,
+	UNICODESTRING ServiceName,
+	UNICODESTRING executionPath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 dwServiceType,
+	UINT32 dwCurrentState,
+	UINT32 dwControlsAccepted,
+	UINT32 dwWin32ExitCode,
+	UINT32 dwServiceSpecificExitCode,
+	UINT32 dwCheckPoint,
+	UINT32 dwWaitHint
+	);
+

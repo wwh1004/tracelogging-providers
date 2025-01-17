@@ -1,0 +1,74 @@
+ProviderNames:
+	Microsoft.Windows.Shell.CopilotNudgesEntryPoint
+	Microsoft.Windows.Shell.CopilotImageExperience
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SuggestionActionClicked(
+	UNICODESTRING label,
+	UINT64 PartA_PrivTags
+	);
+
+EntryPointClicked(
+	UINT64 PartA_PrivTags
+	);
+
+Shown(
+	UNICODESTRING scenario,
+	UINT64 PartA_PrivTags
+	);
+
+Dismissed(
+	UINT64 dismissReason,
+	UINT64 PartA_PrivTags
+	);
+
+SuggestionActionInvoked(
+	UNICODESTRING scenario,
+	UNICODESTRING correlationId,
+	UINT64 PartA_PrivTags
+	);
+

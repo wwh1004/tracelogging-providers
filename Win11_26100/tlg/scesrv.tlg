@@ -1,0 +1,14 @@
+ProviderNames:
+	Microsoft.Windows.Security.SystemSetupByInf
+
+
+
+**** Events *****
+ScepConfigureSystemAreaLatency(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Security Template Name,
+	UINT32 Correlation ID,
+	UNICODESTRING Area,
+	INT64 Latency (us)
+	);
+

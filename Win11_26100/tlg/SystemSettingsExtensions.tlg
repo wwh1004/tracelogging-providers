@@ -1,0 +1,296 @@
+ProviderNames:
+	Microsoft.Windows.SystemSettingsExtensions
+	Microsoft.Windows.SettingsExtensions.FamilyValuePropControl
+	Microsoft.Windows.SettingsExtensions.IdealStateControl
+	Microsoft.Windows.SettingsExtensions.AlertBannerControl
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FamilyValuePropError(
+	UNICODESTRING err,
+	UINT64 PartA_PrivTags
+	);
+
+FamilyValuePropState(
+	BOOLEAN isVisible,
+	BOOLEAN isIrisContent,
+	UINT64 PartA_PrivTags
+	);
+
+FamilyValuePropAction(
+	UINT64 PartA_PrivTags
+	);
+
+AlertBannerRulesEngineAction(
+	UNICODESTRING action,
+	UNICODESTRING alertId,
+	UINT32 severity,
+	UINT32 version,
+	UINT64 PartA_PrivTags
+	);
+
+AlertBannerError(
+	UNICODESTRING err,
+	UINT64 PartA_PrivTags
+	);
+
+AlertBannerRulesEngineAlert(
+	UNICODESTRING alertId,
+	UINT32 severity,
+	UINT32 version,
+	UINT64 PartA_PrivTags
+	);
+
+TraceLoggingInfo(
+	UNICODESTRING traceLoggingMessage
+	);
+
+IdealStateErrorReport(
+	UNICODESTRING feature,
+	UNICODESTRING err,
+	UINT64 PartA_PrivTags
+	);
+
+BrowserState(
+	BOOLEAN isDefaultBrowserOptedIn,
+	BOOLEAN isSearchEngineOptedIn,
+	BOOLEAN isSearchDefaultEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+IdealStateFeatureLoadActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING feature
+	);
+
+IdealStateFeatureClickThrough(
+	UNICODESTRING feature,
+	UINT32 state,
+	UINT32 featureCategory,
+	BOOLEAN isIrisContent,
+	UINT64 PartA_PrivTags
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+BrowserContentDialogActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+BrowserContentDialogActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+IdealStateFeatureLoadActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 state,
+	UINT32 featureCategory,
+	BOOLEAN isIrisContent
+	);
+
+IdealStateFeatureLoadActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 state,
+	UINT32 featureCategory,
+	BOOLEAN isIrisContent
+	);
+
+IdealStateFeatureLoadActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+IdealStateFeatureLoadActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+BrowserContentDialogActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN isEligible
+	);
+
+BrowserContentDialogActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN userIntent,
+	BOOLEAN isDefaultBrowserEligible,
+	BOOLEAN isSearchEngineEligible,
+	BOOLEAN defaultBrowserOption,
+	BOOLEAN searchEngineOption,
+	BOOLEAN showMultipleChoiceExperience
+	);
+
+BrowserContentDialogActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN userIntent,
+	BOOLEAN isDefaultBrowserEligible,
+	BOOLEAN isSearchEngineEligible,
+	BOOLEAN defaultBrowserOption,
+	BOOLEAN searchEngineOption,
+	BOOLEAN showMultipleChoiceExperience
+	);
+

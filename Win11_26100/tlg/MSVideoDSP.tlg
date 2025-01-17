@@ -1,0 +1,44 @@
+ProviderNames:
+	Microsoft.Windows.Capture.Photography
+	Microsoft.Windows.MediaFoundation.CallStack
+
+
+
+**** Events *****
+InputVideoResolution(
+	UINT64 PartA_PrivTags,
+	ANSISTRING MediaPhotographyModule,
+	BOOL32 UTCReplace_AppSessionGuid,
+	GUID MFCaptureEngineSessionGuid,
+	UINT32 Width,
+	UINT32 Height
+	);
+
+VSChangedReason(
+	UINT64 PartA_PrivTags,
+	ANSISTRING MediaPhotographyModule,
+	BOOL32 UTCReplace_AppSessionGuid,
+	GUID MFCaptureEngineSessionGuid,
+	UINT32 ReasonCode
+	);
+
+MFPhotographyEvents(
+	ANSISTRING MediaPhotographyModule,
+	BOOL32 UTCReplace_AppSessionGuid,
+	GUID MFCaptureEngineSessionGuid,
+	UINT64 EffectCreateTimeInMS,
+	UINT64 EffectDisposeTimeInMS,
+	UINT8 QualityLevel,
+	UINT64 NumOfLatency,
+	DOUBLE MinLatencyInMSec,
+	DOUBLE MaxLatencyInMSec,
+	DOUBLE AvgLatencyInMSec,
+	UINT8 IsLowLatencyMode,
+	UINT8 IsHardwareVSUsed,
+	UINT8 IfIgnoreHardware,
+	UINT64 NumOfCorrectMotion,
+	DOUBLE AvgOfCorrectMotionTrace,
+	DOUBLE MinCorrectMotionTrace,
+	DOUBLE MaxCorrectMotionTrace
+	);
+

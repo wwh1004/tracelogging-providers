@@ -1,0 +1,66 @@
+ProviderNames:
+	Microsoft.Windows.Compression.DeltaPackageExpander
+
+
+
+**** Events *****
+PeakMemoryUsage(
+	ANSISTRING __TlgCV__,
+	GUID dpxTelemetrySessionID,
+	UNICODESTRING dpxFileVersion,
+	UNICODESTRING dpxProductVersion,
+	UNICODESTRING package,
+	UNICODESTRING targetPath,
+	UINT32 peakCommitChargeValueBytes
+	);
+
+MaxDiskUsage(
+	ANSISTRING __TlgCV__,
+	GUID dpxTelemetrySessionID,
+	UNICODESTRING dpxFileVersion,
+	UNICODESTRING dpxProductVersion,
+	UNICODESTRING package,
+	UNICODESTRING targetPath,
+	UINT64 MaxDiskFootprintBytes
+	);
+
+InventoryRuntime(
+	ANSISTRING __TlgCV__,
+	GUID dpxTelemetrySessionID,
+	UNICODESTRING dpxFileVersion,
+	UNICODESTRING dpxProductVersion,
+	UNICODESTRING package,
+	UNICODESTRING targetPath,
+	UNICODESTRING phase,
+	UINT64 elapsedTimeMilliseconds
+	);
+
+OverallRuntime(
+	ANSISTRING __TlgCV__,
+	GUID dpxTelemetrySessionID,
+	UNICODESTRING dpxFileVersion,
+	UNICODESTRING dpxProductVersion,
+	UNICODESTRING package,
+	UNICODESTRING targetPath,
+	UINT64 elapsedTimeMilliseconds
+	);
+
+DeltaCounts(
+	ANSISTRING __TlgCV__,
+	GUID dpxTelemetrySessionID,
+	UNICODESTRING dpxFileVersion,
+	UNICODESTRING dpxProductVersion,
+	UNICODESTRING package,
+	UNICODESTRING targetPath,
+	UINT64 totalDownload,
+	UINT64 numberOfFiles,
+	UINT64 numberOfDeltasInAsset,
+	UINT64 numberOfDeltasInTarget,
+	UINT64 numberOfFilesCopiedFromAsset,
+	UINT64 numberOfFilesCopiedToTarget,
+	UINT64 numberOfFallbacks,
+	UINT64 deltaAssetSize,
+	UINT64 deltaTargetSize,
+	UINT64 fallbackSize
+	);
+

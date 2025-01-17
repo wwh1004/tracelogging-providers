@@ -1,0 +1,91 @@
+ProviderNames:
+	Microsoft.Windows.Licensing.WMI
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+CSppProviderT<class CEmptyType>::ExecQueryAsync(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING QueryLanguage,
+	UNICODESTRING Query,
+	UNICODESTRING Caller,
+	HRESULT HResult,
+	UINT64 ElapsedTime
+	);
+
+ExecMethodAsync(
+	NULL Count,
+	NULL DurationTotal_ms,
+	NULL DurationMin_ms,
+	NULL DurationMax_ms,
+	UNICODESTRING ObjectPath,
+	UNICODESTRING MethodName,
+	HRESULT HResult,
+	UINT64 PartA_PrivTags
+	);
+
+GetObjectAsync(
+	NULL Count,
+	NULL DurationTotal_ms,
+	NULL DurationMin_ms,
+	NULL DurationMax_ms,
+	UNICODESTRING ObjectPath,
+	HRESULT HResult,
+	UINT64 PartA_PrivTags
+	);
+
+CSppProviderT<class CEmptyType>::CreateInstanceEnumAsync(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ClassName,
+	HRESULT HResult2,
+	UNICODESTRING Caller,
+	HRESULT HResult,
+	UINT64 ElapsedTime
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

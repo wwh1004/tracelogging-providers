@@ -1,0 +1,830 @@
+ProviderNames:
+	Microsoft.Windows.Cellcore.Lpa.WinRT
+	MbaeApiLogging
+
+
+
+**** Events *****
+Watcher stopped event forwarded to following watcher's dispatcher (
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING WatcherType
+	);
+
+EnumerationCompleted event forwarded to following watcher's dispatcher (
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING WatcherType
+	);
+
+Removed event forwarded to following watcher's dispatcher (
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING WatcherType
+	);
+
+Updated event forwarded to following watcher's dispatcher (
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING WatcherType
+	);
+
+Added event forwarded to following watcher's dispatcher (
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING WatcherType
+	);
+
+StopWatcher(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+StartWatcher(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+TryCreateESimWatcher(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	BOOL32 isAuthorized
+	);
+
+TryCreateESimWatcher(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	BOOL32 isAuthorized
+	);
+
+TryCreateESimWatcher(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	ANSISTRING ESimWatcherServer,
+	HRESULT hr
+	);
+
+DebugTrace(
+	UNICODESTRING Info
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AsyncOperationFinished(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+AsyncOperationFinished(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+LpaAsyncOperation failed(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+AsyncOperationFinished(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 transactionId
+	);
+
+AsyncOperationStarted(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 transactionId
+	);
+
+AsyncOperationStarted(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 transactionId
+	);
+
+EventListBad(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hrTemp,
+	UINT32 transactionId
+	);
+
+EventListReady(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 eventCount
+	);
+
+MetadataNotReady(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hrTemp,
+	UINT32 transactionId
+	);
+
+MetadataReady(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING ProfileId
+	);
+
+NotReady(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+Profile to download not found(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+MetadataReady(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING ProfileId
+	);
+
+AsyncOperationFinished(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 transactionId,
+	HRESULT pAsyncResult->hrResult,
+	UINT32 errorDetail,
+	UINT32 policyViolation
+	);
+
+AsyncOperationFinished(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 transactionId,
+	HRESULT pAsyncResult->hrResult,
+	UINT32 errorDetail,
+	UINT32 policyViolation
+	);
+
+Function completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+Function completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+LPA initialization completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+LPA initialization completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+current user is not authenticated(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+current user is authenticated(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+New ESIM watcher added to LPAAgent's list(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+Notifying ESIM events to watchers in the LPAAgent's list completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING eSimID,
+	HRESULT hr
+	);
+
+Notifying ESIM events to watchers in the LPAAgent's list completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING eSimID,
+	HRESULT hr
+	);
+
+Unable to retrieve ESIM watcher server(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+ESIMWatcherEventTriggered(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 eventType,
+	UNICODESTRING eSimID
+	);
+
+Enumeration of existing esims and notifying clients of "EnumerationCompleted" event completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+Enumeration of existing esims and notifying clients of "EnumerationCompleted" event completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+ESIMWatcherEventTriggered(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	ANSISTRING eventType
+	);
+
+Enumeration of existing esims and notifying clients of "Added" event completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+ESIMWatcherEventTriggered(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	ANSISTRING eventType,
+	UNICODESTRING eSimID
+	);
+
+ESimUpdated(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	BOOL32 isNew,
+	UNICODESTRING eSimId
+	);
+
+AuthModeReceived(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 pServiceInfo->userAuthMode
+	);
+
+AuthResultReceived(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT pAsyncResult->hrResult
+	);
+
+ProcessNotificationForWatcher received with type = LPALUIMSGTYPE_PROFILE_AVAILABLE_FOR_INSTALL(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+LPALUIMSGTYPE_SERVICE_INFO received with incomplete ESIM Info(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+Invoking function SetEnumCompleteEventIfAllCurrentEsimRecordsAvailable from SERVICE_INFO block(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+ProcessNotificationForWatcher received with type = LPALUIMSGTYPE_SERVICE_INFO(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+Invoking function SetEnumCompleteEventIfAllCurrentEsimRecordsAvailable from ESIM/Profile details block(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+ProcessNotificationForWatcher received with Type : (
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 type
+	);
+
+Setting ESIMEnumeratedEvent thus unblocking EnumerationCompleted(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+LPAAgent initialization successful(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+New Profile watcher added to ProfileWatcher list(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING eSimID
+	);
+
+ProfileWatcherEventTriggered(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 eventType,
+	UNICODESTRING eSimID,
+	UNICODESTRING profileID
+	);
+
+Unable to enumerate profiles and notify Profile watcher(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+ProfileWatcherEventTriggered(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	ANSISTRING eventType,
+	UNICODESTRING eSimID
+	);
+
+Unable to retrieve Profile watcher server(
+	ANSISTRING Component,
+	ANSISTRING Location
+	);
+
+MetadataRemoved(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING EID,
+	UNICODESTRING profileId
+	);
+
+MetadataReplaced(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING EID,
+	UNICODESTRING profileId,
+	UNICODESTRING newProfileId
+	);
+
+IgnoreNotification(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 type,
+	UINT32 pESimDetails->dwParams
+	);
+
+profile metadata update notification completed(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING eSimID,
+	UNICODESTRING profileID
+	);
+
+EventRemoved received for profile(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING profileId
+	);
+
+Added event received for profile(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING profileId
+	);
+
+EventUpdated received for profile(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING profileId
+	);
+
+IgnoreNotification(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 type,
+	UINT32 (pProfileDetails->dwParams),
+	UINT32 (pProfileDetails->info.dwParams)
+	);
+
+ErrorMakeAndInitializeRuntimeClass(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+get_State(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 State
+	);
+
+get_State(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 State
+	);
+
+get_ProviderName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProviderName
+	);
+
+get_ProviderName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProviderName
+	);
+
+get_ProviderId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProviderId
+	);
+
+get_ProviderId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProviderId
+	);
+
+get_ProviderIcon(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+get_ProviderIcon(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+get_ProfileId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId
+	);
+
+get_ProfileId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId
+	);
+
+get_Policies(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 dwPolicies
+	);
+
+get_Policies(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 dwPolicies
+	);
+
+get_IsConfirmationCodeRequired(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	BOOL32 IsConfirmationCodeRequired
+	);
+
+get_IsConfirmationCodeRequired(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	BOOL32 IsConfirmationCodeRequired
+	);
+
+Discovery(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING serverAddress,
+	UNICODESTRING matchingId,
+	HRESULT hr
+	);
+
+Discovery(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING serverAddress,
+	UNICODESTRING matchingId,
+	HRESULT hr
+	);
+
+Reset(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+Reset(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr
+	);
+
+ErrorMakeAndInitializeRuntimeClass(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hrTemp
+	);
+
+Download(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING strActivationCode
+	);
+
+Download(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING strActivationCode
+	);
+
+DeleteProfile(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING strActivationCode
+	);
+
+DeleteProfile(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING strActivationCode
+	);
+
+get_ModemDeviceId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING DeviceId,
+	GUID adapterId
+	);
+
+get_ModemDeviceId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING DeviceId,
+	GUID adapterId
+	);
+
+get_FirmwareVersion(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING Version
+	);
+
+get_FirmwareVersion(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING Version
+	);
+
+get_SlotIndex(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UINT32 LPAESIMINFOPARAMMASK
+	);
+
+get_Eid(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING EID
+	);
+
+get_Eid(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING EID
+	);
+
+get_AvailableMemoryInBytes(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 pESimDetails->dwNonVolatileMemoryAvailable
+	);
+
+get_AvailableMemoryInBytes(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UINT32 pESimDetails->dwNonVolatileMemoryAvailable
+	);
+
+ErrorWithoutReason(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT pAsyncResult->hrResult
+	);
+
+SetNickName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING strNickName
+	);
+
+SetNickName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING strNickName
+	);
+
+Enable(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING ProfileId,
+	HRESULT hr
+	);
+
+Enable(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING ProfileId,
+	HRESULT hr
+	);
+
+Disable(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING ProfileId,
+	HRESULT hr
+	);
+
+Disable(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	UNICODESTRING ProfileId,
+	HRESULT hr
+	);
+
+get_State(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UINT32 State
+	);
+
+get_State(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UINT32 State
+	);
+
+get_ProviderName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING ProviderName
+	);
+
+get_ProviderName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING ProviderName
+	);
+
+get_ProviderId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING ProviderId
+	);
+
+get_ProviderId(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING ProviderId
+	);
+
+get_Policies(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UINT32 dwPolicies
+	);
+
+get_Policies(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UINT32 dwPolicies
+	);
+
+get_NickName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING NickName
+	);
+
+get_NickName(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UNICODESTRING NickName
+	);
+
+get_Class(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UINT32 Class
+	);
+
+get_Class(
+	ANSISTRING Component,
+	ANSISTRING Location,
+	HRESULT hr,
+	UNICODESTRING ProfileId,
+	UINT32 Class
+	);
+

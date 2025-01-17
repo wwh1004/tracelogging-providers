@@ -1,0 +1,969 @@
+ProviderNames:
+	Microsoft.Windows.Shell.ScreenClipping
+	Microsoft.Windows.Shell.ScreenClipping
+
+
+
+**** Events *****
+ScreenClippingInvoked(
+	UINT32 invocationType,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING PFN
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Arguments
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CallerPackageFamilyName,
+	UNICODESTRING SchemeName
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN didSucceed
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 delayInSeconds
+	);
+
+ResultLoggingCallback(
+	UINT64 PartA_PrivTags,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureType,
+	INT32 failureCount,
+	UINT32 threadId,
+	HEXINT32 hr,
+	UNICODESTRING message,
+	ANSISTRING code,
+	ANSISTRING function
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UINT32 KeyCode
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 WindowActivationState
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 action,
+	INT32 actionInitiationType
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN Force Operation
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	HEXINT64 this
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING pathFileList.back().c_str()
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+DraggableThumbnailInteractionSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ScreenshotSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	INT32 ScreenshotInvocationType
+	);
+
+DeepLinkRetrievalSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SelectionSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	INT32 SelectionType
+	);
+
+ScreenClippingSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	INT32 ScreenClippingInvocationType,
+	INT32 ScreenClippingSelectionType
+	);
+
+ScreenClippingAfterSnipCompletedSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	INT32 ScreenClippingSelectionType
+	);
+
+ScreenClippingStartUpSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ManipulationStarted(
+	UINT32 inputMethod,
+	UINT64 PartA_PrivTags
+	);
+
+BadStart(
+	UNICODESTRING sessionName,
+	UINT64 PartA_PrivTags
+	);
+
+NoStopCalls(
+	UNICODESTRING sessionName,
+	UINT64 PartA_PrivTags
+	);
+
+MultipleStopCalls(
+	UNICODESTRING sessionName,
+	UINT64 PartA_PrivTags
+	);
+
+StopCalledWithoutStart(
+	UNICODESTRING sessionName,
+	UINT64 PartA_PrivTags
+	);
+
+DraggableThumbnailInteractionSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 ReasonThumbnailClosed,
+	INT32 NumberManipulationsBeforeClosed
+	);
+
+DraggableThumbnailInteractionSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 ReasonThumbnailClosed,
+	INT32 NumberManipulationsBeforeClosed
+	);
+
+ThumbnailActionable(
+	UINT64 PartA_PrivTags
+	);
+
+DraggableThumbnailInteractionSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DraggableThumbnailInteractionSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScreenshotSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScreenshotSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DeepLinkRetrievalSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN areIdsDifferent,
+	BOOLEAN gotUserActivity
+	);
+
+DeepLinkRetrievalSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN areIdsDifferent,
+	BOOLEAN gotUserActivity
+	);
+
+DeepLinkRetrievalSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DeepLinkRetrievalSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SelectionSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SelectionSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScreenClippingSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 OutputTarget,
+	INT32 ShareType
+	);
+
+ScreenClippingSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 OutputTarget,
+	INT32 ShareType
+	);
+
+ScreenClippingSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScreenClippingSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScreenClippingAfterSnipCompletedSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 ScreenClippingPostSnipType
+	);
+
+ScreenClippingAfterSnipCompletedSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 ScreenClippingPostSnipType
+	);
+
+ScreenClippingAfterSnipCompletedSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScreenClippingAfterSnipCompletedSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ScreenClippingStartUpSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ScreenClippingStartUpSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 static_cast<int>(responseStatus)
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING DelayInSeconds
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewId
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ExperienceType
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ClippingType
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CallbackUri
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Source
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Container,
+	UNICODESTRING Value,
+	UNICODESTRING Exception
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Container,
+	UNICODESTRING Value
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	HEXINT64 oneWindowInfo.hwnd,
+	UNICODESTRING Window Rect,
+	UNICODESTRING Cursor Point,
+	UNICODESTRING Window Title
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING fileSharedToken
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING fullFileName
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT LogicalDpi 
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawPixelsPerViewPixel
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN wasSaveSuccessful
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 FlowDirection
+	);
+
+ShareSession(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN Current,
+	BOOLEAN New
+	);
+
+CopiedToClipboard(
+	UINT64 PartA_PrivTags
+	);
+
+ShareSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	INT32 ShareTarget,
+	INT32 ShareType
+	);
+
+ShareSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 ShareTarget,
+	INT32 ShareType
+	);
+
+ShareSession(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ShareSession(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ToastRequested(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ScreenClippingSelectionTypeSwitched(
+	INT32 PreviousSelectionType,
+	INT32 CurrentSelectionType
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN needsAnimationRollback
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT offsetX
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN m_completingClipping,
+	INT32 clipStage
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UINT32 durationInMilliseconds,
+	UINT32 phase1InMilliseconds
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN m_clippingInProgress
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN exitStarted,
+	BOOLEAN completingClipping
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN m_clippingInProgress,
+	BOOLEAN m_exitProcessStarted,
+	INT32 clipStage
+	);
+
+DeeplinkUserActivityRetrieved(
+	UINT64 PartA_PrivTags
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 Returned WindowId
+	);
+
+DeeplinkWindowIdRetrieved(
+	UINT64 PartA_PrivTags
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 action,
+	INT32 type
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 action
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 current stage
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING SnipAndSketchCallbackUri
+	);
+
+ReadyForExport(
+	UINT64 PartA_PrivTags
+	);
+
+ReadyForSelection(
+	UINT64 PartA_PrivTags
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ToastRequested(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ToastRequested(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT width,
+	FLOAT height
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 left,
+	INT32 top,
+	INT32 right,
+	INT32 bottom
+	);
+
+Verbose(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 Width,
+	INT32 Height
+	);
+

@@ -1,0 +1,28 @@
+ProviderNames:
+	Microsoft.Windows.Security.Mpr
+
+
+
+**** Events *****
+WNetRestoreSingleConnectionWFailure(
+	UNICODESTRING providerName,
+	UINT32 error,
+	UINT32 Flags
+	);
+
+ChangePasswordNotificationToProvider(
+	UNICODESTRING providerName,
+	UINT32 class,
+	UNICODESTRING dllName,
+	UNICODESTRING authentDllName,
+	UINT64 PartA_PrivTags
+	);
+
+LogonNotificationToProvider(
+	UNICODESTRING providerName,
+	UINT32 class,
+	UNICODESTRING dllName,
+	UNICODESTRING authentDllName,
+	UINT64 PartA_PrivTags
+	);
+

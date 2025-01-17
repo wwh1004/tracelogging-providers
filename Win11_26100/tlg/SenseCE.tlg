@@ -1,0 +1,855 @@
+ProviderNames:
+	Microsoft.Windows.SenseCe
+	Microsoft.Windows.SenseComponent.GeneratedETW
+	Microsoft.Windows.Sense.Dlp
+
+
+
+**** Events *****
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING argv[1],
+	UNICODESTRING argv[2],
+	UNICODESTRING argv[3],
+	UNICODESTRING argv[4],
+	UNICODESTRING argv[5]
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	INT32 argc
+	);
+
+SenseCE(
+	UNICODESTRING message
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	INT32 fileType
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT32 DlpCustomPropertiesActual,
+	UINT32 DlpCustomPropertiesExtracted
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING errorDescription
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING errorDescription
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	INT32 FileType,
+	INT32 OfficeFileType,
+	BOOLEAN FileHasEmbeddedImages
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	INT32 OfficeFileType
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING ErrDescription
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT32 timeoutInSeconds
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UINT32 resultFileStatus,
+	HRESULT IpcfIsFileStreamEncryptedHr
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING labels,
+	UINT64 labels_size,
+	UNICODESTRING coAuthLlabels,
+	UINT64 coAuthLabels_size
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UNICODESTRING errorDescription
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UNICODESTRING errorDescription,
+	HRESULT HResult
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	INT32 syncAppType
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Error
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	INT32 FileType,
+	UINT32 TextSizeInBytes,
+	UINT32 TextExtractionSizeInBytes,
+	UINT32 MaxFileSizeInBytes,
+	UINT8 ByteStreamExtracted,
+	BOOLEAN ImageDimensionsOutOfBounds
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	INT32 fileType,
+	UINT8 shouldExtractFileText,
+	UINT8 isLocalShortEvidenceUsed,
+	UINT8 shouldExtractByteStream
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT64 Text content size,
+	UINT32 Mapped View size
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT32 TextExtractionSizeInBytes,
+	UINT32 Text Content Size
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING What
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT8 shouldUseDefaultClassificationDefinition,
+	UINT8 scopedSensitiveInformationTypesMode,
+	UINT8 useExtendedAdvancedClassificationSupport
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	INT32 status
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING endpoint
+	);
+
+SenseCE(
+	ANSISTRING message,
+	ANSISTRING ErrorDescription,
+	UINT64 TextSizeBytes
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT64 timeLimitInSeconds
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING ignoredInformationTypesString.c_str()
+	);
+
+SenseCE(
+	UNICODESTRING message
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING e.what(),
+	UNICODESTRING sensitiveTypesString.c_str()
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING sensitiveTypesString.c_str()
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT8 scopedSensitiveInformationTypesMode,
+	BOOLEAN useExtendedAdvancedClassificationSupport,
+	BOOLEAN shouldUpdateRulePackage,
+	BOOLEAN isAdvancedInformationTypesDefined,
+	UINT64 advancedInformationTypesCount
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	INT32 errorCode.value(),
+	ANSISTRING errorCode.message().c_str(),
+	UNICODESTRING sensitiveTypesString.c_str()
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	ANSISTRING e.what()
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING rulePackageSetId,
+	UNICODESTRING rulePackageId,
+	BOOLEAN useScopedSensitiveInformationTypes,
+	INT32 totalSensitiveInformationTypes,
+	INT32 disabledInformationTypesCounter,
+	INT32 unscopedInformationTypesCounter
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	BOOLEAN isAdvancedInformationTypesDefined,
+	UINT64 advancedInformationTypesCount
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	BOOLEAN shouldUseDefaultClassificationDefinition,
+	UINT8 scopedSensitiveInformationTypesMode,
+	BOOLEAN useExtendedAdvancedClassificationSupport
+	);
+
+SenseCE(
+	ANSISTRING message
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING OriginalFilePath,
+	ANSISTRING JoinThreadException
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING OriginalFilePath,
+	UNICODESTRING ErrorMessage,
+	BOOLEAN StreamAvailable
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT64 timeoutInSeconds,
+	UNICODESTRING OriginalFilePath
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT64 timeoutInSeconds,
+	UNICODESTRING OriginalFilePath,
+	BOOL32 ShouldDeleteFileOnExit
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING OriginalFilePath,
+	UNICODESTRING ErrorMessage
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING copiedFilePath
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT64 FileSize,
+	UINT32 BytesRead,
+	HRESULT hr
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT32 CurrentBuild,
+	UINT32 SupportedBuild,
+	UNICODESTRING filePath,
+	UNICODESTRING IFilterLocation,
+	UNICODESTRING filterClsid
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING IFilterLocation,
+	UNICODESTRING filterClsid
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT32 CurrentMajor,
+	UINT32 SupportedMajor,
+	UNICODESTRING filePath,
+	UNICODESTRING IFilterLocation,
+	UNICODESTRING filterClsid
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING filterClsid
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING filterClsid,
+	HRESULT hr
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	BOOL32 IFilterReaderInvalid,
+	BOOL32 UseFallBackFileReader,
+	BOOL32 UseLibOPCAsPrimaryReader
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT32 PageNumber,
+	UNICODESTRING Status
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING Status
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT64 OriginalFileSize,
+	UINT32 ConvertedFilesize,
+	BOOLEAN IsFileCompressed,
+	UINT32 ImagePageCount
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING Exception
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT32 ImagePageCount
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	FLOAT ImageWidth,
+	FLOAT ImageHeight,
+	HRESULT hr
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING Status
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING Exception
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	ANSISTRING JsonErrorException,
+	UNICODESTRING ReceivedJsonString
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING m_supportedArchiveExtentions,
+	UNICODESTRING m_supportedArchiveFileTypes,
+	UNICODESTRING m_whitelistForDlpFileNamesInArchive,
+	UINT64 m_maxFileNameLength,
+	UINT64 m_maxFileToDumpSizeInBytes,
+	BOOL32 m_isOfficeCalculationEnabled,
+	UINT64 m_maxFilesToIteratePerArchive,
+	UINT64 m_maxFilesToDumpPerArchive,
+	UINT64 m_maxArchiveProcessingTimeInMs,
+	BOOL32 m_dprtEnabled,
+	BOOL32 m_dprtTrueFileTypeDetectionEnabled,
+	BOOL32 m_isEncodingDetectionEnabledForFormatDetection,
+	UINT64 m_encodingDetectorMaxReadLengthInBytesForFormatDetection,
+	UINT64 m_dprtMaxHeaderSizeInBytes,
+	UINT64 m_dprtTrueFileTypeTimeoutInMs,
+	BOOL32 m_isDprtTrueFileTypeIncludeFileExtension,
+	UINT64 NumberOfAmbiguousFileTypes,
+	UINT64 NumberOfAmbiguousOfficeFileTypes
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	INT64 position
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT64 LastByteReadSize
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	INT32 hr
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorDescription
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FileName
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING archiveFileName
+	);
+
+SenseDlpTelemetriesEvent(
+	UNICODESTRING TelemetryName,
+	UNICODESTRING TelemetriesInfoAsJson
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UNICODESTRING TelemetryName,
+	UNICODESTRING TelemetriesInfoAsJson
+	);
+
+SenseCE(
+	ANSISTRING message
+	);
+
+SenseCE(
+	ANSISTRING message
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UINT32 samplingIntervalInSeconds
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UINT32 samplingIntervalInSeconds,
+	UNICODESTRING monitorName
+	);
+
+SenseCE(
+	ANSISTRING message,
+	UNICODESTRING counterName
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING CounterName,
+	UINT64 ProbingCount,
+	DOUBLE MinimumValue,
+	DOUBLE MaximumValue,
+	DOUBLE AverageValue
+	);
+
+PerformanceCounter(
+	UNICODESTRING CounterName,
+	UINT64 GlobalProbingCount,
+	UINT64 ProbingCount,
+	DOUBLE MinimumValue,
+	DOUBLE MaximumValue,
+	DOUBLE AverageValue
+	);
+
+PerformanceCounter(
+	UNICODESTRING CounterName,
+	UINT64 GlobalProbingCount,
+	UINT64 ProbingCount,
+	DOUBLE MinimumValue,
+	DOUBLE MaximumValue,
+	DOUBLE AverageValue,
+	UINT64 ProbingCountSystem,
+	DOUBLE MinimumValueSystem,
+	DOUBLE MaximumValueSystem,
+	DOUBLE AverageValueSystem
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING FutureGetHrMessage
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING JoinThreadException
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FutureGetHrMessage
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UINT64 timeoutInSeconds
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING xmlData
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING key
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING key
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FileName
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING ErrorMessage
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	INT32 hr
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	INT32 HResult
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING FunctionName
+	);
+
+SenseCE(
+	UNICODESTRING message,
+	INT32 HResult
+	);
+
+SenseDlpCommon(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	HRESULT HResult
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UINT64 Bytes to read,
+	HRESULT HResult
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	BOOLEAN OverlappedIoResultAfterCancel,
+	INT32 WaitForCompletion,
+	UINT32 BytesRead,
+	UINT64 BytesToRead,
+	HRESULT HResult from OverlappedIoResultAfterCancel
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	BOOLEAN CancelIoResult,
+	HRESULT HResult
+	);
+
+SenseDlpCommon(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	ANSISTRING FutureGetHrMessage
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING FutureGetHrMessage
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	ANSISTRING JoinThreadException
+	);
+
+SenseCE(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseDlpCommon(
+	ANSISTRING message,
+	INT32 err,
+	UNICODESTRING drive,
+	UNICODESTRING dir,
+	UNICODESTRING fileName,
+	UNICODESTRING ext
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING path
+	);
+
+SenseDlpCommon(
+	ANSISTRING message,
+	INT32 err,
+	UNICODESTRING path
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message
+	);
+
+SenseDlpCommon(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UINT32 error
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	HRESULT HResult
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	INT32 hr
+	);
+
+SenseDlpCommon(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UINT16 Default number of cores
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UINT16 Number of cores
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 error,
+	UNICODESTRING defaultValue
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING regPath,
+	UINT32 error
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 error
+	);
+
+SenseDlp(
+	UNICODESTRING message,
+	UNICODESTRING filepath,
+	INT32 hr
+	);
+
+SenseDlp(
+	UNICODESTRING message,
+	INT32 hr
+	);
+
+SenseDlpCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseDlpCommon(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+

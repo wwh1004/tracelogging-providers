@@ -1,0 +1,1607 @@
+ProviderNames:
+	TelemetryAssertDiagTrack
+	TelemetryAssert
+	Microsoft.Defender.EndpointDlp
+	Microsoft.Defender.EndpointDlp.Tracelog
+
+
+
+**** Events *****
+EndpointDlp(
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext
+	);
+
+EndpointDlp(
+	ANSISTRING message
+	);
+
+EndpointDlp(
+	UNICODESTRING message
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING ActionType,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UNICODESTRING url,
+	UNICODESTRING finalUrl,
+	UNICODESTRING target,
+	UNICODESTRING printerOutputFileName,
+	UNICODESTRING printerName,
+	UNICODESTRING printerJobName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING destinationFilePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING CloudAppHostName
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING keyPath,
+	UNICODESTRING valueName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	BOOLEAN EaExist
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	UNICODESTRING ApplicationName,
+	BOOLEAN EaExist,
+	UINT32 ActionSize,
+	UINT32 configFlags
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	UNICODESTRING ApplicationName,
+	BOOLEAN EaExist,
+	UINT32 ActionSize,
+	UINT8 exemptEnlightenment
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING url,
+	UNICODESTRING ruleId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING WebSiteAddress,
+	UNICODESTRING UserSid
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING fileExtension
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UINT32 EnforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING TargetDomain,
+	UNICODESTRING FileName,
+	UINT64 LastModifiedTime,
+	UINT64 FileSize,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 enforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING PolicyRuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING SettingName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING CloudApp,
+	UNICODESTRING Url
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING userSid
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING processName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 ActionType,
+	UNICODESTRING ruleIdsList
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING url,
+	UINT32 flags,
+	UINT16 enforcementLevel,
+	UNICODESTRING policyVersion,
+	UNICODESTRING policyRuleIds,
+	UINT32 policyRuleIdsLength
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING ApplicationName,
+	BOOLEAN EaExist,
+	UINT32 ActionSize
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING AppGroupId,
+	UNICODESTRING PID,
+	UNICODESTRING VID,
+	UNICODESTRING SerialNumberId,
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING DeviceId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING Url,
+	UINT32 enforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING PolicyRuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UNICODESTRING AppGroupId,
+	UINT32 PrinterConnType,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterIP,
+	UNICODESTRING PrinterVID_PID
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UINT32 ActionType,
+	UINT32 EnforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING BusinessJustification,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING PolicyVersion,
+	UNICODESTRING PolicyRuleIds,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 enforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING BusinessJustification,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING url,
+	UINT32 flags
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING CloudAppDomain
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UINT32 EnforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING PolicyRuleIds,
+	UNICODESTRING TargetDomain,
+	UNICODESTRING FileName,
+	UINT64 LastModifiedTime,
+	UINT64 FileSize,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 jitPolicyType,
+	UNICODESTRING userSid,
+	UNICODESTRING FilePath,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	UNICODESTRING ApplicationName,
+	UINT32 ActionSize,
+	UINT32 configFlags
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING CloudApp
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	UNICODESTRING ApplicationName,
+	BOOLEAN EaExist,
+	UINT32 ActionSize
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UINT32 ActionType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 enforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING PolicyRuleIds
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UINT32 jitPolicyType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT8 isEnable
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING WebSiteAddress
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING AppGroupId,
+	UNICODESTRING NetworkSharePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING Url,
+	UINT32 enforcementLevel,
+	UINT8 UserBypass,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING businessJustification
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING processName,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	ANSISTRING message
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING fileExt,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	HRESULT errorCode,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UNICODESTRING AppGroupId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UNICODESTRING NetworkSharePath,
+	UNICODESTRING AppGroupId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING NetworkSharePath,
+	UNICODESTRING RuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING MostRestrictiveRuleId,
+	UINT16 enforcementLevel,
+	UINT16 ActionType,
+	UNICODESTRING GroupId,
+	UINT8 AlertNeeded,
+	UNICODESTRING MatchedPolicyIds
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UINT16 CurrentRuleEnforcementLevel,
+	UINT16 ActionType,
+	UNICODESTRING MatchedAuthGroup
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT16 ActionType,
+	UNICODESTRING RuleId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING sensitivePolicyHashOnFile,
+	UNICODESTRING SensitivePolicyHash
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING policyVersionOnFile,
+	UNICODESTRING PolicyVersion
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING fileClassificationEvalId,
+	UNICODESTRING userClassificationEvalId
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING filePolicyEvalId,
+	UNICODESTRING userPolicyEvalId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT64 actual Size,
+	UINT32 allocated size
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Locale,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING PolicyVersion
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Locale,
+	UNICODESTRING PolicyRuleId,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Locale,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Locale,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING PolicyVersion,
+	UNICODESTRING ResPolicyRuleId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Locale,
+	UNICODESTRING PolicyRuleId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING policyRuleId,
+	UNICODESTRING resultPolicyRuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING locale,
+	UNICODESTRING policyVersion,
+	UNICODESTRING policyRuleId,
+	UINT32 ActionType,
+	UNICODESTRING displayFilename,
+	UNICODESTRING displayProcessName,
+	UINT8 isUnallowedBrowser
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING policyRuleId,
+	UNICODESTRING sourceFilePath,
+	UNICODESTRING resultPolicyId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING sourceFilePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING applicationName,
+	UINT32 applicationVersionMajor,
+	UINT32 applicationVersionMinor,
+	UINT32 applicationVersionBuild,
+	UINT32 applicationVersionRevision
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 DlpPolicyType
+	);
+
+EndpointDlp(
+	ANSISTRING message
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT8 isEnable
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING SettingName,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING DestinationFilePath,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Source,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING PolicyRuleIds
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING source,
+	UNICODESTRING target,
+	UNICODESTRING policyRuleId
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING actionType,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UNICODESTRING url,
+	UNICODESTRING finalUrl,
+	UNICODESTRING target,
+	UNICODESTRING printerOutputFileName,
+	UNICODESTRING printerName,
+	UNICODESTRING printerJobName,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING actionType,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UNICODESTRING url,
+	UNICODESTRING finalUrl,
+	UNICODESTRING target,
+	UNICODESTRING printerOutputFileName,
+	UNICODESTRING printerName,
+	UNICODESTRING printerJobName,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING UserObjectId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING url
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING ActionType,
+	UINT32 EnforcementLevel,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING MultiPolicyRuleIds,
+	UNICODESTRING SiteGroupName,
+	UNICODESTRING SiteGroupId,
+	BOOLEAN AlertNeeded
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT8 ruleHasUrl,
+	UNICODESTRING ActionType
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING source
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING GroupInfo
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	BOOL32 enabledForUser,
+	BOOL32 enabledInPolicy,
+	BOOL32 enabledBySignatures
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	BOOL32 isWebSitePolicyConfigured
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UNICODESTRING UserSid,
+	UINT8 MaxEnforcementLevel
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UINT64 matchedGroupsCount,
+	UNICODESTRING userSid,
+	UINT64 scopedPolicyCount
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UNICODESTRING userSid
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING MostRestrictiveRuleId,
+	UINT16 enforcementLevel,
+	UNICODESTRING SiteGroupId,
+	UNICODESTRING SiteGroupName,
+	UINT8 AlertNeeded,
+	UNICODESTRING MatchedPolicyIds
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UINT16 CurrentRuleEnforcementLevel,
+	UNICODESTRING MatchedAuthGroup
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Url,
+	UINT64 MatchedWebSitesGroupsCount
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING PolicyVersion
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 ActionSize
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 jitPolicyType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	HRESULT errorCode,
+	ANSISTRING ErrorMessage,
+	UNICODESTRING userSid
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	HRESULT errorCode,
+	ANSISTRING ErrorMessage,
+	UNICODESTRING FilePath,
+	UNICODESTRING CloudApp
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	HRESULT errorCode,
+	UNICODESTRING ErrorMessage,
+	UNICODESTRING FilePath,
+	UNICODESTRING CloudApp
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Most restrictive rule Id,
+	UINT32 Enforcement Level,
+	UNICODESTRING most restrictive matched group Id
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Url
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING CloudApp
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	HRESULT ErrorCode,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING CloudApp
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING MostRestrictiveRuleId,
+	UINT16 enforcementLevel,
+	UNICODESTRING GroupId,
+	UNICODESTRING GroupName,
+	UINT8 AlertNeeded,
+	UNICODESTRING MatchedPolicyIds
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	UNICODESTRING PrinterName,
+	UINT32 PrinterConnType,
+	UNICODESTRING VID_PID,
+	UNICODESTRING PrinterIP,
+	UNICODESTRING AppGroupId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PrinterName,
+	UNICODESTRING RuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleId,
+	BOOLEAN PolicyInitDone
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	BOOLEAN PolicyInitDone
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ruleIdsList
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ruleIdsList,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ruleIdsList,
+	UNICODESTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING RuleIds,
+	UINT32 ActionType
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING FilePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING ArchiveFilePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	ANSISTRING message
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING DlpAuthGroupsPolicyVersion
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING WebSitesPolicyVersion
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING DomainsPolicyVersion
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING SensitiveInfoTypesPolicyHash
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING PolicyVersion
+	);
+
+Assert(
+	UINT32 assertVersion,
+	UINT32 rva,
+	UINT32 timestamp,
+	UINT32 imageSize,
+	ANSISTRING imageName,
+	UINT32 count,
+	UINT32 totalHits
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 DocumentInfo->Version,
+	UNICODESTRING DocumentInfo->LocalFileName,
+	UNICODESTRING DocumentInfo->PersistentFileName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 DocumentInfo->Version,
+	UNICODESTRING DocumentInfo->LocalFileName,
+	UNICODESTRING DocumentInfo->PersistentFileName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 OpStatus->Version,
+	INT32 OpStatus->OperationSuccess
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 DocumentInfo->Version,
+	UNICODESTRING DocumentInfo->LocalFileName,
+	UNICODESTRING DocumentInfo->PersistentFileName,
+	UINT32 OpStatus->Version,
+	INT32 OpStatus->OperationSuccess
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	INT32 hr
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 Count
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING rules
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING policy version,
+	UNICODESTRING groups
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	BOOLEAN Enabled
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	BOOLEAN Enabled
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING RuleMode
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING MatchType
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING Url,
+	UINT32 ActionType,
+	UINT32 EnforcementLevel
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Url,
+	UNICODESTRING GroupName,
+	UNICODESTRING GroupId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING EnforcementGroupId,
+	UNICODESTRING PID,
+	UNICODESTRING VID,
+	UNICODESTRING SerialNumberId,
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING DeviceId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING EnforcementGroupId,
+	UNICODESTRING NetworkSharePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT16 TotalMatchedGroups
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PrinterGroupId,
+	UNICODESTRING PrinterGroupName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 ipFrom,
+	UINT32 ipTo
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterAlias,
+	UINT32 PrinterConnType,
+	UNICODESTRING VID_PID
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING pathValue
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	BOOLEAN SearchCriteria,
+	UINT32 printerConnType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 PrinterConnectionType,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterAlias,
+	UNICODESTRING VID_PID,
+	UINT64 ipAddressesCount
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PrinterGroupId,
+	UNICODESTRING PrinterGroupName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage,
+	UNICODESTRING filePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 actionType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING AppGroupId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PolicyRuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PolicyRuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING Application
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING DLPActionType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT64 Size
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	BOOLEAN showdropdown,
+	BOOLEAN showtextbox
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING groupId,
+	UINT32 enforcement
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING UserSid
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 NlCondition,
+	UINT32 nlEnforcement,
+	BOOLEAN fDomainAuthenticatedNetworkPresent,
+	BOOLEAN fVPNConnectionActive
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING SettingName
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING rule,
+	UINT32 oldlevel,
+	UINT32 newlevel
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UINT32 Action,
+	UINT32 Enforcement
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 RetentionDays
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT16 ExtensionType,
+	UNICODESTRING FilePath
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 policyType
+	);
+
+MDATP.Browser.WebSite.Audit(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING Url,
+	UNICODESTRING SiteGroupName,
+	UNICODESTRING SiteGroupId,
+	UNICODESTRING Target,
+	UINT32 ActionType,
+	UINT32 EnforcementLevel,
+	BOOL32 IsActionBypass,
+	UNICODESTRING BusinessJustification,
+	UNICODESTRING PolicyVersion,
+	UNICODESTRING PolicyRuleId,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName,
+	UNICODESTRING RuleName,
+	UNICODESTRING PolicyName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 policyType
+	);
+
+MDATP.Browser.Audit(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING Url,
+	UNICODESTRING FinalUrl,
+	UNICODESTRING Target,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName,
+	UNICODESTRING ActionType,
+	UINT32 BrowserType,
+	UINT32 EventSource
+	);
+
+MDATP.Browser.File.Audit(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 BrowserType,
+	UINT32 EventSource,
+	UINT32 EnforcementLevel,
+	BOOL32 IsActionBypass,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING WiADArchivePolicyRuleIds,
+	UNICODESTRING MatchedPolicyRuleIds,
+	UNICODESTRING TargetDomain,
+	UNICODESTRING FileName,
+	UINT64 LastModifiedTime,
+	UINT64 FileSize,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName
+	);
+
+MDATP.DLP.Audit(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING Source,
+	UNICODESTRING Target,
+	UNICODESTRING ActionType,
+	UINT32 EnforcementLevel,
+	BOOL32 IsActionBypass,
+	UNICODESTRING BusinessJustification,
+	UNICODESTRING PolicyRuleId,
+	UNICODESTRING WiADArchivePolicyRuleIds,
+	UNICODESTRING MatchedPolicyRuleIds,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName,
+	UNICODESTRING SiteGroupId,
+	UNICODESTRING SiteGroupName,
+	UNICODESTRING EvidenceFile,
+	UNICODESTRING StorageName,
+	UNICODESTRING UserObjectId,
+	BOOL32 AlertNeeded
+	);
+
+MDATP.Browser.NoAudit(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING Url,
+	UNICODESTRING FinalUrl,
+	UNICODESTRING Target,
+	UNICODESTRING PrinterOutputFileName,
+	UNICODESTRING PrinterName,
+	UNICODESTRING PrinterJobName,
+	UNICODESTRING ActionType,
+	UINT32 BrowserType,
+	UINT32 EventSource
+	);
+
+MDATP.Sync.Classification(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING FilePath,
+	UNICODESTRING Uri,
+	UINT8 Reason
+	);
+
+MDATP.Sync.Classification(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING Content,
+	UNICODESTRING Uri,
+	UINT8 Reason
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING userSid
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UNICODESTRING filePath,
+	UNICODESTRING userSid
+	);
+
+MDATP.Sync.Classification(
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	SID UserSid,
+	UNICODESTRING FilePath,
+	UINT8 Reason
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 RuleMode
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UNICODESTRING PolicyRuleId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath,
+	UINT64 Last Modify time
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UNICODESTRING User,
+	ANSISTRING ErrorMessage
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	BOOLEAN LlmScanEnabled
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UINT64 PolicyIds
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	BOOLEAN IsJitEnabled
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	BOOLEAN PasteToBrowserEnabled
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	HRESULT ErrorCode
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING User,
+	HRESULT ErrorCode
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage,
+	UINT32 DlpPolicyType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING VPNServerAddressListMatch
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING ServerAddress,
+	BOOLEAN IsConnected
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING VPNServerAddress
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 SessionId,
+	UNICODESTRING ServerAddress,
+	BOOLEAN IsConnected
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING NetworkName,
+	UINT32 NetworkCategory,
+	UINT32 NetworkDomainType
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING NetworkName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 SessionId,
+	UNICODESTRING wszServerAddress
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 SessionId,
+	BOOLEAN fDomainAuthenticatedNetworkPresent,
+	UINT32 nActiveNetworksCount,
+	UNICODESTRING wszDomainAuthenticatedNetworkName
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT32 SessionId
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage,
+	UNICODESTRING url
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	ANSISTRING ErrorMessage,
+	UNICODESTRING Locale
+	);
+
+EndpointDlp(
+	HRESULT errorCode,
+	UNICODESTRING message,
+	UINT32 Error
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	INT32 ret
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UINT32 inBufSize,
+	UINT32 chunkSize
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING FilePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UINT64 dropCount,
+	UINT64 cacheSize
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING filePath
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING exclusionConfiguration
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	BOOLEAN enableExclusions
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING exclusionConfiguration,
+	INT32 hresult
+	);
+
+EndpointDlp(
+	UNICODESTRING message,
+	UNICODESTRING invalidFragment,
+	UNICODESTRING path
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	INT32 DevMode
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UINT64 Content Size,
+	UINT32 Minimum Size,
+	UINT32 Maximum Size,
+	UNICODESTRING URL
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	UINT64 FeatureID
+	);
+
+EndpointDlp(
+	ANSISTRING message,
+	STRING Feature,
+	UNICODESTRING Name,
+	UINT32 Value
+	);
+

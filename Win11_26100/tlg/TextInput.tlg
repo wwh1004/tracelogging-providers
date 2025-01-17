@@ -1,0 +1,4457 @@
+ProviderNames:
+	Microsoft.Windows.Shell.TextInput.InputPanel
+	Microsoft.Windows.TextInput.VoiceTyping
+	Microsoft.Windows.Shell.TextInput.InputPanel
+	Microsoft.Windows.Shell.InkLinguisticData
+	Microsoft.Windows.TextInput.ToolBar
+
+
+
+**** Events *****
+CandidatesUpdated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 localeId,
+	UNICODESTRING keyboardId,
+	UNICODESTRING bcp47Tag,
+	UNICODESTRING keyboardMode,
+	INT32 position,
+	BOOLEAN isHardwareKeyboard,
+	INT32 candidateControlId
+	);
+
+AdaptiveUICommentShown(
+	UINT64 PartA_PrivTags,
+	UINT32 LocaleId,
+	UINT32 EditBufferId,
+	INT32 InputScope,
+	UNICODESTRING Bcp47Tag,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING KeyboardMode,
+	UINT32 CandidateWindowStyle
+	);
+
+AdaptiveUICandidateListCollapsed(
+	UINT64 PartA_PrivTags,
+	UINT32 LocaleId,
+	UINT32 EditBufferId,
+	INT32 InputScope,
+	UNICODESTRING Bcp47Tag,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING KeyboardMode,
+	UINT32 Trigger,
+	UINT32 CandidateWindowStyle
+	);
+
+AdaptiveUICandidateListExpanded(
+	UINT64 PartA_PrivTags,
+	UINT32 LocaleId,
+	UINT32 EditBufferId,
+	INT32 InputScope,
+	UNICODESTRING Bcp47Tag,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING KeyboardMode,
+	UINT32 Trigger,
+	UINT32 CandidateWindowStyle
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CandidatesUpdated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CandidatesUpdated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING Type,
+	INT32 ListStyle
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AdaptiveUIAnnotationTooltipShown(
+	UINT64 PartA_PrivTags,
+	UINT32 LocaleId,
+	UINT32 EditBufferId,
+	INT32 InputScope,
+	UNICODESTRING Bcp47Tag,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING KeyboardMode,
+	BOOLEAN IsSelectedByKeyboard,
+	BOOLEAN IsPointedOverByMouse,
+	INT32 CandidateRank
+	);
+
+CW_EmojiPanelTriggered(
+	BOOLEAN useSelectionAsSearchQuery,
+	UINT64 PartA_PrivTags
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING Type,
+	INT32 ListStyle,
+	UNICODESTRING CandidateUIConfigKeyboardName,
+	UNICODESTRING CandidateUIConfigKeyboardLanguage
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT CandidatePanelWidth,
+	FLOAT CandidateItemsPanelWidth,
+	DOUBLE AvailableWidth
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT AvailableWidth
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 Index
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 Index,
+	DOUBLE MaxWidth
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE MaxWidth,
+	FLOAT DesiredWidth,
+	DOUBLE ActualWidth
+	);
+
+CandidatesMaxWidthReset(
+	UINT64 PartA_PrivTags
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING Type,
+	BOOLEAN IsHorizontalWriting
+	);
+
+CorrectionAlternateMenuClosed(
+	GUID menuSessionId,
+	UINT32 lastSelectedItem,
+	UINT64 PartA_PrivTags
+	);
+
+CorrectionAlternateMenuUpdated(
+	GUID menuSessionId,
+	BOOLEAN isIgnoreItemAvailable,
+	UINT64 PartA_PrivTags
+	);
+
+CorrectionAlternateMenuOpened(
+	GUID menuSessionId,
+	GUID uxSessionId,
+	BOOLEAN isFloatyVisible,
+	BOOLEAN isSipVisible,
+	BOOLEAN isInMicActiveSession,
+	GUID micActiveSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+SuggestionAutoShowSuppressed(
+	UINT64 PartA_PrivTags
+	);
+
+CandidateWindowShowPolicyStateChangedReason(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING reason
+	);
+
+CandidateWindowShowPolicyStateChanged(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING showState,
+	UNICODESTRING policyStateReason,
+	UINT32 numCandidates,
+	FLOAT width,
+	FLOAT height,
+	BOOL32 conflictingViewShown,
+	BOOL32 featureEnabled,
+	BOOL32 exists,
+	BOOL32 sizeUpdated,
+	BOOL32 floatingWindowEnabled,
+	BOOL32 hardwareKeyboardBarEnabled,
+	BOOL32 hudAttached,
+	BOOL32 experienceEnabled,
+	BOOL32 speechCorrectionRequested,
+	BOOL32 suppressedDueToIntegration,
+	UNICODESTRING lang,
+	UNICODESTRING keyboardName
+	);
+
+CandidateWindowNotShowingReason(
+	UNICODESTRING languageTag,
+	UNICODESTRING keyboardName,
+	UNICODESTRING reason,
+	UINT64 PartA_PrivTags
+	);
+
+CandidateWindowShowPolicyStateChangedReason(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CandidateWindowShowPolicyStateChangedReason(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AdaptiveUISearchItem(
+	UINT64 PartA_PrivTags,
+	UINT32 LocaleId,
+	UINT32 EditBufferId,
+	INT32 InputScope,
+	UNICODESTRING Bcp47Tag,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING KeyboardMode,
+	UINT32 Trigger
+	);
+
+AdaptiveUIDeleteItem(
+	UINT64 PartA_PrivTags,
+	UINT32 LocaleId,
+	UINT32 EditBufferId,
+	INT32 InputScope,
+	UNICODESTRING Bcp47Tag,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING KeyboardMode,
+	UINT32 Trigger
+	);
+
+DictationStateChanging(
+	UNICODESTRING OldState,
+	UNICODESTRING NewState,
+	UNICODESTRING Error,
+	BOOLEAN DelayRequestStart,
+	UINT64 PartA_PrivTags
+	);
+
+DictationResetStateMachine(
+	UNICODESTRING State,
+	UNICODESTRING Error,
+	BOOLEAN DelayRequestStart,
+	UINT64 PartA_PrivTags
+	);
+
+DictationUpdateDictationError(
+	UNICODESTRING OldError,
+	UNICODESTRING NewError,
+	UNICODESTRING State,
+	BOOLEAN DelayRequestStart,
+	UINT64 PartA_PrivTags
+	);
+
+DictationHandleLanguageChanged(
+	UNICODESTRING OldLanguage,
+	UNICODESTRING NewLanguage,
+	UNICODESTRING State,
+	UNICODESTRING Error,
+	BOOLEAN DelayRequestStart,
+	UINT64 PartA_PrivTags
+	);
+
+DictationRequestStart(
+	UNICODESTRING State,
+	UNICODESTRING Error,
+	BOOLEAN DelayRequestStart,
+	UINT64 PartA_PrivTags
+	);
+
+ResultLoggingCallback(
+	UINT64 PartA_PrivTags,
+	ANSISTRING file,
+	UINT32 lineNumber,
+	UINT32 failureType,
+	INT32 failureCount,
+	UINT32 threadId,
+	HEXINT32 hr,
+	UNICODESTRING message,
+	ANSISTRING code,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING TipString,
+	UINT32 KLID,
+	UNICODESTRING KeyboardId,
+	UNICODESTRING LanguageTag
+	);
+
+KeyboardSettingsMenu_Hide(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+KeyboardSettingsMenu_Show(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+KeyboardSettingsMenu_Hide(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+KeyboardSettingsMenu_Hide(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+KeyboardSettingsMenu_Show(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+KeyboardSettingsMenu_Show(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputLanguageSwitch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN isHardwareKeyboard,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING fromLanguage,
+	UNICODESTRING toLanguage,
+	UNICODESTRING invocationMethod
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputLanguageSwitch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InputLanguageSwitch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+CommandTriggered(
+	ANSISTRING commandName,
+	UINT64 PartA_PrivTags
+	);
+
+CandidateWindowUIConfigChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING keyboardLanguageTag,
+	UNICODESTRING keyboardName,
+	BOOL32 integrated,
+	UNICODESTRING configName
+	);
+
+CandidateWindowUIConfigChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CandidateWindowUIConfigChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InvalidChineseSimplifiedKeyboardNameDetected(
+	UNICODESTRING KeyboardName,
+	UINT64 PartA_PrivTags
+	);
+
+CandidateWindowShowing(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 editBufferId,
+	UNICODESTRING bcp47tag,
+	UINT32 localeId,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	INT32 position,
+	BOOLEAN isHardwareKeyboard,
+	INT32 candidateControlId,
+	BOOLEAN isVerticalTextCandidateWindow,
+	UNICODESTRING windowStyle
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING Type,
+	BOOLEAN IsActivated
+	);
+
+CandidateWindowShowing(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+CandidateWindowShowing(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CandidateWindowOpenLatency(
+	INT32 ResampleRate,
+	UNICODESTRING Bcp47tag,
+	UNICODESTRING KeyboardId,
+	BOOLEAN IsHardwareKeyboard,
+	INT32 CandidateListStyle,
+	BOOLEAN IsRemoteApplication,
+	BOOLEAN IsLimitedSupportRemoteTextSession,
+	BOOLEAN IsOpenLatency,
+	BOOLEAN IsFirstOpenAfterInit,
+	INT64 PerfCounterFrequency,
+	UINT64 TimeStartCandidateUpdating,
+	UINT64 TimeEndCandidateUpdating,
+	UINT64 TimeStartCandidateUpdated,
+	UINT64 TimeEndCandidateUpdated,
+	UINT64 TimeStartActivate,
+	UINT64 TimeEndActivate,
+	UINT64 TimeStartMeasureOverride,
+	UINT64 TimeEndMeasureOverride,
+	UINT64 TimeStartArrangeOverride,
+	UINT64 TimeEndArrangeOverride,
+	UINT32 CandidateWindowOpenLatencyInMicrosecond,
+	UINT32 ModelUpdateSubLatencyInMicrosecond,
+	UINT32 ControlAcitvateSubLatencyInMicrosecond
+	);
+
+CandidateWindowUpdateLatencyResampled(
+	UINT32 ResampleRate,
+	UNICODESTRING Bcp47tag,
+	UNICODESTRING KeyboardId,
+	BOOLEAN IsHardwareKeyboard,
+	INT32 CandidateListStyle,
+	BOOLEAN IsOpenLatency,
+	BOOLEAN IsFirstOpenAfterInit,
+	INT64 PerfCounterFrequency,
+	UINT64 TimeStartCandidateUpdating,
+	UINT64 TimeEndCandidateUpdating,
+	UINT64 TimeStartCandidateUpdated,
+	UINT64 TimeEndCandidateUpdated,
+	UINT64 TimeStartActivate,
+	UINT64 TimeEndActivate,
+	UINT64 TimeStartMeasureOverride,
+	UINT64 TimeEndMeasureOverride,
+	UINT64 TimeStartArrangeOverride,
+	UINT64 TimeEndArrangeOverride,
+	UINT32 CandidateWindowUpdateLatencyInMicrosecond,
+	UINT32 ModelUpdateSubLatencyInMicrosecond,
+	UINT32 MeasureOverrideSubLatencyInMicrosecond,
+	UINT32 ArrangeOverrideSubLatencyInMicrosecond
+	);
+
+CandidateWindowOpenLatency(
+	UNICODESTRING Bcp47tag,
+	UNICODESTRING KeyboardId,
+	BOOLEAN IsHardwareKeyboard,
+	INT32 CandidateListStyle,
+	BOOLEAN IsRemoteApplication,
+	BOOLEAN IsLimitedSupportRemoteTextSession,
+	BOOLEAN IsOpenLatency,
+	BOOLEAN IsFirstOpenAfterInit,
+	INT64 PerfCounterFrequency,
+	UINT64 TimeStartCandidateUpdating,
+	UINT64 TimeEndCandidateUpdating,
+	UINT64 TimeStartCandidateUpdated,
+	UINT64 TimeEndCandidateUpdated,
+	UINT64 TimeStartActivate,
+	UINT64 TimeEndActivate,
+	UINT64 TimeStartMeasureOverride,
+	UINT64 TimeEndMeasureOverride,
+	UINT64 TimeStartArrangeOverride,
+	UINT64 TimeEndArrangeOverride,
+	UINT32 CandidateWindowOpenLatencyInMicrosecond,
+	UINT32 ModelUpdateSubLatencyInMicrosecond,
+	UINT32 ControlAcitvateSubLatencyInMicrosecond
+	);
+
+CandidateWindowUpdateLatency(
+	UNICODESTRING Bcp47tag,
+	UNICODESTRING KeyboardId,
+	BOOLEAN IsHardwareKeyboard,
+	INT32 CandidateListStyle,
+	BOOLEAN IsOpenLatency,
+	INT64 PerfCounterFrequency,
+	UINT64 TimeStartCandidateUpdating,
+	UINT64 TimeEndCandidateUpdating,
+	UINT64 TimeStartCandidateUpdated,
+	UINT64 TimeEndCandidateUpdated,
+	UINT64 TimeStartActivate,
+	UINT64 TimeEndActivate,
+	UINT64 TimeStartMeasureOverride,
+	UINT64 TimeEndMeasureOverride,
+	UINT64 TimeStartArrangeOverride,
+	UINT64 TimeEndArrangeOverride,
+	UINT32 CandidateWindowUpdateLatencyInMicrosecond,
+	UINT32 ModelUpdateSubLatencyInMicrosecond,
+	UINT32 MeasureOverrideSubLatencyInMicrosecond,
+	UINT32 ArrangeOverrideSubLatencyInMicrosecond
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	ANSISTRING Type,
+	UNICODESTRING Style
+	);
+
+EmojiSelected(
+	UNICODESTRING trigger,
+	UINT16 emojiType,
+	UINT16 emojiCharacterLength,
+	UINT64 PartA_PrivTags
+	);
+
+HandwritingCandidateSelected(
+	UINT64 PartA_PrivTags,
+	UINT32 index,
+	UNICODESTRING inputLanguage,
+	UINT32 totalCharacters,
+	UINT32 candidateSource,
+	BOOLEAN isNextWordPrediction,
+	UINT32 PhraseIndex
+	);
+
+HandwritingTextFinalized(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+CharactersDeleted(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HandwritingScrollingPossible(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+LoadInkGapData(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SaveInkGapData(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+TextManuallyScrolled(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING scrollDirection,
+	UNICODESTRING scrollMethod,
+	UNICODESTRING Font,
+	UNICODESTRING AppName
+	);
+
+HandwritingTextFinalized(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING InputScope,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING FinalizedMethod,
+	UINT32 WordsFinalized,
+	UINT32 TotalCharacters,
+	INT32 SpacesFinalized,
+	UNICODESTRING Font,
+	UNICODESTRING AppName
+	);
+
+HandwritingTextFinalized(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING InputScope,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING FinalizedMethod,
+	UINT32 WordsFinalized,
+	UINT32 TotalCharacters,
+	INT32 SpacesFinalized,
+	UNICODESTRING Font,
+	UNICODESTRING AppName
+	);
+
+HandwritingTextFinalized(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HandwritingTextFinalized(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CharactersDeleted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING inputLanguage,
+	UINT32 wordCount,
+	UNICODESTRING characterDeletionList,
+	UNICODESTRING Font
+	);
+
+CharactersDeleted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING inputLanguage,
+	UINT32 wordCount,
+	UNICODESTRING characterDeletionList,
+	UNICODESTRING Font
+	);
+
+CharactersDeleted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CharactersDeleted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HandwritingPanelAutogrow(
+	UINT64 PartA_PrivTags
+	);
+
+HandwritingCanvasImplicitScroll(
+	UINT64 PartA_PrivTags
+	);
+
+HandwritingScrollingPossible(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HandwritingScrollingPossible(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+LoadInkGapData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN fileFound
+	);
+
+LoadInkGapData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+LoadInkGapData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN fileFound
+	);
+
+LoadInkGapData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SaveInkGapData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SaveInkGapData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+LogFinalInkFromHandwriting(
+	UNICODESTRING FinalText,
+	BOOLEAN IsValidInk,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING InsertionType,
+	FLOAT DrawingRectBottom,
+	FLOAT DrawingRectTop,
+	FLOAT DrawingRectLeft,
+	FLOAT DrawingRectRight,
+	FLOAT WritingRectBottom,
+	FLOAT WritingRectTop,
+	FLOAT WritingRectLeft,
+	FLOAT WritingRectRight,
+	INT64 Column,
+	UNICODESTRING PreContext,
+	UNICODESTRING PostContext,
+	BOOLEAN IsRecoCandidate,
+	UNICODESTRING Candidates,
+	UNICODESTRING CandidateSources,
+	UINT32 InputScope,
+	BINARY InkIsf
+	);
+
+LogInkForSelectedCandidate(
+	UNICODESTRING OriginalText,
+	UNICODESTRING CandidateText,
+	UNICODESTRING Candidates,
+	UNICODESTRING CandidateSources,
+	FLOAT DrawingRectBottom,
+	FLOAT DrawingRectTop,
+	FLOAT DrawingRectLeft,
+	FLOAT DrawingRectRight,
+	FLOAT WritingRectBottom,
+	FLOAT WritingRectTop,
+	FLOAT WritingRectLeft,
+	FLOAT WritingRectRight,
+	INT64 Column,
+	BOOLEAN IsRecoCandidate,
+	UINT32 Index,
+	UINT32 PhraseIndex,
+	UNICODESTRING InputLanguage,
+	UINT32 InputScope,
+	BINARY InkIsf
+	);
+
+HandwritingTipInvoked(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING CurrentLanguage,
+	BOOL32 IsTipTextVisible
+	);
+
+HandwritingTipInvoked(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+HandwritingTipInvoked(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StrokeErased(
+	UINT64 PartA_PrivTags
+	);
+
+HandwritingCandidatesSubmitted(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING InputLanguage,
+	UINT32 totalCharacters
+	);
+
+CheckHandwritingDeviceType(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING inputLanguage,
+	UINT32 deviceType
+	);
+
+CheckInkingWithTouchSetting(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING inputLanguage,
+	BOOL32 isInkingWithTouchEnabled
+	);
+
+HandwritingSessionCommitted(
+	UNICODESTRING InputScope,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING CommitMethod,
+	UINT32 TotalCharacters,
+	UNICODESTRING AppName,
+	UINT64 PartA_PrivTags
+	);
+
+InkAnalysisExecution(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InkAnalysisExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InkAnalysisExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InkOnTextAnnotationCommandExecution(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING strokeIds
+	);
+
+InsertInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING strokeIds
+	);
+
+AppendInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING strokeIds
+	);
+
+GestureExecuted(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Gesture,
+	UNICODESTRING InputLanguage,
+	BOOLEAN WasReRecoSuccessful,
+	UNICODESTRING Font,
+	UNICODESTRING AppName
+	);
+
+GesturePerformed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Gesture,
+	UNICODESTRING InputLanguage,
+	UINT32 wordsRemoved,
+	UNICODESTRING Font,
+	UNICODESTRING AppName
+	);
+
+GestureExecuted(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Gesture,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING Font,
+	UNICODESTRING AppName,
+	BOOLEAN WasDismissed,
+	UNICODESTRING DismissalReason
+	);
+
+GestureExecuted(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Gesture,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING Font,
+	UNICODESTRING AppName,
+	BOOLEAN WasDismissed
+	);
+
+AnalysisResultReceived(
+	UINT32 resultId
+	);
+
+GesturePerformed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING Gesture,
+	UNICODESTRING InputLanguage,
+	UNICODESTRING Font,
+	UNICODESTRING AppName
+	);
+
+"TextOverwritten"(
+	UNICODESTRING newStrokeIds,
+	UNICODESTRING oldStrokeIds
+	);
+
+"AnnotationClassified"(
+	UNICODESTRING annotationKind
+	);
+
+InkOnTextAnnotationCommandExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN hasExecuted
+	);
+
+InkOnTextAnnotationCommandExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN hasExecuted
+	);
+
+InkOnTextAnnotationCommandExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InkOnTextAnnotationCommandExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ReanalyisisItemUpdated(
+	VOID
+	);
+
+ReanalyisisResultUpdated(
+	VOID
+	);
+
+"WordRemovedFromSource"(
+	HEX wordInkRect,
+	FLOAT x,
+	FLOAT y,
+	FLOAT width,
+	FLOAT height,
+	UNICODESTRING wordStrokeIds
+	);
+
+"TextAdded"(
+	HEX inkBoundingRect,
+	FLOAT x,
+	FLOAT y,
+	FLOAT width,
+	FLOAT height,
+	UNICODESTRING strokeIds
+	);
+
+"TextUpdatedFromReanalysis"(
+	HEX oldInkBoundingRect,
+	FLOAT x,
+	FLOAT y,
+	FLOAT width,
+	FLOAT height,
+	HEX newInkBoundingRect,
+	FLOAT x,
+	FLOAT y,
+	FLOAT width,
+	FLOAT height,
+	UNICODESTRING oldStrokeIds,
+	UNICODESTRING newStrokeIds
+	);
+
+AppendInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN hasExecuted
+	);
+
+AppendInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN hasExecuted
+	);
+
+Destroyed(
+	VOID
+	);
+
+AppendInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AppendInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+"TextAdded"(
+	HEX inkBoundingRect,
+	FLOAT x,
+	FLOAT y,
+	FLOAT width,
+	FLOAT height,
+	UNICODESTRING strokeIds,
+	UINT32 index
+	);
+
+InsertInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN hasExecuted
+	);
+
+InkInsertedBetweenWords(
+	UINT64 PartA_PrivTags
+	);
+
+InsertInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN hasExecuted
+	);
+
+InsertInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InsertInkCommandExecution(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InkGesture(
+	UNICODESTRING GestureKind,
+	UNICODESTRING InputLanguage,
+	UINT32 InputScope,
+	UNICODESTRING BoundingRects,
+	UNICODESTRING TextBeforeCorrection,
+	UNICODESTRING TextAfterCorrection,
+	FLOAT DrawingRectBottom,
+	FLOAT DrawingRectTop,
+	FLOAT DrawingRectLeft,
+	FLOAT DrawingRectRight,
+	FLOAT WritingRectBottom,
+	FLOAT WritingRectTop,
+	FLOAT WritingRectLeft,
+	FLOAT WritingRectRight,
+	BINARY InkIsfGesture,
+	BINARY InkIsf
+	);
+
+OuterDistanceConversionTriggered(
+	FLOAT distance,
+	UNICODESTRING languageBcp47,
+	UINT64 PartA_PrivTags
+	);
+
+InnerDistanceConversionTriggered(
+	FLOAT distance,
+	UNICODESTRING languageBcp47,
+	UINT64 PartA_PrivTags
+	);
+
+UpdatedRecoBasedTriggerCommand(
+	VOID
+	);
+
+RecoBasedConversionTriggered(
+	UINT64 PartA_PrivTags
+	);
+
+ClearedRecoBasedTriggerCommand(
+	VOID
+	);
+
+NewRecoBasedTriggerCommand(
+	VOID
+	);
+
+BasicTimerConversionTriggered(
+	UINT64 PartA_PrivTags
+	);
+
+NewTextItemForReanalysis(
+	UINT64 PartA_PrivTags,
+	HEX inkRect,
+	FLOAT x,
+	FLOAT y,
+	FLOAT width,
+	FLOAT height,
+	UNICODESTRING strokeIds
+	);
+
+TextItemForReanalysisCleared(
+	VOID
+	);
+
+TeachingTip(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING SettingFeatureName,
+	UINT32 TeachingTipShownCount
+	);
+
+KeyboardGridUpdateLayout(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputPanelControlSuggestionUIViewStateChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN withXamlAnimation
+	);
+
+InputPanelDeactivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING invocationMethod
+	);
+
+InputPanelActivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN activationOk,
+	UINT32 localeId,
+	UNICODESTRING keyboardId,
+	UNICODESTRING bcp47Tag,
+	UINT32 invocationModality
+	);
+
+InputPanelApplyTemplate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING TemplateName
+	);
+
+AdaptiveControlApplyTemplate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputPanelUpdateLayout(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputPanelStartShowing(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardSet,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardLayoutView,
+	UINT32 editBufferId,
+	INT32 inputScope,
+	UNICODESTRING bcp47tag,
+	UINT32 localeId,
+	INT32 size,
+	INT32 position,
+	UNICODESTRING keyboardLayoutPositionName
+	);
+
+InputPanelLayoutControl(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputPanelInitialize(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputPanelUpdateControlData(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+KeyboardSettingsMenuClose(
+	UNICODESTRING reason,
+	UNICODESTRING detail,
+	UINT64 PartA_PrivTags
+	);
+
+KeyboardGridUpdateLayout(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+KeyboardGridUpdateLayout(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DictationOverlayActivatingBeforeInputPanelActivation(
+	VOID
+	);
+
+TeachingTip(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING Reason
+	);
+
+TeachingTip(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING Reason
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+KeyboardSettingsMenuOpen(
+	UINT64 PartA_PrivTags
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE Opacity
+	);
+
+InputPanelControlSuggestionUIViewStateChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelControlSuggestionUIViewStateChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+InputPanelDeactivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InputPanelDeactivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING mode,
+	UNICODESTRING Position
+	);
+
+InputPanelActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InputPanelActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING mode,
+	UNICODESTRING Position
+	);
+
+InputPanelActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AdaptiveControlApplyTemplate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AdaptiveControlApplyTemplate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputPanelApplyTemplate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelApplyTemplate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputPanelStartShowing(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelStartShowing(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InputPanelUpdateLayout(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputPanelUpdateLayout(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelLayoutControl(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelLayoutControl(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputPanelUpdateControlData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelUpdateControlData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputPanelInitialize(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InputPanelInitialize(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TeachingTip(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TeachingTip(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+KeyboardModeSwitch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN isHardwareKeyboard,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING invocationMethod,
+	UNICODESTRING inputLanguage,
+	UNICODESTRING keyboardName,
+	UNICODESTRING previousMode
+	);
+
+KeyboardLayoutSwitch(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN isHardwareKeyboard,
+	UNICODESTRING fromLangTag,
+	UNICODESTRING toLangTag,
+	UNICODESTRING invocationMethod
+	);
+
+KeyboardShowing(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	INT32 inputScope,
+	UNICODESTRING bcp47Tag,
+	UINT32 localeId,
+	UNICODESTRING keyboardId,
+	UNICODESTRING mode,
+	UNICODESTRING modeState,
+	UNICODESTRING view,
+	INT32 verticalOffset,
+	BOOLEAN isLimitedSupportRemoteTextSession
+	);
+
+InputPanelModelActivated(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING InvocationMethod,
+	UNICODESTRING KeyboardLanguage,
+	UNICODESTRING KeyboardName
+	);
+
+MnPerf_RefreshingInputPanel(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING entryPoint
+	);
+
+InvocationMethodShellPreferenceUpdated(
+	UNICODESTRING Value
+	);
+
+FallbackMode(
+	UNICODESTRING fallbackMode
+	);
+
+SwitchSipPage(
+	UNICODESTRING sipPage,
+	UNICODESTRING newView,
+	UNICODESTRING oldView,
+	UNICODESTRING howChanged,
+	UINT64 PartA_PrivTags
+	);
+
+IgnoreShowViewRequest(
+	UINT32 viewId,
+	ANSISTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+EmojiPageInvoke(
+	UNICODESTRING method,
+	UINT32 inputScope,
+	UINT64 PartA_PrivTags
+	);
+
+LogEmojiPageSwitch(
+	UINT32 emojiPage,
+	UINT64 PartA_PrivTags
+	);
+
+ShapeWritingDisplayCandidatesBegin(
+	UINT16 inputScope,
+	UNICODESTRING bcp47Tag,
+	UNICODESTRING keyboardId,
+	UNICODESTRING mode,
+	UINT64 PartA_PrivTags
+	);
+
+OrientationChanged(
+	UINT32 orientationDirection,
+	UINT64 PartA_PrivTags
+	);
+
+ModeAvailabilityFallbackHappened(
+	UNICODESTRING toLangTag,
+	UNICODESTRING currentMode,
+	UNICODESTRING desiredMode,
+	UNICODESTRING fallbackMode,
+	UINT64 PartA_PrivTags
+	);
+
+NotifyingShellTransparentRegionSizeChanged(
+	UINT32 animationState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 Orientation
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Posture
+	);
+
+KeyCount(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING bcp47Tag,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardModeState,
+	UNICODESTRING keyboardViewName,
+	UINT16 inputScope,
+	UNICODESTRING htrMode,
+	BOOLEAN htrSuppressed,
+	UINT16 keyCount,
+	UINT16 keyCountByTouch,
+	UINT16 keyCountByPen,
+	UINT16 backspaceCount,
+	UINT16 enterCount,
+	UINT16 spaceCount,
+	UINT16 cursorNavigationCount,
+	UINT16 modifierCount,
+	UINT16 controlKeyCount,
+	UINT16 switchKeyCount,
+	UINT16 standardKeyCount,
+	UINT16 childKeyCount,
+	UINT16 keyNearEdge,
+	UINT16 backspaceAfterNearEdge,
+	UINT16 widePlusNewKeyKeyCount,
+	UINT32 tick,
+	UINT8 optimizationLevel,
+	UINT8 latencyVersion,
+	UINT16 keyLatency,
+	UINT16 controlLatency,
+	UINT16 shiftLatency,
+	UINT16 switchLatency,
+	UINT16 spaceLatency,
+	UINT16 enterLatency,
+	UINT16 backLatency,
+	UINT16 ctrlLatency,
+	UINT16 langLatency,
+	UINT16 shiftRTTLatency,
+	BOOLEAN isLimitedSupportRemoteTextSession,
+	FLOAT UserKeyboardScalingFactor,
+	FLOAT ActualKeyboardWidthScalingFactor,
+	FLOAT ActualKeyboardHeightScalingFactor,
+	UNICODESTRING SelectedThemeName,
+	BOOLEAN HasCustomBackgroundImage
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING newModeName,
+	UNICODESTRING oldModeName
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING newLayoutPosition
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING newModeState
+	);
+
+KeyboardModeSwitch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING view,
+	BOOLEAN forceRefresh
+	);
+
+KeyboardModeSwitch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN IsViewVisibleOnShellSide
+	);
+
+KeyboardLayoutSwitch(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+KeyboardLayoutSwitch(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING keyboardName,
+	UNICODESTRING bcp47Language
+	);
+
+KeyboardShowing(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING dismissManner,
+	UNICODESTRING bcp47Tag,
+	UNICODESTRING keyboardId,
+	UNICODESTRING mode,
+	UNICODESTRING modeState,
+	UNICODESTRING view,
+	UNICODESTRING keyboardLayout,
+	BOOLEAN isLimitedSupportRemoteTextSession,
+	FLOAT UserKeyboardScalingFactor,
+	FLOAT ActualKeyboardWidthScalingFactor,
+	FLOAT ActualKeyboardHeightScalingFactor,
+	FLOAT MonitorWidthMM,
+	FLOAT MonitorHeightMM,
+	FLOAT PhysicalMMPerViewPixel,
+	FLOAT MonitorDiagonalInches,
+	FLOAT OverrideMonitorDiagonalInches,
+	UNICODESTRING SelectedThemeName,
+	BOOLEAN HasCustomBackgroundImage,
+	UNICODESTRING ApplicationTheme,
+	UNICODESTRING TapInvokeSettingMisconfiguration
+	);
+
+KeyboardShowing(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING dismissManner,
+	UNICODESTRING bcp47Tag,
+	UNICODESTRING keyboardId,
+	UNICODESTRING mode,
+	UNICODESTRING modeState,
+	UNICODESTRING view,
+	UNICODESTRING keyboardLayout,
+	BOOLEAN isLimitedSupportRemoteTextSession,
+	FLOAT UserKeyboardScalingFactor,
+	FLOAT ActualKeyboardWidthScalingFactor,
+	FLOAT ActualKeyboardHeightScalingFactor,
+	FLOAT MonitorWidthMM,
+	FLOAT MonitorHeightMM,
+	FLOAT PhysicalMMPerViewPixel,
+	FLOAT MonitorDiagonalInches,
+	FLOAT OverrideMonitorDiagonalInches,
+	UNICODESTRING SelectedThemeName,
+	BOOLEAN HasCustomBackgroundImage,
+	UNICODESTRING ApplicationTheme,
+	UNICODESTRING TapInvokeSettingMisconfiguration
+	);
+
+InputPanelModelActivated(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InputPanelModelActivated(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING reason
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING HowLayoutChanged
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOL32 IsActive,
+	BOOL32 IsActivating,
+	BOOLEAN LargeChangeFound
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOL32 IsActive,
+	BOOL32 IsViewFrameMoving
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+MnPerf_RefreshingInputPanel(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+MnPerf_RefreshingInputPanel(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UINT64 deferredEventCount,
+	UNICODESTRING deferredHowLayoutChanged
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING KeyboardDllName
+	);
+
+KeyboardShowing(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+KeyboardShowing(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SwitchToNextInputProfile(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING invocationMethod
+	);
+
+SwitchToNextInputProfile(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SwitchToNextInputProfile(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+GestureCursorMovement(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+BackspaceAfterNearEdge(
+	BOOLEAN htrOn,
+	UINT64 PartA_PrivTags
+	);
+
+InputApp_NonAsciiCharInsertedToPassword(
+	UINT64 PartA_PrivTags
+	);
+
+GestureCursorMovement(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 LeftCount,
+	UINT32 RightCount,
+	UINT32 UpCount,
+	UINT32 DownCount
+	);
+
+GestureCursorMovement(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 LeftCount,
+	UINT32 RightCount,
+	UINT32 UpCount,
+	UINT32 DownCount
+	);
+
+KeyEventHandlerRelease(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING bcp47Tag,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardView,
+	INT32 childKeyIndex,
+	DOUBLE baseKeyBoundsX,
+	DOUBLE baseKeyBoundsY
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Personality,
+	BOOL32 ModifierStateManagerEnabled,
+	BOOL32 ShouldReleaseOtherKeysWhenPressingKey,
+	BOOL32 AllowHandlingSwitchKeysOnPressAction
+	);
+
+GestureCursorMovement(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+GestureCursorMovement(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+MTFPredictionCandidateSelected(
+	UINT64 PartA_PrivTags
+	);
+
+HWRecoCandidateSelected(
+	UINT64 PartA_PrivTags
+	);
+
+HandwritingButtonPressed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ButtonPressed,
+	UNICODESTRING InputLanguage
+	);
+
+HandwritingChildKeyPressed(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ButtonPressed,
+	UNICODESTRING InputLanguage
+	);
+
+Jpn12KeyRelease(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+InputTriggered(
+	INT32 inputType,
+	UNICODESTRING view,
+	INT32 direction,
+	UINT64 PartA_PrivTags
+	);
+
+Jpn12KeyRelease(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Jpn12KeyRelease(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+EmojiPickerInit(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+EmojiSetting(
+	UNICODESTRING layoutId,
+	BOOLEAN autoSwitch,
+	UINT64 PartA_PrivTags
+	);
+
+KeyboardGridUpdateLayoutAndData(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+KeyboardGridApplyTemplate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+EmojiPickerInit(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+EmojiPickerInit(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+KeyboardGridUpdateLayoutAndData(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+KeyboardGridUpdateLayoutAndData(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+KeyboardGridApplyTemplate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+KeyboardGridApplyTemplate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+UnexpectedKeyboardThemeShellPrefDetected(
+	UNICODESTRING shellPrefName,
+	UNICODESTRING shellPrefValue
+	);
+
+ImageFailedToLoad(
+	VOID
+	);
+
+CustomThemeResourcesUpdating(
+	VOID
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN IsKeyBackgroundEnabled,
+	UNICODESTRING KeyLabelSize,
+	UNICODESTRING SelectedThemeName,
+	UNICODESTRING KeyLabelColor,
+	UNICODESTRING KeyTransparency,
+	UNICODESTRING KeyboardBackgroundType,
+	UNICODESTRING KeyboardBackgroundSolidColor,
+	UNICODESTRING KeyboardBackgroundGradientColorTop,
+	UNICODESTRING KeyboardBackgroundGradientColorBottom,
+	UNICODESTRING HasBorder,
+	UNICODESTRING BorderColor,
+	UNICODESTRING AccentColor,
+	UNICODESTRING KeyboardBackgroundImageOpacity,
+	UNICODESTRING KeyboardBackgroundImageStretchType,
+	BOOLEAN HasKeyboardBackgroundImagePath,
+	UNICODESTRING ThemeOverride,
+	BOOLEAN AppThemeIsLight,
+	BOOLEAN IsLightTheme,
+	BOOLEAN IsCustomTheme,
+	BOOLEAN IsUsingCustomImageBackground,
+	BOOLEAN IsHighContrast,
+	BOOLEAN Changed
+	);
+
+InputPanelGestureAction(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING gestureAction,
+	UINT32 editBufferId,
+	UINT32 pointerId,
+	BOOLEAN onKey
+	);
+
+InputPanelGestureAction(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN isHandled,
+	BOOLEAN isShapeWritingCancelled
+	);
+
+InputPanelGestureAction(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN isHandled,
+	BOOLEAN isShapeWritingCancelled
+	);
+
+InputPanelGestureAction(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputPanelGestureAction(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HtrDictionaryLoad(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING languageName
+	);
+
+HtrHistoryQuery(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+HtrHistoryQuery(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HtrHistoryQuery(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HtrDictionaryLoad(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+HtrDictionaryLoad(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE ScaleRatio
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE CurrentExpInputHeight,
+	DOUBLE CurrentKeyboardGridHeight
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT Width,
+	FLOAT Height,
+	FLOAT BackgroundWidth,
+	FLOAT BackgroundHeight,
+	FLOAT TransparentRowHeight,
+	FLOAT GripperRowHeight,
+	FLOAT CandBarRowHeight,
+	FLOAT GridRowHeight,
+	FLOAT ExpCandBarHeight,
+	FLOAT OccRectWidth,
+	FLOAT OccRectHeight,
+	FLOAT OccRectX,
+	FLOAT OccRectY,
+	INT32 VerticalOffset,
+	INT32 HorizontalOffset,
+	BOOLEAN ShowAtDefaultPosition,
+	FLOAT GridWidth,
+	FLOAT GridHeight,
+	FLOAT UnitKeyWidth,
+	FLOAT UnitKeyHeight,
+	BOOLEAN AlignCandBarWithGroups,
+	UNICODESTRING AnimationKind,
+	BOOLEAN IsUndocking
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT GridWidthInUnitKeys
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE IdealKeySizeMM
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT GridWidthInUnitKeys,
+	DOUBLE StandardGridWidth
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT GridWidthInUnitKeys,
+	DOUBLE AlphaViewGridWidth
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawDPI,
+	DOUBLE RawEffectiveDPI,
+	DOUBLE RawMonitorScreenPixelsPerViewPixel,
+	DOUBLE RawPhysicalMMPerViewPixel,
+	DOUBLE RawMonitorWidthScreenPixels,
+	DOUBLE RawMonitorHeightScreenPixels,
+	DOUBLE RawMonitorWidthMM,
+	DOUBLE RawMonitorHeightMM,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE MonitorWidthViewPixels,
+	DOUBLE MonitorHeightViewPixels,
+	DOUBLE MonitorWidthMM,
+	DOUBLE MonitorHeightMM,
+	DOUBLE PhysicalMMPerViewPixel,
+	DOUBLE MonitorDiagonalInches,
+	DOUBLE OverrideMonitorDiagonalInches,
+	FLOAT MaxAvailableWidth,
+	FLOAT MaxAvailableHeight
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE StandardComponentScalingFactor,
+	DOUBLE UserScalingFactor,
+	DOUBLE IdealKeySizeMM,
+	DOUBLE IdealUnscaledKeyboardGridWidthPixels,
+	DOUBLE IdealUnscaledKeyboardGridHeightPixels,
+	DOUBLE IdealKeyboardGridWidthPixels,
+	DOUBLE IdealKeyboardGridHeightPixels,
+	DOUBLE GridWidthInUnitKeys,
+	DOUBLE GridHeightInUnitKeys,
+	DOUBLE MinKeyboardGridWidthPixels,
+	DOUBLE MinKeyboardGridHeightPixels,
+	DOUBLE MinKeyWidthHeightRatio,
+	DOUBLE MaxKeyWidthHeightRatio,
+	DOUBLE IdealCandBarHeightPixels,
+	DOUBLE IdealExpInputExpandedHeightPixels,
+	DOUBLE IdealGripperHeightPixels,
+	DOUBLE MinGripperHeightPixels,
+	DOUBLE BorderWidthPixels,
+	DOUBLE BorderHeightPixels,
+	DOUBLE ShadowLeftPixels,
+	DOUBLE ShadowRightPixels,
+	DOUBLE ShadowTopPixels,
+	DOUBLE ShadowBottomPixels
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE PhysicalMMPerViewPixel,
+	FLOAT TopShadowRowHeightOverride,
+	FLOAT LeftShadowColumnWidthOverride,
+	INT32 VerticalOffset,
+	INT32 HorizontalOffset
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState,
+	UNICODESTRING RequestedState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	BOOLEAN deferring,
+	BOOLEAN IsRequestingModifierChangeDeferral
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING NewState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState,
+	UNICODESTRING NewState,
+	BOOLEAN isUpdatingPointerHandlerRequired
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING type,
+	UNICODESTRING personality,
+	UINT32 modeStateCount
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING type,
+	UNICODESTRING personality,
+	INT32 modeStateCount
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState,
+	UNICODESTRING NewState,
+	UNICODESTRING TextInputKind,
+	UNICODESTRING ViewShowRequestInfoExperience,
+	BOOLEAN withXamlAnimation,
+	BOOLEAN animationsEnabled
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING CurrentViewState,
+	UNICODESTRING PreviousViewState
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	FLOAT totalViewHeight,
+	FLOAT paddingRowHeight,
+	FLOAT collapsedViewTableHeightBarHeight,
+	FLOAT collapsedViewBarHeight
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE OverrideMonitorDiagonalInches,
+	DOUBLE ScaleFactor
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE RawEffectiveDpi
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType,
+	BOOLEAN InfoChanged,
+	DOUBLE RawDPI,
+	DOUBLE RawEffectiveDPI,
+	DOUBLE PhysicalMMPerViewPixel,
+	DOUBLE MonitorWidthRawPixels,
+	DOUBLE MonitorHeightRawPixels,
+	DOUBLE MonitorWidthMM,
+	DOUBLE MonitorHeightMM,
+	DOUBLE MonitorDiagonalInches
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE EffectiveMonitorDiagonalInches,
+	DOUBLE ScaleFactor
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	DOUBLE RawMonitorDiagonalInches,
+	DOUBLE RawMonitorWidthInches,
+	DOUBLE RawMonitorHeightInches,
+	DOUBLE RawDpiX,
+	DOUBLE RawDpiY,
+	DOUBLE RawEffectiveDpi
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType,
+	DOUBLE RawDPI
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING ViewType,
+	DOUBLE OverrideMonitorDiagonalInches
+	);
+
+OnPageLoaded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 viewType,
+	UINT32 applicationViewId
+	);
+
+HideInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING bcp47tag,
+	UNICODESTRING keyboardSet,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardLayoutView,
+	UNICODESTRING keyboardPosition,
+	INT32 displayOrientation,
+	BOOLEAN IsRemoteApplication,
+	BOOLEAN IsLimitedSupportRemoteTextSession,
+	UNICODESTRING howClosed
+	);
+
+StateChangedActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 viewId,
+	BOOLEAN isViewCreationPending,
+	UINT32 requestType
+	);
+
+SetApplicationViewId(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 viewType,
+	UINT32 applicationViewId
+	);
+
+ShowInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING RequestViewType,
+	UNICODESTRING InputKind,
+	BOOL32 IsPageLoaded
+	);
+
+InvalidShowRequestActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 PartA_PrivTags,
+	UINT32 viewId,
+	UNICODESTRING bcp47tag,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardLayoutView,
+	UNICODESTRING keyboardPosition,
+	INT32 positionType,
+	INT32 horizontalAlignment,
+	INT32 verticalAlignment,
+	UINT32 width,
+	UINT32 height,
+	INT32 horizontalOffset,
+	INT32 verticalOffset,
+	BOOLEAN horizontalMovementSupported,
+	BOOLEAN verticalMovementSupported
+	);
+
+InvokeCoreKeyboardClientRequest_SetInputAppProperty(
+	UNICODESTRING name,
+	UNICODESTRING value,
+	UINT64 PartA_PrivTags
+	);
+
+InvokeCoreKeyboardClientRequest_TransferXYFocusFromView(
+	UINT32 viewId,
+	UINT64 PartA_PrivTags
+	);
+
+PlacementOptionCountChanged(
+	UINT32 OldCount,
+	UINT32 NewCount
+	);
+
+PlacementOptionAvailableSizeChanged(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ViewPositionType,
+	STRING OldDefaultSize,
+	FLOAT Width,
+	FLOAT Height,
+	STRING OldMaxSize,
+	FLOAT Width,
+	FLOAT Height,
+	STRING OldMinSize,
+	FLOAT Width,
+	FLOAT Height,
+	STRING NewDefaultSize,
+	FLOAT Width,
+	FLOAT Height,
+	STRING NewMaxSize,
+	FLOAT Width,
+	FLOAT Height,
+	STRING NewMinSize,
+	FLOAT Width,
+	FLOAT Height
+	);
+
+IgnoreHideViewRequest(
+	UINT32 viewId,
+	ANSISTRING Reason,
+	UINT64 PartA_PrivTags
+	);
+
+InconsistentViewVisibilityDetected(
+	UINT32 viewId,
+	UINT64 PartA_PrivTags
+	);
+
+PlacementOptionRemoved(
+	ANSISTRING ViewPositionType
+	);
+
+ShowAndSetViewPlacementInvoked(
+	UINT32 ViewType,
+	UINT64 PartA_PrivTags
+	);
+
+ShowAndSetViewPlacementVerbose(
+	UINT64 PartA_PrivTags,
+	UINT32 ViewType,
+	UINT32 RequestSource,
+	UINT32 AnimationKind,
+	HEX OccludingRect,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Width,
+	FLOAT Height,
+	STRING Size,
+	FLOAT Width,
+	FLOAT Height,
+	UINT32 ZOrder
+	);
+
+InvokeViewDeactivationAfterAnimationCompleted(
+	UINT32 viewId,
+	UINT32 requestSource,
+	UINT64 PartA_PrivTags
+	);
+
+OnPageLoaded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnPageLoaded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+StateChangedActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+StateChangedActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+HideInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+HideInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+HoldHideInputAppViewRequest(
+	UINT64 PartA_PrivTags
+	);
+
+ShowInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ShowInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ShowInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UNICODESTRING bcp47tag,
+	UNICODESTRING keyboardSet,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardLayoutView
+	);
+
+ShowInputAppViewActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UNICODESTRING bcp47tag,
+	UNICODESTRING keyboardSet,
+	UNICODESTRING keyboardId,
+	UNICODESTRING keyboardMode,
+	UNICODESTRING keyboardLayoutView
+	);
+
+SetApplicationViewId(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 applicationViewId
+	);
+
+SetApplicationViewId(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 applicationViewId
+	);
+
+SetApplicationViewId(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SetApplicationViewId(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InvalidShowRequestActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+InvalidShowRequestActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+SettingsValueSet(
+	UNICODESTRING Class,
+	UNICODESTRING Name
+	);
+
+SettingsManager_OnSettingValueChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING name
+	);
+
+SettingsManager_SetValue(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Name
+	);
+
+SettingsManager_GetValue(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Name,
+	UNICODESTRING Type
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING SettingName,
+	UNICODESTRING SettingSubName
+	);
+
+SettingsManager_OnSettingValueChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SettingsManager_OnSettingValueChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Name,
+	ANSISTRING Value
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Name,
+	INT32 Value
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Name,
+	INT64 Value
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Name,
+	BOOLEAN Value
+	);
+
+SettingsManager_GetValue(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN IsFound
+	);
+
+SettingsManager_GetValue(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN IsFound
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING Name,
+	UNICODESTRING Value
+	);
+
+SettingsManager_GetValue(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SettingsManager_GetValue(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SettingsManager_SetValue(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN IsFound
+	);
+
+SettingsManager_SetValue(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN IsFound
+	);
+
+SettingsManager_SetValue(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SettingsManager_SetValue(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UdkDispatcherQueueNotExist(
+	UINT64 PartA_PrivTags
+	);
+
+InputApp_OnShapewritingEnabled(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN enabled
+	);
+
+InputApp_OnShapewritingEnabled(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InputApp_OnShapewritingEnabled(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UNICODESTRING HKL,
+	UNICODESTRING KeyboardName,
+	UNICODESTRING LanguageTag
+	);
+
+InsertText(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 replaceRangeBegin,
+	UINT32 replaceRangeEnd,
+	UINT32 newRangeBegin,
+	UINT32 newRangeEnd
+	);
+
+GetSelection(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+UpdateComposition(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+OnUpdateComposition(
+	UINT32 compositionLength
+	);
+
+OnEndingComposition(
+	UINT32 compositionLength
+	);
+
+EditSelectedTextMode(
+	UINT64 PartA_PrivTags,
+	UINT32 textLength,
+	INT32 startCaretPosition,
+	INT32 endCaretPosition
+	);
+
+UpdateCompositionFailed(
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+InsertionFailed(
+	UINT32 errorCode,
+	UINT64 PartA_PrivTags
+	);
+
+OnBeginComposition(
+	UINT32 compositionLength
+	);
+
+OnEditControlFocusChanged(
+	BOOLEAN isFocused
+	);
+
+GetSelectionRange(
+	UINT32 selectionBegin,
+	UINT32 selectionEnd,
+	UINT64 PartA_PrivTags
+	);
+
+InsertText(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+InsertText(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+UpdateComposition(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+UpdateComposition(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnEditControlSelectionChanged(
+	VOID
+	);
+
+OnEditControlTextChanged(
+	VOID
+	);
+
+GetSelection(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+GetSelection(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 OriginalSubscriptionCount
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	INT32 UpdatedSubscriptionCount
+	);
+
+ToolBarContextMenuItemClicked(
+	UNICODESTRING CurrentLanguage,
+	UINT32 Orientation,
+	UINT32 ViewMask,
+	UINT32 ItemId,
+	UINT64 PartA_PrivTags
+	);
+
+ToolBarItemClicked(
+	UNICODESTRING CurrentLanguage,
+	UINT32 Orientation,
+	UINT32 ViewMask,
+	BOOLEAN ShouldShowMinifiedToolBar,
+	UINT32 ItemId,
+	UINT64 PartA_PrivTags
+	);
+
+KeyboardSet(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Language,
+	UNICODESTRING KeyboardName
+	);
+
+ToolBarShown(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UNICODESTRING Language,
+	UNICODESTRING KeyboardName
+	);
+
+SetKeyboard(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SetKeyboard(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ShowToolBar(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ShowToolBar(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SetCurrentLanguageIsIgnoredBy(
+	UNICODESTRING language,
+	UNICODESTRING keyboardName,
+	UNICODESTRING reason
+	);
+
+SetCurrentLanguageIsIgnoredByLockScreen(
+	UNICODESTRING language,
+	UNICODESTRING keyboardName
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	HRESULT ErrorCode
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+FirstObjectPreloaded(
+	UNICODESTRING name,
+	UNICODESTRING error
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	INT32 loadCount,
+	INT32 errorCount
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	INT32 loadCount,
+	INT32 errorCount
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AudioManagerPreload(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	UINT64 PartA_PrivTags,
+	ANSISTRING message,
+	UINT32 Id,
+	BOOL32 IsAudioEnabled
+	);
+

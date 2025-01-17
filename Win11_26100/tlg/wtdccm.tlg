@@ -1,0 +1,151 @@
+ProviderNames:
+	Microsoft.OneCore.WebThreatDefense.ClipboardMonitor
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+ClipDeferredInitExit(
+	BOOLEAN Enabled
+	);
+
+PasteFlowLatency(
+	NULL Instances,
+	NULL MinPasteLatencyInUs,
+	NULL MaxPasteLatencyInUs,
+	NULL PasteLatencyAddedInUs,
+	UINT64 PartA_PrivTags
+	);
+
+NotForegroundWindow(
+	PID CurrentProcess,
+	PID ForegroundWindowOwner
+	);
+
+ClipAsyncRpcSendError(
+	NTSTATUS NtStatus
+	);
+
+DataHandleEmpty(
+	VOID
+	);
+
+SkippedPasteEvent(
+	PID ProcessId,
+	BOOL32 IsOLE
+	);
+
+WtdProcessStringExit(
+	PID ProcessId,
+	BOOL32 IsOLE,
+	HEXINT32 HWND,
+	UINT16 BufferSizeInBytes,
+	UINT64 TimeSinceLastPasteInUs
+	);
+
+ThrottlingEvent(
+	UINT64 PasteWaitTimeInUs,
+	UINT64 TimeSinceLastPasteInUs
+	);
+
+ClipCleanupExit(
+	VOID
+	);
+
+ClipDeferredInitWnfQueryError(
+	NTSTATUS NtStatus
+	);
+
+ClipRpcSendStringExit(
+	VOID
+	);
+
+ClipDeferredInitRpcCreateError(
+	NTSTATUS NtStatus
+	);
+
+ClipDeferredInitRpcBindError(
+	NTSTATUS NtStatus
+	);
+
+GetForegroundWindowError(
+	UINT32 Error
+	);
+
+ClipDeferredInitWnfSubscriptionError(
+	NTSTATUS NtStatus
+	);
+
+ClipAsyncRpcCompleteError(
+	NTSTATUS NtStatus
+	);
+
+ClipMonitorStateChange(
+	BOOLEAN Enabled
+	);
+
+ClipRpcCreateEventError(
+	WIN32ERROR Error
+	);
+
+ClipRpcAsyncInitError(
+	NTSTATUS NtStatus
+	);
+
+AnsiStringLengthOutOfRange(
+	UINT16 BufferLength
+	);
+
+UnicodeStringLengthOutOfRange(
+	UINT16 BufferLength
+	);
+
+DataHandleInvalidFormat(
+	VOID
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

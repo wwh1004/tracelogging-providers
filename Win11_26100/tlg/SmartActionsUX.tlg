@@ -1,0 +1,114 @@
+ProviderNames:
+	Microsoft.Windows.TextInput.SmartActionsUX
+
+
+
+**** Events *****
+IconLoadingFailure(
+	UNICODESTRING AppName,
+	UINT64 PartA_PrivTags
+	);
+
+UdkFailure(
+	UNICODESTRING Method,
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+OnClicked(
+	UNICODESTRING ClickSource,
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+ViewAlreadyDeactivated(
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+ViewModelAlreadyDeactivated(
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+ViewModelAlreadyActivated(
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+InconsistentShownStateDetected(
+	BOOLEAN IsShown,
+	UNICODESTRING Action,
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+OnDeactivated(
+	UNICODESTRING Reason,
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+OnActivated(
+	UNICODESTRING CorrelationVector,
+	UINT64 PartA_PrivTags
+	);
+
+ViewModelRequestDelegation(
+	UINT64 PartA_PrivTags
+	);
+
+ViewModelReleaseDelegation(
+	UINT64 PartA_PrivTags
+	);
+
+ViewModelStartKeyListenting(
+	UINT64 PartA_PrivTags
+	);
+
+ViewModelStopKeyListenting(
+	UINT64 PartA_PrivTags
+	);
+

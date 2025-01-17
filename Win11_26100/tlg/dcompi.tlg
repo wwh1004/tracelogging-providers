@@ -1,0 +1,93 @@
+ProviderNames:
+	InputCoreLifted
+	Microsoft.Windows.Dwm.DComp
+	Microsoft.Windows.Dwm.Interaction
+	WindowsDwmCore
+	Microsoft.Windows.Dwm.DwmCore
+	WindowsDwmCoreTests
+	Microsoft-DwmCoreI-BackdropBrushInvestigations
+	Microsoft.Windows.ApiTelemetry
+
+
+
+**** Events *****
+WindowsUICompositionDCompCreate(
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DComp::ReroutePointer(
+	UINT32 PointerId,
+	HEXINT32 Result
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+WindowsUICompositionEffectGraphs(
+	INT32 EventVersionId,
+	ANSISTRING EffectGraphs,
+	INT32 EffectGraphCounts
+	);
+
+ApiCallCountsWithDebuggerPresent(
+	UNICODESTRING Namespace,
+	UNICODESTRING ApiDataList,
+	ANSISTRING CustomList,
+	UINT32 HitCounts,
+	BOOLEAN UTCReplace_AppSessionGuid
+	);
+
+ApiCallCounts(
+	UNICODESTRING Namespace,
+	UNICODESTRING ApiDataList,
+	ANSISTRING CustomList,
+	UINT32 HitCounts,
+	BOOLEAN UTCReplace_AppSessionGuid
+	);
+
+DComp::TryRedirectForManipulation(
+	UINT32 PointerId,
+	UINT64 PointerTimestamp,
+	HEXINT32 Result
+	);
+

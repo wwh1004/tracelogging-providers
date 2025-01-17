@@ -1,0 +1,1188 @@
+ProviderNames:
+	Microsoft.Windows.Sense.Client
+	Microsoft.Windows.Sense.GeneratedETW
+
+
+
+**** Events *****
+RunPowerShell(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING scriptFilePath
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING outputFile.c_str()
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING stderrFile.c_str()
+	);
+
+RunPowerShell(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 errorCode,
+	UNICODESTRING systemName,
+	UNICODESTRING accountName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING domainNameStr,
+	UNICODESTRING accountName,
+	UNICODESTRING sidAsString
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 errorCode
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR Win32Error
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 Size,
+	ANSISTRING Data
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 samplingRate,
+	BOOLEAN ReportOptics,
+	UINT32 statisticPeriod
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+InternalOpticsCompressedEvent(
+	ANSISTRING Data
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING input,
+	UINT32 HResult
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	INT32 error,
+	UINT32 defaultValue
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 Revision
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING Property,
+	WIN32ERROR WinError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT8 s_utcType
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath,
+	UINT32 defaultValue
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING Path,
+	UNICODESTRING ValueName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING commandLine,
+	WIN32ERROR WinErr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING driveRoot
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING privilege
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING nativePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HEXINT64 File handle,
+	UINT32 Win32Error
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	UINT32 Access rights,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING FileName,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING SID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 impersonate.ImpersonationStatus(),
+	UNICODESTRING nativePath
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 diskExtents
+	);
+
+SenseCommon(
+	UNICODESTRING errorCode,
+	INT32 message,
+	UINT32 lastError
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING drivePath
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT32 diskNumber
+	);
+
+StorageVolumeInformation(
+	UINT8 status,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HRESULT_FROM_WIN32(::GetLastError()),
+	UNICODESTRING FriendlyNameId,
+	UNICODESTRING InstancePathId,
+	UNICODESTRING HardwareId,
+	UNICODESTRING DeviceID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	STRING drive
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING dosPath,
+	UNICODESTRING volumePath,
+	UNICODESTRING nativePath,
+	UINT8 type,
+	UINT32 volumeProperties,
+	UNICODESTRING hwProductId,
+	UNICODESTRING hwProductRevision,
+	UNICODESTRING hwSerialNumber,
+	UNICODESTRING hwVendorId,
+	UNICODESTRING hwFriendlyName,
+	UNICODESTRING hwHardwareId,
+	UNICODESTRING hwInstancePath,
+	UNICODESTRING hwDeviceId,
+	UINT8 hwBusType,
+	BOOL32 isOnRemovableMedia
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UINT32 deviceDescriptorSize
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING DeviceParentId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING volumePath,
+	UNICODESTRING propName,
+	UINT64 bufferSize,
+	UINT32 offset
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UINT64 Bytes to read,
+	HRESULT HResult
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+RequestCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 totalRequests,
+	UINT64 successfulRequests
+	);
+
+OplockCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 totalOplockBreaks,
+	UINT64 totalFailuresDueToOplockBreaks
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	ANSISTRING message,
+	UNICODESTRING Action,
+	ANSISTRING component
+	);
+
+SenseService(
+	ANSISTRING message
+	);
+
+SenseService(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING id
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component
+	);
+
+SenseService(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING action,
+	ANSISTRING component,
+	ANSISTRING type,
+	ANSISTRING exceptionMessage
+	);
+
+SenseService(
+	INT32 errorCode,
+	ANSISTRING message
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 value
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING transcriptFilePath
+	);
+
+RunPowerShell(
+	ANSISTRING message
+	);
+
+RunPowerShell(
+	UNICODESTRING message
+	);
+
+RunPowerShell(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING preScriptCommands
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING input preScriptCommand,
+	UNICODESTRING preScriptCommands
+	);
+
+RunPowerShell(
+	ANSISTRING message,
+	UNICODESTRING cmd,
+	UNICODESTRING outputFile,
+	UNICODESTRING stderrFile,
+	UNICODESTRING workingDir,
+	UINT32 timeoutInSeconds,
+	BOOLEAN shouldValidatePSScriptSignature,
+	BOOLEAN shouldDisablePrivilages,
+	BOOLEAN shouldRunInAJob,
+	UINT32 cpuLimitRate,
+	UINT32 memoryLimitInMB
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING accountSid
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UPN
+	);
+
+CyberData(
+	UNICODESTRING message,
+	INT8 JoinType
+	);
+
+CyberData(
+	UNICODESTRING message,
+	INT32 HRESULT
+	);
+
+CyberData(
+	UNICODESTRING message
+	);
+
+CyberData(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UNICODESTRING AadUserUpn,
+	UNICODESTRING AadUserTenant,
+	UNICODESTRING AadUserId,
+	INT8 JoinType,
+	UNICODESTRING edlpAadUserUpn,
+	UNICODESTRING edlpAadUserId,
+	INT8 UpnSource
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	INT8 JoinType
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	ANSISTRING Error
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UNICODESTRING edlpAadUserUpn,
+	UNICODESTRING edlpAadUserId,
+	INT8 UpnSource
+	);
+
+CyberData(
+	UNICODESTRING message
+	);
+
+CyberData(
+	UNICODESTRING message,
+	ANSISTRING Error,
+	INT32 HRESULT,
+	UNICODESTRING UserSid
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UINT32 ImpersonationStatus
+	);
+
+CyberData(
+	UNICODESTRING message,
+	UNICODESTRING UserSid,
+	UNICODESTRING AadUserUpn,
+	UNICODESTRING AadUserId,
+	UNICODESTRING edlpAadUserUpn,
+	UNICODESTRING edlpAadUserId,
+	INT8 UpnSource
+	);
+
+DLP(
+	UNICODESTRING message,
+	UINT32 CurrentUpnStatus,
+	INT32 UpnStatusToCheck,
+	BOOL32 IsBadUpnStatusFoundInCache
+	);
+
+RegistryReadErrorEvent(
+	UNICODESTRING valueName,
+	UINT32 error
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	ANSISTRING message,
+	UNICODESTRING regPath
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UINT32 error,
+	UNICODESTRING regPath,
+	UNICODESTRING valueName,
+	UNICODESTRING defaultValue
+	);
+
+Configuration(
+	UNICODESTRING message,
+	INT32 error,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UNICODESTRING value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UNICODESTRING value
+	);
+
+Configuration(
+	UNICODESTRING message,
+	UNICODESTRING valueName,
+	UNICODESTRING regPath,
+	UINT32 vectorSize,
+	UINT32 size,
+	UINT32 maxLength
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING full file name,
+	BOOLEAN trust only Microsoft Rooted,
+	BOOLEAN trust only cert from trusted publisher store,
+	INT32 result
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	BOOLEAN s_trustMicrosoftTestRootConfig
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	BOOLEAN params.checkApplicationRoot,
+	BOOLEAN params.trustMicrosoftTestRoot,
+	BOOLEAN isOfficialBuild,
+	BOOLEAN trustMicrosoftTestRootOverrideByConfig
+	);
+
+SenseCommon(
+	UNICODESTRING message
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING full file name,
+	HEXINT32 hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	BOOLEAN trustMicrosoftTestRootOverrideByConfig
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING File,
+	WIN32ERROR ::GetLastError()
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	HEXINT32 hr,
+	UNICODESTRING win32Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING File,
+	UINT64 decodedDistPointsSize,
+	WIN32ERROR ::GetLastError()
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT hrEnumerateCatalogs
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING originalSha1,
+	UNICODESTRING currentSha1,
+	UNICODESTRING win32Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING File,
+	UINT32 decodedDistPointsSize,
+	WIN32ERROR ::GetLastError()
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING storeName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING storeName
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING storeName
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	BOOL32 result,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	BOOL32 m_keepGoing,
+	UNICODESTRING m_name
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	UINT32 limitInPercent
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	ANSISTRING error message,
+	BOOLEAN enable breakaway
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	ANSISTRING error message,
+	UINT32 limitInPercent
+	);
+
+ResourceRegulator(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	ANSISTRING error message,
+	UINT32 limitInMb
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	UINT32 limitInMb
+	);
+
+ResourceRegulator(
+	UNICODESTRING message,
+	UINT64 LimitFlags,
+	UINT64 ViolationLimitFlags,
+	UINT64 CpuRateControlTolerance,
+	UINT64 CpuRateControlToleranceLimit,
+	UINT64 JobMemory,
+	UNICODESTRING m_name
+	);
+
+SenseCommon(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING m_outputChannel,
+	UNICODESTRING m_stderrChannel,
+	UINT32 exitCode
+	);
+
+SenseCommon(
+	HRESULT errorCode,
+	ANSISTRING message,
+	UNICODESTRING filePath
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	ANSISTRING message,
+	UINT32 GetLastError,
+	BOOLEAN retrieveOnlyNonExpiredUsers
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UINT32 status,
+	UINT32 totalCount,
+	BOOLEAN retrieveOnlyNonExpiredUsers
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	INT8 AadStatus,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING GetUserNameExUpn
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING GetUserNameExUpn,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UINT32 UpnSource,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	INT8 AadStatus
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserUpn
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	INT8 UpnSource
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UINT32 UpnSource
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserUpn,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserId
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING NetGetAadJoinInformationUpn
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING NetGetAadJoinInformationUpn,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING SID,
+	UNICODESTRING Registry Path,
+	UNICODESTRING AadUserId,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	HRESULT hr
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	WIN32ERROR errorCode,
+	UNICODESTRING ErrorMessage
+	);
+
+ResourceCounter(
+	PORT PartB_Ms.Windows.Sense.Counter,
+	UINT64 ticksSinceServiceStart,
+	UINT64 ticksSinceLastReport,
+	UNICODESTRING eventName,
+	UNICODESTRING orgId,
+	UNICODESTRING clientVersion,
+	UNICODESTRING configurationVersion,
+	UINT8 utcMode,
+	UINT64 jobCreated,
+	UINT64 failedCreatingJob,
+	UINT64 failedSettingLimit,
+	UINT64 failedSettingNotifications,
+	UINT64 notificationsOnOverflow,
+	UINT64 lastViolationLimitFlags
+	);
+
+SenseCommon(
+	ANSISTRING message,
+	UNICODESTRING m_cmd,
+	UINT32 exitCode
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UINT32 cpuLimitRate,
+	UINT32 memoryLimitInMB,
+	UINT8 RunType
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING RealExePath,
+	UNICODESTRING ExpectedOriginalFilename
+	);
+
+SenseCommon(
+	UNICODESTRING message,
+	UNICODESTRING ExePath,
+	UNICODESTRING CommandLine,
+	BOOL32 Restricted,
+	BOOLEAN disableSenseSid,
+	BOOLEAN disablePrivileges,
+	BOOL32 CheckCertificates,
+	BOOLEAN RunAsPPL,
+	UNICODESTRING CustomOriginalFilename,
+	BOOLEAN disableDynamicCode,
+	UNICODESTRING effectiveCurrentDirectory,
+	BOOLEAN allowOnlyMSSignedBinaries,
+	BOOLEAN restrictChildProcessesCreation,
+	BOOLEAN restrictWin32Calls,
+	BOOLEAN breakawayFromJob,
+	BOOLEAN trustMicrosoftTestRoot
+	);
+
+SenseCommon(
+	ANSISTRING message
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING realExePath.c_str()
+	);
+
+SenseCommon(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING OriginalFilename,
+	UNICODESTRING expected
+	);
+
+SenseCommon(
+	UINT32 errorCode,
+	UNICODESTRING message
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 ProcessId
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	UNICODESTRING Updated_limits
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	UNICODESTRING Updated_limits
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	BOOLEAN EnforceLimits
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT32 pid,
+	BOOLEAN EnforceLimits
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	UNICODESTRING message
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	DOUBLE Payload_resourceLimit,
+	DOUBLE Sense_resourceLimit,
+	UNICODESTRING resource_type,
+	UNICODESTRING payloadName
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING payloadName,
+	UINT64 Available_memory_in_MB,
+	DOUBLE Relative_limit_in_percentage,
+	DOUBLE Absolute_memory_limit_in_MB
+	);
+
+ResourceManager(
+	ANSISTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 pid,
+	UNICODESTRING limits
+	);
+
+ResourceManager(
+	INT32 errorCode,
+	UNICODESTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 pid,
+	UINT32 Required_CPU_limit
+	);
+
+ResourceManager(
+	ANSISTRING message
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING PayloadName,
+	UINT32 pid
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING m_name,
+	UINT32 pid
+	);
+
+ResourceManager(
+	UNICODESTRING message,
+	UNICODESTRING PayloadName,
+	UNICODESTRING ResourceType,
+	DOUBLE ResourceLimit
+	);
+

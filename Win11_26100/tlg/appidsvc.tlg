@@ -1,0 +1,15 @@
+ProviderNames:
+	Microsoft.Windows.Security.AppIDSvcProvider
+
+
+
+**** Events *****
+AppIDServiceCleanup(
+	VOID
+	);
+
+AppIDServiceStart(
+	UINT32 ErrorValue,
+	INT32 ErrorValueForRegKeyQuery
+	);
+

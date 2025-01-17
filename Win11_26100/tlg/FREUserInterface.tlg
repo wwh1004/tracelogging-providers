@@ -1,0 +1,167 @@
+ProviderNames:
+	Microsoft.Windows.VoiceAccess.FREUserInterface
+	Microsoft.Windows.Accessibility.VoiceAccess
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+OnlineHelpAccessed(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+SearchQueryResultReturned(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT32 NumberOfMatchingCommands,
+	UINT64 PartA_PrivTags
+	);
+
+CommandHelpAccessedThroughVoice(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+CustomCommandCreated(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UNICODESTRING UserSpecificCommandId,
+	UINT16 NumActions,
+	UNICODESTRING Intents,
+	UINT64 PartA_PrivTags
+	);
+
+LevelOneItemAccessedInHelpPage(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UNICODESTRING ButtonID,
+	UINT64 PartA_PrivTags
+	);
+
+LevelTwoItemAccessedInHelpPage(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UNICODESTRING ButtonID,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBarAccessedInHelpPage(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+HelpPageDownloaded(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREMicrophoneSelect(
+	GUID AppSessionID,
+	UNICODESTRING MicrophoneName,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREWelcomePage(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+GuideStart(
+	GUID AppSessionID,
+	UNICODESTRING InvocationSource,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+GuidePage(
+	GUID AppSessionID,
+	UINT64 PageID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FRECompleted(
+	GUID AppSessionID,
+	UNICODESTRING Mode,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREMicrophoneOpen(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+
+FREButton(
+	GUID AppSessionID,
+	UNICODESTRING ButtonID,
+	UINT32 PageID,
+	UINT64 StartTime,
+	UINT64 PartA_PrivTags
+	);
+

@@ -1,0 +1,176 @@
+ProviderNames:
+	Microsoft.Windows.WindowsErrorReporting
+	Microsoft.Windows.FaultReporting
+
+
+
+**** Events *****
+UtilWaitForMultipleObjects(
+	UNICODESTRING pwszName,
+	UINT64 ElapsedMs,
+	UINT32 WaitResult
+	);
+
+UtilWaitForSingleObject(
+	UNICODESTRING pwszName,
+	UINT64 ElapsedMs,
+	UINT32 WaitResult
+	);
+
+UtilRecursiveRemoveDirectory_RemoveDir(
+	UNICODESTRING strFilePath,
+	HRESULT hr
+	);
+
+UtilRecursiveRemoveDirectory_Sprintf2(
+	UNICODESTRING pwszDirPath,
+	UNICODESTRING cFileName,
+	HRESULT hr
+	);
+
+UtilRecursiveRemoveDirectory_FindFirst(
+	UNICODESTRING strFilePath,
+	HRESULT hr
+	);
+
+UtilRecursiveRemoveDirectory_Sprintf1(
+	UNICODESTRING pwszDirPath,
+	HRESULT hr
+	);
+
+UtilRecursiveRemoveDirectory_Reparse(
+	UNICODESTRING pwszDirPath
+	);
+
+UtilRecursiveRemoveDirectory_NonDirectory(
+	UNICODESTRING pwszDirPath,
+	HRESULT hr
+	);
+
+UtilRecursiveRemoveDirectory_GetAttributes(
+	UNICODESTRING pwszDirPath,
+	HRESULT hr
+	);
+
+UtilRecursiveRemoveDirectory_Null(
+	VOID
+	);
+
+UtilDeleteFilePath_SetInformation(
+	UNICODESTRING pszFullPath,
+	HRESULT hr
+	);
+
+UtilDeleteFilePath_Verify(
+	UNICODESTRING pszFullPath,
+	HRESULT hr
+	);
+
+UtilDeleteFilePath_CreateFile(
+	UNICODESTRING pszFullPath,
+	HRESULT hr
+	);
+
+UtilVerifyFinalPath_Exit(
+	HRESULT hr
+	);
+
+PathVerificationFailure(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ExpectedPath,
+	COUNTEDSTRING ExpectedPathSanitized,
+	COUNTEDSTRING ActualPath,
+	UINT32 SkipPrefix
+	);
+
+UtilVerifyFinalPath_GetLongPathNameW(
+	HRESULT hr
+	);
+
+UtilVerifyFilePath_RootDirectory(
+	UNICODESTRING ExpectedPath,
+	COUNTEDSTRING ActualPath,
+	COUNTEDSTRING ExpectedPathSanitized
+	);
+
+UtilVerifyFinalPath_CopyRawChars(
+	HRESULT hr
+	);
+
+UtilVerifyFinalPath_hFile(
+	HRESULT hr
+	);
+
+UtilVerifyFinalPath_PassLowRights(
+	VOID
+	);
+
+UtilVerifyFinalPath_Entry(
+	UNICODESTRING pszExpectedPath
+	);
+
+UtilGetFinalPathByHandle_hFile2(
+	HRESULT hr
+	);
+
+UtilGetFinalPathByHandle_FinalPathRealloc(
+	UINT32 newSize,
+	HRESULT hr
+	);
+
+UtilGetFinalPathByHandle_hFileUnexpected(
+	HRESULT hr
+	);
+
+UtilGetFinalPathByHandle_hFile1(
+	HRESULT hr
+	);
+
+UtilGetFinalPathByHandle_FinalPathAlloc(
+	UINT32 finalPathSize,
+	HRESULT hr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_Mismatch(
+	UNICODESTRING finalPathStr,
+	UNICODESTRING pathBuffer
+	);
+
+UtilGetFinalPathOnUnmountedVolume_After(
+	UNICODESTRING finalPathStr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_Replace(
+	HRESULT hr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_Before(
+	UNICODESTRING finalPathStr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_hFileStore(
+	UNICODESTRING storePathStr,
+	HRESULT hr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_CreateFile(
+	UNICODESTRING storePathStr,
+	HRESULT hr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_RegGetString(
+	HRESULT hr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_Copy1(
+	HRESULT hr
+	);
+
+UtilGetFinalPathOnUnmountedVolume_Path(
+	UNICODESTRING pathBuffer
+	);
+
+UtilGetFinalPathOnUnmountedVolume_hFile(
+	HRESULT hr
+	);
+

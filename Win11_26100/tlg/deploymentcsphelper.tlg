@@ -1,0 +1,20 @@
+ProviderNames:
+	Microsoft.Windows.Deployment.OptionalFeaturesCSP
+
+
+
+**** Events *****
+DisabledFeature(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FeatureName,
+	BOOL32 IsCapability,
+	UINT32 ErrorCode
+	);
+
+EnabledFeature(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING FeatureName,
+	BOOL32 IsCapability,
+	UINT32 ErrorCode
+	);
+

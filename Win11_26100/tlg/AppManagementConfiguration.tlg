@@ -1,0 +1,90 @@
+ProviderNames:
+	Microsoft.Windows.AppMan.UEV
+	Microsoft.Windows.AppMan.Shared.Logging
+	Microsoft.Windows.AppMan.AppV
+
+
+
+**** Events *****
+EnableAppV(
+	HRESULT HRESULT
+	);
+
+DisableUEVGroupPolicy(
+	HRESULT HRESULT
+	);
+
+EnableAppVGroupPolicy(
+	HRESULT HRESULT
+	);
+
+EnableUEVGroupPolicy(
+	HRESULT HRESULT
+	);
+
+DisableAppVGroupPolicy(
+	HRESULT HRESULT
+	);
+
+DisableAppV(
+	HRESULT HRESULT
+	);
+
+DisableUEV(
+	HRESULT HRESULT
+	);
+
+Error(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+EnableUEV(
+	HRESULT HRESULT
+	);
+
+EnableUEVEnableTaskRetry(
+	HRESULT HRESULT
+	);
+
+DisableUEVDisableTask(
+	HRESULT HRESULT
+	);
+
+RegisterInboxTemplatesGroupPolicy(
+	HRESULT HRESULT
+	);
+
+DisableUEVDisableTaskRetry(
+	HRESULT HRESULT
+	);
+
+EnableUEVEnableTask(
+	HRESULT HRESULT
+	);
+
+IsUevEnabled(
+	UNICODESTRING MESSAGE
+	);
+
+IsAppVEnabled(
+	UNICODESTRING MESSAGE
+	);
+

@@ -1,0 +1,309 @@
+ProviderNames:
+	Microsoft.Windows.LiveCaptions
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ModelFullName(
+	UNICODESTRING PackageFullName,
+	UINT64 PartA_PrivTags
+	);
+
+LicenseUsedInLoadingSpeechModel(
+	BOOLEAN licenseTextUsed,
+	UINT64 PartA_PrivTags
+	);
+
+ExpectedSpeechModelPackage(
+	GUID appSessionId,
+	UNICODESTRING expectedSpeechModelPackageName
+	);
+
+ToastCooldownChecked(
+	GUID appSessionId,
+	BOOLEAN hasToastPoppedBefore,
+	UINT64 PartA_PrivTags
+	);
+
+PowerSourceType(
+	GUID appSessionId,
+	BOOLEAN isOnBatteryPower,
+	UINT64 PartA_PrivTags
+	);
+
+ActiveAudioSessions(
+	GUID appSessionId,
+	INT32 activeAudioSessions,
+	UINT64 PartA_PrivTags
+	);
+
+ShouldBeListeningStateChanged(
+	GUID appSessionId,
+	BOOLEAN shouldBeListening,
+	UINT64 PartA_PrivTags
+	);
+
+DisplayState(
+	GUID appSessionId,
+	BOOLEAN isDisplayOff,
+	UINT64 PartA_PrivTags
+	);
+
+ListeningServiceStopCalled(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ToastPopped(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+ModelQueriedFromOneSettings(
+	GUID appSessionId,
+	BOOLEAN oneSettingsQuery,
+	UINT64 PartA_PrivTags
+	);
+
+SpeechModelPackageNotFound(
+	GUID appSessionId,
+	UNICODESTRING speechModelPackageFamilyName,
+	UINT64 PartA_PrivTags
+	);
+
+SpeechModelPackageUsed(
+	GUID appSessionId,
+	UNICODESTRING speechModelPackageFullName,
+	UINT64 PartA_PrivTags
+	);
+
+MeanSpeechRecognizedLatency(
+	GUID appSessionId,
+	UINT32 avgLatencyInMs,
+	UINT32 numDataPoints,
+	UINT32 numNoticeableDelay,
+	UNICODESTRING speechModelPackageFullName,
+	UNICODESTRING performanceCounters,
+	UINT64 PartA_PrivTags
+	);
+
+DeviceAcquisitionRetryExceeded(
+	GUID appSessionId,
+	UINT64 PartA_PrivTags
+	);
+
+InitialSpeechRecognizedLatency(
+	GUID appSessionId,
+	UINT64 latencyInMs,
+	UNICODESTRING speechModelPackageFamilyName,
+	UNICODESTRING performanceCounters,
+	UINT64 PartA_PrivTags
+	);
+
+SpeechRecognizedLatency(
+	GUID appSessionId,
+	UINT32 latencyInMs,
+	UNICODESTRING performanceCounters
+	);
+
+SpeechRecognitionCanceled(
+	GUID appSessionId,
+	UNICODESTRING reason,
+	UINT64 PartA_PrivTags
+	);
+
+AudioSessionChanged(
+	GUID appSessionId,
+	UNICODESTRING changeReason,
+	UNICODESTRING originatingSessionName,
+	UNICODESTRING activeSessionNames,
+	UINT64 PartA_PrivTags
+	);
+
+AudioSessionAdded(
+	GUID appSessionId,
+	UNICODESTRING audioSessionName,
+	UINT64 PartA_PrivTags
+	);
+
+NonDefaultLanguageSummary(
+	GUID appSessionId,
+	DOUBLE percentageOfPhraseNonDefault,
+	UINT64 PartA_PrivTags
+	);
+
+NonDefaultLanguageDetected(
+	GUID appSessionId,
+	UNICODESTRING language,
+	UNICODESTRING reason
+	);
+
+TextRecognized(
+	GUID appSessionId,
+	UNICODESTRING activeSessionNames,
+	UINT64 PartA_PrivTags
+	);
+
+AllModelsUpdatedToLicenseBased(
+	UINT64 PartA_PrivTags
+	);
+
+UsingLicenseBasedSDK(
+	UINT64 PartA_PrivTags
+	);
+
+StoreAppsBlocked(
+	UINT64 PartA_PrivTags
+	);
+
+AudioListeningActivity(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AudioListeningActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	BOOLEAN stoppedByListeningService,
+	BOOLEAN stoppedByDeconstruction
+	);
+
+AudioListeningActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN stoppedByListeningService,
+	BOOLEAN stoppedByDeconstruction
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AudioListeningActivity(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AudioListeningActivity(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+

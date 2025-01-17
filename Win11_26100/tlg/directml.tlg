@@ -1,0 +1,46 @@
+ProviderNames:
+	Microsoft.Windows.AI.MachineLearning.Dml
+
+
+
+**** Events *****
+MetaCommandCreationFail(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	GUID MetaCommandGUID,
+	INT64 AdapterLUIDHighPart,
+	UINT64 AdapterLUIDLowPart,
+	HRESULT ErrorCode
+	);
+
+MetaCommandCreationOK(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	GUID MetaCommandGUID,
+	INT64 AdapterLUIDHighPart,
+	UINT64 AdapterLUIDLowPart
+	);
+
+MetaCommandD3DVersionNotSupported(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	GUID MetaCommandGUID,
+	INT64 AdapterLUIDHighPart,
+	UINT64 AdapterLUIDLowPart
+	);
+
+MetaCommandIdNotSupported(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	GUID MetaCommandGUID,
+	INT64 AdapterLUIDHighPart,
+	UINT64 AdapterLUIDLowPart
+	);
+
+ProcessInfo(
+	BOOL32 UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags,
+	UINT8 schemaVersion,
+	BOOL32 isRedist
+	);
+

@@ -1,0 +1,83 @@
+ProviderNames:
+	Microsoft.Windows.Accessibility.VoiceAccess
+	Microsoft.Windows.VoiceAccess.VoiceAccessHost
+
+
+
+**** Events *****
+AppClose(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UINT64 EndTime,
+	UNICODESTRING StartMode,
+	UNICODESTRING EndMode,
+	UINT32 ErrorID,
+	UINT16 IsFRECompleted,
+	UINT64 PartA_PrivTags
+	);
+
+AppLaunch(
+	GUID AppSessionID,
+	UINT64 StartTime,
+	UNICODESTRING StartMode,
+	UINT64 PartA_PrivTags
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Trace(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+
+Error(
+	ANSISTRING file,
+	ANSISTRING function,
+	UINT32 line,
+	INT32 IsDebug,
+	UNICODESTRING message
+	);
+

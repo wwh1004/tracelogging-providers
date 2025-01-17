@@ -1,0 +1,45 @@
+ProviderNames:
+	Microsoft.People.Relevance.QueryClient
+
+
+
+**** Events *****
+[E]RelevanceServiceQuery::Execute - error response received(
+	UNICODESTRING errorResponse
+	);
+
+[I]RelevanceServiceQuery::Execute - response received(
+	VOID
+	);
+
+[I]RelevanceServiceQuery::_Initialize(
+	VOID
+	);
+
+[E]RelevanceAppServiceConnectionManager::_SendMessageAsync - failed(
+	UNICODESTRING AppServiceResponse
+	);
+
+[E]RelevanceAppServiceConnectionManager::_OpenConnectionAsync - failed(
+	UNICODESTRING ConnectionStatus,
+	UNICODESTRING AppServiceName,
+	UNICODESTRING AppServicePfn
+	);
+
+[I]RelevanceAppServiceConnectionManager - Connecting to App Service(
+	UNICODESTRING AppServiceName,
+	UNICODESTRING AppServicePfn
+	);
+
+[I]RelevanceServiceResult::SendFeedback - unable to send feedback on failed query(
+	UNICODESTRING status
+	);
+
+[I]RelevanceServiceResult::SendFeedback - feedback sent(
+	VOID
+	);
+
+[E]RelevanceServiceResult::SendFeedback - feedback error(
+	UNICODESTRING errorResponse
+	);
+

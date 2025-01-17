@@ -1,0 +1,65 @@
+ProviderNames:
+	Microsoft.Windows.TextInput.SpellCheckerEngine
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+SpellerSettings(
+	INT32 Autocorrection,
+	INT32 SpellChecking,
+	UNICODESTRING KeyboardsInstalled
+	);
+
+SpellerSessionStatistics(
+	INT32 RemainingCount,
+	INT32 TotalInSession,
+	INT32 EditedCount,
+	INT32 AddCount,
+	INT32 AlternatesCount,
+	INT32 IgnoreCount,
+	INT32 AutocorrectionCount,
+	INT32 AutocorrectionUndoCount,
+	INT32 ContextDismissCount
+	);
+

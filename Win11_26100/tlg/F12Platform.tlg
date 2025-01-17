@@ -1,0 +1,40 @@
+ProviderNames:
+	F12ToolsProvider
+
+
+
+**** Events *****
+F12LoadEnd(
+	UNICODESTRING sessionId,
+	UINT64 durationMs
+	);
+
+F12Error(
+	UNICODESTRING sessionId,
+	UNICODESTRING component,
+	UNICODESTRING message,
+	UNICODESTRING url,
+	UNICODESTRING line,
+	UNICODESTRING column,
+	UNICODESTRING additionalInfo
+	);
+
+F12LoadStart(
+	UNICODESTRING sessionId
+	);
+
+F12Duration(
+	UNICODESTRING sessionId,
+	UINT64 durationSeconds
+	);
+
+ToolSession(
+	UNICODESTRING sessionId,
+	UNICODESTRING toolName,
+	UINT64 durationSeconds,
+	INT32 frameWidth,
+	INT32 frameHeight,
+	BOOLEAN isDocked,
+	BOOLEAN hasDockStateChanged
+	);
+

@@ -1,0 +1,571 @@
+ProviderNames:
+	Microsoft-Windows-XAML
+	Microsoft.UI.Xaml
+
+
+
+**** Events *****
+XamlCheckProcessRequirements_Obsolete(
+	VOID
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+XamlFailFast(
+	INT32 ErrorCode,
+	UINT64 PartA_PrivTags
+	);
+
+ErrorAdditionalInformation(
+	UNICODESTRING Message
+	);
+
+RuntimeProfiler(
+	ANSISTRING BinaryVersion,
+	ANSISTRING ApiCounts,
+	UINT32 ProfileGroupId,
+	UINT32 TotalCount,
+	BOOLEAN OnSuspend,
+	BOOLEAN Overflow,
+	BOOLEAN StringOverflow,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+FirstUiThreadFrameEnd(
+	UNICODESTRING XamlSessionId,
+	UNICODESTRING XamlAppId,
+	UINT32 XamlProcessId,
+	UINT64 PartA_PrivTags
+	);
+
+DispatcherTimer_Stop(
+	UINT64 ObjectPointer,
+	UNICODESTRING TimerName,
+	UINT64 IntervalInMilliseconds
+	);
+
+DispatcherTimer_TickComplete(
+	UINT64 ObjectPointer,
+	UNICODESTRING TimerName,
+	UINT64 IntervalInMilliseconds,
+	UINT64 StartTickTimeInMilliseconds
+	);
+
+DispatcherTimer_Start(
+	UINT64 ObjectPointer,
+	UNICODESTRING TimerName,
+	UINT64 IntervalInMilliseconds,
+	UINT64 StartTickTimeInMilliseconds
+	);
+
+DispatcherTimer_Tick(
+	UINT64 ObjectPointer,
+	UNICODESTRING TimerName,
+	UINT64 IntervalInMilliseconds,
+	INT64 TimeRemainingInMilliseconds
+	);
+
+Scheduling_RenderThreadWaitForWork(
+	UINT32 IsStart,
+	UINT32 TimeInMilliseconds
+	);
+
+Scheduling_UIThreadRequest(
+	UINT32 TimeInMilliseconds
+	);
+
+Scheduling_QueueTick(
+	BOOLEAN WasTickQueued
+	);
+
+Scheduling_ClockAdvancedDuringTick(
+	UINT64 ClockPointer,
+	UINT64 LastClockTimeInMilliseconds,
+	UINT64 LastTickTimeInMilliseconds
+	);
+
+Scheduling_RequestAdditionalFrameOutsideTick(
+	UINT32 OriginalIntervalInMilliseconds,
+	UINT64 CurrentTimeInMilliseconds,
+	UINT64 LastTickTimeInMilliseconds,
+	UINT32 NextTickIntervalInMilliseconds,
+	UINT32 RequestFrameReason
+	);
+
+FoundImageCache(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+CreateImageCache(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+CreateImageCacheFromExistingEncodedData(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+RefreshAlignedClock_GetNextTickTimeInSeconds_TimeMovedBackwards(
+	UINT64 ObjectPointer,
+	UINT64 CurrentTimeInMilliseconds,
+	UINT64 LastReportedTimeInMilliseconds,
+	UINT64 ClockPointer
+	);
+
+RefreshAlignedClock_Tick(
+	UINT64 ObjectPointer,
+	UINT64 LastReportedTimeInMilliseconds,
+	UINT64 ClockPointer
+	);
+
+XamlIslandRoot-NewMaxArea(
+	HEXINT64 IslandInstance,
+	UINT32 IslandType,
+	FLOAT Width,
+	FLOAT Height,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DecodeToRenderSizeDisqualified(
+	UINT64 Id,
+	ANSISTRING reason
+	);
+
+DecodeToRenderSizeStop(
+	UINT64 Id
+	);
+
+DecodeToRenderSizeStart(
+	UINT64 Id,
+	UINT32 imageSourceWidth,
+	UINT32 imageSourceHeight,
+	UINT32 newWidth,
+	UINT32 newHeight,
+	UINT32 metadataWidth,
+	UINT32 metadataHeight
+	);
+
+RequestDecodeToRenderSize(
+	UINT64 Id,
+	ANSISTRING imageState,
+	UINT32 requestedWidth,
+	UINT32 requestedHeight,
+	BOOLEAN decodeToRenderSize
+	);
+
+ImageDownloadCompleteNotification(
+	UINT64 Id,
+	UNICODESTRING Uri,
+	BOOLEAN decodeToRenderSize
+	);
+
+SetStreamSource(
+	UINT64 Id
+	);
+
+WaitForDownloadInProgress(
+	UINT64 Id
+	);
+
+FoundCompletedDownload(
+	UINT64 Id
+	);
+
+DecodeResultAvailable(
+	UINT64 Id,
+	UINT32 decodeResult
+	);
+
+SetUriSource(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+RenderWalk_RenderElement(
+	UINT64 ElementPointer,
+	UNICODESTRING ClassName
+	);
+
+NoColorGlyphRendering(
+	UINT32 ColorFontPaletteIndex,
+	UINT64 PartA_PrivTags
+	);
+
+SharedD3DDevice_SharedLost(
+	UINT64 PartA_PrivTags
+	);
+
+SharedD3DDevice_PreviouslySharedLost(
+	UINT64 PartA_PrivTags
+	);
+
+SharedD3DDevice_NonSharedLost(
+	UINT64 PartA_PrivTags
+	);
+
+SharedD3DDevice_UseShared(
+	UINT64 PartA_PrivTags
+	);
+
+SharedD3DDevice_CreateShared(
+	UINT64 PartA_PrivTags
+	);
+
+DeferredInvoke_Dequeue(
+	UINT32 WorkCount
+	);
+
+DeferredInvoke_Enqueue(
+	UINT32 WorkCount
+	);
+
+DispatcherQueueTimer_Callback_Restart(
+	VOID
+	);
+
+DispatcherQueueTimer_Callback(
+	VOID
+	);
+
+DispatcherQueueTimer_Start(
+	VOID
+	);
+
+PublicApiCall(
+	BOOLEAN IsStart,
+	UINT64 ObjectPointer,
+	ANSISTRING MethodName,
+	UINT32 HR
+	);
+
+ModernPanelGuard(
+	UNICODESTRING FailureReason,
+	UINT64 PartA_PrivTags
+	);
+
+ContainerRecyclingLifetimeStats(
+	UINT32 ContainerRequestedCount,
+	UINT32 ContainerCreatedCount,
+	UINT64 PartA_PrivTags
+	);
+
+ModernCollectionBasePanel_RealizationWindow(
+	UINT64 ObjectPointer,
+	UNICODESTRING Name,
+	FLOAT X,
+	FLOAT Y,
+	FLOAT Width,
+	FLOAT Height
+	);
+
+BuildTreeService_OutOfWork(
+	VOID
+	);
+
+PerfXamlEvent(
+	BOOLEAN IsStart,
+	UINT64 ObjectPointer,
+	ANSISTRING EventName,
+	BOOLEAN IsInteresting
+	);
+
+DesktopWindowXamlSource-LoadedFrameworks(
+	UINT32 LoadedFrameworkMask,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+DesktopWindowXamlSource-NewMaxActive(
+	UINT32 NewMaxValue,
+	BOOLEAN UTCReplace_AppSessionGuid,
+	UINT64 PartA_PrivTags
+	);
+
+ListViewBaseSerializationInvalidWrite(
+	UINT32 serializationKeyCodeUnitCount,
+	UNICODESTRING serializationKey,
+	UINT32 serializationKeyCodeUnitCountWritten,
+	UINT64 PartA_PrivTags
+	);
+
+SeZoZoom(
+	UINT64 PartA_PrivTags,
+	BOOLEAN IsZoomingOut,
+	INT16 Type
+	);
+
+ConnectedAnimation_TryStart_CoordinatedElements(
+	UINT64 PartA_PrivTags
+	);
+
+PasswordBoxShowPassword(
+	UINT64 PartA_PrivTags,
+	UINT8 OnPasswordRevealedChanged
+	);
+
+TextBox_Clear_Event(
+	UINT64 PartA_PrivTags,
+	ANSISTRING "OnDeleteButtonClick"
+	);
+
+ConnectedAnimation_TryStart(
+	UINT64 PartA_PrivTags,
+	BOOL32 isAnimationEnabled
+	);
+
+GCDuration(
+	UINT64 PartA_PrivTags,
+	UINT32 DurationType,
+	INT64 Max,
+	INT64 Latest,
+	INT64 Count,
+	INT64 LogCount,
+	INT64 TickFrequency
+	);
+
+XAMLHCColor(
+	INT32 Theme,
+	UNICODESTRING ClassName,
+	BOOL32 IsBackground,
+	UINT32 rgbValue
+	);
+
+MediaTransportControlsStatistics(
+	GUID ElementInstanceId,
+	HRESULT HRESULTMuteClick,
+	HRESULT HRESULTVolumeClick,
+	HRESULT HRESULTPlayPauseClick,
+	HRESULT HRESULTFullWindowClick,
+	HRESULT HRESULTZoomClick,
+	HRESULT HRESULTSizeChanged,
+	HRESULT HRESULTPositionSliderPressed,
+	HRESULT HRESULTScrubbingMode,
+	HRESULT HRESULTCastingClick,
+	HRESULT HRESULTClosedCaptionsClick,
+	HRESULT HRESULTClosedCaptionsTrackSelect,
+	UINT32 NumMuteClick,
+	UINT32 NumVolumeClick,
+	UINT32 NumPlayPauseClick,
+	UINT32 NumFullWindowClick,
+	UINT32 NumZoomClick,
+	UINT32 NumSizeChanged,
+	UINT32 NumPositionSliderPressed,
+	UINT32 NumScrubbingMode,
+	UINT32 NumCastingClick,
+	UINT32 NumClosedCaptionsClick,
+	UINT32 NumClosedCaptionsTrackSelect,
+	UINT32 NumFailedMuteClick,
+	UINT32 NumFailedVolumeClick,
+	UINT32 NumFailedPlayPauseClick,
+	UINT32 NumFailedFullWindowClick,
+	UINT32 NumFailedZoomClick,
+	UINT32 NumFailedSizeChanged,
+	UINT32 NumFailedPositionSliderPressed,
+	UINT32 NumFailedScrubbingMode,
+	UINT32 NumFailedCastingClick,
+	UINT32 NumFailedClosedCaptionsClick,
+	UINT32 NumFailedClosedCaptionsTrackSelect,
+	INT32 CurrentCCTrack,
+	UINT32 NumCCTurnedOff,
+	UINT32 NumCCTrackChanged,
+	BOOLEAN IsControlPanelVisible,
+	UINT32 NumControlPanelTransitions,
+	UINT64 PartA_PrivTags
+	);
+
+ResourceLookup_EnterThemeDictionary(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ActiveTheme
+	);
+
+ResourceLookup_EnterDictionary(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ID,
+	UNICODESTRING ResourceKey
+	);
+
+ResourceLookup_LeaveDictionary(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ID
+	);
+
+ResourceLookup_Start(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ResourceKey
+	);
+
+ResourceLookup_Stop(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ResourceKey
+	);
+
+ResourceLookup_LeaveMergedDictionary(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ID
+	);
+
+ResourceLookup_EnterThemeDictionary(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ActiveTheme,
+	UNICODESTRING ResourceKey
+	);
+
+ResourceLookup_EnterMergedDictionary(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING ID,
+	UNICODESTRING ResourceKey
+	);
+
+ImageTaskDispatcher_Execute_End(
+	BOOLEAN WorkQueued,
+	UINT32 taskCount
+	);
+
+ImageTaskDispatcher_QueueTask(
+	BOOLEAN WorkQueued,
+	UINT32 taskCount
+	);
+
+ImageTaskDispatcher_Execute(
+	UINT32 taskCount
+	);
+
+OffThreadDecodeStart(
+	UINT64 Id,
+	UNICODESTRING Uri,
+	BOOLEAN isHardwareDecode
+	);
+
+OffThreadDecodeStop(
+	UINT64 Id
+	);
+
+QueueDecodeFromImageCache(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+QueueProcessDecodeRequests(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+ProcessDecodeRequests(
+	UINT64 Id,
+	UNICODESTRING Uri,
+	UINT32 State
+	);
+
+QueueProcessDownload(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+SetSoftwareBitmap(
+	UINT64 Id
+	);
+
+SoftwareBitmapFallbackAfterUploadError(
+	UINT64 Id,
+	UINT32 uploadResult
+	);
+
+QueueOffThreadDecode(
+	UINT64 Id
+	);
+
+ParseImageMetadataStop(
+	UINT64 Id,
+	INT32 parseHR
+	);
+
+ParseImageMetadataStart(
+	UINT64 Id
+	);
+
+PointerInputReentrancyDetected(
+	UINT32 SupersededMessageId,
+	UINT32 NewMessageId
+	);
+
+RefreshRateInfo_SetRefreshIntervalInMilliseconds(
+	UINT64 ObjectPointer,
+	FLOAT PreviousRefreshIntervalInMilliseconds,
+	FLOAT NewRefreshIntervalInMilliseconds
+	);
+
+RefreshRateInfo_WaitForCompositorClock(
+	UINT64 ObjectPointer,
+	BOOLEAN IsStart
+	);
+
+RefreshRateInfo_SimulateWaitForVBlank(
+	UINT64 ObjectPointer,
+	FLOAT RefreshIntervalInMilliseconds
+	);
+
+SetLoadedImageSurfaceMemory(
+	UINT64 Id
+	);
+
+SetLoadedImageSurfaceUri(
+	UINT64 Id,
+	UNICODESTRING Uri
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ASBSuggestionListOpened(
+	VOID
+	);
+
+ASBSuggestionSelectionChanged(
+	VOID
+	);
+

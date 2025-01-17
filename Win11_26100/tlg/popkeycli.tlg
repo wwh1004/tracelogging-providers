@@ -1,0 +1,195 @@
+ProviderNames:
+	Microsoft.Windows.Security.PopKey
+
+
+
+**** Events *****
+FailureInfo(
+	INT32 retVal,
+	UNICODESTRING debugString
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+NgcDeleteSymmetricPopKeyTransportKey(
+	INT32 retVal
+	);
+
+NgcDeleteSymmetricPopKeyTransportKey(
+	INT32 retVal
+	);
+
+ClientRpcRecoverableError(
+	INT32 retVal
+	);
+
+NgcGetSymmetricPopKeyTransportKeyName(
+	INT32 retVal,
+	UINT32 flags,
+	UINT32 keyType,
+	UINT32 keyStatus
+	);
+
+NgcGetSymmetricPopKeyTransportKeyName(
+	INT32 retVal,
+	UINT32 flags,
+	UINT32 keyType,
+	UINT32 keyStatus
+	);
+
+NgcGetSymmetricPopKeyTransportKey(
+	INT32 retVal,
+	UINT32 flags,
+	UINT32 keyType,
+	UINT32 keyStatus
+	);
+
+NgcGetSymmetricPopKeyTransportKey(
+	INT32 retVal,
+	UINT32 flags,
+	UINT32 keyType,
+	UINT32 keyStatus
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+NgcGetTokenBindingAikName(
+	INT32 retVal,
+	UINT64 PartA_PrivTags
+	);
+
+NgcGetTokenBindingAikName(
+	INT32 retVal,
+	UINT64 PartA_PrivTags
+	);
+
+NgcDeleteTokenBindingAik(
+	INT32 retVal,
+	UINT64 PartA_PrivTags
+	);
+
+NgcDeleteTokenBindingAik(
+	INT32 retVal,
+	UINT64 PartA_PrivTags
+	);
+
+NgcCreateTokenBindingAik(
+	INT32 retVal,
+	UINT64 PartA_PrivTags
+	);
+
+NgcCreateTokenBindingAik(
+	INT32 retVal,
+	UINT64 PartA_PrivTags
+	);
+
+NgcGetPkcs7ChainBlobFromCertificateBlob(
+	INT32 retVal
+	);
+
+NgcGetPkcs7ChainBlobFromCertificateBlob(
+	INT32 retVal
+	);
+
+NgcRenewKeyAttestation(
+	INT32 retVal,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING idpDomainName,
+	NULL tenantDomainName
+	);
+
+NgcRenewKeyAttestation(
+	INT32 retVal,
+	UINT64 PartA_PrivTags,
+	UNICODESTRING idpDomainName,
+	NULL tenantDomainName
+	);
+
+NgcDecryptWithSymmetricGcmPopKey(
+	INT32 retVal
+	);
+
+NgcDecryptWithSymmetricGcmPopKey(
+	INT32 retVal
+	);
+
+NgcEncryptWithSymmetricGcmPopKey(
+	INT32 retVal
+	);
+
+NgcEncryptWithSymmetricGcmPopKey(
+	INT32 retVal
+	);
+
+NgcDecryptWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcDecryptWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcEncryptWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcEncryptWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcVerifyWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcVerifyWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcSignWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcSignWithSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcImportSymmetricPopKey(
+	INT32 retVal
+	);
+
+NgcImportSymmetricPopKey(
+	INT32 retVal
+	);
+
+RpcClientBindError(
+	INT64 retVal
+	);
+
+RpcClientCreateBindingHandleError(
+	INT32 retVal
+	);
+
+NoNewBindAttemptsOnUnrecoverableError(
+	INT32 retVal
+	);
+
+RpcClientAlreadyBound(
+	VOID
+	);
+
+RpcClientCreateSecurityDescriptorFailure(
+	UINT32 retVal
+	);
+
+RpcClientCannotCopyServerSid(
+	UINT32 retVal
+	);
+
+RpcClientInvalidServerSid(
+	UINT32 retVal
+	);
+

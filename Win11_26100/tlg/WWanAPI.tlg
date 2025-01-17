@@ -1,0 +1,23 @@
+ProviderNames:
+	Microsoft.Windows.CellCore.MobileBroadband.MBNApi
+
+
+
+**** Events *****
+ApiUsage(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING applicationName,
+	UNICODESTRING moduleName,
+	UNICODESTRING serviceName,
+	UNICODESTRING hwId,
+	UNICODESTRING driverName,
+	UNICODESTRING manufacturer,
+	UNICODESTRING model,
+	UNICODESTRING firmwareVersion,
+	UNICODESTRING mcc,
+	UNICODESTRING mnc,
+	UNICODESTRING api,
+	UNICODESTRING deviceServiceGuid,
+	UNICODESTRING commandId
+	);
+

@@ -1,0 +1,2580 @@
+ProviderNames:
+	Microsoft.Windows.Taskbar
+	Microsoft.Windows.Shell.NotificationArea
+	Microsoft.Windows.Shell.Taskbar
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+CopilotButtonHidden(
+	UINT64 copilotButtonHidden,
+	UINT64 PartA_PrivTags
+	);
+
+ShowDesktopSettingModificationUndone(
+	UINT64 PartA_PrivTags
+	);
+
+CopilotPaneDismissed(
+	UINT64 PartA_PrivTags
+	);
+
+CopilotPaneInvoked(
+	UINT64 PartA_PrivTags
+	);
+
+CopilotButtonClicked(
+	UINT64 PartA_PrivTags
+	);
+
+CopilotButtonVisible(
+	UINT64 PartA_PrivTags
+	);
+
+IconConfigurationChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID IconID
+	);
+
+EnabledChanged(
+	BOOLEAN Enabled
+	);
+
+RaiseConfigurationChangedEvent(
+	VOID
+	);
+
+CacheConfigurationChangedEvent(
+	VOID
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+IconConfigurationChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+IconConfigurationChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+IconSetHostedContent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID IconId
+	);
+
+IconDestroyHostedContent(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID IconId
+	);
+
+IconInvoked(
+	GUID IconId,
+	BOOLEAN IsRightClick,
+	BOOLEAN IsDoubleClick,
+	UINT64 PartA_PrivTags
+	);
+
+UpdateHostedContent(
+	GUID IconId,
+	BOOLEAN IsBlocked
+	);
+
+InsertIntoVisualTree(
+	VOID
+	);
+
+RaiseCreationEvent(
+	VOID
+	);
+
+IconSetHostedContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+IconSetHostedContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+IconDestroyHostedContent(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+IconDestroyHostedContent(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ImeContextMenuItemSelected(
+	UNICODESTRING ContextMenuType,
+	UNICODESTRING SelectedContextMenuItemType,
+	UINT64 PartA_PrivTags
+	);
+
+MiracastConnectionDetected(
+	BOOLEAN isConnected,
+	UINT64 PartA_PrivTags
+	);
+
+MiracastConnectionInitializing(
+	VOID
+	);
+
+MiracastGetDisplayConfigDeviceInfoFailed(
+	VOID
+	);
+
+MiracastGetBufferSizeFailed(
+	VOID
+	);
+
+MiracastQueryDisplayConfigFailed(
+	VOID
+	);
+
+RemoveIcon(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID IconId
+	);
+
+AddIcon(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID IconId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+RemoveIcon(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+RemoveIcon(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+AddIcon(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AddIcon(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityFailure(
+	UINT64 PartA_PrivTags,
+	HEX wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+DragDropNotifyIcon(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID DragSourceIconGuid,
+	GUID DragTargetIconGuid
+	);
+
+DroppedOntoChevron(
+	BOOLEAN isPromoted,
+	UNICODESTRING sourceIconAppFriendlyName,
+	UINT64 PartA_PrivTags
+	);
+
+CalculateDropPosition(
+	UNICODESTRING sourceIconAppFriendlyName,
+	INT32 sourceLocation,
+	INT32 targetLocation,
+	INT32 newIndex,
+	UINT64 PartA_PrivTags
+	);
+
+NotifyIconAppClosedWhileDragging(
+	UINT64 PartA_PrivTags
+	);
+
+NotifyIconDroppedOnItself(
+	UINT64 PartA_PrivTags
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+DragDropNotifyIcon(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+DragDropNotifyIcon(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+Initialization(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	GUID CorrelationId
+	);
+
+Initialization(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Initialization(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ImageIconContentChanged(
+	GUID IconId,
+	BOOLEAN RequestDisplay,
+	UNICODESTRING ImageSourceUri,
+	UNICODESTRING AltText,
+	UNICODESTRING ToolTip
+	);
+
+TextIconContentChanged(
+	GUID IconId,
+	BOOLEAN RequestDisplay,
+	UNICODESTRING Underlay,
+	UNICODESTRING Base,
+	UNICODESTRING Overlay,
+	UNICODESTRING Optional,
+	UNICODESTRING AltText,
+	UNICODESTRING ToolTip
+	);
+
+RecallIndicatorUpdatedState(
+	INT32 captureState,
+	BOOLEAN hasExcludedWindows,
+	INT32 pausedReason,
+	UINT64 PartA_PrivTags
+	);
+
+RecallAllocatedStorageEvaluationSkipped(
+	INT32 captureState,
+	INT32 pausedReason,
+	UINT64 storageThresholdInBytes,
+	UINT64 currentStorageInBytes
+	);
+
+RecallNotificationSent(
+	INT32 notificationType,
+	UINT64 PartA_PrivTags
+	);
+
+RecallAllocatedStorageEvaluated(
+	UINT64 storageThresholdInBytes,
+	UINT64 currentStorageInBytes,
+	BOOLEAN isToastSentRegkeyBefore,
+	BOOLEAN isToastSentRegkeyAfter
+	);
+
+RecallIndicatorStatusChangedRequest(
+	INT32 captureState,
+	BOOLEAN hasExcludedWindows,
+	INT32 pausedReason
+	);
+
+RecallIndicatorDisabledToErrorUpdateIgnored(
+	UINT64 PartA_PrivTags
+	);
+
+RecallIndicatorClicked(
+	UINT64 PartA_PrivTags
+	);
+
+CallIconChanged(
+	BOOLEAN isMuted,
+	UINT64 PartA_PrivTags
+	);
+
+CallMuteChanged(
+	UNICODESTRING LineName,
+	BOOLEAN isMuted,
+	INT32 MuteSource,
+	UINT64 PartA_PrivTags
+	);
+
+CallMuteChanged(
+	UNICODESTRING LineName,
+	BOOLEAN isMuted,
+	UINT64 PartA_PrivTags
+	);
+
+CallMuteInvoked(
+	INT32 MuteSource,
+	UINT64 PartA_PrivTags
+	);
+
+CallMuteUnavailable(
+	INT32 MuteSource,
+	UINT64 PartA_PrivTags
+	);
+
+CallMuteMultipleCallsUnmuteAttempted(
+	UINT64 PartA_PrivTags
+	);
+
+WirelessDisplayConnectionDetected(
+	BOOLEAN isConnected,
+	UINT64 PartA_PrivTags
+	);
+
+WirelessDisplayIconLaunchDisplaySettings(
+	UINT64 PartA_PrivTags
+	);
+
+WirelessDisplayIconLaunchCast(
+	UINT64 PartA_PrivTags
+	);
+
+PrivacyIconChanged(
+	BOOLEAN IsLocationInUse,
+	BOOLEAN IsMicInUse,
+	UINT64 PartA_PrivTags
+	);
+
+StudioEffectsTrayIconStateChanged(
+	BOOLEAN OldUseState,
+	BOOLEAN NewUseState,
+	UNICODESTRING AppName,
+	UINT64 PartA_PrivTags
+	);
+
+StudioEffectsTrayIconCallbackError(
+	INT32 Error,
+	UINT64 PartA_PrivTags
+	);
+
+StudioEffectsTrayIconClicked(
+	BOOLEAN IsNewUri,
+	UINT64 PartA_PrivTags
+	);
+
+KeyboardButtonInvoked(
+	UINT64 PartA_PrivTags
+	);
+
+ImeModeIconDataModelUpdated(
+	BOOLEAN Canceled,
+	BOOLEAN Available,
+	INT32 Type,
+	UINT16 Glyph
+	);
+
+LanguageIndicatorNotShown(
+	UINT64 PartA_PrivTags,
+	UINT32 NotShownCountInOneHour,
+	BOOL32 isActiveProfileMissingValue,
+	BOOL32 isShellIndicatorVisible,
+	UINT32 NoOfEnabledLanguages,
+	BOOL32 isTestProfileExisting,
+	BOOL32 isLanguageBarVisible,
+	UINT32 IconContentType,
+	ANSISTRING EnabledLanguagesList
+	);
+
+NetworkSystemTrayIconDataModelInitialized(
+	UINT64 PartA_PrivTags
+	);
+
+PowerPercentageAbove100(
+	INT32 PowerPercentage,
+	INT32 remainingCapacity,
+	INT32 fullCapacity
+	);
+
+HideClockInSystemTraySettingState(
+	BOOLEAN isHidden,
+	UINT64 PartA_PrivTags
+	);
+
+HideClockInSystemTraySettingChanged(
+	BOOLEAN isHidden,
+	UINT64 PartA_PrivTags
+	);
+
+ShowNotificationIconSettingChanged(
+	BOOLEAN isEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+ShowNotificationIconSettingState(
+	BOOLEAN isEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+NotificationIconAutoHideDisabledByPolicy(
+	UINT64 PartA_PrivTags
+	);
+
+ClockUpdate(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN LocaleUpdate
+	);
+
+GetTimeString(
+	UNICODESTRING Time
+	);
+
+StopGetTimeTooltipString(
+	INT32 NumAdditionalClocks
+	);
+
+GetDateString(
+	UNICODESTRING Date
+	);
+
+ShowSecondsInSystemTrayEnablementState(
+	BOOLEAN isEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+ShowShortenedDateTimeSettingState(
+	BOOLEAN isEnabled,
+	BOOLEAN isFormatCustomized,
+	BOOLEAN regValueEmpty,
+	BOOLEAN revisionReset,
+	UINT64 PartA_PrivTags
+	);
+
+ShowShortenedDateTimeSettingChanged(
+	BOOLEAN isEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+CancelTimerOnPowerStateChange(
+	VOID
+	);
+
+StartGetTimeTooltipString(
+	VOID
+	);
+
+NextTickScheduled(
+	VOID
+	);
+
+ClockUpdate(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ClockUpdate(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ShortenedDateTimeDisabledByPolicy(
+	UINT64 PartA_PrivTags
+	);
+
+ShowDesktopButtonClicked(
+	UINT64 PartA_PrivTags
+	);
+
+WidgetAepAnimatedIconLoadAnimationSkipped(
+	UNICODESTRING reason
+	);
+
+TaskbarRecommended_UserInvokedRecommendation(
+	UINT32 type,
+	UNICODESTRING id,
+	UINT64 PartA_PrivTags
+	);
+
+TaskbarRecommended_UserPinnedRecommendation(
+	UINT32 type,
+	UNICODESTRING id,
+	UINT64 PartA_PrivTags
+	);
+
+TaskbarRecommended_UserRequestedContextMenu(
+	UINT32 type,
+	UNICODESTRING id,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetTaskbarBadgeShown(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING payloadId,
+	DOUBLE badgeTranslateX,
+	DOUBLE badgeTranslateY,
+	FLOAT badgeMetrics.badgeOffset.X,
+	FLOAT badgeMetrics.badgeOffset.Y,
+	FLOAT badgeMetrics.anchorOffset.X,
+	FLOAT badgeMetrics.anchorOffset.Y,
+	DOUBLE badgeMetrics.anchorWidth,
+	DOUBLE badgeMetrics.badgeWidth,
+	DOUBLE badgeMetrics.badgeHeight
+	);
+
+WidgetTaskbarIconUpdated(
+	UNICODESTRING payloadId,
+	UINT64 widgetIconType,
+	BOOLEAN updateSuccessful,
+	UNICODESTRING extendedInfo,
+	UINT64 PartA_PrivTags
+	);
+
+AugmentedEntryPointRenderingFailed(
+	UNICODESTRING jsonPayload,
+	INT32 renderStyle,
+	UNICODESTRING parseWarning,
+	UNICODESTRING parseError,
+	UNICODESTRING renderWarning,
+	UNICODESTRING renderError,
+	INT32 renderException,
+	UNICODESTRING payloadId,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetOnAepAnimatedIconLoaded(
+	BOOLEAN animationLoaded,
+	UNICODESTRING updateId,
+	UNICODESTRING errorMessages,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetAepAnimatedIconRenderError(
+	INT32 hresult
+	);
+
+WidgetLottieIconRendered(
+	UNICODESTRING lottieIconSelection
+	);
+
+WidgetSvgIconRenderError(
+	INT32 hresult
+	);
+
+BadgeKindNone(
+	VOID
+	);
+
+PointerCanceled(
+	UINT64 taskbarControl,
+	UINT64 pointerId
+	);
+
+PointerMoved(
+	UINT64 taskbarControl,
+	UINT64 pointerId
+	);
+
+PointerPressed(
+	UINT64 taskbarControl,
+	UINT64 pointerId
+	);
+
+PointerReleased(
+	UINT64 taskbarControl,
+	UINT64 pointerId
+	);
+
+PointerCaptureLost(
+	UINT64 taskbarControl,
+	UINT64 pointerId
+	);
+
+OverflowFlyoutPageIncreaseClicked(
+	UINT32 offset,
+	UINT64 PartA_PrivTags
+	);
+
+OverflowFlyoutPageDecreaseClicked(
+	UINT32 offset,
+	UINT64 PartA_PrivTags
+	);
+
+OverflowFlyoutScrollButtonsLoadedAndVisible(
+	UINT64 PartA_PrivTags
+	);
+
+BoxVisibilityFromActiveSearchChanged(
+	BOOLEAN taskbarSearchBoxHidden,
+	BOOLEAN hoverHideDeferInEffect,
+	BOOLEAN prevTaskbarSearchBoxHidden,
+	UINT64 PartA_PrivTags
+	);
+
+StartRequestingAttentionAnimationCompleted(
+	VOID
+	);
+
+StartBeaconAnimationCompleted(
+	VOID
+	);
+
+StartBadgeAnimationCompleted(
+	VOID
+	);
+
+StartBeaconExitAnimationCompleted(
+	VOID
+	);
+
+StartRunningIndicatorAnimationCompleted(
+	VOID
+	);
+
+StartOverlayIconExitAnimationCompleted(
+	VOID
+	);
+
+StartOverlayIconAnimationCompleted(
+	VOID
+	);
+
+StartBadgeExitAnimationCompleted(
+	VOID
+	);
+
+TaskListButtonClicked(
+	BOOLEAN isInOverflow,
+	UINT32 pointerDeviceType,
+	UINT64 PartA_PrivTags
+	);
+
+StartEntranceAnimation(
+	INT32 type
+	);
+
+ShareVisualIndicatorChanged(
+	BOOLEAN isShown,
+	UINT64 PartA_PrivTags
+	);
+
+StartGlomAnimationCompleted(
+	VOID
+	);
+
+StartBeaconExitAnimation(
+	VOID
+	);
+
+StartBadgeAnimation(
+	VOID
+	);
+
+StartBadgeExitAnimation(
+	VOID
+	);
+
+StartRunningIndicatorAnimation(
+	VOID
+	);
+
+StartEntranceAnimationCompleted(
+	VOID
+	);
+
+StartGlomAnimation(
+	VOID
+	);
+
+TaskListButtonInvokedUsingKeyboard(
+	UINT64 PartA_PrivTags
+	);
+
+StartBeaconAnimation(
+	VOID
+	);
+
+StartOverlayIconAnimation(
+	VOID
+	);
+
+StartOverlayIconExitAnimation(
+	VOID
+	);
+
+StartRequestingAttentionAnimation(
+	VOID
+	);
+
+StartHideAnimationCompleted(
+	VOID
+	);
+
+TransitionToPosture(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	UINT64 newMode,
+	BOOLEAN taskbarIsInitializing
+	);
+
+OnDisplayModeChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+OnIsExpandedChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+OnAppsListGroupCollection_ItemRemoved(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 itemIndexinTaskList
+	);
+
+OnInteractionModeChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId
+	);
+
+OnAppsListGroupCollection_ItemInserted(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT32 itemIndexinTaskList
+	);
+
+InteractionModeChanged(
+	UINT64 value,
+	BOOLEAN changed
+	);
+
+FrameSizeChanged(
+	DOUBLE size
+	);
+
+OnAppsListGroupMoved_GroupMoved(
+	UINT64 hostWindowId,
+	UNICODESTRING targetItemKey,
+	UINT32 oldCollectionIndex,
+	UINT32 newCollectionIndex
+	);
+
+TransitionToPosture(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	UINT64 newMode,
+	BOOLEAN taskbarIsInitializing
+	);
+
+TransitionToPosture(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 hostWindowId,
+	UINT64 newMode,
+	BOOLEAN taskbarIsInitializing
+	);
+
+TransitionToPosture(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TransitionToPosture(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OnDisplayModeChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnDisplayModeChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+StartHideAnimation(
+	VOID
+	);
+
+OnIsExpandedChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN isExpanded,
+	BOOLEAN animationsEnabled
+	);
+
+OnIsExpandedChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN isExpanded,
+	BOOLEAN animationsEnabled
+	);
+
+OnIsExpandedChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnIsExpandedChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OnInteractionModeChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 hostWindowId,
+	UINT64 value,
+	BOOLEAN changed
+	);
+
+OnInteractionModeChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnInteractionModeChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OnInteractionModeChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	UINT64 value,
+	BOOLEAN changed
+	);
+
+VirtualDesktopSwitch_AppsListChanging(
+	VOID
+	);
+
+OnAppsListGroupCollection_ItemRemoved(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+OnAppsListGroupCollection_ItemRemoved(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 numItemsInCollection
+	);
+
+OnAppsListGroupCollection_ItemRemoved(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 numItemsInCollection
+	);
+
+OnAppsListGroupCollection_ItemRemoved(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnAppsListGroupCollection_ItemInserted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT32 numItemsInCollection,
+	BOOLEAN isTaskbarSpaceAvailableAfter
+	);
+
+OnAppsListGroupCollection_ItemInserted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT32 numItemsInCollection,
+	BOOLEAN isTaskbarSpaceAvailableAfter
+	);
+
+ReplaceIndexHasValueUnglommedOn(
+	VOID
+	);
+
+OnAppsListGroupCollection_ItemInserted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+OnAppsListGroupCollection_ItemInserted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ActiveTaskListItemChanged(
+	UINT64 PartA_PrivTags
+	);
+
+AnimationsReactivated(
+	BOOLEAN suppressAnimations
+	);
+
+ElementClearing(
+	BOOLEAN suppressAnimations
+	);
+
+MeasureOverride(
+	BOOLEAN animationsEnabled
+	);
+
+TaskListButtonPrepared(
+	BOOLEAN animationsSuppressed,
+	UINT64 PartA_PrivTags
+	);
+
+ElementPrepared(
+	BOOLEAN suppressAnimations
+	);
+
+OrientationChanged(
+	UINT32 orientation
+	);
+
+SetSuppressAnimations(
+	BOOLEAN value
+	);
+
+AnimationsReactivatedQueued(
+	VOID
+	);
+
+MovedItemFocusUsingFirstLetterNavigation(
+	UINT64 PartA_PrivTags
+	);
+
+GotKeyboardFocus(
+	UINT64 PartA_PrivTags
+	);
+
+AnimationsSuppressed(
+	VOID
+	);
+
+StartBadgeExitAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartBadgeEntranceAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartFlyoutEntranceAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartRequestingAttentionAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartFlyoutSizeChangedAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartFlyoutExitAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartTransitionFromOverflowToTaskbarAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartOverflowButtonEntranceAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartPaginationButtonReleasedAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartTransitionFromOverflowToTaskbarScaleAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartPaginationButtonDisabledOpacityAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartPaginationButtonEnabledOpacityAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartAugmentedEntryPointExitAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartAugmentedEntryPointEntranceAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartLabelAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemTranslationAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartAepAnimatedIconOpacityAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemReleasedScaleAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemPressedScaleAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemDragCompletedScaleAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemDragStartedScaleAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemMinimizeAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemEntranceAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartMostRecentlyUsedSwitchAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemRestoreAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartRunningIndicatorSizeChangeAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+StartItemPlateEntranceAnimation(
+	BOOLEAN animationsEnabled
+	);
+
+TaskbarIconSizeChange(
+	DOUBLE oldSize,
+	DOUBLE newSize,
+	UINT32 resizeReason,
+	UINT64 PartA_PrivTags
+	);
+
+EdgeGestureActive(
+	VOID
+	);
+
+ViewCoordinator_OnShellViewVisibilityChanged(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinator_OnShellViewVisibilityChanged(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ViewCoordinator_ShouldTaskbarBeExpanded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinator_ShouldTaskbarBeExpanded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+InitializeShellViewCoordinators(
+	VOID
+	);
+
+ViewCoordinator_UpdateIsExpandedAfterDebounceDelay(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinator_UpdateIsExpandedAfterDebounceDelay(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ViewCoordinator_UpdateIsExpandedAfterHoverDelay(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinator_UpdateIsExpandedAfterHoverDelay(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ViewCoordinatorCollapseTaskbar(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TaskbarModelFound(
+	VOID
+	);
+
+ViewCoordinator_ExpandingTaskbarAfterAllWindowsMinimized(
+	VOID
+	);
+
+ViewCoordinatorCollapseTaskbar(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinatorExpandTaskbar(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinatorExpandTaskbar(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ViewCoordinatorUpdateIsExpanded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinatorUpdateIsExpanded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ViewCoordinator_ShouldTaskbarBeExpanded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_OnShellViewVisibilityChanged(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	BOOLEAN shellViewVisibility
+	);
+
+ViewCoordinator_TaskbarShowRequested(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ViewCoordinator_TaskbarDismissRequested(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ViewCoordinator_UpdateIsExpandedAfterHoverDelay(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	BOOLEAN expand,
+	UINT32 reason
+	);
+
+ViewCoordinator_UpdateIsExpandedAfterDebounceDelay(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	UINT32 reason
+	);
+
+ViewCoordinatorExpandTaskbar(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId
+	);
+
+ViewCoordinatorCollapseTaskbar(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId
+	);
+
+ViewCoordinatorUpdateIsExpanded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	UINT32 reason
+	);
+
+IsEdgeGestureActive(
+	BOOLEAN isEdgeGestureActive,
+	UINT64 hostWindowId
+	);
+
+OverflowFlyoutVisible(
+	BOOLEAN isVisible,
+	UINT64 hostWindowId
+	);
+
+IsTaskbarForeground(
+	BOOLEAN isForeground,
+	UINT64 hostWindowId
+	);
+
+IgnoreForeground(
+	BOOLEAN ignoringForeground,
+	UINT64 hostWindowId
+	);
+
+IsShellViewDismissedViaTaskbarTap(
+	BOOLEAN isShellViewDismissedViaTaskbarTap,
+	UINT64 hostWindowId
+	);
+
+TaskbarHasFocus(
+	BOOLEAN hasFocus,
+	UINT64 hostWindowId
+	);
+
+ShellViewVisibleIgnoredBecauseOfException(
+	INT64 shellView,
+	INT64 exceptionShellView,
+	UINT64 hostWindowId
+	);
+
+ShellViewVisible(
+	INT64 shellView,
+	UINT64 hostWindowId
+	);
+
+ShellViewVisibleCurrentState(
+	INT64 shellView,
+	UINT64 hostWindowId
+	);
+
+ShellViewVisibleIgnored(
+	INT64 shellView,
+	UINT64 hostWindowId
+	);
+
+DismissShellView(
+	UINT64 shellView
+	);
+
+ViewCoordinator_ShouldStayExpandedChanged(
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_HandleShowRequestedOnTaskbar(
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_CompleteEdgeGesture(
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_CompleteEdgeGestureAfterDelay(
+	UINT64 hostWindowId
+	);
+
+IsExpanding_UpdateIsExpanded(
+	BOOLEAN isExpanding
+	);
+
+ViewCoordinator_ForceCompleteEdgeGesture(
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_HandleSwipe(
+	UINT64 hostWindowId
+	);
+
+TaskbarExpandedOrCollapse(
+	UINT32 posture,
+	UINT32 expandOrCollapseReason,
+	BOOLEAN isExpanding,
+	UINT64 taskbarID,
+	UINT64 PartA_PrivTags
+	);
+
+ViewCoordinator_HandlePointerEnteredScreenEdge(
+	UINT64 hostWindowId
+	);
+
+EarlyReturn(
+	BOOLEAN isExpanded,
+	BOOLEAN expand,
+	BOOLEAN isExpandable
+	);
+
+ViewCoordinator_HandleDragCompleted(
+	UINT64 hostWindowId,
+	BOOLEAN droppedWithinTaskbar
+	);
+
+ViewCoordinator_HandleDragStarted(
+	UINT64 hostWindowId
+	);
+
+ShouldTaskbarBeExpanded_TaskbarExpandable(
+	BOOLEAN expandable,
+	UINT64 hostWindowId
+	);
+
+ShouldTaskbarBeExpanded_HasOpenPopups(
+	UINT64 hostWindowId
+	);
+
+ExtendedUIVisible(
+	BOOLEAN isVisible,
+	UINT64 hostWindowId
+	);
+
+TaskbarShouldStayExpandedDocked(
+	BOOLEAN shouldStayExpandedDocked,
+	UINT64 hostWindowId
+	);
+
+IsDragging(
+	BOOLEAN isDragging,
+	UINT64 hostWindowId
+	);
+
+IsPointerOverTaskbarFrame(
+	BOOLEAN isPointerOverTaskbarFrame,
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_GestureStarted(
+	UINT64 hostWindowId
+	);
+
+ViewCoordinator_TaskbarDismissRequested(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinator_TaskbarDismissRequested(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+ViewCoordinator_TaskbarShowRequested(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ViewCoordinator_TaskbarShowRequested(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TaskbarPostureChange(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	UINT64 transitionKind
+	);
+
+TaskbarPostureChange(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	UINT64 hostWindowId,
+	INT32 hresult,
+	UINT32 state,
+	UINT32 progress
+	);
+
+TaskbarPostureChange(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	UINT64 hostWindowId,
+	INT32 hresult,
+	UINT32 state,
+	UINT32 progress
+	);
+
+TransitionCompleted(
+	VOID
+	);
+
+TaskbarPostureChange(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+TaskbarPostureChange(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+Gesture_HideHighlightTriggerFired(
+	VOID
+	);
+
+Gesture_ShowHighlightTriggerFired(
+	VOID
+	);
+
+GestureManager_PendingOperationStarted(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId
+	);
+
+GestureManager_StartGestureAsync(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId,
+	UINT64 hostWindowId
+	);
+
+Gesture_Complete(
+	UINT64 hostWindowId,
+	BOOLEAN animationCompleted
+	);
+
+Gesture_AnimationCompleted(
+	UINT64 hostWindowId
+	);
+
+Gesture_InputOperationEnded(
+	UINT64 hostWindowId
+	);
+
+GestureManager_StartGesture(
+	UINT64 hostWindowId
+	);
+
+GestureManager_OperationCreated(
+	UINT64 hostWindowId
+	);
+
+GestureManager_EdgeGestureStarted(
+	UINT64 hostWindowId
+	);
+
+GestureManager_EdgeGestureCompleted(
+	UINT64 hostWindowId,
+	BOOLEAN startedByTaskbar
+	);
+
+GestureManager_PendingOperationStarted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN startAnimationSucceeded
+	);
+
+GestureManager_PendingOperationStarted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN startAnimationSucceeded
+	);
+
+GestureManager_PendingOperationStarted(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GestureManager_PendingOperationStarted(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GestureManager_StartGestureAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function,
+	BOOLEAN startGestureSucceeded
+	);
+
+GestureManager_StartGestureAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+GestureManager_StartGestureAsync(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+GestureManager_StartGestureAsync(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId,
+	BOOLEAN startGestureSucceeded
+	);
+
+OverflowBoundsUpdateSkipped(
+	FLOAT width,
+	FLOAT height
+	);
+
+OverflowFlyoutOpened(
+	UINT32 numItems,
+	UINT64 hostWindowId,
+	UINT64 PartA_PrivTags
+	);
+
+OverflowFlyoutDismissing(
+	VOID
+	);
+
+OverflowFlyoutDismissed(
+	VOID
+	);
+
+OverflowFlyoutDismissedEvent(
+	UINT64 PartA_PrivTags
+	);
+
+OverflowFlyoutLightDismissRequested(
+	VOID
+	);
+
+OverflowFlyoutDismissCancelled(
+	VOID
+	);
+
+HoverFlyoutController_ItemNotFound(
+	UNICODESTRING targetItemKey,
+	UINT64 numTaskbarItems,
+	BOOLEAN isInOverflow
+	);
+
+WidgetPayloadReceived(
+	UNICODESTRING payloadId,
+	BOOLEAN isWidgetButtonVisible,
+	BOOLEAN isWidgetButtonSettingEnabled,
+	UINT64 PartA_PrivTags
+	);
+
+SystemPinButtonClicked(
+	GUID correlationId,
+	UINT32 viewType,
+	BOOLEAN isActivate,
+	UINT64 PartA_PrivTags
+	);
+
+SystemPinButtonHovered(
+	GUID correlationId,
+	UINT32 viewType,
+	UINT64 PartA_PrivTags
+	);
+
+SystemHoverDismissed(
+	GUID correlationId,
+	UINT32 viewType,
+	UINT64 PartA_PrivTags
+	);
+
+SystemPinButtonEntered(
+	GUID correlationId,
+	UINT32 viewType,
+	UINT64 PartA_PrivTags
+	);
+
+WidgetTaskbarContentUpdated(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING updateId,
+	UNICODESTRING curTickerSize,
+	UNICODESTRING prevTickerSize,
+	BOOLEAN curIsShowingDynamicContent,
+	BOOLEAN prevIsShowingDynamicContent,
+	BOOLEAN curIsCollapsedState,
+	BOOLEAN prevIsCollapsedState,
+	UNICODESTRING curContentType,
+	UNICODESTRING prevContentType,
+	INT32 curTaskbarState,
+	INT32 prevTaskbarState,
+	BOOLEAN newDynamicContentRendered,
+	UNICODESTRING reasonForUpdate,
+	BOOLEAN isBadgeRendered,
+	BOOLEAN isOverlayRendered,
+	BOOLEAN isShowingAnimatedIcon,
+	BOOLEAN isStaticSvgIconRendered,
+	BOOLEAN isAnimatedSvgIconRendered
+	);
+
+SearchItemUriInvoked(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+SearchBoxGleamButtonClicked(
+	UNICODESTRING gleamClickEndpoint,
+	UINT64 PartA_PrivTags
+	);
+
+SearchItemViewModel_DismissSearch(
+	UINT32 effectiveSearchMode
+	);
+
+SearchItemViewModel_UpdateEffectiveSearchMode(
+	UINT32 taskbarDisplayMode,
+	UINT32 settingsSearchMode,
+	BOOLEAN isSpaceAvailableForSearchBox,
+	UINT32 effectiveSearchMode
+	);
+
+SearchAppearanceExtensionRetrievalFailed(
+	BOOLEAN gotFactory,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxDynamicPlaceholderContentChanged(
+	BOOLEAN isPrimaryContent,
+	UINT64 PartA_PrivTags
+	);
+
+SearchBoxBButtonClicked(
+	UINT64 PartA_PrivTags
+	);
+
+SearchItemUriInvoked(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+SearchItemUriInvoked(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+TaskListSizeChanged(
+	UINT64 PartA_PrivTags,
+	BOOL32 isInOverflow,
+	INT32 currentSize,
+	INT32 maxSize,
+	INT32 appCount,
+	BOOL32 isGrowing,
+	UINT64 hostWindowId,
+	INT32 overflowItemCount
+	);
+
+WidgetPayloadJsonParseFailed(
+	UNICODESTRING jsonPayload,
+	UINT64 PartA_PrivTags
+	);
+

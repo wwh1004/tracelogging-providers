@@ -1,0 +1,13 @@
+ProviderNames:
+	Microsoft.Windows.TaskScheduler
+
+
+
+**** Events *****
+User::UpdateEntry_NullUserDetails(
+	UNICODESTRING m_domain,
+	UNICODESTRING m_account,
+	UNICODESTRING m_userName,
+	UINT32 use
+	);
+

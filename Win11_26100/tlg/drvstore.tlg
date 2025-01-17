@@ -1,0 +1,30 @@
+ProviderNames:
+	Microsoft.Windows.DriverStore
+	Microsoft.Windows.DriverStore.DriverPackage
+
+
+
+**** Events *****
+DriverPackage.FileCorruption(
+	UINT64 PartA_PrivTags,
+	UNICODESTRING DriverPackageId,
+	HEX Discrepancies,
+	COUNTEDSTRING DriverFile,
+	COUNTEDSTRING Expected,
+	COUNTEDSTRING Actual,
+	INT32 Flags
+	);
+
+InfParser(
+	UNICODESTRING DriverInfName,
+	UINT16 ProcessorArchitecture,
+	UINT32 LanguageId,
+	GUID ClassGuid,
+	UINT32 Flags,
+	UNICODESTRING DriverProvider,
+	UNICODESTRING DriverDate,
+	UNICODESTRING DriverVersion,
+	UINT16 InfErrorCodes,
+	WIN32ERROR ReturnCode
+	);
+

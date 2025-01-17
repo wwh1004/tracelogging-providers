@@ -1,0 +1,85 @@
+ProviderNames:
+	Microsoft.Windows.PascoProvider
+
+
+
+**** Events *****
+CriticalLog(
+	UTF8 message.c_str()
+	);
+
+InfoLog(
+	UTF8 message.c_str()
+	);
+
+ErrLog(
+	UTF8 message.c_str()
+	);
+
+VerboseLog(
+	UTF8 message.c_str()
+	);
+
+WarnLog(
+	UTF8 message.c_str()
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+CPU type(
+	UINT64 ProcessorType,
+	BOOLEAN IsAvxSupported,
+	BOOLEAN IsAvx2Supported,
+	BOOLEAN IsAvx512Supported,
+	BOOLEAN IsNEONAvailable,
+	BOOLEAN IsSSE3Available
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+Engine configuration(
+	ANSISTRING etwstr.c_str()
+	);
+
+Segmentation Type(
+	INT32 Segmentation type
+	);
+

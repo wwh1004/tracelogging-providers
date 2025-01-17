@@ -1,0 +1,245 @@
+ProviderNames:
+	V8.js
+	Microsoft.Edge.WebApp
+	Anaheim-SmartScreen
+	Microsoft.Windows.Webdefense.SmartScreen
+
+
+
+**** Events *****
+PackageDeployment(
+	INT32 error_code,
+	INT32 package_type,
+	ANSISTRING description,
+	UINT64 PartA_PrivTags
+	);
+
+WinrtError(
+	INT32 error_code,
+	ANSISTRING winrt_api,
+	ANSISTRING description,
+	UINT64 PartA_PrivTags
+	);
+
+GeoMapLookup(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 EndpointMatches,
+	UINT32 ConsumerFallbacks,
+	UINT64 PeriodMs
+	);
+
+UriLookupSmartScreenEvent(
+	UNICODESTRING Uri,
+	UNICODESTRING IP,
+	UNICODESTRING ReferrerUri,
+	UNICODESTRING ReferrerIP,
+	UNICODESTRING Recommendation,
+	UNICODESTRING HitType,
+	UNICODESTRING NavigationType,
+	UNICODESTRING ProductType,
+	UINT32 CallingProcessId,
+	UINT64 CallingProcessCreationTime,
+	ANSISTRING Sid,
+	UNICODESTRING Enforcement,
+	UNICODESTRING Experience,
+	GUID ActivityId,
+	UNICODESTRING IocId
+	);
+
+NetworkFilterBreakTheGlass(
+	BOOL32 Allow,
+	UNICODESTRING UserOverrideKey,
+	UNICODESTRING FriendlyName,
+	UNICODESTRING Uri,
+	UINT32 ProcessId,
+	UINT64 ProcessCreationTime,
+	ANSISTRING UserSid,
+	UNICODESTRING ResponseCategory,
+	UNICODESTRING IocId
+	);
+
+SmartScreenErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING category,
+	UINT32 value,
+	ANSISTRING message,
+	ANSISTRING file,
+	UINT32 line,
+	UINT32 context
+	);
+
+SmartScreenPingErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING scheduler_id,
+	UINT32 ping_count,
+	UINT64 period_ms
+	);
+
+Microsoft_WebBrowser_SmartScreen_DiskIIO(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING file_name,
+	UINT64 read_bytes,
+	UINT32 read_count,
+	UINT64 write_bytes,
+	UINT32 write_count,
+	UINT64 period_ms
+	);
+
+SmartScreenDurationAggregateEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	UINT32 total_count,
+	UINT64 total_ms,
+	UINT32 request_queued_count,
+	UINT64 request_queued_ms,
+	UINT32 dns_lookup_count,
+	UINT64 dns_lookup_ms,
+	UINT32 handle_actions_count,
+	UINT64 handle_actions_ms,
+	UINT32 top_traffic_count,
+	UINT64 top_traffic_ms,
+	UINT32 uri_cache_count,
+	UINT64 uri_cache_ms,
+	UINT32 warn_cache_count,
+	UINT64 warn_cache_ms,
+	UINT32 bloom_filter_count,
+	UINT64 bloom_filter_ms,
+	UINT32 evaluate_model_count,
+	UINT64 evaluate_model_ms,
+	UINT32 legacy_lookup_count,
+	UINT64 legacy_lookup_ms,
+	UINT32 service_lookup_count,
+	UINT64 service_lookup_ms,
+	UINT64 period_ms
+	);
+
+ApprepDurationAggregateEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 TotalCount,
+	UINT64 TotalMs,
+	UINT32 RequestQueuedCount,
+	UINT64 RequestQueuedMs,
+	UINT32 ServiceLookupCount,
+	UINT64 ServiceLookupMs,
+	UINT32 HashingCount,
+	UINT64 HashingMs,
+	UINT64 PeriodMs
+	);
+
+AsyncDurationAggregateEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 TimeoutCount,
+	UINT64 TimeoutMs,
+	UINT32 SynchronousCount,
+	UINT64 SynchronousMs,
+	UINT32 EvaluateCount,
+	UINT64 EvaluateMs,
+	UINT32 WarnCount,
+	UINT64 WarnMs,
+	UINT64 NumCounts,
+	UINT64 PeriodMs
+	);
+
+WebClientDurationEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	ANSISTRING ServiceUri,
+	UINT64 Count,
+	UINT64 DurationMs,
+	UINT64 PeriodMs
+	);
+
+Microsoft_WebBrowser_SmartScreen_Network(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING service_uri,
+	UINT64 request_bytes,
+	UINT64 response_bytes,
+	UINT64 period_ms
+	);
+
+WebErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	ANSISTRING EndpointUri,
+	UINT32 Verb,
+	UINT32 HttpStatusCode,
+	ANSISTRING CorrelationId,
+	ANSISTRING InternalCorrelationId,
+	ANSISTRING SchedulerId
+	);
+
+Microsoft_WebBrowser_SmartScreen_UrlRepComplete(
+	UINT64 PartA_PrivTags,
+	ANSISTRING ClientVersion,
+	ANSISTRING ProductGuid,
+	UINT32 Count,
+	UINT32 NetworkErrorCount,
+	UINT32 UnsupportedSchemaCount,
+	UINT32 UserBypassCount,
+	UINT32 SmartScreenDisabledCount,
+	UINT32 ClientCriticalErrorCount,
+	UINT32 CriticalErrorSourceCount,
+	UINT32 CriticalErrorSource,
+	UINT32 SourceCount,
+	UINT32 AllowCount,
+	UINT32 AllowSource,
+	UINT32 CustomAllowCount,
+	UINT32 CustomAllowSource,
+	UINT32 CustomBlockCount,
+	UINT32 CustomBlockSource,
+	UINT32 CustomPolicyCount,
+	UINT32 CustomPolicySource,
+	UINT32 CasbPolicyCount,
+	UINT32 CasbPolicySource,
+	UINT32 UntrustedCount,
+	UINT32 UntrustedSource,
+	UINT32 PhishingCount,
+	UINT32 PhishingSource,
+	UINT32 MaliciousCount,
+	UINT32 MaliciousSource,
+	UINT32 PuaCount,
+	UINT32 PuaSource,
+	UINT32 TechScamCount,
+	UINT32 TechScamSource,
+	UINT32 ExploitCount,
+	UINT32 ExploitSource,
+	UINT64 PeriodMs
+	);
+
+SmartScreenDurationErrorEvent(
+	UINT64 PartA_PrivTags,
+	ANSISTRING client_version,
+	ANSISTRING product_guid,
+	UINT64 duration_threshold_ms,
+	UINT64 total_ms,
+	UINT64 request_queued_ms,
+	UINT64 dns_lookup_ms,
+	UINT64 handle_actions_ms,
+	UINT64 top_traffic_ms,
+	UINT64 uri_cache_ms,
+	UINT64 warn_cache_ms,
+	UINT64 bloom_filter_ms,
+	UINT64 evaluate_model_ms,
+	UINT64 legacy_lookup_ms,
+	UINT64 service_lookup_ms,
+	ANSISTRING correlation_id,
+	ANSISTRING internal_correlation_id
+	);
+

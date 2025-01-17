@@ -1,0 +1,70 @@
+ProviderNames:
+	Microsoft.Windows.Diagnostics.Troubleshooter.Networking
+	Microsoft.Windows.NDF.PushButtonReset
+	Microsoft.Windows.TlgAggregateInternal
+
+
+
+**** Events *****
+AggregatedNdfApiCalls(
+	NULL Count,
+	ANSISTRING ProcessPath,
+	ANSISTRING APIName,
+	UINT64 PartA_PrivTags
+	);
+
+PushButtonResetPerformed(
+	VOID
+	);
+
+PushButtonResetFailure(
+	UNICODESTRING ActionName,
+	UINT32 ErrorCode,
+	UNICODESTRING MoreInfo
+	);
+
+TlgAggregateSummary(
+	UINT64 PartA_PrivTags,
+	BOOLEAN UtcAggParams,
+	UINT32 Period,
+	UINT32 MaxEvents,
+	UINT8 Mode,
+	GUID Provider,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT64 Value,
+	UINT8 Mode,
+	BOOLEAN UtcAggVal,
+	COUNTEDSTRING Name,
+	UINT32 Value,
+	UINT8 Mode
+	);
+

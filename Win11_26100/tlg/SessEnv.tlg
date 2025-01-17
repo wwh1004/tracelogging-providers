@@ -1,0 +1,311 @@
+ProviderNames:
+	SessionEnv
+	Microsoft.Windows.RemoteDesktop.CertManager
+	Microsoft.Windows.RemoteDesktop.SessionConfig
+	Microsoft.Windows.RemoteDesktop.SessionHost
+	Microsoft.Windows.RemoteDesktop.RDSHFarm.UVhd
+	RDP
+
+
+
+**** Events *****
+Licensing(
+	ANSISTRING msg
+	);
+
+Licensing(
+	ANSISTRING msg,
+	INT32 regReturnValue
+	);
+
+Licensing(
+	ANSISTRING msg,
+	UINT32 regValueExisting
+	);
+
+Licensing(
+	ANSISTRING msg,
+	UINT32 regValueExisting,
+	UINT32 regValueNew
+	);
+
+Licensing(
+	ANSISTRING msg,
+	BOOL32 bAllowAADLicensing,
+	HRESULT hrAppServer,
+	HRESULT hrAADLicensing
+	);
+
+Logging(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+Logging(
+	ANSISTRING msg
+	);
+
+Logging(
+	ANSISTRING msg,
+	UINT64 this->m_LogFileSize,
+	UNICODESTRING m_szLoggerName
+	);
+
+Logging(
+	ANSISTRING msg,
+	UNICODESTRING m_szLoggerName,
+	UINT64 dwRet
+	);
+
+Logging(
+	ANSISTRING msg,
+	HRESULT hr,
+	UNICODESTRING szKey
+	);
+
+Logging(
+	ANSISTRING msg,
+	UINT64 this->m_LogFileSize
+	);
+
+Logging(
+	ANSISTRING msg,
+	UNICODESTRING LoggerName,
+	HRESULT hr,
+	UNICODESTRING szpLogFilename,
+	UINT64 m_hTrace,
+	UINT64 MaximumFileSize
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+GenericTrace(
+	ANSISTRING szOutput
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	HRESULT lReturn,
+	BOOL32 bIsAppServer,
+	UNICODESTRING REG_TERMSRV_APPCOMPAT
+	);
+
+AppCompat(
+	ANSISTRING msg,
+	BOOL32 bIsAppServer
+	);
+
+SLAPI Checks(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+SLAPI Checks(
+	ANSISTRING msg
+	);
+
+SLAPI Checks(
+	ANSISTRING msg,
+	UINT32 hr
+	);
+
+FindTemplate(
+	INT32 Hr,
+	UINT32 ColumnType
+	);
+
+Certificate Generation(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+ConfigureMemoryIntegrity(
+	UINT32 HR
+	);
+
+InstallAppServer(
+	UINT32 HR,
+	UINT32 Enable
+	);
+
+ConfigureSecurity(
+	UINT32 HR,
+	UINT32 Template
+	);
+
+Reboot(
+	UINT32 HR,
+	UINT32 AutoReboot,
+	UINT32 Timeout,
+	UINT32 ForceShutdown
+	);
+
+Security Template(
+	ANSISTRING msg,
+	UINT32 dwValue
+	);
+
+Security Template(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+Security Template(
+	ANSISTRING msg
+	);
+
+Security Template(
+	ANSISTRING msg,
+	INT32 fAppServerAllowed
+	);
+
+Configure Memory Integrity(
+	ANSISTRING msg,
+	UINT32 dwValue
+	);
+
+Configure Memory Integrity(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+Configure Memory Integrity(
+	ANSISTRING msg
+	);
+
+Configure Memory Integrity(
+	ANSISTRING msg,
+	BOOL32 fAppServerAllowed,
+	BOOL32 fMemoryIntegrityOverrideApplied
+	);
+
+Configure Memory Integrity(
+	ANSISTRING msg,
+	INT32 fAppServerAllowed
+	);
+
+Install App Server(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+
+Install App Server(
+	ANSISTRING msg
+	);
+
+Install App Server(
+	ANSISTRING msg
+	);
+
+Install App Server(
+	ANSISTRING msg,
+	INT32 fAppServerAllowed
+	);
+
+RDSHLicensing(
+	UNICODESTRING DeploymentId,
+	UNICODESTRING CollectionId,
+	UINT32 LicensingMode,
+	UINT32 LicensingServerCount,
+	UNICODESTRING LicensingServerStatus,
+	INT32 LicensingGraceDaysLeft
+	);
+
+RDSHSessionCounts(
+	UNICODESTRING DeploymentId,
+	UNICODESTRING CollectionId,
+	UINT32 SessionEvent,
+	UINT32 BrokerStatus,
+	UINT32 LicensingMode,
+	UINT32 CurrentSessionCount,
+	UINT32 ActiveSessionCount,
+	UINT32 DisconnectedSessionCount,
+	UINT32 MaximumSessionCount
+	);
+
+FailedUnloadUVHDProfile(
+	UNICODESTRING DeploymentId,
+	UNICODESTRING CollectionId,
+	INT32 ErrorCode
+	);
+
+FailedLoadUVHDProfile(
+	UNICODESTRING DeploymentId,
+	UNICODESTRING CollectionId,
+	INT32 ErrorCode
+	);
+
+RDPShadow(
+	UINT32 HRESULT,
+	UINT32 RequestControl,
+	UINT32 RequestPermission,
+	UINT32 Response
+	);
+
+SupplementalCredentialsManager(
+	ANSISTRING msg
+	);
+
+SupplementalCredentialsManager(
+	ANSISTRING msg,
+	ANSISTRING ErrorMessage
+	);
+
+SupplementalCredentialsManager(
+	ANSISTRING msg
+	);
+
+SupplementalCredentialsManager(
+	ANSISTRING msg,
+	UNICODESTRING CredentialName,
+	ANSISTRING ErrorMessage
+	);
+
+SupplementalCredentialsManager(
+	ANSISTRING msg,
+	UNICODESTRING CredentialName
+	);
+
+SupplementalCredentialsManager(
+	ANSISTRING msg,
+	UNICODESTRING PrivilegeName
+	);
+
+UsernameInit(
+	ANSISTRING msg,
+	ANSISTRING Failed,
+	HEXINT32 Result,
+	ANSISTRING function
+	);
+

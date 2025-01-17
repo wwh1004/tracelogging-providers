@@ -1,0 +1,83 @@
+ProviderNames:
+	Microsoft.Windows.ExploitGuard.ExploitProtection
+	Microsoft.Windows.ImageMitigationPolicy
+
+
+
+**** Events *****
+ExploitProtectionGroupPolicyUpdateSuccess(
+	VOID
+	);
+
+ExploitProtectionGroupPolicyUpdateFailure(
+	HRESULT result,
+	UNICODESTRING operation,
+	UNICODESTRING url,
+	UNICODESTRING localFile
+	);
+
+SetMitigationPolicy(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption
+	);
+
+RemoveAllImageMitigationAuditPoliciesFailure(
+	UNICODESTRING imageName,
+	NTSTATUS errorCode
+	);
+
+CapturedMitigationAuditPolicyValue(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	UNICODESTRING payload
+	);
+
+MitigationAuditPolicyValuePostSet(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	UNICODESTRING expectedPayload,
+	UNICODESTRING payload
+	);
+
+QueryMitigationAuditPolicyFailure(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	NTSTATUS errorCode
+	);
+
+CapturedMitigationPolicyValue(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	UNICODESTRING payload
+	);
+
+SetMitigationPolicyFailure(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	NTSTATUS errorCode
+	);
+
+QueryMitigationPolicyFailure(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	NTSTATUS errorCode
+	);
+
+SetMitigationAuditPolicyFailure(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	NTSTATUS errorCode
+	);
+
+MitigationPolicyValuePostSet(
+	UNICODESTRING imageName,
+	UNICODESTRING mitigationOption,
+	UNICODESTRING expectedPayload,
+	UNICODESTRING payload
+	);
+
+RemoveAllImageMitigationPoliciesFailure(
+	UNICODESTRING imageName,
+	NTSTATUS errorCode
+	);
+

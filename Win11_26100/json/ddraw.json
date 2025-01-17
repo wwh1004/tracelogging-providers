@@ -1,0 +1,43 @@
+{
+    "ProviderList":  [
+                         {
+                             "ProviderGUID":  "d479cbb9-0cf0-494c-b98f-684c33849782",
+                             "ProviderName":  "Microsoft.Windows.Graphics.DDRAW",
+                             "ProviderGroupGUID":  "4f50731a-89cf-4782-b3e0-dce8c90476ba"
+                         }
+                     ],
+    "EventList":  [
+                      {
+                          "EventID":  0,
+                          "Channel":  11,
+                          "Level":  5,
+                          "Opcode":  0,
+                          "Keyword":  35184372088832,
+                          "KeywordName":  "MS.TELEMETRY",
+                          "Extension":  [
+                                            128,
+                                            0
+                                        ],
+                          "EventName":  "ProcessInfo",
+                          "Fields":  [
+                                         {
+                                             "FieldName":  "UTCReplace_AppSessionGuid",
+                                             "InType":  "BOOL32",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         },
+                                         {
+                                             "FieldName":  "schemaVersion",
+                                             "InType":  "UINT8",
+                                             "OutType":  "",
+                                             "Extension":  null,
+                                             "ValueCount":  0,
+                                             "TypeInfo":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+    "FilePath":  "C:\\Windows\\WinSxS\\wow64_microsoft-windows-directx-directdraw_31bf3856ad364e35_10.0.26100.1_none_0c4df59f5cee9b3d\\ddraw.dll"
+}

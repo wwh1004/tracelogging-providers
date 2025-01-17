@@ -1,0 +1,1188 @@
+ProviderNames:
+	Microsoft-Windows-Shell-Launcher
+	Microsoft.Windows.AppLifeCycle.UI
+
+
+
+**** Events *****
+FallbackError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+FallbackError(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	NTSTATUS wilResult,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage
+	);
+
+AllAppsPane_ContextMenu(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+ActivityIntermediateStop(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityError(
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ContextMenu(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ContextMenu(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+ActivityStoppedAutomatically(
+	VOID
+	);
+
+AppLaunch_UserClick(
+	UINT32 entryPoint,
+	UNICODESTRING appId
+	);
+
+AllAppsSessionCompleted(
+	INT32 listLength,
+	INT32 scrollActions,
+	INT32 launchActions,
+	INT32 launchActionsForItemsInAFolder,
+	INT32 folderOpenedCount,
+	INT32 folderClosedCount,
+	INT32 folderContextMenuCount,
+	INT32 contextMenuActions,
+	INT32 dragActions,
+	INT32 listHeaderClickedCount,
+	INT32 semanticZoomEnteredCount,
+	INT32 semanticZoomExitedCount,
+	INT32 dwellTime,
+	UINT32 allAppsInputDeviceType,
+	UINT32 typeToJumpToLetterCount
+	);
+
+AllAppsPane_Activation(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_Activation(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_Activation(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+PinnedListItemMoved(
+	UNICODESTRING id,
+	UINT32 oldIndex,
+	UINT32 newIndex,
+	UINT32 pinnedBy,
+	UINT32 type,
+	BOOLEAN wasItemInFolder,
+	BOOLEAN isItemInFolder,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedList_Folder_PinAdded(
+	UNICODESTRING tileId,
+	UNICODESTRING folderId
+	);
+
+PinnedList_Folder_FolderCreated(
+	UNICODESTRING tileId1,
+	UNICODESTRING tileId2,
+	INT32 tileIndex
+	);
+
+RecommendedReactNativeWatchdogTimerStarted(
+	INT64 timeoutMs,
+	UINT64 PartA_PrivTags
+	);
+
+RecommendedReactNativeCleanupFinished(
+	BOOLEAN loadedSuccessfully,
+	UINT64 PartA_PrivTags
+	);
+
+RecommendedReactNativeExtensionActivationArgsSet(
+	UINT64 PartA_PrivTags
+	);
+
+RecommendedReactNativeSetupStarted(
+	UINT64 PartA_PrivTags
+	);
+
+SearchSuggestions_SuggestionsUpdated(
+	UINT32 numSuggestions,
+	UNICODESTRING suggestionsCategories,
+	UNICODESTRING suggestionsNumWords,
+	UNICODESTRING suggestionsBreakingNews,
+	UINT64 PartA_PrivTags
+	);
+
+SearchSuggestions_PostSuggestionId_Failed(
+	INT32 error
+	);
+
+SearchSuggestions_SuggestionClicked(
+	UNICODESTRING suggestionCategory,
+	UINT32 positionInList,
+	BOOLEAN launchSucceeded,
+	UINT64 PartA_PrivTags
+	);
+
+StartController_HandleAppServiceRequest_OperationParameterMissing(
+	UNICODESTRING operation
+	);
+
+AppServiceConnectionClosedImmediately(
+	GUID id
+	);
+
+StartController_AppServiceRequestReceived(
+	UNICODESTRING operationName
+	);
+
+InitializingAppServiceConnection(
+	GUID id
+	);
+
+CleaningUpAppServiceConnection(
+	GUID id,
+	UINT32 openConnections
+	);
+
+StartController_HandleAppServiceRequest_ModelNotInitialized(
+	VOID
+	);
+
+StartController_OnAppServiceRequestReceived_MissingOperation(
+	VOID
+	);
+
+ReactNativeResizeRootViewContainer(
+	DOUBLE rootViewContainerWidth,
+	DOUBLE parentContainerWidth,
+	FLOAT logicalDPI,
+	UINT32 resolutionScale,
+	UINT64 PartA_PrivTags
+	);
+
+RecommendedReactNative_TimeToTransition(
+	BOOLEAN isTopLevel,
+	BOOLEAN snapshotTaken,
+	UINT32 timeToSnapshot,
+	UINT32 timeToMoveControl,
+	UINT32 timeToNotifyRN,
+	UINT32 totalTimeToTransition,
+	UINT64 PartA_PrivTags
+	);
+
+FolderOpened(
+	UNICODESTRING folderId,
+	UINT32 folderIndex,
+	UINT32 folderPinnedBy,
+	UINT32 numOfAppsInFolder,
+	BOOLEAN isFolderNamed,
+	UINT64 PartA_PrivTags
+	);
+
+StartNavigation(
+	UINT32 direction,
+	UINT32 navigatedBy,
+	UINT64 PartA_PrivTags
+	);
+
+InsertReactNativeRecommendedControlEarlyReturn(
+	UINT64 PartA_PrivTags
+	);
+
+HideMoreSuggestionsIgnored_CurrentlyStillHidden(
+	UINT64 PartA_PrivTags
+	);
+
+ShowMoreSuggestionsButtonClicked(
+	VOID
+	);
+
+ShowMoreSuggestionsIgnored_CurrentlyStillShown(
+	UINT64 PartA_PrivTags
+	);
+
+HideMoreSuggestionsButtonClicked(
+	VOID
+	);
+
+StartMenuModel_UnexpectedReinitialization(
+	INT32 initializationCount
+	);
+
+StartScreenManagerExtension_HandleInProcLayoutRequest_ModelNotInitialized(
+	VOID
+	);
+
+StartScreenManagerExtension_NoResultFromService(
+	UINT32 operation
+	);
+
+StartScreenManagerExtension_HandleCrossProcLayoutRequest(
+	UNICODESTRING operationName
+	);
+
+StartScreenManagerExtension_SendAppServiceMessageAsync_SendMessageFailure(
+	UINT32 responseStatus
+	);
+
+StartScreenManagerExtension_HandleInProcLayoutRequest(
+	UNICODESTRING operationName
+	);
+
+StartScreenManagerExtension_EstablishAppServiceConnection_CouldNotConnect(
+	UINT32 responseStatus
+	);
+
+KeyPressed_TileFocused(
+	UNICODESTRING tileId
+	);
+
+LoadingTilesPresentInStart(
+	INT32 numLoadingTiles,
+	UINT64 PartA_PrivTags
+	);
+
+MissingLogoTilesPresentInStart(
+	INT32 numMissingLogo,
+	UINT64 PartA_PrivTags
+	);
+
+StartScreen_TimeToReady(
+	UNICODESTRING eventName,
+	UINT32 timeToReady,
+	UINT64 PartA_PrivTags
+	);
+
+StartScreen_Readiness(
+	UINT32 timeToReady,
+	UINT64 PartA_PrivTags
+	);
+
+DefaultLayoutManager_FullyProgrammableStart(
+	BOOLEAN fallbackToInboxLayout,
+	BOOLEAN hasInternetAccess,
+	BOOLEAN hasCorrectStartControllerContract,
+	BOOLEAN contentObjectStringEmpty,
+	UNICODESTRING regionCode,
+	UINT64 PartA_PrivTags
+	);
+
+GetTileModelsFromLayoutModificationJsonAsync_TileCreated(
+	UNICODESTRING tileId
+	);
+
+GetTileModelsFromLayoutModificationJsonAsync_InvalidKey(
+	UNICODESTRING key
+	);
+
+GetTileModelsFromLayoutModificationJsonAsync_Failed(
+	INT32 hr,
+	UNICODESTRING jsonString
+	);
+
+GetTileModelsFromLayoutModificationJsonAsync_SkipDuplicateTile(
+	UNICODESTRING tileId
+	);
+
+TryExtractMDMPolicyJson_InvalidJson(
+	INT32 hr,
+	UNICODESTRING jsonString
+	);
+
+LayoutMDMPolicyUpdated(
+	UNICODESTRING jsonString
+	);
+
+GetLayoutModificationJsonAsync_ReadFailed(
+	INT32 hr
+	);
+
+GetLayoutModificationJsonAsync_InvalidJson(
+	INT32 hr,
+	UNICODESTRING jsonString
+	);
+
+PinnedItemAction(
+	UNICODESTRING verb,
+	UNICODESTRING appId,
+	UINT32 location,
+	UINT32 count,
+	UINT64 PartA_PrivTags
+	);
+
+SuggestedFilesUpdateAttempt(
+	UNICODESTRING startReason,
+	BOOLEAN isRunningUpdateDetected,
+	BOOLEAN isDisabledByPolicy,
+	BOOLEAN isNetworkTrafficAllowed,
+	UNICODESTRING networkDisallowedReason,
+	INT32 networkTrafficCheckErrorCode,
+	UINT32 secondsSincePreviousUpdateOfJumpList,
+	UINT32 secondsSincePreviousUpdateOfOfficeMru,
+	UINT32 secondsSinceLastUpdateOfJumpList,
+	UINT32 secondsSinceLastUpdateOfOfficeMru,
+	BOOLEAN shouldUpdateJumpList,
+	BOOLEAN shouldUpdateOfficeMru,
+	BOOLEAN hasJumpListUpdated,
+	BOOLEAN hasOfficeMruUpdated,
+	INT32 officeMruUpdateError,
+	UINT32 officeMruTokenRequestStatusForMsa,
+	INT32 officeMruTokenResponseErrorCodeForMsa,
+	INT32 officeMruTokenApiErrorCodeForMsa,
+	UINT32 officeMruTokenRequestStatusForAad,
+	INT32 officeMruTokenResponseErrorCodeForAad,
+	INT32 officeMruTokenApiErrorCodeForAad,
+	UINT32 officeMruRequestStatus,
+	UNICODESTRING officeMruRequestCorrelationId,
+	UNICODESTRING officeMruResponseReasonPhrase,
+	INT32 officeMruResponseParseErrorCode,
+	UNICODESTRING lastUiUpdatePhase,
+	INT32 caughtError,
+	UINT64 PartA_PrivTags
+	);
+
+RecommendedItemAction(
+	UNICODESTRING verb,
+	UNICODESTRING itemType,
+	UNICODESTRING appId,
+	UNICODESTRING extension,
+	UNICODESTRING page,
+	UINT32 location,
+	UINT32 age,
+	UINT32 count,
+	UINT32 sameTypeCount,
+	UINT64 PartA_PrivTags
+	);
+
+RecommendedItemCensus(
+	UNICODESTRING lastPage,
+	BOOLEAN isActionTakenOnSuggestedItem,
+	BOOLEAN isActionTakenOnPinnedItem,
+	BOOLEAN isMoreSuggestionsPageVisited,
+	BOOLEAN isAllAppsPageVisited,
+	UINT32 secondsInSession,
+	UINT32 contentMinAge,
+	UINT32 contentMaxAge,
+	UINT32 contentMaxAgeInTopPage,
+	UINT32 pinnedItemsCount,
+	UINT32 recentlyAddedAppCount,
+	UINT32 getStartedAppCount,
+	UINT32 oemSetupAppCount,
+	UINT32 jumpListFileCount,
+	UINT32 officeMruFileCount,
+	UINT32 suggestionsSlotsAvailable,
+	UINT64 PartA_PrivTags
+	);
+
+RefreshSuggestionsAction(
+	UINT64 PartA_PrivTags
+	);
+
+StartMenuPinnedCensus_Failed(
+	VOID
+	);
+
+StartMenuPinnedCensus(
+	UINT32 numberOfFolders,
+	UINT32 numberOfNamedFolders,
+	UINT32 triggerType,
+	UNICODESTRING pinnedItems,
+	UINT64 PartA_PrivTags
+	);
+
+StartMenuPinnedCensus(
+	UINT32 numberOfFolders,
+	UINT32 numberOfNamedFolders,
+	UINT32 triggerType,
+	UNICODESTRING pinnedItems,
+	UNICODESTRING pinSource,
+	UINT64 PartA_PrivTags
+	);
+
+FeatureReactNativeRecommendedViewEnabled(
+	VOID
+	);
+
+PinnedListModel_DeletingGraveyardedItem(
+	UNICODESTRING id
+	);
+
+FolderModel_AddItem_AlreadyPresent(
+	UNICODESTRING id
+	);
+
+PinsContainer_TryMoveToFront_CouldNotFindItem(
+	UNICODESTRING containerId,
+	UNICODESTRING id
+	);
+
+FolderModel_RemoveItem_AlreadyMissing(
+	UNICODESTRING id
+	);
+
+FolderModel_ItemAdded(
+	UNICODESTRING id
+	);
+
+FolderModel_SwapItems_AlreadyMissing(
+	UNICODESTRING id
+	);
+
+FolderModel_ItemRemoved(
+	UNICODESTRING id
+	);
+
+FolderModel_ItemsSwapped(
+	UNICODESTRING oldId,
+	UNICODESTRING newId
+	);
+
+FolderModel_SwapItems_AlreadyPresent(
+	UNICODESTRING id
+	);
+
+FolderModel_Deserialized(
+	UNICODESTRING id,
+	UINT32 numItems
+	);
+
+PinsContainer_MovedItemToFront(
+	UNICODESTRING containerId,
+	UNICODESTRING id
+	);
+
+FolderModel_Created(
+	UNICODESTRING id,
+	UNICODESTRING name
+	);
+
+PinnedListVersionNumber(
+	UINT32 PinnedListVerison,
+	UINT64 PartA_PrivTags
+	);
+
+OEMProgrammablePinsCreatedFromBackup(
+	UINT32 OEMPinCount,
+	UINT32 programmablePinCount,
+	UINT64 PartA_PrivTags
+	);
+
+PinsContainer_TryMoveItemAfter_CouldNotFindItem(
+	UNICODESTRING containerId,
+	UNICODESTRING movedId,
+	UNICODESTRING targetId,
+	BOOLEAN missingMovedId,
+	BOOLEAN missingTargetId
+	);
+
+PinnedListModel_TryCreateFolder_WithUnsupportedTypes(
+	UNICODESTRING targetId,
+	BOOLEAN isTargetTile,
+	UNICODESTRING secondId,
+	BOOLEAN isSecondTile
+	);
+
+PinnedListModel_TryMoveTileOutOfFolder_CouldNotFindItem(
+	UNICODESTRING movedId
+	);
+
+PinnedListModel_TryMoveItemAfter_NestedFoldersRequested(
+	UNICODESTRING movedId,
+	UNICODESTRING targetId
+	);
+
+PinsContainer_TryMoveToFront_CalledOnPinnedListForItemInRealizedFolder(
+	UNICODESTRING containerId,
+	UINT32 itemsInFolder,
+	UNICODESTRING id
+	);
+
+PinnedListModel_TryMoveTileOutOfFolder_ItemNotInFolder(
+	UNICODESTRING movedId
+	);
+
+RestorablePlaceholderPinMigrated(
+	UNICODESTRING fromId,
+	UNICODESTRING toId,
+	UINT32 migrationResult,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedListModel_DeserializedFromJson(
+	UINT32 numTopLevelItems
+	);
+
+TryUnpin_NotPinned(
+	UNICODESTRING AppId,
+	UINT32 PinType,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedListModel_TryUnpinTile(
+	UNICODESTRING tileId
+	);
+
+PinnedListModel_TrySwapTiles_InvalidSwap(
+	UNICODESTRING oldId,
+	UNICODESTRING newId,
+	BOOLEAN isTargetedContentTile,
+	BOOLEAN missingOldId,
+	BOOLEAN newIdAlreadyPinned
+	);
+
+PinRemoved(
+	UNICODESTRING AppId,
+	UINT32 PinSource,
+	UINT32 PinType,
+	UINT32 PlaceholderOrigin,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedListModel_TryCreateFolder_ItemMissing(
+	UNICODESTRING targetId,
+	BOOLEAN foundTarget,
+	UNICODESTRING secondId,
+	BOOLEAN foundSecond
+	);
+
+PinnedListModel_TileSwapped(
+	UNICODESTRING oldId,
+	UNICODESTRING newId
+	);
+
+PinnedListModel_FailedToQueryStartLayoutPolicy(
+	INT32 hr
+	);
+
+PinnedListModel_TryPinTile(
+	UNICODESTRING tileId
+	);
+
+PinsRestoredFromBackup(
+	UINT32 backupPinCount,
+	UINT32 restorableCandidatePinCount,
+	UNICODESTRING restoredPinsTileIdString,
+	UINT64 PartA_PrivTags
+	);
+
+PinAdded(
+	UNICODESTRING AppId,
+	UINT32 PinSource,
+	UINT32 PinType,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedListModel_TryPinTile_AlreadyPinned(
+	UNICODESTRING tileId
+	);
+
+PinnedListModel_InitializingFromDefaultLayout(
+	VOID
+	);
+
+PersistenceManager_CorruptDataFile(
+	UNICODESTRING fileName
+	);
+
+PersistenceManager_ErrorLoadingDataFile(
+	INT32 expected,
+	INT32 actual
+	);
+
+StartMenuPersistenceManager_SaveModelAsync(
+	BOOLEAN force,
+	UINT64 secondsSinceLastWrite
+	);
+
+PersistenceManager_DestructWhileDirty(
+	INT64 lastSave,
+	INT64 lastRequest
+	);
+
+StartMenuPersistenceManager_QueueSaveModel(
+	VOID
+	);
+
+PersistenceManager_MigratingDataFromSv1FileName(
+	VOID
+	);
+
+PersistenceManager_ExistingDataFileNotFound(
+	VOID
+	);
+
+RecommendedReactNative_IsLockedChanged(
+	BOOLEAN isLocked
+	);
+
+AllAppsPane_ViewModel_Folder_ItemsRemoved(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_CollectionView_ExpandCollapseFolder(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_ItemsAdded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_ItemsRemoved(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_Folder_ItemsAdded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_InitialItemsAdded(
+	UINT64 PartA_PrivTags,
+	NOPRINT wilActivity,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_Folder_ItemsRemoved(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ViewModel_Folder_ItemsRemoved(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AllAppsPane_CollectionView_ExpandCollapseFolder(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AllAppsPane_CollectionView_ExpandCollapseFolder(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ViewModel_ItemsRemoved(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_ItemsRemoved(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ViewModel_ItemsAdded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_ItemsAdded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ViewModel_Folder_ItemsAdded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_Folder_ItemsAdded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+AllAppsPane_ViewModel_InitialItemsAdded(
+	UINT64 PartA_PrivTags,
+	STRING wilActivity,
+	UINT32 hresult,
+	UINT32 threadId
+	);
+
+AllAppsPane_ViewModel_InitialItemsAdded(
+	UINT64 PartA_PrivTags,
+	UINT64 PartA_PrivTags,
+	SIGNED wilActivity,
+	UINT32 hresult,
+	ANSISTRING fileName,
+	UINT32 lineNumber,
+	ANSISTRING module,
+	UINT32 failureType,
+	UNICODESTRING message,
+	UINT32 threadId,
+	ANSISTRING callContext,
+	UINT32 originatingContextId,
+	ANSISTRING originatingContextName,
+	UNICODESTRING originatingContextMessage,
+	UINT32 currentContextId,
+	ANSISTRING currentContextName,
+	UNICODESTRING currentContextMessage,
+	UINT32 failureId,
+	UINT32 failureCount,
+	ANSISTRING function
+	);
+
+RestorePolicyBehaviorBlockedStartPin(
+	UNICODESTRING tileId,
+	UINT64 PartA_PrivTags
+	);
+
+PinsContainer_MovedTileAfter(
+	UNICODESTRING containerId,
+	UNICODESTRING movedId,
+	UNICODESTRING targetId
+	);
+
+PinnedListModel_RemoveUnresolvedTargetedContentTiles(
+	VOID
+	);
+
+AppsProvider_Initialized(
+	UINT32 suggestionRecentlyAddedItems,
+	UINT32 suggestionSuggestedItems
+	);
+
+AppsProvider_TileAdded(
+	UNICODESTRING suggestionTileId
+	);
+
+AppsProvider_TileRemoved(
+	UNICODESTRING suggestionTileId
+	);
+
+SuggestedAppsProvider_TileAdded(
+	UNICODESTRING suggestionTileId
+	);
+
+SuggestedAppsProvider_Initialized(
+	UINT32 suggestionRecentlyAddedItems,
+	UINT32 suggestionSuggestedItems
+	);
+
+SuggestedAppsProvider_TileRemoved(
+	UNICODESTRING suggestionTileId
+	);
+
+OneDriveShareUnavailable(
+	UNICODESTRING result,
+	UINT64 PartA_PrivTags
+	);
+
+OneDriveShareDialogLaunchFailed(
+	UNICODESTRING result,
+	UINT64 PartA_PrivTags
+	);
+
+SuggestedItem_Removed_ExceededMaxAge_JumpListFile(
+	UNICODESTRING suggestionTileId,
+	UNICODESTRING suggestionFileExtension
+	);
+
+SuggestedItem_Removed_ExceededMaxAge_OfficeMruFile(
+	UNICODESTRING suggestionTileId,
+	UINT32 suggestionOfficeAppKind
+	);
+
+SuggestedFilesProvider_TryUpdate(
+	BOOLEAN suggestionItemsChanged,
+	UINT32 suggestionSuggestedJumpListItems,
+	UINT32 suggestionSuggestedOfficeMruItems
+	);
+
+PinnedItem_Rearranged_Inserted(
+	UNICODESTRING tileId,
+	INT32 tileIndex,
+	BOOLEAN tileSuccessfullyRearranged
+	);
+
+FolderCreated(
+	UNICODESTRING folderId,
+	UINT32 folderIndex,
+	UINT32 folderPinnedBy,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedListModelReturnedMissingTile(
+	UNICODESTRING tileId
+	);
+
+SkipPageOneReadyCheckDueToMissingConnectivity(
+	VOID
+	);
+
+PinnedItem_ContextMenuRequested(
+	UNICODESTRING tileId,
+	BOOLEAN tileIncludeExtendedVerbs
+	);
+
+PinnedRestoredPlaceholderInstalled(
+	UNICODESTRING appId,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedItem_StringsUpdated(
+	UNICODESTRING tileId,
+	BOOLEAN tileDisplayNameUpdated,
+	BOOLEAN tileToolTipUpdated,
+	BOOLEAN tileAccessibleDisplayNameUpdated,
+	BOOLEAN tileAutomationIdUpdated
+	);
+
+PinnedItem_LogoUpdated(
+	UNICODESTRING tileId,
+	BOOLEAN tileLogoPlateBrushUpdated,
+	BOOLEAN tileLogoSizeUpdated
+	);
+
+PinnedItem_LogoUpdateFailed(
+	INT32 hr,
+	UNICODESTRING tileId
+	);
+
+PinnedItem_StateChanged_WhileConstructing(
+	UNICODESTRING tileId
+	);
+
+PinInvoked(
+	UNICODESTRING AppId,
+	UINT32 PinSource,
+	UINT32 PinType,
+	BOOLEAN Elevated,
+	UINT32 PlaceholderOrigin,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedItem_NewBadgeCleared(
+	UNICODESTRING tileId
+	);
+
+SuggestedItem_Invoked_RecentlyAddedApp(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionElevated
+	);
+
+AppItem_ContextMenuRequested_RecentlyAddedApp(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionIncludeExtendedVerbs
+	);
+
+AppItem_Removed_Dismissed_RecentlyAddedApp(
+	UNICODESTRING suggestionTileId
+	);
+
+SuggestedItem_ContextMenuRequested_RecentlyAddedApp(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionIncludeExtendedVerbs
+	);
+
+SuggestedItem_Removed_Dismissed_RecentlyAddedApp(
+	UNICODESTRING suggestionTileId
+	);
+
+SuggestedItem_Removed_ExceededMaxAge_RecentlyAddedApp(
+	UNICODESTRING suggestionTileId
+	);
+
+SuggestedItem_Removed_Dismissed_JumpListFile(
+	UNICODESTRING suggestionTileId,
+	UNICODESTRING suggestionFileExtension
+	);
+
+SuggestedItem_Invoked_JumpListFile(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionElevated,
+	UNICODESTRING suggestionFileExtension,
+	BOOLEAN didLaunchSucceed
+	);
+
+SuggestedItem_ContextMenuRequested_JumpListFile(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionIncludeExtendedVerbs,
+	UNICODESTRING suggestionFileExtension
+	);
+
+SuggestedItem_Removed_Dismissed_OfficeMruFile(
+	UNICODESTRING suggestionTileId,
+	UINT32 suggestionOfficeAppKind
+	);
+
+SuggestedItem_Invoked_OfficeMruFile(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionElevated,
+	UINT32 suggestionOfficeAppKind
+	);
+
+SuggestedItem_ContextMenuRequested_OfficeMruFile(
+	UNICODESTRING suggestionTileId,
+	BOOLEAN suggestionIncludeExtendedVerbs,
+	UINT32 suggestionOfficeAppKind
+	);
+
+OneDriveShareOptionShown(
+	UINT64 PartA_PrivTags
+	);
+
+MruItemMissingShareProperties(
+	UINT64 PartA_PrivTags
+	);
+
+SuggestedItem_GetId_Failed_OfficeMruFile(
+	UNICODESTRING suggestionOfficeAppKind,
+	UNICODESTRING suggestionOfficeItemType,
+	BOOLEAN containsSharepointInfo,
+	BOOLEAN containsSiteId,
+	BOOLEAN containsWebId,
+	BOOLEAN containsUniqueId
+	);
+
+FolderDeleted(
+	UNICODESTRING folderId,
+	UINT32 folderIndex,
+	UINT32 folderPinnedBy,
+	UINT32 folderDeletedBy,
+	BOOLEAN isFolderNamed,
+	UINT64 PartA_PrivTags
+	);
+
+FolderNamed(
+	UNICODESTRING folderId,
+	UINT32 folderIndex,
+	UINT32 folderPinnedBy,
+	UINT32 numOfAppsInFolder,
+	BOOLEAN renamed,
+	UINT64 PartA_PrivTags
+	);
+
+PinnedList_Folder_Named(
+	UNICODESTRING folderId,
+	UNICODESTRING folderName
+	);
+
+FolderContextMenuActionInvoked(
+	UNICODESTRING folderId,
+	UINT32 folderIndex,
+	UINT32 folderPinnedBy,
+	UNICODESTRING verb,
+	UINT64 PartA_PrivTags
+	);
+

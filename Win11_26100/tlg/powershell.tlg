@@ -1,0 +1,15 @@
+ProviderNames:
+	Microsoft.Windows.Powershell.Pwsh
+
+
+
+**** Events *****
+Powershell_2.0_console_start(
+	INT32 PSMajorVersion,
+	UINT32 ParentProcID,
+	UNICODESTRING ParentProcName,
+	UINT32 GrandParentProcID,
+	UNICODESTRING GrandParentProcName,
+	UINT64 PartA_PrivTags
+	);
+
